@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DNS验证页</title>
+
+
+<!-- 不缓存 -->
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Cache" content="no-cache">
+<meta charset="utf-8">
+
+<div class="panel panel-default">
+    <div class="panel-heading">此处显示您是否已使用dns.ipv4dns.com(受缓存影响)</div>
+<object data="https://test.ipv4dns.com/yes.html" width="100%" height="30" type="text/html">
+    你未使用dns.ipv4dns.com
+</object>
+</div>
+
+<script>
+	var t1 = new Date().getTime(); 
+</script>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body style="background-color: #ffffff;color: aqua; font-size: 12px;line-height: 20px">
+<div id="v">加载中</div>
+<script> 
+	window.onload = function() 
+	{ 
+		var t2=new Date().getTime(); 
+		var c=15//测试页损失毫秒数
+		var t3=t2-t1-c;
+		document.getElementById("v").innerHTML=" 速度："+t3+"ms";
+	} 
+</script>
+
+
+</body>
+</html>
