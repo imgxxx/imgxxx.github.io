@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>IPv4公共DNS</title>
+    <link rel="icon" href="staticpdns/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="staticpdns/css/normalize.css">
+    <link rel="stylesheet" href="staticpdns/css/bootstrap.min.css">
+    <link rel="stylesheet" href="staticpdns/css/style.css">
+</head>
+
+<body>
+    <div class="conduct_doth_section">
+        <!--section_1-->
+        <section class="section_1">
+            <div class="section_area">
+                <div class="more_dns_link">
+                    <a href="../" target="_blank">
+                        IPv4公共DNS
+                        <img src="staticpdns/images/dotdoh/enter.png" width="12px" height="12px" alt="更多">
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="text_area">
+                            <h2 class="main_title">IPv4公共DNS现在提供加密DNS查询</h2>
+                            <ul>
+                                <li class="sub_title">
+                                    支持DoT/DoH
+                                    <img src="staticpdns/images/dotdoh/beta.png" alt="beat">
+                                </li>
+                                <li class="sub_title">DoT：dns.ipv4dns.com</li>
+                                <li class="sub_title">DoH：https://dns.ipv4dns.com/dns-query</li>
+                                <li class="btnArea">
+                                    <a href="#section_4" class="start_use_btn">开始使用</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="img_area">
+                            <img src="staticpdns/images/dotdoh/img_01.png" alt="加密DNS查询" width="95%" height="95%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--section_2-->
+        <section class="section_2">
+            <div class="section_area">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="text_area">
+                            <h2 class="main_title">为什么需要<span>加密DNS</span></h2>
+                            <ul>
+                                <li class="sub_title">
+                                    传统DNS查询数据以明文方式传输，存在暴露的风险，采用加密DNS可以有效地防止隐私泄露和DNS劫持。
+                                </li>
+                                <li class="sub_title">
+                                    <span>隐私泄露：</span>
+                                    传统DNS请求数据易被其他人获取，从而泄露自己的访问记录。
+                                </li>
+                                <li class="sub_title">
+                                    <span>DNS劫持：</span>
+                                    传统DNS应答数据易被篡改，用户的访问会被劫持到钓鱼网站和恶意站点。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="img_area">
+                            <img src="staticpdns/images/dotdoh/img_02.png" alt="为什么需要加密DNS" width="80%" height="80%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--section_3-->
+        <section class="section_3">
+            <div class="section_area">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="img_area">
+                            <img src="staticpdns/images/dotdoh/img_03.png" alt="什么是DoT/DoH" width="100%" height="100%">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="text_area">
+                            <h2 class="main_title">什么是<span>DoT/DoH</span>?</h2>
+                            <ul>
+                                <li class="sub_title">
+                                    DoT和DoH都是加密DNS的一种方式，区别在于它们采用不同的协议和端口。
+                                </li>
+                                <li class="sub_title leftRight">
+                                    <span class="left">DoT：</span>
+                                    <span class="right">DNS over TLS是一项域名解析安全扩展协议，它使用TLS协议加密传输用户和递归解析服务器之间的DNS消息，起到防止中间用户窃听和域名查询隐私泄漏的作用。已列入标准文档（参见 RFC 7858 和 RFC 8310）。
+                                    </span>
+                                </li>
+                                <li class="sub_title leftRight">
+                                    <span class="left">DoH：</span>
+                                    <span class="right">DNS over HTTPS与DoT类似，同样也是一种域名解析安全扩展协议，它允许通过 HTTPS 协议加密 DNS 递归解析过程，以防止中间用户窃听和域名查询隐私泄漏。已列入标准文档（参见 RFC 8484）。
+                                    </span>
+                                </li>
+                                <li class="sub_title">
+                                    随着Google等国际大厂商的支持和推广，DoT/DoH已成为如今最流行的DNS加密方式。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--section_4-->
+        <section class="section_4" id="section_4">
+            <div class="section_area">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="text_area">
+                            <h2 class="main_title">如何使用<span>DoT/DoH</span>?</h2>
+                            <ul>
+                                <li class="sub_title">如果您是专业开发者，可以通过以下地址访问我们的服务： </li>
+                                <li class="sub_title"><span>DoT：</span>dns.ipv4dns.com</li>
+                                <li class="sub_title"><span>DoH：</span>https://dns.ipv4dns.com/dns-query</li>
+                                <li class="sub_title">如果您是个人用户，请查看：
+                                    <a href="../config/pconfig.html?dot" target="_blank" class="dot_config_btn">DoT&nbsp;配置指南</a>
+                                    <a href="../config/pconfig.html?doh" target="_blank" class="doh_config_btn">DoH&nbsp;配置指南</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="img_area">
+                            <img src="staticpdns/images/dotdoh/img_04.png" alt="如何使用DoT/DoH" width="90%" height="90%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--section_end-->
+    </div>
+    <div class="footer">
+        <div class="footer-email">
+            www.ipv4dns.com
+            <a href="http://ipv4dns.com">搜索</a>
+        </div>
+<!--        <div class="copyright">
+            <h2>联系我们</h2>
+            <div class="row">
+                <div class="col-sm-6 col-md-8">
+                    <p class="pfont">电话</p>
+                    <p class="ptwo">地址</p>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="pfont">产品列表</p>
+                    <p><a href="../" target="_blank">IPv4公共DNS</a></p>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="pfont">关于我们</p>
+                    <p><img src="staticpdns/images/图片" alt="" style="height:30px;"></p>
+                    <p class="ptwo pcompany"><span>© 2022</span></p>
+                    <p class="ptwo pcompany"><span><a href="https://beian.miit.gov.cn/">ICP</a></span></p>
+                    <p class="ptwo pcompany"><span><a target="_blank" href="http://www.beian.gov.cn/portal/" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="staticpdns/images/guohui.png" style="float:left;">ICP</a></span></p>
+-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="staticpdns/js/baiduStatistics.js"></script>
+
+
+</body>
+
+</html>

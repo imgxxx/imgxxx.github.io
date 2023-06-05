@@ -1,0 +1,386 @@
+<!DOCTYPE html><!-- This web page is copied by "https://bazhan.wang" --><html lang="en"><head><meta charset="utf-8">
+    
+    <title>IPv4 DNS</title>
+    <link rel="icon" href="staticpdns/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="staticpdns/css/normalize.css">
+    <link rel="stylesheet" href="staticpdns/css/bootstrap.min.css">
+    <link rel="stylesheet" href="staticpdns/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="nav-header">
+            <h1><a href="../">IPv4DNS</a></h1>
+            <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+            </button> -->
+        </div> 
+        <div class="pconfig-banner">
+            <div class="banner-content">
+                <h2>支持的设备</h2>
+                <h2>使用教程</h2>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="page-faq pconfig-header">
+            <div class="row row_faq">
+                <div class="col-sm-12 col-md-4 pconfig-border tab-active-border">
+                    <a href="#windows" data-toggle="tab" class="tab-img"><img src="staticpdns/images/windows.png" alt="windows"></a>
+                    <div class="caption">
+                        <h3>Windows系统</h3>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 pconfig-border">
+                    <a href="#mac" data-toggle="tab" class="tab-img"><img src="staticpdns/images/Mac.png" alt="Mac系统"></a>
+                    <div class="caption">
+                        <h3>Mac系统</h3>
+                    </div>
+                </div>
+                <!--<div class="col-sm-12 col-md-3 pconfig-border">
+                    <a href="#mobile" data-toggle="tab" class="tab-img"><img src="/staticpdns/images/mobile.png" alt="移动设备"></a>
+                    <div class="caption">
+                        <h3>移动设备</h3>
+                    </div>
+                </div> -->
+				<div class="col-sm-12 col-md-4 pconfig-border">
+                    <a href="#dot" data-toggle="tab" class="tab-img"><img src="staticpdns/images/dot.png" alt="DoT"></a>
+                    <div class="caption">
+                        <h3>DoT (DNS-over-TLS)</h3>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 pconfig-border">
+                    <a href="#doh" data-toggle="tab" class="tab-img"><img src="staticpdns/images/doh.png" alt="DoH"></a>
+                    <div class="caption">
+                        <h3>DoH (DNS-over-HTTPS)</h3>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 pconfig-border">
+                    <a href="#datasafe" data-toggle="tab" class="tab-img"><img src="staticpdns/images/datas.png" alt="数据隐私保护"></a>
+                    <div class="caption">
+                        <h3>数据隐私保护</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-map">
+            <div class="pconfig-info tab-content">
+                <div role="tabpanel" class="tab-pane active" id="windows">
+                    <h2>Windows 10/8/7</h2>
+                    <div class="row row_info">
+		                <div class="col-sm-12 col-md-12 col-bottom">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">1</span>
+ 								</span>
+		                		<span>右键网络进入属性或者右键右下角的Inernet进入网络共享中心，如下图:</span>
+		                	</p>
+							<img src="staticpdns/images/config/1.png" alt="" style="width:308px;">
+							<img src="staticpdns/images/config/2.png" alt="" style="width:252px;vertical-align: bottom;">
+						</div>
+						<div class="col-sm-12 col-md-12 col-bottom">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">2</span>
+ 								</span>
+		                		<span>点击网络和共享中心左侧的"更改适配器设置"链接，如下图:</span>
+		                	</p>               
+							<img src="staticpdns/images/config/3.png" alt="" style="width:780px;">
+						</div>
+						<div class="col-sm-12 col-md-12 col-bottom">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">3</span>
+ 								</span>
+		                		<span>选中正在联网的网络连接，鼠标右键菜单里选择"属性"进入</span>
+		                	</p>
+							<img src="staticpdns/images/config/4.png" alt="" style="width:780px;">
+						</div>
+						<div class="col-sm-12 col-md-12 col-bottom">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">4</span>
+ 								</span>
+		                		<span>在网络连接属性窗口中选中"Internet 协议版本 6 (TCP/IPv6)"，然后点击"属性"，或者双击进入</span>
+		                	</p>
+							<img src="staticpdns/images/config/5.png" alt="" style="width:412px;">
+						</div>
+						<div class="col-sm-12 col-md-12 col-bottom">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">5</span>
+ 								</span>
+		                		<span>选择使用指定的DNS，在DNS服务器地址中输入240c::6666，输入完成点击确定</span>
+		                	</p>
+							<img src="staticpdns/images/config/6.png" alt="" style="width:901px;">
+						</div>
+						<div class="col-sm-12 col-md-12 col-bottom">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">6</span>
+ 								</span>
+		                		<span>再次点击确定完成设置</span>
+		                	</p>
+							<img src="staticpdns/images/config/7.png" alt="" style="width:412px;">
+						</div>
+					</div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="mac">
+                    <h2>MacOS系统 DNS配置步骤如下</h2>
+                    <div class="row row_info">
+		                <div class="col-sm-12 col-md-12 col-bottom">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">1</span>
+ 								</span>
+		                		<span>选取苹果菜单 &gt;"系统偏好设置"，然后点按"网络"。</span>
+		                	</p>
+                            <img src="staticpdns/images/config/m1.png" alt="" style="width:700px;">
+                        </div>
+		                <div class="col-sm-12 col-md-12 col-bottom">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">2</span>
+ 								</span>
+		                		<span>从列表中选择想要使用的网络连接服务（例如 AirPort 或以太网，除非您指定其他服务），然后点按"高级"。</span>
+		                	</p>
+                            <img src="staticpdns/images/config/m2.png" alt="" style="width:700px;">
+                         </div>
+		                <div class="col-sm-12 col-md-12">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">3</span>
+ 								</span>
+		                		<span>点按"DNS"，然后点按"DNS 服务器"列表底部的添加 (+)。输入 DNS 服务器的IPv6 地址(240c::6666)。</span>
+		                	</p>
+                            <img src="staticpdns/images/config/m3.png" alt="" style="width:700px;">
+                        </div>		                
+		                <div class="col-sm-12 col-md-12">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">4</span>
+ 								</span>
+		                		<span>完成后，点按"好"。</span>
+		                	</p>		                    
+		                </div>
+					</div>
+                </div>
+                <!--<div role="tabpanel" class="tab-pane" id="mobile">
+                    <h2>移动设备</h2>
+                </div>-->
+				<div role="tabpanel" class="tab-pane" id="dot">
+                    <h2>什么是DoT?</h2>
+                    <p>DNS over TLS（简称DoT）是一项域名解析安全扩展协议，它使用TLS协议加密传输用户和递归解析服务器之间的DNS消息，起到防止中间用户窃听和域名查询隐私泄漏的作用。已列入标准文档（参见 RFC 7858 和 RFC 8310）。</p>
+                    <h2>如何使用DoT?</h2>
+                    <p>访问我们在853端口的TLS服务：                   		
+                    	<span class="link_color">dns.ipv4dns.com</span>                   	                    	
+                    </p>
+                    <p>目前安卓9.0以上版本提供了"<span class="link_color">私人DNS</span>"设置以支持DNS-over-TLS：</p>
+                    <div class="row row_info dot_info_text">
+		                <div class="col-sm-12 col-md-3">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">1</span>
+ 								</span>
+		                		<span>打开 "设置" 应用，点击 "网络和互联网"</span>
+		                	</p>		                    
+		                </div>
+		                <div class="col-sm-12 col-md-3">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">2</span>
+ 								</span>
+		                		<span>点击 "网络和互联网" 界面中的 "高级"</span>
+		                	</p>		                    
+		                </div>
+		                <div class="col-sm-12 col-md-3">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">3</span>
+ 								</span>
+		                		<span>在展开的菜单中选择 "私人 DNS"</span>
+		                	</p>	                    
+		                </div>
+		                <div class="col-sm-12 col-md-3">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">4</span>
+ 								</span>
+		                		<span>输入dns.ipv4dns.com，点击保存</span>
+		                	</p>		                    
+		                </div>
+		            </div> 
+					<div class="row row_info dot_info">
+		                <div class="col-sm-12 col-md-3">		                	
+		                    <img src="staticpdns/images/dot/dot_1.png" alt="dot">		                    
+		                </div>
+		                <div class="col-sm-12 col-md-3">		                	
+		                    <img src="staticpdns/images/dot/dot_2.png" alt="dot">		                    
+		                </div>
+		                <div class="col-sm-12 col-md-3">		                	
+		                    <img src="staticpdns/images/dot/dot_3.png" alt="dot">		                    
+		                </div>
+		                <div class="col-sm-12 col-md-3">		                	
+		                    <img src="staticpdns/images/dot/dot_4.png" alt="dot">		                    
+		                </div>
+		            </div> 
+		            <p>华为手机从 2019 年开始可以直接配置"<span class="link_color">加密DNS</span>"，同样实现DoT：</p>
+		            <div class="row row_info dot_info_text">		            	
+		                <div class="col-sm-12 col-md-3">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">1</span>
+ 								</span>
+		                		<span>打开 "设置" 应用，点击 "更多连接"</span>
+		                	</p>	                    
+		                </div>
+		                <div class="col-sm-12 col-md-3">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">2</span>
+ 								</span>
+		                		<span>点击 "加密DNS"</span>
+		                	</p>	                    
+		                </div>
+		                <div class="col-sm-12 col-md-6">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">3</span>
+ 								</span>
+		                		<span>勾选"指定加密DNS服务"，输入dns.ipv4dns.com</span>
+		                	</p>		                    
+		                </div>		               
+		            </div>   
+					<div class="row row_info dot_info">		            	
+		                <div class="col-sm-12 col-md-3">		                	
+		                    <img src="staticpdns/images/dot/dot_5.png" alt="dot">		                    
+		                </div>
+		                <div class="col-sm-12 col-md-3">		                	
+		                    <img src="staticpdns/images/dot/dot_6.png" alt="dot">		                    
+		                </div>
+		                <div class="col-sm-12 col-md-6">		                	
+		                    <img src="staticpdns/images/dot/dot_7.png" alt="dot">		                    
+		                </div>		               
+		            </div>   
+                </div>
+                <div role="tabpanel" class="tab-pane" id="doh">
+                	<h2>什么是DoH?</h2>
+                    <p>DNS over HTTPS（简称DoH）与DoT类似，同样也是一种域名解析安全扩展协议，它允许通过 HTTPS 协议加密 DNS 递归解析过程，以防止中间用户窃听和域名查询隐私泄漏。已列入标准文档（参见 RFC 8484）。</p>
+                    <h2>如何使用DoH?</h2>
+                    <p>访问我们在443端口的HTTPS服务：                  		
+                    	<span class="link_color">https://dns.ipv4dns.com/dns-query</span>
+                    </p>
+                    <p>目前Firefox&nbsp;&nbsp;(火狐浏览器)
+                    	<a class="doh_download_icon" href="https://www.firefox.com.cn/" target="_blank">
+                    		<img src="staticpdns/images/doh/downloadIcon.png">下载
+                    	</a>已支持"启用基于 HTTPS的 DNS"设置：
+                    </p>
+                    <div class="row row_info">
+		                <div class="col-sm-12 col-md-12 col-bottom">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">1</span>
+ 								</span>
+		                		<span>打开火狐浏览器，点击右上角菜单，在下拉菜单中点击"选项"</span>
+		                	</p>
+		                    <img src="staticpdns/images/doh/doh_1.png" alt="DoH" style="width:700px;">               		
+		                </div>
+		                <div class="col-sm-12 col-md-12 col-bottom">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">2</span>
+ 								</span>
+		                		<span>找到"网络设置"部分，点击设置</span>
+		                	</p>
+		                    <img src="staticpdns/images/doh/doh_2.png" alt="DoH" style="width:700px;">
+		                </div>
+		                <div class="col-sm-12 col-md-12">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">3</span>
+ 								</span>
+		                		<span>勾选"启用基于HTTPS的DNS"，在选用提供商中选择"自定义"，并输入：
+		                			<span class="link_color">https://dns.ipv4dns.com/dns-query</span>
+		                		</span>
+		                	</p>
+		                     <img src="staticpdns/images/doh/doh_3.png" alt="DoH" style="width:700px;">
+		                </div>                
+		                <div class="col-sm-12 col-md-12">
+		                	<p>
+		                		<span class="circle_num_back">
+      								<span class="circle_num">4</span>
+ 								</span>
+		                		<span>点击确定完成</span>
+		                	</p>		                    
+		                </div>
+		            </div>                    
+                </div>
+                <div role="tabpanel" class="tab-pane" id="datasafe">
+                    <h2>数据隐私保护介绍</h2>
+                    <p> 公共递归在向根服务器，顶级域服务器，二级域服务器发起查询时，会对查询域名进行信息隐藏，从而阻止域名查询信息泄露。</p>
+                    <p> 标准文档： <a href="https://tools.ietf.org/html/rfc7816">RFC7816 DNS Query Name Minimisation to Improve Privacy</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-email">
+            www.ipv4dns.com
+            <a href="http://ipv4dns.com">搜索</a>
+        </div>
+<!--        <div class="copyright">
+            <h2>联系我们</h2>
+            <div class="row">
+                <div class="col-sm-6 col-md-8">
+                    <p class="pfont">电话</p>
+                    <p class="ptwo">地址</p>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="pfont">产品列表</p>
+                    <p><a href="../" target="_blank">IPv4公共DNS</a></p>
+                </div>
+                <div class="col-sm-3 col-md-2">
+                    <p class="pfont">关于我们</p>
+                    <p><img src="staticpdns/images/CFIEC.png" alt="" style="height:30px;"></p>
+                    <p class="ptwo pcompany"><span>© 2022 云怡设计</span></p>
+                    <p class="ptwo pcompany"><span><a href="https://beian.miit.gov.cn/">ICP</a></span></p>
+                    <p class="ptwo pcompany"><span><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="staticpdns/images/guohui.png" style="float:left;">公网安备</a></span></p>
+                    -->
+                </div>
+            </div>    
+        </div>
+    </div>
+    <script src="staticpdns/js/jquery.min.js"></script>
+    <script src="staticpdns/js/bootstrap.min.js"></script>
+	<script src="staticpdns/js/baiduStatistics.js"></script>
+    <script>
+        $(function(){
+            $('.tab-img').click(function(){
+                $('.pconfig-border').removeClass('tab-active-border');
+                var dom = $(this).parent();
+                dom.addClass("tab-active-border");
+            });
+            // 从公共dns跳转过来需要获取地址,方法可以继续优化
+            var purl = GetRequest();
+            console.log(purl);
+            if(purl){
+                $('.tab-pane').removeClass('active');
+                $('#'+purl).addClass('active');
+                $('.pconfig-border').removeClass('tab-active-border');
+                $('a[href="#'+purl+'"]').parent().addClass("tab-active-border");
+            }
+        });
+
+        function GetRequest() {
+            var url = location.search; //获取url中"?"符后的字串
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                return str;
+            }
+        }
+    </script>
+
+
+</body></html>
