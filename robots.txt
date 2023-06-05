@@ -1,41 +1,47 @@
-#robots.txt
+# Robots.txt 
 User-agent: Baiduspider
-Allow: /
+Disallow: 
 User-agent: Sosospider
-Allow: /
+Disallow: 
 User-agent: sogou spider
-Allow: /
+Disallow: 
 User-agent: YodaoBot
-Allow: /
+Disallow: 
 User-agent: Googlebot
-Allow: /
+Disallow: 
 User-agent: Bingbot
-Allow: /
+Disallow: 
 User-agent: Slurp
-Allow: /
+Disallow: 
 User-agent: Teoma
-Allow: /
+Disallow: 
 User-agent: ia_archiver
-Allow: /
+Disallow: 
 User-agent: twiceler
-Allow: /
+Disallow: 
 User-agent: MSNBot
-Allow: /
+Disallow: 
 User-agent: Scrubby
-Allow: /
+Disallow: 
 User-agent: Robozilla
-Allow: /
+Disallow: 
 User-agent: Gigabot
-Allow: /
+Disallow: 
 User-agent: googlebot-image
-Allow: /
+Disallow: 
 User-agent: googlebot-mobile
-Allow: /
+Disallow: 
 User-agent: yahoo-mmcrawler
-Allow: /
+Disallow: 
 User-agent: yahoo-blogs/v3.9
-Allow: /
+Disallow: 
 User-agent: psbot
-Allow: /
+Disallow: 
 User-agent: *
-Allow: /
+Disallow: 
+Disallow: /adhosts/
+Disallow: /adhosts
+Sitemap: https://m.ipv4dns.com/rss.xml
+Sitemap: https://m.ipv4dns.com/sitemap.xml
+Sitemap: https://m.ipv4dns.com/sitemap_baidu.xml
+Sitemap: https://m.ipv4dns.com/sitemap_images.xml
