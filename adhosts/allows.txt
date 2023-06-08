@@ -1,4 +1,5 @@
 #测试版规则
+@@||cdn.ark.qq.com^$important
 @@||data.bilibili.com^$important
 open.gtimg.cn
 apd-vlive.apdcdn.tc.qq.com
