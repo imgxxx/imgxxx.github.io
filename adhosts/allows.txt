@@ -1,4 +1,11 @@
 #测试版规则
+
+browserpagestatic.vivo.com.cn
+wpad.wolf-rack.com
+channels-aladin.wxqcloud.qq.com
+aladin.wxqcloud.qq.com
+qqadapt.qpic.cn
+
 uland.taobao.com
 ||captainbi.com^
 ||ttunion.com^
