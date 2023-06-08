@@ -622,7 +622,7 @@ richmedia.video.qq.com
 livep.l.qq.com
 config.ab.qq.com
 @@||omgid.qq.com
-||*.dlied*.cdntips.net^
+#注释||*.dlied*.cdntips.net^
 tytx.m.cn.miaozhen.com
 ||wup.imtt.qq.com^
 adv.sec.miui.com
