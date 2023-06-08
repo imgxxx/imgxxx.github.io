@@ -1,3 +1,4 @@
+||sdkcloud.e.360.cn
 ||img.yilanvaas.com^$important
 ||img-x.jd.com^$important
 ||im-x.jd.com^$important
