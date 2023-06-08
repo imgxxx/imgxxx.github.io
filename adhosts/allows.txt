@@ -1,5 +1,6 @@
 #测试版规则
 
+||log*-normal-lf.toutiaoapi.com^
 browserpagestatic.vivo.com.cn
 wpad.wolf-rack.com
 channels-aladin.wxqcloud.qq.com
