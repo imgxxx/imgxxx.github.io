@@ -1,3 +1,5 @@
+#测试版规则
+
 ||sdkcloud.e.360.cn
 ||img.yilanvaas.com^$important
 ||img-x.jd.com^$important
@@ -6,6 +8,10 @@
 ^https:\/\/open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ-reject
 
 /ad-sdk/
+/ad-trace/
+/ad-scope/
+||ad.e.
+
 
 @@||polaris3-normal-lq.zijieapi.com
 @@||mon.snssdk.com
