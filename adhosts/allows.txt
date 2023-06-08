@@ -1,4 +1,21 @@
-#测试版规则
+||img.yilanvaas.com^$important
+||img-x.jd.com^$important
+||im-x.jd.com^$important
+
+^https:\/\/open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ-reject
+
+/ad-sdk/
+
+@@||polaris3-normal-lq.zijieapi.com
+@@||mon.snssdk.com
+@@||ssp.qq.com^$important
+@@||stat6.y.qq.com
+@@||stat.y.qq.com
+@@||monitor.music.qq.com
+#腾讯验证码接口
+@@||c.y.qq.com^$important
+
+
 init.ess.apple.com
 kt-prod.ess.apple.com
 p113-caldav.icloud.com
@@ -17,6 +34,7 @@ courier.push.apple.com
 ||*-courier.push.apple.com^$important
 gs-loc.apple.com
 gs-loc-cn.apple.com
+
 
 msgacs.m.taobao.com
 ark-handler-bottom.m.taobao.com
@@ -85,12 +103,10 @@ st-sentinel.vivo.com.cn
 wukong-statics-vivofs.vivo.com.cn
 sspstatic.vivo.com.cn
 stappupgrade.vivo.com.cn
-#注释imgwsdl.vivo.com.cn
 vhs.wwstat.com
 risk-fp-openapi.vivo.com.cn
 ssp.vivo.com.cn
-#注释api.gmquickapp.com
-||bytetos.com^
+#注释||bytetos.com^
 ||ldd.sohu.com^
 trace-h5sdk.vivo.com.cn
 
@@ -114,9 +130,11 @@ analytics.s3.amazonaws.com
 @@||sensors.cloud.tencent.com
 @@||cloudcache.tencentcs.cn
 ||ideamake.cn^
+
+#抖音极速版评论接口
 #注释||api*-normal-lq.toutiaoapi.com^
 #注释||*-normal-lq.zijieapi.com^
-#注释@@||push.kwd.inkuai.com^
+
 
 wxsnsdythumb.wxs.qq.com
 wxsnsdy.wxs.qq.com
@@ -127,10 +145,8 @@ adx-track.domob.cn
 
 adnetstatic.vivo.com.cn
 dsplog-adnet.vivo.com.cn
-#注释qm.hd.sohu.com.cn
 ||*-hglem.ldd.sohu.com^$important
 hot.vrs.sohu.com
-#注释open.mb.hd.sohu.com
 videobacklog.vivo.com.cn
 @@||funshion.com^$important
 ||p*-open-sign.byteimg.com^$important
@@ -138,7 +154,6 @@ videobacklog.vivo.com.cn
 ||p*-tt-video-sprite-sign.byteimg.com^$important
 wukongapi.vivo.com.cn
 ||p*-novel.byteimg.com^$important
-#注释||s*-*.kwimgs.com^$important
 ||p*.ssl.qhimg.com^$important
 dsplog.vivo.com.cn
 
@@ -153,12 +168,10 @@ dsplog.vivo.com.cn
 
 ||ma*-normal-lq.zijieapi.com^$important
 ||chengzijianzhan.cc^
-||qc.bsccdn.net^$important
 @@||img30.360buyimg.com^$important
-||webcast*-core-c-lq.amemv.com^
+#注释||webcast*-core-c-lq.amemv.com^
 v5-re-un802.douyinvod.com
 vc-brain.ndcpp.com
-||amemv.com^
 ||lf*-short.ibytedapm.com^
 ||p*-goku.byteimg.com^
 
@@ -197,7 +210,6 @@ txqcmmov.a.etoote.com
 #百度贴吧
 @@||tieba-ares.cdn.bcebos.com^$important
 @@||tb*.bdstatic.com^$important
-#注释@@||bdstatic.com^$important
 @@||imgsrc.baidu.com^$important
 
 ||h*.appsimg.com^$important
@@ -226,7 +238,7 @@ txqcmmov.a.etoote.com
 
 
 
-||api*-normal-c-lq.amemv.com^
+#注释||api*-normal-c-lq.amemv.com^
 ||rtlog*-applog-lq.amemv.com^
 ||api-access.pangolin-sdk-toutiao*.com^
 ||p*-sign.bdxiguaimg.com^
@@ -253,7 +265,7 @@ api-adservices.apple.com
 ||i-hl.snssdk.com.queniuyk.com^
 ||lf9-open-ma-pkg-sign.bytemastatic.com^
 ||zttapk.v.bsgslb.com^
-||api26-normal-hl.amemv.com^
+#注释||api26-normal-hl.amemv.com^
 ||api-access.pangolin-sdk-toutiao-b.com^
 ||rtlog5-applog-hl.fqnovel.com^
 ||bizsec-auth.alicdn.com^
@@ -263,13 +275,13 @@ api-adservices.apple.com
 ||ma5-normal-hl.zijieapi.com^
 ||ma.zijieapi.com^
 ||ma.zijieapi.com.queniuiq.com^
-||i.snssdk.com^
-||mon.zijieapi.com^
+#注释||i.snssdk.com^
+#注释||mon.zijieapi.com^
 ||i.snssdk.com.queniuyk.com^
 ||whoami.akamai.net^
-||vcs.zijieapi.com^
-||hcdndyn.zjv6.c.cdnhwc2.com^
-||d2-toutiao-ipv6-ml.gslb.ksyuncdn.com^
+#注释||vcs.zijieapi.com^
+#注释||hcdndyn.zjv6.c.cdnhwc2.com^
+#注释||d2-toutiao-ipv6-ml.gslb.ksyuncdn.com^
 ||vcs.zijieapi.com.queniukw.com^
 ||k5-toutiao-ml.gslb.ksyuncdn.com^
 ||is.snssdk.com^
@@ -280,7 +292,7 @@ api-adservices.apple.com
 ||vcl-brain.snssdk.com^
 ||v3-cold.douyinvod.com^
 ||v3-cold.douyinvod.com.queniuso.com^
-||webcast100-ws-c-hl.amemv.com^
+#注释||webcast100-ws-c-hl.amemv.com^
 ||direct.webcast-websocket-lb.hl.bytelb.net^
 ||lf1-webcastcdn-tos.douyinstatic.com^
 ||lf1-webcastcdn-tos.douyinstatic.com.wsglb0.com^
@@ -427,7 +439,7 @@ abtest.volceapplog.com
 @@||world.qpic.cn^
 ||eckwai.com^
 @@||res.servicewechat.com
-||ecombdapi.com^
+#注释||ecombdapi.com^
 ||119.29.29.29
 ||in-neo.com^
 ||caacbook.com.cn^
@@ -468,7 +480,7 @@ log.zijieapi.com
 @@||weixin.qq.com
 @@||puui.qpic.cn
 @@||a.app.qq.com
-@@||news.ssp.qq.com
+||news.ssp.qq.com
 @@||vfiles.gtimg.cn
 @@||inews.gtimg.com^
 @@||isee.weishi.qq.com^
@@ -744,7 +756,7 @@ t7z.cupid.ptqy.gitv.tv
 @@||stat2-ans.chaoxing.com^
 ||fake-domain^$important
 ||tr.byteurl.cn^$important
-||fqnovel.com^$important
+#注释||fqnovel.com^$important
 ||ads5-normal.zijieapi.com^$important
 ||ads4-normal.zijieapi.com^$important
 ||ads3-normal.zijieapi.com^$important
@@ -754,7 +766,7 @@ t7z.cupid.ptqy.gitv.tv
 ||gecko5-lf.zijieapi.com^$important
 ||feedback-c.zijieapi.com^$important
 ||ads3-normal-lf.zijieapi.com^$important
-||tnc3-bjlgy.zijieapi.com^$important
+@@||tnc3-bjlgy.zijieapi.com^$important
 ||mobilelog.cc.netease.com^$important
 @@||sys.miui.com^
 @@||vipapi.wps.cn^
@@ -1193,15 +1205,7 @@ access.pangolin-sdk-toutiao-b.com
 ||gini.snssdk.com^$app=com.dragon.read
 ||bsync3-normal-hl.zijieapi.com^$app=com.dragon.read
 ||p9-be-pack-sign.pglstatp-toutiao.com/web.business.image/202202215d0dacb310d0ae7747ec8ce7~tplv-qgppglrh0x-noop.jpeg?x-expires=1942272000&x-signature=E3r3BAfm%2B1hGXhwLiOYL872nAes%3D$app=com.dragon.read
-||lf1-ttcdn-tos.pstatp.com
-||lf3-ttcdn-tos.pstatp.com
-lf6-ttcdn-tos.pstatp.com
-lf9-ttcdn-tos.pstatp.com
-lf3-cdn-tos.bytegecko.com
-lf6-cdn-tos.bytegecko.com
-lf3-common-ckv-tos.pstatp.com
-lf6-common-ckv-tos.pstatp.com
-lf9-common-ckv-tos.pstatp.com
+
 ||extlog.snssdk.com^$app=com.keepmobi.wanningxiangqidazhaoban,important
 ||ulogs.umengcloud.com^$app=com.keepmobi.wanningxiangqidazhaoban
 ||api-access.pangolin-sdk-toutiao-b.com^$app=com.keepmobi.wanningxiangqidazhaoban
@@ -1308,7 +1312,7 @@ lf9-common-ckv-tos.pstatp.com
 ||pangolin.snssdk.com^$important
 ||open.kuaishouzt.com^$important
 ||open.kwaizt.com^$important
-||*-normal-hl.zijieapi.com^$important
+#注释||*-normal-hl.zijieapi.com^$important
 ||vrbt.mobi^$important
 ||uem.migu.cn^$important
 @@||huatuo.qq.com^$important
