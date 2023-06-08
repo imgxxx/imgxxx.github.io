@@ -1,4 +1,11 @@
 #测试版规则
+uland.taobao.com
+||captainbi.com^
+||ttunion.com^
+||admin6.com^
+||douhao.com^
+||tobidad.com^
+||sigmob.com^
 @@||cdn.ark.qq.com^$important
 @@||data.bilibili.com^$important
 open.gtimg.cn
@@ -15,7 +22,7 @@ apd-vlive.apdcdn.tc.qq.com
 /ad-trace/
 /ad-scope/
 ||ad.e.
-
+||adash
 
 @@||polaris3-normal-lq.zijieapi.com
 @@||mon.snssdk.com
