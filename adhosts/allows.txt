@@ -1,5 +1,7 @@
 #测试版规则
 logv2.ireader.com
+adcenter.zhangyue.com
+||ah*.zhangyue.com^$important
 imagestatic.kaixinkan.com.cn
 mwad.83084.com
 83084.com
