@@ -1,4 +1,6 @@
 #测试版规则
+||admobile.top^$important
+ad.openinstall.io
 logv2.ireader.com
 adcenter.zhangyue.com
 ||ah*.zhangyue.com^$important
