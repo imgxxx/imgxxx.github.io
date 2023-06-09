@@ -1,4 +1,5 @@
 #测试版规则
+||p*-sign.toutiaoimg.com^
 ||pg-ad-b*.ws.126.net^$important
 ||log*-normal-lf.toutiaoapi.com^
 browserpagestatic.vivo.com.cn
@@ -777,7 +778,6 @@ t7z.cupid.ptqy.gitv.tv
 @@||mp.huangye.miui.com^
 @@||tracking.intl.miui.com^
 @@||bigota.d.miui.com^
-@@||update
 @@||stat2-ans.chaoxing.com^
 ||fake-domain^$important
 ||tr.byteurl.cn^$important
@@ -802,7 +802,6 @@ t7z.cupid.ptqy.gitv.tv
 @@||tiantianfunds.com^
 @@||1234567.com.cn^
 @@||hw.zuimeitianqi.com^
-@@||o2o.api.xiaomi.com^
 @@||pandora.xiaomi.com^
 ||hwmov.a.kwimgs.com^
 ||alimov6.a.yximgs.com^
