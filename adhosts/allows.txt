@@ -1,5 +1,5 @@
 #测试版规则
-||p*-sign.toutiaoimg.com^
+
 ||pg-ad-b*.ws.126.net^$important
 ||log*-normal-lf.toutiaoapi.com^
 browserpagestatic.vivo.com.cn
