@@ -94,32 +94,32 @@ ec.kwd.inkuai.com
 #注释@@||gm.mmstat.com^$important
 #注释@@||wgo.mmstat.com^$important
 
-@@||ort-stsdk.vivo.com.cn^$important
+||ort-stsdk.vivo.com.cn^$important
 #注释@@||x.da.hunantv.com^$important
-@@||moni-onrt-stsdk.vivo.com.cn^$important
+||moni-onrt-stsdk.vivo.com.cn^$important
 @@||mb.hd.sohu.com.cn^$important
 #注释@@||s6.irs03.com^$important
-@@||stsdk.vivo.com.cn^$important
+||stsdk.vivo.com.cn^$important
 @@||hot.vrs.sohu.com^$important
 @@||data.vod.itc.cn^$important
-@@||monitor-stsdk.vivo.com.cn^$important
-@@||ivideoprt-stsdk.vivo.com.cn^$important
-@@||pointsdk.vivo.com.cn^$important
-@@||moni-ort-stsdk.vivo.com.cn^$important
+||monitor-stsdk.vivo.com.cn^$important
+||ivideoprt-stsdk.vivo.com.cn^$important
+||pointsdk.vivo.com.cn^$important
+||moni-ort-stsdk.vivo.com.cn^$important
 @@||api.tv.sohu.com
-@@||prt-stsdk.vivo.com.cn
+||prt-stsdk.vivo.com.cn
 @@||videoplayonrt-stsdk.vivo.com.cn
 @@||pfpdonrt-stsdk.vivo.com.cn
 @@||funshion.net^$important
 
 hw-ot-ad.a.yximgs.com
 ads-marketing-vivofs.vivo.com.cn
-@@||ivideoonrt-stsdk.vivo.com.cn^$important
-@@||brort.stsdk.vivo.com.cn^$important
-@@||onrt-stsdk.vivo.com.cn^$important
-@@||bronrt.stsdk.vivo.com.cn^$important
-@@||ivideoort-stsdk.vivo.com.cn^$important
-@@||brpnrt.stsdk.vivo.com.cn^$important
+||ivideoonrt-stsdk.vivo.com.cn^$important
+||brort.stsdk.vivo.com.cn^$important
+||onrt-stsdk.vivo.com.cn^$important
+||bronrt.stsdk.vivo.com.cn^$important
+||ivideoort-stsdk.vivo.com.cn^$important
+||brpnrt.stsdk.vivo.com.cn^$important
 
 
 zhan.vivo.com.cn
@@ -132,11 +132,10 @@ stappupgrade.vivo.com.cn
 vhs.wwstat.com
 risk-fp-openapi.vivo.com.cn
 ssp.vivo.com.cn
-#注释||bytetos.com^
 ||ldd.sohu.com^
 trace-h5sdk.vivo.com.cn
 
-@@||ivideopnrt-stsdk.vivo.com.cn^
+||ivideopnrt-stsdk.vivo.com.cn^
 open.toutiao.com
 ||lf*-open-ma-pkg-sign.bytemastatic.com^
 
