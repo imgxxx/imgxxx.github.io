@@ -1,5 +1,5 @@
 #测试版规则
-
+||pg-ad-b*.ws.126.net^$important
 ||log*-normal-lf.toutiaoapi.com^
 browserpagestatic.vivo.com.cn
 wpad.wolf-rack.com
