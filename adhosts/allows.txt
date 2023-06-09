@@ -1,4 +1,5 @@
 #测试版规则
+@@||webstatic.mihoyo.com^$important
 cdn.cnbj1.fds.api.mi-img.com
 ||p*-pro.a.yximgs.com^
 gw-w.jiaoliuqu.com
