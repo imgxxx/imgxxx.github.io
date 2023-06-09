@@ -1,5 +1,6 @@
 #测试版规则
-
+||p*-pro.a.yximgs.com^
+gw-w.jiaoliuqu.com
 ||pg-ad-b*.ws.126.net^$important
 ||log*-normal-lf.toutiaoapi.com^
 browserpagestatic.vivo.com.cn
@@ -164,7 +165,7 @@ analytics.s3.amazonaws.com
 
 wxsnsdythumb.wxs.qq.com
 wxsnsdy.wxs.qq.com
-||*.qc.dolfincdnx.net^$important
+#注释||*.qc.dolfincdnx.net^$important
 ||beizi.biz^
 adx-track.domob.cn
 ||domob.cn^$important
