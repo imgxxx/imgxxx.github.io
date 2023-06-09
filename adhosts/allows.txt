@@ -1,6 +1,5 @@
 #测试版规则
 @@||webstatic.mihoyo.com^$important
-cdn.cnbj1.fds.api.mi-img.com
 ||p*-pro.a.yximgs.com^
 gw-w.jiaoliuqu.com
 ||pg-ad-b*.ws.126.net^$important
@@ -740,8 +739,6 @@ t7z.cupid.ptqy.gitv.tv
 @@||yoda.kwd.inkuai.com^
 @@||3w.huanqiu.com^
 ||t1.a.market.xiaomi.com^
-!注释||cdn.cnbj1.fds.api.mi-img.com^
-!注释||cdn.cnbj*.fds.api.mi-img.com^
 ||lite.a.market.xiaomi.com^
 @@||centertime.ksyun.com
 @@||ossapi.baidu.com
@@ -794,7 +791,7 @@ t7z.cupid.ptqy.gitv.tv
 ||gecko5-lf.zijieapi.com^$important
 ||feedback-c.zijieapi.com^$important
 ||ads3-normal-lf.zijieapi.com^$important
-@@||tnc3-bjlgy.zijieapi.com^$important
+||tnc3-bjlgy.zijieapi.com^$important
 ||mobilelog.cc.netease.com^$important
 @@||sys.miui.com^
 @@||vipapi.wps.cn^
