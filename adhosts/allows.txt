@@ -1,4 +1,16 @@
 #测试版规则
+logv2.ireader.com
+imagestatic.kaixinkan.com.cn
+mwad.83084.com
+83084.com
+4376.cc
+77000.vip
+61611112.cc
+finderad.video.qq.com
+616.com
+globalacceleratecdn-paw.out976.com
+out976.com
+||adashx
 @@||webstatic.mihoyo.com^$important
 ||p*-pro.a.yximgs.com^
 gw-w.jiaoliuqu.com
