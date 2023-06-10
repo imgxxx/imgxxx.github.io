@@ -1,4 +1,8 @@
 #测试版规则
+
+qih033.xyz
+tof717.xyz
+cdn.image-mangdiaxyz.com
 @@||webstatic.mihoyo.com^$important
 @@||sdk-webstatic.mihoyo.com^$important
 ||admobile.top^$important
