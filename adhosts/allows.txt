@@ -1,5 +1,5 @@
 #测试版规则
-
+||images-huoshan.com^$important
 qih033.xyz
 tof717.xyz
 cdn.image-mangdiaxyz.com
