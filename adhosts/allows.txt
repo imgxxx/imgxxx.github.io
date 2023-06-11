@@ -1,8 +1,7 @@
 #测试版规则
 i.youjingnetwork.com
-img.alicdn.com
-alpha.alicdn.com
-@@||*.qc.dolfincdnx.net^$important
+||img.funshion.com^$important
+||img*.funshion.com^$important
 #注释pbaccess.video.qq.com
 #注释||finder*.video.qq.com^
 ||log*-lq.qishui.com^
@@ -249,7 +248,7 @@ dsplog-adnet.vivo.com.cn
 ||*-hglem.ldd.sohu.com^$important
 hot.vrs.sohu.com
 videobacklog.vivo.com.cn
-@@||funshion.com^$important
+#注释@@||funshion.com^$important
 ||p*-open-sign.byteimg.com^$important
 ||p*-open.byteimg.com^$important
 ||p*-tt-video-sprite-sign.byteimg.com^$important
