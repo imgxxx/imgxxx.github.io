@@ -1,4 +1,5 @@
 #测试版规则
+@@||iwx.mail.qq.com^$important
 vcs.zijieapi.com
 g.vip.qq.com
 ||p*-game-adapter.ejoy.com^
