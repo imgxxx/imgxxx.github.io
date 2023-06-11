@@ -304,8 +304,8 @@ txqcmmov.a.etoote.com
 ||cloudapp.azure.com^$important
 ||img-vip-ssl.a.88cdn.com
 
-#今日头条
-||tnc3-alisc1.zijieapi.com^
+#今日头条，抖音极速版接口
+@@||tnc*-alisc*.zijieapi.com^
 
 #抖音视频接口
 @@||pull-lls-spe-l*.douyincdn.com^
