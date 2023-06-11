@@ -1,4 +1,7 @@
 #测试版规则
+||log*-lq.qishui.com^
+||rtlog*-applog-lf.amemv.com^
+||log*-applog-lf.fqnovel.com^
 ||olvip.vip^$important
 advagent.olvip.vip
 adsfilebssdlbig.ali.kugou.com
