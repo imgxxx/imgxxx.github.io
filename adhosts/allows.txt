@@ -1,4 +1,6 @@
 #测试版规则
+g.vip.qq.com
+||p*-game-adapter.ejoy.com^
 ||ads.95516.com^
 ||track.bankcomm.com^
 ||tongji.koowo.cn^
