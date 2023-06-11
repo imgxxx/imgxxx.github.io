@@ -1,5 +1,6 @@
 #测试版规则
 i.youjingnetwork.com
+log.tpns.tencent.com
 ||img.funshion.com^$important
 ||img*.funshion.com^$important
 #注释pbaccess.video.qq.com
@@ -248,7 +249,7 @@ dsplog-adnet.vivo.com.cn
 ||*-hglem.ldd.sohu.com^$important
 hot.vrs.sohu.com
 videobacklog.vivo.com.cn
-#注释@@||funshion.com^$important
+||funshion.com^$important
 ||p*-open-sign.byteimg.com^$important
 ||p*-open.byteimg.com^$important
 ||p*-tt-video-sprite-sign.byteimg.com^$important
