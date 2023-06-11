@@ -1,4 +1,8 @@
 #测试版规则
+i.youjingnetwork.com
+img.alicdn.com
+alpha.alicdn.com
+@@||*.qc.dolfincdnx.net^$important
 #注释pbaccess.video.qq.com
 #注释||finder*.video.qq.com^
 ||log*-lq.qishui.com^
