@@ -1,4 +1,5 @@
 #测试版规则
+||finder*.video.qq.com^
 ||log*-lq.qishui.com^
 ||rtlog*-applog-lf.amemv.com^
 ||log*-applog-lf.fqnovel.com^
