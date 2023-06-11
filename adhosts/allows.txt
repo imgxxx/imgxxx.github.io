@@ -1,4 +1,7 @@
 #测试版规则
+||olvip.vip^$important
+advagent.olvip.vip
+adsfilebssdlbig.ali.kugou.com
 @@||iwx.mail.qq.com^$important
 vcs.zijieapi.com
 g.vip.qq.com
