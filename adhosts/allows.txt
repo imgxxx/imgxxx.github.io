@@ -1,6 +1,5 @@
 #测试版规则
-oss.weread.qq.com
-weread.qq.com
+
 dads.togothermany.cn
 saad.ms.zhangyue.net
 jpe315.xyz
