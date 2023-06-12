@@ -540,13 +540,13 @@ apmplus.volces.com
 ||sensorsdata.cn^
 api.convertlab.com
 ||*-adaptive-pull.video-voip.com^
-||weread-*.file.myqcloud.com^
+#注释||weread-*.file.myqcloud.com^
 misc.360buyimg.com
 ||*-adaptive.pull.yximgs.com^
 img.adprod.cn
 api.adprod.cn
 ||adprod.cn^
-||weread-picture-*.file.myqcloud.com^
+#注释||weread-picture-*.file.myqcloud.com^
 ad-flow.xg.tagtic.cn
 loggw.alipaydns.com
 log.mmstat.com
