@@ -12,10 +12,15 @@
 ||ad.oceanengine.com^
 ||oceanengine.com^
 ||zodream.cn^
+
+#搜狗输入法
+@@||img.shouji.sogou.com^$important
 @@||get.sogou.com^$important
 @@||v2.get.sogou.com^$important
 @@||account.sogou.com^$important
 @@||tencentwm.com^$important
+
+
 applog.zijieapi.com
 @@||metrics-picture.d.meituan.net^$important
 sdk.kaijia.com
