@@ -1,4 +1,6 @@
 #测试版规则
+s-adashx.ut.taobao.com
+v6-adashx.ut.taobao.com
 alimama.taobao.com
 ||alimama*.taobao.com^
 data-sdk-uuid-log.d.meituan.net
@@ -8,6 +10,7 @@ sdk.xinguad.com
 ||adintl.cn^
 sdk-taobao-aliyun.zxb2b.top
 bksdksp.video.qq.com
+
 #猫眼广告
 sdk.hzsanjiaomao.com
 ||hzsanjiaomao.com^
