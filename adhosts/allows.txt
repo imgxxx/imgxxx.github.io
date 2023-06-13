@@ -1,4 +1,6 @@
 #测试版规则
+
+@@||tencentwm.com^$important
 applog.zijieapi.com
 @@||metrics-picture.d.meituan.net^$important
 sdk.kaijia.com
