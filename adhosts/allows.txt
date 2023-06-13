@@ -1,5 +1,17 @@
 #测试版规则
 applog.zijieapi.com
+@@||metrics-picture.d.meituan.net^$important
+sdk.kaijia.com
+||kaijia.com^
+sdksp6.video.qq.com
+sdk-anti-addiction.g.mi.com
+drsdk.excelliance.cn
+||excelliance.cn^
+sdk.bjzghd.com
+
+
+||sdk.bjzghd.com^
+
 
 ||rtlog*-applog-lq.ixigua.com^
 ||log*-applog-lq.ixigua.com^
@@ -240,7 +252,6 @@ ec.kwd.inkuai.com
 ||ort-stsdk.vivo.com.cn^$important
 #注释@@||x.da.hunantv.com^$important
 ||moni-onrt-stsdk.vivo.com.cn^$important
-@@||mb.hd.sohu.com.cn^$important
 #注释@@||s6.irs03.com^$important
 ||stsdk.vivo.com.cn^$important
 @@||hot.vrs.sohu.com^$important
@@ -251,8 +262,6 @@ ec.kwd.inkuai.com
 ||moni-ort-stsdk.vivo.com.cn^$important
 @@||api.tv.sohu.com
 ||prt-stsdk.vivo.com.cn
-@@||videoplayonrt-stsdk.vivo.com.cn
-@@||pfpdonrt-stsdk.vivo.com.cn
 @@||funshion.net^$important
 
 hw-ot-ad.a.yximgs.com
@@ -1239,7 +1248,6 @@ tj.video.qq.com
 ||voiceads.cn^
 @@||i5i.site^
 ||cibntv.net^
-||bogon^
 ||log-api.pangolin-sdk-toutiao.com^
 ||api-access.pangolin-sdk-toutiao-b.com^
 ||gap.work.weixin.qq.com^
@@ -1250,7 +1258,6 @@ tj.video.qq.com
 ||api.applink.mob.com^
 ||client-log.poizon.com
 ||fp-it.fengkongcloud.com
-||hreport.meituan.com^
 ||s1.pstatp.com^
 ||s2.pstatp.com^
 ||api-access.pangolin-sdk-toutiao.com
@@ -2481,7 +2488,8 @@ ad.doubleclick.net.domain.name^
 |ad.kataweb.it^
 |ad.kau.li^
 |ad.kaupangkrypto.no^
-|ad.kaupangkrypto.nowww.ad.kaupangkrypto.no^
+|ad.kaupangkrypto.no
+www.ad.kaupangkrypto.no^
 |ad.kddi-fs.com^
 |ad.keencw.cn^
 |ad.keenspace.com^
@@ -2572,7 +2580,8 @@ ad.doubleclick.net.domain.name^
 |ad.leadgid.ru^
 |ad.leap.app^
 |ad.lectinect.no^
-|ad.lectinect.nowww.ad.lectinect.no^
+|ad.lectinect.no
+www.ad.lectinect.no^
 |ad.leetoou.com^
 |ad.legalaxy.cn.domain.name^
 |ad.legit.si^
