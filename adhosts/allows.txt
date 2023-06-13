@@ -1,5 +1,5 @@
 #测试版规则
-
+data-sdk-uuid-log.d.meituan.net
 sdklog.adintl.cn
 ||xinguad.com^
 sdk.xinguad.com
