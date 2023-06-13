@@ -1,4 +1,17 @@
 #测试版规则
+||xiyu-ad.com^
+||feiniuad.com^
+||imgdb.cn^
+||adxtw.com^
+||fzrrmj.com^
+||aodianyun.com^
+||czobjm.xyz^
+||xiaoyaoji.cn^
+||dou.juxuan.net^
+||juxuan.net^
+||ad.oceanengine.com^
+||oceanengine.com^
+||zodream.cn^
 @@||get.sogou.com^$important
 @@||v2.get.sogou.com^$important
 @@||account.sogou.com^$important
