@@ -13,6 +13,16 @@ sdk.bjzghd.com
 @@||sentry.zuoyebang.cc^$important
 ||sdk.bjzghd.com^
 
+#作业帮
+@@||sanxia-com.cdnjtzy.com^$important
+@@||napi-img.cdnjtzy.com^$important
+@@||xfe.cdnjtzy.com^$important
+@@||syh-cube.cdnjtzy.com^$important
+@@||gtact.cdnjtzy.com^$important
+@@||syh-imp.cdnjtzy.com^$important
+@@||syh-imp.cdnjtzy.com^$important
+
+
 
 ||rtlog*-applog-lq.ixigua.com^
 ||log*-applog-lq.ixigua.com^
