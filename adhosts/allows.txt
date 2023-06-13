@@ -1,4 +1,14 @@
 #测试版规则
+applog.zijieapi.com
+
+||rtlog*-applog-lq.ixigua.com^
+||log*-applog-lq.ixigua.com^
+||rtlog*-applog-lf.novelfm.com^
+||log*-applog-lf.novelfm.com^
+||log*-applog-hl.fqnovel.com^
+||rtlog*-applog-lf.fqnovel.com^
+
+log.ireader.com
 s-adashx.ut.taobao.com
 v6-adashx.ut.taobao.com
 alimama.taobao.com
