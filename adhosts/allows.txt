@@ -1,6 +1,6 @@
 #测试版规则
 
-cdn.cnbj1.fds.api.mi-img.com
+#注释cdn.cnbj1.fds.api.mi-img.com
 
 ||xiyu-ad.com^
 ||feiniuad.com^
