@@ -1,6 +1,14 @@
 #测试版规则
 
 #恶意网站
+||by6.app^
+||3280.com^
+||txzb.app^
+||qczb.app^
+||sxzb.app^
+||yxzb.tv^
+||xb.app^
+||nt.app^
 ||143.cc^
 ||14300.cc^
 ||zu5x.gaosubao.com.cn^
