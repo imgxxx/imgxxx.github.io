@@ -70,7 +70,6 @@ bksdksp.video.qq.com
 sdk.hzsanjiaomao.com
 ||hzsanjiaomao.com^
 
-||upload
 ||webcast*-open-lf.douyin.com^
 hdozp.jciwztfj.com
 ||jciwztfj.com^
