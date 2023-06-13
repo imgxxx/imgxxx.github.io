@@ -8,7 +8,7 @@ sdk-anti-addiction.g.mi.com
 drsdk.excelliance.cn
 ||excelliance.cn^
 sdk.bjzghd.com
-
+@@||syh.zybang.com^$important
 
 ||sdk.bjzghd.com^
 
@@ -46,7 +46,6 @@ hdozp.jciwztfj.com
 ||p*-orange.byteorg.com^
 ||lf*-orange.byteorge.com^
 ||p*-orange.byteorge.com^
-||haokan001.xyz^
 ||huozhan.org^
 ||dyp011.com^
 ||tj0001.top^
