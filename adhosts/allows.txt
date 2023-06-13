@@ -1,4 +1,6 @@
 #测试版规则
+alimama.taobao.com
+||alimama*.taobao.com^
 data-sdk-uuid-log.d.meituan.net
 sdklog.adintl.cn
 ||xinguad.com^
