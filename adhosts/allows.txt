@@ -242,7 +242,7 @@ backuprabbit.com
 gsa.apple.com
 pds-init.ess.apple.com
 cloudsponcer.com
-gateway.icloud.com
+#注释gateway.icloud.com
 identity.ess.apple.com
 iphone-ld.apple.com
 init.itunes.apple.com
