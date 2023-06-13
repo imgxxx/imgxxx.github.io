@@ -8,8 +8,9 @@ sdk-anti-addiction.g.mi.com
 drsdk.excelliance.cn
 ||excelliance.cn^
 sdk.bjzghd.com
-@@||syh.zybang.com^$important
-
+||syh2.zybang.com^$important
+@@||n*.zuoyebang.cc^$important
+@@||sentry.zuoyebang.cc^$important
 ||sdk.bjzghd.com^
 
 
