@@ -1,4 +1,17 @@
 #测试版规则
+
+sdklog.adintl.cn
+||xinguad.com^
+sdk.xinguad.com
+||adintl.cn^
+sdk-taobao-aliyun.zxb2b.top
+bksdksp.video.qq.com
+#猫眼广告
+sdk.hzsanjiaomao.com
+||hzsanjiaomao.com^
+
+||upload
+||webcast*-open-lf.douyin.com^
 hdozp.jciwztfj.com
 ||jciwztfj.com^
 ||vhealing.neiod.xyz
