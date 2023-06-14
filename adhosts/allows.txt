@@ -1,4 +1,7 @@
 #测试版规则
+@@||mbd.baidu.com^$important
+@@||sofire.baidu.com^$important
+@@||nsclick.baidu.com^$important
 
 #恶意网站
 ||by6.app^
@@ -325,7 +328,7 @@ mamasearchad.cloudvideocdn.taobao.com
 pcvideotx.titan.mgtv.com
 pcvideoctyun.titan.mgtv.com
 aphone.v1.mgtv.com
-||bcebos.com^$important
+#注释||bcebos.com^$important
 ||ssp.
 ||*.ssp.
 ||*-ssp-*.
