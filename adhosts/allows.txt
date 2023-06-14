@@ -2,7 +2,8 @@
 @@||c-ctrip.com^
 @@||metrics-picture.dreport.meituan.net^
 
-
+||heytapmobi.com^
+adtrackv3.dodjoy.com
 sdk.qzbonline.com
 sdk.dfzq.com.cn
 sdk.tianmu.mobi
