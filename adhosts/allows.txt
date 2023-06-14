@@ -4,6 +4,8 @@
 @@||www.meituan.com
 @@||meituan.net
 
+||sankuai.com^
+
 ||xfinfr.com^$important
 
 #注释||dreport.meituan.net
