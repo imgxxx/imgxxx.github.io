@@ -1,7 +1,8 @@
 #测试版规则
-#注释@@||c-ctrip.com^
-dimg04.c-ctrip.com
-youimg1.c-ctrip.com
+@@||c-ctrip.com^
+||dimg04.c-ctrip.com^$important
+||youimg1.c-ctrip.com^$important
+
 
 ||xfinfr.com^$important
 
