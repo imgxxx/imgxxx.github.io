@@ -1,5 +1,10 @@
 #测试版规则
 
+activity.kuaiyoudeng.cn
+stvideo.kaixinkan.com.cn
+||kuaiyoudeng.cn^
+||kaixinkan.com.cn^
+
 @@||s.click.tmall.com^
 @@||s.click.taobao.com^
 @@||c-ctrip.com^
