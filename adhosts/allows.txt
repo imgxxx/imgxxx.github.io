@@ -1,5 +1,5 @@
 #测试版规则
-
+@@||wn.pos.baidu.com^$important
 
 
 @@||mbd.baidu.com^$important
@@ -1082,7 +1082,6 @@ t7z.cupid.ptqy.gitv.tv
 @@||apple.com.cn^
 @@||apple-dns.net^
 @@||api.installer.xiaomi.com^
-#注释@@||toutiaoimg.com^
 ||i-hl.snssdk.com^$app=com.dragon.read
 ||cdn-pic.com^
 ||chunxing67.xyz^
@@ -1091,7 +1090,6 @@ t7z.cupid.ptqy.gitv.tv
 ||gnrty.kmjkwe.xyz^
 ||2134.com.cn^
 @@||gamecenter.qq.com^$important
-#注释@@||apple.com^$important
 ||p3-reading-sign.fqnovelpic.com^$app=com.dragon.read
 ||pangolin-sdk-toutiao.com^
 ||zijieapi.com^$app=com.dragon.read
@@ -1170,7 +1168,7 @@ t7z.cupid.ptqy.gitv.tv
 ||otheve.beacon.qq.com^$important
 ||aeventlog.beacon.qq.com^$important
 @@||tianqi.2345.com^$important
-||mime.baidu.com^$important
+#注释||mime.baidu.com^$important
 @@||appcloud2.zhihu.com^$important
 @@||appcloud2.in.zhihu.com^$important
 @@||zhihu-web-analytics.zhihu.com^$important
