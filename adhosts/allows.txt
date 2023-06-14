@@ -48,6 +48,8 @@ anti-sdk-report.m.jd.com
 @@||nsclick.baidu.com^$important
 
 #恶意网站
+cujox.chicmifi.com
+||chicmifi.com^
 ||*.clb.ap-guangzhou.tencentclb.com^
 ||haowusong.com^
 ||f1ytjb.cn^
