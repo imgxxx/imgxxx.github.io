@@ -347,26 +347,6 @@ apd-vlive.apdcdn.tc.qq.com
 @@||c.y.qq.com^$important
 
 
-init.ess.apple.com
-kt-prod.ess.apple.com
-p113-caldav.icloud.com
-edge-102.sesto4.icloud-content.com
-p31-content.icloud.com
-setup.icloud.com
-backuprabbit.com
-gsa.apple.com
-pds-init.ess.apple.com
-cloudsponcer.com
-#注释gateway.icloud.com
-identity.ess.apple.com
-iphone-ld.apple.com
-init.itunes.apple.com
-courier.push.apple.com
-||*-courier.push.apple.com^$important
-gs-loc.apple.com
-gs-loc-cn.apple.com
-
-
 msgacs.m.taobao.com
 ark-handler-bottom.m.taobao.com
 
