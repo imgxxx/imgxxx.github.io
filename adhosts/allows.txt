@@ -1,4 +1,7 @@
 #测试版规则
+
+@@||s.click.tmall.com^
+@@||s.click.taobao.com^
 @@||c-ctrip.com^
 @@||metrics-picture.dreport.meituan.net^
 
