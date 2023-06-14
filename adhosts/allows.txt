@@ -1,8 +1,12 @@
 #测试版规则
 @@||c-ctrip.com^
-
+@@||metrics-picture.dreport.meituan.net^
+@@||www.meituan.com
+@@||meituan.net
 
 ||xfinfr.com^$important
+
+#注释||dreport.meituan.net
 
 #百度输入法
 @@||wn.pos.baidu.com^$important
@@ -13,6 +17,11 @@
 @@||nsclick.baidu.com^$important
 
 #恶意网站
+
+||qqf802.xyz^
+||fpe744.xyz^
+||akpme.viroffyy.com^
+||viroffyy.com^
 ||by6.app^
 ||3280.com^
 ||txzb.app^
@@ -1370,7 +1379,6 @@ tj.video.qq.com
 ||v.weixiaov.club^
 ||fbih5report.3g.qq.com^
 ||tobapplog.ctobsnssdk.com
-||dreport.meituan.net
 ||h-adashx.ut.taobao.com
 ||tj1.youzanyun.com
 ||tobapplog.ctobsnssdk.com
