@@ -13,6 +13,13 @@ sdk.z74d.cn
 sdk.sxnfss.com
 ||tianmu.mobi^
 ||heytapimage.com^
+sdk.fliduo.cn
+sdk.llyclub.cn
+||fliduo.cn^
+res.flysdk.cn
+sdk.xiaoeknow.com
+sdkfp.jd.com
+anti-sdk-report.m.jd.com
 
 
 ||sankuai.com^
@@ -30,7 +37,7 @@ sdk.sxnfss.com
 @@||nsclick.baidu.com^$important
 
 #恶意网站
-
+||haowusong.com^
 ||f1ytjb.cn^
 ||f52962.com^
 ||qqf802.xyz^
