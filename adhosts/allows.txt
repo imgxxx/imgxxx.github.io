@@ -47,6 +47,7 @@ anti-sdk-report.m.jd.com
 @@||nsclick.baidu.com^$important
 
 #恶意网站
+||*.clb.ap-guangzhou.tencentclb.com^
 ||haowusong.com^
 ||f1ytjb.cn^
 ||f52962.com^
