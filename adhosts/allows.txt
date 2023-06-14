@@ -1,7 +1,7 @@
 #测试版规则
 @@||wn.pos.baidu.com^$important
-
-
+@@||res.mi.baidu.com^$important
+@@||r6.mo.baidu.com^$important
 @@||mbd.baidu.com^$important
 @@||sofire.baidu.com^$important
 @@||nsclick.baidu.com^$important
