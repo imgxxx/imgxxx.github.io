@@ -4,6 +4,17 @@
 @@||www.meituan.com
 @@||meituan.net
 
+sdk.qzbonline.com
+sdk.dfzq.com.cn
+sdk.tianmu.mobi
+sdk.cm1758.com
+sdk.rizhao9.com
+sdk.z74d.cn
+sdk.sxnfss.com
+||tianmu.mobi^
+
+
+
 ||sankuai.com^
 
 ||xfinfr.com^$important
@@ -20,6 +31,8 @@
 
 #恶意网站
 
+||f1ytjb.cn^
+||f52962.com^
 ||qqf802.xyz^
 ||fpe744.xyz^
 ||akpme.viroffyy.com^
