@@ -1,5 +1,6 @@
 #测试版规则
 
+@@||bj.bcebos.com^$important
 activity.kuaiyoudeng.cn
 stvideo.kaixinkan.com.cn
 ||kuaiyoudeng.cn^
