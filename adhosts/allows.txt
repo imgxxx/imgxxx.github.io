@@ -12,6 +12,7 @@ stvideo.kaixinkan.com.cn
 @@||c-ctrip.com^
 @@||metrics-picture.dreport.meituan.net^
 
+sdk.zgbxxffww.com
 ||heytapmobi.com^
 adtrackv3.dodjoy.com
 sdk.qzbonline.com
