@@ -1,4 +1,7 @@
 #测试版规则
+#注释@@||c-ctrip.com^
+dimg04.c-ctrip.com
+
 ||xfinfr.com^$important
 
 #百度输入法
@@ -702,13 +705,13 @@ apmplus.volces.com
 ||sensorsdata.cn^
 api.convertlab.com
 ||*-adaptive-pull.video-voip.com^
-#注释||weread-*.file.myqcloud.com^
+
 misc.360buyimg.com
 ||*-adaptive.pull.yximgs.com^
 img.adprod.cn
 api.adprod.cn
 ||adprod.cn^
-#注释||weread-picture-*.file.myqcloud.com^
+
 ad-flow.xg.tagtic.cn
 loggw.alipaydns.com
 log.mmstat.com
@@ -741,7 +744,6 @@ taojin.map.n.shifen.com
 httpdns.yunxindns.com
 ||httpdns.
 ||na*-na*.wagbridge.alibaba.tanx.com.gds.alibabadns.com^
-#注释||alibabadns.com^$important
 h5.vedamobi.com
 auni.telecome.cn
 log.mmstat.com
@@ -893,7 +895,6 @@ richmedia.video.qq.com
 livep.l.qq.com
 config.ab.qq.com
 @@||omgid.qq.com
-#注释||*.dlied*.cdntips.net^
 tytx.m.cn.miaozhen.com
 ||wup.imtt.qq.com^
 adv.sec.miui.com
@@ -1027,7 +1028,7 @@ t7z.cupid.ptqy.gitv.tv
 ||globalapi.ad.xiaomi.com
 ||api.ad.intl.xiaomi.com
 @@||stats.music.xiaomi.com^
-@@||c-ctrip.com^
+
 @@||mp.huangye.miui.com^
 @@||tracking.intl.miui.com^
 @@||bigota.d.miui.com^
