@@ -1,8 +1,7 @@
 #测试版规则
 @@||c-ctrip.com^
 @@||metrics-picture.dreport.meituan.net^
-@@||www.meituan.com
-@@||meituan.net
+
 
 sdk.qzbonline.com
 sdk.dfzq.com.cn
