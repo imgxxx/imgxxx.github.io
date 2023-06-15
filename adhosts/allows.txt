@@ -1,5 +1,7 @@
 #测试版规则
 
+p1.meituan.net
+
 #快手视频封面
 @@||s*-*.kwimgs.com^
 
