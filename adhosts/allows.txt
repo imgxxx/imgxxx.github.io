@@ -1,5 +1,6 @@
 #测试版规则
 
+||p*-fanqiesdk-sign.fanqiesdkpic.com^
 
 sdk.e.qq.com
 api-access.pangolin-sdk-toutiao-b.com
@@ -60,6 +61,7 @@ anti-sdk-report.m.jd.com
 @@||nsclick.baidu.com^$important
 
 #恶意网站
+||yyaaxcc.com^
 cujox.chicmifi.com
 ||chicmifi.com^
 ||*.clb.ap-guangzhou.tencentclb.com^
