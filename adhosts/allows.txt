@@ -80,6 +80,8 @@ anti-sdk-report.m.jd.com
 @@||nsclick.baidu.com^$important
 
 #恶意网站
+
+||bohongtv.com^
 ||yyaaxcc.com^
 cujox.chicmifi.com
 ||chicmifi.com^
