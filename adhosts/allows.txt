@@ -1,7 +1,8 @@
 #测试版规则
-
+@@||update.wps.cn
+@@||update.baidu.com
 p1.meituan.net
-
+fenwan.cdn.bcebos.com
 #快手视频封面
 @@||s*-*.kwimgs.com^
 
