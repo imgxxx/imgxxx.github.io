@@ -1,5 +1,17 @@
 #测试版规则
 
+
+sdk.e.qq.com
+api-access.pangolin-sdk-toutiao-b.com
+sf3-fe-tos.pglstatp-toutiao.com
+gromore.pangolin-sdk-toutiao.com
+qzs.gdtimg.com
+toblog.ctobsnssdk.com
+tobapplog.ctobsnssdk.com
+log-api.pangolin-sdk-toutiao.com
+api-access.pangolin-sdk-toutiao.com
+
+
 @@||sofire.bdstatic.com^
 @@||bj.bcebos.com^$important
 activity.kuaiyoudeng.cn
