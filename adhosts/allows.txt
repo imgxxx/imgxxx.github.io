@@ -1,4 +1,7 @@
 #测试版规则
+
+v6-adashx.ut.youku.com
+
 @@||update.wps.cn
 @@||update.baidu.com
 p1.meituan.net
