@@ -1,4 +1,6 @@
 #测试版规则
+@@||bytedance.com
+@@||www.bytedance.com
 
 ||*ad-dnsotls-ds.metric.gstatic.com^
 
