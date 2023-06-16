@@ -18,7 +18,7 @@ youcloud-static-asset.umcdn.cn
 ||71edge.com^
 @@||update.wps.cn
 @@||update.baidu.com
-p1.meituan.net
+#注释p1.meituan.net
 fenwan.cdn.bcebos.com
 #快手视频封面
 @@||s*-*.kwimgs.com^
