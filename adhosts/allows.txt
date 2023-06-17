@@ -1,6 +1,6 @@
 #测试版规则
 ||zookingsoft.com^
-
+||mmachina.cn^
 @@||bytedance.com
 @@||www.bytedance.com
 
