@@ -1,4 +1,6 @@
 #测试版规则
+||zookingsoft.com^
+
 @@||bytedance.com
 @@||www.bytedance.com
 
@@ -87,6 +89,10 @@ anti-sdk-report.m.jd.com
 @@||nsclick.baidu.com^$important
 
 #恶意网站
+||gih248.xyz^
+||0f6lxa.cn^
+||tseda10.icu^
+||qvxvvjom.com^
 ||kk001.tv^
 ||jaurd.grduswfx.com^
 ||grduswfx.com^
