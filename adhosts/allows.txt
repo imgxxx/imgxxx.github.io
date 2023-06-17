@@ -2,6 +2,8 @@
 @@||bytedance.com
 @@||www.bytedance.com
 
+||shuzilm.cn^
+ads-marketing-vivofs.vivo.com.cn
 ||*ad-dnsotls-ds.metric.gstatic.com^
 
 tmc.tencent.com
