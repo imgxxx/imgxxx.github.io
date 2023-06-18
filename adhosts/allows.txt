@@ -359,7 +359,6 @@ globalacceleratecdn-paw.out976.com
 out976.com
 ||adashx
 @@||webstatic.mihoyo.com^$important
-||p*-pro.a.yximgs.com^
 gw-w.jiaoliuqu.com
 ||pg-ad-b*.ws.126.net^$important
 ||log*-normal-lf.toutiaoapi.com^
