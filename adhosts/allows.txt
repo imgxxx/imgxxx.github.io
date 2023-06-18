@@ -2,11 +2,11 @@
 
 @@||api.m.taobao.com
 @@||aiqicha.baidu.com
-||my91app.com^
-
-
+||my91app.com^^$important
+||sigmob.cn^$important
+||googleadservices.com^$important
 ||zookingsoft.com^
-||mmachina.cn^
+||mmachina.cn^^$important
 @@||bytedance.com
 @@||www.bytedance.com
 
