@@ -747,7 +747,6 @@ apidns.kwd.inkuai.com
 @@||cn-acs.m.cainiao.com
 
 ||vd*.bdstatic.com^
-||jinritemai.com^
 a1.alibabausercontent.com
 ||*.legopic*-dk.tdn*sv.com^
 #注释||sma-dk.tdnsstic*.cn^
