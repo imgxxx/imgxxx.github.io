@@ -1,5 +1,5 @@
 #测试版规则
-
+@@||cz88.net^$important
 @@||api.m.taobao.com
 @@||aiqicha.baidu.com
 ||my91app.com^^$important
