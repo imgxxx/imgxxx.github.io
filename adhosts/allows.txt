@@ -1,4 +1,7 @@
 #测试版规则
+
+@@||api.m.taobao.com
+
 ||zookingsoft.com^
 ||mmachina.cn^
 @@||bytedance.com
