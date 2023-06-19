@@ -1,4 +1,5 @@
 #测试版规则
+
 @@||api.ip.sb^$important
 @@||ip.taobao.com^$important
 @@||ip-api.com^$important
@@ -100,6 +101,7 @@ anti-sdk-report.m.jd.com
 @@||nsclick.baidu.com^$important
 
 #恶意网站
+||mst.ai^
 ||gih248.xyz^
 ||0f6lxa.cn^
 ||tseda10.icu^
