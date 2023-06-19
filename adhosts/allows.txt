@@ -1,4 +1,6 @@
 #测试版规则
+pco-sm-log.tantanapp.com
+ige-log.u-ga.fr
 applog.matrix.netease.com
 log.8zhuayu.cc
 weicolog.api.weibo.cn
