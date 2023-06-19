@@ -1,4 +1,20 @@
 #测试版规则
+applog.matrix.netease.com
+log.8zhuayu.cc
+weicolog.api.weibo.cn
+ttsdklog.gz.bcebos.com
+hilog.zhihuishu.com
+klink.volceapplog.com
+al-log.d.meituan.net
+lwlog.laiwang.com
+nlog.daxuesoutijiang.com
+al-log.dreport.meituan.net
+lwlog.laiwang.com
+magic-log.flysdk.cn
+log.umeweb.cn
+
+||aldwx.com^
+
 
 @@||api.ip.sb^$important
 @@||ip.taobao.com^$important
