@@ -1,4 +1,9 @@
 #测试版规则
+
+#饿了么
+@@||h-adashx.ut.ele.me^$important
+@@||adashx.ut.ele.me^$important
+
 pco-sm-log.tantanapp.com
 ige-log.u-ga.fr
 applog.matrix.netease.com
