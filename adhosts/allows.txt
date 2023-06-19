@@ -124,6 +124,7 @@ anti-sdk-report.m.jd.com
 @@||nsclick.baidu.com^$important
 
 #恶意网站
+||qriujsbnp.com^
 ||lwksxs.com^
 ||xiangmuku.org^
 ||29itv.live^
