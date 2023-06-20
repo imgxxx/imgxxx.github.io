@@ -1,15 +1,15 @@
 #测试版规则
 #夸克
-px.wpk.quark.cn
-b.quark.cn
-open-cms-api.quark.cn
-drive-m.quark.cn
-access-open.quark.cn
-unpm-upaas.quark.cn
-coral2.quark.cn
-pdds.quark.cn
-puds.quark.cn
-news.quark.cn
+@@||px.wpk.quark.cn^
+@@||b.quark.cn^
+@@||open-cms-api.quark.cn^
+@@||drive-m.quark.cn^
+@@||access-open.quark.cn^
+@@||unpm-upaas.quark.cn^
+@@||coral2.quark.cn^
+@@||pdds.quark.cn^
+@@||puds.quark.cn^
+@@||news.quark.cn^
 
 
 
