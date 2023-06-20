@@ -1,4 +1,13 @@
 #测试版规则
+
+#UCZZD
+@@||iflow.uczzd.com^$important
+@@||m.uczzd.cn^$important
+@@||image.uczzd.cn^$important
+@@||m.sp.uczzd.cn^$important
+@@||image.uczzd.com^$important
+
+
 #夸克
 @@||px.wpk.quark.cn^
 @@||b.quark.cn^
@@ -21,8 +30,8 @@
 
 
 #饿了么
-@@||h-adashx.ut.ele.me^$important
-@@||adashx.ut.ele.me^$important
+||h-adashx.ut.ele.me^$important
+||adashx.ut.ele.me^$important
 
 pco-sm-log.tantanapp.com
 ige-log.u-ga.fr
