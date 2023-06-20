@@ -1,6 +1,6 @@
 #测试版规则
 @@||heytapdl.com
-
+@@||client-uc.heytapmobi.com
 @@||img-c.heytapimage.com^
 
 #UCZZD
