@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||img-c.heytapimage.com^
+
 #UCZZD
 @@||iflow.uczzd.com^$important
 @@||m.uczzd.cn^$important
@@ -122,7 +124,7 @@ sdk.zgbxxffww.com
 
 #OPPO应用商店
 #注释||heytapmobi.com^
-
+#注释||heytapimage.com^
 adtrackv3.dodjoy.com
 sdk.qzbonline.com
 sdk.dfzq.com.cn
@@ -132,7 +134,7 @@ sdk.rizhao9.com
 sdk.z74d.cn
 sdk.sxnfss.com
 ||tianmu.mobi^
-||heytapimage.com^
+
 sdk.fliduo.cn
 sdk.llyclub.cn
 ||fliduo.cn^
