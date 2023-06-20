@@ -1190,7 +1190,6 @@ t7z.cupid.ptqy.gitv.tv
 @@||tcbox.baidu.com^
 ||tnc3-alisc1.zijieapi.com^
 ||ads.privacy.qq.com^
-@@||music.126.net^
 @@||msn.com^
 @@||scorecardresearch.com^
 @@||p2cdn.com^
@@ -1223,7 +1222,6 @@ t7z.cupid.ptqy.gitv.tv
 @@||mp.huangye.miui.com^
 @@||tracking.intl.miui.com^
 @@||bigota.d.miui.com^
-@@||stat2-ans.chaoxing.com^
 ||fake-domain^$important
 ||tr.byteurl.cn^$important
 #注释||fqnovel.com^$important
@@ -1238,7 +1236,6 @@ t7z.cupid.ptqy.gitv.tv
 ||ads3-normal-lf.zijieapi.com^$important
 ||tnc3-bjlgy.zijieapi.com^$important
 ||mobilelog.cc.netease.com^$important
-@@||sys.miui.com^
 @@||vipapi.wps.cn^
 @@||wpscdn.cn^
 ||ad.10010.com^
@@ -1291,7 +1288,6 @@ t7z.cupid.ptqy.gitv.tv
 ||pangolin-sdk-toutiao-b.com^
 ||ads5-normal-lf.zijieapi.com^$app=com.dragon.read
 ||pglstatp-toutiao.com^
-@@||yfp2p.net^
 @@||xp.apple.com^
 @@||browserkernel.baidu.com^
 @@||r.browser.miui.com^
@@ -1351,8 +1347,6 @@ t7z.cupid.ptqy.gitv.tv
 ||mp.weixinbridge.com^$important
 @@||wfdata.club^$important
 @@||miwifi.com^$important
-@@||chenflxs.top^$important
-@@||music.163.com^$important
 @@||*.ipv4dns.com^$important
 @@||*.ipxx.pro^$important
 @@||thm.market.xiaomi.com^$important
@@ -1407,17 +1401,11 @@ t7z.cupid.ptqy.gitv.tv
 ||js-ad.a.yximgs.com
 ||p9-be-pack-sign.pglstatp-toutiao.com
 ||sf3-ttcdn-tos.pstatp.com
-||mp.weixin.qq.com/mp/advertisement_report
-||mp.weixin.qq.com/mp/ad_biz_info?biz=
-||mp.weixin.qq.com/mp/jsreport?key=
-||mp.weixin.qq.com/mp/jsmonitor?idkey=
 ||wxsnsdythumb.wxs.qq.com^
 ||mp.weixin.qq.com/mp/appmsgreport?action
 ||pgdt.gtimg.cn^
 ||wspeed.qq.com^
 ||p.store.qq.com^
-||mp.weixin.qq.com/mp/advertisement^
-||mp.weixin.qq.com/mp/getappmsgad^
 ||logs.chelaile.net.cn$app=com.tencent. mm
 ||api.chelaile.net.cn$app=com.tencent.mm
 ||wxsnsdy.wxs.qq.com^$app=com.tencent.mm
