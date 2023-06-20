@@ -121,7 +121,7 @@ stvideo.kaixinkan.com.cn
 sdk.zgbxxffww.com
 
 #OPPO应用商店
-||heytapmobi.com^
+#注释||heytapmobi.com^
 
 adtrackv3.dodjoy.com
 sdk.qzbonline.com
