@@ -119,7 +119,10 @@ stvideo.kaixinkan.com.cn
 @@||metrics-picture.dreport.meituan.net^
 
 sdk.zgbxxffww.com
+
+#OPPO应用商店
 ||heytapmobi.com^
+
 adtrackv3.dodjoy.com
 sdk.qzbonline.com
 sdk.dfzq.com.cn
