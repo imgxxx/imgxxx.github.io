@@ -2,6 +2,8 @@
 @@||heytapdl.com
 @@||client-uc.heytapmobi.com
 @@||img-c.heytapimage.com^
+@@||report.uc.heytapmobi.com^$important
+@@||appconf.heytapdownload.com^$important
 
 #UCZZD
 @@||iflow.uczzd.com^$important
