@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||gov.cn^$important
+
 @@||v6lvs.com^
 @@||zj.gov.cn^$important
 @@||zjzwfw.gov.cn^
