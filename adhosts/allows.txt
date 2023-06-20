@@ -1,5 +1,5 @@
 #测试版规则
-
+@@||tnc3-aliec2.zijieapi.com^
 ||union.baidu.com
 ||sanjiangdai.com^
 ||a*put.chinaz.com^
