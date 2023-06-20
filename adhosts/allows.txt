@@ -1,5 +1,7 @@
 #测试版规则
 
+||union.baidu.com
+||sanjiangdai.com^
 ||a*put.chinaz.com^
 
 #OPPO系统应用
@@ -166,6 +168,9 @@ anti-sdk-report.m.jd.com
 @@||nsclick.baidu.com^$important
 
 #恶意网站
+||newwcrsea.com^
+||yp88830.com^
+||uioozpxq.com^
 ||uioozpxq.com^
 ||uih632.xyz^
 ||tp5ryo.com^
