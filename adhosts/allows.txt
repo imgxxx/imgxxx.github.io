@@ -6,6 +6,9 @@
 @@||image.uczzd.cn^$important
 @@||m.sp.uczzd.cn^$important
 @@||image.uczzd.com^$important
+@@||image.zzd.sm.cn^$important
+@@||image.uc.cn^$important
+||image-ad.sm.cn^$important
 
 
 #夸克
@@ -25,8 +28,6 @@
 @@||m.quark.cn^
 @@||learning.quark.cn^
 @@||iflow.quark.cn^
-
-
 
 
 #饿了么
