@@ -10,9 +10,9 @@
 @@||wl.jd.com^$important
 
 
-
-
+@@||*.gov.cn^$important
 @@||gov.cn^$important
+
 
 @@||v6lvs.com^
 @@||zj.gov.cn^$important
