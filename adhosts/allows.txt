@@ -1,4 +1,8 @@
 #测试版规则
+
+||a*put.chinaz.com^
+
+#OPPO系统应用
 @@||heytapdl.com
 @@||client-uc.heytapmobi.com
 @@||img-c.heytapimage.com^
