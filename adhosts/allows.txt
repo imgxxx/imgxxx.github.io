@@ -1,5 +1,12 @@
 #测试版规则
 
+@@||recept.zjzwfw.gov.cn^$important
+@@||mapi.zjzwfw.gov.cn^$important
+@@||portal.zjzwfw.gov.cn^$important
+@@||bops.zjzwfw.gov.cn^$important
+
+
+
 @@||st.music.163.com^
 @@||api.iplay.163.com^
 @@||www.163.com
