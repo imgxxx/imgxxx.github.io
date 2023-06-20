@@ -1,5 +1,7 @@
 #测试版规则
 
+
+
 @@||knicks.jd.com^$important
 @@||mars.jd.com^$important
 @@||blackhole.m.jd.com^$important
@@ -188,6 +190,8 @@ sdk.xiaoeknow.com
 @@||nsclick.baidu.com^$important
 
 #恶意网站
+||realsrv.com^
+||s3t3d2y8.afcdn.net^
 ||newwcrsea.com^
 ||yp88830.com^
 ||uioozpxq.com^
