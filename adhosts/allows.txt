@@ -1766,9 +1766,7 @@ access.pangolin-sdk-toutiao-b.com
 ||js-ad.a.yximgs.com^$important
 @@||improving.duckduckgo.com^$important
 @@||ifengimg.com^$important
-@@||www.163.com^$important
 @@||micloud.xiaomi.net^$important
-@@||163.com^$important
 @@||img.cdn.mvideo.xiaomi.com^$important
 @@||mivideo.cdn.pandora.xiaomi.com^$important
 @@||video.xiaomi.com^$important
