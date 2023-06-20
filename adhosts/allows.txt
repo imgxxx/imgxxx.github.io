@@ -1,7 +1,7 @@
 #测试版规则
 
-#注释@@||v6lvs.com^$important
-
+@@||v6lvs.com^
+@@||zj.gov.cn^$important
 @@||zjzwfw.gov.cn^
 ||adash.zjzwfw.gov.cn^$important
 
