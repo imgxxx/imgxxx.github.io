@@ -1,6 +1,6 @@
 #测试版规则
 
-
+@@||api.smoot.apple.com
 
 @@||knicks.jd.com^$important
 @@||mars.jd.com^$important
