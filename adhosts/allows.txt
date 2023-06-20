@@ -166,6 +166,9 @@ anti-sdk-report.m.jd.com
 @@||nsclick.baidu.com^$important
 
 #恶意网站
+||uioozpxq.com^
+||uih632.xyz^
+||tp5ryo.com^
 ||qriujsbnp.com^
 ||lwksxs.com^
 ||xiangmuku.org^
