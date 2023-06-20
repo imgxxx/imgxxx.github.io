@@ -1,4 +1,9 @@
 #测试版规则
+
+@@||st.music.163.com^
+@@||api.iplay.163.com^
+@@||www.163.com
+
 @@||tnc3-aliec2.zijieapi.com^
 ||union.baidu.com
 ||sanjiangdai.com^
