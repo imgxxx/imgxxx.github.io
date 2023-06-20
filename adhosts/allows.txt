@@ -4,6 +4,12 @@
 @@||mars.jd.com^$important
 @@||blackhole.m.jd.com^$important
 @@||gia.jd.com^$important
+@@||policy.jd.com^$important
+@@||firevent.jd.com^$important
+@@||fireactive.jd.com^$important
+@@||wl.jd.com^$important
+
+
 
 
 @@||gov.cn^$important
