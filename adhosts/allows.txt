@@ -1,5 +1,6 @@
 #测试版规则
 
+@@||v6lvs.com^$important
 @@||recept.zjzwfw.gov.cn^$important
 @@||mapi.zjzwfw.gov.cn^$important
 @@||portal.zjzwfw.gov.cn^$important
