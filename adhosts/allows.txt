@@ -1,6 +1,6 @@
 #测试版规则
 
-
+||d*-ec.a.kwimgs.com^$important
 
 #UC
 @@||holmeshelp.uc.cn
@@ -485,7 +485,7 @@ g.vip.qq.com
 ||ad-putting.gw.zt-express.com
 ||ads.privacy.qq.com
 ||ad.cityu.edu.hk
-ad-maven.com
+||ad-maven.com^
 fdre23.cc
 ipl004.xyz
 ||ad.siemens.com.cn^$important
@@ -570,7 +570,7 @@ log-sdk.clickwifi.net
 s-adashx.ut.uc.cn
 eap-log-cn.allawntech.com
 appgoad.189.cn
-#注释||d*-ec.a.kwimgs.com^$important
+
 mamasearchad.cloudvideocdn.taobao.com
 pcvideotx.titan.mgtv.com
 pcvideoctyun.titan.mgtv.com
