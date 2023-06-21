@@ -10,6 +10,18 @@
 
 @@||pic*.iqiyipic.com^
 @@||www.baidu.com^
+@@||udpolimenew.baidu.com^
+@@||hectorstatic.baidu.com^
+@@||mime.baidu.com^
+@@||activity.baidu.com^
+@@||b.bdstatic.com^
+@@||f*.baidu.com^
+@@||s.bdstatic.com^
+@@||ms.bdstatic.com^
+
+
+
+
 zplan.gtimg.cn
 duiba.oss-cn-hangzhou.aliyuncs.com
 res8.vmallres.com
