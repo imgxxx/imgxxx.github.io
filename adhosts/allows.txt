@@ -1,5 +1,7 @@
 #测试版规则
 
+
+
 #UC
 @@||holmeshelp.uc.cn
 @@||api.open.uc.cn
@@ -11,6 +13,7 @@
 @@||iflow.uc.cn
 @@||track.uc.cn
 @@||fast.uc.cn
+@@||cs-center.uc.cn
 
 
 @@||duiba.com.cn^$important
