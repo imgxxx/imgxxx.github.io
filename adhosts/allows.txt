@@ -1,5 +1,9 @@
 #测试版规则
 
+bdbig.szprize.cn
+history.baidu.com
+mo.rtalink.com
+
 @@||static.360buyimg.com^
 
 ||d*-ec.a.kwimgs.com^$important
