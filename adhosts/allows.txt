@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||static.360buyimg.com^
+
 ||d*-ec.a.kwimgs.com^$important
 
 #UC
