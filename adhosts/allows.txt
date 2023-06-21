@@ -1,5 +1,9 @@
 #测试版规则
-
+duiba.oss-cn-hangzhou.aliyuncs.com
+res8.vmallres.com
+||activity*.tuibear.com^
+||tuiaaag.com^
+||tuibear.com^
 static-s.iqiyi.com
 static.iqiyi.com
 uog.baidu.com
