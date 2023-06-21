@@ -1,8 +1,11 @@
 #测试版规则
 
+@@||i.snssdk.com^
+@@||ib.snssdk.com^
 @@||tnc*.zijieapi.com^
+@@||security.snssdk.com^
 
-#注释||tnc3-bjlgy.zijieapi.com^$important
+#注释||tnc3-bjlgy.zijieapi.com^
 
 bdbig.szprize.cn
 history.baidu.com
