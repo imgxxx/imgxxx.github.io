@@ -1,5 +1,20 @@
 #测试版规则
 
+mlog.bigda.com
+dmplog.qq.com
+log.tailscale.io
+catalog.ibbxtx.com
+log.pwesports.cn
+5glog.hhhoo.com
+uplog.qbox.me
+direct.applog-lb-alibj-v3.alinc2hl.bytelb.net
+||rtlog*-applog-lq.fqnovel.com^
+||log*-applog-lq.fqnovel.com^
+sdk.auth.yfp2p.net
+sdk.leeyegy.com
+sdk.jumpw.com
+||log.mmstat.com^$important
+
 #抖音，头条相关服务
 @@||sf*-pitaya-tos.pstatp.com^
 @@||lf*-article.toutiaostatic.com^
