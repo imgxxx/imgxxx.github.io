@@ -1,5 +1,8 @@
 #测试版规则
 
+
+@@||duiba.com.cn^$important
+
 #腾讯充值接口
 @@||api.unipay.qq.com^
 
