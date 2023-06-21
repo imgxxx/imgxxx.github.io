@@ -1,12 +1,14 @@
 #测试版规则
-
+#抖音，头条相关服务
 @@||sf*-pitaya-tos.pstatp.com^
 @@||lf*-article.toutiaostatic.com^
 @@||p*-shortvideo-sign.toutiaoimg.com^
 @@||sf*-hscdn-tos.pstatp.com^
-@@||pic*.iqiyipic.com^
 @@||p*-tt.bytecdn.cn^
+@@||webcast*-open-lq.douyin.com^
 
+
+@@||pic*.iqiyipic.com^
 @@||www.baidu.com^
 zplan.gtimg.cn
 duiba.oss-cn-hangzhou.aliyuncs.com
