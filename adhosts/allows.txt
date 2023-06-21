@@ -240,6 +240,15 @@ sdk.xiaoeknow.com
 @@||nsclick.baidu.com^$important
 
 #恶意网站
+||365jiarun.com^
+||qzwzjs.com^
+||glfgb.com^
+||wxrwtf.com^
+||pih612.xyz^
+||qscaicai-1317916877.cos.ap-guangzhou.myqcloud.com^
+||asvysvxr.com^
+||qzwzjs.com^
+||72qq.com^
 ||realsrv.com^
 ||s3t3d2y8.afcdn.net^
 ||newwcrsea.com^
