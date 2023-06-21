@@ -2,6 +2,7 @@
 
 @@||pic*.iqiyipic.com^
 
+zplan.gtimg.cn
 duiba.oss-cn-hangzhou.aliyuncs.com
 res8.vmallres.com
 ||activity*.tuibear.com^
