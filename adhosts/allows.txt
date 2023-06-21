@@ -38,6 +38,9 @@
 @@||*.gov.cn^$important
 @@||gov.cn^$important
 
+@@||*.edu.cn^$important
+@@||edu.cn^$important
+
 
 @@||v6lvs.com^
 @@||zj.gov.cn^$important
