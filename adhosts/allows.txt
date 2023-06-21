@@ -1,5 +1,8 @@
 #测试版规则
 
+#腾讯充值接口
+@@||api.unipay.qq.com^
+
 @@||api.smoot.apple.com
 
 @@||knicks.jd.com^$important
