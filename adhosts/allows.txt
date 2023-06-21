@@ -1,4 +1,7 @@
 #测试版规则
+
+@@||pic*.iqiyipic.com^
+
 duiba.oss-cn-hangzhou.aliyuncs.com
 res8.vmallres.com
 ||activity*.tuibear.com^
@@ -1625,7 +1628,6 @@ tj.video.qq.com
 ||wxsnsdythumb.wxs.qq.com^
 ||oth.eve.mdt.qq.com^
 ||mbdp02.bdstatic.com^
-||pic6.iqiyipic.com
 ||api-access.pangolin-sdk-toutiao.com^$important
 ||coolapk.com/^$replace=/{"title":\u4eca\u65e5\u9177\u5b89.*?}\,//
 ||coolapk.com/^$replace=/{"entityTemplate":imageCarouselCard_1.*?}\,//
