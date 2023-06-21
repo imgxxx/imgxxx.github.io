@@ -1,6 +1,7 @@
 #测试版规则
+@@||sf*-pitaya-tos.pstatp.com^
 
-@@||p6-shortvideo-sign.toutiaoimg.com^
+@@||p*-shortvideo-sign.toutiaoimg.com^
 
 @@||pic*.iqiyipic.com^
 
