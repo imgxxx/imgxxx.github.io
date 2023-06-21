@@ -1,5 +1,10 @@
 #测试版规则
 
+static-s.iqiyi.com
+static.iqiyi.com
+uog.baidu.com
+aliyuncoccdncmnet-hd.inter.iqiyi.com
+tg41.a.glb4.com
 @@||i.snssdk.com^
 @@||ib.snssdk.com^
 @@||tnc*.zijieapi.com^
