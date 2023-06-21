@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||p6-shortvideo-sign.toutiaoimg.com^
+
 @@||pic*.iqiyipic.com^
 
 zplan.gtimg.cn
