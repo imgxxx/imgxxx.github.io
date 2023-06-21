@@ -1,6 +1,7 @@
 #测试版规则
 
-
+@@||track.uc.cn
+@@||fast.uc.cn
 @@||duiba.com.cn^$important
 
 #腾讯充值接口
