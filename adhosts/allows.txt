@@ -570,7 +570,7 @@ log-sdk.clickwifi.net
 s-adashx.ut.uc.cn
 eap-log-cn.allawntech.com
 appgoad.189.cn
-||d*-ec.a.kwimgs.com^$important
+#注释||d*-ec.a.kwimgs.com^$important
 mamasearchad.cloudvideocdn.taobao.com
 pcvideotx.titan.mgtv.com
 pcvideoctyun.titan.mgtv.com
