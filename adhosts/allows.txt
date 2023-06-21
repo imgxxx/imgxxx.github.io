@@ -1,5 +1,9 @@
 #测试版规则
 
+@@||tnc*.zijieapi.com^
+
+#注释||tnc3-bjlgy.zijieapi.com^$important
+
 bdbig.szprize.cn
 history.baidu.com
 mo.rtalink.com
@@ -862,7 +866,6 @@ emdcadvertise.eastmoney.com
 ||advertise
 ||*-adapt.pddpic.com^
 line*-h5-mobile-api.biligame.com^
-so.toutiao.com
 
 ||ad.^
 ||*.ad.^
@@ -1288,7 +1291,6 @@ t7z.cupid.ptqy.gitv.tv
 ||gecko5-lf.zijieapi.com^$important
 ||feedback-c.zijieapi.com^$important
 ||ads3-normal-lf.zijieapi.com^$important
-||tnc3-bjlgy.zijieapi.com^$important
 ||mobilelog.cc.netease.com^$important
 @@||vipapi.wps.cn^
 @@||wpscdn.cn^
