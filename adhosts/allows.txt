@@ -1,10 +1,13 @@
 #测试版规则
+
 @@||sf*-pitaya-tos.pstatp.com^
-
+@@||lf*-article.toutiaostatic.com^
 @@||p*-shortvideo-sign.toutiaoimg.com^
-
+@@||sf*-hscdn-tos.pstatp.com^
 @@||pic*.iqiyipic.com^
+@@||p*-tt.bytecdn.cn^
 
+@@||www.baidu.com^
 zplan.gtimg.cn
 duiba.oss-cn-hangzhou.aliyuncs.com
 res8.vmallres.com
