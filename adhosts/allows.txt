@@ -1,5 +1,7 @@
 #测试版规则
 
+
+@@||cdn.sdb.com.cn^
 @@||pingan.com.cn^
 @@||b.pingan.com.cn^
 @@||bank-static.pingan.com.cn^
