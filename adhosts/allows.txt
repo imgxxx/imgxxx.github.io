@@ -1,5 +1,11 @@
 #测试版规则
 
+@@||itunes.apple.com^$important
+@@||captive.apple.com^
+@@||amp-api-edge.apps.apple.com^
+@@||apps.apple.com^$important
+
+
 mlog.bigda.com
 dmplog.qq.com
 log.tailscale.io
