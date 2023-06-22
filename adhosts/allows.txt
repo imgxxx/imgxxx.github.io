@@ -1,5 +1,9 @@
 #测试版规则
 
+@@||data.ping.shouji.sogou.com^
+@@||vpa-cdn.shouji.sogou.com^
+@@||input.shouji.sogou.com^
+
 activity.zhilianghui.com
 ||guangadx.com^
 ||pipi.cn^
