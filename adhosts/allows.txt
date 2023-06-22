@@ -20,6 +20,21 @@ activity.zhilianghui.com
 ||feiyu.oceanengine.com^
 
 
+||gd.xinhuanet.com^
+||ad7.com^
+||nequal.com^
+||n1q.cn^
+||nequal.cn^
+||chance-ad.com^
+||71360.com^
+||reyun.com^
+||onemob.mobi^
+||emar.com^
+||gozendata.com^
+||gzads.com^
+||gz-data.com^
+
+
 thirdsso.kugou.com
 ssongacsing.kugou.com
 
@@ -323,6 +338,8 @@ sdk.xiaoeknow.com
 @@||nsclick.baidu.com^$important
 
 #恶意网站
+||newwcrsea.com^
+||vr6h3d.cn^
 ||365jiarun.com^
 ||qzwzjs.com^
 ||glfgb.com^
