@@ -3,6 +3,8 @@
 @@||data.ping.shouji.sogou.com^
 @@||vpa-cdn.shouji.sogou.com^
 @@||input.shouji.sogou.com^
+@@||vpabiaoqing.gtimg.com^$important
+@@||biaoqing.gtimg.com^$important
 
 activity.zhilianghui.com
 ||guangadx.com^
