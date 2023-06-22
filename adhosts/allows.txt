@@ -1,5 +1,17 @@
 #测试版规则
 
+||isbestgame.com^
+error.taobao.com
+||iwolong.com^
+||blibao.com^
+||zzwtec.com^
+||youboy.com^
+||jiguangads.com^
+||slexun.com^
+||midongtech.com^
+||beta-ad.e.kuaishou.com^
+||ad.xiaohongshu.com^
+
 @@||hmma.baidu.com^
 @@||staticsns.cdn.bcebos.com^
 @@||issuecdn.baidupcs.com^
