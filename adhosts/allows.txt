@@ -1,5 +1,8 @@
 #测试版规则
 
+@@||pingan.com.cn^
+@@||b.pingan.com.cn^
+@@||bank-static.pingan.com.cn^
 
 #虎扑体育
 @@||sentry.hupu.com^
