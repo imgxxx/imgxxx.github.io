@@ -1,5 +1,17 @@
 #测试版规则
 
+
+#虎扑体育
+@@||sentry.hupu.com^
+@@||goblin.hupu.com^
+@@||m.hupu.com^
+@@||games.mobileapi.hupu.com^
+@@||collect.hupu.com^
+@@||bbs.mobileapi.hupu.com^
+
+
+
+
 @@||itunes.apple.com^$important
 @@||captive.apple.com^
 @@||amp-api-edge.apps.apple.com^
