@@ -1,7 +1,27 @@
 #测试版规则
 
+activity.zhilianghui.com
+||guangadx.com^
 ||pipi.cn^
 ||fjkeet.com^
+||zhilianghui.com^
+||sensorsdata.cn^
+||dmp.qq.com^
+||sso.e.qq.com^
+||shukuajing.com^
+||tznow.com^
+||adsys.super.cn^
+||a.weixin.qq.com^$important
+||bingads.microsoft.com^
+||q-media.cn^
+||yaranmedia.com^
+||topsales.ltd^
+||onefit.ltd^
+||feiyu.oceanengine.com^
+
+
+thirdsso.kugou.com
+ssongacsing.kugou.com
 
 #平安口袋银行
 @@||cdn.sdb.com.cn^
