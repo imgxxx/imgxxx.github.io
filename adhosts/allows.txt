@@ -1,5 +1,10 @@
 #测试版规则
 
+@@||hmma.baidu.com^
+@@||staticsns.cdn.bcebos.com^
+@@||issuecdn.baidupcs.com^
+@@||als.baidu.com^
+
 ||logs.quicksdk.net^
 ||log*-misc-alinc2-lf.amemv.com^
 ||log.solopacegem.io^
