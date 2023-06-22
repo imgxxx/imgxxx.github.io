@@ -1,5 +1,34 @@
 #测试版规则
 
+||logs.quicksdk.net^
+||log*-misc-alinc2-lf.amemv.com^
+||log.solopacegem.io^
+||sso.ptlogin2.qq.com^
+||sdk.fl209.com^
+||fl209.com^
+||joxx.cn^
+||sdk.joxx.cn^
+||yysqi.com^
+||sdk.yysqi.com^
+||jpsdk.com^
+||logmonitor.leiting.com^
+||logserver-cn-comue.obs.cn-north1.ctyun.cn^
+||logsdata.cxzx10086.cn^
+||mlog.meituan.com^
+||direct.applog-lb-alibj-v3.alinc2lf.bytelb.net^
+||logservice.dbankcloud.cn^
+||logreport-global.zego.im^
+||mlog.dianping.com^
+||logs.quicksdk.net^
+||logdc.happyelements.cn^
+||log-klink.zijieapi.com^
+||log5-applog.zijieapi.com^
+||log-eap.coloros.com^
+||log-report.com^
+||log*-lf.qishui.com^
+||app-log.dewu.com^
+||app.log.nf.migu.cn^
+
 @@||data.ping.shouji.sogou.com^
 @@||vpa-cdn.shouji.sogou.com^
 @@||input.shouji.sogou.com^
@@ -333,7 +362,6 @@ sdk.xiaoeknow.com
 
 ||xfinfr.com^$important
 
-#注释||dreport.meituan.net
 
 #百度输入法
 @@||wn.pos.baidu.com^$important
@@ -344,6 +372,9 @@ sdk.xiaoeknow.com
 @@||nsclick.baidu.com^$important
 
 #恶意网站
+||ildopxge.com^
+||25xap.live^
+||tih929.xyz^
 ||newwcrsea.com^
 ||vr6h3d.cn^
 ||365jiarun.com^
