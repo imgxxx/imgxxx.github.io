@@ -1,5 +1,7 @@
 #测试版规则
 
+gg.xox0.cn
+
 #百度贴吧广告
 ||feed-image.baidu.com^$important
 
