@@ -194,7 +194,7 @@ tg41.a.glb4.com
 @@||tnc*.zijieapi.com^
 @@||security.snssdk.com^
 
-#注释||tnc3-bjlgy.zijieapi.com^
+
 
 bdbig.szprize.cn
 history.baidu.com
@@ -351,7 +351,7 @@ youcloud-static-asset.umcdn.cn
 ||71edge.com^
 @@||update.wps.cn
 @@||update.baidu.com
-#注释p1.meituan.net
+
 fenwan.cdn.bcebos.com
 #快手视频封面
 @@||s*-*.kwimgs.com^
@@ -542,13 +542,6 @@ cujox.chicmifi.com
 
 
 
-
-
-
-
-
-#注释cdn.cnbj1.fds.api.mi-img.com
-
 ||xiyu-ad.com^
 ||feiniuad.com^
 ||imgdb.cn^
@@ -568,8 +561,8 @@ cujox.chicmifi.com
 @@||get.sogou.com^$important
 @@||v2.get.sogou.com^$important
 @@||account.sogou.com^$important
-#注释@@||safe1.shouji.sogou.com^$important
-#注释@@||input.shouji.sogou.com^$important
+@@||safe1.shouji.sogou.com^$important
+@@||input.shouji.sogou.com^$important
 
 @@||tencentwm.com^$important
 applog.zijieapi.com
@@ -665,8 +658,7 @@ i.youjingnetwork.com
 log.tpns.tencent.com
 ||img.funshion.com^$important
 ||img*.funshion.com^$important
-#注释pbaccess.video.qq.com
-#注释||finder*.video.qq.com^
+
 ||log*-lq.qishui.com^
 ||rtlog*-applog-lf.amemv.com^
 ||log*-applog-lf.fqnovel.com^
@@ -793,7 +785,8 @@ mamasearchad.cloudvideocdn.taobao.com
 pcvideotx.titan.mgtv.com
 pcvideoctyun.titan.mgtv.com
 aphone.v1.mgtv.com
-#注释||bcebos.com^$important
+
+
 ||ssp.
 ||*.ssp.
 ||*-ssp-*.
@@ -877,7 +870,7 @@ analytics.s3.amazonaws.com
 
 wxsnsdythumb.wxs.qq.com
 wxsnsdy.wxs.qq.com
-#注释||*.qc.dolfincdnx.net^$important
+
 ||beizi.biz^
 adx-track.domob.cn
 ||domob.cn^$important
@@ -908,7 +901,7 @@ dsplog.vivo.com.cn
 ||ma*-normal-lq.zijieapi.com^$important
 ||chengzijianzhan.cc^
 @@||img30.360buyimg.com^$important
-#注释||webcast*-core-c-lq.amemv.com^
+
 v5-re-un802.douyinvod.com
 vc-brain.ndcpp.com
 ||lf*-short.ibytedapm.com^
@@ -977,7 +970,7 @@ txqcmmov.a.etoote.com
 
 
 
-#注释||api*-normal-c-lq.amemv.com^
+
 ||rtlog*-applog-lq.amemv.com^
 ||api-access.pangolin-sdk-toutiao*.com^
 ||p*-sign.bdxiguaimg.com^
@@ -1004,7 +997,7 @@ api-adservices.apple.com
 ||i-hl.snssdk.com.queniuyk.com^
 ||lf9-open-ma-pkg-sign.bytemastatic.com^
 ||zttapk.v.bsgslb.com^
-#注释||api26-normal-hl.amemv.com^
+
 ||api-access.pangolin-sdk-toutiao-b.com^
 ||rtlog5-applog-hl.fqnovel.com^
 ||bizsec-auth.alicdn.com^
@@ -1014,13 +1007,10 @@ api-adservices.apple.com
 ||ma5-normal-hl.zijieapi.com^
 ||ma.zijieapi.com^
 ||ma.zijieapi.com.queniuiq.com^
-#注释||i.snssdk.com^
-#注释||mon.zijieapi.com^
+
 ||i.snssdk.com.queniuyk.com^
 ||whoami.akamai.net^
-#注释||vcs.zijieapi.com^
-#注释||hcdndyn.zjv6.c.cdnhwc2.com^
-#注释||d2-toutiao-ipv6-ml.gslb.ksyuncdn.com^
+
 ||vcs.zijieapi.com.queniukw.com^
 ||k5-toutiao-ml.gslb.ksyuncdn.com^
 ||is.snssdk.com^
@@ -1031,7 +1021,7 @@ api-adservices.apple.com
 ||vcl-brain.snssdk.com^
 ||v3-cold.douyinvod.com^
 ||v3-cold.douyinvod.com.queniuso.com^
-#注释||webcast100-ws-c-hl.amemv.com^
+
 ||direct.webcast-websocket-lb.hl.bytelb.net^
 ||lf1-webcastcdn-tos.douyinstatic.com^
 ||lf1-webcastcdn-tos.douyinstatic.com.wsglb0.com^
@@ -1046,17 +1036,11 @@ api-adservices.apple.com
 @@||down.qq.com
 
 @@||shop.m.taobao.com
-#注释||sched.webrtc.tdnsv*.com^
+
 ||dl.txcdns.com^
-#注释||v*lego-dk.tdnsvod*.cn^
-#注释||lego*-dk.tdnslive*.cn^
-#注释||dongyun.biz^
-#注释||sched.l*-dk.tdnsv*.com^
-#注释||pddlego-dk.tdnsstic*.cn^
-#注释||sched.sma.tdnsstic*.cn^
-#注释||sched.legopic*-dk.tdnsv*.com^
+
 @@||appstoreonrt-stsdk.vivo.com.cn
-#注释||sched.vodlego.tdnsvod*.cn^
+
 
 dns.jd.com
 ||jmcloud.jdx.com^
@@ -1091,8 +1075,7 @@ line*-h5-mobile-api.biligame.com^
 ||*.tanx*.^
 ||tanx^
 
-#注释||push.yximgs.com^
-#注释||pull.yximgs.com^
+
 ||*-adaptive-pull.live-voip.com^
 dns.weixin.qq.com.cn
 e.ljcdn1.cn
@@ -1105,14 +1088,11 @@ h5api.miaomiaozhe.com
 @@||d*-push.static.yximgs.com^
 ||v*-ad.video.yximgs.com^
 apidns.kwd.inkuai.com
-#注释tx-game.push.yximgs.com
-#注释yximgs-webrtc.liveplay.myqcloud.com
+
 ||lf*-sf-be-pack-sign.pglstatp-toutiao.com^
-#注释@@||guide-acs.m.taobao.com
-#注释@@||retcode.taobao.com
-#注释@@||pre-h5.taobao.com
+
 @@||appdownload.alicdn.com
-#注释@@||h-adashx.ut.cainiao.com
+||h-adashx.ut.cainiao.com
 @@||accscdn.m.taobao.com
 
 #菜鸟
@@ -1122,9 +1102,9 @@ apidns.kwd.inkuai.com
 
 a1.alibabausercontent.com
 ||*.legopic*-dk.tdn*sv.com^
-#注释||sma-dk.tdnsstic*.cn^
+
 ||*ad-dnsotls-ds.metric.gstatic.com
-#注释@@||adrive-development.oss-cn-beijing.aliyuncs.com
+
 @@||dingtalk.cn^
 @@||at.alicdn.com
 @@||retcode.alicdn.com
@@ -1133,14 +1113,12 @@ a1.alibabausercontent.com
 @@||x.alicdn.com
 
 @@||dtmall-tel.alicdn.com
-#注释@@||amdcopen.m.taobao.com
-#注释@@||tunion-api.m.taobao.com
-#注释@@||zconfig.alibabausercontent.com
+
 @@||arms-retcode.aliyuncs.com
 @@||amdc.m.taobao.com
 @@||dorangesource.alicdn.com
 @@||gw.alicdn.com
-#注释@@||ynuf.aliapp.org
+
 @@||oss-enet.aliyuncs.com^
 @@||aliyundrive.net^
 @@||aliyundrive.com^
@@ -1485,7 +1463,7 @@ t7z.cupid.ptqy.gitv.tv
 @@||bigota.d.miui.com^
 ||fake-domain^$important
 ||tr.byteurl.cn^$important
-#注释||fqnovel.com^$important
+
 ||ads5-normal.zijieapi.com^$important
 ||ads4-normal.zijieapi.com^$important
 ||ads3-normal.zijieapi.com^$important
@@ -1602,7 +1580,7 @@ t7z.cupid.ptqy.gitv.tv
 ||download.beibeibuyu.com^
 ||pangolin.snssdk.com^$important
 @@||ipxx.pro^$important
-#注释@@||pcdn
+
 @@||video.xiaomi.com^
 ||mp.weixinbridge.com^$important
 @@||wfdata.club^$important
@@ -1887,7 +1865,7 @@ access.pangolin-sdk-toutiao-b.com
 ||o2o-ad-clicking.alibaba.com^$app=io.iftech.android.box
 ||h5.ele.me^$app=io.iftech.android.box
 ||gw.alipayobjects.com^$app=io.iftech.android.box
-#注释||g.alicdn.com^$app=io.iftech.android.box
+
 ||s.click.ele.me^$app=io.iftech.android.box
 ||remembrall.midway.run^$app=io.iftech.android.box
 ||acs.m.taobao.com/gw/mtop.common.getTimestamp/*$app=com.autonavi.minimap
@@ -2018,7 +1996,7 @@ access.pangolin-sdk-toutiao-b.com
 ||pangolin.snssdk.com^$important
 ||open.kuaishouzt.com^$important
 ||open.kwaizt.com^$important
-#注释||*-normal-hl.zijieapi.com^$important
+
 ||vrbt.mobi^$important
 ||uem.migu.cn^$important
 @@||huatuo.qq.com^$important
