@@ -4,7 +4,7 @@
 @@||public.gdtimg.com^
 #注释@@||qqadapt.qpic.cn^
 
-
+@@||images.uc.cn^
 
 ||app-log-lab.immomo.com
 ||log*-applog-hl.novelfm.com^
@@ -621,7 +621,6 @@ applog.zijieapi.com
 @@||metrics-picture.d.meituan.net^$important
 sdk.kaijia.com
 ||kaijia.com^
-sdksp6.video.qq.com
 sdk-anti-addiction.g.mi.com
 drsdk.excelliance.cn
 ||excelliance.cn^
@@ -786,7 +785,6 @@ browserpagestatic.vivo.com.cn
 wpad.wolf-rack.com
 channels-aladin.wxqcloud.qq.com
 aladin.wxqcloud.qq.com
-qqadapt.qpic.cn
 
 uland.taobao.com
 ||captainbi.com^
