@@ -2,7 +2,11 @@
 @@||tianshu.gtimg.cn^
 @@||ti.qq.com^
 @@||public.gdtimg.com^
+
+#QQ名片图片
 #注释@@||qqadapt.qpic.cn^
+
+||log.
 
 @@||images.uc.cn^
 
