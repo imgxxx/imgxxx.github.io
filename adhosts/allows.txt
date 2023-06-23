@@ -12,6 +12,14 @@
 ||yxyylog.echargenet.com^
 ||adxlog.vivo.com.cn^
 ||s3plus.meituan.net^
+||log*-hl.qishui.com^
+||n-logs-ipc.tplinkcloud.com.cn^
+||qr-log.wosai.cn^
+||logapi-ios.zhipin.com^
+||logservice.vmall.com^
+||log.dianyinduoduo.com^
+||log-center.58moto.com^
+
 gg.xox0.cn
 
 #百度贴吧广告
