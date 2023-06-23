@@ -1,4 +1,6 @@
 #测试版规则
+@@||tianshu.gtimg.cn^
+
 
 ||app-log-lab.immomo.com
 ||log*-applog-hl.novelfm.com^
@@ -216,7 +218,7 @@ sdk.jumpw.com
 
 
 
-zplan.gtimg.cn
+#注释zplan.gtimg.cn
 duiba.oss-cn-hangzhou.aliyuncs.com
 res8.vmallres.com
 ||activity*.tuibear.com^
