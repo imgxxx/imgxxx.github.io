@@ -1,5 +1,15 @@
 #测试版规则
 
+||log-back.jr.jd.com^
+||log-back.jr.jd.com.gslb.qianxun.com^
+||im58log.58.com^
+||brandlog.vivo.com.cn^
+||logservice-drcn.dt.hihonorcloud.com^
+||log*-applog-lq.novelfm.com^
+||log*-misc-hl.amemv.com^
+||log*-misc-alinc2-lq.amemv.com^
+||log.im.baidu.com^
+||yxyylog.echargenet.com^
 ||adxlog.vivo.com.cn^
 ||s3plus.meituan.net^
 gg.xox0.cn
