@@ -1,5 +1,11 @@
 #测试版规则
 
+||app-log-lab.immomo.com
+||log*-applog-hl.novelfm.com^
+||log*-misc.amemv.com^
+||rtlog*-applog-hl.fqnovel.com^
+||p*-log-collector.ejoy.com^
+
 ilivelog.qcloud.com
 log.71574.cn
 toy.log.nexon.io
