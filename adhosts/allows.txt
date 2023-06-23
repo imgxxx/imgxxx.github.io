@@ -2,7 +2,7 @@
 @@||tianshu.gtimg.cn^
 @@||ti.qq.com^
 @@||public.gdtimg.com^
-@@||qqadapt.qpic.cn^
+#注释@@||qqadapt.qpic.cn^
 
 
 
