@@ -1,6 +1,9 @@
 #测试版规则
 
 @@||zol.com.cn^$important
+@@||music.163.com
+@@||you.163.com
+
 
 ||log-back.jr.jd.com^
 ||log-back.jr.jd.com.gslb.qianxun.com^
