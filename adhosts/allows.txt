@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||zol.com.cn^$important
+
 ||log-back.jr.jd.com^
 ||log-back.jr.jd.com.gslb.qianxun.com^
 ||im58log.58.com^
