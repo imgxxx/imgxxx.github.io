@@ -1,5 +1,7 @@
 #测试版规则
 
+||adxlog.vivo.com.cn^
+||s3plus.meituan.net^
 gg.xox0.cn
 
 #百度贴吧广告
