@@ -417,6 +417,14 @@ sdk.xiaoeknow.com
 @@||nsclick.baidu.com^$important
 
 #恶意网站
+||mchscn.org^
+||011.com^
+||23hh.cc^
+||luxingwang.com.cn^
+||itjiaocheng.com^
+||qilu-tianhe.com^
+||yj2.glasses-skfsl.com^
+||glasses-skfsl.com^
 ||ildopxge.com^
 ||25xap.live^
 ||tih929.xyz^
