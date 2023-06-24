@@ -1,5 +1,7 @@
 #测试版规则
 
+||a.video.qq.com^
+
 @@||scs.openspeech.cn^
 @@||data.openspeech.cn^
 @@||coop.voicecloud.cn^
