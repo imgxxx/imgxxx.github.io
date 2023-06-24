@@ -1,5 +1,22 @@
 #测试版规则
 
+sdk.xinxiansk.com
+rt-health-trace-log.dreport.meituan.net
+data-sdk-uuid-log.dreport.meituan.net
+an-sm-log.tantanapp.com
+forwardlog.wechatpay.cn
+entry.clientlog.music.ntes53.netease.com
+crash-log.campushoy.com
+wlog.gifshow.com
+
+@@||jsmov2.a.yximgs.com^
+@@||static.yximgs.com^
+@@||bd.pull.yximgs.com^
+@@||gdfp.gifshow.com^
+@@||push.kwd.inkuai.com^
+@@||bd-proxy.pull.yximgs.com^
+
+
 log-vip-ssl.xunlei.com
 applog-perf.lc.quark.cn
 log-api.cli.im
@@ -920,7 +937,6 @@ open.toutiao.com
 ||lf*-open-ma-pkg-sign.bytemastatic.com^
 
 ||t*img-c.yangkeduo.com^
-||ykimg.com^
 metrics.mzstatic.com
 iadsdk.apple.com
 tr.iadsdk.apple.com
@@ -995,7 +1011,6 @@ ad.360buyimg.com
 ||bjmantis.com^
 ||qeasy.cloud^
 txqcmmov.a.etoote.com
-||etoote.com^
 
 @@||alibabachengdun.net^$important
 @@||alidocs.oss-cn-*.aliyuncs.com^$important
