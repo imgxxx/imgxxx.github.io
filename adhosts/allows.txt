@@ -67,7 +67,7 @@ log.z3.cn
 ||log.im.baidu.com^
 ||yxyylog.echargenet.com^
 ||adxlog.vivo.com.cn^
-||s3plus.meituan.net^
+#注释||s3plus.meituan.net^
 ||log*-hl.qishui.com^
 ||n-logs-ipc.tplinkcloud.com.cn^
 ||qr-log.wosai.cn^
