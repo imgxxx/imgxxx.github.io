@@ -1,4 +1,7 @@
 #测试版规则
+
+@@||act-webstatic.mihoyo.com^
+@@||sentry-inc.ssr.mihoyo.com^
 @@||tianshu.gtimg.cn^
 @@||ti.qq.com^
 @@||public.gdtimg.com^
