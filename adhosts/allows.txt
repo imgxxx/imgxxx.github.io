@@ -1,5 +1,14 @@
 #测试版规则
 
+log-vip-ssl.xunlei.com
+applog-perf.lc.quark.cn
+log-api.cli.im
+app-log-lab.tantanapp.com
+||rtlog*-applog-hl.amemv.com^
+log-report.tenclass.net.cn
+applog.17wanxiao.com
+ywlog.reader.qq.com
+
 ||a.video.qq.com^
 
 @@||scs.openspeech.cn^
