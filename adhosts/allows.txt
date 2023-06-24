@@ -1,5 +1,10 @@
 #测试版规则
 
+#快手直播推广
+#注释||*-adaptive-pull.video-voip.com^
+#注释||*-adaptive.pull.yximgs.com^
+
+
 sdk.xinxiansk.com
 rt-health-trace-log.dreport.meituan.net
 data-sdk-uuid-log.dreport.meituan.net
@@ -997,8 +1002,7 @@ vc-brain.ndcpp.com
 ||p*-goku.byteimg.com^
 
 ||peiluyou.com^
-||xxpkg.com^
-||hw-sh-pcdn-*.biliapi.net^
+
 
 @@||tieba-fe.cdn.bcebos.com^
 
@@ -1222,10 +1226,10 @@ apmplus.volces.com
 ||bizport.cn^
 ||sensorsdata.cn^
 api.convertlab.com
-||*-adaptive-pull.video-voip.com^
+
 
 misc.360buyimg.com
-||*-adaptive.pull.yximgs.com^
+
 img.adprod.cn
 api.adprod.cn
 ||adprod.cn^
