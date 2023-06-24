@@ -7,9 +7,9 @@
 
 @@||act-webstatic.mihoyo.com^
 @@||sentry-inc.ssr.mihoyo.com^
-@@||tianshu.gtimg.cn^
+#注释@@||tianshu.gtimg.cn^
 @@||ti.qq.com^
-@@||public.gdtimg.com^
+#注释@@||public.gdtimg.com^
 
 #QQ名片图片
 #注释@@||qqadapt.qpic.cn^
