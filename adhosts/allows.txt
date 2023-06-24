@@ -3,7 +3,7 @@
 #快手直播推广
 #注释||*-adaptive-pull.video-voip.com^
 #注释||*-adaptive.pull.yximgs.com^
-
+#注释||*-adaptive-pull.live-voip.com^
 
 sdk.xinxiansk.com
 rt-health-trace-log.dreport.meituan.net
@@ -1168,7 +1168,7 @@ line*-h5-mobile-api.biligame.com^
 ||tanx^
 
 
-||*-adaptive-pull.live-voip.com^
+
 dns.weixin.qq.com.cn
 e.ljcdn1.cn
 tc7.baidu-1img.cn
