@@ -1,7 +1,7 @@
 #测试版规则
 
 #快手直播推广
-||*-adaptive-pull.video-voip.com^
+#注释||*-adaptive-pull.video-voip.com^
 ||*-adaptive.pull.yximgs.com^
 
 
