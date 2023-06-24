@@ -2,7 +2,7 @@
 
 #快手直播推广
 #注释||*-adaptive-pull.video-voip.com^
-||*-adaptive.pull.yximgs.com^
+#注释||*-adaptive.pull.yximgs.com^
 
 
 sdk.xinxiansk.com
