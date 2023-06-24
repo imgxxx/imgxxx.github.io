@@ -1,5 +1,10 @@
 #测试版规则
 
+@@||scs.openspeech.cn^
+@@||data.openspeech.cn^
+@@||coop.voicecloud.cn^
+
+
 @@||act-webstatic.mihoyo.com^
 @@||sentry-inc.ssr.mihoyo.com^
 @@||tianshu.gtimg.cn^
