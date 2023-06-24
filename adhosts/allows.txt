@@ -459,7 +459,7 @@ sdk.xiaoeknow.com
 
 ||sankuai.com^
 
-||xfinfr.com^$important
+#注释||xfinfr.com^$important
 
 
 #百度输入法
