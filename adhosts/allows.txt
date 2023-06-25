@@ -1,8 +1,14 @@
 #测试版规则
 
+errorlog.sobot.com
+im-log.aligames.com
+sensors-log.dongqiudi.com
+acfun-log-sdk.gifshow.com
+sdk.rtbstar.cn
+auni.unioncom.cc
+
 #猫眼电影
 #注释pipi.cn
-
 
 @@||route-stats.dreport.meituan.net^
 
