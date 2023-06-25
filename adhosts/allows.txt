@@ -20,7 +20,7 @@ mobilelog.kuwo.cn
 ||*-adaptive-pull.video-voip.com^
 ||*-adaptive.pull.yximgs.com^
 ||*-adaptive-pull.live-voip.com^
-#注释||d*-ec.a.kwimgs.com^$important
+||d*-ec.a.kwimgs.com^
 @@||u*-*.ecukwai.com^
 @@||u*.a.yximgs.com^
 
