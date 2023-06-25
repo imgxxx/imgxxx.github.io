@@ -11,9 +11,9 @@ mobilelog.kuwo.cn
 @@||twitter.com^
 
 #快手直播推广
-#注释||*-adaptive-pull.video-voip.com^
-#注释||*-adaptive.pull.yximgs.com^
-#注释||*-adaptive-pull.live-voip.com^
+||*-adaptive-pull.video-voip.com^
+||*-adaptive.pull.yximgs.com^
+||*-adaptive-pull.live-voip.com^
 
 sdk.xinxiansk.com
 rt-health-trace-log.dreport.meituan.net
