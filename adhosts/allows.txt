@@ -1139,49 +1139,14 @@ api-adservices.apple.com
 #皮皮虾图片接口
 @@||p*-ppx-sign.byteimg.com^
 
-||﻿umdc.alibabachengdun.com^
-||umdc.alibabachengdun.net^
-||gm-v6.mmstat.com.gds.alibabadns.com^
-#注释||s-gm.mmstat.com^
+
 ||dig.bdurl.net^
-||i-hl.snssdk.com^
-||i-hl.snssdk.com.queniuyk.com^
-||lf9-open-ma-pkg-sign.bytemastatic.com^
-||zttapk.v.bsgslb.com^
+
 
 ||api-access.pangolin-sdk-toutiao-b.com^
 ||rtlog5-applog-hl.fqnovel.com^
 ||bizsec-auth.alicdn.com^
-||lf6-developer-sign.bytemastatic.com^
-||l2-toutiao-ipv6-ml.gslb.ksyuncdn.com^
-||lf3-developer-sign.bytemastatic.com^
-||ma5-normal-hl.zijieapi.com^
-||ma.zijieapi.com^
-||ma.zijieapi.com.queniuiq.com^
 
-||i.snssdk.com.queniuyk.com^
-||whoami.akamai.net^
-
-||vcs.zijieapi.com.queniukw.com^
-||k5-toutiao-ml.gslb.ksyuncdn.com^
-||is.snssdk.com^
-||vcl-brain.ndcpp.com^
-||vc-mirror.ndcpp.com^
-||old-vc-mirror-xlb.ndcpp.com^
-||dy-vod-colde.bytegslb.com^
-||vcl-brain.snssdk.com^
-||v3-cold.douyinvod.com^
-||v3-cold.douyinvod.com.queniuso.com^
-
-||direct.webcast-websocket-lb.hl.bytelb.net^
-||lf1-webcastcdn-tos.douyinstatic.com^
-||lf1-webcastcdn-tos.douyinstatic.com.wsglb0.com^
-||bsync3-normal-hl.zijieapi.com^
-||bsync3-normal-hl.zijieapi.com.queniuyk.com^
-||v5-coldl.douyinvod.com^
-||zx-vod-coldl.bytegslb.com^
-||aweme-hl.snssdk.com^
-||aweme-hl.snssdk.com.queniuiq.com^
 
 #腾讯游戏下载更新接口
 @@||down.qq.com
