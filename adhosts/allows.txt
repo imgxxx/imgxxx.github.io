@@ -1,4 +1,7 @@
 #测试版规则
+@@||prism-report-ddd.dreport.meituan.net^
+@@||report.meituan.com^
+
 
 #数美风控
 @@||fengkongcloud.com^
