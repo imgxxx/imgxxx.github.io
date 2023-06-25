@@ -21,6 +21,11 @@ mobilelog.kuwo.cn
 ||*-adaptive.pull.yximgs.com^
 ||*-adaptive-pull.live-voip.com^
 
+@@||u*-*.ecukwai.com^
+@@||u*.a.yximgs.com^
+
+
+
 sdk.xinxiansk.com
 rt-health-trace-log.dreport.meituan.net
 data-sdk-uuid-log.dreport.meituan.net
