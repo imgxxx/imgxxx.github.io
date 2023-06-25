@@ -1,10 +1,18 @@
 #测试版规则
 
+e5log3.fineboost.cn
+log3-misc-lq.ixigua.com
+gplog.snssdk.com
+jdlog.uu.cc
+clientlog.108sq.cn
+adxlog.9zas5.com
+mobilelog.kuwo.cn
+
 @@||twitter.com^
 
 #快手直播推广
-#注释||*-adaptive-pull.video-voip.com^
-#注释||*-adaptive.pull.yximgs.com^
+||*-adaptive-pull.video-voip.com^
+||*-adaptive.pull.yximgs.com^
 #注释||*-adaptive-pull.live-voip.com^
 
 sdk.xinxiansk.com
