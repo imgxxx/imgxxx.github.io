@@ -1,4 +1,7 @@
 #测试版规则
+shoujiduoduo.wchengxu.cn
+www.adshoujiduoduo.com
+
 @@||ring.shoujiduoduo.com^
 @@||cdnringbd.shoujiduoduo.com^
 
