@@ -1,4 +1,16 @@
 #测试版规则
+
+#腾讯QQ
+@@||tmfsdktcpv4.m.qq.com^
+@@||qm.qq.com^
+@@||tdid.m.qq.com^
+@@||tmfmazuhttp-wangka.m.qq.com^
+@@||tmfmazu.m.qq.com^
+@@||mazu.m.qq.com^
+
+
+
+
 shoujiduoduo.wchengxu.cn
 www.adshoujiduoduo.com
 
