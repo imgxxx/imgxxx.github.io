@@ -20,7 +20,7 @@ mobilelog.kuwo.cn
 ||*-adaptive-pull.video-voip.com^
 ||*-adaptive.pull.yximgs.com^
 ||*-adaptive-pull.live-voip.com^
-
+#注释||d*-ec.a.kwimgs.com^$important
 @@||u*-*.ecukwai.com^
 @@||u*.a.yximgs.com^
 
@@ -312,7 +312,7 @@ mo.rtalink.com
 
 @@||static.360buyimg.com^
 
-||d*-ec.a.kwimgs.com^$important
+
 
 #UC
 @@||holmeshelp.uc.cn
