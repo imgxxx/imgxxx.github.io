@@ -1,5 +1,10 @@
 #测试版规则
 
+#猫眼电影
+#注释pipi.cn
+
+
+@@||route-stats.dreport.meituan.net^
 
 hdns.ksyun.com
 ||aedns.weixin.qq.com^$important
@@ -209,7 +214,6 @@ error.taobao.com
 
 activity.zhilianghui.com
 ||guangadx.com^
-||pipi.cn^
 ||fjkeet.com^
 ||zhilianghui.com^
 ||sensorsdata.cn^
