@@ -9,9 +9,6 @@
 @@||is.snssdk.com^
 @@||spider-tracker.xiaohongshu.com^
 
-#注释||*ad*.free-lbv6.idouyinvod.com^
-#注释||ma*-normal-lq.zijieapi.com^
-
 errorlog.sobot.com
 im-log.aligames.com
 sensors-log.dongqiudi.com
