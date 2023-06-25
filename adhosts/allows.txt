@@ -1,4 +1,7 @@
 #测试版规则
+@@||ring.shoujiduoduo.com^
+@@||cdnringbd.shoujiduoduo.com^
+
 
 e5log3.fineboost.cn
 log3-misc-lq.ixigua.com
