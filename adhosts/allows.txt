@@ -3,7 +3,8 @@
 #数美风控
 @@||fengkongcloud.com^
 
-
+@@||vv.video.qq.com^
+@@||snowflake.qq.com^
 
 @@||is.snssdk.com^
 @@||spider-tracker.xiaohongshu.com^
@@ -1473,7 +1474,6 @@ mlog.wangsu.com
 ||static.jyss.com^
 #注释@@||img*.360buyimg.com^
 ||lite.a.market.xiaomi.com^$important
-||vv*.video.qq.com^
 richmedia.video.qq.com
 livep.l.qq.com
 config.ab.qq.com
