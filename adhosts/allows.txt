@@ -1,4 +1,13 @@
 #测试版规则
+
+||log*-applog-hl.zijieapi.com^
+||logab*-misc-alinc2-hl.amemv.com^
+bbt-log-collection.babytree.com
+||rtlog*-applog-lq.novelfm.com^
+senlog.cmpassport.com
+dlogs.bwton.com
+watchtower-logger.jd.com
+
 ||weijianzhan.com^
 union.4399.cn
 dss2.bdstatic.com
