@@ -1,5 +1,5 @@
 #测试版规则
-
+@@||upload.ksapisrv.com^
 @@||pcdn-proxy-config.xxpkg.com^
 @@||vcs.zijieapi.com^
 @@||p26.douyinpic.com^
