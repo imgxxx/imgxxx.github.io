@@ -10,7 +10,7 @@ aeventlog.beacon.qq.com.mshome.net
 uki-mobile-log.oss-cn-hangzhou.aliyuncs.com
 xxl-log.rantu.com
 aeventlog.beacon.qq.com.lan
-
+rtlog3-applog.amemv.com
 
 @@||pub.funshion.com^
 @@||view.vimg.synacast.com^
