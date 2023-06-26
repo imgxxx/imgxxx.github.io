@@ -1,6 +1,7 @@
 #测试版规则
 ||weijianzhan.com^
-
+union.4399.cn
+dss2.bdstatic.com
 @@||eu.org^
 
 #百度极速版
