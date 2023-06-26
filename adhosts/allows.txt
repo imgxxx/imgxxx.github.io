@@ -1,5 +1,16 @@
 #测试版规则
 
+@@||uxip-res.meizu.com^
+@@||game.res.meizu.com^
+@@||api-game.meizu.com^
+@@||api-flow.flyme.cn^
+@@||servicecut.meizu.com^
+@@||api-push.meizu.com^
+@@||t-flow.flyme.cn^
+@@||norma-external-collect.meizu.com^
+@@||aider-res.meizu.com^
+
+
 @@||vectorsdk.map.qq.com^
 @@||analytics.map.qq.com^
 @@||cc.map.qq.com^
