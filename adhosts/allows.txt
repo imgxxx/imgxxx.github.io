@@ -1,5 +1,9 @@
 #测试版规则
 
+@@||vcs.zijieapi.com^
+@@||p26.douyinpic.com^
+@@||mon.zijieapi.com^
+
 catalog.nmgrygc.com
 aeventlog.beacon.qq.com.mshome.net
 uki-mobile-log.oss-cn-hangzhou.aliyuncs.com
@@ -753,7 +757,6 @@ log.tpns.tencent.com
 advagent.olvip.vip
 adsfilebssdlbig.ali.kugou.com
 @@||iwx.mail.qq.com^$important
-vcs.zijieapi.com
 g.vip.qq.com
 ||p*-game-adapter.ejoy.com^
 ||ads.95516.com^
