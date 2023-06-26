@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||mail-api.proton.me^
+
 @@||boxer.baidu.com^
 
 ||log*-applog-hl.zijieapi.com^
