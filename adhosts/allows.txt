@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||boxer.baidu.com^
+
 ||log*-applog-hl.zijieapi.com^
 ||logab*-misc-alinc2-hl.amemv.com^
 bbt-log-collection.babytree.com
