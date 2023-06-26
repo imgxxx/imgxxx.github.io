@@ -1,5 +1,12 @@
 #测试版规则
 
+@@||amap-aos-info-nogw.amap.com^
+@@||page.amap.com^
+@@||restapi.amap.com^
+@@||cgicol.amap.com^
+@@||t.zhipin.com^
+
+
 @@||mail-api.proton.me^
 
 @@||boxer.baidu.com^
