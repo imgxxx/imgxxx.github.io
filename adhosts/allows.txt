@@ -1,5 +1,6 @@
 #测试版规则
 
+@@||pcdn-proxy-config.xxpkg.com^
 @@||vcs.zijieapi.com^
 @@||p26.douyinpic.com^
 @@||mon.zijieapi.com^
@@ -184,7 +185,7 @@ ywlog.reader.qq.com
 
 ||app-log-lab.immomo.com
 ||log*-applog-hl.novelfm.com^
-||log*-misc.amemv.com^
+#注释||log*-misc.amemv.com^
 ||rtlog*-applog-hl.fqnovel.com^
 ||p*-log-collector.ejoy.com^
 
