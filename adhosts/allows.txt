@@ -1,5 +1,10 @@
 #测试版规则
 
+@@||vectorsdk.map.qq.com^
+@@||analytics.map.qq.com^
+@@||cc.map.qq.com^
+@@||loc.map.baidu.com^
+@@||appleimap.163.com^
 @@||amap-aos-info-nogw.amap.com^
 @@||page.amap.com^
 @@||restapi.amap.com^
