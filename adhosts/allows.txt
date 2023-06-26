@@ -1,8 +1,8 @@
 #测试版规则
 
 #百度极速版
-||gimg1.baidu.com^
-
+||gimg*.baidu.com^$important
+||gimg1.baidu.com^$important
 
 logapi-and.zhipin.com
 log-forward.mid.ejoy.com
