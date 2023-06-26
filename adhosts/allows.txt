@@ -1,4 +1,12 @@
 #测试版规则
+
+catalog.nmgrygc.com
+aeventlog.beacon.qq.com.mshome.net
+uki-mobile-log.oss-cn-hangzhou.aliyuncs.com
+xxl-log.rantu.com
+aeventlog.beacon.qq.com.lan
+
+
 @@||pub.funshion.com^
 @@||view.vimg.synacast.com^
 @@||po.funshion.com^
