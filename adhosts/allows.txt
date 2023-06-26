@@ -1,5 +1,8 @@
 #测试版规则
-
+@@||pub.funshion.com^
+@@||view.vimg.synacast.com^
+@@||po.funshion.com^
+@@||stat.funshion.com^
 @@||uxip-res.meizu.com^
 @@||game.res.meizu.com^
 @@||api-game.meizu.com^
