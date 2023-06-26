@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||eu.org^
+
 #百度极速版
 ||gimg*.baidu.com^$important
 ||gimg1.baidu.com^$important
