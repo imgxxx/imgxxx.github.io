@@ -3,6 +3,9 @@
 #百度极速版
 ||gimg*.baidu.com^$important
 ||gimg1.baidu.com^$important
+||180.76.76.112^
+||180.76.76.200^
+
 
 logapi-and.zhipin.com
 log-forward.mid.ejoy.com
