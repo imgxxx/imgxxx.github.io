@@ -185,7 +185,13 @@ ywlog.reader.qq.com
 
 ||app-log-lab.immomo.com
 ||log*-applog-hl.novelfm.com^
-#注释||log*-misc.amemv.com^
+
+
+#抖音应用服务（拦截后会导致无法使用）
+@@||log*-misc.amemv.com^
+
+
+
 ||rtlog*-applog-hl.fqnovel.com^
 ||p*-log-collector.ejoy.com^
 
