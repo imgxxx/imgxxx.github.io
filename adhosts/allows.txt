@@ -1,6 +1,5 @@
 #测试版规则
 
-||finder*.video.qq.com^
 socwxsns.video.qq.com
 
 ||birdgesdk.com^
