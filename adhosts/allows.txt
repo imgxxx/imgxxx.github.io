@@ -1,4 +1,11 @@
 #测试版规则
+applog.thepaper.cn
+api-log.liepin.com
+sdklog.leju.com
+
+kit-device-log-1252363965.cos.ap-beijing.myqcloud.com
+
+@@||src.leju.com^
 @@||upload.ksapisrv.com^
 @@||pcdn-proxy-config.xxpkg.com^
 @@||vcs.zijieapi.com^
