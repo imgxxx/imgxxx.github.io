@@ -1,4 +1,5 @@
 #测试版规则
+||gv.vivo.com.cn^
 ||finderdsp.video.qq.com^
 ||grayqbdsp.html5.qq.com^
 ||dsp.fcbox.com^
