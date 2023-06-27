@@ -1,4 +1,8 @@
 #测试版规则
+bd.jz16666.com
+||wappass.baidu.com^
+||wappass.bdimg.com^
+||wejianzhan.com^
 applog.thepaper.cn
 api-log.liepin.com
 sdklog.leju.com
