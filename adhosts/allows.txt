@@ -1,7 +1,32 @@
 #测试版规则
+||finderdsp.video.qq.com^
+||grayqbdsp.html5.qq.com^
+||dsp.fcbox.com^
+||youku-dsp.youku.com^
+||music.dsplego-dk.sched.dcloudstc.com^
+||video-dsp.pddpic.com^
+||mall-dsp2.qinlinkeji.com^
+||ssp.qq.com^
+||publiclog.zhiyan.tencent-cloud.net^
+||fclog.baidu.com^
+||log.weixin.qq.com^
+||mbads.paas.cmbchina.com^
+
+
+@@||clientlog3.music.163.com^
+@@||update.client.163.com^
+@@||client.mail.163.com^
+
+
+applog.longhuvip.com
+ssplog.nubia.com
+report-log.gsxnj.cn
+owl-log.zuoyebang.cc
+catalog.mysignal.cn
+alimelog.taobao.com
 
 ||ossp.voicecloud.cn^
-||voiceads.cn^
+||voiceads.cn^$important
 ||yonyou.com^
 ||bnkservice.com^
 ||apis.hetaoapis.com^
@@ -911,7 +936,6 @@ apd-vlive.apdcdn.tc.qq.com
 
 @@||polaris3-normal-lq.zijieapi.com
 @@||mon.snssdk.com
-@@||ssp.qq.com^$important
 @@||stat6.y.qq.com
 @@||stat.y.qq.com
 @@||monitor.music.qq.com
