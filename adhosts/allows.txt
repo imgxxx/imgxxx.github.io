@@ -1476,7 +1476,6 @@ au.qq.com
 @@||push.hexin.cn
 @@||push.10jqka.com.cn
 ||ms.bdimg.com
-||dldir*.qq.com
 ||120.233.184.219
 ||183.232.115.51
 ||av.video.qq.com
