@@ -1905,7 +1905,6 @@ tj.video.qq.com
 ||imp.voiceads.cn^$important
 ||voiceads.cn^
 @@||i5i.site^
-||cibntv.net^
 ||log-api.pangolin-sdk-toutiao.com^
 ||api-access.pangolin-sdk-toutiao-b.com^
 ||gap.work.weixin.qq.com^
