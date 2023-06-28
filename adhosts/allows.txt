@@ -1,10 +1,5 @@
 #测试版规则
-
-@@||cgi.connect.qq.com^
-@@||soup.v.qq.com^
 @@||guid.tpns.sh.tencent.com^
-
-||member.tmga.qq.com^
 
 ||dx-static-s.iqiyi.com^
 
