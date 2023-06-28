@@ -1,4 +1,7 @@
 #测试版规则
+
+||dx-static-s.iqiyi.com^
+
 kinglog.feidee.net
 iphone_pv_log.kltb.com.cn
 umsdklog.gz.bcebos.com
