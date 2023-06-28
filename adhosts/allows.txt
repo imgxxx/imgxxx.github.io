@@ -1,5 +1,8 @@
 #测试版规则
-
+kinglog.feidee.net
+iphone_pv_log.kltb.com.cn
+umsdklog.gz.bcebos.com
+bi-log.aihuishou.com
 socwxsns.video.qq.com
 
 ||birdgesdk.com^
