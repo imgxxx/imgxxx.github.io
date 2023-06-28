@@ -72,8 +72,6 @@ alimelog.taobao.com
 
 
 bd.jz16666.com
-||wappass.baidu.com^
-||wappass.bdimg.com^
 ||wejianzhan.com^
 applog.thepaper.cn
 api-log.liepin.com
