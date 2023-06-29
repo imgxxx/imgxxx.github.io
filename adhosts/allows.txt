@@ -1,4 +1,17 @@
 #测试版规则
+
+
+
+@@||qmessage-online.quark.cn^
+@@||na61-rmbsync-upaas.quark.cn^
+@@||browser-cloud.quark.cn^
+@@||uop.quark.cn^
+@@||usync.quark.cn^
+@@||vault.quark.cn^
+@@||gk.quark.cn^
+
+
+
 ||log.weixin.qq.com^$important
 ||clientlog.music.163.com^$important
 
