@@ -1,5 +1,8 @@
 #测试版规则
 
+clientlog.sausage.xd.com
+
+@@||cs-center.quark.cn^
 @@||cloud.quark.cn^
 @@||coral-live.quark.cn^
 @@||na61-ucc-upaas.quark.cn^
@@ -11,9 +14,6 @@
 ||iadmatapk.nosdn.127.net^
 ||iadmat.nosdn.127.net^
 ||iadmusicmat.music.126.net^
-
-#注释||ma*-normal-lq.zijieapi.com^$important
-#注释||lf*-short.ibytedapm.com^
 
 @@||rp.hpplay.cn^
 @@||ib-lq.snssdk.com^
@@ -1245,7 +1245,6 @@ api.tbk.dingdanxia.com
 mkt-advertisement.tuhu.cn
 emdcadvertise.eastmoney.com
 
-||advertise
 ||*-adapt.pddpic.com^
 line*-h5-mobile-api.biligame.com^
 
