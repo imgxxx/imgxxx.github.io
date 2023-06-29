@@ -1,4 +1,6 @@
 #测试版规则
+
+@@||cloud.quark.cn^
 @@||coral-live.quark.cn^
 @@||na61-ucc-upaas.quark.cn^
 @@||apiquark.sm.cn^
