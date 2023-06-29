@@ -1,7 +1,7 @@
 #测试版规则
-
+applog.dc.hoho666.com
 clientlog.sausage.xd.com
-
+tdlog.tangdou.com
 @@||cs-center.quark.cn^
 @@||cloud.quark.cn^
 @@||coral-live.quark.cn^
@@ -327,7 +327,7 @@ ywlog.reader.qq.com
 
 
 #抖音应用服务（拦截后会导致无法使用）
-@@||log*-misc.amemv.com^
+||log*-misc.amemv.com^
 
 
 
