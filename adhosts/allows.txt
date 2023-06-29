@@ -1,4 +1,11 @@
 #测试版规则
+apilog.qbb6.com
+c-log.klxq999.com
+publog.hellogslb.com
+catalog.fjwhcbsh.com
+c-catalog.huangjinyan.vip
+
+
 @@||sendcloud.net^
 ||tb.himg.baidu.com^
 ||tb-video.bdstatic.com^
