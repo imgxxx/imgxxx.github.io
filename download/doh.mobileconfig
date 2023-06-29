@@ -13,9 +13,9 @@
 					<string>https://dns.ipv4dns.com/dns-query/ios</string>
 				</dict>
 				<key>PayloadDescription</key>
-				<string>Configures device to use AdGuard Home</string>
+				<string>DNS官方网站：https://m.ipv4dns.com</string>
 				<key>PayloadDisplayName</key>
-				<string>dns.ipv4dns.com DoH</string>
+				<string>DNS.IPV4DNS.COM</string>
 				<key>PayloadIdentifier</key>
 				<string>com.apple.dnsSettings.managed.a876472d-8359-45d6-bdd1-fd16f7e053b3</string>
 				<key>PayloadType</key>
@@ -27,9 +27,9 @@
 			</dict>
 		</array>
 		<key>PayloadDescription</key>
-		<string>Adds AdGuard Home to macOS Big Sur and iOS 14 or newer systems</string>
+		<string>DNS官方网站：https://m.ipv4dns.com</string>
 		<key>PayloadDisplayName</key>
-		<string>dns.ipv4dns.com DoH</string>
+		<string>DNS.IPV4DNS.COM</string>
 		<key>PayloadIdentifier</key>
 		<string>9ac058c8-f7d2-482f-b07a-0251c2b9920f</string>
 		<key>PayloadRemovalDisallowed</key>
