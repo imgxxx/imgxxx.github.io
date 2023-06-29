@@ -1,4 +1,8 @@
 #测试版规则
+||p5.music.126.net^
+||iadmatapk.nosdn.127.net^
+||iadmat.nosdn.127.net^
+||iadmusicmat.music.126.net^
 
 #注释||ma*-normal-lq.zijieapi.com^$important
 #注释||lf*-short.ibytedapm.com^
@@ -1066,7 +1070,7 @@ trace-h5sdk.vivo.com.cn
 
 ||ivideopnrt-stsdk.vivo.com.cn^
 open.toutiao.com
-||lf*-open-ma-pkg-sign.bytemastatic.com^
+
 
 ||t*img-c.yangkeduo.com^
 metrics.mzstatic.com
@@ -1101,11 +1105,9 @@ dsplog-adnet.vivo.com.cn
 ||*-hglem.ldd.sohu.com^$important
 hot.vrs.sohu.com
 videobacklog.vivo.com.cn
-||p*-open-sign.byteimg.com^$important
-||p*-open.byteimg.com^$important
-||p*-tt-video-sprite-sign.byteimg.com^$important
+
 wukongapi.vivo.com.cn
-||p*-novel.byteimg.com^$important
+
 ||p*.ssl.qhimg.com^$important
 dsplog.vivo.com.cn
 
@@ -1115,7 +1117,7 @@ dsplog.vivo.com.cn
 ||e.shifen.com^$important
 ||jmads.net^$important
 
-||*ad*.free-lbv6.idouyinvod.com^$important
+
 
 
 
@@ -1125,7 +1127,7 @@ dsplog.vivo.com.cn
 v5-re-un802.douyinvod.com
 vc-brain.ndcpp.com
 
-||p*-goku.byteimg.com^
+
 
 ||peiluyou.com^
 
@@ -2009,17 +2011,7 @@ access.pangolin-sdk-toutiao-b.com
 127.0.0.1 log-api.pangolin-sdk-toutiao-b.com
 127.0.0.1 sf6-be-pack.pglstatp-toutiao.com
 ||*.ad.*.com
-||p6-webcast.douyinpic.com
-||p6-webcast.douyinpic.com/img/webcast/user_grade_level_v5_21.png~tplv-obj.image$app=com.dragon.read
-||p6-webcast.douyinpic.com/img/webcast/fansclub_level_v6_7.png~tplv-obj.image$app=com.dragon.read
-||p3-webcast.douyinpic.com/img/webcast/user_grade_level_v5_14.png~tplv-obj.image$app=com.dragon.read
-||p3-webcast.douyinpic.com/img/webcast/user_grade_level_v5_2.png~tplv-obj.image$app=com.dragon.read
-||p3-webcast.douyinpic.com/img/webcast/user_grade_level_v5_11.png~tplv-obj.image$app=com.dragon.read
-||p6-webcast.douyinpic.com/img/webcast/user_grade_level_v5_11.png~tplv-obj.image$app=com.dragon.read
-||p9-webcast.douyinpic.com/img/webcast/user_grade_level_v5_2.png~tplv-obj.image$app=com.dragon.read
-||pull-flv-l11.douyincdn.com/stage/stream-110613234335613073_or4.flv?_session_id=037-2022032613073701015108321400226FF7.1648271269286$app=com.dragon.read
-||gecko5-hl.zijieapi.com^$app=com.dragon.read
-||pull-flv-l11.douyincdn.com/stage/stream-110613234335613073_or4.flv?_session_id=000-202203261252400101502180451C1C358A.1648271209874$app=com.dragon.read
+
 ||api-access.pangolin-sdk-toutiao.com^
 ||log-api.pangolin-sdk-toutiao.com^
 ||api-access.pangolin-sdk-toutiao-b.com^
@@ -2031,15 +2023,7 @@ access.pangolin-sdk-toutiao-b.com
 ||www.chengzijianzhan.com^$app=com.dragon.read
 ||apps.bytesfield.com^$app=com.dragon.read
 ||imp-toutiao-data.37.com.cn^$app=com.dragon.read
-||api5-normal-hl.fqnovel.com^$app=com.dragon.read
-||webcast-open.douyin.com^$app=com.dragon.read
-||p3.douyinpic.com^$app=com.dragon.read
-||rtlog5-applog-hl.fqnovel.com^$app=com.dragon.read
-||webcast-open.douyin.com^$app=com.dragon.read
-||webcast-open.douyin.com^$app=com.dragon.read
-||webcast-open.douyin.com^$app=com.dragon.read
-||p3.douyinpic.com^$app=com.dragon.read
-||p9-ad-sign.byteimg.com^$app=com.dragon.read
+|p9-ad-sign.byteimg.com^$app=com.dragon.read
 ||p9-ad-sign.byteimg.com/ad-app-package/0da29c84654dce9516015a83bd11c316~tplv-iq460dd072-origin.image?from=ad&x-expires=1650857384&x-signature=kiLqJi8wd%2FY3XzgY%2F3Ud3C7C1Jc%3D$app=com.dragon.read
 ||o2o-ad-dev.oss-cn-shanghai.aliyuncs.com^$app=io.iftech.android.box
 ||o2o-ad-clicking.alibaba.com^$app=io.iftech.android.box
@@ -2058,16 +2042,14 @@ access.pangolin-sdk-toutiao-b.com
 ||log1.cmpassport.com^$app=com.dragon.read
 ||log1.cmpassport.com^$app=com.dragon.read
 ||activity-ag.awemeughun.com^$app=com.dragon.read
-||tnc3-aliec2.bytedance.com^$app=com.dragon.read
 ||api-access.pangolin-sdk-toutiao.com^$app=com.taifeng.tffilms
-||webcast-open.douyin.com^$app=com.dragon.read
 ||p6-reading-sign.fqnovelpic.com^$app=com.dragon.read
 ||p26-be-pack-sign.pglstatp-toutiao.com/tos-cn-p-0051/b24573325b384cc9842678f9957614b1~tplv-qgppglrh0x-noop.jpeg?x-expires=1942272000&x-signature=O3HcBSfJdf1hogXU%2BzuORxjRDG0%3D$app=com.dragon.read
 ||log3-applog-hl.fqnovel.com^$app=com.dragon.read
 ||log3-applog-hl.fqnovel.com^$app=com.dragon.read
 ||log3-applog-hl.fqnovel.com^$app=com.dragon.read
 ||log3-applog-hl.fqnovel.com^$app=com.dragon.read
-||p6-novel.byteimg.com^$app=com.dragon.read
+||
 ||gini.snssdk.com^$app=com.dragon.read
 ||bsync3-normal-hl.zijieapi.com^$app=com.dragon.read
 ||p9-be-pack-sign.pglstatp-toutiao.com/web.business.image/202202215d0dacb310d0ae7747ec8ce7~tplv-qgppglrh0x-noop.jpeg?x-expires=1942272000&x-signature=E3r3BAfm%2B1hGXhwLiOYL872nAes%3D$app=com.dragon.read
@@ -2103,7 +2085,6 @@ access.pangolin-sdk-toutiao-b.com
 ||extlog.snssdk.com^$app=com.keepmobi.wanningxiangqidazhaoban
 ||extlog.snssdk.com^$app=com.keepmobi.wanningxiangqidazhaoban
 ||da.anythinktech.com^$app=com.keepmobi.wanningxiangqidazhaoban
-||mssdk-bu.snssdk.com^$app=com.keepmobi.wanningxiangqidazhaoban
 ||da.anythinktech.com^$app=com.keepmobi.wanningxiangqidazhaoban
 ||mssdk-bu.snssdk.com^$app=com.keepmobi.wanningxiangqidazhaoban
 ||extlog.snssdk.com^$app=com.keepmobi.wanningxiangqidazhaoban
@@ -2113,26 +2094,19 @@ access.pangolin-sdk-toutiao-b.com
 ||sf3-be-pack.pglstatp-toutiao.com^$app=com.keepmobi.wanningxiangqidazhaoban
 ||sf6-be-pack.pglstatp-toutiao.com^$app=com.keepmobi.wanningxiangqidazhaoban,important
 ||ichannel.snssdk.com^$app=com.dragon.read
-||tnc3-aliec2.snssdk.com^$app=com.dragon.read
 ||gecko-hl.snssdk.com^$app=com.dragon.read,important
-||i-hl.snssdk.com^$app=com.dragon.read,important
-||tnc3-alisc1.snssdk.com^$app=com.dragon.read,important
-||is.snssdk.com^$app=com.dragon.read
-||reading-hl.snssdk.com^$app=com.dragon.read,important
-||abtest3-misc-hl.zijieapi.com^$app=com.dragon.read
+
 ||sf3-fe-tos.pglstatp-toutiao.com^$app=com.dragon.read,important
 ||sf3-fe-tos.pglstatp-toutiao.com^$app=com.dragon.read
-||tnc3-bjlgy.snssdk.com^$app=com.dragon.read,important
+
 ||is-hl.snssdk.com^$app=com.dragon.read
 ||tnc3-alisc1.bytedance.com^$app=com.dragon.read
 ||vcs-hl.snssdk.com^$app=com.dragon.read
 ||rtlog3-applog-hl.fqnovel.com^$app=com.dragon.read,important
-||mon.toutiao.com^$app=com.dragon.read,important
+
 ||minigame3-normal-hl.zijieapi.com^$app=com.dragon.read,important
 ||rtlog5-applog-hl.fqnovel.com^$app=com.dragon.read,important
 ||log5-applog-hl.fqnovel.com^$app=com.dragon.read,important
-||api3-normal-hl.fqnovel.com^$app=com.dragon.read
-||polaris3-normal-hl.zijieapi.com^$app=com.dragon.read
 ||ads3-normal-hl.zijieapi.com^$app=com.dragon.read,important
 ||security-hl.snssdk.com^$app=com.dragon.read
 ||minigame5-normal-hl.zijieapi.com^$app=com.dragon.read,important
