@@ -1,8 +1,9 @@
 #测试版规则
 
+#注释||ma*-normal-lq.zijieapi.com^$important
 #注释||lf*-short.ibytedapm.com^
 
-
+@@||rp.hpplay.cn^
 @@||ib-lq.snssdk.com^
 @@||i-lq.snssdk.com^
 
@@ -1117,7 +1118,7 @@ dsplog.vivo.com.cn
 ||*ad*.free-lbv6.idouyinvod.com^$important
 
 
-||ma*-normal-lq.zijieapi.com^$important
+
 ||chengzijianzhan.cc^
 @@||img30.360buyimg.com^$important
 
