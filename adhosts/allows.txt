@@ -1,6 +1,10 @@
 #测试版规则
 
+#注释||lf*-short.ibytedapm.com^
 
+
+@@||ib-lq.snssdk.com^
+@@||i-lq.snssdk.com^
 
 @@||qmessage-online.quark.cn^
 @@||na61-rmbsync-upaas.quark.cn^
@@ -1119,7 +1123,7 @@ dsplog.vivo.com.cn
 
 v5-re-un802.douyinvod.com
 vc-brain.ndcpp.com
-||lf*-short.ibytedapm.com^
+
 ||p*-goku.byteimg.com^
 
 ||peiluyou.com^
