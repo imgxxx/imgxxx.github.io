@@ -1,4 +1,14 @@
 #测试版规则
+open.youzanyun.com
+open.douyin.com
+sdk.irdatabase.com
+open.kuaishou.com
+datalog.eqxiu.com
+applog.rwork.crc.com.cn
+dt-apigateway-log.dt-pn1.com
+jojo-unified-log.oss-cn-hangzhou.aliyuncs.com
+weblog.jobui.com
+
 
 apilog.qbb6.com
 c-log.klxq999.com
