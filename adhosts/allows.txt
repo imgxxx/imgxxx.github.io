@@ -1,4 +1,9 @@
 #测试版规则
+
+@@||apiquark.sm.cn^
+
+||sv.cdn.n1q.cn^
+||lf*-sf-be-pack-sign.pglstatp-toutiao.com^
 ||p5.music.126.net^
 ||iadmatapk.nosdn.127.net^
 ||iadmat.nosdn.127.net^
