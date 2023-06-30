@@ -1,6 +1,6 @@
 #测试版规则
-
-
+||lf*-cdn-tos.bytescm.com^
+||lf-cdn-tos.bytescm.com^
 ||*.free-lbv6.idouyinvod.com^
 ||xdplt.com^
 ||shp.qpic.cn^
