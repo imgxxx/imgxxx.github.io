@@ -1,7 +1,7 @@
 #测试版规则
 
 ||shp.qpic.cn^
-||lf3-cdn-tos.bytecdntp.com^
+||lf*-cdn-tos.bytecdntp.com^
 
 
 @@||ksosoft.com^
