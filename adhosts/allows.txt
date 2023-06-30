@@ -22,7 +22,6 @@
 ||frontier-toutiao.snssdk.com^
 ||vod-settings.bytedanceapi.com^
 #番茄小说测试
-||api*-normal-sinfonlineb.fqnovel.com^
 ||p9-developer-sign.bytemaimg.com^
 ||toufang.huixuanjiasu.com^
 ||p*-developer-sign.bytemaimg.com^
