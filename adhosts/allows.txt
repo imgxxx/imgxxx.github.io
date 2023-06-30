@@ -1,4 +1,9 @@
 #测试版规则
+
+@@||partner.quark.cn^
+@@||uc-novel-api.shuqireader.com^
+
+
 @@||gtimg.com^
 @@||sqimg.qq.com^
 @@||docs2.gtimg.com^
