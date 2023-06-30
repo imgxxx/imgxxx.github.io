@@ -1,5 +1,5 @@
 #测试版规则
-snowflake.qq.com
+
 #番茄小说
 ||v26-novelapp.fqnovelvod.com^
 ||ads5-normal-lq.zijieapi.com^
@@ -18,6 +18,13 @@ snowflake.qq.com
 ||p*-ad-sign.byteimg.com^
 ||frontier-toutiao.snssdk.com^
 ||vod-settings.bytedanceapi.com^
+#番茄小说测试
+||api*-normal-sinfonlineb.fqnovel.com^
+||p9-developer-sign.bytemaimg.com^
+||toufang.huixuanjiasu.com^
+||p*-developer-sign.bytemaimg.com^
+
+
 
 
 h5log.hongdoulive.com
