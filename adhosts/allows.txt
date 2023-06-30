@@ -12,8 +12,8 @@ snowflake.qq.com
 ||dig.bdurl.net^
 ||log*-applog-lq.fqnovel.com^
 ||rtlog*-applog-lq.fqnovel.com^
-||ec3-core-lq.ecombdapi.com^
-||ecom3-normal-lq.ecombdapi.com^
+||ec*-core-lq.ecombdapi.com^
+||ecom*-normal-lq.ecombdapi.com^
 ||log*-applog-lq.fqnovel.com^
 ||p*-ad-sign.byteimg.com^
 ||frontier-toutiao.snssdk.com^
