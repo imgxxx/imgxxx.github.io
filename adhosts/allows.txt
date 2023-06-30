@@ -1,5 +1,13 @@
 #测试版规则
 
+@@||uploads1.gifshow.com^
+@@||apissl.ksapisrv.com^
+@@||bd-adaptive.pull.yximgs.com^
+@@||bd-origin.pull.yximgs.com^
+@@||uploads1.ksapisrv.com^
+
+
+
 ||tianquan.gtimg.cn^
 
 @@||partner.quark.cn^
