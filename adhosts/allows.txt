@@ -25,8 +25,8 @@
 ||p9-developer-sign.bytemaimg.com^
 ||huixuanjiasu.com^
 ||p*-developer-sign.bytemaimg.com^
-
-
+||imapi5-oth.zijieapi.com^
+||effect.snssdk.com^
 
 
 h5log.hongdoulive.com
