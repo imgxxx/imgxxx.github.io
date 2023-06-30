@@ -12,7 +12,12 @@
 ||dig.bdurl.net^
 ||log*-applog-lq.fqnovel.com^
 ||rtlog*-applog-lq.fqnovel.com^
-
+||ec3-core-lq.ecombdapi.com^
+||ecom3-normal-lq.ecombdapi.com^
+||log*-applog-lq.fqnovel.com^
+||p*-ad-sign.byteimg.com^
+||frontier-toutiao.snssdk.com^
+||vod-settings.bytedanceapi.com^
 
 
 h5log.hongdoulive.com
