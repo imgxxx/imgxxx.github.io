@@ -1,5 +1,8 @@
 #测试版规则
 
+
+||*.free-lbv6.idouyinvod.com^
+||xdplt.com^
 ||shp.qpic.cn^
 ||lf*-cdn-tos.bytecdntp.com^
 
