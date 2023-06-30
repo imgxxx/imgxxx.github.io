@@ -27,6 +27,12 @@
 ||p*-developer-sign.bytemaimg.com^
 ||imapi5-oth.zijieapi.com^
 ||effect.snssdk.com^
+||ec*-core-hl.ecombdapi.com^
+||ecom*-normal-hl.ecombdapi.com^
+||ecom*-normal-lf.ecombdapi.com^
+||ec*-core-lf.ecombdapi.com^
+
+
 
 
 h5log.hongdoulive.com
