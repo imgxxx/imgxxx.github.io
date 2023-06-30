@@ -22,6 +22,7 @@
 @@||sqimg.qq.com^
 @@||docs2.gtimg.com^
 @@||docs.gtimg.com^
+
 #番茄小说
 ||v26-novelapp.fqnovelvod.com^
 ||ads5-normal-lq.zijieapi.com^
@@ -37,7 +38,7 @@
 ||log*-applog-lq.fqnovel.com^
 ||p*-ad-sign.byteimg.com^
 ||frontier-toutiao.snssdk.com^
-||vod-settings.bytedanceapi.com^
+#注释||vod-settings.bytedanceapi.com^
 #番茄小说测试
 ||p9-developer-sign.bytemaimg.com^
 ||huixuanjiasu.com^
