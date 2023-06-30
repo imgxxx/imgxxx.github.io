@@ -1,4 +1,5 @@
 #测试版规则
+@@||gtimg.com^
 @@||sqimg.qq.com^
 @@||docs2.gtimg.com^
 @@||docs.gtimg.com^
