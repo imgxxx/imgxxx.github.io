@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||ksosoft.com^
+
 @@||uploads*.gifshow.com^
 @@||apissl.ksapisrv.com^
 @@||bd-adaptive.pull.yximgs.com^
