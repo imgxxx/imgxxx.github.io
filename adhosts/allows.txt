@@ -15,8 +15,6 @@
 ||dig.bdurl.net^
 ||log*-applog-lq.fqnovel.com^
 ||rtlog*-applog-lq.fqnovel.com^
-||ec*-core-lq.ecombdapi.com^
-||ecom*-normal-lq.ecombdapi.com^
 ||log*-applog-lq.fqnovel.com^
 ||p*-ad-sign.byteimg.com^
 ||frontier-toutiao.snssdk.com^
@@ -25,12 +23,6 @@
 ||p9-developer-sign.bytemaimg.com^
 ||huixuanjiasu.com^
 ||p*-developer-sign.bytemaimg.com^
-||imapi5-oth.zijieapi.com^
-||effect.snssdk.com^
-||ec*-core-hl.ecombdapi.com^
-||ecom*-normal-hl.ecombdapi.com^
-||ecom*-normal-lf.ecombdapi.com^
-||ec*-core-lf.ecombdapi.com^
 
 
 
