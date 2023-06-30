@@ -23,7 +23,7 @@
 ||vod-settings.bytedanceapi.com^
 #番茄小说测试
 ||p9-developer-sign.bytemaimg.com^
-||toufang.huixuanjiasu.com^
+||huixuanjiasu.com^
 ||p*-developer-sign.bytemaimg.com^
 
 
