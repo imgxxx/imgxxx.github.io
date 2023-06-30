@@ -354,7 +354,7 @@ ywlog.reader.qq.com
 
 
 #抖音应用服务（拦截后会导致无法使用）
-||log*-misc.amemv.com^
+@@||log*-misc.amemv.com^
 
 
 
