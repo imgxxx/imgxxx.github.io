@@ -5,7 +5,7 @@
 ||xdplt.com^
 ||shp.qpic.cn^
 ||lf*-cdn-tos.bytecdntp.com^
-
+||bytegecko.com^
 
 @@||ksosoft.com^
 
