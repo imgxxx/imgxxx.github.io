@@ -7,9 +7,6 @@
 @@||uploads*.ksapisrv.com^
 
 
-
-||tianquan.gtimg.cn^
-
 @@||partner.quark.cn^
 @@||uc-novel-api.shuqireader.com^
 @@||gtimg.com^
