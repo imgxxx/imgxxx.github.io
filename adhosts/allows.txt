@@ -1,5 +1,5 @@
 #测试版规则
-
+snowflake.qq.com
 #番茄小说
 ||v26-novelapp.fqnovelvod.com^
 ||ads5-normal-lq.zijieapi.com^
@@ -235,7 +235,7 @@ applog.rwork.crc.com.cn
 @@||fengkongcloud.com^
 
 @@||vv.video.qq.com^
-@@||snowflake.qq.com^
+||snowflake.qq.com^
 
 @@||is.snssdk.com^
 @@||spider-tracker.xiaohongshu.com^
