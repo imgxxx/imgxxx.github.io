@@ -1,6 +1,11 @@
 #测试版规则
 @@||cmbchina.com
 
+||p*-tt.byteimg.com^
+||p*-bk.byteimg.com^
+||p*-ug-imc.byteimg.com^
+||p*-iescs.byteimg.com^
+||p*-search.byteimg.com^
 
 
 
