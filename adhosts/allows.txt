@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||verified.biz.weibo.com^
+
 #注释||lf*-cdn-tos.bytescm.com^
 #注释||lf-cdn-tos.bytescm.com^
 @@||*.free-lbv6.idouyinvod.com^
