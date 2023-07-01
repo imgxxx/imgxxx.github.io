@@ -387,6 +387,11 @@ ywlog.reader.qq.com
 #抖音应用服务（拦截后会导致无法使用）
 @@||log*-misc.amemv.com^
 @@||log*-misc-alinc2-lf.amemv.com^
+@@||log*-misc-hl.amemv.com^
+@@||log*-misc-alinc2-lq.amemv.com^
+@@||log*-misc-lq.amemv.com^
+
+
 
 
 ||rtlog*-applog-hl.fqnovel.com^
@@ -430,8 +435,7 @@ log.z3.cn
 ||brandlog.vivo.com.cn^
 ||logservice-drcn.dt.hihonorcloud.com^
 ||log*-applog-lq.novelfm.com^
-||log*-misc-hl.amemv.com^
-||log*-misc-alinc2-lq.amemv.com^
+
 ||log.im.baidu.com^
 ||yxyylog.echargenet.com^
 ||adxlog.vivo.com.cn^
