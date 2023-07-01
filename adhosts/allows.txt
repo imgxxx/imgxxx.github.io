@@ -1,11 +1,12 @@
 #测试版规则
-||lf*-cdn-tos.bytescm.com^
-||lf-cdn-tos.bytescm.com^
-||*.free-lbv6.idouyinvod.com^
-||xdplt.com^
-||shp.qpic.cn^
-||lf*-cdn-tos.bytecdntp.com^
-||bytegecko.com^
+
+#注释||lf*-cdn-tos.bytescm.com^
+#注释||lf-cdn-tos.bytescm.com^
+#注释||*.free-lbv6.idouyinvod.com^
+#注释||xdplt.com^
+#注释||shp.qpic.cn^
+#注释||lf*-cdn-tos.bytecdntp.com^
+#注释||bytegecko.com^
 
 ||log*-applog.fqnovel.com^
 
