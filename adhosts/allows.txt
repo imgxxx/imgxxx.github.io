@@ -3,6 +3,7 @@
 ||kashichang.cn^
 ||kedang.net^
 
+@@||whoami.akamai.net^
 @@||cmbchina.com
 @@||iflow.uczzd.cn^
 @@||effirst.com^
@@ -1679,7 +1680,6 @@ hw.zuimeitianqi.com
 adsfs-sdkconfig.heytapimage.com
 abtest-ch.snssdk.com
 doubleclick.net
-whoami.akamai.net
 s.360.cn
 adsfs-sdkconfig.heytapimage.com
 rlogs.youdao.com
