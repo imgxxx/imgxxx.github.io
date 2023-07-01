@@ -8,6 +8,13 @@
 #注释||lf*-cdn-tos.bytecdntp.com^
 #注释||bytegecko.com^
 
+#注释||p*-orange.byteorg.com^
+#注释||lf*-orange.byteorge.com^
+#注释||p*-orange.byteorge.com^
+
+
+
+sp-sdk.api.360ra.net
 ||log*-applog.fqnovel.com^
 
 @@||ksosoft.com^
@@ -42,9 +49,9 @@
 ||frontier-toutiao.snssdk.com^
 #注释||vod-settings.bytedanceapi.com^
 #番茄小说测试
-||p9-developer-sign.bytemaimg.com^
+#注释||p9-developer-sign.bytemaimg.com^
 ||huixuanjiasu.com^
-||p*-developer-sign.bytemaimg.com^
+#注释||p*-developer-sign.bytemaimg.com^
 
 
 
@@ -900,17 +907,16 @@ bksdksp.video.qq.com
 
 #猫眼广告
 sdk.hzsanjiaomao.com
-||hzsanjiaomao.com^
+||hzsanjiaomao.com
 
-||webcast*-open-lf.douyin.com^
+
 hdozp.jciwztfj.com
 ||jciwztfj.com^
 ||vhealing.neiod.xyz
 ||neiod.xyz^
 ||haokan001.xyz^
-||p*-orange.byteorg.com^
-||lf*-orange.byteorge.com^
-||p*-orange.byteorge.com^
+
+
 ||huozhan.org^
 ||dyp011.com^
 ||tj0001.top^
