@@ -1255,7 +1255,6 @@ txqcmmov.a.etoote.com
 
 ||rtlog*-applog-lq.amemv.com^
 ||api-access.pangolin-sdk-toutiao*.com^
-||p*-sign.bdxiguaimg.com^
 @@||pic1.zhimg.com
 @@||pic2.zhimg.com
 @@||pic3.zhimg.com
@@ -1375,7 +1374,6 @@ a1.alibabausercontent.com
 @@||beacon-api.aliyuncs.com
 @@||audid-api.taobao.com
 ||g*.alicdn.com^
-||volces.com^
 apmplus.volces.com
 ||bizport.cn^
 ||sensorsdata.cn^
