@@ -1,5 +1,7 @@
 #测试版规则
 @@||cmbchina.com
+@@||iflow.uczzd.cn^
+@@||effirst.com^
 
 ||p*-tt.byteimg.com^
 ||p*-bk.byteimg.com^
