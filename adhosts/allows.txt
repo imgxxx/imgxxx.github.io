@@ -1,6 +1,6 @@
 #测试版规则
 
-
+@@||unet.quark.cn^
 
 @@||verified.biz.weibo.com^
 #注释||direct.applog-lb-alibj-v3.alinc2lf.bytelb.net^
@@ -20,7 +20,7 @@
 
 
 ||adtrack.quark.cn^$important
-@@|quark.cn
+@@||quark.cn^
 sp-sdk.api.360ra.net
 ||log*-applog.fqnovel.com^
 @@||sf*-ttcdn-tos.pstatp.com^
