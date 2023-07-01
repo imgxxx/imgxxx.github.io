@@ -1,4 +1,8 @@
 #测试版规则
+@@||cmbchina.com
+
+
+
 
 ||p*-goku.byteimg.com^
 ||p*-wukong.byteimg.com^
