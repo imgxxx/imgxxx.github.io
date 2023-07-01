@@ -12,8 +12,8 @@
 #注释||lf*-orange.byteorge.com^
 #注释||p*-orange.byteorge.com^
 
-
-@@||quark.cn
+||adtrack.quark.cn^$important
+@@|quark.cn
 sp-sdk.api.360ra.net
 ||log*-applog.fqnovel.com^
 
