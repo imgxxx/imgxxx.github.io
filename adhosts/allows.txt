@@ -197,7 +197,7 @@ kit-device-log-1252363965.cos.ap-beijing.myqcloud.com
 @@||upload.ksapisrv.com^
 @@||pcdn-proxy-config.xxpkg.com^
 @@||vcs.zijieapi.com^
-@@||p26.douyinpic.com^
+@@||p*.douyinpic.com^
 @@||mon.zijieapi.com^
 
 catalog.nmgrygc.com
@@ -1187,7 +1187,6 @@ dsplog.vivo.com.cn
 ||chengzijianzhan.cc^
 @@||img30.360buyimg.com^$important
 
-v5-re-un802.douyinvod.com
 vc-brain.ndcpp.com
 
 
