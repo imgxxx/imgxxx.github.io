@@ -1,5 +1,11 @@
 #测试版规则
 
+||p*-goku.byteimg.com^
+||p*-wukong.byteimg.com^
+||p*-pack.byteimg.com^
+||p*-magic.byteimg.com^
+||ct-baidu-yk.v.bdydns.com^
+
 ||ecombdapi.com^
 
 ||log*-applog.novelfm.com^
