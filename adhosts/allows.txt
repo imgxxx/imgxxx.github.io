@@ -3,6 +3,7 @@
 @@||iflow.uczzd.cn^
 @@||effirst.com^
 @@||sm.cn
+@@||log*-misc-lf.amemv.com^
 
 ||p*-tt.byteimg.com^
 ||p*-bk.byteimg.com^
@@ -269,7 +270,7 @@ rtlog3-applog.amemv.com
 @@||boxer.baidu.com^
 
 ||log*-applog-hl.zijieapi.com^
-||logab*-misc-alinc2-hl.amemv.com^
+
 bbt-log-collection.babytree.com
 ||rtlog*-applog-lq.novelfm.com^
 senlog.cmpassport.com
@@ -601,7 +602,7 @@ catalog.ibbxtx.com
 log.pwesports.cn
 5glog.hhhoo.com
 uplog.qbox.me
-direct.applog-lb-alibj-v3.alinc2hl.bytelb.net
+
 ||rtlog*-applog-lq.fqnovel.com^
 ||log*-applog-lq.fqnovel.com^
 sdk.auth.yfp2p.net
@@ -1295,8 +1296,7 @@ txqcmmov.a.etoote.com
 @@||pic4.zhimg.com
 ||line*-adscore-api.biligame.net^$important
 api-adservices.apple.com
-||frontier-aweme-hl-ipainner.amemv.com^$important
-||aweme-lq.snssdk.com^$important
+
 
 @@||v*-a.bdxiguavod.com^
 
