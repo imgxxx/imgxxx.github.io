@@ -1,7 +1,7 @@
 #测试版规则
 
 @@||verified.biz.weibo.com^
-
+#注释||direct.applog-lb-alibj-v3.alinc2lf.bytelb.net^
 #注释||lf*-cdn-tos.bytescm.com^
 #注释||lf-cdn-tos.bytescm.com^
 @@||*.free-lbv6.idouyinvod.com^
@@ -386,7 +386,7 @@ ywlog.reader.qq.com
 
 #抖音应用服务（拦截后会导致无法使用）
 @@||log*-misc.amemv.com^
-
+@@||log*-misc-alinc2-lf.amemv.com^
 
 
 ||rtlog*-applog-hl.fqnovel.com^
@@ -468,7 +468,7 @@ error.taobao.com
 @@||als.baidu.com^
 
 ||logs.quicksdk.net^
-||log*-misc-alinc2-lf.amemv.com^
+
 ||log.solopacegem.io^
 ||sso.ptlogin2.qq.com^
 ||sdk.fl209.com^
@@ -482,7 +482,7 @@ error.taobao.com
 ||logserver-cn-comue.obs.cn-north1.ctyun.cn^
 ||logsdata.cxzx10086.cn^
 ||mlog.meituan.com^
-||direct.applog-lb-alibj-v3.alinc2lf.bytelb.net^
+
 ||logservice.dbankcloud.cn^
 ||logreport-global.zego.im^
 ||mlog.dianping.com^
