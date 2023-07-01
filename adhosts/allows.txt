@@ -11,7 +11,7 @@
 ||p*-iescs.byteimg.com^
 ||p*-search.byteimg.com^
 
-
+||applog.lc.quark.cn^$important
 
 ||p*-goku.byteimg.com^
 ||p*-wukong.byteimg.com^
