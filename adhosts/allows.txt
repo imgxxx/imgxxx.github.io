@@ -16,7 +16,7 @@
 @@|quark.cn
 sp-sdk.api.360ra.net
 ||log*-applog.fqnovel.com^
-
+@@||sf*-ttcdn-tos.pstatp.com^
 @@||ksosoft.com^
 @@||uploads*.gifshow.com^
 @@||apissl.ksapisrv.com^
