@@ -1,4 +1,5 @@
 #测试版规则
+||log*-applog.novelfm.com^
 
 @@||unet.quark.cn^
 
