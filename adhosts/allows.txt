@@ -8,9 +8,9 @@
 #注释||lf*-cdn-tos.bytecdntp.com^
 #注释||bytegecko.com^
 
-#注释||p*-orange.byteorg.com^
-#注释||lf*-orange.byteorge.com^
-#注释||p*-orange.byteorge.com^
+||p*-orange.byteorg.com^
+||lf*-orange.byteorge.com^
+||p*-orange.byteorge.com^
 
 ||adtrack.quark.cn^$important
 @@|quark.cn
