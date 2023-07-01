@@ -1,4 +1,8 @@
 #测试版规则
+||kyw4y0s.com^
+||kashichang.cn^
+||kedang.net^
+
 @@||cmbchina.com
 @@||iflow.uczzd.cn^
 @@||effirst.com^
