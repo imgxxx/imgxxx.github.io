@@ -1,5 +1,7 @@
 #测试版规则
 
+
+
 @@||verified.biz.weibo.com^
 #注释||direct.applog-lb-alibj-v3.alinc2lf.bytelb.net^
 #注释||lf*-cdn-tos.bytescm.com^
@@ -10,9 +12,12 @@
 #注释||lf*-cdn-tos.bytecdntp.com^
 #注释||bytegecko.com^
 
+#抖音推广
 ||p*-orange.byteorg.com^
 ||lf*-orange.byteorge.com^
 ||p*-orange.byteorge.com^
+||p*-orange-sign.byteimg.com^
+
 
 ||adtrack.quark.cn^$important
 @@|quark.cn
