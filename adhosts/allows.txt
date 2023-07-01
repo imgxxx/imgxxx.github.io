@@ -7,8 +7,9 @@
 ||lf*-cdn-tos.bytecdntp.com^
 ||bytegecko.com^
 
-@@||ksosoft.com^
+||log*-applog.fqnovel.com^
 
+@@||ksosoft.com^
 @@||uploads*.gifshow.com^
 @@||apissl.ksapisrv.com^
 @@||bd-adaptive.pull.yximgs.com^
