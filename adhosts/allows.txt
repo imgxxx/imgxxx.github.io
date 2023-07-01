@@ -2,6 +2,7 @@
 ||kyw4y0s.com^
 ||kashichang.cn^
 ||kedang.net^
+||chengzijianzhan.net.cn^
 
 @@||whoami.akamai.net^
 @@||cmbchina.com
