@@ -1,7 +1,11 @@
 #测试版规则
 
-@@||hls.itunes.apple.com.mwcname.com^
 
+
+@@||icloud.com^
+@@||iphonesubmissions.apple.com^
+@@||hls.itunes.apple.com.mwcname.com^
+@@||mask-api.icloud.com^
 @@||unpkg.zhimg.com
 
 ||kyw4y0s.com^
