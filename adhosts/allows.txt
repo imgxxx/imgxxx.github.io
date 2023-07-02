@@ -1,7 +1,7 @@
 #测试版规则
 
 
-
+@@||ocsp.apple.com^
 @@||icloud.com^
 @@||iphonesubmissions.apple.com^
 @@||hls.itunes.apple.com.mwcname.com^
