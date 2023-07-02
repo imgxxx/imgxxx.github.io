@@ -5,7 +5,7 @@ miui-fxcse.avlyun.com
 smad.ms.zhangyue.net
 th-a.pinduoduo.com
 sns-video-bd.xhscdn.com
-
+phoniex.toutiao.com
 
 @@||report.qqweb.qq.com^
 @@||pt-tracking.arkgames.com^
