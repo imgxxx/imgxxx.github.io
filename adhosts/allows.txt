@@ -1,7 +1,5 @@
 #测试版规则
 
-@@||snssdk.com^
-
 @@||unpkg.zhimg.com
 
 ||kyw4y0s.com^
