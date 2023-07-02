@@ -1,6 +1,6 @@
 #测试版规则
 
-
+@@||pt-tracking.arkgames.com^
 @@||ocsp.apple.com^
 @@||icloud.com^
 @@||iphonesubmissions.apple.com^
