@@ -4,6 +4,9 @@
 ||kedang.net^
 ||chengzijianzhan.net.cn^
 
+||ecombdimg.com^
+
+@@||wxapp.tc.qq.com^
 @@||qqdata.ab.qq.com^
 @@||qappcenterv6.3g.qq.com^
 @@||whoami.akamai.net^
@@ -947,7 +950,7 @@ bksdksp.video.qq.com
 
 #猫眼广告
 sdk.hzsanjiaomao.com
-||hzsanjiaomao.com
+||hzsanjiaomao.com^
 
 
 hdozp.jciwztfj.com
@@ -1052,11 +1055,11 @@ mwad.83084.com
 4376.cc
 77000.vip
 61611112.cc
-finderad.video.qq.com
+||finderad.video.qq.com^
 616.com
 globalacceleratecdn-paw.out976.com
 out976.com
-||adashx
+||adashx.
 @@||webstatic.mihoyo.com^$important
 gw-w.jiaoliuqu.com
 ||pg-ad-b*.ws.126.net^$important
@@ -1134,9 +1137,9 @@ ec.kwd.inkuai.com
 #注释@@||wgo.mmstat.com^$important
 
 ||ort-stsdk.vivo.com.cn^$important
-#注释@@||x.da.hunantv.com^$important
+
 ||moni-onrt-stsdk.vivo.com.cn^$important
-#注释@@||s6.irs03.com^$important
+
 ||stsdk.vivo.com.cn^$important
 @@||hot.vrs.sohu.com^$important
 @@||data.vod.itc.cn^$important
@@ -1146,16 +1149,16 @@ ec.kwd.inkuai.com
 ||moni-ort-stsdk.vivo.com.cn^$important
 @@||api.tv.sohu.com
 ||prt-stsdk.vivo.com.cn
-@@||funshion.net^$important
+@@||funshion.net^
 
 hw-ot-ad.a.yximgs.com
 ads-marketing-vivofs.vivo.com.cn
-||ivideoonrt-stsdk.vivo.com.cn^$important
-||brort.stsdk.vivo.com.cn^$important
-||onrt-stsdk.vivo.com.cn^$important
-||bronrt.stsdk.vivo.com.cn^$important
-||ivideoort-stsdk.vivo.com.cn^$important
-||brpnrt.stsdk.vivo.com.cn^$important
+||ivideoonrt-stsdk.vivo.com.cn^
+||brort.stsdk.vivo.com.cn^
+||onrt-stsdk.vivo.com.cn^
+||bronrt.stsdk.vivo.com.cn^
+||ivideoort-stsdk.vivo.com.cn^
+||brpnrt.stsdk.vivo.com.cn^
 
 
 zhan.vivo.com.cn
@@ -1436,8 +1439,7 @@ abtest.volceapplog.com
 @@||world.qpic.cn^
 ||eckwai.com^
 @@||res.servicewechat.com
-#注释||ecombdapi.com^
-||119.29.29.29
+
 ||in-neo.com^
 ||caacbook.com.cn^
 ||gridsum.com^
@@ -1483,109 +1485,61 @@ log.zijieapi.com
 adash.man.aliyuncs.com
 ||ad*.adbreak.ch/*ad_block=$domain=tio.ch
 ||ad*.liverail.com/?LR_$object-subrequest,domain=play.tv|playtv.fr
-||ad-api-v01.uliza.jp^$script,xmlhttprequest,domain=golfnetwork.co.jp|tv-asahi.co.jp
-||ad-cdn.bilgin.pro/app/ad-*.min.js$domain=medyafaresi.com
-||ad-emea.doubleclick.net/ad/*$domain=channel4.com
-||ad-emea.doubleclick.net/clk
+||ad-api-v01.uliza.jp^
+||ad-cdn.bilgin.pro
+||ad-emea.doubleclick.net
+||ad-emea.doubleclick.net
 ||ad-gone.com^
-||ad-maven.com^$generichide
-||ad-text.ru^$domain=ad-text.ru
-||ad.*.ch^$xmlhttprequest,other,script,domain=tio.ch
+||ad-maven.com^
+||ad-text.ru^
+||ad.*.ch^$
 ||ad.10010.com^
-||ad.12306.cn^$elemhide,subdocument,domain=95306.cn
-||ad.3.cn/ads/mgets?$domain=jd.com
-||ad.360yield.com/adj?p=$domain=wtf.nl
-||ad.71i.de/*/loader.js$script,domain=fupa.net
-||ad.71i.de/global_js/$script,domain=sportdeutschland.tv
-||ad.71i.de/global_js/AppConfig/Joyn/desktop.json$xhr,domain=joyn.de
-||ad.71i.de/global_js/AppConfig/Sport1de/android.json
-||ad.71i.de/somtag/loader/loader.js$domain=dtm.com|sportdeutschland.tv
-||ad.71i.de/somtag/loader/loader.js$script,domain=puls4.com
-||ad.8maple.ru/8ads.gif
-||ad.8maple.ru/bilibili.png
-||ad.8maple.ru/close.png
-||ad.91.sellertool.com/
-||ad.a-ads.com/*?size=300x250$domain=linkneverdie.com
-||ad.a-ads.com/13368^$domain=bitcoinfaucet.tk
-||ad.a-ads.com^*?size=$subdocument,domain=linkneverdie.com|pipocas.tv
+||ad.12306.cn^
+||ad.3.cn
+||ad.360yield.com
+||ad.71i.de
+||ad.8maple.ru
+||ad.91.sellertool.com
+||ad.a-ads.com
 ||ad.abchina.com^
-||ad.admitad.com/*/*&ulp=
-||ad.admitad.com/*/?ulp=
-||ad.admitad.com/3rd-party/*/cookie/?f=CookieChecker.remoteTest
-||ad.admitad.com/3rd-party/advert.js
-||ad.admitad.com/goto/$domain=atavi.com
-||ad.adriver.ru/cgi-bin/rle.cgi$domain=mgts.ru
-||ad.adverticum.net/g3.js$domain=port.hu
-||ad.adverticum.net/scripts/goa3/main/*/goa3.js$domain=port.hu
-||ad.adview.pl/ad/$xmlhttprequest,domain=play.wtk.insys.pl
-||ad.alimama.com^$genericblock
-||ad.amgdgt.com/ads/js/*$domain=ad.amgdgt.com
-||ad.amgdgt.com/ads/js/optout.js
-||ad.atdmt.com/m/*account_id=*&source=cm&step=1^$domain=facebook.com|facebookcorewwwi.onion
-||ad.atown.jp/adserver/$domain=ad.atown.jp
+||ad.adriver.ru
+||ad.adverticum.net
+||ad.adview.pl
+||ad.alimama.com^
+||ad.amgdgt.com
+||ad.amgdgt.com
+||ad.atdmt.com
+||ad.atown.jp
 ||ad.azure.com^
-||ad.crwdcntrl.net/*/callback=$domain=cityam.com
-||ad.crwdcntrl.net^$domain=ap.org|newsinc.com
-||ad.crwdcntrl.net^$script,domain=rtl.nl
-||ad.de.doubleclick.net/imp;$object,domain=rtl-now.rtl.de|rtl2now.rtl2.de|rtlnitronow.de|superrtlnow.de|voxnow.de
-||ad.dotandad.com/mediamond_vm.jsp$domain=video.mediaset.it
-||ad.doubleclick.net/*/adi/com.ytbc/$domain=youtube.com
-||ad.doubleclick.net/clk*&destinationURL=$popup
-||ad.doubleclick.net/clk;$urlblock
-||ad.doubleclick.net/crossdomain.xml$object-subrequest,domain=play.tv|playtv.fr
-||ad.doubleclick.net/ddm/$popup,domain=billiger.de|guide-epargne.be|legacy.com|mail.yahoo.com|nytimes.com|spaargids.be
-||ad.doubleclick.net/ddm/$xmlhttprequest,domain=twitch.tv
-||ad.doubleclick.net/ddm/ad/$domain=mylifetime.com
-||ad.doubleclick.net/ddm/ad/*$domain=bournemouthecho.co.uk
-||ad.doubleclick.net/ddm/ad/*$domain=familyhandyman.com
-||ad.doubleclick.net/ddm/ad/*$domain=fyi.tv
-||ad.doubleclick.net/ddm/ad/*$domain=html.net
-||ad.doubleclick.net/ddm/ad/*$domain=seekingalpha.com
-||ad.doubleclick.net/ddm/ad/*$domain=twitch.tv,third-party
-||ad.doubleclick.net/ddm/ad/*$domain=wiltshiretimes.co.uk|gazetteandherald.co.uk|theboltonnews.co.uk|oxfordmail.co.uk|swindonadvertiser.co.uk|southwalesargus.co.uk
-||ad.doubleclick.net/ddm/clk/*?https://creditcards.chase.com/
-||ad.doubleclick.net/ddm/clk/*http$popup
-||ad.doubleclick.net/ddm/pfadx/$object-subrequest,domain=play.tv|playtv.fr
-||ad.doubleclick.net/ddm/trackclk/$popup,domain=pricehipster.com
-||ad.doubleclick.net/ddm/trackclk/*http$popup
-||ad.doubleclick.net/ddm/trackclk/*https://www.thegoodguys.com.au/*?utm_source=Partner$stealth
-||ad.doubleclick.net/ddm/trackclk^$domain=partners.webmasterplan.com
-||ad.doubleclick.net/favicon.ico$domain=freewarefiles.com
-||ad.doubleclick.net/favicon.ico$xmlhttprequest,domain=graffica.info
-||ad.doubleclick.net/|$xmlhttprequest,domain=androidacy.com
-||ad.ettoday.net/msg_liveshow.php^$domain=ettoday.net
+||ad.crwdcntrl.net
+||ad.crwdcntrl.net^
+||ad.de.doubleclick.net
+||ad.dotandad.com
 ||ad.ext.azure.com^
-||ad.filmweb.pl/adbanner/reklamy/adx.js$script
+||ad.filmweb.pl
 ||ad.kazakinfo.com^
-||ad.linksynergy.com^$image,domain=extrarebates.com
-||ad.lkqd.net/serve/formats.js$domain=breitbart.com
-||ad.mail.ru/adp/?q=*&target_count=$domain=youla.ru
-||ad.mail.ru/adq/?callback=jQuery$domain=target.my.com
-||ad.neobux.com/adalert/
-||ad.nl/ad/
+||ad.linksynergy.com^
+||ad.lkqd.net
+||ad.mail.ru
+||ad.neobux.com
+||ad.nl
 ||ad.ourgame.com^
-||ad.sevenads.net/banner.php?$script,domain=uploaded-premium.ru
-||ad.sevenads.net/layer.php?p=$script,domain=uploaded-premium.ru
-||ad.skylinewebcams.com/ad.php
-||ad.smartmediarep.com/*/video/$xmlhttprequest,domain=wavve.com
-||ad.smartmediarep.com/NetInsight/$domain=programs.sbs.co.kr
-||ad.smartmediarep.com/NetInsight/video/$domain=m.mbn.co.kr
-||ad.smartmediarep.com/NetInsight/video^$domain=allvod.sbs.co.kr
-||ad.smartmediarep.com/crossdomain.xml$domain=programs.sbs.co.kr
-||ad.smartmediarep.com/crossdomain.xml$domain=sbscnbc.sbs.co.kr
-||ad.thsi.cn/siteHome/
-||ad.unimhk.com/show.php?$domain=mnighthk.net
-||ad.yieldlab.net^$script,domain=spiegel.de,badfilter
-||ad.zanox.com/ppc/$subdocument,domain=wisedock.at|wisedock.co.uk|wisedock.com|wisedock.de|wisedock.eu
-||ad2.shoplinker.co.kr^$domain=ad2.shoplinker.co.kr
-||ad*.shoplinker.co.kr^$~third-party
-||ad2up.com^$subdocument,third-party,domain=al.ly|ally.sh
-||ad4.liverail.com/?LR_PUBLISHER_ID=$object-subrequest,domain=rutube.ru
+||ad.sevenads.net
+||ad.skylinewebcams.com
+||ad.smartmediarep.com
+||ad.thsi.cn
+||ad.unimhk.com
+||ad.yieldlab.net^
+||ad.zanox.com
+||ad2.shoplinker.co.kr^
+||ad*.shoplinker.co.kr^
+||ad2up.com^
+||ad4.liverail.com
 ||ad4.on.cc
 ||ad*.on.cc^important
-||ad4m.at/opt-out.js$domain=ad4mat.net
-||ad4mat.*/cookie^$domain=ad4mat.net|youronlinechoices.com
-||ad4msan.com/wp-content/plugins/dh-anti-adblocker/assets/js/prebid-ads.js
+||ad4m.at
+
+||ad4msan.com
 
 ||ccmsupport-sz.tenpay.com^$important
 ||m*.ad.10010.com^
@@ -1749,9 +1703,7 @@ t7z.cupid.ptqy.gitv.tv
 ||ads3-normal.zijieapi.com^$important
 ||ads2-normal.zijieapi.com^$important
 ||ads*-normal.zijieapi.com^$important
-||reading.snssdk.com^$important
-||gecko5-lf.zijieapi.com^$important
-||feedback-c.zijieapi.com^$important
+
 ||ads3-normal-lf.zijieapi.com^$important
 ||mobilelog.cc.netease.com^$important
 @@||vipapi.wps.cn^
@@ -1799,12 +1751,9 @@ t7z.cupid.ptqy.gitv.tv
 ||gnrty.kmjkwe.xyz^
 ||2134.com.cn^
 @@||gamecenter.qq.com^$important
-||p3-reading-sign.fqnovelpic.com^$app=com.dragon.read
-||pangolin-sdk-toutiao.com^
-||zijieapi.com^$app=com.dragon.read
-||frontier-toutiao.snssdk.com^$app=com.dragon.read
+
 ||pangolin-sdk-toutiao-b.com^
-||ads5-normal-lf.zijieapi.com^$app=com.dragon.read
+||ads5-normal-lf.zijieapi.com^
 ||pglstatp-toutiao.com^
 @@||xp.apple.com^
 @@||browserkernel.baidu.com^
@@ -1829,19 +1778,17 @@ t7z.cupid.ptqy.gitv.tv
 ||file.xmpush.xiaomi.com
 ||gvod.aiseejapp.atianqi.com
 ||g.dtv.cn.miaozhan.com
-127.0.0.1 gallery.pandora.xiaomi.com
-127.0.0.1 jellyfish.pandora.xiaomi.com
-127.0.0.1 logonext.tv.kuyun.com
-127.0.0.1 mishop.pandora.xiaomi.com
-127.0.0.1 milink.pandora.xiaomi.com
-127.0.0.1 misc.pandora.xiaomi.com
-127.0.0.1 mitv.tracking.miui.com
-127.0.0.1 metok.sys.miui.com
-127.0.0.1 new.api.ad.xiaomi.com
-127.0.0.1 pandora.mi.com
-127.0.0.1 redirect.pandora.xiaomi.com
-127.0.0.1 register.xmpush.xiaomi.com
-127.0.0.1 resolver.msg.xiaomi.net
+
+gallery.pandora.xiaomi.com
+jellyfish.pandora.xiaomi.com
+logonext.tv.kuyun.com
+milink.pandora.xiaomi.com
+mitv.tracking.miui.com
+new.api.ad.xiaomi.com
+
+redirect.pandora.xiaomi.com
+register.xmpush.xiaomi.com
+resolver.msg.xiaomi.net
 ||stat.pandora.xiaomi.com
 ||sdkconfig.ad.xiaomi.com
 ||staging.ai.api.xiaomi.com
@@ -1856,9 +1803,9 @@ t7z.cupid.ptqy.gitv.tv
 @@alipay.com^
 @@miwifi.com^
 @@||w.gamecenter.qq.com^$important
-@@||game.str.mdt.qq.com^$important
+@@||game.str.mdt.qq.com
 ||download.beibeibuyu.com^
-||pangolin.snssdk.com^$important
+
 @@||ipxx.pro^$important
 
 @@||video.xiaomi.com^
@@ -1875,18 +1822,18 @@ t7z.cupid.ptqy.gitv.tv
 ||aeventlog.beacon.qq.com^$important
 @@||tianqi.2345.com^$important
 #注释||mime.baidu.com^$important
-@@||appcloud2.zhihu.com^$important
-@@||appcloud2.in.zhihu.com^$important
-@@||zhihu-web-analytics.zhihu.com^$important
-@@||security.browser.miui.com^$important
-@@||api2.coolapk.com^$important
-@@||avatar.coolapk.com^$important
-@@||api.coolapk.com^$important
+@@||appcloud2.zhihu.com^
+@@||appcloud2.in.zhihu.com^
+@@||zhihu-web-analytics.zhihu.com^
+@@||security.browser.miui.com^
+@@||api2.coolapk.com^
+@@||avatar.coolapk.com^
+@@||api.coolapk.com^
 ||market.wsskj520.cn^$important
 ||p9-ad-sign.byteimg.com^$important
 @@||in-addr.arpa^
 ||gongyi.mi.com
-@@||baijiahao.baidu.com^$important
+@@||baijiahao.baidu.com^
 ||*.pglstatp-toutiao.com^$important
 ||*.shuzilm.cn^$important
 ||file.7youxi.com^$important
@@ -1902,13 +1849,13 @@ t7z.cupid.ptqy.gitv.tv
 ||sf6-be-pack.pglstatp-toutiao.com 
 ||log-api.pangolin-sdk-toutiao-b.com 
 ||qzs.gdtimg.com
-||www.chengzijianzhan.com
-||adnet.qq.com 
-||ether-pack.pangolin-sdk-toutiao.com  
-||mssdk-bu.bytedance.com 
-||p26-be-pack-sign.pglstatp-toutiao.co 
-||p3-be-pack-sign.pglstatp-toutiao.com 
-||p6-aio.ecombdimg.com 
+||chengzijianzhan.com^
+||adnet.qq.com^
+||ether-pack.pangolin-sdk-toutiao.com^
+ 
+||p26-be-pack-sign.pglstatp-toutiao.com^
+||p3-be-pack-sign.pglstatp-toutiao.com ^
+||p6-aio.ecombdimg.com^
 ||bx.hrhbvip.com 
 ||a.gdt.qq.com 
 ||s95.cnzz.com 
@@ -1920,115 +1867,112 @@ t7z.cupid.ptqy.gitv.tv
 ||p9-be-pack-sign.pglstatp-toutiao.com
 ||sf3-ttcdn-tos.pstatp.com
 ||wxsnsdythumb.wxs.qq.com^
-||mp.weixin.qq.com/mp/appmsgreport?action
+
 ||pgdt.gtimg.cn^
 ||wspeed.qq.com^
 ||p.store.qq.com^
-||logs.chelaile.net.cn$app=com.tencent. mm
-||api.chelaile.net.cn$app=com.tencent.mm
-||wxsnsdy.wxs.qq.com^$app=com.tencent.mm
-||pingfore.qq.com^$app=com.tencent.mm
-||aegis.qq.com^
-||minorshort.weixin.qq.com＾
-||wxapp.api.ke.com^$app=com.tencent.mm
-||wx.api.ke.com^$app=com.tencent.mm
-||pgdt.gtimg.cn/gdt/0^$app=com.tencent.qqmusic
+||logs.chelaile.net.cn
+||api.chelaile.net.cn
+||wxsnsdy.wxs.qq.com^
+||pingfore.qq.com^
+
+||wxapp.api.ke.com^
+||wx.api.ke.com^
+||pgdt.gtimg.cn
 #优酷
-127.0.0.1 atm.youku.com
-127.0.0.1 Fvid.atm.youku.com
-127.0.0.1 html.atm.youku.com
-127.0.0.1 valb.atm.youku.com
-127.0.0.1 valf.atm.youku.com
-127.0.0.1 valo.atm.youku.com
-127.0.0.1 valp.atm.youku.com
-127.0.0.1 lstat.youku.com
-127.0.0.1 speed.lstat.youku.com
-127.0.0.1 urchin.lstat.youku.com
-127.0.0.1 stat.youku.com
-127.0.0.1 static.lstat.youku.com
-127.0.0.1 valc.atm.youku.com
-127.0.0.1 vid.atm.youku.com
-127.0.0.1 walp.atm.youku.com
+atm.youku.com
+Fvid.atm.youku.com
+html.atm.youku.com
+valb.atm.youku.com
+valf.atm.youku.com
+valo.atm.youku.com
+valp.atm.youku.com
+lstat.youku.com
+speed.lstat.youku.com
+urchin.lstat.youku.com
+stat.youku.com
+static.lstat.youku.com
+valc.atm.youku.com
+vid.atm.youku.com
+walp.atm.youku.com
 #奇艺
-127.0.0.1 afp.qiyi.com
-127.0.0.1 focunbaiduafp.allyes.com
+afp.qiyi.com
+focunbaiduafp.allyes.com
 #CNTV
-127.0.0.1 a.cctv.com
-127.0.0.1 a.cntv.cn
-127.0.0.1 ad.cctv.com
-127.0.0.1 d.cntv.cn
-127.0.0.1 adguanggao.eee114.com
-127.0.0.1 cctv.adsunion.com
+a.cctv.com
+a.cntv.cn
+ad.cctv.com
+d.cntv.cn
+adguanggao.eee114.com
+cctv.adsunion.com
 #新浪视频
-127.0.0.1 dcads.sina.com.cn
+dcads.sina.com.cn
 #PPTV
-127.0.0.1 pp2.pptv.com
+pp2.pptv.com
 #乐视
-127.0.0.1 pro.letv.com
-#搜狐高清
-#www.iqshw.com
-127.0.0.1 images.sohu.com
+pro.letv.com
+
 #CNTV
-127.0.0.1 a.cctv.com
-127.0.0.1 a.cntv.cn
-127.0.0.1 ad.cctv.com
-127.0.0.1 d.cntv.cn
-127.0.0.1 adguanggao.eee114.com
-127.0.0.1 cctv.adsunion.com
+a.cctv.com
+a.cntv.cn
+ad.cctv.com
+d.cntv.cn
+adguanggao.eee114.com
+cctv.adsunion.com
 #迅雷看看屏蔽：
-127.0.0.1 mcfg.sandai.net
-127.0.0.1 biz5.sandai.net
-127.0.0.1 server1.adpolestar.net
-127.0.0.1 advstat.xunlei.com
-127.0.0.1 mpv.sandai.net
+mcfg.sandai.net
+biz5.sandai.net
+server1.adpolestar.net
+advstat.xunlei.com
+mpv.sandai.net
 #腾讯视频
-127.0.0.1 adslvfile.qq.com
-127.0.0.1 adsfile.qq.com
-127.0.0.1 play.qq.com
-127.0.0.1 adslvfile.qq.com
+adslvfile.qq.com
+adsfile.qq.com
+play.qq.com
+adslvfile.qq.com
 tj.video.qq.com
-127.0.0.1 livep.l.qq.com
-127.0.0.1 rcgi.video.qq.com
-127.0.0.1 aid.video.qq.com
-127.0.0.1 pinghot.qq.com
-127.0.0.1 54kfqq.com
-127.0.0.1 vhotlxp.video.qq.com
-127.0.0.1 livem.l.qq.com
-127.0.0.1 adsrich.qq.com
-127.0.0.1 www.12l22.net
-127.0.0.1 js.12l22.net
-127.0.0.1 www.zzdengshan.com
-127.0.0.1 nl.tg.theooxx.com
-127.0.0.1 cdn.8j6p.com
-127.0.0.1 www.wansha5566.com
-127.0.0.1 spread.024ajs.com
-127.0.0.1 adclick.g.doubleclick.net
-127.0.0.1 vdax.youzu.com
-127.0.0.1 www.youzu.com
-127.0.0.1 www.6075.com
-127.0.0.1 js.adm.cnzz.net
-127.0.0.1 u948016.778669.com
-127.0.0.1 www.ltqczs.com
-127.0.0.1 vdax.uuzu.com
-127.0.0.1 c.img001.com
-127.0.0.1 u291014.778669.com
-127.0.0.1 www.nvyoo.net
-127.0.0.1 dsp.1503.net
-127.0.0.1 www.baidu.com.21806.com
-127.0.0.1 zjtv-haoshengyin8.com
-127.0.0.1 www.weoweoisky.com
-127.0.0.1 adp.whoclick.cn
-127.0.0.1 cbjs.baidu.com
-127.0.0.1 ubmcmm.baidustatic.com
-127.0.0.1 dup.baidustatic.com
-127.0.0.1 kwcdn.ggmm777.com
-127.0.0.1 5y9nfpes.52pk.com
-127.0.0.1 safe.ie.sogou.com
-127.0.0.1 vinci.ie.sogou.com
-127.0.0.1 cronus.ie.sogou.com
-127.0.0.1 get.ie.sogou.com
-127.0.0.1 safe.ie.sogou.com
-127.0.0.1 get.sogou.com
+livep.l.qq.com
+rcgi.video.qq.com
+aid.video.qq.com
+pinghot.qq.com
+54kfqq.com
+vhotlxp.video.qq.com
+livem.l.qq.com
+adsrich.qq.com
+www.12l22.net
+js.12l22.net
+www.zzdengshan.com
+nl.tg.theooxx.com
+cdn.8j6p.com
+www.wansha5566.com
+spread.024ajs.com
+adclick.g.doubleclick.net
+vdax.youzu.com
+www.youzu.com
+www.6075.com
+js.adm.cnzz.net
+u948016.778669.com
+www.ltqczs.com
+vdax.uuzu.com
+c.img001.com
+u291014.778669.com
+www.nvyoo.net
+dsp.1503.net
+www.baidu.com.21806.com
+zjtv-haoshengyin8.com
+www.weoweoisky.com
+adp.whoclick.cn
+cbjs.baidu.com
+ubmcmm.baidustatic.com
+dup.baidustatic.com
+kwcdn.ggmm777.com
+5y9nfpes.52pk.com
+safe.ie.sogou.com
+vinci.ie.sogou.com
+cronus.ie.sogou.com
+get.ie.sogou.com
+safe.ie.sogou.com
+get.sogou.com
 ||3g-dk1.35lljjh.cn^
 ||hxbaihe.cn^
 ||sdk.open.talk.getui.net^$important
@@ -2071,57 +2015,51 @@ tj.video.qq.com
 ||wxsnsdythumb.wxs.qq.com^
 ||oth.eve.mdt.qq.com^
 ||api-access.pangolin-sdk-toutiao.com^$important
-||coolapk.com/^$replace=/{"title":\u4eca\u65e5\u9177\u5b89.*?}\,//
-||coolapk.com/^$replace=/{"entityTemplate":imageCarouselCard_1.*?}\,//
-||www.toutiao.com/api/web_ads/
-||pstatp.com^*/bannersdk/
-||pstatp.com/growth/mobile_list/image/bonus_
-127.0.0.1 access1.tpns.tencent.com
-127.0.0.1 astrategy.beacon.qq.com.com
-127.0.0.1 ug.snssdk.com
-v3-be-pack.pglstatp-toutiao.com
+
+access1.tpns.tencent.com
+astrategy.beacon.qq.com.com
+
+||v*-be-pack.pglstatp-toutiao.com^
 sf3-be-pack.pglstatp-toutiao.com
-127.0.0.1 tobapplog.ctobsnssdk.com
+tobapplog.ctobsnssdk.com
 access.pangolin-sdk-toutiao-b.com
-127.0.0.1 ulogs.umengcloud.com
+ulogs.umengcloud.com
 ||midas.gtimg.cn^
 ||wxsnsdythumb.wxs.qq.com^
 ||oth.eve.mdt.qq.com^
 ||wxsnsdythumb.wxs.qq.com^
 ||wxsnsdy.wxs.qq.com^
-127.0.0.1 api-access.pangolin-sdk-toutiao-b.com
-127.0.0.1 mssdk-bu.snssdk.com
-127.0.0.1 aaid.umeng.com
-127.0.0.1 pangolin.snssdk.com
-127.0.0.1 extlog.snssdk.com
-127.0.0.1 sf3-ttcdn-tos.pstatp.com
-127.0.0.1 bds.snssdk.com
-127.0.0.1 dig.bdurl.net
-127.0.0.1 api-access.pangolin-sdk-toutiao.com
-127.0.0.1 sfl-fe-tos.pglstatp-toutiao.com
-127.0.0.1 sf1-be-pack.pglstatp-toutiao.com
-127.0.0.1 sf3-fe-tos.pglstatp-toutiao.com
-127.0.0.1 log-api.pangolin-sdk-toutiao.com
-127.0.0.1 s3-fe-scm.pglstatp-toutiao.com
-127.0.0.1 s3a.pstatp.com
-127.0.0.1 log-api.pangolin-sdk-toutiao-b.com
-127.0.0.1 sf6-be-pack.pglstatp-toutiao.com
+api-access.pangolin-sdk-toutiao-b.com
+
+aaid.umeng.com
+pangolin.snssdk.com
+extlog.snssdk.com
+sf3-ttcdn-tos.pstatp.com
+bds.snssdk.com
+dig.bdurl.net
+api-access.pangolin-sdk-toutiao.com
+||sf*-fe-tos.pglstatp-toutiao.com^
+sf1-be-pack.pglstatp-toutiao.com
+sf3-fe-tos.pglstatp-toutiao.com
+log-api.pangolin-sdk-toutiao.com
+s3-fe-scm.pglstatp-toutiao.com
+s3a.pstatp.com
+ log-api.pangolin-sdk-toutiao-b.com
+sf6-be-pack.pglstatp-toutiao.com
 ||*.ad.*.com
 
 ||api-access.pangolin-sdk-toutiao.com^
 ||log-api.pangolin-sdk-toutiao.com^
 ||api-access.pangolin-sdk-toutiao-b.com^
 
-||www.chengzijianzhan.com^$app=com.dragon.read
 
-||imp-toutiao-data.37.com.cn^$app=com.dragon.read
+||imp-toutiao-data.37.com.cn^
 
-||www.bq6666.cn^$app=com.auto.greenskipad
-||app.yi9939.com^$app=com.auto.greenskipad
+||www.bq6666.cn^
+||app.yi9939.com^
 
  
 ||midas.gtimg.cn^
-||mpv6.weixin.qq.com^
 ||wxsnsdythumb.wxs.qq.com^
 ||oth.eve.mdt.qq.com^
 ||wxsnsdythumb.wxs.qq.com^
