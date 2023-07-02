@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||hls.itunes.apple.com.mwcname.com^
+
 @@||unpkg.zhimg.com
 
 ||kyw4y0s.com^
