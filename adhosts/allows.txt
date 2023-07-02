@@ -2,7 +2,12 @@
 a0.app.xiaomi.com
 miav-cse.avlyun.com
 miui-fxcse.avlyun.com
-
+smad.ms.zhangyue.net
+th-a.pinduoduo.com
+sns-video-bd.xhscdn.com
+sns-img-hw.xhscdn.com
+sns-avatar-qc.xhscdn.com
+redimage.xhscdn.com
 
 @@||report.qqweb.qq.com^
 @@||pt-tracking.arkgames.com^
