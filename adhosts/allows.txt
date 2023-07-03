@@ -1,4 +1,7 @@
 #测试版规则
+||huichuan-mc.sm.cn^$important
+||log.m.sm.cn^$important
+
 a0.app.xiaomi.com
 miav-cse.avlyun.com
 miui-fxcse.avlyun.com
@@ -1480,11 +1483,11 @@ h5.vedamobi.com
 auni.telecome.cn
 log.mmstat.com
 sdk-log.partner.sm.cn
-@@||m.sm.cn^$important
+@@||m.sm.cn^
 tobapplog.volceapplog.com
 rtlog.zijieapi.com
-@@||res.wx.qq.com^$important
-@@||t*.baidu.com^$important
+@@||res.wx.qq.com^
+@@||t*.baidu.com^
 @@||csdn.net^$important
 ||*.ad.*.cn^
 applog.lc.quark.cn
@@ -1591,8 +1594,6 @@ au.qq.com
 @@||push.hexin.cn
 @@||push.10jqka.com.cn
 ||ms.bdimg.com
-||120.233.184.219
-||183.232.115.51
 ||av.video.qq.com
 @@||f*.market.xiaomi.com
 ||ad.12306.cn
