@@ -1,6 +1,7 @@
 #测试版规则
 ||huichuan-mc.sm.cn^$important
 ||log.m.sm.cn^$important
+||huichuan.sm.cn^$important
 
 a0.app.xiaomi.com
 miav-cse.avlyun.com
