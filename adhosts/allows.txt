@@ -1,4 +1,12 @@
 #测试版规则
+@@||tnc*-aliec*.snssdk.com^
+@@||vcl-brain.snssdk.com^
+@@||stream.snssdk.com^
+@@||tnc*-alisc*.snssdk.com^
+@@||tnc*-bjlgy.snssdk.com^
+@@||tbm.snssdk.com^
+
+
 ||applog.ucdns.uc.cn^$important
 ||applog.uc.cn^$important
 ||applog-perf.uc.cn^$important
