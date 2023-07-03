@@ -17,6 +17,9 @@
 @@||puds.ucweb.com^
 @@||gecko5-lf.zijieapi.com^
 @@||apps.game.qq.com^
+@@||gecko5-hl.zijieapi.com^
+@@||feedback-c.zijieapi.com^
+
 
 a0.app.xiaomi.com
 miav-cse.avlyun.com
@@ -40,7 +43,7 @@ phoniex.toutiao.com
 ||kedang.net^
 ||chengzijianzhan.net.cn^
 
-||ecombdimg.com^
+#注释||ecombdimg.com^
 
 @@||wxapp.tc.qq.com^
 @@||qqdata.ab.qq.com^
@@ -52,21 +55,21 @@ phoniex.toutiao.com
 @@||sm.cn
 @@||log*-misc-lf.amemv.com^
 
-||p*-tt.byteimg.com^
-||p*-bk.byteimg.com^
-||p*-ug-imc.byteimg.com^
-||p*-iescs.byteimg.com^
-||p*-search.byteimg.com^
+@@||p*-tt.byteimg.com^
+@@||p*-bk.byteimg.com^
+@@||p*-ug-imc.byteimg.com^
+@@||p*-iescs.byteimg.com^
+@@||p*-search.byteimg.com^
 
 ||applog.lc.quark.cn^$important
 
-||p*-goku.byteimg.com^
-||p*-wukong.byteimg.com^
-||p*-pack.byteimg.com^
-||p*-magic.byteimg.com^
+@@||p*-goku.byteimg.com^
+@@||p*-wukong.byteimg.com^
+@@||p*-pack.byteimg.com^
+@@||p*-magic.byteimg.com^
 ||ct-baidu-yk.v.bdydns.com^
 
-||ecombdapi.com^
+#注释||ecombdapi.com^
 
 ||log*-applog.novelfm.com^
 
