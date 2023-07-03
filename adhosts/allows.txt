@@ -134,12 +134,9 @@ sp-sdk.api.360ra.net
 ||rtlog*-applog-lq.fqnovel.com^
 ||log*-applog-lq.fqnovel.com^
 ||p*-ad-sign.byteimg.com^
-||frontier-toutiao.snssdk.com^
-||vod-settings.bytedanceapi.com^
+
 #番茄小说测试
-||p9-developer-sign.bytemaimg.com^
-||huixuanjiasu.com^
-||p*-developer-sign.bytemaimg.com^
+
 ||p*-orange.byteorge.com^
 ||p*-ad-sign.byteimg.com^
 ||p*-orange-sign.byteimg.com^
