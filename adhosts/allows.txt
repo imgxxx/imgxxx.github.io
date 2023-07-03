@@ -52,7 +52,7 @@ phoniex.toutiao.com
 ||kedang.net^
 ||chengzijianzhan.net.cn^
 
-||ecombdimg.com^
+#注释||ecombdimg.com^
 
 @@||wxapp.tc.qq.com^
 @@||qqdata.ab.qq.com^
@@ -64,30 +64,32 @@ phoniex.toutiao.com
 @@||sm.cn
 @@||log*-misc-lf.amemv.com^
 
-||p*-tt.byteimg.com^
-||p*-bk.byteimg.com^
-||p*-ug-imc.byteimg.com^
-||p*-iescs.byteimg.com^
-||p*-search.byteimg.com^
+@@||p*-tt.byteimg.com^
+@@||p*-bk.byteimg.com^
+@@||p*-ug-imc.byteimg.com^
+@@||p*-iescs.byteimg.com^
+@@||p*-search.byteimg.com^
 
 ||applog.lc.quark.cn^$important
 
-||p*-goku.byteimg.com^
-||p*-wukong.byteimg.com^
-||p*-pack.byteimg.com^
-||p*-magic.byteimg.com^
+@@||p*-goku.byteimg.com^
+@@||p*-wukong.byteimg.com^
+@@||p*-pack.byteimg.com^
+@@||p*-magic.byteimg.com^
 ||ct-baidu-yk.v.bdydns.com^
 
-||ecombdapi.com^
+#注释||ecombdapi.com^
 
 ||log*-applog.novelfm.com^
 
 @@||unet.quark.cn^
 @@||verified.biz.weibo.com^
-#注释||direct.applog-lb-alibj-v3.alinc2lf.bytelb.net^
+
 #注释||lf*-cdn-tos.bytescm.com^
 #注释||lf-cdn-tos.bytescm.com^
+
 @@||*.free-lbv6.idouyinvod.com^
+
 #注释||xdplt.com^
 #注释||shp.qpic.cn^
 #注释||lf*-cdn-tos.bytecdntp.com^
