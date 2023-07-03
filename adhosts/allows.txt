@@ -15,7 +15,8 @@
 @@||uc.cn
 @@||px.ucweb.com^
 @@||puds.ucweb.com^
-
+@@||gecko5-lf.zijieapi.com^
+@@||apps.game.qq.com^
 
 a0.app.xiaomi.com
 miav-cse.avlyun.com
