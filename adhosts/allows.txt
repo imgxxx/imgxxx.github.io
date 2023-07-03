@@ -472,7 +472,7 @@ ywlog.reader.qq.com
 @@||log*-misc-hl.amemv.com^
 @@||log*-misc-alinc2-lq.amemv.com^
 @@||log*-misc-lq.amemv.com^
-
+@@||log*-misc-lq.ixigua.com^
 
 
 
