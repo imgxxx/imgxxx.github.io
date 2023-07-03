@@ -8,7 +8,6 @@
 
 @@||snssdk.com^
 
-
 ||applog.ucdns.uc.cn^$important
 ||applog.uc.cn^$important
 ||applog-perf.uc.cn^$important
@@ -1135,7 +1134,6 @@ apd-vlive.apdcdn.tc.qq.com
 ||img-x.jd.com^$important
 ||im-x.jd.com^$important
 
-^https:\/\/open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ-reject
 
 /ad-sdk/
 /ad-trace/
@@ -1881,7 +1879,7 @@ resolver.msg.xiaomi.net
 @@||in-addr.arpa^
 ||gongyi.mi.com
 @@||baijiahao.baidu.com^
-||*.pglstatp-toutiao.com^$important
+
 ||*.shuzilm.cn^$important
 ||file.7youxi.com^$important
 ||cdn.51img3.com^$important
@@ -2079,10 +2077,10 @@ ulogs.umengcloud.com
 api-access.pangolin-sdk-toutiao-b.com
 
 aaid.umeng.com
-pangolin.snssdk.com
+
 extlog.snssdk.com
 sf3-ttcdn-tos.pstatp.com
-bds.snssdk.com
+
 dig.bdurl.net
 api-access.pangolin-sdk-toutiao.com
 ||sf*-fe-tos.pglstatp-toutiao.com^
@@ -2119,8 +2117,6 @@ sf6-be-pack.pglstatp-toutiao.com
 @@||fengapp6.wfdata.club^$important
 @@*.feng.com^$important
 @@*.fengimg.com^$important
-||ctobsnssdk.com^
-||pangolin.snssdk.com^
 ||pangolin-sdk-toutiao.com^
 ||pangolin-sdk-toutiao-b.com^ 
 ||js-ad.a.yximgs.com^$important
@@ -2131,7 +2127,7 @@ sf6-be-pack.pglstatp-toutiao.com
 @@||mivideo.cdn.pandora.xiaomi.com^$important
 @@||video.xiaomi.com^$important
 @@||ipxx.pro^$important
-||pangolin.snssdk.com^$important
+
 ||open.kuaishouzt.com^$important
 ||open.kwaizt.com^$important
 
