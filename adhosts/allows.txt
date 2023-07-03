@@ -6,6 +6,8 @@
 @@||tnc*-bjlgy.snssdk.com^
 @@||tbm.snssdk.com^
 
+@@||snssdk.com^
+
 
 ||applog.ucdns.uc.cn^$important
 ||applog.uc.cn^$important
