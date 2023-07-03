@@ -3,8 +3,4 @@
 ||ads*-normal-lq.zijieapi.com^
 ||rtlog*-applog-lq.fqnovel.com^
 ||v*-novelapp.fqnovelvod.com^
-||pangolin-sdk-toutiao.com^
-||frontier-toutiao.snssdk.com^
-||pangolin-sdk-toutiao-b.com^
 ||ads5-normal-lf.zijieapi.com^
-||pglstatp-toutiao.com^
