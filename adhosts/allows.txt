@@ -78,7 +78,7 @@ phoniex.toutiao.com
 ||p*-magic.byteimg.com^
 ||ct-baidu-yk.v.bdydns.com^
 
-#注释||ecombdapi.com^
+||ecombdapi.com^
 
 ||log*-applog.novelfm.com^
 
