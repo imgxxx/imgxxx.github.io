@@ -8,7 +8,7 @@
 @@||ssl.google-analytics.com^
 @@||m.analytics.126.net^
 @@||lf*-analytics.bytescm.com.queniuuf.com^
-
+@@||p3-passport.byteacctimg.com^
 
 @@||tnc*-aliec*.snssdk.com^
 @@||vcl-brain.snssdk.com^
