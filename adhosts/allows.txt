@@ -7,7 +7,7 @@
 @@||lf*-analytics.bytescm.com^
 @@||ssl.google-analytics.com^
 @@||m.analytics.126.net^
-
+@@||lf*-analytics.bytescm.com.queniuuf.com^
 
 
 @@||tnc*-aliec*.snssdk.com^
@@ -63,7 +63,6 @@ phoniex.toutiao.com
 ||kedang.net^
 ||chengzijianzhan.net.cn^
 
-#注释||ecombdimg.com^
 
 @@||wxapp.tc.qq.com^
 @@||qqdata.ab.qq.com^
@@ -89,22 +88,15 @@ phoniex.toutiao.com
 @@||p*-magic.byteimg.com^
 ||ct-baidu-yk.v.bdydns.com^
 
-#注释||ecombdapi.com^
 
 ||log*-applog.novelfm.com^
 
 @@||unet.quark.cn^
 @@||verified.biz.weibo.com^
 
-#注释||lf*-cdn-tos.bytescm.com^
-#注释||lf-cdn-tos.bytescm.com^
 
 @@||*.free-lbv6.idouyinvod.com^
 
-#注释||xdplt.com^
-#注释||shp.qpic.cn^
-#注释||lf*-cdn-tos.bytecdntp.com^
-#注释||bytegecko.com^
 
 #抖音推广
 ||p*-orange.byteorg.com^
