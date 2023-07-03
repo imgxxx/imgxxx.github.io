@@ -52,7 +52,7 @@ phoniex.toutiao.com
 ||kedang.net^
 ||chengzijianzhan.net.cn^
 
-#注释||ecombdimg.com^
+||ecombdimg.com^
 
 @@||wxapp.tc.qq.com^
 @@||qqdata.ab.qq.com^
@@ -64,18 +64,18 @@ phoniex.toutiao.com
 @@||sm.cn
 @@||log*-misc-lf.amemv.com^
 
-@@||p*-tt.byteimg.com^
-@@||p*-bk.byteimg.com^
-@@||p*-ug-imc.byteimg.com^
-@@||p*-iescs.byteimg.com^
-@@||p*-search.byteimg.com^
+||p*-tt.byteimg.com^
+||p*-bk.byteimg.com^
+||p*-ug-imc.byteimg.com^
+||p*-iescs.byteimg.com^
+||p*-search.byteimg.com^
 
 ||applog.lc.quark.cn^$important
 
-@@||p*-goku.byteimg.com^
-@@||p*-wukong.byteimg.com^
-@@||p*-pack.byteimg.com^
-@@||p*-magic.byteimg.com^
+||p*-goku.byteimg.com^
+||p*-wukong.byteimg.com^
+||p*-pack.byteimg.com^
+||p*-magic.byteimg.com^
 ||ct-baidu-yk.v.bdydns.com^
 
 #注释||ecombdapi.com^
