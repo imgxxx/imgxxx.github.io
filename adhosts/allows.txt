@@ -1,4 +1,7 @@
 #测试版规则
+||applog.ucdns.uc.cn^$important
+||applog.uc.cn^$important
+||applog-perf.uc.cn^$important
 ||huichuan-mc.sm.cn^$important
 ||log.m.sm.cn^$important
 ||huichuan.sm.cn^$important
