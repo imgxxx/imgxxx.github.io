@@ -13,8 +13,8 @@
 @@||website-sub.uc.cn^
 @@||client.tv.uc.cn^
 @@||uc.cn
-
-
+@@||px.ucweb.com^
+@@||puds.ucweb.com^
 
 
 a0.app.xiaomi.com
