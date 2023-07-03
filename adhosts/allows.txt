@@ -3,6 +3,17 @@
 ||log.m.sm.cn^$important
 ||huichuan.sm.cn^$important
 
+@@||feedback.uc.cn^
+@@||voice-service.uc.cn^
+@@||na61-netdiag-upaas.uc.cn^
+@@||api.c.uc.cn^
+@@||website-sub.uc.cn^
+@@||client.tv.uc.cn^
+@@||uc.cn
+
+
+
+
 a0.app.xiaomi.com
 miav-cse.avlyun.com
 miui-fxcse.avlyun.com
