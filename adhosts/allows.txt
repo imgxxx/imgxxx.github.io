@@ -1,4 +1,15 @@
 #测试版规则
+
+@@||weather-analytics-events.apple.com^
+@@||books-analytics-events.apple.com^
+@@||analytics-api-01.smzdm.com^
+@@||analytics-api.smzdm.com^
+@@||lf*-analytics.bytescm.com^
+@@||ssl.google-analytics.com^
+@@||m.analytics.126.net^
+
+
+
 @@||tnc*-aliec*.snssdk.com^
 @@||vcl-brain.snssdk.com^
 @@||stream.snssdk.com^
