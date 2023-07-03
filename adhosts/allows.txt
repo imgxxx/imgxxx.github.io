@@ -5,7 +5,7 @@
 @@||tnc*-alisc*.snssdk.com^
 @@||tnc*-bjlgy.snssdk.com^
 @@||tbm.snssdk.com^
-
+@@||push.ulive.ugslb.com^
 @@||snssdk.com^
 
 ||applog.ucdns.uc.cn^$important
