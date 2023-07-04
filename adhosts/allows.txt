@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||digicert.com^
+
 ||dig.bdurl.net^$important
 @@||dig.zjurl.cn^$important
 
