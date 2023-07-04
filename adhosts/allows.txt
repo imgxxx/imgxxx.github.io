@@ -1,5 +1,8 @@
 #测试版规则
 
+@@||dig.bdurl.net^
+@@||ucweb.com^
+
 @@||scdnseeds-tracker.xycdn.com^
 
 @@||tpstelemetry.tencent.com^
