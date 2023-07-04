@@ -614,7 +614,7 @@ error.taobao.com
 ||log5-applog.zijieapi.com^
 ||log-eap.coloros.com^
 ||log-report.com^
-||log*-lf.qishui.com^
+#注释||log*-lf.qishui.com^
 ||app-log.dewu.com^
 ||app.log.nf.migu.cn^
 
