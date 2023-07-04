@@ -1,4 +1,8 @@
 #测试版规则
+
+||dig.bdurl.net^$important
+||dig.zjurl.cn^$important
+
 @@||tracker-live.pcdn.yximgs.com^
 @@||tracker.chat.bilibili.com^
 @@||*-live-tracker-01.chat.bilibili.com^
@@ -215,8 +219,7 @@
 
 
 
-@@||dig.bdurl.net^
-@@||dig.zjurl.cn^
+
 
 @@||ucweb.com^
 
