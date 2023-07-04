@@ -1,5 +1,5 @@
 #测试版规则
-
+@@||aliapp.org^
 @@||weather-analytics-events.apple.com^
 @@||books-analytics-events.apple.com^
 @@||analytics-api-01.smzdm.com^
