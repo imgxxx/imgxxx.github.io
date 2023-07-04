@@ -1,4 +1,5 @@
 #测试版规则
+@@||mon.isnssdk.com^
 @@||p1-feedback.byteimg.com^
 @@||aliapp.org^
 @@||weather-analytics-events.apple.com^
