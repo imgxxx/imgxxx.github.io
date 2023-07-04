@@ -5,6 +5,7 @@
 
 @@||sf*-fe-tos.pglstatp-toutiao.com^
 
+rtlog5-applog-lf.ixigua.com
 
 @@||mon.isnssdk.com^
 @@||p1-feedback.byteimg.com^
