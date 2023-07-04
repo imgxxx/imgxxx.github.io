@@ -1,4 +1,6 @@
 #测试版规则
+@@||log.zijieapi.com^
+@@||log-klink.zijieapi.com^
 
 
 @@||sf*-fe-tos.pglstatp-toutiao.com^
@@ -586,7 +588,7 @@ error.taobao.com
 ||mlog.dianping.com^
 ||logs.quicksdk.net^
 ||logdc.happyelements.cn^
-||log-klink.zijieapi.com^
+
 ||log5-applog.zijieapi.com^
 ||log-eap.coloros.com^
 ||log-report.com^
