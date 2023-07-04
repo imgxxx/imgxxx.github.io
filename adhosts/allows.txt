@@ -1239,6 +1239,7 @@ analytics.s3.amazonaws.com
 @@||apikey.map.qq.com^
 @@||sensors.cloud.tencent.com
 @@||cloudcache.tencentcs.cn
+
 ||ideamake.cn^
 
 #抖音极速版评论接口
@@ -1529,8 +1530,8 @@ log.zijieapi.com
 @@||inews.gtimg.com^
 @@||isee.weishi.qq.com^
 adash.man.aliyuncs.com
-||ad*.adbreak.ch/*ad_block=$domain=tio.ch
-||ad*.liverail.com/?LR_$object-subrequest,domain=play.tv|playtv.fr
+||ad*.adbreak.ch
+||ad*.liverail.com
 ||ad-api-v01.uliza.jp^
 ||ad-cdn.bilgin.pro
 ||ad-emea.doubleclick.net
@@ -1538,7 +1539,7 @@ adash.man.aliyuncs.com
 ||ad-gone.com^
 ||ad-maven.com^
 ||ad-text.ru^
-||ad.*.ch^$
+||ad.*.ch^
 ||ad.10010.com^
 ||ad.12306.cn^
 ||ad.3.cn
@@ -1601,7 +1602,7 @@ hub5p.sandai.net
 choujiang.xox2.cn
 mlog.wangsu.com
 ||static.jyss.com^
-#注释@@||img*.360buyimg.com^
+
 ||lite.a.market.xiaomi.com^$important
 richmedia.video.qq.com
 livep.l.qq.com
@@ -1796,9 +1797,9 @@ t7z.cupid.ptqy.gitv.tv
 ||2134.com.cn^
 @@||gamecenter.qq.com^$important
 
-||pangolin-sdk-toutiao-b.com^
+
 ||ads5-normal-lf.zijieapi.com^
-||pglstatp-toutiao.com^
+
 @@||xp.apple.com^
 @@||browserkernel.baidu.com^
 @@||r.browser.miui.com^
@@ -1865,7 +1866,7 @@ resolver.msg.xiaomi.net
 ||otheve.beacon.qq.com^$important
 ||aeventlog.beacon.qq.com^$important
 @@||tianqi.2345.com^$important
-#注释||mime.baidu.com^$important
+
 @@||appcloud2.zhihu.com^
 @@||appcloud2.in.zhihu.com^
 @@||zhihu-web-analytics.zhihu.com^
@@ -1895,7 +1896,7 @@ resolver.msg.xiaomi.net
 ||qzs.gdtimg.com
 ||chengzijianzhan.com^
 ||adnet.qq.com^
-||ether-pack.pangolin-sdk-toutiao.com^
+
  
 ||p26-be-pack-sign.pglstatp-toutiao.com^
 ||p3-be-pack-sign.pglstatp-toutiao.com ^
@@ -1922,7 +1923,8 @@ resolver.msg.xiaomi.net
 
 ||wxapp.api.ke.com^
 ||wx.api.ke.com^
-||pgdt.gtimg.cn
+||pgdt.gtimg.cn^$important
+
 #优酷
 atm.youku.com
 Fvid.atm.youku.com
@@ -2066,7 +2068,7 @@ astrategy.beacon.qq.com.com
 ||v*-be-pack.pglstatp-toutiao.com^
 sf3-be-pack.pglstatp-toutiao.com
 tobapplog.ctobsnssdk.com
-access.pangolin-sdk-toutiao-b.com
+
 ulogs.umengcloud.com
 ||midas.gtimg.cn^
 ||wxsnsdythumb.wxs.qq.com^
@@ -2116,8 +2118,7 @@ sf6-be-pack.pglstatp-toutiao.com
 @@||fengapp6.wfdata.club^$important
 @@*.feng.com^$important
 @@*.fengimg.com^$important
-||pangolin-sdk-toutiao.com^
-||pangolin-sdk-toutiao-b.com^ 
+
 ||js-ad.a.yximgs.com^$important
 @@||improving.duckduckgo.com^$important
 @@||ifengimg.com^$important
