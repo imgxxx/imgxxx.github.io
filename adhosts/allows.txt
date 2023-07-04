@@ -873,14 +873,14 @@ fenwan.cdn.bcebos.com
 
 
 sdk.e.qq.com
-api-access.pangolin-sdk-toutiao-b.com
+
 sf3-fe-tos.pglstatp-toutiao.com
-gromore.pangolin-sdk-toutiao.com
+
 qzs.gdtimg.com
 toblog.ctobsnssdk.com
 tobapplog.ctobsnssdk.com
 log-api.pangolin-sdk-toutiao.com
-api-access.pangolin-sdk-toutiao.com
+
 
 
 @@||sofire.bdstatic.com^
@@ -1140,7 +1140,6 @@ apd-vlive.apdcdn.tc.qq.com
 /ad-trace/
 /ad-scope/
 ||ad.e.
-||adash
 
 @@||polaris3-normal-lq.zijieapi.com
 @@||mon.snssdk.com
@@ -1345,7 +1344,7 @@ txqcmmov.a.etoote.com
 
 
 ||rtlog*-applog-lq.amemv.com^
-||api-access.pangolin-sdk-toutiao*.com^
+
 @@||pic1.zhimg.com
 @@||pic2.zhimg.com
 @@||pic3.zhimg.com
@@ -1363,7 +1362,7 @@ api-adservices.apple.com
 ||dig.bdurl.net^
 
 
-||api-access.pangolin-sdk-toutiao-b.com^
+
 ||rtlog5-applog-hl.fqnovel.com^
 ||bizsec-auth.alicdn.com^
 
@@ -1436,9 +1435,8 @@ apidns.kwd.inkuai.com
 @@||cn-acs.m.cainiao.com
 
 a1.alibabausercontent.com
-||*.legopic*-dk.tdn*sv.com^
 
-||*ad-dnsotls-ds.metric.gstatic.com
+
 
 @@||dingtalk.cn^
 @@||at.alicdn.com
@@ -1789,7 +1787,7 @@ t7z.cupid.ptqy.gitv.tv
 @@||apple.com.cn^
 @@||apple-dns.net^
 @@||api.installer.xiaomi.com^
-||i-hl.snssdk.com^$app=com.dragon.read
+
 ||cdn-pic.com^
 ||chunxing67.xyz^
 ||kakamagic.net^
@@ -2037,7 +2035,7 @@ get.sogou.com
 ||voiceads.cn^
 @@||i5i.site^
 ||log-api.pangolin-sdk-toutiao.com^
-||api-access.pangolin-sdk-toutiao-b.com^
+
 ||gap.work.weixin.qq.com^
 ||android.rqd.qq.com^
 ||log.tpns.tencent.com^
@@ -2046,7 +2044,7 @@ get.sogou.com
 ||api.applink.mob.com^
 ||client-log.poizon.com
 ||fp-it.fengkongcloud.com
-||api-access.pangolin-sdk-toutiao.com
+
 ||amdcopen.m.taobao.com
 ||dat.ruanmei.com
 ||diagnosis.ad.xiaomi.com
@@ -2060,7 +2058,7 @@ get.sogou.com
 ||midas.gtimg.cn^
 ||wxsnsdythumb.wxs.qq.com^
 ||oth.eve.mdt.qq.com^
-||api-access.pangolin-sdk-toutiao.com^$important
+
 
 access1.tpns.tencent.com
 astrategy.beacon.qq.com.com
@@ -2075,7 +2073,7 @@ ulogs.umengcloud.com
 ||oth.eve.mdt.qq.com^
 ||wxsnsdythumb.wxs.qq.com^
 ||wxsnsdy.wxs.qq.com^
-api-access.pangolin-sdk-toutiao-b.com
+
 
 aaid.umeng.com
 
@@ -2083,20 +2081,20 @@ extlog.snssdk.com
 sf3-ttcdn-tos.pstatp.com
 
 dig.bdurl.net
-api-access.pangolin-sdk-toutiao.com
+
 ||sf*-fe-tos.pglstatp-toutiao.com^
 sf1-be-pack.pglstatp-toutiao.com
 sf3-fe-tos.pglstatp-toutiao.com
 log-api.pangolin-sdk-toutiao.com
 s3-fe-scm.pglstatp-toutiao.com
 s3a.pstatp.com
- log-api.pangolin-sdk-toutiao-b.com
+log-api.pangolin-sdk-toutiao-b.com
 sf6-be-pack.pglstatp-toutiao.com
 ||*.ad.*.com
 
-||api-access.pangolin-sdk-toutiao.com^
+
 ||log-api.pangolin-sdk-toutiao.com^
-||api-access.pangolin-sdk-toutiao-b.com^
+
 
 
 ||imp-toutiao-data.37.com.cn^
