@@ -1,5 +1,9 @@
 #测试版规则
 
+@@||scdnseeds-tracker.xycdn.com^
+
+@@||tpstelemetry.tencent.com^
+
 # 放行字节系静态投放域名，已解决抖音创作者平台打不开问题
 @@||lf-cdn-tos.bytescm.com^$important
 
@@ -9,7 +13,7 @@
 @@||*-dnsotls-ds.metric.gstatic.com^$important
 @@||*-dnsotls-ds.metric.gstatic.com^$important
 @@||dm.toutiao.com^$important
-
+@@||api.ribaoapi.com^
 
 
 @@||log.zijieapi.com^
@@ -1300,7 +1304,6 @@ dsplog.vivo.com.cn
 ||chengzijianzhan.cc^
 @@||img30.360buyimg.com^$important
 
-vc-brain.ndcpp.com
 
 
 
