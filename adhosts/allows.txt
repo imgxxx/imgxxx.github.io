@@ -849,7 +849,6 @@ log.umeweb.cn
 
 ||shuzilm.cn^
 ads-marketing-vivofs.vivo.com.cn
-||*ad-dnsotls-ds.metric.gstatic.com^
 
 tmc.tencent.com
 v6-adashx.ut.youku.com
@@ -871,7 +870,6 @@ fenwan.cdn.bcebos.com
 @@||s*-*.kwimgs.com^
 
 
-||p*-fanqiesdk-sign.fanqiesdkpic.com^
 
 sdk.e.qq.com
 api-access.pangolin-sdk-toutiao-b.com
