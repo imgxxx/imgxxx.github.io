@@ -1,7 +1,7 @@
 #测试版规则
 @@||log.zijieapi.com^
 @@||log-klink.zijieapi.com^
-
+#注释||log.
 
 @@||sf*-fe-tos.pglstatp-toutiao.com^
 
@@ -472,7 +472,7 @@ ywlog.reader.qq.com
 #QQ名片图片
 #注释@@||qqadapt.qpic.cn^
 
-||log.
+
 
 @@||images.uc.cn^
 
