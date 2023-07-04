@@ -1,5 +1,17 @@
 #测试版规则
 
+# 放行字节系静态投放域名，已解决抖音创作者平台打不开问题
+@@||lf-cdn-tos.bytescm.com^$important
+
+# 放行皮皮虾播放、登录、直播、评论、H5页面（隐私政策、用户协议等）-杏稍
+@@||h5.ribaoapi.com^$important
+@@||ws.ribaoapi.com^$important
+@@||*-dnsotls-ds.metric.gstatic.com^$important
+@@||*-dnsotls-ds.metric.gstatic.com^$important
+@@||dm.toutiao.com^$important
+
+
+
 @@||log.zijieapi.com^
 @@||log-klink.zijieapi.com^
 #注释||log.
