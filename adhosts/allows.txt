@@ -1,8 +1,4 @@
 #测试版规则
-@@||snssdk.com^$important
-@@||ctobsnssdk.com^
-@@||zijieapi.com^
-@@||toutiaoapi.com^
 
 @@||log.zijieapi.com^
 @@||log-klink.zijieapi.com^
@@ -11,6 +7,7 @@
 @@||sf*-fe-tos.pglstatp-toutiao.com^
 
 rtlog5-applog-lf.ixigua.com
+log5-applog-lf.ixigua.com
 
 @@||mon.isnssdk.com^
 @@||p1-feedback.byteimg.com^
