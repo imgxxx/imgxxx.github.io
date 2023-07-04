@@ -1,4 +1,8 @@
 #测试版规则
+@@||snssdk.com^$important
+
+
+
 @@||log.zijieapi.com^
 @@||log-klink.zijieapi.com^
 #注释||log.
@@ -1325,9 +1329,7 @@ txqcmmov.a.etoote.com
 @@||tb*.bdstatic.com^$important
 @@||imgsrc.baidu.com^$important
 
-||h*.appsimg.com^$important
-||cloudapp.azure.com^$important
-||img-vip-ssl.a.88cdn.com
+
 
 #今日头条，抖音极速版接口
 @@||tnc*-alisc*.zijieapi.com^
