@@ -1,6 +1,216 @@
 #测试版规则
 
+#拦截汇川广告渠道
+||huichuan.sm.cn^
+||huichuan-mc.sm.cn^
+
+#拦截优酷广告
+||sealine.youku.com^
+
+
+#拦截知乎的一些边缘低概率广告
+||emyfs.bs2cdn.myzhiniu.com^
+||3gact.bs2cdn.myzhiniu.com^
+||fc-video.cdn.bcebos.com^
+||api.smallyuzhou.com^
+
+# 微信广告
+||pgdt.gtimg.cn^
+||pgdt.ugdtimg.com^
+||adsmind.gdtimg.com^
+||ad.weixin.qq.com^
+
+#拦截腾讯系优量汇广告
+||rpt.gdt.qq.com^
+||c.gdt.qq.com^
+||v2.gdt.qq.com^
+||win.gdt.qq.com^
+||v.gdt.qq.com^
+||mi.gdt.qq.com^
+||d3g.qq.com^
+||*.ad.qq.com^
+
+#拦截最新的穿山甲、番茄小说广告
+||v*-be-pack.pglstatp-toutiao.com^
+||p*-be-pack-sign.pglstatp-toutiao.com^
+
+
+#拦截简书页面上的广告
+||sapi.k780.com^
+
+# 拦截QQ空间广告-圈子-朋友都再玩模块
+||circlevideo-quic.photo.qq.com^$important
+||log-api.pangolin-sdk-toutiao-b.com^
+
+# 放行UC小说图片
+@@||image.uczzd.com^$important
+# 放行UC浏览器首页信息流新闻
+@@||mparticle.uc.cn^$important
+@@||order.sm.cn^$important
+@@||quark.sm.cn^$important
+
+# 拦截携程APP开屏广告
+||launches.appsflyer.com^
+||dimg04.c-ctrip.com^
+
+#拦截赌博网站宣传物料
+||*.ibf66.com^
+
+# 拦截OPPO、VIVO浏览器页面失效页的插入广告
+||dragate-cn.dc.heytapmobi.com^
+||support.browser.heytapmobi.com
+
+# 拦截动漫之家 漫画详情页 横幅广告
+||uhxq.dmzj.com^
+
+# 放行工商银行APP-生活-本地服务-杏稍规则误伤
+@@||*.duiba.com.cn^$important
+
+#拦截穿山甲渠道广告sdk配置
+||openadsdk.sdk.bytedance.com^
+||*.downloadnew.openadsdk.sdk.bytedance.com^
+||*.ces.sys.pgl.com^
+||*.embed_dr.bytedance.com^
+||*.embedapplog.bytedance.com^
+
+#拦截Mintegral的跟踪（国外的APP统计平台）
+||*.mintegral.com^
+
+#拦截InMobi营销平台的跟踪和广告
+||*.inmobi.cn^
+
+#拦截移动安全联盟oaid
+||*.supplementarydid.msa.asus.com^
+||*.sdid.msa.asus.com^
+||*.lib.bun.com^
+||*.miitmdid.bun.com^
+
+#拦截穿山甲渠道GroMore广告sdk配置
+||*.adapter.msdk.bytedance.com^
+||*.api.msdk.bytedance.com^
+||*.base.msdk.bytedance.com^
+
+#拦截三星系统Android系统统计
+||*.deviceidservice.android.samsung.com^
+
+#拦截华为HMS广告(猜测应该是HMS的跟踪)
+||*.identifier.ads.hms.huawei.com^
+
+#拦截ADSuyi广告平台广告
+||*.admobiletop.cn
+||*.adapter.ad.adsuyi.admobiletop.cn
+
+#拦截中兴ZUI系统统计
+||*.opendeviceidlibrary.zui.com^
+
+
+# 放行类
+# 放行QQ扫码、网址检测
+@@||c.pc.qq.com^$important
+
+# 放行喜马拉雅主页和搜索
+@@||www.ximalaya.com^$important
+@@||search.ximalaya.com^$important
+
+# 放行应用汇APP主域名，影响信息展示、下载等功能
+@@||mobile.appchina.com^$important
+
+# 放行QQ安全中心app，解决无法启动、登陆、二次验证的问题
+@@||mazu.3g.qq.com^$important
+@@||tdid.m.qq.com^$important
+@@||monitor.uu.qq.com^$important
+@@||app-measurement.com^$important
+
+# 放行UC浏览器首页信息流-无法播放视频的问题
+@@||ulive-sc.uc.cn^$important
+@@||voice-service.uc.cn^$important
+@@||hcadv.video.ums.uc.cn^$important
+
+# 放行微信登录验证码获取不了的问题
+@@||shminorshort.weixin.qq.com^$important
+
+
+# 放行一键手机号登录SDK请求域名
+@@||cmpassport.com^$important
+@@||hmrz.wo.cn^$important
+@@||e.189.cn^$important
+@@||id6.me^$important
+@@||opencloud.wostore.cn^$important
+@@||auth.wosms.cn^$important
+@@||id.mail.wo.cn^$important
+
+# 放行贵州健康码-杏稍规则误伤
+@@||bbdapi.gzdata.com.cn^$important
+
+# 放行神马搜索-杏稍规则误伤
+@@||yz.m.sm.cn^$important
+
+
+# 解除虎扑限制,来自酷安反馈，因OISD规则误伤
+@@||hermes.hupu.com^
+@@||games.mobileapi.hupu.com^
+@@||collect.hupu.com^
+@@||collect.hupu.com^
+@@||hss.hupu.com^
+@@||themis.hupu.com^
+@@||bbs.mobileapi.hupu.com^
+@@||hd.hupu.com^
+@@||more.mobileapi.hupu.com^
+@@||movie.hupu.com^
+# 放行DNSPOD帮助文档，因OISD规则误伤
+@@||docs.dnspod.cn^$important
+# 放行东方财经APP资讯列表、首页banner图和资讯图片
+@@||emdcadvise.eastmoney.com^$important
+# 放行小米社区列表、资讯图片——APP广告规则
+@@||cdn.cnbj1.fds.api.mi-img.com^$important
+# 放行1919app的启动监测——anD
+@@||s9.irs03.com^$important
+# 解除手机QQ-QQ钱包-充值无法打开
+@@||midas.gtimg.cn^
+# 解除魔法网站
+@@||oracleusa.ml^$important
+# 放行魅族应用商店APPlogo和图片、视频等，问题反馈来自酷安@赖牛
+@@||api-app.meizu.com^$important
+# 放行北京卫视静态文件
+@@||*.ssl.qhres2.com^$important
+# 放行2345天气组件
+@@||tianqi.2345.com^$important
+# 放行小米浏览器首页信息流
+@@||hot.browser.miui.com^$important
+@@||r.browser.miui.com^$important
+# 放行手机新浪网信息流
+@@||gk.sina.cn^$important
+@@||mixer.sina.cn^$important
+# 放行百度安全官网
+@@||anquan.baidu.com^$important
+# 放行监控宝官网
+@@||www.jiankongbao.com^$important
+# 防止误伤抖音小黄车
+@@||dig.zjurl.cn^
 @@||dig.bdurl.net^
+
+# 放行JD钱包、礼品卡静态图片
+@@||img12.360buyimg.com^$important
+@@||img11.360buyimg.com^$important
+@@||img14.360buyimg.com^$important
+# 放行百度百科宣传图
+@@||baikebcs.bdimg.com^$important
+# 放行知乎评论
+@@||zhihu-web-analytics.zhihu.com^
+# 放行东方财富APP首页banner图和资讯图片
+@@||mobappconfig.securities.eastmoney.com^$important
+@@||emdcadvertise.eastmoney.com^$important
+@@||empic.dfcfw.com^$important
+# 放行一淘APP品牌特卖主页
+@@||mo.m.taobao.com^
+# 放行miui联网检测
+@@||connect.rom.miui.com^
+
+
+
+@@||dig.bdurl.net^
+@@||dig.zjurl.cn^
+
 @@||ucweb.com^
 
 @@||scdnseeds-tracker.xycdn.com^
@@ -164,8 +374,7 @@ sp-sdk.api.360ra.net
 ||p*-ad-sign.byteimg.com^
 ||ads*-normal-lq.zijieapi.com^
 ||p*-ad-sign.byteimg.com^
-||dig.zjurl.cn^
-||dig.bdurl.net^
+
 ||log*-applog-lq.fqnovel.com^
 ||rtlog*-applog-lq.fqnovel.com^
 ||log*-applog-lq.fqnovel.com^
@@ -433,7 +642,6 @@ www.adshoujiduoduo.com
 
 
 e5log3.fineboost.cn
-log3-misc-lq.ixigua.com
 gplog.snssdk.com
 jdlog.uu.cc
 clientlog.108sq.cn
@@ -1386,7 +1594,7 @@ api-adservices.apple.com
 @@||p*-ppx-sign.byteimg.com^
 
 
-||dig.bdurl.net^
+
 
 
 
@@ -2056,7 +2264,7 @@ get.sogou.com
 ||open.smzdm.com^$important
 ||simg01.gaodunwangxiao.com^$important
 ||apigateway.gaodun.com^$important
-||dig.bdurl.net.host^$important
+
 ||p2.zhituibang.com^$important
 ||post1.voiceads.cn^$important
 ||imp.voiceads.cn^$important
@@ -2106,9 +2314,9 @@ ulogs.umengcloud.com
 aaid.umeng.com
 
 extlog.snssdk.com
-sf3-ttcdn-tos.pstatp.com
 
-dig.bdurl.net
+
+
 
 ||sf*-fe-tos.pglstatp-toutiao.com^
 sf1-be-pack.pglstatp-toutiao.com
