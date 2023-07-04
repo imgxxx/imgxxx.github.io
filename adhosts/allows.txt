@@ -1,6 +1,6 @@
 #测试版规则
 
-@@||dig.bdurl.net^$important
+||dig.bdurl.net^$important
 @@||dig.zjurl.cn^$important
 
 @@||tracker-live.pcdn.yximgs.com^
@@ -238,10 +238,10 @@
 @@||api.ribaoapi.com^
 
 
-@@||log.zijieapi.com^
-@@||log-klink.zijieapi.com^
+||log.zijieapi.com^
+||log-klink.zijieapi.com^
 
-#注释||log.
+||log.
 
 @@||sf*-fe-tos.pglstatp-toutiao.com^
 
