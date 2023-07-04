@@ -1,7 +1,8 @@
 #测试版规则
 @@||snssdk.com^$important
-
-
+@@||ctobsnssdk.com^
+@@||zijieapi.com^
+@@||toutiaoapi.com^
 
 @@||log.zijieapi.com^
 @@||log-klink.zijieapi.com^
