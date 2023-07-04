@@ -1,4 +1,11 @@
 #测试版规则
+@@||tracker-live.pcdn.yximgs.com^
+@@||tracker.chat.bilibili.com^
+@@||*-live-tracker-01.chat.bilibili.com^
+@@||pcdn-pxy-tracker.xxpkg.com^
+
+
+
 
 #拦截汇川广告渠道
 ||huichuan.sm.cn^
@@ -215,7 +222,6 @@
 
 @@||scdnseeds-tracker.xycdn.com^
 
-@@||tpstelemetry.tencent.com^
 
 # 放行字节系静态投放域名，已解决抖音创作者平台打不开问题
 @@||lf-cdn-tos.bytescm.com^$important
@@ -229,9 +235,10 @@
 @@||api.ribaoapi.com^
 
 
-@@||log.zijieapi.com^
-@@||log-klink.zijieapi.com^
-#注释||log.
+||log.zijieapi.com^
+||log-klink.zijieapi.com^
+
+||log.
 
 @@||sf*-fe-tos.pglstatp-toutiao.com^
 
