@@ -1,4 +1,9 @@
 #测试版规则
+
+
+@@||sf*-fe-tos.pglstatp-toutiao.com^
+
+
 @@||mon.isnssdk.com^
 @@||p1-feedback.byteimg.com^
 @@||aliapp.org^
@@ -1263,7 +1268,6 @@ videobacklog.vivo.com.cn
 
 wukongapi.vivo.com.cn
 
-||p*.ssl.qhimg.com^$important
 dsplog.vivo.com.cn
 
 ||shenshiads.com^$important
