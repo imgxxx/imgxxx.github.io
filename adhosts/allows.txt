@@ -1,4 +1,5 @@
 #测试版规则
+@@||p1-feedback.byteimg.com^
 @@||aliapp.org^
 @@||weather-analytics-events.apple.com^
 @@||books-analytics-events.apple.com^
