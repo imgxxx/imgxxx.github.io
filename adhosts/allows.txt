@@ -2,7 +2,7 @@
 
 @@||digicert.com^
 
-||dig.bdurl.net^$important
+@@||dig.bdurl.net^$important
 @@||dig.zjurl.cn^$important
 
 @@||tracker-live.pcdn.yximgs.com^
