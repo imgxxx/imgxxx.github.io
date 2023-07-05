@@ -1,4 +1,7 @@
 #测试版规则
+
+@@||hub5u.wap.sandai.net^
+@@||etl-xlmc-ssl.xunlei.com^
 @@||game.subway.uu.cc^
 @@||digicert.com^
 
@@ -1522,15 +1525,9 @@ dsplog.vivo.com.cn
 
 
 
-
-
 ||chengzijianzhan.cc^
 @@||img30.360buyimg.com^$important
 
-
-
-
-||peiluyou.com^
 
 
 @@||tieba-fe.cdn.bcebos.com^
