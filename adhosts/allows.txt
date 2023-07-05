@@ -1,5 +1,9 @@
 #测试版规则
 
+@@||img.yilanvaas.com^$important
+@@||dolfincdnx.net^
+@@||ivideoprt-stsdk.vivo.com.cn^$important
+
 ||outer-charge.adapp.baidu.com^
 
 
@@ -1387,7 +1391,6 @@ open.gtimg.cn
 apd-vlive.apdcdn.tc.qq.com
 
 ||sdkcloud.e.360.cn
-||img.yilanvaas.com^$important
 ||img-x.jd.com^$important
 ||im-x.jd.com^$important
 
@@ -1447,7 +1450,7 @@ ec.kwd.inkuai.com
 @@||hot.vrs.sohu.com^$important
 @@||data.vod.itc.cn^$important
 ||monitor-stsdk.vivo.com.cn^$important
-||ivideoprt-stsdk.vivo.com.cn^$important
+
 ||pointsdk.vivo.com.cn^$important
 ||moni-ort-stsdk.vivo.com.cn^$important
 @@||api.tv.sohu.com
