@@ -1,13 +1,12 @@
 #测试版规则
+
+@@||vip.qq.com^
+
 @@||statistic.live.126.net^
 @@||mail.163.com^
 @@||sentry.epay.163.com^
 @@||loveota.com^
 @@||laohu.com^
-
-
-
-
 @@||analytics-gw.games.wanmei.com^
 @@||liveonrt-stsdk.vivo.com.cn^
 @@||videoplayonrt-stsdk.vivo.com.cn^
