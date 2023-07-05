@@ -1,4 +1,6 @@
 #测试版规则
+
+@@||analytics-gw.games.wanmei.com^
 @@||liveonrt-stsdk.vivo.com.cn^
 @@||videoplayonrt-stsdk.vivo.com.cn^
 @@||svideopnrt-stsdk.vivo.com.cn^
