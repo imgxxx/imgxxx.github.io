@@ -1,5 +1,5 @@
 #测试版规则
-
+@@||game.subway.uu.cc^
 @@||digicert.com^
 
 @@||dig.bdurl.net^$important
