@@ -1150,9 +1150,8 @@ log-api.pangolin-sdk-toutiao.com
 @@||sofire.bdstatic.com^
 @@||bj.bcebos.com^$important
 activity.kuaiyoudeng.cn
-stvideo.kaixinkan.com.cn
+
 ||kuaiyoudeng.cn^
-||kaixinkan.com.cn^
 
 @@||s.click.tmall.com^
 @@||s.click.taobao.com^
