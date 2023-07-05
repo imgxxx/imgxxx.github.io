@@ -1,4 +1,12 @@
 #测试版规则
+@@||statistic.live.126.net^
+@@||mail.163.com^
+@@||sentry.epay.163.com^
+@@||loveota.com^
+
+
+
+
 
 @@||analytics-gw.games.wanmei.com^
 @@||liveonrt-stsdk.vivo.com.cn^
