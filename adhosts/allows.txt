@@ -1,6 +1,7 @@
 #测试版规则
 clientlog.wanmei.com
 log1.wanmei.com
+||adm4.funshion.com^
 
 @@||cnblogs.com^
 @@||apple.com
