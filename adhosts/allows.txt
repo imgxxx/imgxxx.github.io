@@ -1,4 +1,8 @@
 #测试版规则
+clientlog.wanmei.com
+log1.wanmei.com
+
+
 @@||www.google-analytics.com^
 @@||analytics.mpay.netease.com^
 @@||analytics.rayjump.com^
