@@ -1,4 +1,7 @@
 #测试版规则
+@@||liveonrt-stsdk.vivo.com.cn^
+@@||videoplayonrt-stsdk.vivo.com.cn^
+@@||svideopnrt-stsdk.vivo.com.cn^
 @@||onewsvod.com^
 @@||irs03.com^
 @@||yfp2p.net^
@@ -8,7 +11,7 @@
 @@||ivideoonrt-stsdk.vivo.com.cn^$important
 @@||ivideoort-stsdk.vivo.com.cn^$important
 @@||ivideopnrt-stsdk.vivo.com.cn^$important
-
+@@||neirong.funshion.com^
 
 ||outer-charge.adapp.baidu.com^
 
@@ -1363,7 +1366,7 @@ ad.openinstall.io
 logv2.ireader.com
 adcenter.zhangyue.com
 ||ah*.zhangyue.com^$important
-imagestatic.kaixinkan.com.cn
+
 mwad.83084.com
 83084.com
 4376.cc
