@@ -3,6 +3,8 @@
 @@||img.yilanvaas.com^$important
 @@||dolfincdnx.net^
 @@||ivideoprt-stsdk.vivo.com.cn^$important
+@@||ivideoonrt-stsdk.vivo.com.cn^
+@@||ivideoort-stsdk.vivo.com.cn^
 
 ||outer-charge.adapp.baidu.com^
 
@@ -1459,11 +1461,11 @@ ec.kwd.inkuai.com
 
 hw-ot-ad.a.yximgs.com
 ads-marketing-vivofs.vivo.com.cn
-||ivideoonrt-stsdk.vivo.com.cn^
+
 ||brort.stsdk.vivo.com.cn^
 ||onrt-stsdk.vivo.com.cn^
 ||bronrt.stsdk.vivo.com.cn^
-||ivideoort-stsdk.vivo.com.cn^
+
 ||brpnrt.stsdk.vivo.com.cn^
 
 
@@ -1480,7 +1482,7 @@ ssp.vivo.com.cn
 ||ldd.sohu.com^
 trace-h5sdk.vivo.com.cn
 
-||ivideopnrt-stsdk.vivo.com.cn^
+
 open.toutiao.com
 
 
