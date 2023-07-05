@@ -1,5 +1,8 @@
 #测试版规则
 
+||outer-charge.adapp.baidu.com^
+
+
 @@||hub5u.wap.sandai.net^
 @@||etl-xlmc-ssl.xunlei.com^
 @@||game.subway.uu.cc^
