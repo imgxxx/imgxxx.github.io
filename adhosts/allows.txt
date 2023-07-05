@@ -1,5 +1,7 @@
 #测试版规则
-
+@@||onewsvod.com^
+@@||irs03.com^
+@@||yfp2p.net^
 @@||img.yilanvaas.com^$important
 @@||dolfincdnx.net^$important
 @@||ivideoprt-stsdk.vivo.com.cn^$important
@@ -928,7 +930,7 @@ uplog.qbox.me
 
 ||rtlog*-applog-lq.fqnovel.com^
 ||log*-applog-lq.fqnovel.com^
-sdk.auth.yfp2p.net
+#注释sdk.auth.yfp2p.net
 sdk.leeyegy.com
 sdk.jumpw.com
 ||log.mmstat.com^$important
