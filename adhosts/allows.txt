@@ -1,7 +1,11 @@
 #测试版规则
+@@||www.google-analytics.com^
+@@||analytics.mpay.netease.com^
+@@||analytics.rayjump.com^
+@@||analytics-tcp.mintegral.net^
 
 @@||vip.qq.com^
-
+@@||api-analytics-cn.zepp.com^
 @@||statistic.live.126.net^
 @@||mail.163.com^
 @@||sentry.epay.163.com^
