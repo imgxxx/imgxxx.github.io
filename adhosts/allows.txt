@@ -2,12 +2,14 @@
 clientlog.wanmei.com
 log1.wanmei.com
 
-
+@@||apple.com
+@@||jobsfe.funshion.com^
+@@||metrics1.data.hicloud.com^
 @@||www.google-analytics.com^
 @@||analytics.mpay.netease.com^
 @@||analytics.rayjump.com^
 @@||analytics-tcp.mintegral.net^
-
+@@||metrics1-drcn.dt.dbankcloud.cn^
 @@||vip.qq.com^
 @@||api-analytics-cn.zepp.com^
 @@||statistic.live.126.net^
