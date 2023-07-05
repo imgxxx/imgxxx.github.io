@@ -1,10 +1,12 @@
 #测试版规则
 
 @@||img.yilanvaas.com^$important
-@@||dolfincdnx.net^
+@@||dolfincdnx.net^$important
 @@||ivideoprt-stsdk.vivo.com.cn^$important
-@@||ivideoonrt-stsdk.vivo.com.cn^
-@@||ivideoort-stsdk.vivo.com.cn^
+@@||ivideoonrt-stsdk.vivo.com.cn^$important
+@@||ivideoort-stsdk.vivo.com.cn^$important
+@@||ivideopnrt-stsdk.vivo.com.cn^$important
+
 
 ||outer-charge.adapp.baidu.com^
 
