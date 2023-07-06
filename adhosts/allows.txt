@@ -2,6 +2,8 @@
 ||api-adservices.apple.com^$important
 ||iadsdk.apple.com^$important
 ||*.iadsdk.apple.com^$important
+||prd-usw2-requestattribution-iad.apple.com^$important
+
 
 @@||icloud.com.cn^
 @@||myapp.com^
