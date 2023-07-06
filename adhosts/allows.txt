@@ -3,6 +3,7 @@ clientlog.wanmei.com
 log1.wanmei.com
 ||adm4.funshion.com^
 
+@@||izatcloud.net^
 @@||bokecc.com^
 @@||kuwo.cn
 @@||cnblogs.com^
