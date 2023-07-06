@@ -7,6 +7,7 @@
 @@||tracker.pcdn.yximgs.com^
 @@||*.chat.bilibili.com^
 
+@@||googleapis
 
 @@||analytics.10010.com^
 @@||h5.analytics.126.net^
