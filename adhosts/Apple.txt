@@ -1,10 +1,10 @@
-appldnld.apple.com.edgesuite.net
-apple-events.akamaized.net
-appleworldwidedeveloper.hb-api.omtrdc.net
-appleworldwidedeveloper.sc.omtrdc.net
-beatselectronicsllc.tt.omtrdc.net
-icons.axm-usercontent-apple.com
-p-events-delivery.akamaized.net
+@@||appldnld.apple.com.edgesuite.net
+@@||apple-events.akamaized.net
+@@||appleworldwidedeveloper.hb-api.omtrdc.net
+@@||appleworldwidedeveloper.sc.omtrdc.net
+@@||beatselectronicsllc.tt.omtrdc.net
+@@||icons.axm-usercontent-apple.com
+@@||p-events-delivery.akamaized.net
 @@||100beatscheap.com
 @@||1monsterbeatsbydreus.com
 @@||1to1computing.com.au
