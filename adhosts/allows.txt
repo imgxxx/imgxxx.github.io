@@ -6,6 +6,7 @@
 @@||tracker.tvhuoxing.net^
 @@||tracker.pcdn.yximgs.com^
 @@||*.chat.bilibili.com^
+@@||tracker-terminal.pcdn.yximgs.com^
 
 @@||googleapis
 
