@@ -1,4 +1,8 @@
 #测试版规则
+||api-adservices.apple.com^$important
+||iadsdk.apple.com^$important
+||*.iadsdk.apple.com^$important
+
 @@||icloud.com.cn^
 @@||myapp.com^
 @@||trackercdn.kugou.com^
