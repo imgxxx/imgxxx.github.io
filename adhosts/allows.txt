@@ -1,4 +1,5 @@
 #测试版规则
+@@||icloud.com.cn^
 @@||myapp.com^
 @@||trackercdn.kugou.com^
 @@||pcdn-proxy-tracker.xxpkg.com^
