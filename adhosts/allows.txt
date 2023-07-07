@@ -5,6 +5,9 @@
 ||prd-usw2-requestattribution-iad.apple.com^$important
 
 
+@@||flowplus.meituan.net^
+@@||met-badge.dreport.meituan.net^
+@@||met_metrics_mobile_meituan.dreport.meituan.net^
 @@||icloud.com.cn^
 @@||myapp.com^
 @@||trackercdn.kugou.com^
