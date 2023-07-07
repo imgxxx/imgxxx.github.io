@@ -4,6 +4,8 @@
 ||*.iadsdk.apple.com^$important
 ||prd-usw2-requestattribution-iad.apple.com^$important
 
+@@||hwmov.a.kwimgs.com^
+@@||alimov6.a.yximgs.com^
 
 @@||flowplus.meituan.net^
 @@||met-badge.dreport.meituan.net^
@@ -2072,8 +2074,7 @@ t7z.cupid.ptqy.gitv.tv
 @@||1234567.com.cn^
 @@||hw.zuimeitianqi.com^
 @@||pandora.xiaomi.com^
-||hwmov.a.kwimgs.com^
-||alimov6.a.yximgs.com^
+
 ||v2-cty02.kwaicdn.com^
 ||js-ad.a.yximgs.com^
 ||log-sdk.ksapisrv.com^
