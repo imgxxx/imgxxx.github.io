@@ -1,4 +1,8 @@
 #测试版规则
+
+vivosec.baidu.com
+
+
 ||api-adservices.apple.com^$important
 ||iadsdk.apple.com^$important
 ||*.iadsdk.apple.com^$important
