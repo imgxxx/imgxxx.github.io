@@ -11,6 +11,7 @@
 @@||mbdp02.bdstatic.com^
 @@||ocsp.comodoca.com^
 
+||adview.cn^
 
 #注释||e.shifen.com^$important
 
