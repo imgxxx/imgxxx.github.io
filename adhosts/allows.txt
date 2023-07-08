@@ -1,7 +1,8 @@
 #测试版规则
 @@||tracker.namitiyu.com^
 @@||stat.dongqiudi.com^
-
+@@||trackermq.namitiyu.com^
+@@||tracker-api.namitiyu.com^
 
 vivosec.baidu.com
 
