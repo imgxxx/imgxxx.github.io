@@ -4,6 +4,8 @@
 @@||stat.dongqiudi.com^
 @@||trackermq.namitiyu.com^
 @@||tracker-api.namitiyu.com^
+@@||hreport.meituan.com^
+
 
 vivosec.baidu.com
 ||log.kuwo.cn^$important
