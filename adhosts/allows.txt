@@ -2,6 +2,7 @@
 
 vivosec.baidu.com
 
+sf3-fe-tos.pglstatp-toutiao.com.queniuuf.com
 
 ||api-adservices.apple.com^$important
 ||iadsdk.apple.com^$important
@@ -325,7 +326,7 @@ log1.wanmei.com
 
 ||log.
 
-@@||sf*-fe-tos.pglstatp-toutiao.com^
+||sf*-fe-tos.pglstatp-toutiao.com^
 
 rtlog5-applog-lf.ixigua.com
 log5-applog-lf.ixigua.com
