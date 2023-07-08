@@ -1,4 +1,5 @@
 #测试版规则
+@@||publish-pic-cpu.baidu.com^
 @@||tracker.namitiyu.com^
 @@||stat.dongqiudi.com^
 @@||trackermq.namitiyu.com^
