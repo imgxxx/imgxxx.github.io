@@ -6,6 +6,8 @@
 @@||tracker-api.namitiyu.com^
 
 vivosec.baidu.com
+||log.kuwo.cn^$important
+
 
 sf3-fe-tos.pglstatp-toutiao.com.queniuuf.com
 
