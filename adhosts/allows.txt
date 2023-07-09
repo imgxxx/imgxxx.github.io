@@ -2,13 +2,13 @@
 
 #注释@@||hm.baidu.com^
 @@||sfp.safe.baidu.com^
-@@||miao.baidu.com^
+#@@||miao.baidu.com^
 @@||itsdata.map.baidu.com^
-@@||collector.dcdn.baidu.com^
-@@||counter.baidu.com^
+#@@||collector.dcdn.baidu.com^
+#@@||counter.baidu.com^
 @@||sclick.baidu.com^
-@@||bdbus-turbonet.baidu.com^
-@@||ufosdk.baidu.com^
+#@@||bdbus-turbonet.baidu.com^
+#@@||ufosdk.baidu.com^
 @@||mbdp02.bdstatic.com^
 @@||ocsp.comodoca.com^
 
