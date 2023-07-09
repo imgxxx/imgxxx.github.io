@@ -1,5 +1,6 @@
 #测试版规则
-@@||hm.baidu.com^
+
+#注释@@||hm.baidu.com^
 @@||sfp.safe.baidu.com^
 @@||miao.baidu.com^
 @@||itsdata.map.baidu.com^
