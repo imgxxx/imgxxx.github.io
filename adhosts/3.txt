@@ -2,8 +2,11 @@
 cal.meizu.com
 u.meizu.com
 reader.meizu.com
-
-
+cn.alicdn.com
+img.alicdn.com
+ilce.alicdn.com
+s-gm.mmstat.com
+asearch.alicdn.com
 
 
 
