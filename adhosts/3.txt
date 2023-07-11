@@ -1,8 +1,9 @@
-||ali-ad.a.yximgs.com
-||js-ad.a.yximgs.com
-||tx-ad.a.yximgs.com
-||p1-lm.adkwai.com
-||*.adkwai.com
-||adkwai.com
-||sf6-be-pack.pglstatp-toutiao.com 
-||log-api.pangolin-sdk-toutiao-b.com
+#白名单
+cal.meizu.com
+u.meizu.com
+
+
+
+
+
+
