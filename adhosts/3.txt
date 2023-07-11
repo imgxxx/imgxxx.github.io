@@ -7,6 +7,7 @@ img.alicdn.com
 ilce.alicdn.com
 s-gm.mmstat.com
 asearch.alicdn.com
-
+stats.shafaguanjia.com
+dot-analytics.oss-cn-hangzhou.aliyuncs.com
 
 
