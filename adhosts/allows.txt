@@ -1,7 +1,7 @@
 #测试版规则
 
-
-
+@@||u.meizu.com^
+@@||cal.meizu.com^
 @@||hm.baidu.com^
 @@||sfp.safe.baidu.com^
 @@||miao.baidu.com^
