@@ -1,7 +1,7 @@
 #白名单
 cal.meizu.com
 u.meizu.com
-
+reader.meizu.com
 
 
 
