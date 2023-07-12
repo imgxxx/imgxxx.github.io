@@ -198,6 +198,7 @@ z-ecx.images-amazon.com
 
 
 #谷歌系列
+@@||googlevideo.com
 google-analytics.com
 googlesyndication.com
 ssl.google-analytics.com
