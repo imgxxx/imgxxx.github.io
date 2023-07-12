@@ -9,5 +9,12 @@ s-gm.mmstat.com
 asearch.alicdn.com
 stats.shafaguanjia.com
 dot-analytics.oss-cn-hangzhou.aliyuncs.com
+msg.mobile.kugou.com
+push.mobile.kugou.com
+update.mobile.kugou.com
+sound.bssdlbig.kugou.com
+d.kugou.com
+collect.kugou.com
+serveraddr.service.kugou.com
 
 
