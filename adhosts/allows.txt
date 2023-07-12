@@ -1,4 +1,8 @@
 #测试版规则
+||kol.top^
+||wi-fi.cn^
+||cscsearch.com^
+||liuliangguo.com^
 
 @@||u.meizu.com^
 @@||cal.meizu.com^
