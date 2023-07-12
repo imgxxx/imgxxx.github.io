@@ -16,5 +16,5 @@ sound.bssdlbig.kugou.com
 d.kugou.com
 collect.kugou.com
 serveraddr.service.kugou.com
-
+ipv4only.arpa
 
