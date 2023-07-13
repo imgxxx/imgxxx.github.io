@@ -17,4 +17,9 @@ d.kugou.com
 collect.kugou.com
 serveraddr.service.kugou.com
 ipv4only.arpa
+@@||didistatic.com^
+conf.diditaxi.com.cn
+img-ys011.didistatic.com
+lbs.map.qq.com
+
 
