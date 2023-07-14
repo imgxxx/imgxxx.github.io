@@ -22,4 +22,4 @@ conf.diditaxi.com.cn
 img-ys011.didistatic.com
 lbs.map.qq.com
 @@||dfcfw.com^
-
+@@||wps.cn^
