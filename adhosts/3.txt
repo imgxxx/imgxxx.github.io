@@ -1,4 +1,5 @@
 #白名单
+@@||boc.cn^
 webstatic.mihoyo.com.m.alikunlun.com
 ||alicdn.com^
 www.yhd.com
