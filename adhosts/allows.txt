@@ -5,8 +5,7 @@
 ||liuliangguo.com^
 
 
-#vivo的WIFI服务，拦后会导致无法连接。
-@@||log-sdk.clickwifi.net^
+||log-sdk.clickwifi.net^
 
 
 @@||u.meizu.com^
