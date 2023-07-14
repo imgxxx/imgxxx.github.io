@@ -1,4 +1,5 @@
 #白名单
+||alicdn.com^
 www.yhd.com
 cal.meizu.com
 u.meizu.com
