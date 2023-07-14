@@ -39,3 +39,7 @@ bronrt.stsdk.vivo.com.cn
 vcardsdkservice.vivo.com.cn
 stsdk.vivo.com.cn
 gcort-stsdk.vivo.com.cn
+vcardsdkservice.vivo.com.cn
+pointsdk.vivo.com.cn
+brprt.stsdk.vivo.com.cn
+appstoreort-stsdk.vivo.com.cn
