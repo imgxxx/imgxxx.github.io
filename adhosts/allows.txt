@@ -4,6 +4,11 @@
 ||cscsearch.com^
 ||liuliangguo.com^
 
+
+#vivo的WIFI服务，拦后会导致无法连接。
+@@||log-sdk.clickwifi.net^
+
+
 @@||u.meizu.com^
 @@||cal.meizu.com^
 @@||hm.baidu.com^
@@ -1515,8 +1520,8 @@ msgacs.m.taobao.com
 ark-handler-bottom.m.taobao.com
 
 
-baichuan-sdk.taobao.com
-log-sdk.clickwifi.net
+||baichuan-sdk.taobao.com^
+
 s-adashx.ut.uc.cn
 eap-log-cn.allawntech.com
 appgoad.189.cn
