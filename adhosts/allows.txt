@@ -1549,29 +1549,14 @@ ec.kwd.inkuai.com
 #注释@@||gm.mmstat.com^$important
 #注释@@||wgo.mmstat.com^$important
 
-||ort-stsdk.vivo.com.cn^$important
 
-||moni-onrt-stsdk.vivo.com.cn^$important
-
-||stsdk.vivo.com.cn^$important
 @@||hot.vrs.sohu.com^$important
 @@||data.vod.itc.cn^$important
-||monitor-stsdk.vivo.com.cn^$important
-
-||pointsdk.vivo.com.cn^$important
-||moni-ort-stsdk.vivo.com.cn^$important
 @@||api.tv.sohu.com
-||prt-stsdk.vivo.com.cn
 @@||funshion.net^
 
 hw-ot-ad.a.yximgs.com
 ads-marketing-vivofs.vivo.com.cn
-
-||brort.stsdk.vivo.com.cn^
-||onrt-stsdk.vivo.com.cn^
-||bronrt.stsdk.vivo.com.cn^
-
-||brpnrt.stsdk.vivo.com.cn^
 
 
 zhan.vivo.com.cn
