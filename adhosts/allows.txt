@@ -3,7 +3,7 @@
 ||wi-fi.cn^
 ||cscsearch.com^
 ||liuliangguo.com^
-
+||unmc.bj.bcebos.com^
 
 ||log-sdk.clickwifi.net^
 
