@@ -52,3 +52,7 @@ ort.stsdk.vivo.com.cn
 prt.stsdk.vivo.com.cn
 st-sentinel.vivo.com.cn
 pnrt-stsdk.vivo.com.cn
+svideoonrt-stsdk.vivo.com.cn
+moni-ort-stsdk.vivo.com.cn
+svideoort-stsdk.vivo.com.cn
+svideoprt-stsdk.vivo.com.cn
