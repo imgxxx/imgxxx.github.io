@@ -1,4 +1,19 @@
 #测试版规则
+
+
+# 腾讯
+||mtt.eve.mdt.qq.com^
+||kuaibao.qq.com^
+||btrace.qq.com^
+||btrace.video.qq.com^
+||log.tbs.qq.com^
+||sngmta.qq.com^
+||beacon.qq.com^
+||bugly.qq.com^
+
+
+
+
 ||kol.top^
 ||wi-fi.cn^
 ||cscsearch.com^
@@ -6,6 +21,9 @@
 ||unmc.bj.bcebos.com^
 
 ||log-sdk.clickwifi.net^
+
+
+
 
 
 @@||u.meizu.com^
