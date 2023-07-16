@@ -1,4 +1,9 @@
 #测试版规则
+
+#注释line*-h5-mobile-api.biligame.com^
+#注释||*-adapt.pddpic.com^
+
+
 ||httpdns.alicdn.com^$important
 
 # 腾讯
@@ -1709,6 +1714,10 @@ txqcmmov.a.etoote.com
 @@||pic3.zhimg.com
 @@||pic4.zhimg.com
 ||line*-adscore-api.biligame.net^$important
+
+||*-adscore-api.biligame.net^$important
+
+
 api-adservices.apple.com
 
 
@@ -1746,8 +1755,8 @@ api.tbk.dingdanxia.com
 mkt-advertisement.tuhu.cn
 emdcadvertise.eastmoney.com
 
-||*-adapt.pddpic.com^
-line*-h5-mobile-api.biligame.com^
+
+
 
 ||ad.^
 ||*.ad.^
