@@ -1,5 +1,5 @@
 #测试版规则
-
+||httpdns.alicdn.com^$important
 
 # 腾讯
 ||mtt.eve.mdt.qq.com^
