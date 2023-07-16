@@ -1,4 +1,6 @@
 #白名单
+browserpagestatic.vivo.com.cn
+smvconf.f.360.cn
 api.data.mgtv.com
 open.toutiao.com
 @@||boc.cn^
