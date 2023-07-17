@@ -3,6 +3,10 @@
 #注释line*-h5-mobile-api.biligame.com^
 #注释||*-adapt.pddpic.com^
 
+||log-sdk.ksapisrv.com^$important
+||ulogjs.ksapisrv.com^$important
+||ulog.ksapisrv.com^$important
+
 
 ||httpdns.alicdn.com^$important
 
