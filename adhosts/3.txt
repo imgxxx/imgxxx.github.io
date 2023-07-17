@@ -1,4 +1,7 @@
 #白名单
+moa-upload-online.coloros.com
+upload3.ksapisrv.com
+@@||ksapisrv.com^
 browserpagestatic.vivo.com.cn
 smvconf.f.360.cn
 api.data.mgtv.com
