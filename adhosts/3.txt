@@ -1,4 +1,5 @@
 #白名单
+@@||fp.measure.office.com^
 moa-upload-online.coloros.com
 upload3.ksapisrv.com
 @@||ksapisrv.com^
