@@ -1,4 +1,8 @@
 #白名单
+baidu.com
+bd-livemate.pull.yximgs.com
+tx-livemate.pull.yximgs.com
+bd-pclivemate.pull.yximgs.com
 @@||go2yd.com^
 @@||fp.measure.office.com^
 moa-upload-online.coloros.com
