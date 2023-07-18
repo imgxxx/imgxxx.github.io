@@ -1506,7 +1506,7 @@ out976.com
 gw-w.jiaoliuqu.com
 ||pg-ad-b*.ws.126.net^$important
 ||log*-normal-lf.toutiaoapi.com^
-browserpagestatic.vivo.com.cn
+
 wpad.wolf-rack.com
 channels-aladin.wxqcloud.qq.com
 aladin.wxqcloud.qq.com
@@ -1591,7 +1591,7 @@ st-zhan.vivo.com.cn
 st-sentinel.vivo.com.cn
 wukong-statics-vivofs.vivo.com.cn
 sspstatic.vivo.com.cn
-stappupgrade.vivo.com.cn
+
 vhs.wwstat.com
 risk-fp-openapi.vivo.com.cn
 ssp.vivo.com.cn
