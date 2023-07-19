@@ -69827,7 +69827,6 @@
 ||prollerpl.com
 ||prom.b.qq.com
 ||prom.ecato.net
-||prom.gome.com.cn
 ||promediagrp-d.openx.net
 ||promediapr.pl
 ||prometheus.fullstory.com
@@ -97421,10 +97420,6 @@
 ||www.golfcountryhomes.com
 ||www.golfsport.com.pl
 ||www.goliathcasino.com
-||www.gome.com.cn
-||www.gomusic.com
-||www.gomusic.net
-||www.gonorar.com
 ||www.goodblock.gladly.io
 ||www.gooddata.com
 ||www.goodlife7.pl
@@ -97433,10 +97428,8 @@
 ||www.goodtraffic.net
 ||www.goody-garage.com
 ||www.googkle.com
-||www.google-analytics.com
 ||www.google-docs.info
 ||www.google-docs.org
-||www.google.ad
 ||www.google.com.1.302br.net
 ||www.googleadservices.com
 ||www.googlecommerce.com
@@ -100561,7 +100554,6 @@
 ||www.myuitm.com
 ||www.myuniques.ru
 ||www.myusersonline.com
-||www.myvpn.pro
 ||www.mywactrack.com
 ||www.mywallart.pl
 ||www.myway.com
@@ -100609,7 +100601,6 @@
 ||www.nangong2.com
 ||www.nanoadexchange.com
 ||www.nanos365.com
-||www.nanoze2019ogladajbezlimituonlinezalukaj.wordpress.com
 ||www.naomi-thorn.us
 ||www.naporost.pl
 ||www.napraw-laptopa.waw.pl
@@ -101176,14 +101167,10 @@
 ||www.opendownload.de
 ||www.opendownloadmanager.com
 ||www.openinternetexchange.com
-||www.openload.de
 ||www.openscotland.pl
 ||www.opentracker.net
 ||www.openvn.com
 ||www.openwire.tv
-||www.openwrt.com
-||www.openx.net
-||www.openx.org
 ||www.openxmedia.com
 ||www.operacjachuligan.pl
 ||www.operationfabulous.com
@@ -101240,7 +101227,6 @@
 ||www.orlandocasino.com
 ||www.ortygdanskie.pl
 ||www.orzelprusice.pl
-||www.os-downloads.com
 ||www.osiedle-kuznica.pl
 ||www.osiedlebrzechwy.com.pl
 ||www.osiedlecetnarskiego.pl

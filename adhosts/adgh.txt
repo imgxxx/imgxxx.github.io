@@ -56881,7 +56881,6 @@
 ||m.glaef.cn
 ||m.glvej.com
 ||m.gnfpzc.cn
-||m.gomev.cn
 ||m.gpzndq.cn
 ||m.gtaih.com
 ||m.gtiou.com
@@ -56908,7 +56907,6 @@
 ||m.h2tywo.cn
 ||m.hainufamliy.top
 ||m.haishuxue.com
-||m.hao123.com
 ||m.haowj.com.cn
 ||m.haravan.com
 ||m.harbinbaojia.net
@@ -57009,7 +57007,7 @@
 ||m.irkuj.com
 ||m.irs01.com
 ||m.iruad.com
-#||m.ishangtong.com
+||m.ishangtong.com
 ||m.ishowms.com
 ||m.itcoder.top
 ||m.itskonka.com
@@ -69840,7 +69838,6 @@
 ||prollerpl.com
 ||prom.b.qq.com
 ||prom.ecato.net
-||prom.gome.com.cn
 ||promediagrp-d.openx.net
 ||promediapr.pl
 ||prometheus.fullstory.com
@@ -97484,21 +97481,12 @@
 ||www.golfcountryhomes.com
 ||www.golfsport.com.pl
 ||www.goliathcasino.com
-||www.gome.com.cn
-||www.gomusic.com
-||www.gomusic.net
-||www.gonorar.com
 ||www.goodblock.gladly.io
 ||www.gooddata.com
 ||www.goodlife7.pl
 ||www.goodmenonthego.com
 ||www.goodmovie.pl
 ||www.goodtraffic.net
-||www.goody-garage.com
-||www.googkle.com
-||www.google-analytics.com
-||www.google-docs.info
-||www.google-docs.org
 ||www.google.ad
 ||www.google.com.1.302br.net
 ||www.googleadservices.com
