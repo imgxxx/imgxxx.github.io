@@ -1,6 +1,6 @@
 #白名单
 @@||dreport.meituan.net^
-
+www.gome.com.cn
 
 
 xbox.ipv6.microsoft.com
