@@ -1,4 +1,8 @@
 #白名单
+@@||dreport.meituan.net^
+
+
+
 xbox.ipv6.microsoft.com
 device.auth.xboxlive.com
 www.msftncsi.com
