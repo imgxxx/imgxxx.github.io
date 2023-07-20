@@ -1,6 +1,6 @@
 #测试版规则
 
-
+||httpdns.alicdn.com^$important
 ||h2-api-gt.n.shifen.com^
 ||sdkserver.op.hicloud.com^
 ||acd.op.hicloud.com^
