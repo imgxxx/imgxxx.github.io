@@ -5,7 +5,7 @@
 ||openapi-drcn.cloud.dbankcloud.cn^
 ||sgw-cn.c.huawei.com^
 ||a1.qpic.cn^
-||feeds-drcn.cloud.huawei.com.cn^
+
 ||cs02-pps-drcn.dbankcdn.cn^
 nrkfpt1.9zas5.com
 ||9zas5.com^
