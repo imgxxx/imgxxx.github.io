@@ -1,4 +1,6 @@
 #白名单
+@@||browser.miui.com^
+api.device.xiaomi.net
 @@||happyelements.cn^
 cpu-openapi.baidu.com
 @@||dreport.meituan.net^
