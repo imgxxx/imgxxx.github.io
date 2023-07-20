@@ -2,7 +2,7 @@
 @@||dreport.meituan.net^
 www.gome.com.cn
 img-nos.yiyouliao.com
-
+blink-upload.bayescom.com
 xbox.ipv6.microsoft.com
 device.auth.xboxlive.com
 www.msftncsi.com
