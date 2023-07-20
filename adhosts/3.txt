@@ -1,4 +1,5 @@
 #白名单
+cpu-openapi.baidu.com
 @@||dreport.meituan.net^
 www.gome.com.cn
 img-nos.yiyouliao.com
