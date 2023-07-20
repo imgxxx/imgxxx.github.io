@@ -1,5 +1,14 @@
 #测试版规则
 
+||gdyunlifang.com^$important
+||youkudsp.com^$important
+||comcm.com^$important
+||topsky.com^$important
+||baichuan-sdk.alicdn.com^$important
+||nbsdk-baichuan.alicdn.com^$important
+
+
+
 #注释line*-h5-mobile-api.biligame.com^
 #注释||*-adapt.pddpic.com^
 
