@@ -1,7 +1,7 @@
 #白名单
 @@||dreport.meituan.net^
 www.gome.com.cn
-
+img-nos.yiyouliao.com
 
 xbox.ipv6.microsoft.com
 device.auth.xboxlive.com
