@@ -6,7 +6,7 @@
 ||topsky.com^$important
 ||baichuan-sdk.alicdn.com^$important
 ||nbsdk-baichuan.alicdn.com^$important
-
+||mix-mind.com^$important
 
 
 #注释line*-h5-mobile-api.biligame.com^
