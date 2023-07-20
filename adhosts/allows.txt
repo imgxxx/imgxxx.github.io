@@ -1,5 +1,9 @@
 #测试版规则
 
+
+||h2-api-gt.n.shifen.com^
+||sdkserver.op.hicloud.com^
+||acd.op.hicloud.com^
 ||static.new669.com^
 ||img-hwy.9liuda.com^
 ||openapi-drcn.cloud.dbankcloud.cn^
