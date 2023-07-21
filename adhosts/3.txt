@@ -1,4 +1,8 @@
 #白名单
+player-pc.le.com
+mp-s.le.com
+api-mob-app.letv.com
+@@||letvimg.com^
 w1.kskwai.com
 @@||reddit.com^
 mp.weixinbridge.com
@@ -75,8 +79,7 @@ api.data.mgtv.com
 open.toutiao.com
 @@||boc.cn^
 webstatic.mihoyo.com.m.alikunlun.com
-@@|alicdn.com^
-||httpdns.alicdn.com^$important
+@@||alicdn.com^
 www.yhd.com
 cal.meizu.com
 u.meizu.com
