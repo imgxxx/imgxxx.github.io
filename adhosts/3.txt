@@ -1,4 +1,7 @@
 #白名单
+
+mdp-usertrace-cn.heytapmobi.com
+api.jits.heytapmobi.com
 gitee.com
 @@||browser.miui.com^
 api.device.xiaomi.net
