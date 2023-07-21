@@ -1,4 +1,22 @@
 #测试版规则
+||yqhlm.com^
+||openadx.com^
+||adnet.vivo.com.cn^
+||equativ.com^
+||sascdn.com^
+||smartadserver.com^
+||styria-digital.com^
+||yoc-adserver.com^
+||hnbjgg.cn^
+||tongda6.com^
+||5537.com^
+||tatalm.com^
+||union.jsty.com^
+||zmtmoney.com^
+||fangkuai.cc^
+||paycenter-gateway-test.xianlaigame.com^
+
+
 
 ||httpdns.alicdn.com^$important
 ||h2-api-gt.n.shifen.com^
