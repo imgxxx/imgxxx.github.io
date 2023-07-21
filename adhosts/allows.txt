@@ -1,4 +1,8 @@
 #测试版规则
+||adapi.sh9130.com^
+||api.e.kuaishou.cn^
+
+
 ||db.testyk.com^
 ||fget-career.com^
 ||pro.csocools.com^
