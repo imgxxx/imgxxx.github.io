@@ -1621,9 +1621,6 @@ ssp.vivo.com.cn
 trace-h5sdk.vivo.com.cn
 
 
-open.toutiao.com
-
-
 ||t*img-c.yangkeduo.com^
 metrics.mzstatic.com
 iadsdk.apple.com
@@ -2246,7 +2243,6 @@ resolver.msg.xiaomi.net
 @@||ipxx.pro^$important
 
 @@||video.xiaomi.com^
-||mp.weixinbridge.com^$important
 @@||wfdata.club^$important
 @@||miwifi.com^$important
 @@||*.ipv4dns.com^$important
