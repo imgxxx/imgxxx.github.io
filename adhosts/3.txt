@@ -111,7 +111,8 @@ api.data.mgtv.com
 open.toutiao.com
 @@||boc.cn^
 webstatic.mihoyo.com.m.alikunlun.com
-@@||alicdn.com
+alicdn.com
+alicdn.cn
 www.yhd.com
 cal.meizu.com
 u.meizu.com
