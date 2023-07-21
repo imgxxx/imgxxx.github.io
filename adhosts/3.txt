@@ -1,4 +1,5 @@
 #白名单
+@@||reddit.com^
 mp.weixinbridge.com
 dot.360.cn
 mdp-usertrace-cn.heytapmobi.com
