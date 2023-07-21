@@ -1,4 +1,12 @@
 #白名单
+proxy-mob-cld.alicdn.com
+ucc.alicdn.com
+
+
+
+
+
+
 group-ssl-danmu-ori.youku.com
 pis-tel-pcdn.youku.com
 finderhwy.video.qq.com
