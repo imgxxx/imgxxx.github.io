@@ -1,4 +1,5 @@
 #白名单
+gitee.com
 @@||browser.miui.com^
 api.device.xiaomi.net
 @@||happyelements.cn^
