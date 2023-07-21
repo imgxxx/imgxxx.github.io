@@ -1,4 +1,5 @@
 #白名单
+w1.kskwai.com
 @@||reddit.com^
 mp.weixinbridge.com
 dot.360.cn
