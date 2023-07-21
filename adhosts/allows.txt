@@ -1,4 +1,8 @@
 #测试版规则
+||db.testyk.com^
+||fget-career.com^
+||pro.csocools.com^
+
 ||yqhlm.com^
 ||openadx.com^
 ||adnet.vivo.com.cn^
