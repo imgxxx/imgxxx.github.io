@@ -1,5 +1,6 @@
 #白名单
-
+mp.weixinbridge.com
+dot.360.cn
 mdp-usertrace-cn.heytapmobi.com
 api.jits.heytapmobi.com
 gitee.com
