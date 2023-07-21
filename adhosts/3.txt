@@ -1,4 +1,9 @@
 #白名单
+group-ssl-danmu-ori.youku.com
+pis-tel-pcdn.youku.com
+finderhwy.video.qq.com
+
+
 pgw-mob-cld-sl.alicdn.com
 hudong.alicdn.com
 userlink.alicdn.com
