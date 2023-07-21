@@ -3,6 +3,9 @@ group-ssl-danmu-ori.youku.com
 pis-tel-pcdn.youku.com
 finderhwy.video.qq.com
 heic.alicdn.com
+tvepg.pandora.xiaomi.com
+urc.io.mi.com
+pcclient.download.youku.com
 
 pgw-mob-cld-sl.alicdn.com
 hudong.alicdn.com
