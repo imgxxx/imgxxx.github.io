@@ -1,4 +1,6 @@
 #测试版规则
+tanximg.alicdn.com
+
 du.testjj.com
 fget-career.com
 khpf.online
