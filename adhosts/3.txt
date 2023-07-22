@@ -2,7 +2,22 @@
 proxy-mob-cld.alicdn.com
 ucc.alicdn.com
 d.alicdn.com
-
+gw3.alicdn.com
+t.alicdn.com
+gw2.alicdn.com
+a1.alicdn.com
+sm01.alicdn.com
+lang.alicdn.com
+xianyu-video.alicdn.com
+g-search1.alicdn.com
+o.alicdn.com
+g20.alicdn.com
+ossgw.alicdn.com.danuoyi.alicdn.com
+liangcang-material.alicdn.com.danuoyi.alicdn.com
+duang.alicdn.com
+gdp.alicdn.com
+files.alicdn.com
+mdike.alicdn.com
 
 
 
