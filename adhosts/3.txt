@@ -18,7 +18,12 @@ duang.alicdn.com
 gdp.alicdn.com
 files.alicdn.com
 mdike.alicdn.com
-
+fullscreen-detail.alicdn.com
+sm01.alicdn.com.danuoyi.alicdn.com
+aeis.alicdn.com
+oneconsole.alicdn.com
+pingjia.alicdn.com
+alpha.alicdn.com
 
 
 
