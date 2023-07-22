@@ -4,7 +4,7 @@ polyfill.alicdn.com
 pgw-tel-cld-sl.alicdn.com
 tmge.alicdn.com
 pgw-cld-ml.alicdn.com
-
+ort-newdev-stsdk.vivo.com.cn
 
 
 
