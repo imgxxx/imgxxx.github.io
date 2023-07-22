@@ -1,4 +1,10 @@
 #测试版规则
+du.testjj.com
+fget-career.com
+khpf.online
+xred.mooo.com
+khpf.online
+
 ||adapi.sh9130.com^
 ||api.e.kuaishou.cn^
 ||kuaichuanad.com^
