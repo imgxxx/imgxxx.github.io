@@ -627,7 +627,6 @@ tdlog.tangdou.com
 ||clientlog.music.163.com^$important
 
 open.youzanyun.com
-open.douyin.com
 sdk.irdatabase.com
 open.kuaishou.com
 datalog.eqxiu.com
@@ -839,7 +838,7 @@ otalog.os.360os.com
 f2e-log.qtshe.com
 weblog.cdn-go.cn
 shoujiduoduo.wchengxu.cn
-www.adshoujiduoduo.com
+||adshoujiduoduo.com^
 
 @@||ring.shoujiduoduo.com^
 @@||cdnringbd.shoujiduoduo.com^
@@ -1597,7 +1596,7 @@ ark-handler-bottom.m.taobao.com
 
 s-adashx.ut.uc.cn
 eap-log-cn.allawntech.com
-appgoad.189.cn
+
 
 mamasearchad.cloudvideocdn.taobao.com
 pcvideotx.titan.mgtv.com
