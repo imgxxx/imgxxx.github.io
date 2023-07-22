@@ -1,5 +1,11 @@
 #白名单
 appgoad.189.cn
+polyfill.alicdn.com
+pgw-tel-cld-sl.alicdn.com
+tmge.alicdn.com
+pgw-cld-ml.alicdn.com
+
+
 
 
 proxy-mob-cld.alicdn.com
