@@ -1,8 +1,8 @@
 #测试版规则
 ||adapi.sh9130.com^
 ||api.e.kuaishou.cn^
-
-
+||kuaichuanad.com^
+||foreign.kuaichuanad.com^
 ||db.testyk.com^
 ||fget-career.com^
 ||pro.csocools.com^
