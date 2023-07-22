@@ -604,10 +604,10 @@ tdlog.tangdou.com
 
 ||sv.cdn.n1q.cn^
 ||lf*-sf-be-pack-sign.pglstatp-toutiao.com^
-||p5.music.126.net^
-||iadmatapk.nosdn.127.net^
-||iadmat.nosdn.127.net^
-||iadmusicmat.music.126.net^
+
+||iadmatapk.nosdn.127.net^$important
+||iadmat.nosdn.127.net^$important
+||iadmusicmat.music.126.net^$important
 
 @@||rp.hpplay.cn^
 @@||ib-lq.snssdk.com^
