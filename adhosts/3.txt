@@ -1,4 +1,7 @@
 #白名单
+appgoad.189.cn
+
+
 proxy-mob-cld.alicdn.com
 ucc.alicdn.com
 d.alicdn.com
