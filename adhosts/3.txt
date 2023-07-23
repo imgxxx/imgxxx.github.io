@@ -2,7 +2,7 @@
 ||fastly-analytics.com^
 fastort-stsdk.vivo.com.cn
 fastpnrt-stsdk.vivo.com.cn
-
+wtradv.market.xiaomi.com
 appgoad.189.cn
 polyfill.alicdn.com
 pgw-tel-cld-sl.alicdn.com
