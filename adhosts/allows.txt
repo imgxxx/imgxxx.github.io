@@ -2,6 +2,7 @@
 ||tanximg.alicdn.com^$important
 ||adsfs.heytapimage.com^$important
 ||isdk.heytapmobi.com^$important
+||bcsdk.alicdn.com^$important
 
 du.testjj.com
 fget-career.com
