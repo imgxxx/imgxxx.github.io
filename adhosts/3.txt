@@ -1,4 +1,5 @@
 #白名单
+surfshark.com
 vectorsdk.map.qq.com
 analytics.map.qq.com
 newvector.map.baidu.com
