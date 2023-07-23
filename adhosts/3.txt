@@ -2,6 +2,22 @@
 vectorsdk.map.qq.com
 analytics.map.qq.com
 newvector.map.baidu.com
+access-tel-i.alicdn.com
+pss-s.alicdn.com
+kb-render.alicdn.com
+pgw-cld-s.alicdn.com
+galitv.alicdn.com
+gw1.alicdn.com
+sucai.alicdn.com
+aeu.alicdn.com.danuoyi.alicdn.com
+gtms02.alicdn.com.danuoyi.alicdn.com
+af.alicdn.com
+impaas.alicdn.com
+cn-vmc-images.alicdn.com
+koubei-auth.alicdn.com
+pigeon.alicdn.com
+livecbing.alicdn.com
+
 
 @@||bqgyy.com^
 ae02.alicdn.com
