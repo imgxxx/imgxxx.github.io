@@ -1,4 +1,7 @@
 #白名单
+@@||bqgyy.com^
+
+
 ||fastly-analytics.com^
 fastort-stsdk.vivo.com.cn
 fastpnrt-stsdk.vivo.com.cn
