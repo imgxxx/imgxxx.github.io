@@ -1,4 +1,8 @@
 #白名单
+vectorsdk.map.qq.com
+analytics.map.qq.com
+newvector.map.baidu.com
+
 @@||bqgyy.com^
 ae02.alicdn.com
 ae03.alicdn.com
