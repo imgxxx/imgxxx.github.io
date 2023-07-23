@@ -1,5 +1,7 @@
 #测试版规则
-tanximg.alicdn.com
+||tanximg.alicdn.com^$important
+||adsfs.heytapimage.com^$important
+||isdk.heytapmobi.com^$important
 
 du.testjj.com
 fget-career.com
