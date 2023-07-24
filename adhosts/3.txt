@@ -1,4 +1,7 @@
 #白名单
+gjusp.alicdn.com.danuoyi.alicdn.com
+division-data.alicdn.com
+
 terms.alicdn.com
 tmjl-s.alicdn.com
 gju1.alicdn.com
