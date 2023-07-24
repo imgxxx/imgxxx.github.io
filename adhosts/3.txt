@@ -1,4 +1,6 @@
 #白名单
+pnrt.stsdk.vivo.com.cn
+appstoreprt-stsdk.vivo.com.cn
 
 gjusp.alicdn.com.danuoyi.alicdn.com
 division-data.alicdn.com
