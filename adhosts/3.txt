@@ -1,4 +1,7 @@
 #白名单
+
+olive.95xiu.com
+
 gjusp.alicdn.com.danuoyi.alicdn.com
 division-data.alicdn.com
 ks.pull.yximgs.com
