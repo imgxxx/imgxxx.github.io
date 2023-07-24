@@ -1728,7 +1728,7 @@ ad.360buyimg.com
 ||e.ljcdn1.cn^
 ||bjmantis.com^
 ||qeasy.cloud^
-txqcmmov.a.etoote.com
+
 
 @@||alibabachengdun.net^$important
 @@||alidocs.oss-cn-*.aliyuncs.com^$important
