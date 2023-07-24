@@ -1,4 +1,7 @@
 #测试版规则
+
+#注释||d*-ec.a.kwimgs.com^
+
 ||ggdata*.cnr.cn^$important
 ||39jx.cn^$important
 
@@ -875,7 +878,7 @@ mobilelog.kuwo.cn
 #注释||*-adaptive-pull.video-voip.com^
 #注释||*-adaptive.pull.yximgs.com^
 #注释||*-adaptive-pull.live-voip.com^
-||d*-ec.a.kwimgs.com^
+
 @@||u*-*.ecukwai.com^
 @@||u*.a.yximgs.com^
 
