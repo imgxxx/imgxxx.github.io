@@ -1,4 +1,10 @@
 #测试版规则
+||ggdata*.cnr.cn^$important
+||39jx.cn^$important
+
+
+
+
 ||tanximg.alicdn.com^$important
 ||adsfs.heytapimage.com^$important
 ||isdk.heytapmobi.com^$important
