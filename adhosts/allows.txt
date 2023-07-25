@@ -1132,10 +1132,10 @@ sdk.jumpw.com
 ||log.mmstat.com^$important
 
 #抖音，头条相关服务
-@@||sf*-pitaya-tos.pstatp.com^
+#注释@@||sf*-pitaya-tos.pstatp.com^
 @@||lf*-article.toutiaostatic.com^
 @@||p*-shortvideo-sign.toutiaoimg.com^
-@@||sf*-hscdn-tos.pstatp.com^
+#注释@@||sf*-hscdn-tos.pstatp.com^
 @@||p*-tt.bytecdn.cn^
 @@||webcast*-open-lq.douyin.com^
 
