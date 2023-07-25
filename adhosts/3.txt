@@ -1,6 +1,6 @@
 #白名单
 data-sdk-uuid-log.d.meituan.net
-
+mads.meituan.com
 
 pnrt.stsdk.vivo.com.cn
 appstoreprt-stsdk.vivo.com.cn
