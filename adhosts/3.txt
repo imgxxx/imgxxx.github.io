@@ -1,4 +1,8 @@
 #白名单
+livepnrt-stsdk.vivo.com.cn
+fplus.funshion.com
+pv.funshion.com
+
 #注释data-sdk-uuid-log.d.meituan.net
 #注释mads.meituan.com
 #注释httpdns.meituan.com
