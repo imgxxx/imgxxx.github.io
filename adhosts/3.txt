@@ -1,7 +1,7 @@
 #白名单
-data-sdk-uuid-log.d.meituan.net
-mads.meituan.com
-httpdns.meituan.com
+#注释data-sdk-uuid-log.d.meituan.net
+#注释mads.meituan.com
+#注释httpdns.meituan.com
 pnrt.stsdk.vivo.com.cn
 appstoreprt-stsdk.vivo.com.cn
 api-unionid.meituan.com
