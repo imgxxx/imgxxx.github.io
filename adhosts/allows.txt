@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||360.cn
+
 #注释||d*-ec.a.kwimgs.com^
 
 ||ggdata*.cnr.cn^$important
