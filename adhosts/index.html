@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>IP地址查询</title>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <title>IP查询</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
-  <h1>IP地址查询</h1>
-  <form id="ipForm">
-    <input type="text" id="ipInput" value="" placeholder="请输入IP地址">
-    <button type="submit">查询</button>
-  </form>
-  <div id="result"></div>
+  <div class="container mt-5">
+    <h1 class="text-center">查询IP地址</h1>
+    <form id="ipForm" class="text-center mt-4">
+      <div class="input-group mx-auto" style="max-width: 500px;">
+        <input type="text" id="ipInput" class="form-control" value="" placeholder="请输入IP地址">
+        <div class="input-group-append">
+          <button type="submit" class="btn btn-primary">查询</button>
+        </div>
+      </div>
+    </form>
+    <div id="result" class="mt-4 text-center"></div>
+  </div>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script>
     $(document).ready(function() {
       // 获取访客IP
@@ -27,12 +34,12 @@
         
         // 发送请求查询IP
         $.getJSON("http://ip-api.com/json/" + ip, function(data) {
-          var result = "IP地址：" + data.query + "<br>";
-          result += "国家：" + data.country + "<br>";
-          result += "地区：" + data.regionName + "<br>";
-          result += "城市：" + data.city + "<br>";
-          result += "邮编：" + data.zip + "<br>";
-          result += "经纬度：" + data.lat + ", " + data.lon;
+          var result = "<p><strong>IP地址：</strong>" + data.query + "</p>";
+          result += "<p><strong>国家：</strong>" + data.country + "</p>";
+          result += "<p><strong>地区：</strong>" + data.regionName + "</p>";
+          result += "<p><strong>城市：</strong>" + data.city + "</p>";
+          result += "<p><strong>邮编：</strong>" + data.zip + "</p>";
+          result += "<p><strong>经纬度：</strong>" + data.lat + ", " + data.lon + "</p>";
           
           $('#result').html(result);
         });
