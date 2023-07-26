@@ -27,9 +27,9 @@
         
         // 发送请求查询IP
         $.getJSON("https://www.cz88.net/api/cz88/ip/openIPInfo?ip=" + ip, function(data) {
-          var result = "IP地址：" + data.ip + "<br>";
-          result += "地区：" + data.geo + "<br>";
-          result += "运营商：" + data.regionName + "<br>";
+          var result = "IP地址：" + ip + "<br>";
+          result += "地区：" + geo + "<br>";
+          result += "运营商：" + isp + "<br>";
           
           
           $('#result').html(result);
