@@ -27,6 +27,32 @@
         });
     }
   </script>
+
+<script>
+        function displayIP(ip) {
+            document.getElementById("result").innerHTML = `您的IP地址是：${ip}`;
+        }
+
+        function queryIP() {
+            var url = "http://ip-api.com/json/";
+
+            // 发起请求
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    displayIP(data.query);
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        }
+
+        // 页面加载完成后自动查询IP
+        window.onload = queryIP;
+    </script>
+
+
+
 </head>
 <body>
   <h1>IP地址查询</h1>
