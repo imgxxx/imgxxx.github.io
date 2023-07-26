@@ -1,4 +1,15 @@
 #测试版规则
+open.oneplus.net
+sdkconfig.ad.xiaomi.com
+
+
+
+
+
+
+
+
+
 ||iflyaiui.com^
 
 ||e.360.cn^$important
