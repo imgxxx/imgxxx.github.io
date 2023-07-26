@@ -1,7 +1,7 @@
 #白名单
 @@||dns.360.cn^$important
 @@||doh.360.cn^$important
-
+thirdwx.qlogo.cn
 
 livepnrt-stsdk.vivo.com.cn
 fplus.funshion.com
