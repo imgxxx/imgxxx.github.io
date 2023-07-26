@@ -1,7 +1,8 @@
 #测试版规则
 ||e.360.cn^
 ||*.e.360.cn^$important
-@@||360.cn
+
+#注释@@||360.cn
 
 #注释||d*-ec.a.kwimgs.com^
 
