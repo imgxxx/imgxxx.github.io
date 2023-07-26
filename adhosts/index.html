@@ -1,68 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>IP地址查询</title>
-  <script>
-    function getIPInfo() {
-      var ipAddress = document.getElementById("ip-address").value;
-      var url = "http://ip-api.com/json/" + ipAddress;
-
-      fetch(url)
-        .then(response => response.json())
-        .then(data => {
-          if (data.status === "success") {
-            var country = data.country;
-            var region = data.regionName;
-            var city = data.city;
-            var isp = data.isp;
-            var location = country + ", " + region + ", " + city + ", " + isp;
-
-            document.getElementById("result").innerHTML = "IP地址: " + ipAddress + "<br>位置: " + location;
-          } else {
-            document.getElementById("result").innerHTML = "无法获取IP地址的位置信息";
-          }
-        })
-        .catch(error => {
-          console.error(error);
-        });
-    }
-  </script>
-
-<script>
-        function displayIP(ip) {
-            document.getElementById("result").innerHTML = `您的IP地址是：${ip}`;
-        }
-
-        function queryIP() {
-            var url = "http://ip-api.com/json/";
-
-            // 发起请求
-            fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    displayIP(data.query);
-                })
-                .catch(error => {
-                    console.log(error);
-                });
-        }
-
-        // 页面加载完成后自动查询IP
-        window.onload = queryIP;
-        var inputIP = document.getElementById("ipInput");
-    </script>
-
-
-
+  <title>IP查询</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-  <h1>IP地址查询</h1>
-
-
-  <label for="ip-address">输入IP地址：</label>
-  <input type="text" id="ip-address" />
-  <button onclick="getIPInfo()">查询</button>
-
+  <h1>查询IP地址</h1>
+  <form id="ipForm">
+    <input type="text" id="ipInput" value="" placeholder="请输入IP地址">
+    <button type="submit">查询</button>
+  </form>
   <div id="result"></div>
+
+  <script>
+    $(document).ready(function() {
+      // 获取访客IP
+      $.getJSON("https://ip-api.com/json/", function(data) {
+        $('#ipInput').val(data.query);
+      });
+
+      // 处理表单提交
+      $('#ipForm').submit(function(event) {
+        event.preventDefault();
+        var ip = $('#ipInput').val();
+        
+        // 发送请求查询IP
+        $.getJSON("https://ip-api.com/json/" + ip, function(data) {
+          var result = "IP地址：" + data.query + "<br>";
+          result += "国家：" + data.country + "<br>";
+          result += "地区：" + data.regionName + "<br>";
+          result += "城市：" + data.city + "<br>";
+          result += "邮编：" + data.zip + "<br>";
+          result += "经纬度：" + data.lat + ", " + data.lon;
+          
+          $('#result').html(result);
+        });
+      });
+    });
+  </script>
 </body>
 </html>
