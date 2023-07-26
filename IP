@@ -65,3 +65,55 @@
   <div id="result"></div>
 </body>
 </html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IP查询</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+  <h1>查询IP地址</h1>
+  <form id="ipForm">
+    <input type="text" id="ipInput" value="" placeholder="请输入IP地址">
+    <button type="submit">查询</button>
+  </form>
+  <div id="result"></div>
+
+  <script>
+    $(document).ready(function() {
+      // 获取访客IP
+      $.getJSON("http://ip-api.com/json/", function(data) {
+        $('#ipInput').val(data.query);
+        $('#ipForm').submit();
+      });
+
+      // 处理表单提交
+      $('#ipForm').submit(function(event) {
+        event.preventDefault();
+        var ip = $('#ipInput').val();
+        
+        // 发送请求查询IP
+        $.getJSON("http://ip-api.com/json/" + ip, function(data) {
+          var result = "IP地址：" + data.query + "<br>";
+          result += "国家：" + data.country + "<br>";
+          result += "地区：" + data.regionName + "<br>";
+          result += "城市：" + data.city + "<br>";
+          result += "邮编：" + data.zip + "<br>";
+          result += "经纬度：" + data.lat + ", " + data.lon;
+          
+          $('#result').html(result);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
