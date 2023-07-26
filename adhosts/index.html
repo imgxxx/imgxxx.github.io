@@ -1,40 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>IP地址查询</title>
-  <script>
-    function getIPInfo() {
-      var ipAddress = document.getElementById("ip-address").value;
-      var url = "http://ip-api.com/json/" + ipAddress;
+    <title>IP查询</title>
+</head>
+<body>
+    <h1>IP查询</h1>
 
-      fetch(url)
-        .then(response => response.json())
-        .then(data => {
-          if (data.status === "success") {
-            var country = data.country;
-            var region = data.regionName;
-            var city = data.city;
-            var isp = data.isp;
-            var location = country + ", " + region + ", " + city + ", " + isp;
+    <form id="ipForm" onsubmit="queryIP()">
+        <label for="ipInput">请输入IP地址：</label>
+        <input type="text" id="ipInput" placeholder="例如：8.8.8.8">
+        <button type="submit">查询</button>
+    </form>
 
-            document.getElementById("result").innerHTML = "IP地址: " + ipAddress + "<br>位置: " + location;
-          } else {
-            document.getElementById("result").innerHTML = "无法获取IP地址的位置信息";
-          }
-        })
-        .catch(error => {
-          console.error(error);
-        });
-    }
-  </script>
+    <div id="result"></div>
 
-<script>
+    <script>
         function displayIP(ip) {
             document.getElementById("result").innerHTML = `您的IP地址是：${ip}`;
         }
 
         function queryIP() {
-            var url = "http://ip-api.com/json/";
+            var inputIP = document.getElementById("ipInput").value;
+            var url = `http://ip-api.com/json/${inputIP}`;
 
             // 发起请求
             fetch(url)
@@ -45,23 +32,23 @@
                 .catch(error => {
                     console.log(error);
                 });
+
+            event.preventDefault(); // 阻止表单提交的默认行为
         }
 
         // 页面加载完成后自动查询IP
-        window.onload = queryIP;
+        window.onload = function() {
+            queryIP();
+            var inputIP = document.getElementById("ipInput");
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    inputIP.value = data.ip;
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        };
     </script>
-
-
-
-</head>
-<body>
-  <h1>IP地址查询</h1>
-
-
-  <label for="ip-address">输入IP地址：</label>
-  <input type="text" id="ip-address" />
-  <button onclick="getIPInfo()">查询</button>
-
-  <div id="result"></div>
 </body>
 </html>
