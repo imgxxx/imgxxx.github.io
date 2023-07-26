@@ -15,8 +15,8 @@
   <script>
     $(document).ready(function() {
       // 获取访客IP
-      $.getJSON("http://ip-api.com/json/", function(data) {
-        $('#ipInput').val(data.query);
+      $.getJSON("https://www.cz88.net/api/cz88/ip/openIPInfo?ip=", function(data) {
+        $('#ipInput').val(data.ip);
         $('#ipForm').submit();
       });
 
@@ -26,13 +26,11 @@
         var ip = $('#ipInput').val();
         
         // 发送请求查询IP
-        $.getJSON("http://ip-api.com/json/" + ip, function(data) {
-          var result = "IP地址：" + data.query + "<br>";
-          result += "国家：" + data.country + "<br>";
-          result += "地区：" + data.regionName + "<br>";
-          result += "城市：" + data.city + "<br>";
-          result += "邮编：" + data.zip + "<br>";
-          result += "经纬度：" + data.lat + ", " + data.lon;
+        $.getJSON("https://www.cz88.net/api/cz88/ip/openIPInfo?ip=" + ip, function(data) {
+          var result = "IP地址：" + data.ip + "<br>";
+          result += "地区：" + data.geo + "<br>";
+          result += "运营商：" + data.regionName + "<br>";
+          
           
           $('#result').html(result);
         });
