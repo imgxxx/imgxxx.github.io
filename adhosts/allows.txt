@@ -1,4 +1,6 @@
 #测试版规则
+||iflyaiui.com^
+
 ||e.360.cn^$important
 
 @@||360safe.com^
