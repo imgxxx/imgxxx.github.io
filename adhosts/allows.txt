@@ -1,7 +1,7 @@
 #测试版规则
 open.oneplus.net
 sdkconfig.ad.xiaomi.com
-
+||adukwai.com^
 
 
 
