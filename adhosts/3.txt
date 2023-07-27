@@ -4,7 +4,7 @@ atrace.chelaile.net.cn
 nspt.bdstatic.com
 api.chelaile.net.cn
 cpucdn.baidu.com
-
+cdn.www.chelaile.net.cn
 @@||dns.360.cn^$important
 @@||doh.360.cn^$important
 thirdwx.qlogo.cn
