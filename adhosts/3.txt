@@ -1,4 +1,10 @@
 #白名单
+image3.chelaile.net.cn
+atrace.chelaile.net.cn
+nspt.bdstatic.com
+api.chelaile.net.cn
+cpucdn.baidu.com
+
 @@||dns.360.cn^$important
 @@||doh.360.cn^$important
 thirdwx.qlogo.cn
