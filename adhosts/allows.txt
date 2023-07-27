@@ -2368,12 +2368,10 @@ resolver.msg.xiaomi.net
 ||wspeed.qq.com^
 ||p.store.qq.com^
 ||logs.chelaile.net.cn
-||api.chelaile.net.cn
+
 ||wxsnsdy.wxs.qq.com^
 ||pingfore.qq.com^
 
-||wxapp.api.ke.com^
-||wx.api.ke.com^
 ||pgdt.gtimg.cn^$important
 
 #优酷
