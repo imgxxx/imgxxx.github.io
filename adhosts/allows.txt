@@ -571,7 +571,7 @@ phoniex.toutiao.com
 @@||p*-wukong.byteimg.com^
 @@||p*-pack.byteimg.com^
 @@||p*-magic.byteimg.com^
-||ct-baidu-yk.v.bdydns.com^
+
 
 
 ||log*-applog.novelfm.com^
@@ -584,10 +584,10 @@ phoniex.toutiao.com
 
 
 #抖音推广
-||p*-orange.byteorg.com^
-||lf*-orange.byteorge.com^
-||p*-orange.byteorge.com^
-||p*-orange-sign.byteimg.com^
+||p*-orange.byteorg.com^$important
+||lf*-orange.byteorge.com^$important
+||p*-orange.byteorge.com^$important
+||p*-orange-sign.byteimg.com^$important
 
 
 ||adtrack.quark.cn^$important
