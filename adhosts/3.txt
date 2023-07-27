@@ -1,4 +1,10 @@
 #白名单
+zz.bdstatic.com
+bce.baidu.com
+appstorepnrt-stsdk.vivo.com.cn
+openrcv.baidu.com
+ct-baidu-yk.v.bdydns.com
+console.bce.baidu.com
 webstatic.miyoushe.com
 image3.chelaile.net.cn
 atrace.chelaile.net.cn
