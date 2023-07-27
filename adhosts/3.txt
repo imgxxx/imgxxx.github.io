@@ -1,4 +1,5 @@
 #白名单
+webstatic.miyoushe.com
 image3.chelaile.net.cn
 atrace.chelaile.net.cn
 nspt.bdstatic.com
