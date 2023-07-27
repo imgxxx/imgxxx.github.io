@@ -2,7 +2,7 @@
 @@||dns.360.cn^$important
 @@||doh.360.cn^$important
 thirdwx.qlogo.cn
-
+game-res.meizu.com
 livepnrt-stsdk.vivo.com.cn
 fplus.funshion.com
 pv.funshion.com
