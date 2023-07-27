@@ -4,6 +4,7 @@ sdkconfig.ad.xiaomi.com
 ||adukwai.com^
 
 
+#注释static-s.iqiyi.com
 
 
 
@@ -1179,8 +1180,7 @@ res8.vmallres.com
 ||activity*.tuibear.com^
 ||tuiaaag.com^
 ||tuibear.com^
-static-s.iqiyi.com
-static.iqiyi.com
+
 uog.baidu.com
 aliyuncoccdncmnet-hd.inter.iqiyi.com
 tg41.a.glb4.com
