@@ -1,4 +1,5 @@
 #白名单
+aegis.qq.com
 zz.bdstatic.com
 bce.baidu.com
 appstorepnrt-stsdk.vivo.com.cn
