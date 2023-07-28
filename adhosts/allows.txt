@@ -6,7 +6,7 @@ sdkconfig.ad.xiaomi.com
 
 #注释static-s.iqiyi.com
 
-
+#注释ec.kwd.inkuai.com
 
 
 
@@ -1654,7 +1654,7 @@ baidu-ssp.gz.bcebos.com
 ssp.bdstatic.com
 file-ssp.xinguad.com
 ssp.pinduoduo.com
-ec.kwd.inkuai.com
+
 
 #天猫接口
 #注释@@||gm.mmstat.com^$important
