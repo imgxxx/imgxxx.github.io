@@ -9,7 +9,7 @@ sdkconfig.ad.xiaomi.com
 
 #注释ec.kwd.inkuai.com
 
-
+||dianshi.baidu.com^
 
 
 ||iflyaiui.com^
