@@ -3,6 +3,7 @@ open.oneplus.net
 sdkconfig.ad.xiaomi.com
 ||adukwai.com^
 
+||adiu.amap.com^
 
 #注释static-s.iqiyi.com
 
