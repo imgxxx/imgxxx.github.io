@@ -1,4 +1,5 @@
 #白名单
+sentry.bwton.com
 aegis.qq.com
 zz.bdstatic.com
 bce.baidu.com
