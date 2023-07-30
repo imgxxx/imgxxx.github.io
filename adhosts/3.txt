@@ -1,6 +1,7 @@
 #白名单
 feedback.log-global.aliyuncs.com
-
+console-base.log-global.aliyuncs.com
+alfa.log-global.aliyuncs.com
 
 
 #淘宝登录验证
