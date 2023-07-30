@@ -1,4 +1,8 @@
 #测试版规则
+
+@@||*.mmstat.com^
+
+
 open.oneplus.net
 sdkconfig.ad.xiaomi.com
 ||adukwai.com^
