@@ -1,10 +1,17 @@
 #白名单
+
+
+
+
 #淘宝登录验证
 amdc.m.taobao.com
 adashbc.ut.taobao.com
 adashx4yt.m.taobao.com
 accscdn.m.taobao.com
 adash.m.taobao.com
+wgo.mmstat.com
+
+
 
 sentry.bwton.com
 aegis.qq.com
