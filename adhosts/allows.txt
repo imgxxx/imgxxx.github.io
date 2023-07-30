@@ -1,5 +1,7 @@
 #测试版规则
 
+||badambiz.com^
+
 @@||*.mmstat.com^
 
 @@||alicdn.com^
