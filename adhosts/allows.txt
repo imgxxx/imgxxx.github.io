@@ -2,6 +2,7 @@
 
 @@||*.mmstat.com^
 
+@@||alicdn.com^
 
 open.oneplus.net
 sdkconfig.ad.xiaomi.com
