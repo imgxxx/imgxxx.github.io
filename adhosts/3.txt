@@ -15,8 +15,16 @@ c.isdspeed.qq.com
 appsupport.qq.com
 tianshu.gtimg.cn
 amonsul.douban.com
-
-
+game.eve.mdt.qq.com
+qzs.qq.com
+ip6.ssl.msdk.qq.com
+tracker-01.qvb.qcloud.com
+guid.tpns.sh.tencent.com
+@@||ssl.msdk.qq.com^
+other.upqzfile.com
+video.upqzfile.com
+p.l.qq.com
+rdelivery.qq.com
 
 feedback.log-global.aliyuncs.com
 console-base.log-global.aliyuncs.com
