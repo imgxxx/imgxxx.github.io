@@ -19,7 +19,7 @@ c.isdspeed.qq.com
 appsupport.qq.com
 tianshu.gtimg.cn
 amonsul.douban.com
-game.eve.mdt.qq.com
+
 qzs.qq.com
 ip6.ssl.msdk.qq.com
 tracker-01.qvb.qcloud.com
@@ -74,9 +74,7 @@ livepnrt-stsdk.vivo.com.cn
 fplus.funshion.com
 pv.funshion.com
 @@||wpsmail.net^
-#注释data-sdk-uuid-log.d.meituan.net
-#注释mads.meituan.com
-#注释httpdns.meituan.com
+
 pnrt.stsdk.vivo.com.cn
 appstoreprt-stsdk.vivo.com.cn
 api-unionid.meituan.com
