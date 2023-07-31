@@ -1,13 +1,20 @@
 #白名单
-@||itop.qq.com^
+@@||itop.qq.com^
 gameresource.itop.qq.com
 itop.qq.com
 tbsrecovery.imtt.qq.com
 guid.tpns.tencent.com
-@||toggle.qq.com^
+@@||toggle.qq.com^
 info.3g.qq.com
 yun-hl.3g.qq.com
 ap6.ssl.msdk.qq.com
+access1.tpns.tencent.com
+wspeed.qq.com
+open.gtimg.cn
+c.isdspeed.qq.com
+appsupport.qq.com
+tianshu.gtimg.cn
+
 
 
 
