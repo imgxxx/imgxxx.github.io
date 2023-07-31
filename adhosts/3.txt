@@ -5,7 +5,7 @@ alfa.log-global.aliyuncs.com
 log.mmstat.com
 fourier.taobao.com
 
-
+zhwnlapi.etouch.cn
 #淘宝登录验证
 amdc.m.taobao.com
 adashbc.ut.taobao.com
