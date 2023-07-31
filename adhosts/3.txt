@@ -1,4 +1,8 @@
 #白名单
+d3g.qq.com
+masdkv6.3g.qq.com
+up-hl.3g.qq.com
+masdk.3g.qq.com
 @@||itop.qq.com^
 gameresource.itop.qq.com
 itop.qq.com
