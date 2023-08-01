@@ -1,4 +1,5 @@
 #白名单
+badjs.weixinbridge.com
 vweixinthumb.tc.qq.com
 sngapm.qq.com
 sq.bls.mdt.qq.com
