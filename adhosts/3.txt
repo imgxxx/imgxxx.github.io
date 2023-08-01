@@ -1,4 +1,12 @@
 #白名单
+vweixinthumb.tc.qq.com
+sngapm.qq.com
+sq.bls.mdt.qq.com
+tools.3g.qq.com
+tangram-config.gdt.qq.com
+us.l.qq.com
+bsrv.qq.com
+apd-vlive.apdcdn.tc.qq.com
 d3g.qq.com
 masdkv6.3g.qq.com
 up-hl.3g.qq.com
