@@ -1,4 +1,10 @@
 #白名单
+referee.xiaohongshu.com
+crash.xiaohongshu.com
+flash.xiaohongshu.com
+apppush-sh5.xiaohongshu.com
+new-sentry-relay.xiaohongshu.com
+
 @@||biliapi.net^
 crystalapp.miguvideo.com
 sc-thor.vip.com
