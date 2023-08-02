@@ -1,4 +1,8 @@
 #白名单
+aidatatest.zhihu.com
+crash2.zhihu.com
+mqtt.zhihu.com
+
 badjs.weixinbridge.com
 vweixinthumb.tc.qq.com
 sngapm.qq.com
