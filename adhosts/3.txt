@@ -1,4 +1,15 @@
 #白名单
+@@||t*.a.market.xiaomi.com^
+resolver.mi.xiaomi.com
+sf0.market.xiaomi.com
+cdn.exp.xiaomi.com
+@@||music.xiaomi.com^
+api.music.xiaomi.com
+jupiter.sys.miui.com
+@@||huangye.miui.com^
+api.huangye.miui.com
+port.sec.miui.com
+
 aidatatest.zhihu.com
 crash2.zhihu.com
 mqtt.zhihu.com
