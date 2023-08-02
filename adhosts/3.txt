@@ -2,7 +2,7 @@
 aidatatest.zhihu.com
 crash2.zhihu.com
 mqtt.zhihu.com
-
+@@||meituan.net^
 badjs.weixinbridge.com
 vweixinthumb.tc.qq.com
 sngapm.qq.com
