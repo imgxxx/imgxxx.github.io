@@ -1,4 +1,10 @@
 #白名单
+crystalapp.miguvideo.com
+sc-thor.vip.com
+vip.storage.weibo.com
+movip.wps.com
+
+
 @@||t*.a.market.xiaomi.com^
 resolver.mi.xiaomi.com
 sf0.market.xiaomi.com
