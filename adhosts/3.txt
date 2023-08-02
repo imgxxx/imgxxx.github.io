@@ -6,7 +6,7 @@ crash.xiaohongshu.com
 flash.xiaohongshu.com
 apppush-sh5.xiaohongshu.com
 new-sentry-relay.xiaohongshu.com
-
+@@||cdntips.net^
 @@||biliapi.net^
 crystalapp.miguvideo.com
 sc-thor.vip.com
