@@ -1,5 +1,9 @@
 #测试版规则
 
+||hmma.e.shifen.com^$important
+||hmma.baidu.com^$important
+
+
 ||badambiz.com^
 
 @@||*.mmstat.com^
