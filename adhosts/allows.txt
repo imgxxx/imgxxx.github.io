@@ -1,5 +1,4 @@
 #测试版规则
-||vpic.cms.qq.com^
 
 ||hmma.e.shifen.com^$important
 ||hmma.baidu.com^$important
