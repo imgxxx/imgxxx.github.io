@@ -1,7 +1,7 @@
 #白名单
 d1.music.126.net
 crash.163.com
-
+sns-video-bd.xhscdn.com
 vi.xiaohongshu.com
 store.xiaohongshu.com
 referee.xiaohongshu.com
