@@ -1,4 +1,5 @@
 #白名单
+@@||lanzouw.com^
 d1.music.126.net
 crash.163.com
 sns-video-bd.xhscdn.com
