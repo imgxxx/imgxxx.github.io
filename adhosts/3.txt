@@ -1,5 +1,5 @@
 #白名单
-
+@@||51y5.net^
 conf-darwin.xycdn.com
 gsg.lingxigames.com
 galaxias-api.lingxigames.com
