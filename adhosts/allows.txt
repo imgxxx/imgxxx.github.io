@@ -10,7 +10,7 @@ ocpx.adwangmai.com
 ||adbehaviorhera.ximalaya.com^
 upliadli.yingxuguoji.xyz
 ||api.adott.ottcn.com^
-
+||lupic.cdn.bcebos.com^
 
 api.instabug.com
 api.segment.io
