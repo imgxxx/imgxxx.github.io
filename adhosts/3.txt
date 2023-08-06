@@ -1,4 +1,6 @@
 #白名单
+#注释@@||douyincdn.com^
+@@||baidubce.com^
 h-adashx.ut.amap.com
 @@||xunyou.mobi^
 @@||51y5.net^
