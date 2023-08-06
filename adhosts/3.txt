@@ -1,4 +1,12 @@
 #白名单
+gsg.lingxigames.com
+galaxias-api.lingxigames.com
+game-ages-fx.lingxigames.com
+skdisplay.jd.com
+dgstatic.jd.com
+saturn.jd.com
+@@||gia.jd.com^
+@@||mail.126.com^
 @@||126.com^
 offnavi.map.baidu.com
 apsrgeo.amap.com
