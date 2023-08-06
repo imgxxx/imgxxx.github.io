@@ -1,6 +1,16 @@
 #测试版规则
 static.tinyadx.com
 adxstatic.vivo.com.cn
+cdn.cmgadx.com
+||cmgadx.com^
+||adwelfare.ximalaya.com^
+ocpx.adwangmai.com
+||adwangmai.com^
+||adback.innerchic.cn^
+||adbehaviorhera.ximalaya.com^
+upliadli.yingxuguoji.xyz
+||api.adott.ottcn.com^
+
 
 api.instabug.com
 api.segment.io
