@@ -1301,9 +1301,6 @@ mo.rtalink.com
 @@||iflow.quark.cn^
 
 
-#饿了么
-||h-adashx.ut.ele.me^$important
-||adashx.ut.ele.me^$important
 
 pco-sm-log.tantanapp.com
 ige-log.u-ga.fr
@@ -1344,7 +1341,6 @@ log.umeweb.cn
 ads-marketing-vivofs.vivo.com.cn
 
 tmc.tencent.com
-v6-adashx.ut.youku.com
 ||jingdigital.com^
 ||convertlab.com^
 ||adyun168.com^
@@ -1475,8 +1471,7 @@ sdk.bjzghd.com
 ||rtlog*-applog-lf.fqnovel.com^
 
 log.ireader.com
-s-adashx.ut.taobao.com
-v6-adashx.ut.taobao.com
+
 alimama.taobao.com
 ||alimama*.taobao.com^
 data-sdk-uuid-log.d.meituan.net
@@ -1598,7 +1593,7 @@ mwad.83084.com
 616.com
 globalacceleratecdn-paw.out976.com
 out976.com
-||adashx.
+
 @@||webstatic.mihoyo.com^$important
 gw-w.jiaoliuqu.com
 ||pg-ad-b*.ws.126.net^$important
