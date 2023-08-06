@@ -1,5 +1,6 @@
 #测试版规则
-
+static.tinyadx.com
+adxstatic.vivo.com.cn
 
 api.instabug.com
 api.segment.io
