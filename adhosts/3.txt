@@ -1,4 +1,5 @@
 #白名单
+h-adashx.ut.amap.com
 @@||xunyou.mobi^
 @@||51y5.net^
 conf-darwin.xycdn.com
