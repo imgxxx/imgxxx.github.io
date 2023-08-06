@@ -1,4 +1,5 @@
 #白名单
+@@||xunyou.mobi^
 @@||51y5.net^
 conf-darwin.xycdn.com
 gsg.lingxigames.com
