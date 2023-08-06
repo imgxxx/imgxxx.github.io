@@ -1,4 +1,9 @@
 #白名单
+defaultts.tc.qq.com
+wx.music.tc.qq.com
+mv6.music.tc.qq.com
+aqqmusic.tc.qq.com
+
 #注释@@||douyincdn.com^
 @@||baidubce.com^
 h-adashx.ut.amap.com
