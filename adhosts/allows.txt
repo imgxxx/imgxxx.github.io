@@ -229,7 +229,7 @@ sf3-fe-tos.pglstatp-toutiao.com.queniuuf.com
 @@||*.chat.bilibili.com^
 @@||tracker-terminal.pcdn.yximgs.com^
 
-@@||googleapis
+
 
 @@||analytics.10010.com^
 @@||h5.analytics.126.net^
@@ -250,12 +250,12 @@ log1.wanmei.com
 @@||cnblogs.com^
 @@||apple.com
 @@||jobsfe.funshion.com^
-@@||metrics1.data.hicloud.com^
+
 @@||www.google-analytics.com^
 @@||analytics.mpay.netease.com^
 @@||analytics.rayjump.com^
 @@||analytics-tcp.mintegral.net^
-@@||metrics1-drcn.dt.dbankcloud.cn^
+
 @@||vip.qq.com^
 @@||api-analytics-cn.zepp.com^
 @@||statistic.live.126.net^
