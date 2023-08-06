@@ -1,4 +1,12 @@
 #白名单
+@@||126.com^
+offnavi.map.baidu.com
+apsrgeo.amap.com
+blg.map.baidu.com
+sv.map.baidu.com
+newloc.map.n.shifen.com
+v6-adashx.ut.amap.com
+@@||wsds.cn^
 @@||lanzouw.com^
 d1.music.126.net
 crash.163.com
