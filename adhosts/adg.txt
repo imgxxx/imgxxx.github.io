@@ -21265,13 +21265,7 @@
 ||ashow.pcpop.com
 ||ashownew.pcpop.com
 ||ashwebmail.createsend.com
-||asia-monitor-stsdk.vivoglobal.com
-||asia-onrt-stsdk.vivoglobal.com
-||asia-ort-stsdk.vivoglobal.com
-||asia-pnrt-stsdk.vivoglobal.com
-||asia-prt-stsdk.vivoglobal.com
-||asia-stsdk-cname.vivoglobal.com.vivoglobal.com
-||asia-stsdk.vivoglobal.com
+
 ||asia.creativecdn.com
 ||asia.marketo.com
 ||asian.streamate.com
@@ -61395,7 +61389,7 @@
 ||monitor-ipocztapolska.net
 ||monitor-old.adition.com
 ||monitor-ppocztapolska.net
-||monitor-stsdk.vivoglobal.com
+
 ||monitor-tools.cn.miaozhen.com
 ||monitor.adition.com
 ||monitor.admicro.vn
@@ -65648,8 +65642,7 @@
 ||onrampadvertising.com
 ||onrbrygadapodlaska.pl
 ||onrio.com.br
-||onrt-stsdk.vivoglobal.com
-||onrt.stsdk.vivoglobal.com
+
 ||onscroll-d.openx.net
 ||onscroll.com
 ||onset.freedom.com
@@ -66097,8 +66090,7 @@
 ||orlbh.voluumtrk.com
 ||ornacorn.com
 ||ornekfirma.com
-||ort-stsdk.vivoglobal.com
-||ort.stsdk.vivoglobal.com
+
 ||ortaklik.mynet.com
 ||ortalrustytyo.com
 ||ortc-ws2-useast1-s0005.realtime.co
@@ -68778,8 +68770,7 @@
 ||pndelfast.com
 ||png.lu.sogoucdn.com
 ||pnp.ivwbox.de
-||pnrt-stsdk.vivoglobal.com
-||pnrt.stsdk.vivoglobal.com
+
 ||pntm-images.adbureau.net
 ||pntm.adbureau.net
 ||pnx6n.voluumtrk.com
@@ -70105,8 +70096,7 @@
 ||prsitecheck.com
 ||prstatics.com
 ||prstats.postrelease.com
-||prt-stsdk.vivoglobal.com
-||prt.stsdk.vivoglobal.com
+
 ||prusinska.pl
 ||pruszcz.cba.pl
 ||pruszkowmieszkania.pl
@@ -73426,7 +73416,7 @@
 ||ru-geo.cityads.com
 ||ru-gmtdmp.mookie1.com
 ||ru-img.ro.plus1.wapstart.ru
-||ru-onrt-stsdk.vivoglobal.com
+
 ||ru-traffic.com
 ||ru.adpon.net
 ||ru.bbelements.com
@@ -80831,7 +80821,7 @@
 ||structures-made-easy.co.uk
 ||sts-github.com
 ||sts.batmobi.net
-||stsdk.vivoglobal.com
+
 ||stserver.immomo.com
 ||stsoftware.biz
 ||sttc.affiliate.hu

@@ -284,9 +284,9 @@
 127.0.0.1 val.atm.youku.com
 127.0.0.1 ykad-data.youku.com
 127.0.0.1 yk-ssp.ad.youku.com
-127.0.0.1 adashx.ut.youku.com
+
 127.0.0.1 adx-open-service.youku.com
-127.0.0.1 h-adashx.ut.youku.com
+
 #--咪咕|土豆|人人|凤凰|等等……
 127.0.0.1 ggx.cmvideo.cn
 127.0.0.1 adxserver.ad.cmvideo.cn
@@ -449,23 +449,7 @@
 127.0.0.1 adsdk.vivo.com.cn
 127.0.0.1 adsstatic.vivo.com.cn
 127.0.0.1 adxlog.vivo.com.cn
-127.0.0.1 stnetsdk.appstore.vivo.com.cn
-127.0.0.1 monitor-stsdk.vivo.com.cn
-127.0.0.1 onrt-stsdk.vivo.com.cn
-127.0.0.1 ort-stsdk.vivo.com.cn
-127.0.0.1 pnrt-stsdk.vivo.com.cn
-127.0.0.1 prt-stsdk.vivo.com.cn
-127.0.0.1 stnetsdk.vivo.com.cn
-127.0.0.1 stsdk.vivo.com.cn
-127.0.0.1 bronrt.stsdk.vivo.com.cn
-127.0.0.1 brort.stsdk.vivo.com.cn
-127.0.0.1 brpnrt.stsdk.vivo.com.cn
-127.0.0.1 brprt.stsdk.vivo.com.cn
-127.0.0.1 onrt.stsdk.vivo.com.cn
-127.0.0.1 ort.stsdk.vivo.com.cn
-127.0.0.1 pnrt.stsdk.vivo.com.cn
-127.0.0.1 prt.stsdk.vivo.com.cn
-127.0.0.1 vcardsdkservice.vivo.com.cn
+
 127.0.0.1 m.shilian168.cn
 127.0.0.1 m.zdjgj.cn
 127.0.0.1 ee.j5s9b.cn
@@ -554,7 +538,7 @@
 127.0.0.1 ddd.1sapp.com
 127.0.0.1 trk1.17admob.com
 127.0.0.1 a.tn.token-ad.com
-127.0.0.1 adashx.ut.amap.com
+
 127.0.0.1 x1.go.sohu.com
 127.0.0.1 aads.shuzilm.cn
 127.0.0.1 dsp.ads.umeng.com
@@ -572,8 +556,7 @@
 127.0.0.1 ana.masky.biddingx.com
 127.0.0.1 ifs.tanx.com
 127.0.0.1 ifsk2.tanx.com
-127.0.0.1 adashx.ut.ele.me
-127.0.0.1 h-adashx.ut.ele.me
+
 127.0.0.1 e-ad-monitor.huya.com
 127.0.0.1 adlaunch.qtfm.cn
 127.0.0.1 fumiad.dxys.pro
@@ -1064,7 +1047,7 @@
 127.0.0.1 cm.pos.baidu.com
 127.0.0.1 cpro.baidu.com
 127.0.0.1 crs.baidu.com
-127.0.0.1 eclick.baidu.com
+
 127.0.0.1 eiv.baidu.com
 127.0.0.1 entry.baidu.com
 127.0.0.1 idm-su.baidu.com
@@ -1094,7 +1077,7 @@
 127.0.0.1 stat.v.baidu.com
 127.0.0.1 videopush.baidu.com
 127.0.0.1 wisepush.video.baidu.com
-127.0.0.1 hmma.baidu.com
+
 127.0.0.1 dup.baidustatic.com
 127.0.0.1 sp0.baidu.com
 127.0.0.1 qapm.baidu.com
@@ -1104,10 +1087,8 @@
 127.0.0.1 browserkernel.baidu.com
 127.0.0.1 hijack.baidu.com
 127.0.0.1 hpd.baidu.com
-127.0.0.1 hm.baidu.com
-127.0.0.1 tcbox.baidu.com
-127.0.0.1 ecma.bdimg.com
-127.0.0.1 ecmb.bdimg.com
+
+
 127.0.0.1 cdn-haokanapk.baidu.com
 127.0.0.1 adavideo.baidu.com
 127.0.0.1 ada.baidu.com
@@ -1187,8 +1168,8 @@
 127.0.0.1 mig.str.mdt.qq.com
 127.0.0.1 pms.mb.qq.com
 127.0.0.1 adsmind.apdcdn.tc.qq.com
-127.0.0.1 p.store.qq.com
-127.0.0.1 masdk.3g.qq.com
+
+
 127.0.0.1 ten.sngapm.qq.com
 127.0.0.1 ads.privacy.qq.com
 127.0.0.1 tdid.m.qq.com
@@ -1198,7 +1179,7 @@
 127.0.0.1 qzs.gdtimg.com
 127.0.0.1 public.gdtimg.com
 127.0.0.1 cmshow.gtimg.cn
-127.0.0.1 qappcenterv6.3g.qq.com
+
 127.0.0.1 aeventlog.beacon.qq.com
 127.0.0.1 cc.map.qq.com
 127.0.0.1 aegis.qq.com
@@ -1215,15 +1196,7 @@
 127.0.0.1 proxy-mob-cld.alicdn.com
 127.0.0.1 www.uyunad.com
 127.0.0.1 ali-ad.a.yximgs.com
-127.0.0.1 adashbc.m.taobao.com
-127.0.0.1 adashbc.ut.taobao.com
-127.0.0.1 adashxgc.ut.taobao.com
-127.0.0.1 adashx.m.taobao.com
-127.0.0.1 c-adash.m.taobao.com
-127.0.0.1 m-adash.m.taobao.com
-127.0.0.1 adashbc.m.taobao.com
-127.0.0.1 adash.m.taobao.com
-127.0.0.1 h-adashx.ut.taobao.com
+
 127.0.0.1 tunion-api.m.taobao.com
 127.0.0.1 acs4baichuan.m.taobao.com
 127.0.0.1 amdc.m.taobao.com
@@ -1235,8 +1208,7 @@
 127.0.0.1 dsp.simba.taobao.com
 127.0.0.1 sjarvis.taobao.com
 127.0.0.1 audid-api.taobao.com
-127.0.0.1 adashx4yt.m.taobao.com
-127.0.0.1 h-adashx4yt.ut.taobao.com
+
 127.0.0.1 umdc.aliapp.org
 
 #pkg=xxx.ad.doubleclick.net;广告联盟

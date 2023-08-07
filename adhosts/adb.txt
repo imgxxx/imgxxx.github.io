@@ -2928,16 +2928,7 @@
 ||adaptcorrelation.top^
 ||adapter.shouji.360.cn^
 ||adaptv.advertising.com^
-||adash.m.taobao.com^
-||adash.man.aliyuncs.com^
-||adashbc.m.taobao.com^
-||adashbc.ut.taobao.com^
-||adashx.m.taobao.com^
-||adashx.ut.taobao.com^
-||adashx.ut.youku.com^
-||adashx4ae.ut.taobao.com^
-||adashx4yt.m.taobao.com^
-||adashxgc.ut.taobao.com^
+
 ||adavideo.baidu.com^
 ||adb-analytics.live-now.com^
 ||adbana.adultcity.tv^
@@ -8949,7 +8940,7 @@
 ||analytics.maileon.com^
 ||analytics.mailmunch.co^
 ||analytics.mambaui.com^
-||analytics.map.qq.com^
+
 ||analytics.maproulette.org^
 ||analytics.marquiz.ru^
 ||analytics.matchbin.com^
@@ -11481,7 +11472,7 @@
 ||bzclk.baidu.com^
 ||bzvwtofbsrtu.top^
 ||c-5uwzmx78pmca09x24aiux2euavx2ekwu.g00.msn.com^
-||c-adash.m.taobao.com^
+
 ||c-api-bit.shopeemobile.com^
 ||c.7times.top^
 ||c.ad-srv.co^
@@ -11634,7 +11625,7 @@
 ||cbzhk.lanzouz.com^
 ||cc-api-data.adobe.io^
 ||cc.bigbos.top^
-||cc.map.qq.com^
+
 ||cc.sys.intl.xiaomi.com^
 ||cc.sys.miui.com^
 ||cca.mob.com^
@@ -14299,10 +14290,7 @@
 ||gytty.top^
 ||gyzyphepsu.pro^
 ||gzs20.cnzz.com^
-||h-adashx.ut.taobao.com^
-||h-adashx.ut.youku.com^
-||h-adashx4ae.ut.taobao.com^
-||h-adashx4yt.ut.taobao.com^
+
 ||h-flash.com^
 ||h-sdk.online-metrix.net^
 ||h-top.com^
@@ -14723,7 +14711,6 @@
 ||ikhgg.snalkdl.top^
 ||ikpcajubyyamll.top^
 ||ikwyd.analytics.sapo.pt^
-||ilce.alicdn.com^
 ||iliuyan.cnzz.com^
 ||im-x.jd.com^
 ||im.405d5700.1ff6a9b.ads.a4cdn.contentabc.com^
@@ -15199,7 +15186,7 @@
 ||it.snssdk.com.edgekey.net^
 ||it5s.top^
 ||item.mediav.com^
-||itsdata.map.baidu.com^
+
 ||itunes.mobpartner.mobi^
 ||itx4-secure.smartadserver.com^
 ||itx4.smartadserver.com^
@@ -15859,7 +15846,7 @@
 ||lyjegushe.pro^
 ||lyraxugle.pro^
 ||lyzenoti.pro^
-||m-adash.m.taobao.com^
+
 ||m-hayakawa.ad.dev.nend.net^
 ||m-static.ktokto.mobi^
 ||m.1314sss.top^
@@ -16150,7 +16137,6 @@
 ||maxi-pro.maxipl-system.xyz^
 ||maxinesamson.top^
 ||maxsys.adsame.com^
-||mazu.3g.qq.com^
 ||mazu.sec.miui.com^
 ||mb-click.jp^
 ||mb.adres.wpscdn.cn^
@@ -18028,7 +18014,7 @@
 ||pm2b.top^
 ||pmall.migc.xiaomi.com^
 ||pmg.ad-logics.com^
-||pmir.3g.qq.com^
+
 ||pmp-ad.cdn.bcebos.com^
 ||pmptrack-youku.gentags.net^
 ||pms.mb.qq.com^
@@ -18448,7 +18434,7 @@
 ||qa-ads.nobid.com^
 ||qa.ads.justpremium.com^
 ||qapm.baidu.com^
-||qappcenterv6.3g.qq.com^
+
 ||qautodl.qq.com^
 ||qazxcderfvbgt.top^
 ||qbdsp.html5.qq.com^
@@ -19122,7 +19108,7 @@
 ||sapsixysho.pro^
 ||sarahmilne.top^
 ||sas.nsm-corp.com^
-||sasdk.3g.qq.com^
+
 ||sat-city-ads.com^
 ||satclub.top^
 ||saturn.appads.com^
@@ -19843,7 +19829,7 @@
 ||spyder-api.n-switch.net.daraz.com^
 ||spyglass.reklamko.pro^
 ||spyhunter-download.s3.amazonaws.com^
-||sqsh.3g.qq.com^
+
 ||squarespace.top^
 ||squirtatt15.sugar1818.net^
 ||sqyx.top^
@@ -20002,7 +19988,7 @@
 ||static.ju.mediav.com^
 ||static.jupin.mediav.com^
 ||static.lstat.youku.com^
-||static.map.bdimg.com^
+
 ||static.mediav.com^
 ||static.mibi.xiaomi.com^
 ||static.pay.baidu.com^
@@ -20174,7 +20160,7 @@
 ||sync-dsp.ad-m.asia^
 ||sync-eb.ads.yieldmo.com^
 ||sync-share.com^
-||sync.3g.qq.com^
+
 ||sync.ad-stir.com^
 ||sync.adaptv.advertising.com^
 ||sync.ads.yieldmo.com^
@@ -20450,8 +20436,7 @@
 ||tf.360.cn^
 ||tf.logview.alimama.com^
 ||tg.jifen.2345.com^
-||tgw-masdk.3g.qq.com^
-||tgw-sasdk.3g.qq.com^
+
 ||the-bitcoin-era-pro.com^
 ||the-bitcoin-rush-pro.financialmarketsworld.com^
 ||the-ether.pro^
@@ -20589,7 +20574,7 @@
 ||toolbar.baidu.com^
 ||toolbar.msn.com^
 ||toolbar.youdao.com^
-||tools.3g.qq.com^
+
 ||tools.ad-net.co.uk^
 ||tools.mobpartner.mobi^
 ||tools.sbs-ad.com^

@@ -362,7 +362,7 @@ log1.wanmei.com
 
 # 拦截OPPO、VIVO浏览器页面失效页的插入广告
 ||dragate-cn.dc.heytapmobi.com^
-||support.browser.heytapmobi.com
+||support.browser.heytapmobi.com^
 
 # 拦截动漫之家 漫画详情页 横幅广告
 ||uhxq.dmzj.com^
@@ -1083,7 +1083,6 @@ gg.xox0.cn
 
 
 ||isbestgame.com^
-error.taobao.com
 ||iwolong.com^
 ||blibao.com^
 ||zzwtec.com^
@@ -1385,7 +1384,7 @@ log.umeweb.cn
 @@||www.bytedance.com
 
 ||shuzilm.cn^
-ads-marketing-vivofs.vivo.com.cn
+||ads-marketing-vivofs.vivo.com.cn^
 
 tmc.tencent.com
 ||jingdigital.com^
@@ -1660,7 +1659,7 @@ uland.taobao.com
 @@||cdn.ark.qq.com^$important
 @@||data.bilibili.com^$important
 open.gtimg.cn
-apd-vlive.apdcdn.tc.qq.com
+
 
 ||sdkcloud.e.360.cn
 ||img-x.jd.com^$important
@@ -1681,8 +1680,7 @@ apd-vlive.apdcdn.tc.qq.com
 @@||c.y.qq.com^$important
 
 
-msgacs.m.taobao.com
-ark-handler-bottom.m.taobao.com
+
 
 
 ||baichuan-sdk.taobao.com^
@@ -1887,7 +1885,7 @@ api-adservices.apple.com
 
 dns.jd.com
 ||jmcloud.jdx.com^
-||jzt.jd.com^
+
 api.tbk.dingdanxia.com
 ||inmobi.cn^
 ||mdfull.com^
@@ -2005,11 +2003,11 @@ abtest.volceapplog.com
 ||talkingdata.com^
 ||addnewer.com^
 ||deepzero.com^
-eco.taobao.com
-gw.api.taobao.com
+
+
 ||baichuan.taobao.com^
 httpdns-sdk.n.netease.com
-taojin.map.n.shifen.com
+
 httpdns.yunxindns.com
 ||httpdns.
 ||na*-na*.wagbridge.alibaba.tanx.com.gds.alibabadns.com^
@@ -2153,7 +2151,7 @@ adv.sec.miui.com
 @@||rgtracker-bj.rivergame.net
 @@||mgc-games.com^
 @@||epicgames.com^
-adashx.m.taobao.com
+
 adcdn.hpplay.cn
 adeng.hpplay.cn
 adc.hpplay.cn
@@ -2195,10 +2193,9 @@ api.adv.ott.cibntv.net
 adxserver.ad.cmvideo.cn
 dspserver.ad.cmvideo.cn
 openstorage.ad.cmvideo.cn
-amdcopen.m.taobao.com
-adx.ads.heytapmobi.com
-adashx.m.taobao.com
-adashbc.ut.taobao.com
+
+||adx.ads.heytapmobi.com^
+
 t7z.cupid.ptqy.gitv.tv
 @@||huluxia.com^
 @@||api.sec.miui.com^
@@ -2550,13 +2547,13 @@ get.sogou.com
 ||client-log.poizon.com
 ||fp-it.fengkongcloud.com
 
-||amdcopen.m.taobao.com
+
 ||dat.ruanmei.com
 ||diagnosis.ad.xiaomi.com
 ||v.weixiaov.club^
 ||fbih5report.3g.qq.com^
 ||tobapplog.ctobsnssdk.com
-||h-adashx.ut.taobao.com
+
 ||tj1.youzanyun.com
 ||tobapplog.ctobsnssdk.com
 ||sf6-be-pack.pglstatp-toutiao.com
