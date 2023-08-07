@@ -1,4 +1,11 @@
 #测试版规则
+
+||hmma.e.shifen.com^$important
+||hmma.baidu.com^$important
+||hm.baidu.com^$important
+
+
+
 static.tinyadx.com
 adxstatic.vivo.com.cn
 cdn.cmgadx.com
