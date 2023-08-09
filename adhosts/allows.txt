@@ -1,4 +1,11 @@
 #测试版规则
+@@||zuhaowan.com^
+||bd-track.zuhaowan.cn^$important
+
+
+
+
+
 ||htrace.wetvinfo.com^
 ||shark-tracer.netease.com^
 ||track.ggvert.hsmob.com^
