@@ -1,5 +1,9 @@
 #白名单
 
+splashimgbssdl.yun.kugou.com
+install2.kugou.com
+
+
 @@||9game.cn^
 @@||aligames.com^
 
