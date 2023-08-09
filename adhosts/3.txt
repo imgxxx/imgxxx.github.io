@@ -2,7 +2,7 @@
 cm.bilibili.com
 splashimgbssdl.yun.kugou.com
 install2.kugou.com
-
+stats.gcp.smartmailcloud.com
 
 @@||9game.cn^
 @@||aligames.com^
