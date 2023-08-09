@@ -1,5 +1,5 @@
 #白名单
-
+cm.bilibili.com
 splashimgbssdl.yun.kugou.com
 install2.kugou.com
 
