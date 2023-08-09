@@ -1,5 +1,7 @@
 #白名单
-defaultts.tc.qq.com
+bssdl.kugou.com
+webimg.bssdl.kugou.com
+
 wx.music.tc.qq.com
 mv6.music.tc.qq.com
 aqqmusic.tc.qq.com
@@ -13,10 +15,7 @@ conf-darwin.xycdn.com
 gsg.lingxigames.com
 galaxias-api.lingxigames.com
 game-ages-fx.lingxigames.com
-skdisplay.jd.com
-dgstatic.jd.com
-saturn.jd.com
-@@||gia.jd.com^
+
 @@||mail.126.com^
 @@||126.com^
 offnavi.map.baidu.com
@@ -61,12 +60,12 @@ crash2.zhihu.com
 mqtt.zhihu.com
 @@||meituan.net^
 badjs.weixinbridge.com
-vweixinthumb.tc.qq.com
+
 sngapm.qq.com
 sq.bls.mdt.qq.com
 tools.3g.qq.com
 tangram-config.gdt.qq.com
-us.l.qq.com
+
 bsrv.qq.com
 apd-vlive.apdcdn.tc.qq.com
 masdkv6.3g.qq.com
@@ -96,7 +95,7 @@ guid.tpns.sh.tencent.com
 @@||ssl.msdk.qq.com^
 other.upqzfile.com
 video.upqzfile.com
-p.l.qq.com
+
 rdelivery.qq.com
 
 feedback.log-global.aliyuncs.com
