@@ -1,4 +1,11 @@
 #白名单
+
+@@||9game.cn^
+@@||aligames.com^
+
+adash-emas.cn-hangzhou.aliyuncs.com
+account-lingxi.aligames.com
+paycenter.9game.cn
 bssdl.kugou.com
 webimg.bssdl.kugou.com
 
