@@ -3,7 +3,8 @@
 ||shark-tracer.netease.com^
 ||track.ggvert.hsmob.com^
 ||track-mgz.360os.com^
-
+||hsmob.com^
+||weimob.com^
 
 ||mtadx.com^
 ||track.mtadx.com^
