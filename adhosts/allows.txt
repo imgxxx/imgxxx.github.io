@@ -1,8 +1,8 @@
 #测试版规则
-htrace.wetvinfo.com
-shark-tracer.netease.com
-
-
+||htrace.wetvinfo.com^
+||shark-tracer.netease.com^
+||track.ggvert.hsmob.com^
+||track-mgz.360os.com^
 
 
 ||mtadx.com^
