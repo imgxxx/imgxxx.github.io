@@ -1,5 +1,12 @@
 #测试版规则
 
+
+||mtadx.com^
+||track.mtadx.com^
+||mobilead.kuwo.cn^$important
+||m1.ad.10010.com^$important
+
+
 ||hmma.e.shifen.com^$important
 ||hmma.baidu.com^$important
 ||hm.baidu.com^$important
