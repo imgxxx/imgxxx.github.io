@@ -548,14 +548,11 @@ log5-applog-lf.ixigua.com
 @@||mon.isnssdk.com^
 @@||p1-feedback.byteimg.com^
 @@||aliapp.org^
-@@||weather-analytics-events.apple.com^
-@@||books-analytics-events.apple.com^
-@@||analytics-api-01.smzdm.com^
-@@||analytics-api.smzdm.com^
-@@||lf*-analytics.bytescm.com^
-@@||ssl.google-analytics.com^
-@@||m.analytics.126.net^
-@@||lf*-analytics.bytescm.com.queniuuf.com^
+
+||lf*-analytics.bytescm.com^
+
+||lf*-analytics.bytescm.com.queniuuf.com^
+
 @@||p3-passport.byteacctimg.com^
 
 @@||tnc*-aliec*.snssdk.com^
