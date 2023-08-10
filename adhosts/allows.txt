@@ -4,8 +4,8 @@
 
 adxlog-adnet.vivo.com.cn.ctdns.cn
 
-
-
+||dspsdk.pinduoduo.com^$important
+||trackercdn.kugou.com^$important
 ||htrace.wetvinfo.com^
 ||shark-tracer.netease.com^
 ||track.ggvert.hsmob.com^
