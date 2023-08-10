@@ -227,10 +227,9 @@ nrkfpt1.9zas5.com
 
 
 @@||publish-pic-cpu.baidu.com^
-@@||tracker.namitiyu.com^
+
 @@||stat.dongqiudi.com^
-@@||trackermq.namitiyu.com^
-@@||tracker-api.namitiyu.com^
+
 @@||hreport.meituan.com^
 
 
@@ -253,24 +252,10 @@ sf3-fe-tos.pglstatp-toutiao.com.queniuuf.com
 @@||met_metrics_mobile_meituan.dreport.meituan.net^
 @@||icloud.com.cn^
 @@||myapp.com^
-@@||trackercdn.kugou.com^
-@@||pcdn-proxy-tracker.xxpkg.com^
-@@||trackercdngz.kugou.com^
-@@||hw-v2-web-player-tracker.biliapi.net^
-@@||tracker.tvhuoxing.net^
-@@||tracker.pcdn.yximgs.com^
-@@||*.chat.bilibili.com^
-@@||tracker-terminal.pcdn.yximgs.com^
 
 
 
-@@||analytics.10010.com^
-@@||h5.analytics.126.net^
-@@||analytics.yicai.com^
-@@||analytics-ios-tcp.rayjump.com^
-@@||analytics2.10010.com^
-@@||app-analytics.huami.com^
-@@||analytics.meituan.net^
+
 
 
 clientlog.wanmei.com
@@ -284,19 +269,15 @@ log1.wanmei.com
 @@||apple.com
 @@||jobsfe.funshion.com^
 
-@@||www.google-analytics.com^
-@@||analytics.mpay.netease.com^
-@@||analytics.rayjump.com^
-@@||analytics-tcp.mintegral.net^
 
 @@||vip.qq.com^
-@@||api-analytics-cn.zepp.com^
+
 @@||statistic.live.126.net^
 @@||mail.163.com^
 @@||sentry.epay.163.com^
 @@||loveota.com^
 @@||laohu.com^
-@@||analytics-gw.games.wanmei.com^
+
 @@||liveonrt-stsdk.vivo.com.cn^
 @@||videoplayonrt-stsdk.vivo.com.cn^
 @@||svideopnrt-stsdk.vivo.com.cn^
@@ -322,10 +303,7 @@ log1.wanmei.com
 @@||dig.bdurl.net^$important
 @@||dig.zjurl.cn^$important
 
-@@||tracker-live.pcdn.yximgs.com^
-@@||tracker.chat.bilibili.com^
-@@||*-live-tracker-01.chat.bilibili.com^
-@@||pcdn-pxy-tracker.xxpkg.com^
+
 
 
 
@@ -931,7 +909,7 @@ applog.rwork.crc.com.cn
 @@||snowflake.qq.com^
 
 @@||is.snssdk.com^
-@@||spider-tracker.xiaohongshu.com^
+
 
 errorlog.sobot.com
 im-log.aligames.com
