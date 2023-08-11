@@ -12,7 +12,7 @@ adxlog-adnet.vivo.com.cn.ctdns.cn
 ||track-mgz.360os.com^
 ||hsmob.com^
 ||weimob.com^
-
+||ulog*.*.com^$important
 ||mtadx.com^
 ||track.mtadx.com^
 ||mobilead.kuwo.cn^$important
