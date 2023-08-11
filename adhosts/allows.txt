@@ -5003,3 +5003,195 @@ vivovip.mmszxc.top
 qiu.xixiqiu.com
 cdnjs.hnfenxun.com
 cms.qdwght.com
+
+! 放行一些规则防止误杀
+! 阿里/支付宝
+@@||mmstat.com^
+! 360域名
+@@||360.cn^
+! X5内核
+@@||cfg.imtt.qq.com^
+@@||soft.tbs.imtt.qq.com^
+@@||res.imtt.qq.com^
+! 手机搜狗输入法
+@@||shouji.sougou.com^
+! MIUI 流量中心
+@@||api.miui.security.xiaomi.com^
+@@||api.sec.intl.miui.com^
+@@||api.sec.miui.com^
+! QQ直播
+@@||livew.l.qq.com^
+! 魅族
+@@||aider.meizu.com^
+@@||www.meizu.com^
+@@||store.meizu.com^
+! 魅族天气
+@@||aider-res.meizu.com^
+! 抖音小程序、今日头条搜索
+@@||is.snssdk.com^
+! QQ邮箱
+@@||iwx.mail.qq.com^
+! MIUI 天气预报
+@@||wtradv.market.xiaomi.com^
+
+! MIUI 快应用
+@@||www.api.hybrid.intl.xiaomi.com^
+@@||api.hybrid.intl.xiaomi.com^
+! 网易某版本
+@@||api.iplay.163.com^
+! 九游游戏中心
+@@||api.open.uc.cn^
+! 百度小程序
+@@||ossapi.baidu.com^
+! UC文章
+@@||mparticle.uc.cn^
+! 微信福利/活动中心
+@@||isee.weishi.qq.com^
+
+! 腾讯充值
+@@||midas.gtimg.cn^
+@@||api.unipay.qq.com^
+! 皮皮虾/字节跳动
+@@||mon.snssdk.com^
+@@||mon.isnssdk.com^
+@@||is-hl.snssdk.com^
+@@||p*-ppx.byteimg.com^
+@@||i.snssdk.com^
+@@||dm.toutiao.com^
+! 应用宝
+@@||pp.myapp.com^
+! 淘宝授权
+@@||acs4baichuan.m.taobao.com^
+! 淘宝活动
+@@||s.click.taobao.com^
+@@||s.click.alimama.com^
+@@||s.click.tmall.com^
+
+! 知乎小程序
+@@||sugar.zhihu.com^
+! 支付宝生活号
+@@||gm.mmstat.com^
+! 支付宝扫码支付
+@@||pingjs.qq.com^
+! 支付宝运动
+@@||wgo.mmstat.com^
+! 迅雷影音api
+@@||api-shoulei-ssl.xunlei.com^
+! MIUI浏览器在线翻译
+@@||ssl-cdn.static.browser.mi-img.com^
+! X5内核文档插件下载
+@@||static.res.qq.com^
+! MIUI天星金融钱包
+@@||api.jr.mi.com^
+! 豌豆荚网络下载
+@@||alissl.ucdl.pp.uc.cn^
+! 微博国际版图片保存
+@@||wx2.sinaimg.cn^
+! 百度百科
+@@||baikebcs.bdimg.com^
+@@||bkimg.cdn.bcebos.com^
+! QQ安全网址访问
+@@||c.pc.qq.com^
+! cdn加速
+@@||cdn.bootcdn.net^
+
+! 百度求医问药网
+@@||med-fe.cdn.bcebos.com^
+! 微信部分小程序登陆
+@@||pv.sohu.com^
+! 百度百家号
+@@||f10.baidu.com^
+! MIUI 主题
+@@||zhuti.xiaomi.com^
+! 爱(i)茅台
+@@||mm1.365dmp.com^
+@@||mm3.365dmp.com^
+@@||sfp.safe.baidu.com^
+@@||sofire.bdstatic.com^
+@@||sofire.baidu.com^
+! MIUI浏览器
+@@||hot.browser.intl.miui.com^
+@@||hot.browser.miui.com^
+! 360清理大师
+@@||sjws.ssl.qihucdn.com^
+@@||mvconf.f.360.cn^
+! 腾讯新闻
+@@||pacaio.match.qq.com^
+! UC浏览器
+@@||emoji.uc.cn^
+@@||iflow.uc.cn^
+@@||iflow-api.uc.cn^
+@@||iflow.uczzd.cn^
+! 夸克浏览器下载插件
+@@||pdds-c1-cdn.uc.cn^
+@@||pdds.ucweb.com^
+
+! 淘宝菜鸟裹裹
+@@||appdownload.alicdn.com^
+! QQ微信头像
+@@||wx.qlogo.cn^
+@@||py.qlogo.cn^
+@@||py2.qlogo.cn^
+@@||p.qlogo.cn^
+! 抖音网页版验证图片
+@@||verify.snssdk.com^
+! QQ安全中心
+@@||aq.qq.com^
+! 小米文件下载
+@@||api.airpush.com^
+@@||file.xmpush.xiaomi.com^
+@@||api.airpush.com^
+@@||api-push.meizu.com^
+@@||file.xiaomi.com^
+@@||f8.market.xiaomi.com^
+@@||f4.market.xiaomi.com^
+! MIUI黄页
+@@||api.huangye.miui.com^
+! MIUI垃圾清理
+@@||flash.sec.miui.com^
+@@||flash.sec.intl.miui.com^
+@@||staging.flash.sec.miui.com^
+
+! 百度贴吧表情误杀
+@@||static.tieba.baidu.com^
+@@||gsp0.baidu.com^
+! 咪咕爱看视频
+@@||aikanvod.miguvideo.com^
+@@||aikanlive.miguvideo.com^
+! 部分设备的小米推送
+@@||resolver.msg.xiaomi.net^
+@@||register.xmpush.xiaomi.com^
+@@||app.chat.xiaomi.net^
+! 部分设备的小米云服务
+@@||api.g.micloud.xiaomi.net^
+! QQ浏览器插件误杀
+@@||tbsone.imtt.qq.com^
+! UC浏览器网盘
+! @@||uc.ucweb.com
+@@||puds.ucweb.com^
+! OPPO账号相关？
+@@||u.oppomobile.com^
+! 新浪新闻图片
+@@||k.sinaimg.cn^
+! 酷安推送
+@@||guid.tpns.tencent.com^
+@@||access1.tpns.tencent.com^
+! 有道翻译官网页翻译
+@@||c.youdao.com^
+! 百度网盘签到图片界面
+@@||staticsns.cdn.bcebos.com^
+! 大众养生网
+@@||mipcache.bdstatic.com^
+! 阿里云盘网络验证码(酷安@我是真爱kun)
+@@||acs.m.taobao.com^
+! 夸克网盘扫码登陆
+@@||t.uc.cn^
+! Flyme 游戏下载(酷安@何言与君识)
+@@||api-game.meizu.com^
+@@||game.res.meizu.com^
+! OPPO商店登陆
+@@||dragate.dc.oppomobile.com^
+@@||client-uc.heytapmobi.com^
+@@||dragate-cn.dc.heytapmobi.com^
+! 网易云音乐 音效下载
+@@||d*.music.126.net^
