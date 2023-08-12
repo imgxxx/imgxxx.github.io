@@ -1,4 +1,8 @@
 #白名单
+
+dns.weixin.qq.com.cn
+
+
 cm.bilibili.com
 splashimgbssdl.yun.kugou.com
 install2.kugou.com
