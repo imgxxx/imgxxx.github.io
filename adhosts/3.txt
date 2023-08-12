@@ -2,6 +2,8 @@
 
 #懂球帝直播接口
 tracker.namitiyu.com
+tracker-api.namitiyu.com
+trackermq.namitiyu.com
 
 
 dns.weixin.qq.com.cn
