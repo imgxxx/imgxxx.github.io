@@ -1,5 +1,9 @@
 #白名单
 
+#懂球帝直播接口
+tracker.namitiyu.com
+
+
 dns.weixin.qq.com.cn
 
 
