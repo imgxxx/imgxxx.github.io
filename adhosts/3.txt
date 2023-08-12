@@ -4,7 +4,7 @@ splashimgbssdl.yun.kugou.com
 install2.kugou.com
 stats.gcp.smartmailcloud.com
 tx-kmpaudio.pull.yximgs.com
-
+logapi-and.zhipin.com
 @@||9game.cn^
 @@||aligames.com^
 
