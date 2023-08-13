@@ -1,5 +1,7 @@
 #白名单
 
+gmanhua.com
+
 #懂球帝直播接口
 tracker.namitiyu.com
 tracker-api.namitiyu.com
