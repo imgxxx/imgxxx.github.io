@@ -1,4 +1,11 @@
 #测试版规则
+
+||kernelapi.vivo.com.cn^
+||kernelapi.vivo.com^
+||mobile-nlp.vivo.com.cn^
+
+
+
 @@||zuhaowan.com^
 ||bd-track.zuhaowan.cn^$important
 
