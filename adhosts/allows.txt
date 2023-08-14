@@ -1,5 +1,10 @@
 #测试版规则
 
+admaster-public.51downapp.cn
+max-admaster-public.oss-cn-hangzhou.aliyuncs.com
+
+
+
 ||kernelapi.vivo.com.cn^
 ||kernelapi.vivo.com^
 ||mobile-nlp.vivo.com.cn^
