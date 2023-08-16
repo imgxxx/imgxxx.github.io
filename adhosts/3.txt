@@ -1,4 +1,5 @@
 #白名单
+m-paas-sentry.zhihu.com
 
 gmanhua.com
 
