@@ -1,4 +1,9 @@
 #白名单
+h-adashx.ut.dingtalk.com
+adashbc.m.taobao.com.gds.alibabadns.com
+adash.man.aliyuncs.com
+adashx.m.taobao.com
+
 m-paas-sentry.zhihu.com
 
 gmanhua.com
