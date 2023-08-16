@@ -1,4 +1,7 @@
 #白名单
+auni.telecome.cn
+
+
 h-adashx.ut.dingtalk.com
 adashbc.m.taobao.com.gds.alibabadns.com
 adash.man.aliyuncs.com
