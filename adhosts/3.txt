@@ -1,7 +1,7 @@
 #白名单
 auni.telecome.cn
 
-@@||ws.126.net^
+
 
 
 videoimg.ws.126.net
