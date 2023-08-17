@@ -1,4 +1,11 @@
 #测试版规则
+@@||ws.126.net^
+||yt-adp.ws.126.net^$important
+||pg-ad-b1.ws.126.net^$important
+||pg-ad-b*.ws.126.net^$important
+||lupic.cdn.bcebos.com^$important
+||cpro.baidu.com^$important
+
 
 admaster-public.51downapp.cn
 max-admaster-public.oss-cn-hangzhou.aliyuncs.com
