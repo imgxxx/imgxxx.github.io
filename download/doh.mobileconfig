@@ -15,7 +15,7 @@
 				<key>PayloadDescription</key>
 				<string>DNS官方网站：https://www.ipv4dns.com</string>
 				<key>PayloadDisplayName</key>
-				<string>流氓兔DNS</string>
+				<string>清新云DNS</string>
 				<key>PayloadIdentifier</key>
 				<string>com.apple.dnsSettings.managed.a876472d-8359-45d6-bdd1-fd16f7e053b3</string>
 				<key>PayloadType</key>
@@ -29,7 +29,7 @@
 		<key>PayloadDescription</key>
 		<string>DNS官方网站：https://www.ipv4dns.com</string>
 		<key>PayloadDisplayName</key>
-		<string>流氓兔DNS</string>
+		<string>清新云DNS</string>
 		<key>PayloadIdentifier</key>
 		<string>9ac058c8-f7d2-482f-b07a-0251c2b9920f</string>
 		<key>PayloadRemovalDisallowed</key>

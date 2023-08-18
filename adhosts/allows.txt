@@ -1318,7 +1318,7 @@ mo.rtalink.com
 @@||v6lvs.com^
 @@||zj.gov.cn^$important
 @@||zjzwfw.gov.cn^
-||adash.zjzwfw.gov.cn^$important
+
 
 
 @@||st.music.163.com^
@@ -1705,7 +1705,7 @@ open.gtimg.cn
 
 ||baichuan-sdk.taobao.com^
 
-s-adashx.ut.uc.cn
+
 eap-log-cn.allawntech.com
 
 
@@ -1952,7 +1952,7 @@ apidns.kwd.inkuai.com
 ||lf*-sf-be-pack-sign.pglstatp-toutiao.com^
 
 @@||appdownload.alicdn.com
-||h-adashx.ut.cainiao.com
+
 @@||accscdn.m.taobao.com
 
 #菜鸟
@@ -2054,7 +2054,6 @@ log.zijieapi.com
 @@||vfiles.gtimg.cn
 @@||inews.gtimg.com^
 @@||isee.weishi.qq.com^
-adash.man.aliyuncs.com
 ||ad*.adbreak.ch
 ||ad*.liverail.com
 ||ad-api-v01.uliza.jp^
@@ -4936,8 +4935,6 @@ www.ad.lectinect.no^
 ||adm.crowdicity.com^$important
 ||ad.ext.azure.cn^$important
 ||torproject.org^$important
-||adashx.ut.dingtalk.com^$important
-||h-adashx.ut.dingtalk.com^$important
 ||ads.95516.com^$important
 ||tongji.koowo.cn^$important
 ||adverts.1foo.com^$important
