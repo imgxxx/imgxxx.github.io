@@ -1,4 +1,13 @@
 #测试版规则
+||adxapi.readgps.com^
+||dsptch.mojichina.com^
+||dsp-x-bd.jd.com^
+||dsp.weatherat.com^
+
+
+
+
+
 @@||ws.126.net^
 ||yt-adp.ws.126.net^$important
 ||pg-ad-b1.ws.126.net^$important
@@ -7,8 +16,8 @@
 ||cpro.baidu.com^$important
 
 
-admaster-public.51downapp.cn
-max-admaster-public.oss-cn-hangzhou.aliyuncs.com
+||admaster-public.51downapp.cn^
+||max-admaster-public.oss-cn-hangzhou.aliyuncs.com^
 
 
 
