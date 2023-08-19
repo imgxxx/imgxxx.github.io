@@ -149,21 +149,11 @@
 ||click.qianqian.com^
 ||cm.baichuan.baidu.com^
 ||dd713.bj.bcebos.com^
-||dl.client.baidu.com^
-||dl.ops.baidu.com^
-||dl1sw.baidu.com^
-||dl2.bav.baidu.com^
-||dlsw.baidu.com^
-||dlsw.br.baidu.com^
-||dl-vip.bav.baidu.com^
-||dl-vip.pcfaster.baidu.co.th^
-||download.bav.baidu.com^
-||download.sd.baidu.com^
+
 ||dxp.baidu.com^
 ||dzl.baidu.com^
 ||e.baidu.com^
-||ecm*.bdimg.com^
-||em.baidu.com^
+
 ||entry.baidu.com^
 ||ers.baidu.com^
 ||f10.baidu.com^
@@ -173,12 +163,10 @@
 
 ||g.baidu.com^
 ||gimg.baidu.com^
-||guanjia.baidu.com^
-||hc.baidu.com^
+
 ||hmma.baidu.com^
 ||hpd.baidu.com^
-||idm.bce.baidu.com^
-||idm-su.baidu.com^
+
 ||iebar.baidu.com^
 ||ikcode.baidu.com^
 ||img.taotaosou.cn^
@@ -231,8 +219,6 @@
 ||w.gdown.baidu.com^
 ||w.x.baidu.com^
 ||wangmeng.baidu.com^
-||weishi.baidu.com^
-||wenku-cms.bj.bcebos.com^
 ||wisepush.video.baidu.com^
 ||wm.baidu.com^
 ||znsv.baidu.com^
@@ -240,13 +226,9 @@
 ||zzy1.quyaoya.com^
 
 ! geosite:category-bytedance-ads
-||bds.snssdk.com^
-||ctobsnssdk.com^
-||dig.bdurl.net^
+
 ||extlog.snssdk.com^
-||i.snssdk.com^
-||is.snssdk.com^
-||cs.snssdk.com^
+
 ||pangolin.snssdk.com^
 ||pangolin-sdk-toutiao.com^
 ||pglstatp-toutiao.com^
