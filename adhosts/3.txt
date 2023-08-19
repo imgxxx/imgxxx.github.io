@@ -1,7 +1,6 @@
 #白名单
 auni.telecome.cn
 
-
 cas.baidu.com
 
 videoimg.ws.126.net
@@ -94,7 +93,7 @@ port.sec.miui.com
 aidatatest.zhihu.com
 crash2.zhihu.com
 mqtt.zhihu.com
-@@||meituan.net^
+
 badjs.weixinbridge.com
 
 sngapm.qq.com
