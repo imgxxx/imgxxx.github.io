@@ -1,6 +1,6 @@
 ! 360
-||lianmeng.360.cn^$third-party
-||union.360.cn^
+||lianmeng.360.cn^$important
+||union.360.cn^$important
 
 ! Alibaba 阿里巴巴
 ||a.alimama.cn^
