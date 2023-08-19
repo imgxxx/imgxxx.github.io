@@ -1,4 +1,13 @@
 #测试版规则
+||track.lc.quark.cn^$important
+||tracker.ai.xiaomi.com^$important
+||tracker.didistatic.com^$important
+||location-traceroute-sg.bytedance.com^$important
+||tracert.alipay.com^$important
+||tracker-01.qvb.qcloud.com^$important
+||cddp-track.aligames.com^$important
+||wmedia-track.uc.cn^$important
+
 ||dsp-x-tx.jd.com^
 ||clickdsp.meituan.com^
 ||yanxuan-dsp-new.nosdn.127.net^
