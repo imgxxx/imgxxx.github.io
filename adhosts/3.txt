@@ -1,6 +1,6 @@
 #白名单
 auni.telecome.cn
-
+@@||kuaidi100.com^
 cas.baidu.com
 
 videoimg.ws.126.net
