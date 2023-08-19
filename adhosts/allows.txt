@@ -1,8 +1,8 @@
 #测试版规则
 ||dsp-x-tx.jd.com^
 ||clickdsp.meituan.com^
-
-
+||yanxuan-dsp-new.nosdn.127.net^
+||impdsp.meituan.com^
 
 ||mcbeta.tencent-cloud.com^
 ||cnge.net.cn^
