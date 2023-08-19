@@ -126,7 +126,7 @@ amonsul.douban.com
 
 qzs.qq.com
 ip6.ssl.msdk.qq.com
-tracker-01.qvb.qcloud.com
+
 guid.tpns.sh.tencent.com
 @@||ssl.msdk.qq.com^
 other.upqzfile.com
@@ -134,10 +134,7 @@ video.upqzfile.com
 
 rdelivery.qq.com
 
-feedback.log-global.aliyuncs.com
-console-base.log-global.aliyuncs.com
-alfa.log-global.aliyuncs.com
-log.mmstat.com
+
 fourier.taobao.com
 static.etouch.cn
 zhwnlapi.etouch.cn
