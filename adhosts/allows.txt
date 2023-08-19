@@ -142,17 +142,13 @@ sdkconfig.ad.xiaomi.com
 
 ||adiu.amap.com^
 
-#注释static-s.iqiyi.com
-
-#注释ec.kwd.inkuai.com
-
 ||dianshi.baidu.com^
 
 
 ||iflyaiui.com^
 
 ||e.360.cn^$important
-
+||union.360.cn^$important
 @@||360safe.com^
 @@||safe.360.cn^
 
