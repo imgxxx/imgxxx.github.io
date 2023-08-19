@@ -1,4 +1,12 @@
 #测试版规则
+||upp-log.aligames.com^$important
+||log.snssdk.com^$important
+||al-log.d.meituan.net^$important
+||publiclog.zhiyan.tencent-cloud.net^$important
+||applog.snssdk.com^$important
+||fclog.baidu.com^$important
+||rlog.hrtn.net^$important
+||toblog.tobsnssdk.com^$important
 ||track.lc.quark.cn^$important
 ||tracker.ai.xiaomi.com^$important
 ||tracker.didistatic.com^$important
