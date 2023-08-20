@@ -1,4 +1,10 @@
 #测试版规则
+
+#数川广告
+||shuchuandata.com^
+||sspapi.shuchuandata.com^
+
+
 ||upp-log.aligames.com^$important
 ||log.snssdk.com^$important
 ||al-log.d.meituan.net^$important
