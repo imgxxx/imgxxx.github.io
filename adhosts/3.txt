@@ -1,4 +1,7 @@
 #白名单
+
+@@||bsccdn.net^
+
 auni.telecome.cn
 @@||kuaidi100.com^
 cas.baidu.com
