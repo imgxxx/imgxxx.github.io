@@ -1,4 +1,5 @@
 #白名单
+v.redd.it
 
 @@||bsccdn.net^
 
