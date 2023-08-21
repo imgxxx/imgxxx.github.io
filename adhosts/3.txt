@@ -1,6 +1,6 @@
 #白名单
 v.redd.it
-
+cdn.ynuf.aliapp.org.w.alikunlun.com
 @@||bsccdn.net^
 
 auni.telecome.cn
