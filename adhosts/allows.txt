@@ -1,5 +1,10 @@
 #测试版规则
 
+||pcps.chinaunicom.cn^
+||mediacps.meituan.com^
+||imgcps.jd.com^
+||tap-dsp.iem.taptap.cn^
+
 #数川广告
 ||shuchuandata.com^
 ||sspapi.shuchuandata.com^
