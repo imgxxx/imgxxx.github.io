@@ -1,5 +1,15 @@
 #测试版规则
 
+||hkrpg-log-upload.mihoyo.com^
+||log-alibaba-taobao-douyin.cdn.bcebos.com^
+||log-tjqy.shzbkj.com^
+||ys-log-upload.mihoyo.com^
+||logbk-qd.amemv.com^
+||front-h5-log.black-unique.com^
+||log-api.xiaoantech.com^
+||wxmini-log.hortorgames.com^
+
+||cps.manhama.cn
 ||pcps.chinaunicom.cn^
 ||mediacps.meituan.com^
 ||imgcps.jd.com^
