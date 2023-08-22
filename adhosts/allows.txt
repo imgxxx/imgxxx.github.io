@@ -1,4 +1,10 @@
 #测试版规则
+||tapad.iem.taptap.cn^
+||tmeadkg.y.qq.com^
+||cps.manhama.cn^
+||tmeadquic.y.qq.com^
+
+
 
 ||hkrpg-log-upload.mihoyo.com^
 ||log-alibaba-taobao-douyin.cdn.bcebos.com^
