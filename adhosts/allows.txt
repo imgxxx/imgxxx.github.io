@@ -5,7 +5,7 @@
 ||tmeadquic.y.qq.com^
 ||ecps.oss-cn-hangzhou.aliyuncs.com^
 ||cps.ucpaas.com^
-
+||api-dsp-report.smartisan.com^
 ||hkrpg-log-upload.mihoyo.com^
 ||log-alibaba-taobao-douyin.cdn.bcebos.com^
 ||log-tjqy.shzbkj.com^
