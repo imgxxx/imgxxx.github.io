@@ -3,8 +3,8 @@
 ||tmeadkg.y.qq.com^
 ||cps.manhama.cn^
 ||tmeadquic.y.qq.com^
-
-
+||ecps.oss-cn-hangzhou.aliyuncs.com^
+||cps.ucpaas.com^
 
 ||hkrpg-log-upload.mihoyo.com^
 ||log-alibaba-taobao-douyin.cdn.bcebos.com^
