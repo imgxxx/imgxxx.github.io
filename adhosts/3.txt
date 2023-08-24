@@ -1,5 +1,8 @@
 #白名单
-
+@@||push.heytapmobi.com^
+httpdns.push.heytapmobi.com
+api.open.oppomobile.com
+@@||push.oppomobile.com^
 
 #陌生号码识别接口
 tmfsdk.m.qq.com
