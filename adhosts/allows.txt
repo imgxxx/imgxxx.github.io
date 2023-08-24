@@ -1,4 +1,9 @@
 #测试版规则
+||www.pangolin-dsp-toutiao.com^
+||pangolin-dsp-toutiao.com^
+||rpt.cps.qq.com^
+||cps.qq.com^
+
 #注释||audiostatlog.cc.163.com^
 ||logapisixgw.cc.163.com^
 ||idatalogconf.iflysec.com^
