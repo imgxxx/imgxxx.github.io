@@ -1,4 +1,9 @@
 #白名单
+adashx4yt.m.taobao.com.gds.alibabadns.com
+h-adashx.ut.cainiao.com
+adashx.ut.amap.com
+
+
 v.redd.it
 cdn.ynuf.aliapp.org.w.alikunlun.com
 @@||bsccdn.net^
