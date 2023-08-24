@@ -1,4 +1,15 @@
 #白名单
+
+
+#陌生号码识别接口
+tmfsdk.m.qq.com
+
+
+wukongapi.vivo.com.cn
+zhanstatic.vivo.com.cn
+st-zhan.vivo.com.cn
+zhan.vivo.com.cn
+
 adashx4yt.m.taobao.com.gds.alibabadns.com
 h-adashx.ut.cainiao.com
 adashx.ut.amap.com
