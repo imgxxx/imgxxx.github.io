@@ -14,7 +14,7 @@ down.apps.sina.cn
 download.qidian.com
 
 
-
+isdk.heytapmobi.com
 @@||push.heytapmobi.com^
 httpdns.push.heytapmobi.com
 api.open.oppomobile.com
