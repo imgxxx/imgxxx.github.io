@@ -1,4 +1,12 @@
 #白名单
+defaultts.tc.qq.com
+richmedia.video.qq.com
+video.dispatch.tc.qq.com
+qqpublic.qpic.cn
+isure6.stream.qqmusic.qq.com
+isure.stream.qqmusic.qq.com
+aedns.weixin.qq.com
+
 @@||push.heytapmobi.com^
 httpdns.push.heytapmobi.com
 api.open.oppomobile.com
