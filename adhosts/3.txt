@@ -7,7 +7,7 @@ api.open.oppomobile.com
 #陌生号码识别接口
 tmfsdk.m.qq.com
 
-
+musicps.p2p.qq.com
 wukongapi.vivo.com.cn
 zhanstatic.vivo.com.cn
 st-zhan.vivo.com.cn
