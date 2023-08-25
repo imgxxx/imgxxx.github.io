@@ -6,6 +6,14 @@ qqpublic.qpic.cn
 isure6.stream.qqmusic.qq.com
 isure.stream.qqmusic.qq.com
 aedns.weixin.qq.com
+ws6.stream.qqmusic.qq.com
+s7.music.126.net
+update.dbankcdn.com
+download.api.bsb.baidu.com
+down.apps.sina.cn
+download.qidian.com
+
+
 
 @@||push.heytapmobi.com^
 httpdns.push.heytapmobi.com
