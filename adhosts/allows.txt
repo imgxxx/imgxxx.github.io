@@ -1,4 +1,6 @@
 #测试版规则
+
+||crrbpa.com^
 ||tmeadbak.y.qq.com^
 ||www.pangolin-dsp-toutiao.com^
 ||pangolin-dsp-toutiao.com^
