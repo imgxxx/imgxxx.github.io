@@ -1,5 +1,5 @@
 #测试版规则
-
+||pangolin.snssdk.com^$important
 ||crrbpa.com^
 ||tmeadbak.y.qq.com^
 ||www.pangolin-dsp-toutiao.com^
