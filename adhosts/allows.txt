@@ -1,4 +1,5 @@
 #测试版规则
+||tmeadbak.y.qq.com^
 ||www.pangolin-dsp-toutiao.com^
 ||pangolin-dsp-toutiao.com^
 ||rpt.cps.qq.com^
