@@ -5,13 +5,14 @@
 ||sdk-log.partner.sm.cn^$important
 ||log-common.yunxuetang.cn^
 
+
+
 @@||51y5.net^
 ||dmp-data.vip.com^
 #注释||a1.wifi188.com^
 #注释||cds.wifi188.com^
-
+||efmobi.com^
 ||static.66mobi.com^
-#注释||dcmdac.y5kfpt.com^
 ||news-log.51y5.net^$important
 
 
