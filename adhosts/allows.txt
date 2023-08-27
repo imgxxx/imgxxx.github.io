@@ -5,6 +5,15 @@
 ||sdk-log.partner.sm.cn^$important
 ||log-common.yunxuetang.cn^
 
+@@||51y5.net^
+||dmp-data.vip.com^
+||a1.wifi188.com^
+||cds.wifi188.com^
+||d.wifi188.com^
+||static.66mobi.com^
+||dcmdac.y5kfpt.com^
+||news-log.51y5.net^$important
+
 
 ||searchlog.html5.qq.com^
 ||vlog-api.xchanger.cn^
