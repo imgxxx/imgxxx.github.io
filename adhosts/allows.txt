@@ -8,10 +8,10 @@
 @@||51y5.net^
 ||dmp-data.vip.com^
 #注释||a1.wifi188.com^
-||cds.wifi188.com^
+#注释||cds.wifi188.com^
 
 ||static.66mobi.com^
-||dcmdac.y5kfpt.com^
+#注释||dcmdac.y5kfpt.com^
 ||news-log.51y5.net^$important
 
 
