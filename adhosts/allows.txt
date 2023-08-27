@@ -1,4 +1,13 @@
 #测试版规则
+||applog-perf.lc.quark.cn^$important
+||log-lf.snssdk.com^$important
+||clientlog*.music.163.com^$important
+||sdk-log.partner.sm.cn^$important
+||log-common.yunxuetang.cn^
+
+
+||searchlog.html5.qq.com^
+||vlog-api.xchanger.cn^
 ||pangolin.snssdk.com^$important
 ||crrbpa.com^
 ||tmeadbak.y.qq.com^
