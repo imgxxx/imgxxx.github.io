@@ -87,7 +87,7 @@ aweme.snssdk.com
 @@||baidubce.com^
 h-adashx.ut.amap.com
 @@||xunyou.mobi^
-@@||51y5.net^
+#注释@@||51y5.net^
 conf-darwin.xycdn.com
 gsg.lingxigames.com
 galaxias-api.lingxigames.com
