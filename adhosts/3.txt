@@ -1,4 +1,7 @@
 #白名单
+s.click.taobao.com
+uland.taobao.com
+
 defaultts.tc.qq.com
 richmedia.video.qq.com
 video.dispatch.tc.qq.com
