@@ -1,11 +1,13 @@
 #测试版规则
+
+||adcdn6.tencentmusic.com^
+||adcdn*.tencentmusic.com^
+
 ||applog-perf.lc.quark.cn^$important
 ||log-lf.snssdk.com^$important
 ||clientlog*.music.163.com^$important
 ||sdk-log.partner.sm.cn^$important
 ||log-common.yunxuetang.cn^
-
-
 
 @@||51y5.net^
 ||dmp-data.vip.com^
