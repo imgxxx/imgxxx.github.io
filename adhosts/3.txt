@@ -1,4 +1,8 @@
 #白名单
+@@||mbdp*.bdstatic.com^
+fex.bdstatic.com
+dss2.bdstatic.com
+
 zj.stream.tencentmusic.com
 
 
