@@ -1,4 +1,6 @@
 #白名单
+beacon-api.aliyuncs.com
+
 stat2-ans.chaoxing.com
 @@||chaoxing.com^
 @@||aichaoxing.com^
