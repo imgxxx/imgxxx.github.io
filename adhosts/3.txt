@@ -1,5 +1,9 @@
 #白名单
+stat2-ans.chaoxing.com
+@@||chaoxing.com^
+@@||aichaoxing.com^
 
+@@||fanxing.kugou.com^
 @@||mbdp*.bdstatic.com^
 fex.bdstatic.com
 dss2.bdstatic.com
