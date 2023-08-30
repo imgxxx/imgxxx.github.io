@@ -1,4 +1,6 @@
 #白名单
+@@||ulogs.umengcloud.com
+
 @@||mbdp*.bdstatic.com^
 fex.bdstatic.com
 dss2.bdstatic.com
