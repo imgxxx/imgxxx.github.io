@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||mmstat.com
+
 ||client-log.dewu.com^
 ||logv3.shanbay.com^
 ||logtc.sf-express.com^
