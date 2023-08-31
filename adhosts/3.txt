@@ -1,4 +1,8 @@
 #白名单
+p1-pay.eckwai.com
+vhs.wwstat.com
+
+
 a1.alibabausercontent.com
 ecmb.bdimg.com
 appc.baidu.com
