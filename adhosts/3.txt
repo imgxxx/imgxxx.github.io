@@ -3,6 +3,8 @@ market.m.qq.com
 @@||tdid.m.qq.com
 ping.cloud.tencent.com
 
+@@||1010pic.com^
+
 beacon-api.aliyuncs.com
 
 stat2-ans.chaoxing.com
