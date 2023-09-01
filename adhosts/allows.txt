@@ -1,4 +1,16 @@
 #测试版规则
+||agstat.html5.qq.com^
+||recmd.html5.qq.com^
+||upage.imtt.qq.com^
+||logsdk.qq.com^
+||growthpic.weishi.qq.com^
+||canvas.gdt.qq.com^
+||vp.html5.qq.com^
+||pingma.qq.com^
+||pp.myapp.com^
+||qbdsp.html5.qq.com^
+||v.gdt.qq.com^
+
 
 @@||mmstat.com
 
@@ -414,7 +426,7 @@ sf3-fe-tos.pglstatp-toutiao.com.queniuuf.com
 @@||met-badge.dreport.meituan.net^
 @@||met_metrics_mobile_meituan.dreport.meituan.net^
 @@||icloud.com.cn^
-@@||myapp.com^
+
 
 
 
