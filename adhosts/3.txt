@@ -1,4 +1,8 @@
 #白名单
+
+#移动网盘活动
+ad.mcloud.139.com
+
 p1-pay.eckwai.com
 vhs.wwstat.com
 
