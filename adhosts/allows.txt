@@ -7,11 +7,11 @@
 ||canvas.gdt.qq.com^
 ||vp.html5.qq.com^
 ||pingma.qq.com^
-||pp.myapp.com^
+||pp.myapp.com^$important
 ||qbdsp.html5.qq.com^
 ||v.gdt.qq.com^
 
-
+@@||myapp.com^
 @@||mmstat.com
 
 ||client-log.dewu.com^
