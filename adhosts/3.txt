@@ -1,4 +1,7 @@
 #白名单
+img-hwy.9liuda.com
+static.new669.com
+
 
 #移动网盘活动
 #注释ad.mcloud.139.com
