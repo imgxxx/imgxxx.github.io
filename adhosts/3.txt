@@ -1,4 +1,10 @@
 #白名单
+functional.events.data.microsoft.com
+pub.funshion.com
+
+#新氧医美
+@@||soyoung.com^
+
 img-hwy.9liuda.com
 static.new669.com
 
