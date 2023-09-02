@@ -1,7 +1,12 @@
 #测试版规则
+@@||meitustat.com^
+@@||meitu.com^
+@@||meitudata.com^
+||adui.tg.meitu.com^$important
+
+
+
 ||open.laiyagushi.com^
-
-
 
 ||agstat.html5.qq.com^
 ||recmd.html5.qq.com^
