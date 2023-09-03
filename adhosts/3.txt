@@ -1,4 +1,7 @@
 #白名单
+
+@@||woniu.com^
+
 functional.events.data.microsoft.com
 pub.funshion.com
 
