@@ -1,5 +1,30 @@
 #白名单
 
+
+
+#腾讯
+sensors.cloud.tencent.com
+act-api.cloud.tencent.com
+cloud.tencent.com
+#唯享
+api.union.vip.com
+mar.vip.com
+sc.appvipshop.com
+##微软
+answers.microsoft.com
+#知乎及验证码
+apm.zhihu.com
+zhihu-web-analytics.zhihu.com
+cstaticdun.126.net
+acstatic-dun.126.net
+ynuf.aliapp.org
+#微软商店
+@@||support.microsoft.com^
+@@||purchase.mp.microsoft.com^
+@@||store-images.microsoft.com^
+
+
+
 @@||woniu.com^
 
 functional.events.data.microsoft.com
