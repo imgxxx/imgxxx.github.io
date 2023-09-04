@@ -1,4 +1,7 @@
 #白名单
+@@||gitlab.com^
+@@||github.com^
+@@||cloudflare.com^
 
 
 
