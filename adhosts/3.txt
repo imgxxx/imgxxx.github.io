@@ -3,6 +3,7 @@
 
 
 #腾讯
+gchat.qpic.cn
 sensors.cloud.tencent.com
 act-api.cloud.tencent.com
 cloud.tencent.com
