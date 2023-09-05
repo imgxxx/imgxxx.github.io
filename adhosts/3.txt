@@ -1,4 +1,8 @@
 #白名单
+@@||v*-novelapp.fqnovelvod.com^
+a0.app.xiaomi.com
+sentry.d.xiaomi.net
+
 retcode.taobao.com
 gaode-jmacs.m.taobao.com
 @@||amdc.m.taobao.com^
