@@ -2,7 +2,7 @@
 @@||v*-novelapp.fqnovelvod.com^
 a0.app.xiaomi.com
 api.duapp.n.shifen.com
-sentry.d.xiaomi.net
+
 
 retcode.taobao.com
 gaode-jmacs.m.taobao.com
