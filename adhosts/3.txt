@@ -1,4 +1,8 @@
 #白名单
+retcode.taobao.com
+gaode-jmacs.m.taobao.com
+@@||amdc.m.taobao.com^
+openjmacs4uc.m.taobao.com
 
 # 修复小米健康无法打开手表公交卡的问题
 cnbj1.fds.api.xiaomi.com
