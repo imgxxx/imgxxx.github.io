@@ -1,4 +1,84 @@
 #白名单
+
+# 修复小米健康无法打开手表公交卡的问题
+cnbj1.fds.api.xiaomi.com
+cdn.cnbj1.fds.api.mi-img.com
+api.vip.miui.com
+
+# twitter短域名
+t.co
+
+# 京东试用
+wl.jd.com
+
+# 知乎
+appcloud2.zhihu.com
+sugar.zhihu.com
+
+# 小米主题无法打开，小米推送失效
+data.mistat.xiaomi.com
+
+
+
+# 皮皮虾无法访问问题
+dm.toutiao.com
+dig.bdurl.net
+ws.ribaoapi.com
+
+# 应用汇
+mobile.appchina.com
+
+# 小米云服务状态
+statusapi.micloud.xiaomi.net
+
+# 搜狗输入法
+input.shouji.sogou.com
+worldwide.sogou.com
+
+
+# 小米
+api.g.micloud.xiaomi.net
+data.sec.miui.com
+
+
+
+# 淘宝
+h-adashx.ut.taobao.com
+m.intl.taobao.com
+
+# 微信红包
+as.weixin.qq.com
+
+# Todesk
+st.todesk.com
+
+# 小米api相关
+api.tw06.xlmc.sec.miui.com
+
+
+# 淘宝相关
+eco.taobao.com
+audid-api.taobao.com
+amdcopen.m.taobao.com
+
+# 头条搜索
+is.snssdk.com
+
+
+# 小米推送域名
+api.xmpush.xiaomi.com
+feedback.xmpush.xiaomi.com
+stats.xmpush.xiaomi.com
+long.new.xmpush.xiaomi.com
+api.push.global.xiaomi.com
+feedback.push.global.xiaomi.com
+long.new.push.global.xiaomi.com
+
+
+# 
+client-uc.heytapmobi.com
+
+
 @@||gitlab.com^
 @@||github.com^
 @@||cloudflare.com^
