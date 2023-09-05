@@ -1,6 +1,7 @@
 #白名单
 @@||v*-novelapp.fqnovelvod.com^
 a0.app.xiaomi.com
+api.duapp.n.shifen.com
 sentry.d.xiaomi.net
 
 retcode.taobao.com
@@ -278,7 +279,7 @@ referee.xiaohongshu.com
 crash.xiaohongshu.com
 flash.xiaohongshu.com
 apppush-sh5.xiaohongshu.com
-new-sentry-relay.xiaohongshu.com
+
 @@||cdntips.net^
 
 crystalapp.miguvideo.com
@@ -401,7 +402,7 @@ newvector.map.baidu.com
 
 fastort-stsdk.vivo.com.cn
 fastpnrt-stsdk.vivo.com.cn
-wtradv.market.xiaomi.com
+
 appgoad.189.cn
 
 ort-newdev-stsdk.vivo.com.cn
