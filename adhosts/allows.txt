@@ -1,5 +1,7 @@
 #测试版规则
 
+||gif.rouctbo.cn^
+
 ||log-center.jdd.com^
 ||log-report.17zuoye.com^
 ||log-cs.pp.cn^
