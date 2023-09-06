@@ -1,5 +1,6 @@
 #测试版规则
 
+||bdp666.top^
 ||gif.rouctbo.cn^
 
 ||log-center.jdd.com^
