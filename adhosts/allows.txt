@@ -46,7 +46,7 @@
 ||cpc-message-cn.heytapmobi.com^
 ||u.cpc.heytapmobi.com^
 ||activity-cpc.heytapimage.com^
-||service-cn.hwccpc.com^
+
 ||adkwai.com
 ||ccpce-cn.consumer.huawei.com^
 
