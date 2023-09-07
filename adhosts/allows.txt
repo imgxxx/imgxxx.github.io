@@ -1,8 +1,5 @@
 #测试版规则
-||ads.hms.huawei.com^
-||ssp-partner.alibaba.com^
-
-
+||v*-ad.ixigua.com^
 ||bdp666.top^
 ||gif.rouctbo.cn^
 
@@ -1933,9 +1930,7 @@ hw-ot-ad.a.yximgs.com
 ads-marketing-vivofs.vivo.com.cn
 
 
-zhan.vivo.com.cn
-zhanstatic.vivo.com.cn
-st-zhan.vivo.com.cn
+
 st-sentinel.vivo.com.cn
 wukong-statics-vivofs.vivo.com.cn
 sspstatic.vivo.com.cn
@@ -2151,7 +2146,7 @@ apidns.kwd.inkuai.com
 @@||guoguouser.cainiao.com
 @@||cn-acs.m.cainiao.com
 
-a1.alibabausercontent.com
+
 
 
 

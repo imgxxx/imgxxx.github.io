@@ -48744,7 +48744,6 @@
 ||idot.cz
 ||idpix.media6degrees.com
 ||idrct.com
-||idreamsky.com
 ||idregie.com
 ||idritracker.com
 ||ids.cdnwidget.com
@@ -87906,7 +87905,7 @@
 ||v2html.atm.youku.com
 ||v2profit.com
 ||v2st.shinobi.jp
-||v3-ad.ixigua.com
+||v*-ad.ixigua.com
 ||v3-ads-st-vcdn.anthill.vn
 ||v3-st-vcdn.anthill.vn
 ||v3.adition.com
@@ -98132,7 +98131,6 @@
 ||www.idirect.com
 ||www.idol-dvd.com
 ||www.idolove.com
-||www.idreamsky.com
 ||www.idritracker.com
 ||www.idspaces.ero-advertising.com
 ||www.ieginc.com
