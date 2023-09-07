@@ -3,7 +3,6 @@ sdk-webstatic.mihoyo.com.w.cdngslb.com
 uploadstatic.mihoyo.com
 
 
-@@||v*-novelapp.fqnovelvod.com^
 a0.app.xiaomi.com
 api.duapp.n.shifen.com
 @@||idreamsky.com^
