@@ -1,7 +1,7 @@
 #白名单
 sdk-webstatic.mihoyo.com.w.cdngslb.com
 uploadstatic.mihoyo.com
-
+d.app6.i4.cn
 
 a0.app.xiaomi.com
 api.duapp.n.shifen.com
