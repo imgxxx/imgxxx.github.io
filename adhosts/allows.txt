@@ -1,4 +1,7 @@
 #测试版规则
+||ads.hms.huawei.com^
+||ssp-partner.alibaba.com^
+
 
 ||bdp666.top^
 ||gif.rouctbo.cn^
