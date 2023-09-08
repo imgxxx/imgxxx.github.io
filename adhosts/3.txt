@@ -1,7 +1,7 @@
 #白名单
-statwup.huya.com
+#注释statwup.huya.com
 kiwistatic.huya.com
-metric.huya.com
+#注释metric.huya.com
 @@||node.ppio.cloud^
 
 sdk-webstatic.mihoyo.com.w.cdngslb.com
