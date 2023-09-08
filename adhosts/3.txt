@@ -1,4 +1,9 @@
 #白名单
+statwup.huya.com
+kiwistatic.huya.com
+metric.huya.com
+@@||node.ppio.cloud^
+
 sdk-webstatic.mihoyo.com.w.cdngslb.com
 uploadstatic.mihoyo.com
 d.app6.i4.cn
