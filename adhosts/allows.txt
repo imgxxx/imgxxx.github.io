@@ -1,6 +1,16 @@
 #测试版规则
 ||cpc-comment-cn.heytapmobi.com^
 ||cpc.people.com.cn^
+||detaillog-sh-base.zego.im^
+||upweb-app-log-2gdx04da52926cd3-1258344700.ap-shanghai.app.tcloudbase.com^
+||kye-log-sdk.ky-express.com^
+||log-verify.dutils.com^
+||log-report.rtc.volcvideo.com^
+||trtc-sdk-log-1258344699.cos.ap-guangzhou.myqcloud.com
+||log-alibaba-taobao-1313984679.cos.ap-guangzhou.myqcloud.com^
+||zhou.myqcloud.com^
+||xlog-txy.elong.com^
+
 
 ||v*-ad.ixigua.com^
 ||bdp666.top^
