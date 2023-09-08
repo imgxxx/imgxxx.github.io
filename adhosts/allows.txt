@@ -1,8 +1,11 @@
 #测试版规则
+||cpc-comment-cn.heytapmobi.com^
+||cpc.people.com.cn^
+
 ||v*-ad.ixigua.com^
 ||bdp666.top^
 ||gif.rouctbo.cn^
-
+||e-ad-monitor.huya.com^
 ||log-center.jdd.com^
 ||log-report.17zuoye.com^
 ||log-cs.pp.cn^
