@@ -1,8 +1,13 @@
 #测试版规则
 ||huashan-datahub-drcn.emui.dbankcloud.com^
-video-tx-drcn.dbankcdn.cn
-video-hw-drcn.dbankcdn.cn
-video-bd-drcn.dbankcdn.cn
+||feeds-drcn.cloud.huawei.com.cn^
+||feeds-drcn.dbankcdn.cn^
+||h5hosting-drcn.dbankcdn.cn^
+||h5hosting.dbankcdn.com^
+||smart-feeds.vivo.com.cn^
+
+
+
 
 ||cpc-comment-cn.heytapmobi.com^
 ||cpc.people.com.cn^
