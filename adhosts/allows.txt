@@ -1,7 +1,6 @@
 #测试版规则
 ||huashan-datahub-drcn.emui.dbankcloud.com^
-#注释||feeds-drcn.cloud.huawei.com.cn^
-#注释||feeds-drcn.dbankcdn.cn^
+
 ||h5hosting-drcn.dbankcdn.cn^
 ||h5hosting.dbankcdn.com^
 ||smart-feeds.vivo.com.cn^
