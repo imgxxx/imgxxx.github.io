@@ -144,7 +144,6 @@
 
 ||cps.manhama.cn
 ||pcps.chinaunicom.cn^
-||mediacps.meituan.com^
 ||imgcps.jd.com^
 ||tap-dsp.iem.taptap.cn^
 
