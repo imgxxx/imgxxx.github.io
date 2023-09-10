@@ -1,4 +1,9 @@
 #测试版规则
+||huashan-datahub-drcn.emui.dbankcloud.com^
+video-tx-drcn.dbankcdn.cn
+video-hw-drcn.dbankcdn.cn
+video-bd-drcn.dbankcdn.cn
+
 ||cpc-comment-cn.heytapmobi.com^
 ||cpc.people.com.cn^
 ||detaillog-sh-base.zego.im^
