@@ -1,4 +1,7 @@
 #白名单
+mediacps.meituan.com
+
+
 #注释statwup.huya.com
 kiwistatic.huya.com
 #注释metric.huya.com
