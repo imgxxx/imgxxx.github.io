@@ -1,5 +1,5 @@
 #白名单
-
+#华为浏览器新闻
 @@||feeds-drcn.cloud.huawei.com.cn^
 @@||feeds-drcn.dbankcdn.cn^
 
