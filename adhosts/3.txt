@@ -1,4 +1,11 @@
 #白名单
+
+@@||feeds-drcn.cloud.huawei.com.cn^
+@@||feeds-drcn.dbankcdn.cn^
+
+
+
+
 #美团外卖红包天天领
 mediacps.meituan.com
 
