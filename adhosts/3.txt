@@ -1,6 +1,7 @@
 #白名单
 open-iflow.meizu.com
-
+stat-download-ssl.xunlei.com
+@@||stat.download.xunlei.com^
 
 #华为浏览器新闻
 @@||feeds-drcn.cloud.huawei.com.cn^
