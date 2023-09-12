@@ -1,4 +1,11 @@
 #测试版规则
+||medproad.com^
+||qcwx.medproad.com^
+||api.jietuhb.com^
+||aiclk.com^
+
+
+
 ||huashan-datahub-drcn.emui.dbankcloud.com^
 
 ||h5hosting-drcn.dbankcdn.cn^
