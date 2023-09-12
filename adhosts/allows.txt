@@ -1,4 +1,8 @@
 #测试版规则
+||luimg.baidu.com^
+||taopianimage1.com^
+
+
 ||medproad.com^
 ||qcwx.medproad.com^
 ||api.jietuhb.com^
