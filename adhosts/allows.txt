@@ -1,4 +1,7 @@
 #测试版规则
+||adxst.vivo.com.cn^
+
+
 ||luimg.baidu.com^
 ||taopianimage1.com^
 
