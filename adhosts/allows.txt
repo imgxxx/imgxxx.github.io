@@ -1,4 +1,6 @@
 #测试版规则
+
+||advox.globalvoices.org^
 ||adxst.vivo.com.cn^
 
 
