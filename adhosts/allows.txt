@@ -1,4 +1,5 @@
 #测试版规则
+||douyinad.com^
 ||ksyunad.com^
 ||advox.globalvoices.org^
 ||adxst.vivo.com.cn^
