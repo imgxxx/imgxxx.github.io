@@ -1,4 +1,9 @@
 #测试版规则
+||logs.quickapi.net^
+||sdk-log.youdao.com^
+||msch.f.360.cn^$important
+||impdsp.meituan.com^
+
 ||douyinad.com^
 ||ksyunad.com^
 ||advox.globalvoices.org^
