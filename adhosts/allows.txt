@@ -1,5 +1,4 @@
 #测试版规则
-c-res.chuangke.tv
 res.chuangke.tv
 catalog.chuangke.tv
 
