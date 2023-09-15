@@ -1,7 +1,11 @@
 #白名单
+#墨迹天气
+stat.moji.com
+uupt.api.moji.com
+weather.api.moji.com
+
+
 @@||moutai519.com.cn^
-
-
 
 open-iflow.meizu.com
 stat-download-ssl.xunlei.com
