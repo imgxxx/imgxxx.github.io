@@ -1,4 +1,11 @@
 #测试版规则
+c-res.chuangke.tv
+res.chuangke.tv
+catalog.chuangke.tv
+conf.chuangke.tv
+
+
+
 ||f.360.cn^$important
 ||s.360.cn^$important
 ||logs.quickapi.net^
