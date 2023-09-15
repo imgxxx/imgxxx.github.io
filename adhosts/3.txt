@@ -1,7 +1,7 @@
 #白名单
 
 d.chuangke.tv
-
+my.chuangke.tv
 
 #墨迹天气
 stat.moji.com
