@@ -1,6 +1,9 @@
 #白名单
 link.zhihu.com
 
+#乐播投屏
+@@||hpplay.cn^
+
 #墨迹天气
 stat.moji.com
 uupt.api.moji.com
