@@ -1,4 +1,8 @@
 #测试版规则
+
+aduland.meituan.com
+
+
 res.chuangke.tv
 #catalog.chuangke.tv
 
