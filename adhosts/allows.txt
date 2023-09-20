@@ -1,4 +1,6 @@
 #测试版规则
+||admama.com^
+
 adeng.lebo.cn
 adconsent.samsungrs.com
 adctrlpre-def.fanjing666.com
