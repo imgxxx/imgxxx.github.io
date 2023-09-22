@@ -1,5 +1,7 @@
 #白名单
 
+@@||optimix.cn^
+
 @@||youzu.com^
 
 wq.360buyimg.com
