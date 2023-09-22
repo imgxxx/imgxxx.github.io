@@ -1,4 +1,7 @@
 #白名单
+
+@@||youzu.com^
+
 wq.360buyimg.com
 link.zhihu.com
 
