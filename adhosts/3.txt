@@ -1,4 +1,7 @@
 #白名单
+@@||free-lbv3.idouyinvod.com^
+@@||idouyinvod.com^
+
 #快手
 @@||kskwai.com^
 
