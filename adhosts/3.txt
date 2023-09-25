@@ -1,4 +1,8 @@
 #白名单
+tprs.rsscc.com
+cdn.133.cn
+jp.rsscc.com
+
 @@||free-lbv3.idouyinvod.com^
 @@||idouyinvod.com^
 
