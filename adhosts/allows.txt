@@ -1,6 +1,4 @@
 #测试版规则
-jp.rsscc.com
-
 ||admama.com^
 
 adeng.lebo.cn
