@@ -1,6 +1,4 @@
 #测试版规则
-
-tprs.rsscc.com
 jp.rsscc.com
 
 ||admama.com^
