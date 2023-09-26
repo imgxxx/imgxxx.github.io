@@ -1,6 +1,5 @@
 #测试版规则
 
-||ddxq.mob^
 ||pubgw.api.ddxq.mobi^
 ||tqads.com^
 ||api.mobrtb.com^
