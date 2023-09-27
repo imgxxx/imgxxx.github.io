@@ -1,4 +1,8 @@
 #白名单
+metrics1-drcn.dt.dbankcloud.cn
+metrics-drcn.dt.hihonorcloud.com
+
+
 #考途APP
 m-ad.tutusouti.com
 
