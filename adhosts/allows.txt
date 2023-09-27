@@ -147,7 +147,7 @@ res.chuangke.tv
 ||activity-cpc.heytapimage.com^
 
 ||adkwai.com
-||ccpce-cn.consumer.huawei.com^
+
 
 ||static-cpc.heytapimage.com^
 ||cpc-setting-cn.oppomobile.com^
