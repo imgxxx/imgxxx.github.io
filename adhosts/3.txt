@@ -1,4 +1,7 @@
 #白名单
+#渝客行
+busserver.cqyukexing.com
+@@||cqyukexing.com^
 
 #考途APP
 m-ad.tutusouti.com
