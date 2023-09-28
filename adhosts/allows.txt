@@ -1,4 +1,8 @@
 #测试版规则
+m.ningbojisheng.cn
+plt.mikecrm.com
+
+
 #超级课程表
 ||course*.myfriday.cn^
 ||7xl9wf.com2.z0.glb.qiniucdn.com^
