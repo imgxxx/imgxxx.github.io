@@ -1,4 +1,7 @@
 #白名单
+
+cdn.poizon.com
+
 #渝客行
 busserver.cqyukexing.com
 @@||cqyukexing.com^
