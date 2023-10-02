@@ -1,4 +1,7 @@
 #测试版规则
+ocpc.baidu.com
+statapi.htycpc.com
+
 m.ningbojisheng.cn
 plt.mikecrm.com
 
