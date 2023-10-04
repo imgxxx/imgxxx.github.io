@@ -1,5 +1,9 @@
 #测试版规则
 
+#反诈劫持
+||182.43.124.6^
+
+
 ||c.sayhi.360.cn^$important
 
 ocpc.baidu.com
