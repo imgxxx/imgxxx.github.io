@@ -1,4 +1,6 @@
 #白名单
+h5.youzan.com
+
 passport.bilibili.cn
 passport.cainiao.com
 
