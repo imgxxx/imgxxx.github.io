@@ -1,4 +1,7 @@
 #测试版规则
+#华为安装界面推广
+||installer-drcn.hispace.hihonorcloud.com^
+
 
 #反诈劫持
 ||182.43.124.6^
