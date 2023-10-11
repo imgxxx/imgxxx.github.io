@@ -1,4 +1,7 @@
 #白名单
+#一号店
+||yhd.com^
+
 h5.youzan.com
 
 passport.bilibili.cn
