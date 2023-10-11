@@ -1,9 +1,5 @@
 #白名单
 
-gw5bak.chinamobile.push.mcp.weibo.cn
-bootpreload.uve.weibo.com
-vs.biz.weibo.com
-
 @@||wetransfer.com^
 
 
