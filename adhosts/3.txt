@@ -1,5 +1,7 @@
 #白名单
 
+cdn2.biubiu001.com
+
 @@||wetransfer.com^
 
 
