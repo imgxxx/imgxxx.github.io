@@ -1,4 +1,11 @@
 #测试版规则
+
+||advertise-api.black-unique.com^
+||16dd-advertise-1252317822.file.myqcloud.com^
+||advertise.cloudlinks.cn^
+
+
+
 #华为安装界面推广
 ||installer-drcn.hispace.hihonorcloud.com^
 
