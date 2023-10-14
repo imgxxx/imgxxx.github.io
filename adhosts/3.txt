@@ -1,4 +1,5 @@
 #白名单
+@@||daily.zhihu.com^
 
 @@||traceint.com^
 
