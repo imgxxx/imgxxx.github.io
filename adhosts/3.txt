@@ -1,4 +1,7 @@
 #白名单
+
+sync-sfuploadapi.lenovomm.cn
+
 @@||daily.zhihu.com^
 
 @@||traceint.com^
