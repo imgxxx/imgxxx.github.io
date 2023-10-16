@@ -1,4 +1,6 @@
 #白名单
+misc.360buyimg.com
+
 
 sync-sfuploadapi.lenovomm.cn
 
