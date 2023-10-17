@@ -1,4 +1,9 @@
 #测试版规则
+||cpc-topic-cn.heytapmobi.com^
+||aduland.dianping.com^
+||advertise.duolabao.com^
+||adpinpai.video.weibocdn.com^
+
 ||yt-advert-api.beijingcj.cn^
 
 
