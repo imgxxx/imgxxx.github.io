@@ -1,4 +1,6 @@
 #白名单
+beacon.cdn.qq.com
+
 @@||yaohuo.me^
 
 misc.360buyimg.com
