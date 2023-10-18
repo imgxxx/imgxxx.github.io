@@ -1,4 +1,8 @@
 #测试版规则
+
+
+
+||alibabacorp.sm.cn^$important
 ||ai.advertisement.alibabacorp.sm.cn^$important
 ||appadvise.eastmoney.com^$important
 ||app-advertise.zhihuishu.com^$important
