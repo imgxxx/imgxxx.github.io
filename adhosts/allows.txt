@@ -1,4 +1,15 @@
 #测试版规则
+||ai.advertisement.alibabacorp.sm.cn^$important
+||appadvise.eastmoney.com^$important
+||app-advertise.zhihuishu.com^$important
+||hcadv.video.ums.uc.cn^$important
+||wtradv.market.xiaomi.com^$important
+||hcadv.video.ums.uc.cn.danuoyi.tbcache.com
+
+||adver.cxzntc.com^
+||sso.dd-advisor.com^
+||websgsadvert.sanguosha.com^
+||advmonitor.tantanapp.com^
 ||cpc-topic-cn.heytapmobi.com^
 ||aduland.dianping.com^
 ||advertise.duolabao.com^
