@@ -1,8 +1,15 @@
 #测试版规则
 
+||sheincorp.cn^
+||odec-public.sheincorp.cn^
+||al.corp-flv.huya.com^
+||cdnfile.corp.kuaishou.com^
+||infra-admin.corp.kuaishou.com^
 
 
-||alibabacorp.sm.cn^$important
+
+
+#注释||alibabacorp.sm.cn^$important
 ||ai.advertisement.alibabacorp.sm.cn^$important
 ||appadvise.eastmoney.com^$important
 ||app-advertise.zhihuishu.com^$important
