@@ -1,4 +1,10 @@
 #白名单
+
+stat.mail.vip.xunlei.com
+msg.client.xunlei.com
+soa-vip-ssl.xunlei.com
+sentry.xunlei.com
+
 beacon.cdn.qq.com
 
 @@||yaohuo.me^
