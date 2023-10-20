@@ -1,4 +1,7 @@
 #白名单
+cmts.iqiyi.com
+hotchat-im.iqiyi.com
+
 
 stat.mail.vip.xunlei.com
 msg.client.xunlei.com
