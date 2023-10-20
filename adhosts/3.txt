@@ -1,4 +1,8 @@
 #白名单
+
+
+b.qchannel03.cn
+cdndata.video.iqiyi.com
 cmts.iqiyi.com
 hotchat-im.iqiyi.com
 
