@@ -1,7 +1,7 @@
 #测试版规则
 @@||2345.com^
 @@||image.smxjysm.com^
-
+@@||img.smxjysm.com^
 
 
 ||sheincorp.cn^
