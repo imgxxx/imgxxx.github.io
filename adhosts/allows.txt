@@ -1,4 +1,8 @@
 #测试版规则
+@@||2345.com^
+@@||image.smxjysm.com^
+
+
 
 ||sheincorp.cn^
 ||odec-public.sheincorp.cn^
