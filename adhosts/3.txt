@@ -1,5 +1,5 @@
 #白名单
-@@||2345.com^
+
 
 b.qchannel03.cn
 cdndata.video.iqiyi.com
