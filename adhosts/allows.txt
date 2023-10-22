@@ -118,8 +118,8 @@ res.chuangke.tv
 
 ||huashan-datahub-drcn.emui.dbankcloud.com^
 
-||h5hosting-drcn.dbankcdn.cn^
-||h5hosting.dbankcdn.com^
+#注释||h5hosting-drcn.dbankcdn.cn^
+#注释||h5hosting.dbankcdn.com^
 ||smart-feeds.vivo.com.cn^
 
 
