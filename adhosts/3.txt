@@ -1,6 +1,8 @@
 #白名单
-#华为通用页面
-h5hosting.dbankcdn.com
+
+
+#华为商城
+sgw-cn.c.huawei.com
 
 
 b.qchannel03.cn
