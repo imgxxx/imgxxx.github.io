@@ -1,5 +1,6 @@
 #白名单
-
+#e江南
+ecardh5.17wanxiao.com
 
 #华为商城
 sgw-cn.c.huawei.com
