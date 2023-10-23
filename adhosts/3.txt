@@ -1,4 +1,8 @@
 #白名单
+
+@@||edu.cn^
+
+
 #e江南
 ecardh5.17wanxiao.com
 
