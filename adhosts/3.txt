@@ -3,6 +3,9 @@ vlog-api.xchanger.cn
 ivotrace.geely.com
 device-api.xchanger.cn
 restsdk.amap.com
+@@||xchanger.cn^
+@@||geely.com^
+@@||lynkco.com.cn^
 
 
 acpstatic.95516.com
