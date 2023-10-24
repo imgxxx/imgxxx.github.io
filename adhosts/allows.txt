@@ -1,6 +1,6 @@
 #测试版规则
 
-
+wcp.taobao.com
 adpicture.17wanxiao.com
 
 #V影软件
