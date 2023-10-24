@@ -1,4 +1,10 @@
 #白名单
+vlog-api.xchanger.cn
+ivotrace.geely.com
+device-api.xchanger.cn
+restsdk.amap.com
+
+
 acpstatic.95516.com
 
 
