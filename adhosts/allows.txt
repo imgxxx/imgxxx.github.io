@@ -1,4 +1,8 @@
 #测试版规则
+webdav.advanced360.top
+advmanager.techfun.pl.lan
+hadv2.aiyunlu.cn
+cbd-advert-prod.oss-cn-beijing.aliyuncs.com
 
 wcp.taobao.com
 adpicture.17wanxiao.com
