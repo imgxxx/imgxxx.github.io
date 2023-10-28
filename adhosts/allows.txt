@@ -1,4 +1,7 @@
 #测试版规则
+advapi.nfnews.com
+advertylgy.leiting.com
+
 adpub.upchinaproduct.com
 tt.m.bestadprof.com
 ||bestadprof.com^
