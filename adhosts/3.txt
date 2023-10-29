@@ -1,4 +1,6 @@
 #白名单
+#什么值得买
+sqdsp-vod.smzdm.com
 
 #领克车机
 vlog-api.xchanger.cn
