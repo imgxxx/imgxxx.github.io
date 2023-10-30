@@ -1,4 +1,7 @@
 #白名单
+sp1.baidu.com
+gimg4.baidu.com
+
 #什么值得买
 sqdsp-vod.smzdm.com
 
