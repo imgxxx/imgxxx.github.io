@@ -1,4 +1,7 @@
 #白名单
+
+ali2.a.yximgs.com
+
 sp1.baidu.com
 gimg4.baidu.com
 
