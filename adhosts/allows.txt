@@ -70,12 +70,11 @@ static-1.pddpic.com
 ||ads.bjlxin.cn^
 ||sis.jpush.io^
 ||ad.e.kuaishou.com^
-||ali2.a.yximgs.com^
+||shenshiads.com^
 ||open-set-api.shenshiads.com^
 ||adsdkapi.dxys.pro^
 ||adsdk.9imobi.com^
 ||uapi-ads.vivo.com.cn^
-||uploads1.gifshow.com^
 ||adsfilebssdlbig.ali.kugou.com^
 ||ad.cyapi.cn^
 ||ad.tianmu.mobi^
@@ -104,7 +103,6 @@ static-1.pddpic.com
 ||adservice.aiyouaiyou.cn^
 ||ads-shopping.shouqianba.com^
 ||ads.superawesome.tv^
-||mssdk3-normal-lf.zijieapi.com^
 ||ads.zhinengxiyifang.cn^
 ||ads.huawei.com^
 ||cross-ad-api.afunapp.com^
