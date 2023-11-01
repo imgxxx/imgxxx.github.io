@@ -1,4 +1,17 @@
 #测试版规则
+||cpc-service-square.qquanquan.com^
+||madx.sweet-data.com^
+||cv.e.adxqd.com^
+||adxqd.com^
+||adxflow.com^
+||imp.adxflow.com^
+||izjie.cn^
+||zjadx.izjie.cn^
+||cdn.pyadx.top^
+||vadx.maintj.hdjad.com^
+
+
+
 @@||suchenqaq.club^
 @@||downloads1.suchenqaq.club^
 
