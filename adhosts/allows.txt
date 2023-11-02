@@ -1,4 +1,8 @@
 #测试版规则
+#短网址
+@@||sourl.cn^
+
+
 ||admamax.com^
 ||zsrp01.admamax.com^
 ||advertserver.hiby.com^
