@@ -1,4 +1,5 @@
 #白名单
+v1.weather.moji.com
 
 ali2.a.yximgs.com
 
