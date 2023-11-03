@@ -1,4 +1,8 @@
 #白名单
+#京东推广大图
+dgstatic.jd.com
+
+
 v1.weather.moji.com
 
 ali2.a.yximgs.com
