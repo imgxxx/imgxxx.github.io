@@ -1,4 +1,9 @@
 #测试版规则
+#度小满
+@@||duxiaoman.com^
+
+
+
 #短网址
 @@||sourl.cn^
 
