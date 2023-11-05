@@ -1,4 +1,6 @@
 #白名单
+oss.aliyuncs.com
+
 #京东推广大图
 dgstatic.jd.com
 
