@@ -1,4 +1,7 @@
 #白名单
+#QQ音乐播放器视频背景
+bgv.music.tc.qq.com
+
 oss.aliyuncs.com
 
 #京东推广大图
