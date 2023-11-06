@@ -1,4 +1,7 @@
 #白名单
+@@||oray.net^
+@@||oray.com^
+
 news.qhstatic.com
 
 ws.stream.qqmusic.qq.com
