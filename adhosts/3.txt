@@ -1,6 +1,7 @@
 #白名单
 news.qhstatic.com
 
+ws.stream.qqmusic.qq.com
 ws.stream.kg.qq.com
 
 
