@@ -1,4 +1,9 @@
 #白名单
+news.qhstatic.com
+
+ws.stream.kg.qq.com
+
+
 #QQ音乐播放器视频背景
 bgv.music.tc.qq.com
 
