@@ -1,4 +1,8 @@
 #测试版规则
+adverting-files.4pyun.com
+gdcadv.ocsp-certum.com
+free.advertising.cdn.vip.xunlei.com
+
 #度小满
 @@||duxiaoman.com^
 
