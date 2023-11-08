@@ -1,4 +1,6 @@
 #白名单
+dl.reg.163.com
+
 @@||oray.net^
 @@||oray.com^
 
