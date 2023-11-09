@@ -1,4 +1,7 @@
 #测试版规则
+@@||jiaoyimao.com^
+
+
 ocpc-api.hnaoka.com
 ||cpaactive.m.jd.com^
 ||a.cpc.heytapmobi.com^
