@@ -1,4 +1,6 @@
 #白名单
+nexim.my.salesforce-sites.com
+
 dl.reg.163.com
 
 @@||oray.net^
