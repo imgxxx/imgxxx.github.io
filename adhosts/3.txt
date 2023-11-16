@@ -1,6 +1,6 @@
 #白名单
+#东方财富动态
 appadvise.eastmoney.com
-
 @@||mobappconfig.securities.eastmoney.com
 
 nexim.my.salesforce-sites.com
