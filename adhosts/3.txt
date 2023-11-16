@@ -1,4 +1,8 @@
 #白名单
+@@||oschina.com^
+@@||oschina.net^
+
+
 #东方财富动态
 appadvise.eastmoney.com
 @@||mobappconfig.securities.eastmoney.com
