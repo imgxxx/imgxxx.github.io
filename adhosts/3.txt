@@ -1,7 +1,7 @@
 #白名单
 fdfs.xmcdn.com
-
-
+@@||120askimages.com^
+@@||letao.com^
 @@||shangxueba.com^
 @@||baixing.com^
 @@||to8to.com^
