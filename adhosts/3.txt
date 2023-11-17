@@ -1,4 +1,5 @@
 #白名单
+@@||baixing.com^
 @@||to8to.com^
 
 #天极网
