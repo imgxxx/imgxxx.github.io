@@ -1,4 +1,6 @@
 #白名单
+dualstack-a.apilocate.amap.com
+
 @@||oschina.com^
 @@||oschina.net^
 
