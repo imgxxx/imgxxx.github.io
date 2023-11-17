@@ -1,4 +1,7 @@
 #白名单
+fdfs.xmcdn.com
+
+
 @@||shangxueba.com^
 @@||baixing.com^
 @@||to8to.com^
