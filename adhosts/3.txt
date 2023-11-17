@@ -1,4 +1,7 @@
 #白名单
+#天极网
+image.tianjimedia.com
+
 dualstack-a.apilocate.amap.com
 
 @@||oschina.com^
