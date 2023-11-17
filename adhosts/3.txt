@@ -1,4 +1,5 @@
 #白名单
+@@||nuomiphp.com^
 fdfs.xmcdn.com
 @@||120askimages.com^
 @@||letao.com^
