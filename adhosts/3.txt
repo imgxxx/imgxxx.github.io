@@ -1,4 +1,5 @@
 #白名单
+@@||shangxueba.com^
 @@||baixing.com^
 @@||to8to.com^
 
