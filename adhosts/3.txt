@@ -1,4 +1,6 @@
 #白名单
+eclick.baidu.com
+
 @@||linkedin.com^
 @@||nuomiphp.com^
 fdfs.xmcdn.com
