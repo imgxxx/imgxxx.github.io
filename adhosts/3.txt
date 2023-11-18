@@ -1,5 +1,5 @@
 #白名单
-www.linkedin.com
+@@||linkedin.com^
 @@||nuomiphp.com^
 fdfs.xmcdn.com
 @@||120askimages.com^
