@@ -1,4 +1,10 @@
 #测试版规则
+advertise.bczeducation.cn
+
+test-static-advertising.bangdao-tech.com
+
+bangdao-advertising-static-test.oss-cn-hangzhou.aliyuncs.com
+
 @@||codesoftchina.com^
 
 @@||crackingcity.com^
