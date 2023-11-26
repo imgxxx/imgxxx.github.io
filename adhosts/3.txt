@@ -1,4 +1,7 @@
 #白名单
+res.mall.10010.cn
+@@||vmallres.com^
+
 iauto.ifeng.com
 eclick.baidu.com
 
