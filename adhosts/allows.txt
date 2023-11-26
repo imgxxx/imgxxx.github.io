@@ -1,4 +1,13 @@
 #测试版规则
+@@||dbankcdn.com^
+@@||dbankcdn.cn^
+
+
+||sspservice-drcn.dbankcdn.cn^$important
+||hc-ssp.sm.cn^$important
+
+
+
 advertise.bczeducation.cn
 
 test-static-advertising.bangdao-tech.com
