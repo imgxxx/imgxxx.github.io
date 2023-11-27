@@ -1,78 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>清新云DNS隐私政策声明（测试版）
-</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>清新云DNS隐私政策声明（测试版）</title>
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f2f2f2;
-    }
-
-    .container {
-      background-color: #ffffff;
+    /* 拟态风格样式 */
+    .card {
+      background-color: #FFF;
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      padding: 30px;
-      max-width: 500px;
-      width: 90%;
-    }
-
-    h1 {
-      text-align: center;
-      margin-top: 0;
-    }
-
-    p {
-      margin-top: 20px;
-      line-height: 1.4;
-    }
-
-    .button-container {
-      text-align: center;
-      margin-top: 40px;
+      border-radius: 4px;
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
     .button {
-      padding: 12px 24px;
+      display: inline-block;
+      padding: 10px 20px;
       font-size: 16px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      outline: none;
-      transition: all 0.3s ease;
+      background-color: #007BFF;
+      color: #FFF;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
     }
 
-    .agree-button {
-      background-color: #61bd4f;
-      color: #ffffff;
-      margin-right: 10px;
-    }
-
-    .disagree-button {
-      background-color: #eb5a46;
-      color: #ffffff;
-    }
-
-    .agree-button:hover,
-    .disagree-button:hover {
-      filter: brightness(90%);
+    .button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>清新云DNS隐私政策声明（测试版）
-</h1>
-
+  <div class="card">
+    <center>
+    <h2>清新云DNS隐私政策声明（测试版）</h2>
+    </center>
     <p>欢迎使用清新云DNS。在继续之前，请阅读并理解我们的隐私政策。使用前必须阅读隐私政策，点击同意或使用清新云DNS默认同意清新云DNS隐私政策，隐私政策基于相关的国家法律，法规和规则，并且用户同意严格遵守以下义务：</p>
-
-    <!-- 在这里插入您的隐私政策内容 -->
+    
+    <!-- 隐私政策内容 -->
     <p><a>（1）使用清新云DNS，必须遵守中华人民共和国相关法律法规。</a></p>
     <p><a>（2）请勿使用清新云DNS从事非法活动，例如发布谣言，逃避监管，窃取商业秘密，窃取个人信息等互联网违法违规行为。</a></p>
     <p><a>（3）不得攻击清新云DNS网站和服务器。</a></p>
@@ -85,13 +52,21 @@
     <p><a>（10）清新云DNS仅用于学术交流使用，未使用鉴权和限制用户使用，服务器和网站随时关停。</a></p>
     <p><a>（11）清新云DNS承诺不泄露和出售用户数据。</a></p>
     <p><a>注意：用户点击同意或使用清新云DNS默认已经同意该声明或隐私政策，该站保留在不通知用户的情况下删除该站中不符合法律政策或不真实信息的所有信息的权利。如果用户不遵守上述规定，站点有权做出独立判断并采取诸如暂停或关闭用户帐户的措施。</a></p>
-    <p><a>警告：清新云DNS仅用于学术交流使用！</a></p>
-    
+    <font color="red"><p><a>警告：清新云DNS仅用于学术交流使用！</a></p></font>
+  <center>  
+    <!-- 同意按钮 -->
+    <a href="https://ipv4dns.com/download/download.html" class="button">同意</a>
 
-    <div class="button-container">
-      <button class="button agree-button" onclick="window.location.href='https://ipv4dns.com/download/download.html'">同意</button>
-      <button class="button disagree-button" onclick="window.location.href='https://ipv4dns.com'">拒绝</button>
-    </div>
+    <!-- 拒绝按钮 -->
+    <a href="https://ipv4dns.com" class="button">拒绝</a>
+  </center>
   </div>
+
+  <script>
+    // 自动滚动到底部以阅读全部内容
+    window.onload = function() {
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+  </script>
 </body>
 </html>
