@@ -1,4 +1,6 @@
 #测试版规则
+@@||cdn.bootcss.com^
+
 @@||dbankcdn.com^
 @@||dbankcdn.cn^
 
