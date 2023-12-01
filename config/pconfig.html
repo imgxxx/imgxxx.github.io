@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
     
-    <title>IPv4 DNS</title>
+    <title>清新云DNS</title>
     <link rel="icon" href="staticpdns/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="staticpdns/css/normalize.css">
     <link rel="stylesheet" href="staticpdns/css/bootstrap.min.css">
@@ -10,7 +10,7 @@
 <body>
     <div class="header">
         <div class="nav-header">
-            <h1><a href="../">IPv4DNS</a></h1>
+            <h1><a href="../">清新云DNS</a></h1>
             <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -20,7 +20,7 @@
         </div> 
         <div class="pconfig-banner">
             <div class="banner-content">
-                <h2>支持的设备</h2>
+                <h2>DoT和DoH</h2>
                 <h2>使用教程</h2>
             </div>
         </div>
@@ -57,109 +57,7 @@
         </div>
         <div class="page-map">
             <div class="pconfig-info tab-content">
-                <div role="tabpanel" class="tab-pane active" id="windows">
-                    <h2>Windows 10/8/7</h2>
-                    <div class="row row_info">
-		                <div class="col-sm-12 col-md-12 col-bottom">
-		                	<p>
-		                		<span class="circle_num_back">
-      								<span class="circle_num">1</span>
- 								</span>
-		                		<span>右键网络进入属性或者右键右下角的Inernet进入网络共享中心，如下图:</span>
-		                	</p>
-							<img src="staticpdns/images/config/1.png" alt="" style="width:308px;">
-							<img src="staticpdns/images/config/2.png" alt="" style="width:252px;vertical-align: bottom;">
-						</div>
-						<div class="col-sm-12 col-md-12 col-bottom">
-		                	<p>
-		                		<span class="circle_num_back">
-      								<span class="circle_num">2</span>
- 								</span>
-		                		<span>点击网络和共享中心左侧的"更改适配器设置"链接，如下图:</span>
-		                	</p>               
-							<img src="staticpdns/images/config/3.png" alt="" style="width:780px;">
-						</div>
-						<div class="col-sm-12 col-md-12 col-bottom">
-		                	<p>
-		                		<span class="circle_num_back">
-      								<span class="circle_num">3</span>
- 								</span>
-		                		<span>选中正在联网的网络连接，鼠标右键菜单里选择"属性"进入</span>
-		                	</p>
-							<img src="staticpdns/images/config/4.png" alt="" style="width:780px;">
-						</div>
-						<div class="col-sm-12 col-md-12 col-bottom">
-		                	<p>
-		                		<span class="circle_num_back">
-      								<span class="circle_num">4</span>
- 								</span>
-		                		<span>在网络连接属性窗口中选中"Internet 协议版本 6 (TCP/IPv6)"，然后点击"属性"，或者双击进入</span>
-		                	</p>
-							<img src="staticpdns/images/config/5.png" alt="" style="width:412px;">
-						</div>
-						<div class="col-sm-12 col-md-12 col-bottom">
-		                	<p>
-		                		<span class="circle_num_back">
-      								<span class="circle_num">5</span>
- 								</span>
-		                		<span>选择使用指定的DNS，在DNS服务器地址中输入240c::6666，输入完成点击确定</span>
-		                	</p>
-							<img src="staticpdns/images/config/6.png" alt="" style="width:901px;">
-						</div>
-						<div class="col-sm-12 col-md-12 col-bottom">
-		                	<p>
-		                		<span class="circle_num_back">
-      								<span class="circle_num">6</span>
- 								</span>
-		                		<span>再次点击确定完成设置</span>
-		                	</p>
-							<img src="staticpdns/images/config/7.png" alt="" style="width:412px;">
-						</div>
-					</div>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="mac">
-                    <h2>MacOS系统 DNS配置步骤如下</h2>
-                    <div class="row row_info">
-		                <div class="col-sm-12 col-md-12 col-bottom">
-		                	<p>
-		                		<span class="circle_num_back">
-      								<span class="circle_num">1</span>
- 								</span>
-		                		<span>选取苹果菜单 &gt;"系统偏好设置"，然后点按"网络"。</span>
-		                	</p>
-                            <img src="staticpdns/images/config/m1.png" alt="" style="width:700px;">
-                        </div>
-		                <div class="col-sm-12 col-md-12 col-bottom">
-		                	<p>
-		                		<span class="circle_num_back">
-      								<span class="circle_num">2</span>
- 								</span>
-		                		<span>从列表中选择想要使用的网络连接服务（例如 AirPort 或以太网，除非您指定其他服务），然后点按"高级"。</span>
-		                	</p>
-                            <img src="staticpdns/images/config/m2.png" alt="" style="width:700px;">
-                         </div>
-		                <div class="col-sm-12 col-md-12">
-		                	<p>
-		                		<span class="circle_num_back">
-      								<span class="circle_num">3</span>
- 								</span>
-		                		<span>点按"DNS"，然后点按"DNS 服务器"列表底部的添加 (+)。输入 DNS 服务器的IPv6 地址(240c::6666)。</span>
-		                	</p>
-                            <img src="staticpdns/images/config/m3.png" alt="" style="width:700px;">
-                        </div>		                
-		                <div class="col-sm-12 col-md-12">
-		                	<p>
-		                		<span class="circle_num_back">
-      								<span class="circle_num">4</span>
- 								</span>
-		                		<span>完成后，点按"好"。</span>
-		                	</p>		                    
-		                </div>
-					</div>
-                </div>
-                <!--<div role="tabpanel" class="tab-pane" id="mobile">
-                    <h2>移动设备</h2>
-                </div>-->
+  
 				<div role="tabpanel" class="tab-pane" id="dot">
                     <h2>什么是DoT?</h2>
                     <p>DNS over TLS（简称DoT）是一项域名解析安全扩展协议，它使用TLS协议加密传输用户和递归解析服务器之间的DNS消息，起到防止中间用户窃听和域名查询隐私泄漏的作用。已列入标准文档（参见 RFC 7858 和 RFC 8310）。</p>
@@ -320,24 +218,7 @@
             www.ipv4dns.com
             <a href="http://ipv4dns.com">搜索</a>
         </div>
-<!--        <div class="copyright">
-            <h2>联系我们</h2>
-            <div class="row">
-                <div class="col-sm-6 col-md-8">
-                    <p class="pfont">电话</p>
-                    <p class="ptwo">地址</p>
-                </div>
-                <div class="col-sm-3 col-md-2">
-                    <p class="pfont">产品列表</p>
-                    <p><a href="../" target="_blank">IPv4公共DNS</a></p>
-                </div>
-                <div class="col-sm-3 col-md-2">
-                    <p class="pfont">关于我们</p>
-                    <p><img src="staticpdns/images/CFIEC.png" alt="" style="height:30px;"></p>
-                    <p class="ptwo pcompany"><span>© 2022 云怡设计</span></p>
-                    <p class="ptwo pcompany"><span><a href="https://beian.miit.gov.cn/">ICP</a></span></p>
-                    <p class="ptwo pcompany"><span><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="staticpdns/images/guohui.png" style="float:left;">公网安备</a></span></p>
-                    -->
+
                 </div>
             </div>    
         </div>
