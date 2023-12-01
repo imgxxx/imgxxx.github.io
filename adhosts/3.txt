@@ -1,4 +1,7 @@
 #白名单
+supporttickets.intel.com
+@@||intel.com^
+
 res.mall.10010.cn
 @@||vmallres.com^
 
