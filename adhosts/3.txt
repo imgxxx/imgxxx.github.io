@@ -1,6 +1,5 @@
 #白名单
-qbdsp.html5.qq.com
-
+rmpad.imtt.qq.com
 
 supporttickets.intel.com
 @@||intel.com^
