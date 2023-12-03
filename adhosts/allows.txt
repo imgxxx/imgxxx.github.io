@@ -1,4 +1,6 @@
 #测试版规则
+neptune-platform.zijieapi.com
+
 @@||cdn.bootcss.com^
 
 @@||dbankcdn.com^
