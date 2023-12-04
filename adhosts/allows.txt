@@ -1,10 +1,8 @@
 #测试版规则
 ||collect.hupu.com^$important
-||themis.hupu.com^$important
-||hss.hupu.com^$important
-||nur.hupu.com^$important
+
 ||goblin.hupu.com^$important
-||fireclick.jd.com^$important
+
 
 gdadv.siisoo.com
 qn-advertisement.yolanda.hk
