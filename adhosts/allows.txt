@@ -1,6 +1,7 @@
 #测试版规则
+#虎扑开屏广告
 ||collect.hupu.com^$important
-
+||e-goblin.hupu.com^$important
 ||goblin.hupu.com^$important
 
 
