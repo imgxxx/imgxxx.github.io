@@ -1,6 +1,6 @@
 #白名单
 ilive.qq.com
-
+a.video.qq.com
 
 #高德热点推流图片
 optimus-ads.amap.com
