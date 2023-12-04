@@ -1,10 +1,12 @@
 #白名单
 ilive.qq.com
+#腾讯视频登录接口
 a.video.qq.com
 
 #高德热点推流图片
 optimus-ads.amap.com
 
+#QQ浏览器图标
 rmpad.imtt.qq.com
 
 supporttickets.intel.com
