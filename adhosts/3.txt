@@ -1,4 +1,6 @@
 #白名单
+@@||ubi.com^
+
 ilive.qq.com
 #腾讯视频登录接口
 a.video.qq.com
