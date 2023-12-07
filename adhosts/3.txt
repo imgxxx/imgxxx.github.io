@@ -1,4 +1,7 @@
 #白名单
+
+@@||gimg*.baidu.com^
+
 open.kuaishou.com
 
 #人脸识别
