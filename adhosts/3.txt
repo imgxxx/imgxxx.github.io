@@ -1,4 +1,6 @@
 #白名单
+open.kuaishou.com
+
 #人脸识别
 sdk.open.talk.getui.com
 sdk.open.talk.gepush.com
