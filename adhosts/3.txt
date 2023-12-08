@@ -1,5 +1,23 @@
 #白名单
 
+#OPPO
+jits-sa-cn.heytapmobi.com
+gslb-cn.cdo.heytapmobi.com
+appconf.heytapdownload.com
+api-cn.cdo.heytapmobi.com
+api-cn.theme.heytapmobi.com
+ifind.heytapmobi.com
+omes-sec.heytapmobi.com
+apisnd.heytapmobi.com
+tts.bot.heytapmobi.com
+v2.bot.heytapmobi.com
+mdp-upgrade-cn.heytapmobi.com
+openapi-slp.heytapmobi.com
+cloudkit-api-cn.ocloud.heytapmobi.com
+client-uc.heytapmobi.com
+ocloud-backup-cn.heytapmobi.com
+
+
 @@||gimg*.baidu.com^
 
 open.kuaishou.com
