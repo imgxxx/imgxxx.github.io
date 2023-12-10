@@ -1,5 +1,8 @@
 #白名单
 
+#框架元素js
+lf1-cdn-tos.bytegoofy.com
+
 #OPPO
 jits-sa-cn.heytapmobi.com
 gslb-cn.cdo.heytapmobi.com
