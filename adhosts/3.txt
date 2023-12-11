@@ -1,4 +1,7 @@
 #白名单
+w2.eckwai.com
+w1.eckwai.com
+js.a.kspkg.com
 
 #框架元素js
 lf1-cdn-tos.bytegoofy.com
