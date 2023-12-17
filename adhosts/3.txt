@@ -1,4 +1,8 @@
 #白名单
+xp.apple.com 
+gdmf.apple.com
+
+
 w2.eckwai.com
 w1.eckwai.com
 js.a.kspkg.com
