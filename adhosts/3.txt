@@ -1,4 +1,6 @@
 #白名单
+ku.m.taobao.com
+
 xp.apple.com 
 gdmf.apple.com
 
