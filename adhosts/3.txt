@@ -1,4 +1,6 @@
 #白名单
+msg.douyu.com
+
 gift.douyucdn.cn
 cs-op.douyucdn.cn
 apm.douyucdn.cn
