@@ -2,10 +2,10 @@
 msg.douyu.com
 
 gift.douyucdn.cn
-cs-op.douyucdn.cn
-apm.douyucdn.cn
-apmconfig.douyucdn.cn
-dotcounter.douyucdn.cn
+#cs-op.douyucdn.cn
+#apm.douyucdn.cn
+#apmconfig.douyucdn.cn
+#dotcounter.douyucdn.cn
 rtbapi.douyucdn.cn
 capi.douyucdn.cn
 
