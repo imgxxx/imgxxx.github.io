@@ -6,8 +6,8 @@ msg.douyu.com
 #apm.douyucdn.cn
 #apmconfig.douyucdn.cn
 #dotcounter.douyucdn.cn
-rtbapi.douyucdn.cn
-capi.douyucdn.cn
+#rtbapi.douyucdn.cn
+#capi.douyucdn.cn
 
 ku.m.taobao.com
 
