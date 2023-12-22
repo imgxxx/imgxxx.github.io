@@ -1,4 +1,9 @@
 #白名单
+alimama.cloudvideocdn.taobao.com
+odin.re.taobao.com
+c-adash.m.taobao.com
+adashbc.m.taobao.com
+
 msg.douyu.com
 
 #gift.douyucdn.cn
