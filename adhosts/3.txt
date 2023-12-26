@@ -1,4 +1,10 @@
 #白名单
+
+#白名单正则表达式
+/((^)|(.))pcdn./
+
+
+
 tracker.pcdn.yximgs.com
 api.kuaishouzt.com
 api.e.kuaishou.cn
