@@ -1,4 +1,15 @@
 #白名单
+tracker.pcdn.yximgs.com
+api.kuaishouzt.com
+api.e.kuaishou.cn
+api.kwaizt.com
+api.e.kuaishou.com
+p2-pp.adukwai.com
+p1-pp.adukwai.com
+browser.vivo.com.cn
+natdetection.onethingpcs.com
+@@||data.kuiniuca.com^
+
 alimama.cloudvideocdn.taobao.com
 odin.re.taobao.com
 c-adash.m.taobao.com
