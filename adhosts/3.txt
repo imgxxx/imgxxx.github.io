@@ -1,8 +1,12 @@
 #白名单
 
+apidns.kwd.inkuai.com
+hdns.ksyun.com
+
+
 #白名单正则表达式
 /((^)|(.))pcdn./
-
+/((^)|(.))httpdns./
 
 
 tracker.pcdn.yximgs.com
