@@ -1,4 +1,5 @@
 #白名单
+@@||nstool.netease.com^
 
 apidns.kwd.inkuai.com
 hdns.ksyun.com
