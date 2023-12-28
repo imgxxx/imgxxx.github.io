@@ -1,4 +1,7 @@
 #白名单
+nbcollect.kugou.com
+nbcollectretry.kugou.com
+
 @@||nstool.netease.com^
 
 apidns.kwd.inkuai.com
