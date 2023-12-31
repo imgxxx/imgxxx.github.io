@@ -1,4 +1,7 @@
 #测试版规则
+||*.lan^
+
+
 adx-cn.ads.vungle.com
 
 tc.bian666.cf
