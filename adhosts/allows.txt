@@ -1,6 +1,6 @@
 #测试版规则
 
-||hd.mi.com^$important
+@@||hd.mi.com^$important
 
 ||*.lan^
 
