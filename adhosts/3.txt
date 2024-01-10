@@ -1,4 +1,7 @@
 #白名单
+
+tracking.miui.com
+
 nbcollect.kugou.com
 nbcollectretry.kugou.com
 
