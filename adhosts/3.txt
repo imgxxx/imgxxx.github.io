@@ -1,6 +1,6 @@
 #白名单
+www.alidns.com
 
-tracking.miui.com
 
 nbcollect.kugou.com
 nbcollectretry.kugou.com
