@@ -1,5 +1,9 @@
 #白名单
+
+
 www.alidns.com
+
+passport.biubiu001.com
 ug.biubiu001.com
 member.biubiu001.com
 @@||intel.cn^
