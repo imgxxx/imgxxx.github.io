@@ -1,6 +1,7 @@
 #白名单
 www.alidns.com
 
+@@||intel.cn^
 
 nbcollect.kugou.com
 nbcollectretry.kugou.com
