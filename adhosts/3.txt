@@ -1,6 +1,7 @@
 #白名单
 www.alidns.com
-
+ug.biubiu001.com
+member.biubiu001.com
 @@||intel.cn^
 
 nbcollect.kugou.com
