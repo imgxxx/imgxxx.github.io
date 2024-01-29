@@ -1,5 +1,11 @@
 #白名单
+@@||wxqcloud.qq.com^
 
+
+
+
+watson.events.data.microsoft.com
+@@||target.microsoft.com^
 
 www.alidns.com
 
