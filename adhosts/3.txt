@@ -1,7 +1,12 @@
 #白名单
 @@||wxqcloud.qq.com^
 
+clientservices.googleapis.com
+history.google.com
+@@||googletagmanager.com^
+crashlyticsreports-pa.googleapis.com
 
+device-provisioning.googleapis.com
 
 
 watson.events.data.microsoft.com
