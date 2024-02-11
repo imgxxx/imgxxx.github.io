@@ -1,6 +1,9 @@
 #白名单
 @@||wxqcloud.qq.com^
 
+appcloud.zhihu.com
+push.zhihu.com
+
 clientservices.googleapis.com
 history.google.com
 @@||googletagmanager.com^
