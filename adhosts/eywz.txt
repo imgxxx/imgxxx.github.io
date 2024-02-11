@@ -20,10 +20,8 @@
 ||xbfxs6.com^$important
 ||737qq.pw^$important
 ||737qq.pw^$important
-||zhibo8.com^$important
-||azhibo.com^$important
-||azhibo.com^$important
-||xfzb2.cc^$important
+#||zhibo8.com^$important
+#||azhibo.com^$important
 ||xfzb2.cc^$important
 ||noi107.com^$important
 ||tquzifwb.com^$important
