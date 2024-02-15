@@ -1,4 +1,10 @@
 #白名单
+unipayupg.wostore.cn
+api-cn.store.heytapmobi.com
+
+
+
+
 @@||wxqcloud.qq.com^
 openmonitor.alipay-eco.com
 appcloud.zhihu.com
