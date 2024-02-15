@@ -1,6 +1,6 @@
 #白名单
 @@||wxqcloud.qq.com^
-
+openmonitor.alipay-eco.com
 appcloud.zhihu.com
 push.zhihu.com
 
