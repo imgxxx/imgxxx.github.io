@@ -1,8 +1,24 @@
 #测试版规则
 
+||45.79.19.196^$important
+||72.14.185.43^$important
+||45.33.30.197^$important
+||198.58.118.167^$important
+||173.255.194.134^$important
+||45.33.23.183^$important
+||45.33.20.235^$important
+||45.56.79.23^$important
+||72.14.178.174^$important
+||45.33.18.44^$important
+||96.126.123.244^$important
+||45.33.2.79^$important
+
+
+
+
 @@||hd.mi.com^$important
 
-||*.lan^
+#注释||*.lan^
 
 
 adx-cn.ads.vungle.com
