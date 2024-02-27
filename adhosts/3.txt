@@ -4,6 +4,8 @@ api-cn.store.heytapmobi.com
 
 @@||isite.baidu.com^
 @@||liveweb*.msstatic.com^
+business.msstatic.com
+
 
 @@||wxqcloud.qq.com^
 openmonitor.alipay-eco.com
