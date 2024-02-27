@@ -3,7 +3,7 @@ unipayupg.wostore.cn
 api-cn.store.heytapmobi.com
 
 @@||isite.baidu.com^
-
+@@||liveweb*.msstatic.com^
 
 @@||wxqcloud.qq.com^
 openmonitor.alipay-eco.com
