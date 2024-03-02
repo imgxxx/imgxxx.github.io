@@ -1,5 +1,7 @@
 #测试版规则
 
+logcn.ys7.com
+
 ||45.79.19.196^$important
 ||72.14.185.43^$important
 ||45.33.30.197^$important
