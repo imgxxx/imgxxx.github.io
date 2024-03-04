@@ -10,7 +10,7 @@
 					<key>DNSProtocol</key>
 					<string>HTTPS</string>
 					<key>ServerURL</key>
-					<string>https://doh.ipv4dns.com/dns-query/ios</string>
+					<string>https://doh.ipv4dns.com/dns-query</string>
 				</dict>
 				<key>PayloadDescription</key>
 				<string>DNS官方网站：www.ipv4dns.com</string>
