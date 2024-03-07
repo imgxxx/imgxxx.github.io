@@ -1,4 +1,7 @@
 #白名单
+
+safebrowsing.urlsec.qq.com
+
 push.gifshow.com
 sdkoptedge.chinanetcenter.com
 anti-ad.net
