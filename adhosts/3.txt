@@ -1,7 +1,7 @@
 #白名单
 push.gifshow.com
 sdkoptedge.chinanetcenter.com
-
+anti-ad.net
 
 unipayupg.wostore.cn
 api-cn.store.heytapmobi.com
