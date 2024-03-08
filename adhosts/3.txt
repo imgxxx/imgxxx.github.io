@@ -1,5 +1,7 @@
 #白名单
 
+@@||wo.com.cn^
+
 @@||rockitv.com^
 @@||qmail.com^
 
