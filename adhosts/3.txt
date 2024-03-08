@@ -1,6 +1,7 @@
 #白名单
 
 @@||rockitv.com^
+@@||qmail.com^
 
 safebrowsing.urlsec.qq.com
 
