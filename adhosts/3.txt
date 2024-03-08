@@ -1,5 +1,7 @@
 #白名单
 
+@@||rockitv.com^
+
 safebrowsing.urlsec.qq.com
 
 push.gifshow.com
