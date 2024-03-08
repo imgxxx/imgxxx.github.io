@@ -1,5 +1,7 @@
 #白名单
 
+
+@@||shayujizhang.com^
 @@||wo.com.cn^
 
 @@||rockitv.com^
