@@ -1,6 +1,6 @@
 #白名单
-
-
+open.e.kuaishou.cn
+open.e.kuaishou.com
 @@||shayujizhang.com^
 @@||wo.com.cn^
 
