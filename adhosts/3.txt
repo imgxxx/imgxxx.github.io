@@ -1,5 +1,8 @@
 #白名单
 
+
+
+@@||aiseet.atianqi.com^
 @@||kuaishouzt.com^
 open.e.kuaishou.cn
 open.e.kuaishou.com
