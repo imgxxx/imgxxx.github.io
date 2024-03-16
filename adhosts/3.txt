@@ -6,6 +6,26 @@ info.zb.video.qq.com
 @@||tencent-cloud.cn^
 
 
+
+||weather-analytics-events.apple.com^
+||weather-community-drcn.weather.dbankcloud.cn^
+||weather-drcn.music.dbankcloud.cn^
+vlive.qqvideo.tc.qq.com
+
+||tmfmazu-wangka.m.qq.com^
+||tmfmazu.m.qq.com^
+||tmfsdk.m.qq.com^
+||tmfsdktcpv4.m.qq.com^
+||tnc3-aliec1.toutiaoapi.com^
+||tnc3-aliec2.bytedance.com^
+||tnc3-aliec2.toutiaoapi.com^
+||tnc3-alisc1.bytedance.com^
+||tnc3-bjlgy.bytedance.com^
+||tnc3-bjlgy.toutiaoapi.com^
+
+
+
+
 @@||aiseet.atianqi.com^
 @@||kuaishouzt.com^
 open.e.kuaishou.cn
