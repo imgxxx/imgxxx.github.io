@@ -5,6 +5,8 @@ info.zb.video.qq.com
 
 @@||tencent-cloud.cn^
 
+img3.funshion.com
+
 
 
 ||weather-analytics-events.apple.com^
