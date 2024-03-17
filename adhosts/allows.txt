@@ -1,4 +1,8 @@
 #测试版规则
+||backend.gravity-engine.com^$important
+||gravity-engine.com^$important
+||apithirdnew.hzwxbz2.cn^$important
+||hzwxbz2.cn^$important
 
 logcn.ys7.com
 
