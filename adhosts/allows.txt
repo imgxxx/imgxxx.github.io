@@ -1,4 +1,8 @@
 #测试版规则
+
+
+ws-keyboard.shouji.sogou.com
+
 callback.huiqunchina.com
 ||huiqunchina.com^$important
 ||feedback-c.zijieapi.com^$important
