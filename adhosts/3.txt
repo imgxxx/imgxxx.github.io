@@ -1,6 +1,6 @@
 #白名单
 www.myquark.cn
-easytomessage.com
+#easytomessage.com
 @@||unioncom.cc^
 acpstaticbj.95516.com
 
