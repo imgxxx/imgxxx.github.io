@@ -9,9 +9,6 @@ acpstaticbj.95516.com
 
 @@||95516.com^
 
-#暂时放行
-@@||yahoo.com^
-#暂时放行
 
 soup.v.qq.com
 bk.info.zb.video.qq.com
