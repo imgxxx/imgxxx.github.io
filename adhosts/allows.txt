@@ -1,6 +1,24 @@
 #测试版规则
 
+#暂时放行
+@@||yahoo.com^
+#暂时放行
 
+||360.yahoo.com^$important
+||ad.img.yahoo.co.kr^$important
+||ad.yahoo.com^$important
+||ads.auctions.yahoo.com^$important
+||ads.finance.yahoo.com^$important
+||ads1.vip.sc5.yahoo.com^$important
+||adserver.yahoo.com^$important
+||advision.webevents.yahoo.com^$important
+||au.adserver.yahoo.com^$important
+||*.adserver.yahoo.com^$important
+||pa.yahoo.com^$important
+||pclick.internal.yahoo.com^$important
+||promo.yahoo.com^$important
+||promotions.yahoo.com^$important
+||sweb1.ads.vip.sc5.yahoo.com^$important
 
 
 callback.huiqunchina.com
