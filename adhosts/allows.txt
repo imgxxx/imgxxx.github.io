@@ -1,4 +1,15 @@
 #测试版规则
+iadmusicmatvideo.music.126.net.p8.qcloudcdn.com
+logsdata.cxkfwn.com
+clientlogvodp2p.haplat.net
+dualstack-logs.amap.com.queniubl.com
+dualstack-logs.amap.com
+yylog.dt2.netease.com
+apm-log-upload.mihoyo.com
+dlog.737.com
+
+
+
 oxvlxwz.xyz
 @@||d.meituan.net^
 show.mwadx.com
