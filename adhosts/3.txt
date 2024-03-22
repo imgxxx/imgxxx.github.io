@@ -1,4 +1,6 @@
 #白名单
+alime.gauss.robot.image.alibabausercontent.com
+@@||alibabausercontent.com^
 
 ws-keyboard.shouji.sogou.com
 
