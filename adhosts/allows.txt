@@ -1,4 +1,6 @@
 #测试版规则
+oxvlxwz.xyz
+@@||d.meituan.net^
 
 #暂时放行
 @@||yahoo.com^
