@@ -1,4 +1,7 @@
 #白名单
+
+trace.threatbook.cn
+
 alime.gauss.robot.image.alibabausercontent.com
 @@||alibabausercontent.com^
 
