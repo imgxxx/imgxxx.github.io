@@ -1,5 +1,7 @@
 #白名单
 
+||isee.weishi.qq.com
+
 trace.threatbook.cn
 
 alime.gauss.robot.image.alibabausercontent.com
