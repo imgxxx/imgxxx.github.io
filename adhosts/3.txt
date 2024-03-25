@@ -1,6 +1,7 @@
 #白名单
 bsstrackercdnbj.kugou.com
-
+bsstrackercdngz.kugou.com
+@@||bsstracker*.kugou.com^
 
 @@||isee.weishi.qq.com
 
