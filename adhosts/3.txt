@@ -1,6 +1,8 @@
 #白名单
+bsstrackercdnbj.kugou.com
 
-||isee.weishi.qq.com
+
+@@||isee.weishi.qq.com
 
 trace.threatbook.cn
 
