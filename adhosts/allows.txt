@@ -17,7 +17,7 @@ data-collector.soulapp.cn
 collect.xiaopeng.com
 
 
-
+||*collect.*^
 
 
 logcollect.platform.kemai.com.cn
