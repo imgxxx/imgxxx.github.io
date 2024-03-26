@@ -1,4 +1,8 @@
 #白名单
+#一键登录接口
+@@||telecome.cn^
+
+xdcs-collector.ximalaya.com
 xdcs-collectorhera.ximalaya.com
 mobile.ximalaya.com
 mermaid.ximalaya.com
