@@ -2,6 +2,9 @@
 #一键登录接口
 @@||telecome.cn^
 
+sdkconfig.video.qq.com
+
+sysdk.cl2009.com
 xdcs-collector.ximalaya.com
 xdcs-collectorhera.ximalaya.com
 mobile.ximalaya.com
