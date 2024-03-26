@@ -1,4 +1,8 @@
 #白名单
+
+
+@@||v1d.szbdyd.com^
+
 #一键登录接口
 @@||telecome.cn^
 
