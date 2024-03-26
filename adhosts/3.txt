@@ -3,7 +3,7 @@
 @@||telecome.cn^
 
 sdkconfig.video.qq.com
-
+gslbali.ximalaya.com
 sysdk.cl2009.com
 xdcs-collector.ximalaya.com
 xdcs-collectorhera.ximalaya.com
