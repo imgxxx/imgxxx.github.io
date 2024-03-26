@@ -1,4 +1,7 @@
 #白名单
+msevents.microsoft.com
+@@||events.data.microsoft.com^
+
 
 
 @@||v1d.szbdyd.com^
