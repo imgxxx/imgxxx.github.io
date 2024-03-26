@@ -1,4 +1,9 @@
 #白名单
+xdcs-collectorhera.ximalaya.com
+mobile.ximalaya.com
+mermaid.ximalaya.com
+mobwsa.ximalaya.com
+
 bsstrackercdnbj.kugou.com
 bsstrackercdngz.kugou.com
 @@||bsstracker*.kugou.com^
