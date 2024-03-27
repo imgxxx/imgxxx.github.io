@@ -1,4 +1,9 @@
 #白名单
+
+@@||www.cnnic.cn
+@@||cnnic.com.cn^
+
+
 msevents.microsoft.com
 @@||events.data.microsoft.com^
 
