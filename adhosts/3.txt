@@ -1,5 +1,7 @@
 #白名单
 
+@@||nstool.netease.com^
+
 @@||www.cnnic.cn
 @@||cnnic.com.cn^
 
