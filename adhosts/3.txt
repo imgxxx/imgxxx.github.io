@@ -1,7 +1,7 @@
 #白名单
 wcpstatic-int-cn.microsoft.com
 
-
+@@||pp.myapp.com^
 
 @@||nstool.netease.com^
 
