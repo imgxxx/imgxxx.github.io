@@ -1,4 +1,7 @@
 #白名单
+wcpstatic-int-cn.microsoft.com
+
+
 
 @@||nstool.netease.com^
 
