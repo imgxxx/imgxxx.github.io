@@ -1,5 +1,7 @@
 #白名单
 
+img2.autoimg.cn
+
 show-f.mediav.com
 @@||3600.com^
 
