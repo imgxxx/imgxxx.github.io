@@ -1,4 +1,13 @@
 #测试版规则
+weblog.99tjreport.com
+logs.quality.qiku.com
+logs.av380.net
+nsp-logservice-hiview-p43-drcn.obs.cn-north-2.myhuaweicloud.com
+tglogsz.datamore.qq.com
+microapilogs.sanguosha.cn
+logserver-cn-ty.obs.cn-north1.ctyun.cn
+
+
 advertise.duolabao.com.gslb.qianxun.com
 artdesktopadv2-1256580476.cos.ap-beijing.myqcloud.com
 statlog.mojichina.com
