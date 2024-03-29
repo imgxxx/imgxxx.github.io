@@ -1,4 +1,8 @@
 #白名单
+
+show-f.mediav.com
+@@||3600.com^
+
 wcpstatic-int-cn.microsoft.com
 
 @@||pp.myapp.com^
