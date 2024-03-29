@@ -1,5 +1,6 @@
 #白名单
 
+msdk.qq.com
 img2.autoimg.cn
 
 show-f.mediav.com
