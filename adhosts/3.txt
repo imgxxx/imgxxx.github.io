@@ -1,4 +1,5 @@
 #白名单
+@@||blog.51cto.com^
 
 msdk.qq.com
 img2.autoimg.cn
