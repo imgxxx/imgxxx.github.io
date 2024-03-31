@@ -51,7 +51,7 @@ san.admiqq.com
 
 #暂时放行
 #@@||yahoo.com^
-#@@||shouji.sogou.com^
+@@||shouji.sogou.com^
 #暂时放行
 
 ||360.yahoo.com^$important
