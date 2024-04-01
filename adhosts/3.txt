@@ -1,5 +1,7 @@
 #白名单
 
+aid.m.taobao.com
+
 @@||liteapks.com^
 
 @@||blog.51cto.com^
