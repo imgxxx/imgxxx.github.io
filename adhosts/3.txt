@@ -1,7 +1,4 @@
 #白名单
-@@||xdrig.com^
-
-
 @@||blog.51cto.com^
 
 msdk.qq.com
