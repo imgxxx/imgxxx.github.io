@@ -1,6 +1,6 @@
 #白名单
 
-
+ulogs.umeng.com
 ulogs.umengcloud.com
 
 
