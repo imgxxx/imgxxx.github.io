@@ -1,4 +1,6 @@
 #测试版规则
+apiadv.enaiou.com
+
 weblog.99tjreport.com
 logs.quality.qiku.com
 logs.av380.net
