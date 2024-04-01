@@ -1,4 +1,7 @@
 #白名单
+
+tracker.yfanads.com
+
 @@||blog.51cto.com^
 
 msdk.qq.com
