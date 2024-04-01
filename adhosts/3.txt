@@ -1,6 +1,8 @@
 #白名单
 
-tracker.yfanads.com
+
+ulogs.umengcloud.com
+
 
 @@||blog.51cto.com^
 
