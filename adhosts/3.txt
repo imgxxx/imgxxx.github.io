@@ -1,8 +1,5 @@
 #白名单
 
-ulogs.umeng.com
-ulogs.umengcloud.com
-
 
 @@||blog.51cto.com^
 
@@ -34,7 +31,6 @@ msevents.microsoft.com
 
 sdkconfig.video.qq.com
 gslbali.ximalaya.com
-sysdk.cl2009.com
 xdcs-collector.ximalaya.com
 xdcs-collectorhera.ximalaya.com
 mobile.ximalaya.com
@@ -47,7 +43,6 @@ bsstrackercdngz.kugou.com
 
 @@||isee.weishi.qq.com
 
-trace.threatbook.cn
 
 alime.gauss.robot.image.alibabausercontent.com
 @@||alibabausercontent.com^
@@ -55,7 +50,6 @@ alime.gauss.robot.image.alibabausercontent.com
 ws-keyboard.shouji.sogou.com
 
 www.myquark.cn
-#easytomessage.com
 @@||unioncom.cc^
 acpstaticbj.95516.com
 
@@ -157,8 +151,7 @@ api.kuaishouzt.com
 api.e.kuaishou.cn
 api.kwaizt.com
 api.e.kuaishou.com
-#p2-pp.adukwai.com
-#p1-pp.adukwai.com
+
 browser.vivo.com.cn
 natdetection.onethingpcs.com
 @@||data.kuiniuca.com^
