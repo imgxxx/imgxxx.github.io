@@ -99,10 +99,9 @@ vlive.qqvideo.tc.qq.com
 
 @@||aiseet.atianqi.com^
 @@||kuaishouzt.com^
-open.e.kuaishou.cn
-open.e.kuaishou.com
+#open.e.kuaishou.cn
+#open.e.kuaishou.com
 @@||shayujizhang.com^
-@@||wo.com.cn^
 
 @@||rockitv.com^
 @@||qmail.com^
