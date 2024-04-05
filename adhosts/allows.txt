@@ -1,5 +1,15 @@
 #测试版规则
+||api-access.pangolin-sdk-toutiao.com
+||api-access.pangolin-sdk-toutiao-b.com
+||pangolin-sdk-toutiao*.com
+||gromore.pangolin-sdk-toutiao.com
+||log-api.pangolin-sdk-toutiao.com
+||sf*-fe-tos.pglstatp-toutiao.com
 
+
+||u.l.qq.com
+||sdk.e.qq.com
+||p.l.qq.com
 ||logservice.dbankcloud.cn^
 
 @@||dbankcdn.com^
