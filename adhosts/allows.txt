@@ -22,8 +22,6 @@ alimelog.lydaas.com
 ||lydaas.com^
 
 
-api.yaya.adventure.ssche.cn
-
 
 ||api-access.pangolin-sdk-toutiao.com
 ||api-access.pangolin-sdk-toutiao-b.com
