@@ -1,6 +1,8 @@
 #测试版规则
 
 
+@@||mdt.qq.com^
+
 ||feedcoopapi.com^
 stream-sdk.feedcoopapi.com
 ||zhimasdk.com^
