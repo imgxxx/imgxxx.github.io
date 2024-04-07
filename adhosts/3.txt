@@ -1,4 +1,6 @@
 #白名单
+slb-p2p.vcloud.ks-live.com
+
 vip.bz.mgtv.com
 layer.bz.mgtv.com
 pcvideoaliyun.titan.mgtv.com
