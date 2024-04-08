@@ -1,9 +1,18 @@
 #测试版规则
 
+logclient-xddq.hdnd01.com
+portlog.hndouqu.com
+esdklogs.echatsoft.com
+prod-sit-logserver.heytea.com
+
+
+||advtj.cn
+||advtj.cn^
+img.advtj.cn
+sdklog.leiting.com
+
 ||wxs.qq.com
 
-
-#@@||mdt.qq.com^
 
 ||feedcoopapi.com^
 stream-sdk.feedcoopapi.com
