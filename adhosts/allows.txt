@@ -3,7 +3,7 @@
 ||wxs.qq.com
 
 
-@@||mdt.qq.com^
+#@@||mdt.qq.com^
 
 ||feedcoopapi.com^
 stream-sdk.feedcoopapi.com
