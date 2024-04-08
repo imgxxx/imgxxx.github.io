@@ -1,4 +1,10 @@
 #白名单
+#测试
+ac.dun.163yun.com
+ac.dun.163.com
+clientlog.music.163.com
+#测试
+
 
 ||bls.mdt.qq.com^
 sg.bls.mdt.qq.com
