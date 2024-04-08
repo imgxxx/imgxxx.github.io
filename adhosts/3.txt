@@ -1,4 +1,8 @@
 #白名单
+
+||bls.mdt.qq.com^
+sg.bls.mdt.qq.com
+
 slb-p2p.vcloud.ks-live.com
 
 vip.bz.mgtv.com
