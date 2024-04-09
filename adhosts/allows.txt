@@ -1,5 +1,8 @@
 #测试版规则
 
+
+||log.pandora.xiaomi.com^$important
+
 @@||chat.bilibili.com^
 
 
