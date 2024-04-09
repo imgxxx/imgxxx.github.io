@@ -1,5 +1,6 @@
 #测试版规则
 
+@@||chat.bilibili.com^
 
 
 bugreport.huorong.cn
