@@ -1,4 +1,8 @@
 #测试版规则
+#@@||dig.bdurl.net^$important
+#@@||dig.zjurl.cn^$important
+
+
 
 ||report.gamecenter.qq.com^$important
 
@@ -974,21 +978,19 @@ nrkfpt1.9zas5.com
 #注释line*-h5-mobile-api.biligame.com^
 #注释||*-adapt.pddpic.com^
 
-||log-sdk.ksapisrv.com^$important
-||ulogjs.ksapisrv.com^$important
-||ulog.ksapisrv.com^$important
+#注释||log-sdk.ksapisrv.com^$important
+#||ulogjs.ksapisrv.com^$important
+#||ulog.ksapisrv.com^$important
 
 
-||httpdns.alicdn.com^$important
+
 
 # 腾讯
 ||mtt.eve.mdt.qq.com^
-||kuaibao.qq.com^
-||btrace.qq.com^
+
 ||btrace.video.qq.com^
 ||log.tbs.qq.com^
 ||sngmta.qq.com^
-||beacon.qq.com^
 ||bugly.qq.com^
 
 
@@ -1008,7 +1010,6 @@ nrkfpt1.9zas5.com
 
 @@||u.meizu.com^
 @@||cal.meizu.com^
-@@||hm.baidu.com^
 @@||sfp.safe.baidu.com^
 @@||miao.baidu.com^
 @@||itsdata.map.baidu.com^
@@ -1022,7 +1023,6 @@ nrkfpt1.9zas5.com
 
 ||adview.cn^
 
-#注释||e.shifen.com^$important
 
 
 @@||publish-pic-cpu.baidu.com^
@@ -1098,11 +1098,6 @@ log1.wanmei.com
 @@||etl-xlmc-ssl.xunlei.com^
 @@||game.subway.uu.cc^
 @@||digicert.com^
-
-@@||dig.bdurl.net^$important
-@@||dig.zjurl.cn^$important
-
-
 
 
 
@@ -1292,9 +1287,6 @@ log1.wanmei.com
 @@||anquan.baidu.com^$important
 # 放行监控宝官网
 @@||www.jiankongbao.com^$important
-# 防止误伤抖音小黄车
-@@||dig.zjurl.cn^
-@@||dig.bdurl.net^
 
 # 放行JD钱包、礼品卡静态图片
 @@||img12.360buyimg.com^$important
@@ -1393,7 +1385,7 @@ th-a.pinduoduo.com
 sns-video-bd.xhscdn.com
 phoniex.toutiao.com
 
-@@||report.qqweb.qq.com^
+
 @@||pt-tracking.arkgames.com^
 @@||ocsp.apple.com^
 @@||icloud.com^
@@ -1464,7 +1456,7 @@ sp-sdk.api.360ra.net
 
 @@||partner.quark.cn^
 @@||uc-novel-api.shuqireader.com^
-@@||gtimg.com^
+
 @@||sqimg.qq.com^
 @@||docs2.gtimg.com^
 @@||docs.gtimg.com^
@@ -1699,7 +1691,7 @@ applog.rwork.crc.com.cn
 
 
 #数美风控
-@@||fengkongcloud.com^
+||fengkongcloud.com^
 
 @@||vv.video.qq.com^
 @@||snowflake.qq.com^
