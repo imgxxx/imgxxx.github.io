@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||douyinpic.com
+@@||pull-rtmp-f*-hs.pstatp.com^
 
 @@||hao.360.cn^
 
