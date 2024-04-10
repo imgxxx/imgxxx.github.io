@@ -2973,7 +2973,7 @@ hw.zuimeitianqi.com
 adsfs-sdkconfig.heytapimage.com
 abtest-ch.snssdk.com
 doubleclick.net
-s.360.cn
+
 adsfs-sdkconfig.heytapimage.com
 rlogs.youdao.com
 devicemgr.hpplay.cn
@@ -6480,17 +6480,16 @@ cms.qdwght.com
 
 
 
-! 放行一些规则防止误杀
+
 ! 阿里/支付宝
 @@||mmstat.com^
 ! 360域名
-@@||360.cn^
+
 ! X5内核
 @@||cfg.imtt.qq.com^
 @@||soft.tbs.imtt.qq.com^
 @@||res.imtt.qq.com^
-! 手机搜狗输入法
-@@||shouji.sougou.com^
+
 ! MIUI 流量中心
 @@||api.miui.security.xiaomi.com^
 @@||api.sec.intl.miui.com^

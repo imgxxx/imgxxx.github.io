@@ -1,4 +1,7 @@
 #白名单
+
+360.cn
+
 #测试
 ac.dun.163yun.com
 ac.dun.163.com
@@ -475,7 +478,7 @@ data.mistat.xiaomi.com
 
 # 皮皮虾无法访问问题
 dm.toutiao.com
-dig.bdurl.net
+
 ws.ribaoapi.com
 
 # 应用汇
@@ -871,9 +874,9 @@ mp-s.le.com
 api-mob-app.letv.com
 @@||letvimg.com^
 w1.kskwai.com
-@@||reddit.com^
+
 mp.weixinbridge.com
-dot.360.cn
+
 
 #注释mdp-usertrace-cn.heytapmobi.com
 
