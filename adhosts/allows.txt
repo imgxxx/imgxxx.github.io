@@ -1,5 +1,8 @@
 #测试版规则
 
+||report.gamecenter.qq.com^$important
+
+apmaintain-data-reported.189cube.com
 
 jsreport.qq.com
 inner-report.shunchangzhixing.com
