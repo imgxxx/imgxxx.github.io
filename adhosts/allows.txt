@@ -1,4 +1,11 @@
 #测试版规则
+
+
+jsreport.qq.com
+inner-report.shunchangzhixing.com
+eventreport.dingxiang-inc.com
+report.rtxapp.com
+
 report.idazhe.net
 agoo-report.m.taobao.com
 client-report.zsxq.com
