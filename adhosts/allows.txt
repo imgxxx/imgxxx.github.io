@@ -1,7 +1,5 @@
 #测试版规则
 
-ioshost.qtlcdn.com
-
 @@||douyinpic.com
 @@||pull-rtmp-f*-hs.pstatp.com^
 
