@@ -1,4 +1,8 @@
 #测试版规则
+
+
+@@||hao.360.cn^
+
 #@@||dig.bdurl.net^$important
 #@@||dig.zjurl.cn^$important
 
