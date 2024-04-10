@@ -170,9 +170,8 @@ hdns.ksyun.com
 
 tracker.pcdn.yximgs.com
 api.kuaishouzt.com
-api.e.kuaishou.cn
 api.kwaizt.com
-api.e.kuaishou.com
+
 
 browser.vivo.com.cn
 natdetection.onethingpcs.com
@@ -665,7 +664,6 @@ adashx.m.taobao.com
 
 m-paas-sentry.zhihu.com
 
-gmanhua.com
 
 #懂球帝直播接口
 tracker.namitiyu.com
@@ -706,7 +704,6 @@ galaxias-api.lingxigames.com
 game-ages-fx.lingxigames.com
 
 @@||mail.126.com^
-@@||126.com^
 offnavi.map.baidu.com
 apsrgeo.amap.com
 blg.map.baidu.com
@@ -820,8 +817,7 @@ nspt.bdstatic.com
 api.chelaile.net.cn
 cpucdn.baidu.com
 cdn.www.chelaile.net.cn
-@@||dns.360.cn^$important
-@@||doh.360.cn^$important
+
 thirdwx.qlogo.cn
 game-res.meizu.com
 livepnrt-stsdk.vivo.com.cn
