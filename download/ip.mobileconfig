@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>HTTPS</string>
+					<key>ServerURL</key>
+					<string>https://120.78.197.101/dns-query</string>
+				</dict>
+				<key>PayloadDescription</key>
+				<string>DNS官方网站：www.ipv4dns.com</string>
+				<key>PayloadDisplayName</key>
+				<string>清新云DNS直连</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.11280b2f-7e37-43a1-b4bf-e877a0f0d901</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>f7da5bf8f-15c6-44ea-830f-d64fd846c6c4</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+		<key>PayloadDescription</key>
+		<string>DNS官方网站：www.ipv4dns.com</string>
+		<key>PayloadDisplayName</key>
+		<string>清新云DNS直连</string>
+		<key>PayloadIdentifier</key>
+		<string>5e5b2086-d24f-43db-84ff-1dbd575bff33</string>
+		<key>PayloadRemovalDisallowed</key>
+		<false/>
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>6488f822-86e5-456a-b24f-ec2e10e8a46f</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>
