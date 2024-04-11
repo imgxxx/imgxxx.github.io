@@ -1,5 +1,8 @@
 #测试版规则
 
+||baichuannet.vip
+||baichuannet.vip^
+
 @@||heytea.com^
 
 
