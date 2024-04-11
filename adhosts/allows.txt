@@ -1,5 +1,13 @@
 #测试版规则
 
+@@||iask.cn^
+@@||iask.com.cn^
+
+report.cece.com
+mspeed-report.timi-esports.qq.com
+report-api.xinyongfei.cn
+reports.a.shifen.com
+
 @@||douyinpic.com
 @@||pull-rtmp-f*-hs.pstatp.com^
 
