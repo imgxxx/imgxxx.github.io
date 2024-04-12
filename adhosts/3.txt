@@ -1,4 +1,7 @@
 #白名单
+
+doubanjia.com
+
 h5.mse.360.cn
 
 stun.services.mozilla.com
