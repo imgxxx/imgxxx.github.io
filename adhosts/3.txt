@@ -1,4 +1,8 @@
 #白名单
+api.look.360.cn
+p0.qhimg.com
+papi.look.360.cn
+
 www.doubanjia.com
 doubanjia.com
 
