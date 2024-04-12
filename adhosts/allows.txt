@@ -49,10 +49,7 @@ report.azoyagroup.com
 ||azoyagroup.com
 imeclient.openspeech.cn
 appclient.hjq.komect.com
-newclient.map.baidu.com
-newclient.map.n.shifen.com
 abtest-client.skyengine.net.cn
-client-report.bh3.com
 android.crashsight.qq.com
 ios.crashsight.qq.com
 multi-az-ulog.gifshow.com
