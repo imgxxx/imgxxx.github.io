@@ -1705,8 +1705,8 @@ vv.play.aiseet.atianqi.com
 #amoad
 ||d.amoad.com
 ||i.amoad.com
-||j.amoad.com
-||www.amoad.com
+||amoad.com
+||amoad.com^
 #amung
 ||whos.amung.us
 ||widgets.amung.us
