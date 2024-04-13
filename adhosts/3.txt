@@ -1,4 +1,10 @@
 #白名单
+
+d1.a.kwimgs.com
+w2-live.gskwai.com
+w1-live.gskwai.com
+
+
 api.look.360.cn
 p0.qhimg.com
 papi.look.360.cn
