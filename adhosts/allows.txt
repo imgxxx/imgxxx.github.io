@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||ads.games.laohu.com^$important
+
 @@||pull-*.pstatp.com
 @@||pull-*.pstatp.com^
 
