@@ -1,5 +1,7 @@
 #白名单
 
+@@||ksyungslb.com^
+
 d1.a.kwimgs.com
 w2-live.gskwai.com
 w1-live.gskwai.com
