@@ -1,5 +1,8 @@
 #白名单
 
+
+@@||static.yximgs.com
+
 @@||ksyungslb.com^
 
 d1.a.kwimgs.com
