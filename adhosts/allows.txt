@@ -1,5 +1,7 @@
 #测试版规则
 
+||reachmax.cn^
+
 ||042.cn^
 ||uf.cn^
 
