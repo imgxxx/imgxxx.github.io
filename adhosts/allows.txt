@@ -1,5 +1,8 @@
 #测试版规则
 
+||042.cn^
+||uf.cn^
+
 ||ads.games.laohu.com^$important
 
 @@||pull-*.pstatp.com
