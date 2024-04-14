@@ -1,6 +1,6 @@
 #测试版规则
 
-
+@@||tnc*.zijieapi.com
 @@||tnc3-alisc1.zijieapi.com
 
 nbnest-admonitor.cainiao.com
