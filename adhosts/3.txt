@@ -1,5 +1,6 @@
 #白名单
 
+statis1.mama.cn
 
 @@||static.yximgs.com
 
