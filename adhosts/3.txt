@@ -1,5 +1,7 @@
 #白名单
 
+adashx.ut.cainiao.com
+
 p11-sign.sched.ssp-dk.tdnsstic1.cn
 
 statis1.mama.cn
