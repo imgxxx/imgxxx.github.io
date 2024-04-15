@@ -1,5 +1,8 @@
 #测试版规则
 
+@@||ad-cmp.hismarttv.com^$important
+
+
 @@||tnc*.zijieapi.com
 @@||tnc3-alisc1.zijieapi.com
 
