@@ -1,5 +1,7 @@
 #白名单
 
+@@||api.*.hismarttv.com^
+api-gps.hismarttv.com
 
 3gimg.qq.com
 
