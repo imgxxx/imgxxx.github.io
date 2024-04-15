@@ -1,5 +1,10 @@
 #测试版规则
 
+#爱乐移动广告
+||2lyx.com^
+||2lyx.com
+
+
 @@||ad-cmp.hismarttv.com^$important
 
 
