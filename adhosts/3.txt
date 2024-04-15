@@ -1,5 +1,9 @@
 #白名单
 
+
+3gimg.qq.com
+
+
 adashx.ut.cainiao.com
 
 p11-sign.sched.ssp-dk.tdnsstic1.cn
