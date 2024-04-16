@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||adashx.m.taobao.com
+
 #爱乐移动广告
 ||2lyx.com^
 ||2lyx.com
