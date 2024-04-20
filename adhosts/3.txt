@@ -1,5 +1,7 @@
 #白名单
 
+ossp.voicecloud.cn
+
 www.bmcx.com
 
 
