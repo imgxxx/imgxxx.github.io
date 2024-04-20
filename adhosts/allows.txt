@@ -72,7 +72,6 @@ datareportapi.hbooker.com
 ||anti-sdk-report.m.jd.com
 report.azoyagroup.com
 ||azoyagroup.com
-imeclient.openspeech.cn
 appclient.hjq.komect.com
 abtest-client.skyengine.net.cn
 android.crashsight.qq.com
