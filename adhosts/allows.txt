@@ -244,8 +244,9 @@ san.admiqq.com
 ||sweb1.ads.vip.sc5.yahoo.com^$important
 
 
-callback.huiqunchina.com
-||huiqunchina.com^$important
+#callback.huiqunchina.com
+#||huiqunchina.com^$important
+
 ||feedback-c.zijieapi.com^$important
 alsc-ug-monitor-callback.alibaba.com
 ||feedback-*.zijieapi.com^$important
