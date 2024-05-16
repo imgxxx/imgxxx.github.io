@@ -1,5 +1,9 @@
 #白名单
 
+tnc16-alisg.isnssdk.com
+tnc16-alisg.byteoversea.com
+
+
 www.facebook.com
 
 www.bmcx.com
