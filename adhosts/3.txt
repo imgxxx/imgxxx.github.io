@@ -1,4 +1,7 @@
 #白名单
+
+txdwkmov.a.yximgs.com
+
 #暂时放行
 @@||dcloud.net.cn^
 ##
