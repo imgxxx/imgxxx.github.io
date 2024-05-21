@@ -11,6 +11,8 @@ pro-log.zhiketong.com
 ||yihome-log-cn.oss-cn-qingdao.aliyuncs.com
 crazyrope-clientlog.oss-cn-shanghai.aliyuncs.com
 logger.qmai.cn
+api.bugreport.huorong.cn
+
 
 ||*-log-*.*^
 
