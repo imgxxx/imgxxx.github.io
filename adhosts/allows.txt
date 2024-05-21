@@ -1,5 +1,20 @@
 #测试版规则
 
+advimg.51ri.com
+advsdkreport-def.fanjing666.com
+actionapi.advisionhorizon.com
+bj-td-01-callback.advlion.com
+||advlion.com^
+log-center.jiangduoduo.com
+pro-log.zhiketong.com
+||openlog.tap.io
+||yihome-log-cn.oss-cn-qingdao.aliyuncs.com
+crazyrope-clientlog.oss-cn-shanghai.aliyuncs.com
+logger.qmai.cn
+
+||*-log-*.*^
+
+
 @@||7x24s.com^
 
 @@||adashx.m.taobao.com
@@ -9,7 +24,7 @@
 ||2lyx.com
 
 
-@@||ad-cmp.hismarttv.com^$important
+||ad-cmp.hismarttv.com^$important
 
 
 @@||tnc*.zijieapi.com
