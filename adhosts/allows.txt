@@ -1,4 +1,7 @@
 #测试版规则
+adview.game-meng.com
+||admore.com.cn^
+am.admore.com.cn
 
 advimg.51ri.com
 advsdkreport-def.fanjing666.com
