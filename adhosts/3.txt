@@ -1,5 +1,10 @@
 #白名单
 
+pic.upqzfile.com
+@@||upqzfile.com^
+
+
+
 txdwkmov.a.yximgs.com
 
 #暂时放行
