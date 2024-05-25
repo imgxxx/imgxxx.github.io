@@ -1,5 +1,8 @@
 #白名单
 
+||v.smtcdns.net^
+||v.smtcdns.net
+
 pic.upqzfile.com
 @@||upqzfile.com^
 
