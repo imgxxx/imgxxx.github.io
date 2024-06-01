@@ -1,4 +1,14 @@
 #测试版规则
+||mokiwi.com^
+||mokiwi.com
+||cdn.pyadx.top
+||vivoadxstable.mongac.com^
+||mongac.com^
+||ztjy-advert-qn.ztjystore.com^
+||*-advert-*.ztjystore.com^
+||nadvideo2.baidu.com
+logreport-global-dual.coolccloud.com
+||jddebug.com^
 
 ||mktm.jd.com^
 ||mktm.jd.com
