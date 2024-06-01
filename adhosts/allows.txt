@@ -1,5 +1,6 @@
 #测试版规则
 @@||torrentgalaxy.mx^
+@@||gvt1-cn.com^
 
 ||mokiwi.com^
 ||mokiwi.com
