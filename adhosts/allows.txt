@@ -1,4 +1,6 @@
 #测试版规则
+@@||torrentgalaxy.mx^
+
 ||mokiwi.com^
 ||mokiwi.com
 ||cdn.pyadx.top
