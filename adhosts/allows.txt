@@ -1,4 +1,7 @@
 #测试版规则
+||cdn-cbd-advert-prod.shuxinyc.com^
+||cdn-cbd-advert-prod.shuxinyc.com
+
 @@||torrentgalaxy.mx^
 @@||gvt1-cn.com^
 
