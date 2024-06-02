@@ -1,4 +1,6 @@
 #测试版规则
+||mradx.net^
+
 ||mkt-advertisement.tuhu.cn.videobase.cn^
 ||mkt-advertisement.tuhu.cn
 
