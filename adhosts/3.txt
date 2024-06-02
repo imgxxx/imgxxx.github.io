@@ -1,6 +1,5 @@
 #白名单
-||yksdks.com^
-||mobsurl.com^
+adpai.thepaper.cn
 
 
 
