@@ -1,10 +1,12 @@
 #白名单
+
+@@||hiaiabc.com^
 @@||yksdks.com^
 @@||mobsurl.com^
 @@||dutils.com^
 #applog.thepaper.cn
 #adpai.thepaper.cn
-
+@@||thepaper.cn^
 
 
 @@||v.smtcdns.net^
