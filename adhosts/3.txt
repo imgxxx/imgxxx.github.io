@@ -1,4 +1,7 @@
 #白名单
+adpai.thepaper.cn
+
+
 
 @@||v.smtcdns.net^
 @@||v.smtcdns.net
