@@ -1,9 +1,7 @@
 #白名单
 
-#@@||hiaiabc.com^
-#@@||yksdks.com^
-#@@||mobsurl.com^
-#@@||dutils.com^
+@@||ndcimgs.com^
+
 
 
 
