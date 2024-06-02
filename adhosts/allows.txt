@@ -1,4 +1,16 @@
 #测试版规则
+||mkt-advertisement.tuhu.cn.videobase.cn^
+||mkt-advertisement.tuhu.cn
+
+
+
+vadxfutj.ystmob.com
+
+
+||gtm-cn-lbj3mu3i801.tpadx.com^
+||tpadx.com^
+||tpadx.com
+
 ||cdn-cbd-advert-prod.shuxinyc.com^
 ||cdn-cbd-advert-prod.shuxinyc.com
 
