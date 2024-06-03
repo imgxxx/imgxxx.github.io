@@ -1,4 +1,7 @@
 #白名单
+||trackercdn*.kugou.com^
+trackercdn.kugou.com
+
 
 @@||ndcimgs.com^
 
