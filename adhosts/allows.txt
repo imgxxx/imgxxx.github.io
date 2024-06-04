@@ -1,6 +1,26 @@
 #测试版规则
 
+aserver-heyi-static-mob.youku.com
+
+
+
+
+
+
+
+
+
+
+||mentamob.com^
+||mentamob.com
+||in-neo.cn^
+||in-neo.cn
+||baihemob.com^
+||baihemob.com
+
+
 @@||2iz.cn^
+
 ||advance.vhzrp.com^
 ||qadx.qinlinad.com^
 ||admore.com^
