@@ -1,6 +1,7 @@
 #测试版规则
 ||qadx.qinlinad.com^
-
+||admore.com^
+||duodian.com^
 ||advertise.cece.com^
 ||advertise.cece.com
 ||adxstatic.vivo.com.cn
