@@ -1,4 +1,7 @@
 #测试版规则
+
+@@||mp.sohu.com^
+
 xpis-mob-xcdn.youku.com
 aserver-heyi-static-mob.youku.com
 mob.api.m.mi.com
