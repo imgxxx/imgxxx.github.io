@@ -1,4 +1,6 @@
 #白名单
+@@||guangzhuiyuan.com^
+
 iphone.myzaker.com
 ggs.myzaker.com
 
