@@ -1,4 +1,12 @@
 #白名单
+
+#智慧苏州
+||szsmk.com^
+
+#一键登录
+||sq581.com^
+
+
 @@||guangzhuiyuan.com^
 
 iphone.myzaker.com
