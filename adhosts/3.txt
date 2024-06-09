@@ -1,5 +1,7 @@
 #白名单
 
+||gaytor.rent^
+
 #智慧苏州
 ||szsmk.com^
 
