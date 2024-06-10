@@ -1,4 +1,5 @@
 #测试版规则
+@@||tantanapp.com^
 
 @@||mp.sohu.com^
 
