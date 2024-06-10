@@ -5,11 +5,7 @@
 
 xpis-mob-xcdn.youku.com
 aserver-heyi-static-mob.youku.com
-mob.api.m.mi.com
-mob.cname.xiaomiyoupin.com
-mob.bk01.c3.xiaomi.com
-mob.cname.mione.xiaomi.com
-||misite.mob.neo.xiaomi.com^
+
 player-mob-lg.youku.com
 xpgw-mob-xcdn.youku.com
 
