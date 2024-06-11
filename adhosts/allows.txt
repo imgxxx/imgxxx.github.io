@@ -13,8 +13,8 @@ xpgw-mob-xcdn.youku.com
 
 
 
-||fengkongcloud.cn^
-||fengkongcloud.cn
+#||fengkongcloud.cn^
+#||fengkongcloud.cn
 ||xingjimob.com^
 ||xingjimob.com
 ||mangolm.com^
