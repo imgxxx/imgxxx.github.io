@@ -1,6 +1,7 @@
 #白名单
+@@||fengkongcloud.com^
 
-||gaytor.rent^
+@@||gaytor.rent^
 
 #智慧苏州
 ||szsmk.com^
