@@ -1,4 +1,7 @@
 #白名单
+
+@@||uu.cc^
+
 @@||fengkongcloud.com^
 
 @@||gaytor.rent^
