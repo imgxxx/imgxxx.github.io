@@ -1,5 +1,8 @@
 #白名单
 
+
+@@||linuxmirrors.cn^
+
 @@||cdnhwcpsd13.com^
 
 
