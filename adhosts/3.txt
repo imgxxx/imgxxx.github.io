@@ -1,5 +1,8 @@
 #白名单
 
+@@||cdnhwcpsd13.com^
+app-log.dewu.com
+
 @@||uu.cc^
 
 @@||fengkongcloud.com^
