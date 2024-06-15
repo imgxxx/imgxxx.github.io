@@ -1,5 +1,6 @@
 #白名单
-
+#中国天气网
+@@||i8tq.com^
 
 @@||linuxmirrors.cn^
 
