@@ -1,4 +1,7 @@
 #测试版规则
+
+@@||mihoyo.com^
+
 @@||dnscheck.tools^
 
 @@||tantanapp.com^
