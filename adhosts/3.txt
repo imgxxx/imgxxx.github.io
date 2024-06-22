@@ -1,4 +1,7 @@
 #白名单
+
+dig.bdurl.net
+
 #中国天气网
 @@||i8tq.com^
 
