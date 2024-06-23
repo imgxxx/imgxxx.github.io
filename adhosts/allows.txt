@@ -1,7 +1,20 @@
 #测试版规则
 
-g8abc6b.cdn.ggcname.com
-41a85d91f34dd1c23gw.br65hl.cn
+
+||bluestacks-install.com^
+||zoomus-install.com^
+||install-zoom.com^
+||install-anydesk.com^
+||install-anydeslk.com^
+||zoom-meetings-install.com^
+||zoom-meetings-download.com^
+||anydleslk-download.com^
+||zoomvideo-install.com^
+||zoom-video-install.com^
+||istaller-zoom.com^
+||noteepad.hasankahrimanoglu.com^
+
+
 
 @@||mihoyo.com^
 
