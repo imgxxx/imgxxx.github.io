@@ -1,5 +1,8 @@
 #测试版规则
 
+g8abc6b.cdn.ggcname.com
+41a85d91f34dd1c23gw.br65hl.cn
+
 @@||mihoyo.com^
 
 @@||dnscheck.tools^
