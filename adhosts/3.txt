@@ -1,5 +1,7 @@
 #白名单
 
+apd-ugcvlive.apdcdn.tc.qq.com
+
 dig.bdurl.net
 
 #中国天气网
