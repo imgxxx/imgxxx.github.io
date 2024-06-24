@@ -1,5 +1,7 @@
 #白名单
 
+||panguidc.com^
+
 apd-ugcvlive.apdcdn.tc.qq.com
 
 dig.bdurl.net
