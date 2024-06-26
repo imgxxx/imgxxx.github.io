@@ -1,4 +1,8 @@
 #测试版规则
+||api.x8zs.com^
+||52g37a.xyz^
+||haoshacaihui.com^
+
 ||sogouad.vip^
 ||d.sogouad.vip^
 ||bluestacks-install.com^
