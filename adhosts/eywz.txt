@@ -1,4 +1,12 @@
 #恶意网站
+||dkang.xyz^
+||zhaopx.com.cn^
+||xzfapi.com^
+||july7cloud.net^
+||july89894cff.july7cloud.net^
+||8api.xzfapi.com^
+||96api.zhaopx.com.cn^
+||8api.dkang.xyz
 ||350122.com^
 ||br65hl.cn^
 ||ggcname.com^
