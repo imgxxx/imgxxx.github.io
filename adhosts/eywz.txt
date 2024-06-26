@@ -1,4 +1,8 @@
 #恶意网站
+||chundot.xyz^
+||8api.chundot.xyz^
+||ksport.io^
+||api.ksport.io^
 ||dkang.xyz^
 ||zhaopx.com.cn^
 ||xzfapi.com^
