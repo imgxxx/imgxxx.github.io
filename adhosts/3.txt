@@ -1,5 +1,7 @@
 #白名单
 
+kernelapi.vivo.com.cn
+kernel.vivo.com.cn
 ||panguidc.com^
 
 apd-ugcvlive.apdcdn.tc.qq.com
