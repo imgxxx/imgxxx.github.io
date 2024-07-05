@@ -1,5 +1,7 @@
 #白名单
 
+@@||myqcloud.com^
+
 @@||zconfig.alibabausercontent.com
 
 
