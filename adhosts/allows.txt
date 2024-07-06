@@ -1,6 +1,10 @@
 #测试版规则
 
 
+||ads.linkedin.com^$important
+
+
+
 paneljs.hanznesia.my.id
 api-web-vrip.hanznesia.my.id
 log.apisystem.engineer
