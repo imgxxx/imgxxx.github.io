@@ -1,5 +1,5 @@
 #测试版规则
-
+stlib.qbb6.com
 
 ||ads.linkedin.com^$important
 
