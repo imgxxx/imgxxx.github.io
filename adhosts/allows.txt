@@ -1,4 +1,8 @@
 #测试版规则
+
+||sdk.1rtb.net^
+||1rtb.net^
+
 stlib.qbb6.com
 
 ||ads.linkedin.com^$important
