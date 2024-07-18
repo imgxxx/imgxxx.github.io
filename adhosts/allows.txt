@@ -1,5 +1,17 @@
 #测试版规则
 
+# 网易
+||nex.163.com^$important
+||iad.g.163.com^$important
+||adx-bj.anythinktech.com^$important
+||api.anythinktech.com^$important
+||tk.anythinktech.com^$important
+||da.anythinktech.com^$important
+
+
+
+
+
 ||sdk.1rtb.net^
 ||1rtb.net^
 
