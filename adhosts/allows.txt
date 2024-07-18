@@ -7,7 +7,7 @@
 ||api.anythinktech.com^$important
 ||tk.anythinktech.com^$important
 ||da.anythinktech.com^$important
-
+||gorgon.youdao.com^
 
 
 
