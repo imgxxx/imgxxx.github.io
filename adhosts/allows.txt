@@ -1,5 +1,9 @@
 #测试版规则
 
+||playdos.com^
+||x0.nz^
+||tuku.baipg.cn^
+
 
 ||api.sdk.adbaixiang.com^
 ||adbaixiang.com^
