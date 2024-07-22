@@ -1,5 +1,7 @@
 #白名单
 
+p.bokecc.com
+
 @@||myqcloud.com^
 
 @@||zconfig.alibabausercontent.com
