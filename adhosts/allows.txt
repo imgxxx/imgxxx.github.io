@@ -1,5 +1,9 @@
 #测试版规则
 
+
+||api.sdk.adbaixiang.com^
+||adbaixiang.com^
+
 # 网易
 ||nex.163.com^$important
 ||iad.g.163.com^$important
