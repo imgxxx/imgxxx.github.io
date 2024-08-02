@@ -1,5 +1,7 @@
 #测试版规则
 
+||in-addr.arpa^
+
 ||hao774.com^
 
 ||playdos.com^
