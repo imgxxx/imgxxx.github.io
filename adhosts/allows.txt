@@ -1,5 +1,7 @@
 #测试版规则
 
+||unionadjs.com^
+
 ||kelerxs.com^
 
 ||jsdelivr.vip^
