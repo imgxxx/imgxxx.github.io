@@ -1,4 +1,7 @@
 #测试版规则
+
+||kelerxs.com^
+
 ||jsdelivr.vip^
 ||cdn.jsdelivr.vip^
 
