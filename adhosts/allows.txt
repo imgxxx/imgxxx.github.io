@@ -1,5 +1,10 @@
 #测试版规则
 
+@@||cdn.iocdn.cc^
+@@||app-api.pixiv.net^
+@@||oauth.secure.pixiv.net^
+
+
 21centuryart.com
 scratchedcards.com
 proffyrobharborye.xyz
