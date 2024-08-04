@@ -1,5 +1,7 @@
 #白名单
 
+mod.3dmgame.com
+
 p.bokecc.com
 
 @@||myqcloud.com^
