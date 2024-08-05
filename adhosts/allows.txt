@@ -3,7 +3,6 @@ www.swjcgov.cn
 ||swjcgov.cn^
 
 
-@@||cdn.iocdn.cc^
 @@||app-api.pixiv.net^
 @@||oauth.secure.pixiv.net^
 
