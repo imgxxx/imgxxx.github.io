@@ -1,4 +1,7 @@
 #测试版规则
+www.swjcgov.cn
+||swjcgov.cn^
+
 
 @@||cdn.iocdn.cc^
 @@||app-api.pixiv.net^
