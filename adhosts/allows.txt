@@ -1,4 +1,7 @@
 #测试版规则
+
+||hongyunxiaodian.com^
+
 www.swjcgov.cn
 ||swjcgov.cn^
 
