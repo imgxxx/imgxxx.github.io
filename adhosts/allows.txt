@@ -1,5 +1,14 @@
 #测试版规则
 
+omss.oss-cn-hangzhou.aliyuncs.com 
+upitem.oss-cn-hangzhou.aliyuncs.com 
+1o2.oss-cn-beijing.aliyuncs.com 
+25o.oss-cn-beijing.aliyuncs.com 
+98o.oss-cn-beijing.aliyuncs.com 
+vauwjw.net    
+cinskw.net 
+hucgiu.net
+
 ||hongyunxiaodian.com^
 
 www.swjcgov.cn
