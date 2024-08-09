@@ -1,5 +1,6 @@
 #白名单
 
+stadig.ifeng.com
 ||nine.ifeng.com^
 
 api.iclient.ifeng.com
