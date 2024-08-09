@@ -1,5 +1,8 @@
 #白名单
 
+api.iclient.ifeng.com
+
+
 mod.3dmgame.com
 
 p.bokecc.com
