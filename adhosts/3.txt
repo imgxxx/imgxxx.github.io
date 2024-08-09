@@ -1,5 +1,7 @@
 #白名单
 
+||nine.ifeng.com^
+
 api.iclient.ifeng.com
 
 
