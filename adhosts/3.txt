@@ -2,7 +2,7 @@
 
 ||tencentclb.com^
 
-api.newad.ifeng.com
+#api.newad.ifeng.com
 stadig0.ifeng.com
 ||news.ifeng.com^
 stadig.ifeng.com
