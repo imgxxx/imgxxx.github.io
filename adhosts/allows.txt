@@ -1,5 +1,10 @@
 #测试版规则
 
+anadesky.ovmv.net
+cxtensones.top
+dropbox.com
+
+
 ||rx818.com^
 
 ||367wangyi.top^
