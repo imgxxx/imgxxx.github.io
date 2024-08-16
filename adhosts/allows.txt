@@ -1,5 +1,8 @@
 #测试版规则
 
+||367wangyi.top^
+
+
 omss.oss-cn-hangzhou.aliyuncs.com 
 upitem.oss-cn-hangzhou.aliyuncs.com 
 1o2.oss-cn-beijing.aliyuncs.com 
