@@ -1,14 +1,17 @@
 #白名单
-||iconfont.cn^
-||chinadsl.net^
 
-||tencentclb.com^
+mcc.inf.miui.com
+
+@@||iconfont.cn^
+@@||chinadsl.net^
+
+@@||tencentclb.com^
 
 #api.newad.ifeng.com
 stadig0.ifeng.com
-||news.ifeng.com^
+@@||news.ifeng.com^
 stadig.ifeng.com
-||nine.ifeng.com^
+@@||nine.ifeng.com^
 
 api.iclient.ifeng.com
 
@@ -24,7 +27,7 @@ p.bokecc.com
 
 kernelapi.vivo.com.cn
 kernel.vivo.com.cn
-||panguidc.com^
+@@||panguidc.com^
 
 apd-ugcvlive.apdcdn.tc.qq.com
 
