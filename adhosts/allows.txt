@@ -1,4 +1,7 @@
 #测试版规则
+
+||mooo.com^
+
 waphk.mjt000.com
 zkb.ysiha.top
 
