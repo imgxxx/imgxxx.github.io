@@ -1,5 +1,7 @@
 #白名单
 
+||count.pengtu.net^
+
 @@||alibaba-inc.com^
 
 mcc.inf.miui.com
