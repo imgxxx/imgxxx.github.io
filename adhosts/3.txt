@@ -1,6 +1,6 @@
 #白名单
 
-||count.pengtu.net^
+@@||count.pengtu.net^
 
 @@||alibaba-inc.com^
 
