@@ -1,5 +1,9 @@
 #白名单
 
+api.skyworthiot.com
+@@||skyworthiot.com^
+
+
 @@||count.pengtu.net^
 
 @@||alibaba-inc.com^
