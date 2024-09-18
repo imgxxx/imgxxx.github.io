@@ -39,8 +39,6 @@ User-agent: psbot
 Disallow: 
 User-agent: *
 Disallow: 
-Disallow: /adhosts/
-Disallow: /adhosts
 Sitemap: https://ipv4dns.com/rss.xml
 Sitemap: https://ipv4dns.com/sitemap.xml
 Sitemap: https://ipv4dns.com/sitemap_baidu.xml
