@@ -1,5 +1,7 @@
 #白名单
 
+doc.bce.baidu.com
+
 api.skyworthiot.com
 @@||skyworthiot.com^
 
