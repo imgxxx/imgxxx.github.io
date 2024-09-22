@@ -1,5 +1,8 @@
 #测试版规则
 
+||pagead.googlesyndication-cn.com^
+||pagead*.googlesyndication-cn.com^
+
 ||fanqiecn.xyz^
 
 ||mooo.com^
