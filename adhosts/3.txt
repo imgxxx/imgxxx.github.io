@@ -40,7 +40,6 @@ mcc.inf.miui.com
 
 @@||tencentclb.com^
 
-#api.newad.ifeng.com
 stadig0.ifeng.com
 @@||news.ifeng.com^
 stadig.ifeng.com
@@ -112,9 +111,6 @@ pic.upqzfile.com
 
 txdwkmov.a.yximgs.com
 
-#暂时放行
-@@||dcloud.net.cn^
-##
 
 tnc16-alisg.isnssdk.com
 tnc16-alisg.byteoversea.com
