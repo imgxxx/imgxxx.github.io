@@ -1,4 +1,17 @@
 #白名单
+@@||paykwai.com^
+@@||bpaykwai.com^
+@@||beckwai.com^
+@@||oskwai.com^
+@@||kskwai.com
+@@||kskwai.com^
+@@||oskwai.com
+
+
+tx-tv-pic.yximgs.kstv.aisee.tv
+tx2.a.yximgs.com
+||tx*.a.yximgs.com^
+txdwk.a.yximgs.com
 
 doc.bce.baidu.com
 
