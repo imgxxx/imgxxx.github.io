@@ -1,4 +1,10 @@
 #白名单
+
+
+@@|*-live.a.yximgs.com^
+@@||p*-live.a.yximgs.com^
+
+
 @@||paykwai.com^
 @@||bpaykwai.com^
 @@||beckwai.com^
