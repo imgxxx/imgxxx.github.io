@@ -1,5 +1,7 @@
 #白名单
 
+@@||txdwk.a.yximgs.com
+
 
 @@|*-live.a.yximgs.com^
 @@||p*-live.a.yximgs.com^
