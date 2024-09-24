@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||shouji.360.cn^
+
 ||pagead.googlesyndication-cn.com^
 ||pagead*.googlesyndication-cn.com^
 
