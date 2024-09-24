@@ -57,13 +57,13 @@ p.bokecc.com
 @@||zconfig.alibabausercontent.com
 
 
-kernelapi.vivo.com.cn
-kernel.vivo.com.cn
+#kernelapi.vivo.com.cn
+#kernel.vivo.com.cn
 @@||panguidc.com^
 
 apd-ugcvlive.apdcdn.tc.qq.com
 
-dig.bdurl.net
+#dig.bdurl.net
 
 #中国天气网
 @@||i8tq.com^
