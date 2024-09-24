@@ -1,5 +1,8 @@
 #测试白名单
 
+tv.sohu.com
+m.tv.sohu.com
+
 openbox.mobilem.360.cn
 
 
