@@ -1,6 +1,6 @@
 #测试白名单
 
-
+@@||tdnsstic1.cn^
 
 @@||txdwk.a.yximgs.com
 
