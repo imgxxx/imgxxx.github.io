@@ -69,7 +69,7 @@ p.bokecc.com
 
 apd-ugcvlive.apdcdn.tc.qq.com
 
-#dig.bdurl.net
+dig.bdurl.net
 
 #中国天气网
 @@||i8tq.com^
