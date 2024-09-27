@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||china-qzxy.cn^
+
 @@||shouji.360.cn^
 
 ||pagead.googlesyndication-cn.com^
