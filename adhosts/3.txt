@@ -1,5 +1,5 @@
 #测试白名单
-
+photocdn.tv.sohu.com
 tv.sohu.com
 m.tv.sohu.com
 
@@ -69,7 +69,7 @@ p.bokecc.com
 
 apd-ugcvlive.apdcdn.tc.qq.com
 
-dig.bdurl.net
+#dig.bdurl.net
 
 #中国天气网
 @@||i8tq.com^
@@ -1131,7 +1131,7 @@ sound.bssdlbig.kugou.com
 d.kugou.com
 collect.kugou.com
 serveraddr.service.kugou.com
-ipv4only.arpa
+#ipv4only.arpa
 @@||didistatic.com^
 conf.diditaxi.com.cn
 img-ys011.didistatic.com
@@ -1142,7 +1142,7 @@ brpnrt.stsdk.vivo.com.cn
 prt-stsdk.vivo.com.cn
 onrt-stsdk.vivo.com.cn
 ort-stsdk.vivo.com.cn
-monitor-stsdk.vivo.com.cn
+#monitor-stsdk.vivo.com.cn
 systemort-stsdk.vivo.com.cn
 moni-onrt-stsdk.vivo.com.cn
 fastonrt-stsdk.vivo.com.cn
