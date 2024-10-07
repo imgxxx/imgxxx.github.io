@@ -1,5 +1,7 @@
 #测试版规则
 
+||c3pool.com^
+
 @@||china-qzxy.cn^
 
 @@||shouji.360.cn^
