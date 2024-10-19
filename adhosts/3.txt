@@ -1,5 +1,20 @@
 #测试白名单
 
+p0.meituan.net
+
+ali-p2p-pull.live-voip.com
+ali-p2p-pull.video-voip.com
+ali-adaptive-pull.live-voip.com
+ali-adaptive-pull.video-voip.com
+ali-origin-pull.live-voip.com
+ali-pull.video-voip.com
+ali-pull.live-voip.com
+ali-origin-pull.video-voip.com
+
+
+
+
+
 @@||pull-lls-l*.douyincdn.com^
 @@||pull-l*-source.douyincdn.com^
 
