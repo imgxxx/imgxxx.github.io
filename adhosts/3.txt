@@ -1,4 +1,10 @@
 #测试白名单
+
+@@||pull-lls-l*.douyincdn.com^
+@@||pull-l*-source.douyincdn.com^
+
+ocsp.digicert.cn
+
 @@||onethingpcs.com^
 
 photocdn.tv.sohu.com
