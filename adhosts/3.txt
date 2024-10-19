@@ -1,6 +1,7 @@
 #测试白名单
 
 p0.meituan.net
+p1.meituan.net
 
 ali-p2p-pull.live-voip.com
 ali-p2p-pull.video-voip.com
