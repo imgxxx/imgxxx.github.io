@@ -1,5 +1,8 @@
 #测试白名单
 
+
+@@||cdn-go.cn^
+
 @@||du.163.com^
 
 @@||w.cdngslb.com^
