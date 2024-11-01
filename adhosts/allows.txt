@@ -1,6 +1,6 @@
 #测试版规则
 
-||vivo.com.cn^
+#||vivo.com.cn^
 
 ||c3pool.com^
 
