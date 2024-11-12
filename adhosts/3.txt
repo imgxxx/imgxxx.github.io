@@ -1,5 +1,10 @@
 #测试白名单
 
+obus-dc20123-cn.heytapmobi.com
+
+wximg.wxs.qq.com
+
+
 @@||maoken.com^
 
 @@||cdn-go.cn^
