@@ -1,5 +1,20 @@
 #测试版规则
 
+huiduapi.nuomi.com
+
+||cdnhwcprh113.com^
+
+#magic
+||magicacid.cn^
+
+#优比客思
+tx-cfg-u1.ubixioe.com
+ubixioe.com
+
+#章鱼移动广告
+ios-sdk.zhangyuyidong.cn
+||zhangyuyidong.cn^
+
 ||3v8.co^
 
 #王者人机
