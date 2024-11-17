@@ -1,5 +1,7 @@
 #测试版规则
 
+||29xr.com^
+
 huiduapi.nuomi.com
 
 ||cdnhwcprh113.com^
@@ -9,7 +11,7 @@ huiduapi.nuomi.com
 
 #优比客思
 tx-cfg-u1.ubixioe.com
-ubixioe.com
+||ubixioe.com^
 
 #章鱼移动广告
 ios-sdk.zhangyuyidong.cn
