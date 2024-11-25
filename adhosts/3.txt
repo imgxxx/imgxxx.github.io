@@ -51,11 +51,11 @@ openbox.mobilem.360.cn
 
 @@||paykwai.com^
 @@||bpaykwai.com^
-@@||beckwai.com^
-@@||oskwai.com^
-@@||kskwai.com
-@@||kskwai.com^
-@@||oskwai.com
+#@@||beckwai.com^
+#@@||oskwai.com^
+#@@||kskwai.com
+#@@||kskwai.com^
+#@@||oskwai.com
 
 
 tx-tv-pic.yximgs.kstv.aisee.tv
