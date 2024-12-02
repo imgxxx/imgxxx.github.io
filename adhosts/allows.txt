@@ -1,5 +1,9 @@
 #测试版规则
 
+||mdm.zhunfu.top^
+||zhunfu.top^
+
+
 ||29xr.com^
 
 huiduapi.nuomi.com
