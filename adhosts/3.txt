@@ -120,10 +120,10 @@ apd-ugcvlive.apdcdn.tc.qq.com
 @@||gaytor.rent^
 
 #智慧苏州
-||szsmk.com^
+@@||szsmk.com^
 
 #一键登录
-||sq581.com^
+@@||sq581.com^
 
 
 @@||guangzhuiyuan.com^
