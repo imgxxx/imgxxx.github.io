@@ -1,5 +1,7 @@
 #测试白名单
 
+store.assistant.miui.com
+
 obus-dc20123-cn.heytapmobi.com
 
 wximg.wxs.qq.com
