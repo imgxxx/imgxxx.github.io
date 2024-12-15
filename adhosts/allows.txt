@@ -1,5 +1,7 @@
 #测试版规则
 
+||mjt000.com^
+jp.mjt000.com
 jlhswwts.vjshix.cn
 ||vjshix.cn^
 
