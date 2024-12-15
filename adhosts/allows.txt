@@ -1,4 +1,8 @@
 #测试版规则
+
+jlhswwts.vjshix.cn
+||vjshix.cn^
+
 update.sslcsdn.com
 fix-ssl.com
 analyze.sogoudoc.com
