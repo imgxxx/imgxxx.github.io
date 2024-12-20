@@ -1,5 +1,10 @@
 #测试白名单
 
+obus-cn.dc.heytapmobi.com
+jsmov2.a.kwimgs.com
+
+
+
 store.assistant.miui.com
 
 obus-dc20123-cn.heytapmobi.com
