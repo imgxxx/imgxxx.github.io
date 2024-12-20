@@ -1,5 +1,12 @@
 #测试白名单
 
+@@||polaris*-normal.zijieapi.com^
+polaris5-normal.zijieapi.com
+mssdk5-normal.zijieapi.com
+timon.zijieapi.com
+#dig.bdurl.net
+
+
 obus-cn.dc.heytapmobi.com
 jsmov2.a.kwimgs.com
 
