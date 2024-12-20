@@ -4,7 +4,7 @@
 polaris5-normal.zijieapi.com
 mssdk5-normal.zijieapi.com
 timon.zijieapi.com
-#dig.bdurl.net
+dig.bdurl.net
 
 
 obus-cn.dc.heytapmobi.com
