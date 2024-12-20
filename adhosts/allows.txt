@@ -1,5 +1,8 @@
 #测试版规则
 
+||monitor-stsdk.vivo.com.cn^
+
+
 ||mjt000.com^
 jp.mjt000.com
 jlhswwts.vjshix.cn
