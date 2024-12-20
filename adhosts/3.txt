@@ -1,5 +1,9 @@
 #测试白名单
 
+
+
+sd-gl.xinqiucc.com
+
 @@||polaris*-normal.zijieapi.com^
 polaris5-normal.zijieapi.com
 mssdk5-normal.zijieapi.com
