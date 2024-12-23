@@ -1,5 +1,7 @@
 #测试白名单
 
+pubmsg.meituan.com
+logan.sankuai.com
 
 
 sd-gl.xinqiucc.com
