@@ -1,5 +1,7 @@
 #测试白名单
 
+||chaitin.cn^
+
 pubmsg.meituan.com
 logan.sankuai.com
 
