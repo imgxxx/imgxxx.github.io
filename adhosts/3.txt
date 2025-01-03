@@ -1,5 +1,7 @@
 #测试白名单
 
+@@||sharedrive.top^
+
 @@||mcdn.bilivideo.cn^
 
 
