@@ -1,5 +1,8 @@
 #测试版规则
 
+yby3o.dbkyz.com
+||dbkyz.com^
+
 ||touch-moblie.com^
 
 ||unidian.com^
