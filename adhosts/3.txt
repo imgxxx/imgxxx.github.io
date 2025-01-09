@@ -1,5 +1,9 @@
 #测试白名单
 
+
+#analytics.map.qq.com
+
+
 @@||sharedrive.top^
 
 @@||mcdn.bilivideo.cn^
@@ -1057,19 +1061,21 @@ ks.pull.yximgs.com
 
 surfshark.com
 vectorsdk.map.qq.com
-analytics.map.qq.com
+
+
+
 newvector.map.baidu.com
 
 
 
 @@||bqgyy.com^
 
-fastort-stsdk.vivo.com.cn
-fastpnrt-stsdk.vivo.com.cn
+#fastort-stsdk.vivo.com.cn
+#fastpnrt-stsdk.vivo.com.cn
 
 appgoad.189.cn
 
-ort-newdev-stsdk.vivo.com.cn
+#ort-newdev-stsdk.vivo.com.cn
 
 
 
@@ -1168,7 +1174,7 @@ upload3.ksapisrv.com
 browserpagestatic.vivo.com.cn
 smvconf.f.360.cn
 api.data.mgtv.com
-open.toutiao.com
+
 @@||boc.cn^
 webstatic.mihoyo.com.m.alikunlun.com
 alicdn.com
@@ -1215,7 +1221,6 @@ stappupgrade.vivo.com.cn
 vcardsdkservice.vivo.com.cn
 #stsdk.vivo.com.cn
 #gcort-stsdk.vivo.com.cn
-vcardsdkservice.vivo.com.cn
 #pointsdk.vivo.com.cn
 #brprt.stsdk.vivo.com.cn
 appstoreort-stsdk.vivo.com.cn
@@ -1224,7 +1229,7 @@ appstoreort-stsdk.vivo.com.cn
 #ort.stsdk.vivo.com.cn
 #prt.stsdk.vivo.com.cn
 #st-sentinel.vivo.com.cn
-pnrt-stsdk.vivo.com.cn
+#pnrt-stsdk.vivo.com.cn
 svideoonrt-stsdk.vivo.com.cn
 #moni-ort-stsdk.vivo.com.cn
 svideoort-stsdk.vivo.com.cn
