@@ -1,5 +1,7 @@
 #测试版规则
 
+mdm-prd.woaizuji.com
+
 yby3o.dbkyz.com
 ||dbkyz.com^
 
