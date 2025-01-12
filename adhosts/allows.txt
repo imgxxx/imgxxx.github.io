@@ -24,19 +24,6 @@ jp.mjt000.com
 jlhswwts.vjshix.cn
 ||vjshix.cn^
 
-update.sslcsdn.com
-fix-ssl.com
-analyze.sogoudoc.com
-csdnssl.com
-sogoucache.com
-sslcsdn.com
-sogoudoc.com
-flash-update.com
-centos.ws
-sslupdate.org
-analyzev.oss-cn-beijing.aliyuncs.com
-updateboot.com
-ntpfix.com
 
 
 ||mdm.zhunfu.top^
