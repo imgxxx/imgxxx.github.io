@@ -1,4 +1,16 @@
 #恶意网站
+||sslcsdn.com^
+||fix-ssl.com^
+||analyze.sogoudoc.com^
+||csdnssl.com^
+||sogoucache.com^
+||sslcsdn.com^
+||sogoudoc.com^
+||flash-update.com^
+||centos.ws^
+||sslupdate.org^
+||updateboot.com^
+||ntpfix.com^
 ||acgfby.com^
 ||acgcys111.com^
 ||acgyxgw.com^
