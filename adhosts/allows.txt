@@ -1,4 +1,22 @@
 #测试版规则
+||collector-axa.cloud.ca.com^
+||omtrdc.net^
+||onesignal.com^
+||launchdarkly.com^
+||demdex.net^
+
+||branch.io^
+||newrelic.com^
+||eum-appdynamics.com^
+@@||app-measurement.com^
+||crashlytics.com^
+@@||usertrust.com^
+@@||signifyd.com^
+||aimtell.com^
+@@||siftscience.com^
+||online-metrix.net^
+||secretchina.com^
+
 
 ||mobile-collector.newrelic.com^
 ||newrelic.com^
