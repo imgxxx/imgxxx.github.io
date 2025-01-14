@@ -28,6 +28,8 @@
 /((^)|(.))adv./
 /((^)|(.))log-api./
 /((^)|(.))debug./
+/((^)|(.))mobile-collector./
+
 
 
 
