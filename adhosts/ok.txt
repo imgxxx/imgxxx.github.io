@@ -1,10 +1,7 @@
-@@||analytics.google.com^
-@@||analytics.twitter.com^
 @@||azure.com^
 @@||microsoft.com^
 @@||windows.com^
 @@||live.com^
-@@||google-analytics.com^
 @@||maccms.com^
 @@||gvt2.com^
 @@||googleapis.com^
@@ -60,11 +57,8 @@
 @@||www.aboluowang.com^
 @@||fvs.io^
 @@||ssl.p.jwpcdn.com^
-@@||c3pool.com^
 @@||aa.online-metrix.net^
 @@||www.secretchina.com^
-@@||mobile-collector.newrelic.com^
-@@||db-ip.com^
 
 
 @@||000714.xyz^
