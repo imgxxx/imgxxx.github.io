@@ -26,7 +26,7 @@
 /((^)|(.))collector./
 /((^)|(.))log-collector./
 /((^)|(.))adv./
-/((^)|(.))iad./
+/((^)|(.))log-api./
 
 
 /^ad([sxv]?[0-9]*|system)[_.-]([^.[:space:]]+\.){1,}|[_.-]ad([sxv]?[0-9]*|system)[_.-]/
