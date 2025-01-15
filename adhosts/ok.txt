@@ -1,6 +1,6 @@
-@@||azure.com^
-@@||microsoft.com^
-@@||windows.com^
+#@@||azure.com^
+#@@||microsoft.com^
+#@@||windows.com^
 @@||live.com^
 @@||gvt2.com^
 @@||paypalobjects.com^
