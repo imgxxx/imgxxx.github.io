@@ -1,10 +1,12 @@
 #测试白名单
 
 
-@||ulogjs.ksapisrv.com^
-@||ulog.ksapisrv.com^
-
-
+@@||ulogjs.ksapisrv.com^
+@@||ulog.ksapisrv.com^
+push.ksapisrv.com
+ulogjs.ksapisrv.com
+upload.ksapisrv.com
+@@||ulog*.ksapisrv.com^
 
 #analytics.map.qq.com
 
