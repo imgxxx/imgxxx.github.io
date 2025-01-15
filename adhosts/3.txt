@@ -1,6 +1,10 @@
 #测试白名单
 
 
+@||ulogjs.ksapisrv.com^
+@||ulog.ksapisrv.com^
+
+
 
 #analytics.map.qq.com
 
