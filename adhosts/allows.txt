@@ -1,4 +1,10 @@
 #测试版规则
+
+||bds.snssdk.com^$important
+||sdfp.snssdk.com^$important
+||gdfp.gifshow.com^$important
+||tbm.snssdk.com^$important
+
 ||collector-axa.cloud.ca.com^
 ||omtrdc.net^
 ||onesignal.com^
@@ -1724,9 +1730,8 @@ log5-applog-lf.ixigua.com
 @@||stream.snssdk.com^
 @@||tnc*-alisc*.snssdk.com^
 @@||tnc*-bjlgy.snssdk.com^
-@@||tbm.snssdk.com^
 @@||push.ulive.ugslb.com^
-@@||snssdk.com^
+#@@||snssdk.com^
 
 ||applog.ucdns.uc.cn^$important
 ||applog.uc.cn^$important
@@ -2139,7 +2144,7 @@ wlog.gifshow.com
 @@||jsmov2.a.yximgs.com^
 @@||static.yximgs.com^
 @@||bd.pull.yximgs.com^
-@@||gdfp.gifshow.com^
+#@@||gdfp.gifshow.com^
 @@||push.kwd.inkuai.com^
 @@||bd-proxy.pull.yximgs.com^
 
