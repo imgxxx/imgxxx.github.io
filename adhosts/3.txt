@@ -1,5 +1,8 @@
 #测试白名单
 
+slsrole.alicdn.com
+
+
 @@||xycdn.com^
 
 @@||ulogjs.ksapisrv.com^
