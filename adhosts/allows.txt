@@ -1267,7 +1267,7 @@ wrating.com
 
 @@||*.mmstat.com^
 
-@@||alicdn.com^
+#@@||alicdn.com^
 
 open.oneplus.net
 sdkconfig.ad.xiaomi.com
