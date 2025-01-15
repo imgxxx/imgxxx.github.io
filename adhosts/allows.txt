@@ -1,5 +1,9 @@
 #测试版规则
 
+#@@||quark.cn^
+#@@||alicdn.com^
+
+
 @@||ksapisrv.com^
 
 
@@ -1270,7 +1274,7 @@ wrating.com
 
 @@||*.mmstat.com^
 
-#@@||alicdn.com^
+
 
 open.oneplus.net
 sdkconfig.ad.xiaomi.com
@@ -1338,11 +1342,11 @@ khpf.online
 
 ||httpdns.alicdn.com^$important
 ||h2-api-gt.n.shifen.com^
-||sdkserver.op.hicloud.com^
+#||sdkserver.op.hicloud.com^
 ||acd.op.hicloud.com^
 ||static.new669.com^
 ||img-hwy.9liuda.com^
-||openapi-drcn.cloud.dbankcloud.cn^
+#||openapi-drcn.cloud.dbankcloud.cn^
 ||sgw-cn.c.huawei.com^
 
 ||cs02-pps-drcn.dbankcdn.cn^
@@ -1823,7 +1827,7 @@ phoniex.toutiao.com
 
 
 ||adtrack.quark.cn^$important
-@@||quark.cn^
+
 sp-sdk.api.360ra.net
 ||log*-applog.fqnovel.com^
 @@||sf*-ttcdn-tos.pstatp.com^
@@ -3042,6 +3046,7 @@ api-adservices.apple.com
 
 ||rtlog5-applog-hl.fqnovel.com^
 ||bizsec-auth.alicdn.com^
+||biz-auth.alicdn.com^
 
 
 #腾讯游戏下载更新接口
@@ -3054,7 +3059,7 @@ api-adservices.apple.com
 @@||appstoreonrt-stsdk.vivo.com.cn
 
 
-dns.jd.com
+
 ||jmcloud.jdx.com^
 
 api.tbk.dingdanxia.com
