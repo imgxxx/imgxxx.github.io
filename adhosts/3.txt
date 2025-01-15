@@ -1,6 +1,7 @@
 #测试白名单
 
 
+
 #analytics.map.qq.com
 
 
@@ -90,7 +91,7 @@ openbox.mobilem.360.cn
 
 tx-tv-pic.yximgs.kstv.aisee.tv
 tx2.a.yximgs.com
-||tx*.a.yximgs.com^
+@@||tx*.a.yximgs.com^
 txdwk.a.yximgs.com
 
 doc.bce.baidu.com
@@ -1170,7 +1171,7 @@ bd-pclivemate.pull.yximgs.com
 @@||fp.measure.office.com^
 moa-upload-online.coloros.com
 upload3.ksapisrv.com
-@@||ksapisrv.com^
+
 browserpagestatic.vivo.com.cn
 smvconf.f.360.cn
 api.data.mgtv.com
