@@ -1,7 +1,8 @@
 #测试版规则
 
 #@@||quark.cn^
-#@@||alicdn.com^
+
+@@||alicdn.com^
 
 
 @@||ksapisrv.com^
@@ -3143,7 +3144,7 @@ apidns.kwd.inkuai.com
 @@||dingtalk.com^
 @@||beacon-api.aliyuncs.com
 @@||audid-api.taobao.com
-||g*.alicdn.com^
+
 apmplus.volces.com
 ||bizport.cn^
 ||sensorsdata.cn^
