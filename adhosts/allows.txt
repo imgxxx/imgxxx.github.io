@@ -1,5 +1,8 @@
 #测试版规则
 
+@@||ksapisrv.com^
+
+
 ||bds.snssdk.com^$important
 ||sdfp.snssdk.com^$important
 ||gdfp.gifshow.com^$important
