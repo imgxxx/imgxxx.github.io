@@ -1847,24 +1847,24 @@ sp-sdk.api.360ra.net
 @@||docs.gtimg.com^
 
 #番茄小说
-||v26-novelapp.fqnovelvod.com^
-||ads5-normal-lq.zijieapi.com^
-||p6-ad-sign.byteimg.com^
-||v*-novelapp.fqnovelvod.com^
-||p*-ad-sign.byteimg.com^
-||ads*-normal-lq.zijieapi.com^
-||p*-ad-sign.byteimg.com^
+#||v26-novelapp.fqnovelvod.com^
+||ads5-normal-lq.zijieapi.com^$important
+||p6-ad-sign.byteimg.com^$important
+#||v*-novelapp.fqnovelvod.com^
+||p*-ad-sign.byteimg.com^$important
+||ads*-normal-lq.zijieapi.com^$important
+||p*-ad-sign.byteimg.com^$important
 
 ||log*-applog-lq.fqnovel.com^
 ||rtlog*-applog-lq.fqnovel.com^
 ||log*-applog-lq.fqnovel.com^
-||p*-ad-sign.byteimg.com^
+||p*-ad-sign.byteimg.com^$important
 
 #番茄小说测试
 
-||p*-orange.byteorge.com^
-||p*-ad-sign.byteimg.com^
-||p*-orange-sign.byteimg.com^
+||p*-orange.byteorge.com^$important
+||p*-ad-sign.byteimg.com^$important
+||p*-orange-sign.byteimg.com^$important
 
 
 
