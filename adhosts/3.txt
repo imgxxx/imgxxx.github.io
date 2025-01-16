@@ -1,5 +1,12 @@
 #测试白名单
 
+vd2.bdstatic.com
+
+@@||bdstatic.com^
+bcstobos.jomodns.com
+@@||jomodns.com^
+
+
 slsrole.alicdn.com
 
 
