@@ -1,10 +1,16 @@
 #测试白名单
 
+#中国联通图标
+ad.admin.10010.com
+smartad.10010.com
+m1.ad.10010.com
+
+
 vd2.bdstatic.com
 
-@@||bdstatic.com^
+#@@||bdstatic.com^
 bcstobos.jomodns.com
-@@||jomodns.com^
+#@@||jomodns.com^
 
 
 slsrole.alicdn.com
