@@ -1,5 +1,5 @@
 #测试版规则
-
+sysdesc.vivo.com.cn
 
 @@||360.cn^
 
