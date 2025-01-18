@@ -46,8 +46,11 @@
 /((^)|(.))sysdesc./
 /((^)|(.))adsdk./
 /((^)|(.))adxsdk./
+/((^)|(.))logagent./
 
 
+
+/^logagent?[_.-]/
 /^adsdk?[_.-]/
 /^adxsdk?[_.-]/
 /^sysdesc?[_.-]/
