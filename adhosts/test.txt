@@ -68,7 +68,7 @@
 /^collector?[_.-]/
 /^applog?[_.-]/
 /^monitor?[_.-]/
-
+/^track?[_.-]/
 
 
 
