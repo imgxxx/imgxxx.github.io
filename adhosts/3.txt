@@ -1,5 +1,6 @@
 #测试白名单
 
+prod-event-relay-weather-api.v.aaplimg.com
 amp-api-edge-lb-cn.itunes-apple.com.akadns.net
 
 
