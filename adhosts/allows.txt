@@ -1,5 +1,16 @@
 #测试版规则
 
+#@@||itunes.apple.com^$important
+#@@||captive.apple.com^
+#@@||amp-api-edge.apps.apple.com^
+#@@||apps.apple.com^$important
+#@@||apple.com
+#@@||apple-dns.net^
+#@@||apple.com.cn^
+
+
+
+
 ||amp-api-edge.apps.apple.com^$important
 camp.qq.com
 
@@ -1462,7 +1473,7 @@ log1.wanmei.com
 @@||bokecc.com^
 @@||kuwo.cn
 @@||cnblogs.com^
-@@||apple.com
+
 @@||jobsfe.funshion.com^
 
 
@@ -2375,10 +2386,7 @@ ssongacsing.kugou.com
 
 
 
-@@||itunes.apple.com^$important
-@@||captive.apple.com^
-@@||amp-api-edge.apps.apple.com^
-@@||apps.apple.com^$important
+
 
 
 mlog.bigda.com
@@ -2464,6 +2472,7 @@ mo.rtalink.com
 #腾讯充值接口
 @@||api.unipay.qq.com^
 
+@@||api.smoot.apple.com^
 @@||api.smoot.apple.com
 
 @@||knicks.jd.com^$important
@@ -3473,9 +3482,7 @@ t7z.cupid.ptqy.gitv.tv
 @@||qlogo.cn^
 @@||tracker.kugou.com^
 @@||you-mi.net^
-@@||apple-dns.net^
-@@||apple.com.cn^
-@@||apple-dns.net^
+
 @@||api.installer.xiaomi.com^
 
 ||cdn-pic.com^
