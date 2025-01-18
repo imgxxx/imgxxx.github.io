@@ -1,5 +1,8 @@
 #测试白名单
 
+amp-api-edge-lb-cn.itunes-apple.com.akadns.net
+
+
 @@||steampowered.com^
 
 
