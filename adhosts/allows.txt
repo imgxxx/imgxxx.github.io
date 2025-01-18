@@ -1,11 +1,11 @@
 #测试版规则
 
-#@@||itunes.apple.com^$important
+@@||itunes.apple.com^$important
 #@@||captive.apple.com^
 #@@||amp-api-edge.apps.apple.com^
 #@@||apps.apple.com^$important
 #@@||apple.com
-#@@||apple-dns.net^
+@@||apple-dns.net^
 #@@||apple.com.cn^
 
 
