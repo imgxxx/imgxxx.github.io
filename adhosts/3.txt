@@ -1,5 +1,8 @@
 #测试白名单
 
+@@||steampowered.com^
+
+
 onrt-stsdk.vivo.com.cn
 ort-stsdk.vivo.com.cn
 
