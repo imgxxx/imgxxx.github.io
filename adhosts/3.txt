@@ -3,7 +3,6 @@
 @@||ls.apple.com^
 
 
-#prod-event-relay-weather-api.v.aaplimg.com
 amp-api-edge-lb-cn.itunes-apple.com.akadns.net
 
 
@@ -354,7 +353,7 @@ img3.funshion.com
 
 
 
-@@||weather-analytics-events.apple.com^
+#@@||weather-analytics-events.apple.com^
 @@||weather-community-drcn.weather.dbankcloud.cn^
 @@||weather-drcn.music.dbankcloud.cn^
 vlive.qqvideo.tc.qq.com
@@ -460,7 +459,7 @@ msg.douyu.com
 ku.m.taobao.com
 
 xp.apple.com 
-gdmf.apple.com
+
 
 
 w2.eckwai.com
