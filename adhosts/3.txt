@@ -1,5 +1,7 @@
 #测试白名单
 
+mesu.apple.com
+
 @@||126.com^
 
 @@||smogfly.cloud^
