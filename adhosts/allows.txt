@@ -1,5 +1,7 @@
 #测试版规则
 
+@@||ename.net^
+
 @@||itunes.apple.com^$important
 #@@||captive.apple.com^
 #@@||amp-api-edge.apps.apple.com^
