@@ -1,5 +1,7 @@
 #测试版规则
 
+||cnmjin.net^
+
 @@||ename.net^
 
 @@||itunes.apple.com^$important
