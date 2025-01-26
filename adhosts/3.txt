@@ -1097,7 +1097,7 @@ thirdwx.qlogo.cn
 game-res.meizu.com
 livepnrt-stsdk.vivo.com.cn
 fplus.funshion.com
-pv.funshion.com
+
 @@||wpsmail.net^
 
 pnrt.stsdk.vivo.com.cn
