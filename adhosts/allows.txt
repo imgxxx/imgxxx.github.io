@@ -1,5 +1,9 @@
 #测试版规则
 
+@@||mb.hd.sohu.com.cn^
+@@||tv.sohu.com^
+
+
 ||cnmjin.net^
 
 @@||ename.net^
