@@ -1,5 +1,10 @@
 #测试白名单
 
+#喜番短剧
+open.e.kuaishou.com
+tube.e.kuaishou.com
+
+
 mesu.apple.com
 
 @@||126.com^
