@@ -1,5 +1,8 @@
 #测试版规则
 
+v9.t13466.com
+||t13466.com^
+
 @@||zuimeitianqi.com^
 
 
