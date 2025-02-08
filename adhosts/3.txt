@@ -4,6 +4,7 @@
 @@||ipv4dns.com^
 
 static.geetest.com
+@@||geetest.com^
 
 #喜番短剧
 open.e.kuaishou.com
