@@ -1,6 +1,8 @@
 #测试白名单
 
 
+@@||ipv4dns.com^
+
 static.geetest.com
 
 #喜番短剧
