@@ -1,5 +1,7 @@
 #测试白名单
 
+@@||pan.quark.cn^
+
 
 @@||ipv4dns.com^
 
