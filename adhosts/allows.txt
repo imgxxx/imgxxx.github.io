@@ -196,7 +196,6 @@ pqdrf.xyz
 ||jsdelivr.vip^
 ||cdn.jsdelivr.vip^
 
-||in-addr.arpa^
 
 ||hao774.com^
 
@@ -3565,7 +3564,7 @@ resolver.msg.xiaomi.net
 @@||video.xiaomi.com^
 @@||wfdata.club^$important
 @@||miwifi.com^$important
-@@||*.ipv4dns.com^$important
+@@||ipv4dns.com^$important
 @@||*.ipxx.pro^$important
 @@||thm.market.xiaomi.com^$important
 @@||zhuti.xiaomi.com^$important
@@ -3584,11 +3583,11 @@ resolver.msg.xiaomi.net
 @@||api.coolapk.com^
 ||market.wsskj520.cn^$important
 ||p9-ad-sign.byteimg.com^$important
-@@||in-addr.arpa^
+
 ||gongyi.mi.com
 @@||baijiahao.baidu.com^
 
-||*.shuzilm.cn^$important
+||shuzilm.cn^$important
 ||file.7youxi.com^$important
 ||cdn.51img3.com^$important
 @@||nav.kksan.top^$important
@@ -3597,8 +3596,8 @@ resolver.msg.xiaomi.net
 ||ali-ad.a.yximgs.com^$important
 ||tx-ad.a.yximgs.com^$important
 ||p1-lm.adkwai.com^$important
-||*.adkwai.com^$important
 ||adkwai.com^$important
+||adbkwai.com^$important
 ||sf6-be-pack.pglstatp-toutiao.com 
 ||log-api.pangolin-sdk-toutiao-b.com 
 ||qzs.gdtimg.com
@@ -3834,8 +3833,7 @@ sf6-be-pack.pglstatp-toutiao.com
 @@||video.xiaomi.com^$important
 @@||ipxx.pro^$important
 
-||open.kuaishouzt.com^$important
-||open.kwaizt.com^$important
+
 
 ||vrbt.mobi^$important
 ||uem.migu.cn^$important
@@ -6898,14 +6896,7 @@ cms.qdwght.com
 
 
 
-! 阿里/支付宝
-@@||mmstat.com^
-! 360域名
 
-! X5内核
-@@||cfg.imtt.qq.com^
-@@||soft.tbs.imtt.qq.com^
-@@||res.imtt.qq.com^
 
 ! MIUI 流量中心
 @@||api.miui.security.xiaomi.com^
@@ -6989,8 +6980,7 @@ cms.qdwght.com
 
 ! 百度求医问药网
 @@||med-fe.cdn.bcebos.com^
-! 微信部分小程序登陆
-@@||pv.sohu.com^
+
 ! 百度百家号
 @@||f10.baidu.com^
 ! MIUI 主题
@@ -7051,7 +7041,6 @@ cms.qdwght.com
 @@||aikanvod.miguvideo.com^
 @@||aikanlive.miguvideo.com^
 ! 部分设备的小米推送
-@@||resolver.msg.xiaomi.net^
 @@||register.xmpush.xiaomi.com^
 @@||app.chat.xiaomi.net^
 ! 部分设备的小米云服务
