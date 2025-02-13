@@ -1,5 +1,7 @@
 #测试白名单
 
+@@||dongmanmanhua.cn^
+
 @@||pan.quark.cn^
 download.quark.cn
 
