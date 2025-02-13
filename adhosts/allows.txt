@@ -1,6 +1,11 @@
 #测试版规则
 
 
+||bdwmhzfl.120askimages.com^
+||bdwmhz.120askimages.com^
+
+||analysis.120ask.com^$important
+
 ||yksdks.com^
 ||mob.com^
 
