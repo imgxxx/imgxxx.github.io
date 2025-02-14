@@ -43,7 +43,7 @@ camp.qq.com
 
 sysdesc.vivo.com.cn
 
-#@@||360.cn^
+@@||360.cn^
 
 
 
@@ -447,7 +447,7 @@ reports.a.shifen.com
 @@||douyinpic.com
 @@||pull-rtmp-f*-hs.pstatp.com^
 
-@@||hao.360.cn^
+
 
 #@@||dig.bdurl.net^$important
 #@@||dig.zjurl.cn^$important
@@ -982,8 +982,8 @@ res.chuangke.tv
 
 
 
-@@||f.360.cn^$important
-@@||s.360.cn^$important
+@@||f.360.cn^
+@@||s.360.cn^
 
 
 ||logs.quickapi.net^
@@ -2883,7 +2883,7 @@ uland.taobao.com
 open.gtimg.cn
 
 
-||sdkcloud.e.360.cn
+||sdkcloud.e.360.cn^$important
 ||img-x.jd.com^$important
 ||im-x.jd.com^$important
 
@@ -3014,7 +3014,7 @@ dsplog.vivo.com.cn
 #央视市场广告
 ||ctrmi.cn^
 
-ad.360buyimg.com
+||ad.360buyimg.com^
 ||e.ljcdn1.cn^
 ||bjmantis.com^
 ||qeasy.cloud^
@@ -3267,20 +3267,20 @@ log.zijieapi.com
 ||ad.*.ch^
 ||ad.10010.com^
 ||ad.12306.cn^
-||ad.3.cn
-||ad.360yield.com
+||ad.3.cn^
+||ad.360yield.com^
 ||ad.71i.de
 ||ad.8maple.ru
 ||ad.91.sellertool.com
-||ad.a-ads.com
+||a-ads.com^
 ||ad.abchina.com^
 ||ad.adriver.ru
 ||ad.adverticum.net
-||ad.adview.pl
+||ad.adview.pl^
 ||ad.alimama.com^
 ||ad.amgdgt.com
-||ad.amgdgt.com
-||ad.atdmt.com
+||ad.amgdgt.com^
+||ad.atdmt.com^
 ||ad.atown.jp
 ||ad.azure.com^
 ||ad.crwdcntrl.net
@@ -3311,7 +3311,7 @@ log.zijieapi.com
 ||ad*.on.cc^important
 ||ad4m.at
 
-||ad4msan.com
+||ad4msan.com^
 
 ||ccmsupport-sz.tenpay.com^$important
 ||m*.ad.10010.com^
@@ -3432,7 +3432,7 @@ t7z.cupid.ptqy.gitv.tv
 @@||tcbox.baidu.com^
 ||tnc3-alisc1.zijieapi.com^
 ||ads.privacy.qq.com^
-@@||msn.com^
+
 @@||scorecardresearch.com^
 @@||p2cdn.com^
 @@||dlswbr.baidu.com^
@@ -3472,6 +3472,7 @@ t7z.cupid.ptqy.gitv.tv
 ||ads3-normal.zijieapi.com^$important
 ||ads2-normal.zijieapi.com^$important
 ||ads*-normal.zijieapi.com^$important
+||ads*.zijieapi.com^$important
 
 ||ads3-normal-lf.zijieapi.com^$important
 ||mobilelog.cc.netease.com^$important
