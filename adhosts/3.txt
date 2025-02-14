@@ -1,5 +1,7 @@
 #测试白名单
 
+@@||luyou.360.cn^
+
 @@||dongmanmanhua.cn^
 
 @@||pan.quark.cn^
