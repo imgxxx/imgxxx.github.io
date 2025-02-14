@@ -1,5 +1,6 @@
 #测试版规则
 
+||ad.life.360.cn^$important
 
 ||bdwmhzfl.120askimages.com^
 ||bdwmhz.120askimages.com^
@@ -42,7 +43,7 @@ camp.qq.com
 
 sysdesc.vivo.com.cn
 
-@@||360.cn^
+#@@||360.cn^
 
 
 
