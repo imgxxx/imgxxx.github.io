@@ -1,4 +1,6 @@
 #恶意网站
+||histats.com^
+||anoltzy.com^
 ||aliyunddos1028.com^
 ||q065nqahd8217xib.aliyunddos1028.com^
 ||1112dns.com^
