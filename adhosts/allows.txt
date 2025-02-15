@@ -1,6 +1,8 @@
 #测试版规则
 
 
+||pancake.apple.com^$important
+
 ||yun.tuisnake.com^
 ||tuisnake.com^
 ||engine.szwrwl.cn^
