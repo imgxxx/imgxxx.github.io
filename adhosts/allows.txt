@@ -1,5 +1,26 @@
 #测试版规则
 
+
+||yun.tuisnake.com^
+||tuisnake.com^
+||engine.szwrwl.cn^
+||szwrwl.cn^
+||duiba.com.cn^
+||dui88.com^
+||qinlinad.com^
+
+||xcx.genealogical.cn^
+||genealogical.cn^
+
+||resource.zhishustar.com^
+||zhishustar.com^
+
+||api.revenuecat.com^
+||revenuecat.com^
+
+||wximg.wxs.qq.com^
+
+
 ||ad.life.360.cn^$important
 
 ||bdwmhzfl.120askimages.com^
