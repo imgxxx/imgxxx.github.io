@@ -1,5 +1,6 @@
 #测试版规则
 
+cloudlog001.rj.link
 
 ||pancake.apple.com^$important
 
