@@ -26,7 +26,7 @@ cloudlog001.rj.link
 ||revenuecat.com^
 
 ||wximg.wxs.qq.com^
-
+||wxs.qq.com^$important
 
 ||ad.life.360.cn^$important
 
@@ -3485,8 +3485,8 @@ t7z.cupid.ptqy.gitv.tv
 @@||softmgr.qq.com^
 ||wxa.wxs.qq.com^
 ||wxs.qq.com^
-||globalapi.ad.xiaomi.com
-||api.ad.intl.xiaomi.com
+||globalapi.ad.xiaomi.com^
+||api.ad.intl.xiaomi.com^
 @@||stats.music.xiaomi.com^
 
 @@||mp.huangye.miui.com^
@@ -3651,15 +3651,15 @@ resolver.msg.xiaomi.net
 ||p3-be-pack-sign.pglstatp-toutiao.com ^
 ||p6-aio.ecombdimg.com^
 ||bx.hrhbvip.com 
-||a.gdt.qq.com 
-||s95.cnzz.com 
-||xj.gtimg.cn 
-||obd.gtimg.com 
-||tx-ad.a.yximgs.com 
-||p1-lm.adkwai.com 
-||js-ad.a.yximgs.com
-||p9-be-pack-sign.pglstatp-toutiao.com
-||sf3-ttcdn-tos.pstatp.com
+||a.gdt.qq.com^
+||s95.cnzz.com^
+||xj.gtimg.cn^
+||obd.gtimg.com^
+||tx-ad.a.yximgs.com^
+||p1-lm.adkwai.com^
+||js-ad.a.yximgs.com^
+||p9-be-pack-sign.pglstatp-toutiao.com^
+||sf3-ttcdn-tos.pstatp.com^
 ||wxsnsdythumb.wxs.qq.com^
 
 ||pgdt.gtimg.cn^
