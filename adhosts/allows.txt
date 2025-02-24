@@ -44,8 +44,6 @@ adx-drru.op.hicloud.com
 
 
 
-||iphone-ld.apple.com^$important
-
 
 ||trackingio.com^
 
