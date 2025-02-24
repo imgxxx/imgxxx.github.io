@@ -1,5 +1,8 @@
 #测试版规则
 
+||iphone-ld.apple.com^$important
+
+
 ||trackingio.com^
 
 kk.meituan.com
