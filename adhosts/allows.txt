@@ -1,6 +1,8 @@
 #测试版规则
 
 
+||data.ab.qq.com^
+
 logservice.hicloud.com
 logservice1.hicloud.com
 logserver.nzxcloud.cn
