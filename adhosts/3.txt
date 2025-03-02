@@ -1,5 +1,7 @@
 #测试白名单
 
+miniapp.gtimg.cn
+
 @@||luyou.360.cn^
 
 @@||dongmanmanhua.cn^
