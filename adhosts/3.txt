@@ -1,5 +1,7 @@
 #测试白名单
 
+@@||neixin.cn^
+
 catdot.dianping.com
 
 novel-api.quark.cn
