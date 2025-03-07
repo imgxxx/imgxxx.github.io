@@ -1,5 +1,8 @@
 #测试白名单
 
+novel-api.quark.cn
+
+#QQ小程序
 miniapp.gtimg.cn
 
 @@||luyou.360.cn^
