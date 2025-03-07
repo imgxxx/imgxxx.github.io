@@ -1305,8 +1305,6 @@ res.chuangke.tv
 
 
 
-||kernelapi.vivo.com.cn^
-||kernelapi.vivo.com^
 ||mobile-nlp.vivo.com.cn^
 
 
