@@ -1,5 +1,7 @@
 #测试版规则
 
+kk.meituan.com
+
 
 ||data.ab.qq.com^
 
