@@ -2,7 +2,6 @@
 
 @@||neixin.cn^
 
-catdot.dianping.com
 
 novel-api.quark.cn
 
