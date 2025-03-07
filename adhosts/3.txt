@@ -1,5 +1,10 @@
 #测试白名单
 
+kernelapi.vivo.com.cn
+
+@@||kookong.com^
+sdk2.kookong.com
+
 @@||neixin.cn^
 
 
