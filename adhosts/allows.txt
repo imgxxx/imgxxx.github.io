@@ -49,7 +49,6 @@ adx-drru.op.hicloud.com
 
 ||trackingio.com^
 
-kk.meituan.com
 
 cloudlog001.rj.link
 
