@@ -1,5 +1,7 @@
 #测试白名单
 
+catdot.dianping.com
+
 novel-api.quark.cn
 
 #QQ小程序
