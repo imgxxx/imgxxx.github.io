@@ -1,5 +1,7 @@
 #测试白名单
 
+download.voicecloud.cn
+
 kernelapi.vivo.com.cn
 
 @@||kookong.com^
@@ -1277,32 +1279,32 @@ img-ys011.didistatic.com
 lbs.map.qq.com
 @@||dfcfw.com^
 @@||wps.cn^
-#brpnrt.stsdk.vivo.com.cn
-#prt-stsdk.vivo.com.cn
-#onrt-stsdk.vivo.com.cn
-#ort-stsdk.vivo.com.cn
+brpnrt.stsdk.vivo.com.cn
+prt-stsdk.vivo.com.cn
+onrt-stsdk.vivo.com.cn
+ort-stsdk.vivo.com.cn
 
 #monitor-stsdk.vivo.com.cn
 
 #systemort-stsdk.vivo.com.cn
 #moni-onrt-stsdk.vivo.com.cn
-#fastonrt-stsdk.vivo.com.cn
+fastonrt-stsdk.vivo.com.cn
 stappupgrade.vivo.com.cn
 #pfpdonrt-stsdk.vivo.com.cn
-#brort.stsdk.vivo.com.cn
-#bronrt.stsdk.vivo.com.cn
+brort.stsdk.vivo.com.cn
+bronrt.stsdk.vivo.com.cn
 vcardsdkservice.vivo.com.cn
-#stsdk.vivo.com.cn
-#gcort-stsdk.vivo.com.cn
-#pointsdk.vivo.com.cn
+stsdk.vivo.com.cn
+gcort-stsdk.vivo.com.cn
+pointsdk.vivo.com.cn
 #brprt.stsdk.vivo.com.cn
 appstoreort-stsdk.vivo.com.cn
-#gconrt-stsdk.vivo.com.cn
-#onrt.stsdk.vivo.com.cn
-#ort.stsdk.vivo.com.cn
-#prt.stsdk.vivo.com.cn
-#st-sentinel.vivo.com.cn
-#pnrt-stsdk.vivo.com.cn
+gconrt-stsdk.vivo.com.cn
+onrt.stsdk.vivo.com.cn
+ort.stsdk.vivo.com.cn
+prt.stsdk.vivo.com.cn
+st-sentinel.vivo.com.cn
+pnrt-stsdk.vivo.com.cn
 svideoonrt-stsdk.vivo.com.cn
 #moni-ort-stsdk.vivo.com.cn
 svideoort-stsdk.vivo.com.cn
