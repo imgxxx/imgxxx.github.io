@@ -1,5 +1,7 @@
 #测试白名单
 
+wbox.sinaimg.cn
+
 @@||sinacloud.net^
 
 download.voicecloud.cn
