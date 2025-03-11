@@ -1,5 +1,7 @@
 #测试白名单
 
+@@||sinacloud.net^
+
 download.voicecloud.cn
 
 kernelapi.vivo.com.cn
