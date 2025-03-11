@@ -1,6 +1,6 @@
 #测试白名单
 
-||alibabadns.com^
+@@||alibabadns.com^
 
 wbox.sinaimg.cn
 
