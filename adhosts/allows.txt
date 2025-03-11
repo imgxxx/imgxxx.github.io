@@ -1,5 +1,7 @@
 #测试版规则
 
+||lnk0.com^
+
 kk.meituan.com
 
 
