@@ -440,7 +440,7 @@ business.msstatic.com
 
 
 @@||wxqcloud.qq.com^
-openmonitor.alipay-eco.com
+
 appcloud.zhihu.com
 push.zhihu.com
 
@@ -1071,7 +1071,7 @@ itop.qq.com
 tbsrecovery.imtt.qq.com
 guid.tpns.tencent.com
 @@||toggle.qq.com^
-info.3g.qq.com
+#info.3g.qq.com
 yun-hl.3g.qq.com
 ap6.ssl.msdk.qq.com
 access1.tpns.tencent.com
@@ -1288,7 +1288,7 @@ lbs.map.qq.com
 brpnrt.stsdk.vivo.com.cn
 prt-stsdk.vivo.com.cn
 onrt-stsdk.vivo.com.cn
-ort-stsdk.vivo.com.cn
+#ort-stsdk.vivo.com.cn
 
 #monitor-stsdk.vivo.com.cn
 
@@ -1297,17 +1297,17 @@ ort-stsdk.vivo.com.cn
 fastonrt-stsdk.vivo.com.cn
 stappupgrade.vivo.com.cn
 #pfpdonrt-stsdk.vivo.com.cn
-brort.stsdk.vivo.com.cn
+#brort.stsdk.vivo.com.cn
 bronrt.stsdk.vivo.com.cn
 vcardsdkservice.vivo.com.cn
 stsdk.vivo.com.cn
-gcort-stsdk.vivo.com.cn
+#gcort-stsdk.vivo.com.cn
 pointsdk.vivo.com.cn
 #brprt.stsdk.vivo.com.cn
 appstoreort-stsdk.vivo.com.cn
 gconrt-stsdk.vivo.com.cn
 onrt.stsdk.vivo.com.cn
-ort.stsdk.vivo.com.cn
+#ort.stsdk.vivo.com.cn
 prt.stsdk.vivo.com.cn
 st-sentinel.vivo.com.cn
 pnrt-stsdk.vivo.com.cn
