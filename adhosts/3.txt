@@ -418,8 +418,8 @@ vlive.qqvideo.tc.qq.com
 
 @@||aiseet.atianqi.com^
 @@||kuaishouzt.com^
-#open.e.kuaishou.cn
-#open.e.kuaishou.com
+open.e.kuaishou.cn
+
 @@||shayujizhang.com^
 
 @@||rockitv.com^
@@ -1075,9 +1075,9 @@ guid.tpns.tencent.com
 yun-hl.3g.qq.com
 ap6.ssl.msdk.qq.com
 access1.tpns.tencent.com
-wspeed.qq.com
-open.gtimg.cn
-c.isdspeed.qq.com
+#wspeed.qq.com
+#open.gtimg.cn
+#c.isdspeed.qq.com
 appsupport.qq.com
 tianshu.gtimg.cn
 amonsul.douban.com
