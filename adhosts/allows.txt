@@ -1,5 +1,9 @@
 #测试版规则
 
+||open.gtimg.cn^
+||openmonitor.alipay-eco.com^
+||c.isdspeed.qq.com^
+
 
 ||mmmis.org^
 
