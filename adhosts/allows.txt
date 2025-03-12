@@ -1,5 +1,8 @@
 #测试版规则
 
+
+||mmmis.org^
+
 ||lnk0.com^
 
 kk.meituan.com
