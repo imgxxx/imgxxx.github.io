@@ -49,6 +49,9 @@
 /((^)|(.))crash./
 /^crash?[_.-]/
 
+/^error?[_.-]/
+/((^)|(.))error./
+
 /^logagent?[_.-]/
 /^adsdk?[_.-]/
 /^adxsdk?[_.-]/
