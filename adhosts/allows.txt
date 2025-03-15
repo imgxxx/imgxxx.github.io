@@ -1,5 +1,7 @@
 #测试版规则
 
+||business-ad.cdn-go.cn^$important
+
 ||open.gtimg.cn^
 ||openmonitor.alipay-eco.com^
 ||c.isdspeed.qq.com^
