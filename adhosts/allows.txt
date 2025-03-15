@@ -1,5 +1,8 @@
 #测试版规则
 
+||huoyanio.com^
+||huoyan.io^
+
 ||business-ad.cdn-go.cn^$important
 
 ||open.gtimg.cn^
