@@ -1,5 +1,7 @@
 #测试版规则
 
+||crash.xiaohongshu.com^
+
 ||huoyanio.com^
 ||huoyan.io^
 ||qiyevip.com^
