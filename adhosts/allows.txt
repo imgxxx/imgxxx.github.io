@@ -2,6 +2,8 @@
 
 ||huoyanio.com^
 ||huoyan.io^
+||qiyevip.com^
+
 
 ||business-ad.cdn-go.cn^$important
 
