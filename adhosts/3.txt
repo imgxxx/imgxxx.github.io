@@ -1026,7 +1026,6 @@ sns-video-bd.xhscdn.com
 vi.xiaohongshu.com
 store.xiaohongshu.com
 referee.xiaohongshu.com
-crash.xiaohongshu.com
 flash.xiaohongshu.com
 apppush-sh5.xiaohongshu.com
 
