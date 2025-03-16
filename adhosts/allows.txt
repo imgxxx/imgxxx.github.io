@@ -1,5 +1,7 @@
 #测试版规则
 
+||app-measurement.com^$important
+
 ||crash.xiaohongshu.com^
 
 ||huoyanio.com^
