@@ -1,5 +1,92 @@
 #测试版规则
 
+# 拦截大象驾到APP广告接口
+||*ad.adbkwai.com^
+
+# 拦截蓝狐视频APP广告API
+||api.admange.com^
+
+# 拦截飞鸟听书相关广告
+! 弹窗广告＆看视频广告
+! 巨量API
+||api.juliangcili.com^
+
+# 拦截青龙面板实时错误追踪请求
+! 基于「Sentry」开源的实时错误追踪系统
+||o1098464.ingest.sentry.io^
+||sentry.io^
+
+# 拦截广告布局接口
+! 均为视频网站、小说网站、漫画网站抓取
+||laebu.cn^
+||gdolr.cn^
+||poeme.cn^
+||bjnxo.cn^
+||phire.cn^
+||ifllqc.cn^
+||giqnyl.cn^
+||qgivvd.cn^
+||5z6h6b.cn^
+||fokm37.cn^
+||ul2tos.cn^
+||anhuyj.cn^
+||awkwla.cn^
+||kxayxw.cn^
+||ydxdg.xyz^
+||tbyfz.xyz^
+||ztgha.xyz^
+||ombuw.xyz^
+||jvere.xyz^
+||wfojsm.com^
+||80ritc.com^
+||z9ehxz.com^
+||vkomjd.com^
+||ppfu3m.com^
+||6nxa6g.com^
+||59p643.com^
+||tkmihh.xyz^
+||v4v6v4.com^
+||s8etj5.com^
+||emsxev.xyz^
+||obj23q.com^
+||p3q0tt.com^
+||3adtjg.com^
+||4egscv.com^
+||9tjoj6.com^
+||x586di.com^
+||hrdhej.xyz^
+||60qso7.com^
+||njp878.com^
+||siigck.xyz^
+||sjpxfz.xyz^
+||iburtq.xyz^
+||xqojux.xyz^
+||oneliner.cn^
+||oweisik.top^
+||uweisit.top^
+||3r5ia7l.xyz^
+||lzwrhiw.xyz^
+||8vx3zks.xyz^
+||3dqvcli.xyz^
+||f1k4eil.xyz^
+||fohbgjv.com^
+||amwexgj.com^
+||eavztdi.com^
+||cyfupnq.com^
+||dmcduio.com^
+||evqvxuq.com^
+||bgbjjtd.com^
+||dtsmndu.com^
+||javadvi.com^
+||bidjora.com^
+||kweisid.top^
+||kwilmid.top^
+||jjzemoc3ca.top^
+||jennylisnerphotography.com^
+
+
+
+
 ||app-measurement.com^$important
 
 ||crash.xiaohongshu.com^
