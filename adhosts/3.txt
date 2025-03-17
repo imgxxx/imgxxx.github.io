@@ -1,5 +1,7 @@
 #测试白名单
 
+@@||titannetwork.cn^
+
 @@||alibabadns.com^
 
 wbox.sinaimg.cn
