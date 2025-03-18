@@ -1,5 +1,7 @@
 #测试版规则
 
+||sec.sginput.qq.com^
+
 # 拦截大象驾到APP广告接口
 ||*ad.adbkwai.com^
 
