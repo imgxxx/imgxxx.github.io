@@ -1,5 +1,7 @@
 #测试白名单
 
+cn.app.chat.xiaomi.net
+
 @@||titannetwork.cn^
 
 @@||alibabadns.com^
