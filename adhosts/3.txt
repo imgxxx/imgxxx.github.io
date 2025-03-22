@@ -1,5 +1,13 @@
 #测试白名单
 
+p3.eckwai.com
+bdmov.a.yximgs.com
+hw-p2p.pull.yximgs.com
+@@||pull.yximgs.com^
+f2.eckwai.com
+#快手小店
+@@||eckwai.com^
+
 api.e.kuaishou.com
 apissl.ksapisrv.com
 
