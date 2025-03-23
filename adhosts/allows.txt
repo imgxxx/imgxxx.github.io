@@ -3,7 +3,7 @@
 ||sec.sginput.qq.com^
 
 # 拦截大象驾到APP广告接口
-||*ad.adbkwai.com^
+||adbkwai.com^
 
 # 拦截蓝狐视频APP广告API
 ||api.admange.com^
@@ -2041,7 +2041,7 @@ phoniex.toutiao.com
 ||log*-applog.novelfm.com^
 
 @@||unet.quark.cn^
-@@||verified.biz.weibo.com^
+#@@||verified.biz.weibo.com^
 
 
 @@||*.free-lbv6.idouyinvod.com^
@@ -2288,7 +2288,6 @@ watchtower-logger.jd.com
 ||weijianzhan.com^
 union.4399.cn
 dss2.bdstatic.com
-@@||eu.org^
 
 #百度极速版
 ||gimg*.baidu.com^$important
@@ -2324,11 +2323,6 @@ auni.unioncom.cc
 
 @@||route-stats.dreport.meituan.net^
 
-hdns.ksyun.com
-||aedns.weixin.qq.com^$important
-||dns.weixin.qq.com.cn^$important
-dns.qq.com
-
 
 #腾讯QQ
 @@||tmfsdktcpv4.m.qq.com^
@@ -2338,7 +2332,6 @@ dns.qq.com
 @@||tmfmazu.m.qq.com^
 @@||mazu.m.qq.com^
 
-otalog.os.360os.com
 f2e-log.qtshe.com
 weblog.cdn-go.cn
 shoujiduoduo.wchengxu.cn
@@ -2358,9 +2351,9 @@ mobilelog.kuwo.cn
 @@||twitter.com^
 
 #快手直播推广
-#注释||*-adaptive-pull.video-voip.com^
-#注释||*-adaptive.pull.yximgs.com^
-#注释||*-adaptive-pull.live-voip.com^
+@@||*-adaptive-pull.video-voip.com^
+@@||*-adaptive.pull.yximgs.com^
+@@||*-adaptive-pull.live-voip.com^
 
 @@||u*-*.ecukwai.com^
 @@||u*.a.yximgs.com^
@@ -2532,7 +2525,7 @@ gg.xox0.cn
 ||app-log.dewu.com^
 ||app.log.nf.migu.cn^
 
-@@||data.ping.shouji.sogou.com^
+||data.ping.shouji.sogou.com^$important
 @@||vpa-cdn.shouji.sogou.com^
 @@||input.shouji.sogou.com^
 @@||vpabiaoqing.gtimg.com^$important
@@ -2691,10 +2684,7 @@ mo.rtalink.com
 @@||wl.jd.com^$important
 
 
-@@||*.gov.cn^$important
 @@||gov.cn^$important
-
-@@||*.edu.cn^$important
 @@||edu.cn^$important
 
 
@@ -2717,7 +2707,7 @@ mo.rtalink.com
 @@||heytapdl.com
 @@||client-uc.heytapmobi.com
 @@||img-c.heytapimage.com^
-@@||report.uc.heytapmobi.com^$important
+||report.uc.heytapmobi.com^$important
 @@||appconf.heytapdownload.com^$important
 
 #UCZZD
@@ -2770,9 +2760,6 @@ log.umeweb.cn
 ||aldwx.com^
 
 
-@@||api.ip.sb^$important
-@@||ip.taobao.com^$important
-@@||ip-api.com^$important
 
 
 @@||cz88.net^$important
@@ -2795,7 +2782,6 @@ tmc.tencent.com
 ||adyun168.com^
 ||huoyan.cn^
 ||ssp.aliyun.com^
-||ssp.
 ||youcloud.com^
 static-youcloud.umcdn.cn
 youcloud-static-asset.umcdn.cn
@@ -2833,7 +2819,8 @@ activity.kuaiyoudeng.cn
 
 sdk.zgbxxffww.com
 
-adtrackv3.dodjoy.com
+||adtrackv3.dodjoy.com^
+||dodjoy.com^
 sdk.qzbonline.com
 sdk.dfzq.com.cn
 sdk.tianmu.mobi
@@ -2984,7 +2971,6 @@ log.tpns.tencent.com
 advagent.olvip.vip
 adsfilebssdlbig.ali.kugou.com
 @@||iwx.mail.qq.com^$important
-g.vip.qq.com
 ||p*-game-adapter.ejoy.com^
 ||ads.95516.com^
 ||track.bankcomm.com^
@@ -3013,17 +2999,17 @@ g.vip.qq.com
 ||ads.privacy.qq.com
 ||ad.cityu.edu.hk
 ||ad-maven.com^
-fdre23.cc
-ipl004.xyz
+||fdre23.cc^
+||ipl004.xyz^
 ||ad.siemens.com.cn^$important
 ||ad.azure.com^$important
 ||adjust.com^$important
 ||ebuqxsjq.com^$important
-8388da.com
-qoe844.xyz
+||8388da.com^
+||qoe844.xyz^
 ||images-huoshan.com^$important
-qih033.xyz
-tof717.xyz
+||qih033.xyz^
+||tof717.xyz^
 cdn.image-mangdiaxyz.com
 @@||webstatic.mihoyo.com^$important
 @@||sdk-webstatic.mihoyo.com^$important
@@ -3033,15 +3019,15 @@ logv2.ireader.com
 adcenter.zhangyue.com
 ||ah*.zhangyue.com^$important
 
-mwad.83084.com
-83084.com
-4376.cc
-77000.vip
-61611112.cc
+||mwad.83084.com^
+||83084.com^
+||4376.cc^
+||77000.vip^
+||61611112.cc^
 ||finderad.video.qq.com^
-616.com
-globalacceleratecdn-paw.out976.com
-out976.com
+||616.com^
+||globalacceleratecdn-paw.out976.com^
+||out976.com^
 
 @@||webstatic.mihoyo.com^$important
 gw-w.jiaoliuqu.com
@@ -3072,7 +3058,6 @@ open.gtimg.cn
 /ad-sdk/
 /ad-trace/
 /ad-scope/
-||ad.e.
 
 @@||polaris3-normal-lq.zijieapi.com
 @@||mon.snssdk.com
@@ -3172,7 +3157,6 @@ dsplog-adnet.vivo.com.cn
 hot.vrs.sohu.com
 videobacklog.vivo.com.cn
 
-wukongapi.vivo.com.cn
 
 dsplog.vivo.com.cn
 
@@ -3298,28 +3282,9 @@ emdcadvertise.eastmoney.com
 
 
 
-||ad.^
-||*.ad.^
-||*-ad-*.^
-||*-ad.^
-||ad-*.^
-||*.ads.^
-||*-ads.^
-||*-ads-*.^
-||ads.^
-||ads-*.^
-||*.miaozhen*.^
-||miaozhen^
-||*.miaozhen.com.^
-||tanx.com.^
-||*.tanx.^
-||*.tanx.com.^
-||*.tanx*.^
-||tanx^
 
 
 
-dns.weixin.qq.com.cn
 e.ljcdn1.cn
 tc7.baidu-1img.cn
 ||miaomiaoz.com^
@@ -3434,8 +3399,8 @@ log.zijieapi.com
 @@||vfiles.gtimg.cn
 @@||inews.gtimg.com^
 @@||isee.weishi.qq.com^
-||ad*.adbreak.ch
-||ad*.liverail.com
+||adbreak.ch^
+||liverail.com^
 ||ad-api-v01.uliza.jp^
 ||ad-cdn.bilgin.pro
 ||ad-emea.doubleclick.net
@@ -3451,11 +3416,11 @@ log.zijieapi.com
 ||ad.91.sellertool.com
 ||a-ads.com^
 ||ad.abchina.com^
-||ad.adriver.ru
-||ad.adverticum.net
-||ad.adview.pl^
+||adriver.ru^
+||adverticum.net^
+||adview.pl^
 ||ad.alimama.com^
-||ad.amgdgt.com
+||ad.amgdgt.com^
 ||ad.amgdgt.com^
 ||ad.atdmt.com^
 ||ad.atown.jp
@@ -3469,9 +3434,9 @@ log.zijieapi.com
 ||ad.kazakinfo.com^
 ||ad.linksynergy.com^
 ||ad.lkqd.net
-||ad.mail.ru
-||ad.neobux.com
-||ad.nl
+||ad.mail.ru^
+||ad.neobux.com^
+||ad.nl^
 ||ad.ourgame.com^
 ||ad.sevenads.net
 ||ad.skylinewebcams.com
@@ -3483,9 +3448,9 @@ log.zijieapi.com
 ||ad2.shoplinker.co.kr^
 ||ad*.shoplinker.co.kr^
 ||ad2up.com^
-||ad4.liverail.com
-||ad4.on.cc
-||ad4m.at
+||ad4.liverail.com^
+||ad4.on.cc^
+||ad4m.at^
 
 ||ad4msan.com^
 
@@ -3532,7 +3497,7 @@ t5.a.market.xiaomi.com
 luodiye.ihaoma.icu
 yinxing.ihaoma.icu
 @@||stat.youpin.mi.com
-||*.a.market.xiaomi.com^
+
 adv.sec.miui.com
 
 @@||hysdkservice.g.mi.com
@@ -3598,8 +3563,7 @@ t7z.cupid.ptqy.gitv.tv
 @@||px.effirst.com^
 @@||yoda.kwd.inkuai.com^
 @@||3w.huanqiu.com^
-||t1.a.market.xiaomi.com^
-||lite.a.market.xiaomi.com^
+
 @@||centertime.ksyun.com
 @@||ossapi.baidu.com
 @@||tcbox.baidu.com^
@@ -3746,13 +3710,12 @@ resolver.msg.xiaomi.net
 @@||game.str.mdt.qq.com
 ||download.beibeibuyu.com^
 
-@@||ipxx.pro^$important
 
 @@||video.xiaomi.com^
 @@||wfdata.club^$important
 @@||miwifi.com^$important
 @@||ipv4dns.com^$important
-@@||*.ipxx.pro^$important
+
 @@||thm.market.xiaomi.com^$important
 @@||zhuti.xiaomi.com^$important
 @@||api.vip.miui.com^$important
@@ -3993,7 +3956,7 @@ sf6-be-pack.pglstatp-toutiao.com
 
 ||imp-toutiao-data.37.com.cn^
 
-||www.bq6666.cn^
+||bq6666.cn^
 ||app.yi9939.com^
 
  
@@ -4008,8 +3971,8 @@ sf6-be-pack.pglstatp-toutiao.com
 ||tx-ad.a.yximgs.com.cdn.dnsv1.com^$important
 ||ali-ad.a.yximgs.com.w.alikunlun.com^$important
 @@||fengapp6.wfdata.club^$important
-@@*.feng.com^$important
-@@*.fengimg.com^$important
+@@||feng.com^$important
+@@||fengimg.com^$important
 
 ||js-ad.a.yximgs.com^$important
 @@||improving.duckduckgo.com^$important
@@ -4018,7 +3981,7 @@ sf6-be-pack.pglstatp-toutiao.com
 @@||img.cdn.mvideo.xiaomi.com^$important
 @@||mivideo.cdn.pandora.xiaomi.com^$important
 @@||video.xiaomi.com^$important
-@@||ipxx.pro^$important
+
 
 
 
