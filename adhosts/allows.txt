@@ -3408,10 +3408,9 @@ abtest.volceapplog.com
 
 
 ||baichuan.taobao.com^
-httpdns-sdk.n.netease.com
 
-httpdns.yunxindns.com
-||httpdns.
+
+
 ||na*-na*.wagbridge.alibaba.tanx.com.gds.alibabadns.com^
 h5.vedamobi.com
 auni.telecome.cn
@@ -3422,8 +3421,7 @@ tobapplog.volceapplog.com
 rtlog.zijieapi.com
 @@||res.wx.qq.com^
 @@||t*.baidu.com^
-@@||csdn.net^$important
-||*.ad.*.cn^
+
 applog.lc.quark.cn
 api.ads.tvb.com
 log.datuile.cn
@@ -3445,8 +3443,6 @@ log.zijieapi.com
 ||ad-gone.com^
 ||ad-maven.com^
 ||ad-text.ru^
-||ad.*.ch^
-||ad.10010.com^
 ||ad.12306.cn^
 ||ad.3.cn^
 ||ad.360yield.com^
@@ -3489,27 +3485,23 @@ log.zijieapi.com
 ||ad2up.com^
 ||ad4.liverail.com
 ||ad4.on.cc
-||ad*.on.cc^important
 ||ad4m.at
 
 ||ad4msan.com^
 
 ||ccmsupport-sz.tenpay.com^$important
-||m*.ad.10010.com^
+
 toblog.volceapplog.com
-||i*.hdslb.com^important
 umengacs.m.taobao.com
 ||miaozhen.com^important
 ef-dongfeng.tanx.com
 ||tanx.com^$important
-||line*-log.biligame.net^
 hub5p.sandai.net
-||fc*tn.baidu.com^$important
+
 choujiang.xox2.cn
 mlog.wangsu.com
 ||static.jyss.com^
 
-||lite.a.market.xiaomi.com^$important
 richmedia.video.qq.com
 livep.l.qq.com
 config.ab.qq.com
@@ -3566,9 +3558,9 @@ appjiagu.com
 irs01.com
 etl.xlmc.sandai.net
 clickc.admaster.com.cn
-media.admob.com
-mob.adwhirl.com
-www.adview.cn
+||admob.com^
+||adwhirl.com^
+||adview.cn^
 report.adview.cn
 swx.domob.cn
 scc.domob.cn
