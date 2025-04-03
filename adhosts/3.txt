@@ -1,5 +1,7 @@
 #测试白名单
 
+sysdesc.vivo.com.cn
+
 p3.eckwai.com
 bdmov.a.yximgs.com
 hw-p2p.pull.yximgs.com
