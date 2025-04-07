@@ -1,5 +1,7 @@
 #测试版规则
 
+||ibidian.com^
+
 ||skk.moe^
 
 ||sec.sginput.qq.com^
