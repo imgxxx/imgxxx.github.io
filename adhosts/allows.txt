@@ -1168,9 +1168,8 @@ res.chuangke.tv
 
 
 
-
-#@@||f.360.cn^
-#@@||s.360.cn^
+||f.360.cn^$important
+||s.360.cn^$important
 
 
 ||logs.quickapi.net^
