@@ -1,5 +1,7 @@
 #测试白名单
 
+net.ljxnet.cn
+
 open.zhihu.com
 
 sysdesc.vivo.com.cn
