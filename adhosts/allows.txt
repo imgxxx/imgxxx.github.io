@@ -1,5 +1,7 @@
 #测试版规则
 
+||portal.toushibao.com^
+
 ||ibidian.com^
 
 ||skk.moe^
