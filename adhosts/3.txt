@@ -1,5 +1,7 @@
 #测试白名单
 
+rivers-collie.oss-accelerate.aliyuncs.com
+
 net.ljxnet.cn
 
 open.zhihu.com
