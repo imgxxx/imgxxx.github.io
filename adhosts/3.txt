@@ -1,5 +1,9 @@
 #测试白名单
 
+push-rtmp-spe-l1.douyincdn.com
+
+@@||push-*.douyincdn.com^
+
 rivers-collie.oss-accelerate.aliyuncs.com
 
 net.ljxnet.cn
