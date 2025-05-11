@@ -1,5 +1,7 @@
 #测试版规则
 
+s.apkevery.com
+
 #vivo的VPU控制
 ||vpushort-stsdk.vivo.com.cn^
 
