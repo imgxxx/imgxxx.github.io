@@ -1,5 +1,8 @@
 #测试版规则
 
+#vivo的VPU控制
+||vpushort-stsdk.vivo.com.cn^
+
 ||tomorrowgold.com^
 
 ||random-user-agent.com^
