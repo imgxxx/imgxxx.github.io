@@ -1,5 +1,12 @@
 #测试白名单
 
+baidu-cn-north-00001.bj-a.bcebos.com
+||bj-a.bcebos.com^
+
+az.appstore.vivo.com.cn
+appupgrade.vivo.com.cn
+vnote.vivo.com.cn
+
 push-rtmp-spe-l1.douyincdn.com
 
 @@||push-*.douyincdn.com^
