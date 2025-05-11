@@ -1,5 +1,7 @@
 #测试白名单
 
+||jdpay.com^
+
 baidu-cn-north-00001.bj-a.bcebos.com
 ||bj-a.bcebos.com^
 
