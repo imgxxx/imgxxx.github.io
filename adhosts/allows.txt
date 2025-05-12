@@ -1,5 +1,7 @@
 #测试版规则
 
+||sentry.io^$important
+
 s.apkevery.com
 
 #vivo的VPU控制
