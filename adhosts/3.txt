@@ -1,5 +1,8 @@
 #测试白名单
 
+
+h2tcbox.baidu.com
+
 @@||ietf.org^
 
 @@||jdpay.com^
