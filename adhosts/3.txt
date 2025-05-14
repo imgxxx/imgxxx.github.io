@@ -1,6 +1,13 @@
 #测试白名单
 
 
+#高德地图
+#i.qchannel03.cn
+store.is.autonavi.com
+atoken.m.taobao.com
+gaode-acs.m.taobao.com
+
+
 h2tcbox.baidu.com
 
 @@||ietf.org^
