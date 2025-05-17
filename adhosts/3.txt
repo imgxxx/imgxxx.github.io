@@ -1,5 +1,7 @@
 #测试白名单
 
+img2.360buyimg.com
+#@@||360buyimg.com^
 
 #高德地图
 #i.qchannel03.cn
