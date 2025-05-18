@@ -1,5 +1,13 @@
 #测试白名单
 
+@@||pull-f*-xg.ixigua.com^
+@@||pull-hs-f*-xg.flive.ixigua.com^
+@@||pull-rtmp-l*.ixigua.com^
+@@||pull-flv-l*.ixigua.com^
+@@||pull-l*-xg.ixigua.com^
+@@||pull-f*-xg.flive.ixigua.com^
+@@||pull-f*-xg.ixigua.com^
+
 img2.360buyimg.com
 #@@||360buyimg.com^
 
