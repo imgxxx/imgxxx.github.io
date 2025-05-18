@@ -1,5 +1,8 @@
 #测试白名单
 
+
+@@||p*-pro.a.yximgs.com^
+
 @@||pull-f*-xg.ixigua.com^
 @@||pull-hs-f*-xg.flive.ixigua.com^
 @@||pull-rtmp-l*.ixigua.com^
