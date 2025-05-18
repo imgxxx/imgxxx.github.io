@@ -1,5 +1,8 @@
 #测试白名单
 
+mpush-api.aliyun.com
+
+
 @@||etoote.com^
 @@||ali-p2p*pull*com^
 
