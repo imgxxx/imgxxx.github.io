@@ -1,5 +1,8 @@
 #测试白名单
 
+@@||etoote.com^
+@@||ali-p2p*pull*com^
+
 
 @@||p*-pro.a.yximgs.com^
 
