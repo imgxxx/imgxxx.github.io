@@ -1,5 +1,11 @@
 #测试白名单
 
+api.transfer.search.miui.com
+@@||search.miui.com^
+
+hub5pn.wap.sandai.net
+etl-xlmc-ssl.sandai.net
+
 mpush-api.aliyun.com
 
 
