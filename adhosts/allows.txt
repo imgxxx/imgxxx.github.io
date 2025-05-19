@@ -1,5 +1,8 @@
 #测试版规则
 
+admin.clientad.yy.com
+||clientad.yy.com^
+
 ||sentry.io^$important
 
 s.apkevery.com
