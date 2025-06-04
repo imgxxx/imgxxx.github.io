@@ -5,7 +5,7 @@ pay.wechatpay.cn
 
 
 #小米天气
-wtradv.market.xiaomi.com
+#wtradv.market.xiaomi.com
 
 
 api.transfer.search.miui.com
