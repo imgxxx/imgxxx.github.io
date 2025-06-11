@@ -1,5 +1,8 @@
 #测试版规则
 
+
+host_ip_address.oprxlan
+
 admin.clientad.yy.com
 ||clientad.yy.com^
 
