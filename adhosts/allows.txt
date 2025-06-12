@@ -1,6 +1,9 @@
 #测试版规则
 
 
+ooo888.wdy88.com
+||wdy88.com^
+
 ||host_ip_address.oprxlan^
 
 admin.clientad.yy.com
