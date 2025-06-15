@@ -54,6 +54,14 @@
       <key>QueryMinimization</key>
       <true/>
 
+<key>RuntimeProtection</key>
+<dict>
+  <key>ProcessIntegrity</key>
+  <true/>  <!-- 进程完整性保护 -->
+  <key>MemoryProtection</key>
+  <string>Full</string>  <!-- 内存全加密 -->
+</dict>
+
 
 		<key>PayloadDescription</key>
 		<string>DNS官方网站：https://www.ipv4dns.com</string>
