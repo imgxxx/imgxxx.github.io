@@ -27,7 +27,10 @@
 			</dict>
 		</array>
 
-	<array>
+
+   <dict>
+		<key>PayloadContent</key>
+  	<array>
 			<dict>
 				<key>DNSSettings</key>
 				<dict>
