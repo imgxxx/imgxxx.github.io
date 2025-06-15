@@ -28,7 +28,7 @@
 				<string>Configures device to use AdGuard Home</string>
 				<key>PayloadDisplayName</key>
 				<string>dns.ipv4dns.com DoT</string>
-				<key>PayloadIdentifier</key>
+				
 
 
 				<key>PayloadIdentifier</key>
