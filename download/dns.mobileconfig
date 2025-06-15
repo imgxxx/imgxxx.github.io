@@ -12,6 +12,7 @@
 					<key>ServerURL</key>
 					<string>https://dns.ipv4dns.com/dns-query/ios</string>
 				</dict>
+				<key>DNSSettings</key>
         <dict>
 					<key>DNSProtocol</key>
 					<string>TLS</string>
