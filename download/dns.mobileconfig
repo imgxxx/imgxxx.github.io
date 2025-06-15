@@ -62,6 +62,22 @@
   <string>Full</string>  <!-- 内存全加密 -->
 </dict>
 
+<key>TLSOptimization</key>
+      <dict>
+        <key>SessionResumption</key>
+        <true/>
+        <key>OCSPStapling</key>
+        <true/>
+        <key>CipherSuites</key>
+        <array>
+          <string>TLS_CHACHA20_POLY1305_SHA256</string>
+          <string>TLS_AES_256_GCM_SHA384</string>
+          <string>TLS_KYBER_DILITHIUM_WITH_AES_256_GCM_SHA384</string>
+          <string>TLS_AES_128_GCM_SHA256</string>
+        </array>
+      </dict>
+
+
 
 		<key>PayloadDescription</key>
 		<string>DNS官方网站：https://www.ipv4dns.com</string>
