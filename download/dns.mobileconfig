@@ -47,6 +47,15 @@
     <key>FallbackOnSystemDNS</key>
     <false/>
 
+    <key>GeneralSecurity</key>
+    <dict>
+      <key>DNSSECPolicy</key>
+      <string>ENFORCE</string>
+      <key>EDNSClientSubnet</key>
+      <true/>
+      <key>QueryMinimization</key>
+      <true/>
+
 <key>RuntimeProtection</key>
 <dict>
   <key>ProcessIntegrity</key>
@@ -67,7 +76,6 @@
           <string>TLS_CHACHA20_POLY1305_SHA256</string>
         </array>
       </dict>
-
 
 		<key>PayloadDescription</key>
 		<string>DNS官方网站：https://www.ipv4dns.com</string>
