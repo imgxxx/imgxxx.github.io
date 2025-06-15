@@ -10,7 +10,8 @@
 					<key>DNSProtocol</key>
 					<string>HTTPS</string>
 					<key>ServerURL</key>
-					<string>https://developer.ipv4dns.com/dns-query</string>
+					<string>https://dns.ipv4dns.com/dns-query/ios</string>
+	        <string>dns.ipv4dns.com</string>
 				</dict>
 				<key>PayloadDescription</key>
 				<string>DNS官方网站：www.ipv4dns.com</string>
@@ -26,6 +27,15 @@
 				<integer>1</integer>
 			</dict>
 		</array>
+    <key>TLSConfiguration</key>
+      <dict>
+      <key>TLSMinimumVersion</key>
+      <string>TLSv1.3</string>
+      <true/>
+      </dict>
+    <key>DNSSECEvaluation</key>
+    <true/>
+ </dict>
 		<key>PayloadDescription</key>
 		<string>DNS官方网站：www.ipv4dns.com</string>
 		<key>PayloadDisplayName</key>
