@@ -59,25 +59,16 @@
 <key>RuntimeProtection</key>
 <dict>
   <key>ProcessIntegrity</key>
-  <true/>  <!-- 进程完整性保护 -->
+  <true/>
   <key>MemoryProtection</key>
-  <string>Full</string>  <!-- 内存全加密 -->
+  <string>Full</string>
 </dict>
 
-    <key>TLSOptimization</key>
-      <dict>
         <key>SessionResumption</key>
         <true/>
         <key>OCSPStapling</key>
         <true/>
-        <key>CipherSuites</key>
-        <array>
-          <string>TLS_CHACHA20_POLY1305_SHA256</string>
-          <string>TLS_AES_256_GCM_SHA384</string>
-          <string>TLS_AES_128_GCM_SHA256</string>
-          <string>TLS_AES_256_GCM_SHA384</string>
-        </array>
-      </dict>
+
 
 		<key>PayloadDescription</key>
 		<string>DNS官方网站：https://www.ipv4dns.com</string>
