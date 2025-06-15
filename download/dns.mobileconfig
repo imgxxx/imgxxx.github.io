@@ -28,9 +28,8 @@
 		</array>
 
 
-   <dict>
-		<key>PayloadContent</key>
-  	<array>
+<key>PayloadContent</key>
+		<array>
 			<dict>
 				<key>DNSSettings</key>
 				<dict>
@@ -40,15 +39,15 @@
 					<string>dns.ipv4dns.com</string>
 				</dict>
 				<key>PayloadDescription</key>
-				<string>DNS官方网站：https://www.ipv4dns.com</string>
+				<string>Configures device to use AdGuard Home</string>
 				<key>PayloadDisplayName</key>
-				<string>清新云DNSdot - 清新云开发＆黑洞防护</string>
+				<string>dns.ipv4dns.com DoT</string>
 				<key>PayloadIdentifier</key>
-				<string>com.apple.dnsSettings.managed.a876472d-8359-45d6-bdd1-fd16f7e0514n</string>
+				<string>com.apple.dnsSettings.managed.20ba52fd-a847-422f-95b4-301335cdb36a</string>
 				<key>PayloadType</key>
 				<string>com.apple.dnsSettings.managed</string>
 				<key>PayloadUUID</key>
-				<string>6e6cf728-e275-4043-a476-0c3baefd3654</string>
+				<string>82fac3b9-530b-476a-8c12-34e0bdebc79a</string>
 				<key>PayloadVersion</key>
 				<integer>1</integer>
 			</dict>
