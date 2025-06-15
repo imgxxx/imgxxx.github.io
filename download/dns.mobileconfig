@@ -44,11 +44,11 @@
 				<key>PayloadDisplayName</key>
 				<string>清新云DNSdot - 清新云开发＆黑洞防护</string>
 				<key>PayloadIdentifier</key>
-				<string>com.apple.dnsSettings.managed.a876472d-8359-45d6-bdd1-fd16f7e053b3</string>
+				<string>com.apple.dnsSettings.managed.a876472d-8359-45d6-bdd1-fd16f7e0514n</string>
 				<key>PayloadType</key>
 				<string>com.apple.dnsSettings.managed</string>
 				<key>PayloadUUID</key>
-				<string>6e6cf728-e275-4043-a476-0c3baefd369d</string>
+				<string>6e6cf728-e275-4043-a476-0c3baefd3654</string>
 				<key>PayloadVersion</key>
 				<integer>1</integer>
 			</dict>
