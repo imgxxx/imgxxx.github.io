@@ -68,6 +68,9 @@
     <key>FallbackOnSystemDNS</key>
     <false/>
 
+    <key>SuppressDNSProxy</key>
+    <true/>
+
     <key>DNSSECPolicy</key>
     <string>ENFORCE</string>
     <key>EDNSClientSubnet</key>
