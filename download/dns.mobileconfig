@@ -57,17 +57,13 @@
       <true/>
 
 <key>RuntimeProtection</key>
-<dict>
+ <dict>
   <key>ProcessIntegrity</key>
   <true/>
   <key>MemoryProtection</key>
   <string>Full</string>
 </dict>
 
-        <key>SessionResumption</key>
-        <true/>
-        <key>OCSPStapling</key>
-        <true/>
 
 
 		<key>PayloadDescription</key>
