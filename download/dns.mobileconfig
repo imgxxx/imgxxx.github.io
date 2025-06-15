@@ -47,8 +47,6 @@
     <key>FallbackOnSystemDNS</key>
     <false/>
 
-    <key>GeneralSecurity</key>
-    <dict>
       <key>DNSSECPolicy</key>
       <string>ENFORCE</string>
       <key>EDNSClientSubnet</key>
