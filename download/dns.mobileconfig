@@ -1,54 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-	<dict>
-		<key>PayloadContent</key>
-		<array>
-			<dict>
-				<key>DNSSettings</key>
-				<dict>
-					<key>DNSProtocol</key>
-					<string>HTTPS</string>
-					<key>ServerURL</key>
-					<string>https://dns.ipv4dns.com/dns-query/ios</string>
-	        <string>dns.ipv4dns.com</string>
-				</dict>
-				<key>PayloadDescription</key>
-				<string>DNS官方网站：www.ipv4dns.com</string>
-				<key>PayloadDisplayName</key>
-				<string>清新云DNS</string>
-				<key>PayloadIdentifier</key>
-				<string>com.apple.dnsSettings.managed.2b4a7180-d591-4c72-ae4d-e5a68f31eed8</string>
-				<key>PayloadType</key>
-				<string>com.apple.dnsSettings.managed</string>
-				<key>PayloadUUID</key>
-				<string>f1e6bb8d-92bc-4490-815c-4a39af642569</string>
-				<key>PayloadVersion</key>
-				<integer>1</integer>
-			</dict>
-		</array>
-    <key>TLSConfiguration</key>
+  <dict>
+    <!-- 核心DNS配置 -->
+    <key>PayloadContent</key>
+    <array>
       <dict>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>HTTPS</string>
+          <key>ServerURL</key>
+          <string>https://dns.ipv4dns.com/dns-query/ios</string>
+        </dict>
+        
+        <key>PayloadDescription</key>
+        <string>DNS官方网站：www.ipv4dns.com</string>
+        <key>PayloadDisplayName</key>
+        <string>清新云DNS - 清新云开发&黑洞防护</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dnsSettings.managed.2b4a7180-d591-4c72-ae4d-e5a68f31eed8</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>f1e6bb8d-92bc-4490-815c-4a39af642569</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+      </dict>
+    </array>
+
+    <!-- TLS安全配置 -->
+    <key>TLSConfiguration</key>
+    <dict>
       <key>TLSMinimumVersion</key>
       <string>TLSv1.3</string>
-      <true/>
-      </dict>
+      <key>TLSAllowInsecureConnections</key>
+      <false/>
+    </dict>
+
+    <!-- DNS安全增强 -->
     <key>DNSSECEvaluation</key>
     <true/>
- </dict>
-		<key>PayloadDescription</key>
-		<string>DNS官方网站：www.ipv4dns.com</string>
-		<key>PayloadDisplayName</key>
-		<string>清新云DNS</string>
-		<key>PayloadIdentifier</key>
-		<string>17586147-f2a8-466a-8a72-d4b5371fbed8</string>
-		<key>PayloadRemovalDisallowed</key>
-		<false/>
-		<key>PayloadType</key>
-		<string>Configuration</string>
-		<key>PayloadUUID</key>
-		<string>e9532341-085c-4e95-9d13-760b7e85f5ad</string>
-		<key>PayloadVersion</key>
-		<integer>1</integer>
-	</dict>
+    <key>SupplementalMatchDomainsNoSearch</key>
+    <true/>
+
+    <!-- 系统DNS控制 -->
+    <key>UseSystemDNS</key>
+    <false/>
+    <key>FallbackOnSystemDNS</key>
+    <false/>
+
+    <!-- 元数据配置 -->
+    <key>PayloadDescription</key>
+    <string>DNS官方网站：www.ipv4dns.com</string>
+    <key>PayloadDisplayName</key>
+    <string>清新云DNS - 清新云开发&黑洞防护</string>
+    <key>PayloadIdentifier</key>
+    <string>17586147-f2a8-466a-8a72-d4b5371fbed8</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>e9532341-085c-4e95-9d13-760b7e85f5ad</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+  </dict>
 </plist>
