@@ -12,6 +12,12 @@
 					<key>ServerURL</key>
 					<string>https://dns.ipv4dns.com/dns-query/ios</string>
 				</dict>
+        <dict>
+					<key>DNSProtocol</key>
+					<string>TLS</string>
+					<key>ServerName</key>
+					<string>dns.ipv4dns.com</string>
+				</dict>
 				<key>PayloadDescription</key>
 				<string>DNS官方网站：https://www.ipv4dns.com</string>
 				<key>PayloadDisplayName</key>
