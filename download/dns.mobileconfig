@@ -16,6 +16,21 @@
 				<string>DNS官方网站：https://www.ipv4dns.com</string>
 				<key>PayloadDisplayName</key>
 				<string>清新云DNS - 清新云开发＆黑洞防护</string>
+
+
+       <dict>
+					<key>DNSProtocol</key>
+					<string>TLS</string>
+					<key>ServerName</key>
+					<string>dns.ipv4dns.com</string>
+				</dict>
+				<key>PayloadDescription</key>
+				<string>Configures device to use AdGuard Home</string>
+				<key>PayloadDisplayName</key>
+				<string>dns.ipv4dns.com DoT</string>
+				<key>PayloadIdentifier</key>
+
+
 				<key>PayloadIdentifier</key>
 				<string>com.apple.dnsSettings.managed.a876472d-8359-45d6-bdd1-fd16f7e053b3</string>
 				<key>PayloadType</key>
@@ -92,46 +107,4 @@
 		<key>PayloadVersion</key>
 		<integer>1</integer>
 	</dict>
-
-<dict>
-		<key>PayloadContent</key>
-		<array>
-			<dict>
-				<key>DNSSettings</key>
-				<dict>
-					<key>DNSProtocol</key>
-					<string>TLS</string>
-					<key>ServerName</key>
-					<string>dns.ipv4dns.com</string>
-				</dict>
-				<key>PayloadDescription</key>
-				<string>Configures device to use AdGuard Home</string>
-				<key>PayloadDisplayName</key>
-				<string>dns.ipv4dns.com DoT</string>
-				<key>PayloadIdentifier</key>
-				<string>com.apple.dnsSettings.managed.20ba52fd-a847-422f-95b4-301335cdb36a</string>
-				<key>PayloadType</key>
-				<string>com.apple.dnsSettings.managed</string>
-				<key>PayloadUUID</key>
-				<string>82fac3b9-530b-476a-8c12-34e0bdebc79a</string>
-				<key>PayloadVersion</key>
-				<integer>1</integer>
-			</dict>
-		</array>
-		<key>PayloadDescription</key>
-		<string>Adds AdGuard Home to macOS Big Sur and iOS 14 or newer systems</string>
-		<key>PayloadDisplayName</key>
-		<string>dns.ipv4dns.com DoT</string>
-		<key>PayloadIdentifier</key>
-		<string>f8d54713-4625-49c1-a85d-baf1125fea54</string>
-		<key>PayloadRemovalDisallowed</key>
-		<false/>
-		<key>PayloadType</key>
-		<string>Configuration</string>
-		<key>PayloadUUID</key>
-		<string>de566602-7548-4016-893d-4efbe0337a33</string>
-		<key>PayloadVersion</key>
-		<integer>1</integer>
-	</dict>
-
 </plist>
