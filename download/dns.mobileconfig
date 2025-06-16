@@ -108,6 +108,23 @@
      <integer>1232</integer>
 
 
+   <key>DynamicValidation</key>
+   <dict>
+     <key>RRSIGExpiryCheck</key>
+     <true/>
+     <key>NSEC3Coverage</key>
+     <string>Full</string>
+   </dict>
+   
+    <key>MemoryCache</key>
+     <dict>
+       <key>Size</key>
+       <integer>10</integer>
+       <key>TTL</key>
+       <integer>60</integer>
+     </dict>
+
+
     <key>PayloadOrganization</key>
     <string>清新云开发＆黑洞防护</string>
 		<key>PayloadDescription</key>
