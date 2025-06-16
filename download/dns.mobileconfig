@@ -124,6 +124,31 @@
        <integer>60</integer>
      </dict>
 
+    <key>ConnectionPoolSize</key>
+     <integer>16</integer>
+
+   <key>AdaptiveScaling</key>
+   <dict>
+     <key>Enable</key><true/>
+     <key>MaxBurst</key><integer>32</integer>
+     <key>ScaleInterval</key><integer>60</integer>
+     <key>LoadThreshold</key><integer>80</integer>
+   </dict>
+   
+   <key>ConnectionIsolation</key>
+   <dict>
+     <key>PerServerLimit</key><integer>20</integer>
+     <key>ProtocolAffinity</key><true/>
+   </dict>
+   
+   <key>KeepAliveSettings</key>
+   <dict>
+     <key>Interval</key><integer>30</integer> 
+     <key>Timeout</key><integer>15</integer>
+     <key>ProbeSize</key><integer>1</integer>
+   </dict>
+   
+
 
     <key>PayloadOrganization</key>
     <string>清新云开发＆黑洞防护</string>
