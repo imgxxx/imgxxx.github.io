@@ -151,36 +151,6 @@
 
 
 
-<!-- 智能动态调优引擎 -->
-    <DynamicScaling>
-        <AdaptiveAlgorithm>
-            <Type>LSTM_PREDICT</Type>  <!-- 使用长短期记忆网络预测流量 -->
-            <LookbackHours>72</LookbackHours> <!-- 分析过去72小时流量模式 -->
-            <LeadTimeMinutes>15</LeadTimeMinutes> <!-- 提前15分钟预调整 -->
-        </AdaptiveAlgorithm>
-
-        <ElasticityRules>
-            <!-- 三级弹性伸缩规则 -->
-            <Rule type="FAST_RESPONSE">
-                <Trigger>utilization > 0.85 for 30s</Trigger>
-                <Adjustment>+20%</Adjustment>
-                <Cooldown>15s</Cooldown>
-            </Rule>
-            <Rule type="PREDICTIVE">
-                <Trigger>predicted_traffic_increase > 0.15</Trigger>
-                <Adjustment>match_predicted_load</Adjustment>
-                <Cooldown>60s</Cooldown>
-            </Rule>
-            <Rule type="EMERGENCY">
-                <Trigger>zombie_connections > 5</Trigger>
-                <Adjustment>-50%</Adjustment>
-                <Cooldown>0s</Cooldown>
-            </Rule>
-        </ElasticityRules>
-
-    </DynamicScaling>
-
-
 
     <key>PayloadOrganization</key>
     <string>清新云开发＆黑洞防护</string>
