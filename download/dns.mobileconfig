@@ -150,6 +150,164 @@
    
 
 
+
+<ConnectionPoolConfig>
+    <!-- 基础容量配置 -->
+    <BaseCapacity>
+        <!-- 智能基线值计算：MIN(物理内存适配值, 端口安全上限) -->
+        <AutoBaseline>
+            <MemoryFactor>0.75</MemoryFactor>  <!-- 每GB内存支持0.75个连接 -->
+            <PortSafetyMargin>0.8</PortSafetyMargin> <!-- 保留20%端口余量 -->
+        </AutoBaseline>
+        
+        <!-- 静态保底值（适用于无法动态计算场景） -->
+        <FallbackValue>16</FallbackValue>
+    </BaseCapacity>
+
+    <!-- 智能动态调优引擎 -->
+    <DynamicScaling>
+        <AdaptiveAlgorithm>
+            <Type>LSTM_PREDICT</Type>  <!-- 使用长短期记忆网络预测流量 -->
+            <LookbackHours>72</LookbackHours> <!-- 分析过去72小时流量模式 -->
+            <LeadTimeMinutes>15</LeadTimeMinutes> <!-- 提前15分钟预调整 -->
+        </AdaptiveAlgorithm>
+
+        <ElasticityRules>
+            <!-- 三级弹性伸缩规则 -->
+            <Rule type="FAST_RESPONSE">
+                <Trigger>utilization > 0.85 for 30s</Trigger>
+                <Adjustment>+20%</Adjustment>
+                <Cooldown>15s</Cooldown>
+            </Rule>
+            <Rule type="PREDICTIVE">
+                <Trigger>predicted_traffic_increase > 0.15</Trigger>
+                <Adjustment>match_predicted_load</Adjustment>
+                <Cooldown>60s</Cooldown>
+            </Rule>
+            <Rule type="EMERGENCY">
+                <Trigger>zombie_connections > 5</Trigger>
+                <Adjustment>-50%</Adjustment>
+                <Cooldown>0s</Cooldown>
+            </Rule>
+        </ElasticityRules>
+
+
+    </DynamicScaling>
+
+    <!-- 精细化资源管理 -->
+    <ResourceManagement>
+        <LifecyclePolicies>
+            <!-- 连接生命周期全链路管理 -->
+            <CreationPolicy>
+                <PrewarmConnections>
+                    <Enabled>true</Enabled>
+                    <InitialCount>4</InitialCount> <!-- 系统启动时预热连接数 -->
+                </PrewarmConnections>
+            </CreationPolicy>
+
+            <UsagePolicy>
+                <RequestColoring>
+                    <ShortQueries>
+                        <TTL>5s</TTL>
+                        <Priority>HIGH</Priority>
+                    </ShortQueries>
+                    <LongTransactions>
+                        <DedicatedPool>true</DedicatedPool>
+                        <ReuseLimit>1</ReuseLimit>
+                    </LongTransactions>
+                </RequestColoring>
+            </UsagePolicy>
+
+            <ReclamationPolicy>
+                <!-- 三级回收队列配置 -->
+                <Queues>
+                    <Active>
+                        <Retention>1s</Retention>
+                        <Heartbeat>1s</Heartbeat>
+                    </Active>
+                    <WarmStandby>
+                        <Retention>10s</Retention>
+                        <Heartbeat>30s</Heartbeat>
+                    </WarmStandby>
+                    <ColdStandby>
+                        <Retention>60s</Retention>
+                        <Action>RELEASE</Action>
+                    </ColdStandby>
+                </Queues>
+            </ReclamationPolicy>
+        </LifecyclePolicies>
+
+        <PortManagement>
+            <!-- 高级端口管理策略 -->
+            <EphemeralRange>
+                <Start>49152</Start>
+                <End>60999</End>  <!-- 保留高端口用于短连接 -->
+            </EphemeralRange>
+            <ReuseSettings>
+                <TCP_TIME_WAIT>1000</TCP_TIME_WAIT> <!-- 1秒快速回收 -->
+                <MaxRetries>3</MaxRetries>
+            </ReuseSettings>
+        </PortManagement>
+    </ResourceManagement>
+
+    <!-- 全链路安全增强 -->
+    <SecurityHardening>
+        <ZeroTrust>
+            <DeviceCertAuth>
+                <CRLCheckInterval>300</CRLCheckInterval> <!-- 每5分钟检查CRL -->
+            </DeviceCertAuth>
+            <BehavioralAnalytics>
+                <JitterThreshold>15</JitterThreshold>  <!-- 连接时延抖动检测阈值 -->
+                <PacketPacing>STRICT</PacketPacing>
+            </BehavioralAnalytics>
+        </ZeroTrust>
+
+        <AttackSurfaceReduction>
+            <RateLimiting>
+                <PerIP>
+                    <MaxNew>1024</MaxNew>
+                    <DynamicLimit>MIN(1024, total_connections/1024)</DynamicLimit>
+                </PerIP>
+            </RateLimiting>
+            <FloodProtection>
+                <Trigger>connections > mean + 3σ</Trigger>
+                <Action>SYN_COOKIE</Action>
+                <QuarantineDuration>300s</QuarantineDuration>
+            </FloodProtection>
+        </AttackSurfaceReduction>
+    </SecurityHardening>
+
+    
+
+        <Diagnostics>
+            <DecisionTree>
+                <!-- 智能根因分析规则 -->
+                <Rule>
+                    <Condition>connection_failures > 5%</Condition>
+                    <SubCondition>tls_handshake_failures > 80%</SubCondition>
+                    <Diagnosis>CERTIFICATE_ISSUE</Diagnosis>
+                </Rule>
+                <Rule>
+                    <Condition>connection_failures > 5%</Condition>
+                    <SubCondition>syn_retries > 50%</SubCondition>
+                    <Diagnosis>NETWORK_ISSUE</Diagnosis>
+                </Rule>
+                <Rule>
+                    <Condition>connection_failures > 5%</Condition>
+                    <Diagnosis>RESOURCE_EXHAUSTION</Diagnosis>
+                </Rule>
+            </DecisionTree>
+        </Diagnostics>
+
+
+    </Observability>
+</ConnectionPoolConfig>
+
+
+
+
+
+
     <key>PayloadOrganization</key>
     <string>清新云开发＆黑洞防护</string>
 		<key>PayloadDescription</key>
