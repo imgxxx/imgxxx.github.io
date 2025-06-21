@@ -1,5 +1,7 @@
 #测试白名单
 
+advertisin.pages.dev
+
 #京东支付
 m-acp.jd.com
 
