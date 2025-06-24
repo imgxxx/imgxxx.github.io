@@ -1,5 +1,12 @@
 #测试版规则
 
+supl.bd-caict.com
+ad-ggtg-api.37.com.cn
+||rtc-log-report.bytedance.com
+
+||sdktt.data.tianwenca.com^
+||tianwenca.com^
+
 ||mdn.alipayobjects.com^
 
 ooo888.wdy88.com
