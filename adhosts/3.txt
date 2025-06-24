@@ -1,5 +1,7 @@
 #测试白名单
 
+sdkserver-drcn.op.dbankcloud.cn
+
 advertisin.pages.dev
 
 #京东支付
