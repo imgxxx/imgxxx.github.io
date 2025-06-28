@@ -1,5 +1,12 @@
 #测试版规则
 
+#大数据
+shuc-android.ksord.com
+||ksord.com^
+
+ios.perfsight.qq.com
+android.perfsight.qq.com
+
 supl.bd-caict.com
 ad-ggtg-api.37.com.cn
 ||rtc-log-report.bytedance.com
