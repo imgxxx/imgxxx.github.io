@@ -1,5 +1,8 @@
 #测试白名单
 
+xp.itunes-apple.com.akadns.net
+xp.itunes-apple.com
+
 sdkserver-drcn.op.dbankcloud.cn
 
 advertisin.pages.dev
