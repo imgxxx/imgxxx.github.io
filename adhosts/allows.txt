@@ -1,5 +1,21 @@
 #测试版规则
 
+||xinkaiyuan.com^
+||huazhi.cloud^
+||pigeonlittle.com^
+||linkflowtech.com^
+||sensorsdata.cn^
+||wanjiake.com^
+||kton.cn^
+||qixin.com^
+||tuokr.net^
+||vdls.cn^
+||bailian-ai.com^
+||mj-wang.cn^
+||tuoke518.com^
+||jukexing.com^
+||heshu.com.cn^
+
 #大数据
 shuc-android.ksord.com
 ||ksord.com^
