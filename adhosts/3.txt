@@ -1,5 +1,11 @@
 #测试白名单
 
+#米家mesh
+tracking.miui.com
+
+
+ocsp.godaddy.com
+
 lf-leads-fe-scm.bytecdn.com
 
 ||*-sdkservice-yidun-online.tuyoo.com^
