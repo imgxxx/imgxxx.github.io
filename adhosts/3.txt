@@ -1,7 +1,5 @@
 #测试白名单
 
-#米家mesh
-tracking.miui.com
 
 
 ocsp.godaddy.com
