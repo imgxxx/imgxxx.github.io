@@ -42,6 +42,10 @@
 /((^)|(.))adsdk./
 /((^)|(.))adxsdk./
 /((^)|(.))logagent./
+/((^)|(.))applicationinsights./
+
+/((^)|(.))applicationinsights./
+/^applicationinsights?[_.-]/
 
 /((^)|(.))abm-*./
 /^abm?[_.-]/
