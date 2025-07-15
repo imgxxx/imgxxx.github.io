@@ -1,5 +1,8 @@
 #测试版规则
 
+||cdn-new-ad.wtzw.com^
+||a-remad.qm989.com^
+
 ||xinkaiyuan.com^
 ||huazhi.cloud^
 ||pigeonlittle.com^
