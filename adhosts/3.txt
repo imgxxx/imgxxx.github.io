@@ -1,6 +1,6 @@
 #测试白名单
 
-
+x.com
 
 ocsp.godaddy.com
 
