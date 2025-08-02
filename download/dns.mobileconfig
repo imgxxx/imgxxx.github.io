@@ -65,6 +65,9 @@
     <key>SupplementalMatchDomainsNoSearch</key>
     <true/>
 
+    <key>SuppressLocalHosts</key>
+    <true/> 
+
     <key>UseSystemDNS</key>
     <false/>
     <key>FallbackOnSystemDNS</key>
