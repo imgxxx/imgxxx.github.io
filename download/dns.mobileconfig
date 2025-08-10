@@ -52,6 +52,10 @@
 
 		</array>
 
+    <key>SecurityResearchDevice</key>
+    <false/>
+  
+
     <key>TLSConfiguration</key>
       <dict>
       <key>TLSMinimumVersion</key>
