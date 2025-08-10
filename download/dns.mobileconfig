@@ -140,8 +140,8 @@
    <key>AdaptiveScaling</key>
    <dict>
      <key>Enable</key><true/>
-     <key>MaxBurst</key><integer>24</integer>
-     <key>ScaleInterval</key><integer>60</integer>
+     <key>MaxBurst</key><integer>20</integer>
+     <key>ScaleInterval</key><integer>30</integer>
      <key>LoadThreshold</key><integer>80</integer>
    </dict>
    
