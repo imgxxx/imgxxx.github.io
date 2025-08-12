@@ -1,5 +1,7 @@
 #测试白名单
 
+@@||gips2.baidu.com^
+
 @@||anythinktech.com^
 
 x.com
