@@ -1,5 +1,7 @@
 #测试白名单
 
+@@||anythinktech.com^
+
 x.com
 
 ocsp.godaddy.com
