@@ -1,5 +1,7 @@
 #测试版规则
 
+||anythinktech.com^
+
 ||optimus-ads.ama^$important
 ||amdc.alipay.com^$important
 ||amdc.m.taobao.com^$important
