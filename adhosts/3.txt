@@ -4,7 +4,7 @@ collector.weiyun.com
 
 @@||gips2.baidu.com^
 
-@@||anythinktech.com^
+@@||easytomessage.com^
 
 x.com
 
