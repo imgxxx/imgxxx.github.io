@@ -1,5 +1,7 @@
 #测试白名单
 
+@@||lencr.org^
+
 collector.weiyun.com
 
 @@||gips2.baidu.com^
