@@ -1,5 +1,17 @@
 #测试版规则
 
+
+||jskydream.cn^
+||senscrm.com^
+||511189.com^
+||sensorsdata.cn^
+||icsoc.net^
+||bigdatac.com^
+||finebi.com^
+||esensoft.com^
+||mktindex.com^
+||chinadatatrading.com^
+||asktempo.com^
 ||anythinktech.com^
 
 ||optimus-ads.ama^$important
