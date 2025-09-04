@@ -1,5 +1,7 @@
 #测试白名单
 
+wap.spdb.com.cn
+
 @@||lencr.org^
 
 collector.weiyun.com
