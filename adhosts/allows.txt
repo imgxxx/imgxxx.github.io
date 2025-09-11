@@ -1,6 +1,21 @@
 #测试版规则
 
 
+
+
+#拼多多
+||social.pinduoduo.com^$important
+||4pn.cn^$important
+||4a9.cn^$important
+||3p4.cn^$important
+||y4n.cn^$important
+||u7x.cn^$important
+||aqdlt.com^$important
+||aqdz91.com^$important
+||aqdz149.com^$important
+||appmetrica.yandex.ru^$important
+||share.jileme.net^$important
+
 ||jskydream.cn^
 ||senscrm.com^
 ||511189.com^
