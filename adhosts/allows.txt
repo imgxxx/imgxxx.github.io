@@ -1,6 +1,18 @@
 #测试版规则
 
-
+||ad7.com^$important
+||nequal.com^$important
+||n1q.cn^$important
+||nequal.cn^$important
+||chance-ad.com^$important
+||zhihuiyun.net.cn^$important
+||71360.com^$important
+||reyun.com^$important
+||onemob.mobi^$important
+||emar.com^$important
+||gozendata.com^$important
+||gzads.com^$important
+||gz-data.com^$important
 
 
 #拼多多
