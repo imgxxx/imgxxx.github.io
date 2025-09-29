@@ -1,5 +1,8 @@
 #测试白名单
 
+
+market.aliyun.com
+
 #微信短视频封面
 findermp.video.qq.com
 
