@@ -1,4 +1,5 @@
 #测试版规则
+plouto-appsource.oss-cn-hangzhou.aliyuncs.com
 
 adsmartget.guangtuikeji.com
 0.0.0.0 adsmartgetbes.pinyuconn.cn
