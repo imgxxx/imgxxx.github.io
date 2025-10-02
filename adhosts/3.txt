@@ -1,5 +1,6 @@
 #测试白名单
 
+marketingapi.hellobike.com
 
 market.aliyun.com
 
