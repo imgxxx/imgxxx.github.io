@@ -1,5 +1,7 @@
 #测试白名单
 
+@@||51downapp.cn^
+
 marketingapi.hellobike.com
 
 market.aliyun.com
