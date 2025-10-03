@@ -1,5 +1,8 @@
 #测试白名单
 
+@@||overseactrl.map.qq.com^
+@@||vectorsdk.map.qq.com^
+
 #哈啰
 @@||51downapp.cn^
 
