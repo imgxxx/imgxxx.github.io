@@ -1,4 +1,7 @@
 #测试版规则
+
+||fdkss.sbs^
+
 plouto-appsource.oss-cn-hangzhou.aliyuncs.com
 
 adsmartget.guangtuikeji.com
