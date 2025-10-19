@@ -1,5 +1,10 @@
 #测试白名单
 
+bz-ipdx.baidu.com
+newclient.map.baidu.com
+tx-data-u1.ubixioe.com
+integralwall.baidu.com
+
 @@||overseactrl.map.qq.com^
 @@||vectorsdk.map.qq.com^
 
