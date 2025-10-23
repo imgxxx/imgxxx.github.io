@@ -1,5 +1,7 @@
 #测试白名单
 
+@@||spdb.com.cn^
+
 bz-ipdx.baidu.com
 newclient.map.baidu.com
 tx-data-u1.ubixioe.com
