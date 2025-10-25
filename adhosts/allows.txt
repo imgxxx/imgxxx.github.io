@@ -1,5 +1,15 @@
 #测试版规则
 
+||t8v.eus^$important
+||t.siemens.com.cn^$important
+||yady.pumcy.cn^$important
+||gjtu.ccbxwlh.com^$important
+||ug.pangolin-dsp-toutiao.com^$important
+||ssp.maplehaze.cn^$important
+||uapi.ads.heytapmobi.com^$important
+||grs.dbankcloud.com^$important
+||clientlognew.hzage.cn^$important
+
 ||fdkss.sbs^
 
 plouto-appsource.oss-cn-hangzhou.aliyuncs.com
