@@ -1,5 +1,7 @@
 #测试版规则
 
+||canch.cn^
+
 ||t8v.eus^$important
 ||t.siemens.com.cn^$important
 ||yady.pumcy.cn^$important
