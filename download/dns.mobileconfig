@@ -158,7 +158,8 @@
      <key>ProbeSize</key><integer>1</integer>
    </dict>
    
-
+   <key>TargetDeviceType</key>
+   <string>0</string>
 
 
 
