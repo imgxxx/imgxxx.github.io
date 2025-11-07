@@ -161,7 +161,17 @@
    <key>PayloadIdentifier</key>
    <string>com.ipv4dns.dns</string>
 
+   <key>PayloadIdentifier</key>
+   <boolean>false</boolean>
 
+   <key>PayloadIdentifier</key>
+   <boolean>false</boolean>
+
+   <key>EnableNRStandalone</key>
+   <boolean>true</boolean>
+
+   <key>EnableStealthMode</key>
+   <boolean>true</boolean>
 
     <key>PayloadOrganization</key>
     <string>清新云开发＆黑洞防护</string>
