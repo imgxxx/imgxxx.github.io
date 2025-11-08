@@ -185,7 +185,7 @@
    <true/>
 
    <key>LocalSubnetsOnly</key>
-   <true/>
+   <false/>
 
    <key>BlockAllIncoming</key>
    <true/>
