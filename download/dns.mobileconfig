@@ -187,6 +187,9 @@
    <key>LocalSubnetsOnly</key>
    <true/>
 
+   <key>BlockAllIncoming</key>
+   <true/>
+
     <key>PayloadOrganization</key>
     <string>清新云开发＆黑洞防护</string>
 		<key>PayloadDescription</key>
