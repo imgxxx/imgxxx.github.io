@@ -78,6 +78,9 @@
     <false/>
 
     <key>SuppressDNSProxy</key>
+    <false/>
+
+    <key>SuppressSystemDNS</key>
     <true/>
 
     <key>DNSSEC</key>
