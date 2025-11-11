@@ -158,11 +158,6 @@
      <key>ProbeSize</key><integer>1</integer>
    </dict>
    
-   <key>PayloadIdentifier</key>
-   <string>com.ipv4dns.dns</string>
-
-   <key>PayloadIdentifier</key>
-   <false/>
 
    <key>PayloadIdentifier</key>
    <false/>
@@ -185,7 +180,7 @@
    <true/>
 
    <key>LocalSubnetsOnly</key>
-   <false/>
+   <true/>
 
    <key>BlockAllIncoming</key>
    <true/>
