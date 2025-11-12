@@ -83,6 +83,12 @@
     <key>SuppressSystemDNS</key>
     <true/>
 
+    <key>SuppressLocalDNS</key>
+    <true/>
+
+    <key>SuppressDebug</key>
+    <true/>
+
     <key>DNSSEC</key>
     <true/>
 
