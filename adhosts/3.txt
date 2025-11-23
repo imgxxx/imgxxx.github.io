@@ -1,5 +1,8 @@
 #测试白名单
 
+sjapi-app.aihuishou.com
+@@||aihuishou.com^
+
 @@||dr.youme.im^
 
 access1.tpns.sh.tencent.com
