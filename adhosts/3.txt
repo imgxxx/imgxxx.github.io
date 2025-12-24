@@ -1,5 +1,14 @@
 #测试白名单
 
+expendablekmr.kugou.com
+webcollects.kugou.com
+rtwebcollects.kugou.com
+rt-m.kugou.com
+expendablekmrcdn.kugou.com
+
+jpushjd.m.jd.com
+wup.imtt.qq.com
+
 sjapi-app.aihuishou.com
 @@||aihuishou.com^
 
