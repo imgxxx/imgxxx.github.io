@@ -1,4 +1,5 @@
 #测试版规则
+||souxx.com^
 ||zingfront.cn^
 ||longyun.group^
 ||yunsucheng.com^
