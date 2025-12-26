@@ -1398,7 +1398,6 @@ adx-drru.op.hicloud.com
 
 cloudlog001.rj.link
 
-||pancake.apple.com^$important
 
 ||yun.tuisnake.com^
 ||tuisnake.com^
