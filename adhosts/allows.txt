@@ -1,4 +1,5 @@
 #测试版规则
+||kol.cn^
 ||yoyoad.cn^
 ||sunbirdad.com^
 ||1ads.net^
