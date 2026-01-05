@@ -1,4 +1,5 @@
 #测试版规则
+||xiaoshouyi.com^
 ||souxx.com^
 ||zingfront.cn^
 ||longyun.group^
