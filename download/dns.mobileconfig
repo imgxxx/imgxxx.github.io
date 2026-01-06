@@ -116,6 +116,7 @@
         <key>CipherSuites</key>
         <array>
           <string>TLS_KYBER_DILITHIUM_WITH_AES_256_GCM_SHA384</string>
+          <string>X25519MLKEM768</string>
           <string>TLS_X25519MLKEM768_SHA384</string>
           <string>2022-blake3-XCHACHA20_POLY1305_SHA384</string>
           <string>2022-blake3-CHACHA20_POLY1305_SHA384</string>
