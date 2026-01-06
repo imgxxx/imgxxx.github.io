@@ -25,6 +25,7 @@
 
 ||canch.cn^
 
+||pangolin-dsp-toutiao.com^$important
 ||t8v.eus^$important
 ||t.siemens.com.cn^$important
 ||yady.pumcy.cn^$important
