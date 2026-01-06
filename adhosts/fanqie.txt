@@ -1,6 +1,1 @@
-
-||p6-ad-sign.byteimg.com^
-||ads*-normal-lq.zijieapi.com^
-||rtlog*-applog-lq.fqnovel.com^
-||v*-novelapp.fqnovelvod.com^
-||ads5-normal-lf.zijieapi.com^
+#IP反向拦截
