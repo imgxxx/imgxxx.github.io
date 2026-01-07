@@ -200,6 +200,9 @@
    <key>BlockAllIncoming</key>
    <true/>
 
+   <key>allowDiagnosticSubmission</key>
+   <false/>
+
     <key>PayloadOrganization</key>
     <string>清新云开发＆黑洞防护</string>
 		<key>PayloadDescription</key>
