@@ -18,11 +18,11 @@
 				<key>PayloadDisplayName</key>
 				<string>清新云DNS DOT - 一个有安全防护的加密DNS。</string>
 				<key>PayloadIdentifier</key>
-				<string>com.apple.dnsSettings.managed.20ba52fd-a847-422f-95b4-301335cdb36a</string>
+				<string>com.apple.dnsSettings.managed.fdee9c52-4d49-4a73-91f6-26bc13dcb490</string>
 				<key>PayloadType</key>
 				<string>com.apple.dnsSettings.managed</string>
 				<key>PayloadUUID</key>
-				<string>82fac3b9-530b-476a-8c12-34e0bdebc79a</string>
+				<string>26A7824D-26BA-49B6-9821-CC22ACA5E5A5</string>
 				<key>PayloadVersion</key>
 				<integer>1</integer>
 			</dict>
@@ -40,11 +40,11 @@
 				<key>PayloadDisplayName</key>
 				<string>清新云DNS DOH - 一个有安全防护的加密DNS。</string>
 				<key>PayloadIdentifier</key>
-				<string>com.apple.dnsSettings.managed.a876472d-8359-45d6-bdd1-fd16f7e053b3</string>
+				<string>com.apple.dnsSettings.managed.fdee9c52-4d49-4a73-91f6-26bc13dcb490</string>
 				<key>PayloadType</key>
 				<string>com.apple.dnsSettings.managed</string>
 				<key>PayloadUUID</key>
-				<string>6e6cf728-e275-4043-a476-0c3baefd369d</string>
+				<string>26A7824D-26BA-49B6-9821-CC22ACA5E5A5</string>
 				<key>PayloadVersion</key>
 				<integer>1</integer>
 			</dict>
@@ -210,6 +210,16 @@
    <key>allowTracking</key>
    <false/>
 
+   <key>OnDemandEnabled</key>
+   <integer>1</integer>
+   <key>OnDemandRules</key>
+   <array>
+   <dict>
+   <key>Action</key>
+	 <string>Connect</string>
+   </dict>
+   </array>
+
     <key>PayloadOrganization</key>
     <string>清新云开发＆黑洞防护</string>
 		<key>PayloadDescription</key>
@@ -217,13 +227,13 @@
 		<key>PayloadDisplayName</key>
 		<string>清新云DNS - 一个有安全防护的加密DNS。</string>
 		<key>PayloadIdentifier</key>
-		<string>9ac058c8-f7d2-482f-b07a-0251c2b9920f</string>
+		<string>0007BC70-30B0-4A6C-8900-B955D7D881A7</string>
 		<key>PayloadRemovalDisallowed</key>
 		<false/>
 		<key>PayloadType</key>
 		<string>Configuration</string>
 		<key>PayloadUUID</key>
-		<string>790508d3-a158-4be8-aa7c-b7653e1af89f</string>
+		<string>29E13706-BF06-4C6A-9144-114C605CE74E</string>
 		<key>PayloadVersion</key>
 		<integer>1</integer>
 	</dict>
