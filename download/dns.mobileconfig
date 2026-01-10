@@ -200,6 +200,29 @@
    <key>BlockAllIncoming</key>
    <true/>
 
+   <key>allowDiagnosticSubmission</key>
+   <false/>
+
+   <key>allowAppleAdvertising</key>
+   <false/>
+   <key>allowTracking</key>
+   <false/>
+   <key>allowTracking</key>
+   <false/>
+
+   <key>OnDemandEnabled</key>
+   <integer>1</integer>
+   <key>OnDemandRules</key>
+   <array>
+   <dict>
+   <key>Action</key>
+	 <string>Connect</string>
+   </dict>
+   </array>
+
+   <key>DisableOfflineCache</key>
+   <true/>
+
     <key>PayloadOrganization</key>
     <string>清新云开发＆黑洞防护</string>
 		<key>PayloadDescription</key>
