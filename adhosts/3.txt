@@ -1,5 +1,8 @@
 #测试白名单
 
+homescapes-mygamez.playrixcdn.cn
+homescapes-mygamez-cdn.playrixcdn.cn
+
 m-cloud.zhihu.com
 apmplus.volces.com
 datahub.zhihu.com
