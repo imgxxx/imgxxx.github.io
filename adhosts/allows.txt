@@ -1,4 +1,8 @@
 #测试版规则
+
+||sso.teddymobile.net^
+||teddymobile.net^
+
 ||mdmultra.com^
 ||xiaoshouyi.com^
 ||souxx.com^
