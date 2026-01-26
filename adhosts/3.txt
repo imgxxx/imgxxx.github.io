@@ -1,5 +1,7 @@
 #测试白名单
 
+@@||ctfiot.com^
+
 homescapes-mygamez.playrixcdn.cn
 homescapes-mygamez-cdn.playrixcdn.cn
 
