@@ -1,4 +1,5 @@
 #测试版规则
+||telala.cn^
 
 ||sso.teddymobile.net^
 ||teddymobile.net^
