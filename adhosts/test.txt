@@ -56,6 +56,9 @@
 /^error?[_.-]/
 /((^)|(.))error./
 
+/^adcloud?[_.-]/
+/((^)|(.))adcloud./
+
 /^logagent?[_.-]/
 /^adsdk?[_.-]/
 /^adxsdk?[_.-]/
