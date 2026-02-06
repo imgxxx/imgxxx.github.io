@@ -1,4 +1,7 @@
 #测试版规则
+||yinocloud.yinolink.com^
+||yinolink.com^
+||yunjingssp.com^
 ||ggysapp.com^
 ||telala.cn^
 
