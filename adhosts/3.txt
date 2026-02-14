@@ -1,5 +1,8 @@
 #测试白名单
 
+drive-pc.quark.cn
+
+
 @@||ctfiot.com^
 
 homescapes-mygamez.playrixcdn.cn
