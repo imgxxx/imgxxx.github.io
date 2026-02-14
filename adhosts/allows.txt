@@ -1,4 +1,5 @@
 #测试版规则
+||sentry.io^$important
 ||hzjizhun.com^
 ||yinocloud.yinolink.com^
 ||yinolink.com^
