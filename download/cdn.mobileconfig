@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+
+      <dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>TLS</string>
+					<key>ServerName</key>
+					<string>debug.ipv4dns.com</string>
+				</dict>
+				<key>PayloadDescription</key>
+				<string>DNS官方网站：https://www.ipv4dns.com</string>
+				<key>PayloadDisplayName</key>
+				<string>清新云DNS DOT - 一个有安全防护的加密DNS。</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.20ba52fd-a847-422f-95b4-301335cdb36a</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>82fac3b9-530b-476a-8c12-34e0bdebc79a</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+
+			<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>HTTPS</string>
+					<key>ServerURL</key>
+					<string>https://debug.ipv4dns.com/dns-query</string>
+				</dict>
+				<key>PayloadDescription</key>
+				<string>DNS官方网站：https://www.ipv4dns.com</string>
+				<key>PayloadDisplayName</key>
+				<string>清新云DNS DOH - 一个有安全防护的加密DNS。</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.a876472d-8359-45d6-bdd1-fd16f7e053b3</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>6e6cf728-e275-4043-a476-0c3baefd369d</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+
+
+		</array>
+
+    <key>SecurityResearchDevice</key>
+    <false/>
+  
+
+    <key>TLSConfiguration</key>
+      <dict>
+      <key>TLSMinimumVersion</key>
+      <string>TLSv1.3</string>
+      <key>TLSAllowInsecureConnections</key>
+      <false/>
+      </dict>
+
+    <key>DNSSECEvaluation</key>
+    <true/>
+    <key>SupplementalMatchDomainsNoSearch</key>
+    <true/>
+
+    <key>SuppressLocalHosts</key>
+    <true/> 
+
+    <key>UseSystemDNS</key>
+    <false/>
+    <key>FallbackOnSystemDNS</key>
+    <false/>
+
+    <key>SuppressDNSProxy</key>
+    <false/>
+
+    <key>SuppressSystemDNS</key>
+    <true/>
+
+    <key>SuppressLocalDNS</key>
+    <true/>
+
+    <key>SuppressDebug</key>
+    <true/>
+
+    <key>DNSSEC</key>
+    <true/>
+
+    <key>DNSSECPolicy</key>
+    <string>ENFORCE</string>
+    <key>EDNSClientSubnet</key>
+    <true/>
+    <key>QueryMinimization</key>
+    <true/>
+
+    <key>RuntimeProtection</key>
+    <dict>
+    <key>ProcessIntegrity</key>
+    <true/>
+    <key>MemoryProtection</key>
+    <string>Full</string>
+    </dict>
+
+    <key>TLSOptimization</key>
+      <dict>
+        <key>SessionResumption</key>
+        <true/>
+        <key>OCSPStapling</key>
+        <true/>
+        <key>CipherSuites</key>
+        <array>
+          <string>TLS_KYBER_DILITHIUM_WITH_AES_256_GCM_SHA384</string>
+          <string>X25519MLKEM768</string>
+          <string>TLS_X25519MLKEM768_SHA384</string>
+          <string>2022-blake3-XCHACHA20_POLY1305_SHA384</string>
+          <string>2022-blake3-CHACHA20_POLY1305_SHA384</string>
+          <string>TLS_XCHACHA20_POLY1305_SHA384</string>
+          <string>TLS_XCHACHA20_POLY1305_SHA256</string>
+          <string>TLS_CHACHA20_POLY1305_SHA256</string>
+          <string>TLS_AES_256_GCM_SHA384</string>
+          <string>TLS_AES_128_GCM_SHA256</string>
+        </array>
+      </dict>
+
+
+     <key>MaxResponseSize</key>
+     <integer>1232</integer>
+
+
+   <key>DynamicValidation</key>
+   <dict>
+     <key>RRSIGExpiryCheck</key>
+     <true/>
+     <key>NSEC3Coverage</key>
+     <string>Full</string>
+   </dict>
+   
+    <key>MemoryCache</key>
+     <dict>
+       <key>Size</key>
+       <integer>10</integer>
+       <key>TTL</key>
+       <integer>60</integer>
+     </dict>
+
+    <key>ConnectionPoolSize</key>
+     <integer>16</integer>
+
+   <key>AdaptiveScaling</key>
+   <dict>
+     <key>Enable</key><true/>
+     <key>MaxBurst</key><integer>20</integer>
+     <key>ScaleInterval</key><integer>30</integer>
+     <key>LoadThreshold</key><integer>80</integer>
+   </dict>
+   
+   <key>ConnectionIsolation</key>
+   <dict>
+     <key>PerServerLimit</key><integer>20</integer>
+     <key>ProtocolAffinity</key><true/>
+   </dict>
+   
+   <key>KeepAliveSettings</key>
+   <dict>
+     <key>Interval</key><integer>30</integer> 
+     <key>Timeout</key><integer>15</integer>
+     <key>ProbeSize</key><integer>1</integer>
+   </dict>
+   
+
+   <key>PayloadIdentifier</key>
+   <false/>
+
+   <key>EnableNRStandalone</key>
+   <true/>
+
+   <key>EnableStealthMode</key>
+   <true/>
+
+   <key>EnableFirewall</key>
+   <true/>
+
+   <key>EnableMemoryIntegrity</key>
+   <true/>
+   <key>AllowUnsignedKexts</key>
+   <false/>
+
+   <key>DenyTetheredCaching</key>
+   <true/>
+
+   <key>LocalSubnetsOnly</key>
+   <true/>
+
+   <key>BlockAllIncoming</key>
+   <true/>
+
+   <key>allowDiagnosticSubmission</key>
+   <false/>
+
+   <key>allowAppleAdvertising</key>
+   <false/>
+   <key>allowTracking</key>
+   <false/>
+   <key>allowTracking</key>
+   <false/>
+
+   <key>OnDemandEnabled</key>
+   <integer>1</integer>
+   <key>OnDemandRules</key>
+   <array>
+   <dict>
+   <key>Action</key>
+	 <string>Connect</string>
+   </dict>
+   </array>
+
+   <key>DisableOfflineCache</key>
+   <true/>
+
+    <key>PayloadOrganization</key>
+    <string>清新云开发＆黑洞防护</string>
+		<key>PayloadDescription</key>
+		<string>DNS官方网站：https://www.ipv4dns.com</string>
+		<key>PayloadDisplayName</key>
+		<string>清新云DNS ESIM - 一个有安全防护的加密DNS。</string>
+		<key>PayloadIdentifier</key>
+		<string>9ac058c8-f7d2-482f-b07a-0251c2b9920f</string>
+		<key>PayloadRemovalDisallowed</key>
+		<false/>
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>790508d3-a158-4be8-aa7c-b7653e1af89f</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>
