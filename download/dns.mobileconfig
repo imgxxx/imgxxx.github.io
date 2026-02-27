@@ -41,11 +41,11 @@
 				<key>PayloadDisplayName</key>
 				<string>清新云DNS ESIM - 一个有安全防护的加密DNS。</string>
 				<key>PayloadIdentifier</key>
-				<string>com.apple.dnsSettings.managed.a876472d-8359-45d6-bdd1-fd16f7e053b3</string>
+				<string>com.apple.dnsSettings.managed.a876472d-8359-45d6-bdd1-fd16f7e0esim</string>
 				<key>PayloadType</key>
 				<string>com.apple.dnsSettings.managed</string>
 				<key>PayloadUUID</key>
-				<string>6e6cf728-e275-4043-a476-0c3baefd369d</string>
+				<string>6e6cf728-e275-4043-a476-0c3baefdesim</string>
 				<key>PayloadVersion</key>
 				<integer>1</integer>
 			</dict>
