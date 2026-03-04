@@ -72,6 +72,28 @@
 				<integer>1</integer>
 			</dict>
 
+			<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>HTTPS</string>
+					<key>ServerURL</key>
+					<string>https://twnic.ipv4dns.com/dns-query</string>
+				</dict>
+				<key>PayloadDescription</key>
+				<string>DNS官方网站：https://www.ipv4dns.com</string>
+				<key>PayloadDisplayName</key>
+				<string>清新云DNS TW - 一个有安全防护的加密DNS。</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.a876472d-8359-45d6-bdd1-fd16f7e053tw</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>6e6cf728-e275-4043-a476-0c3baefd36tw</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+
 
 		</array>
 
