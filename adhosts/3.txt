@@ -1,6 +1,10 @@
 #测试白名单
 
 cn.bing.com
+@@||t*.baidu.com^
+h2tcbox.baidu.com
+b.bdstatic.com
+s.bdstatic.com
 
 img.alicdn.com
 
