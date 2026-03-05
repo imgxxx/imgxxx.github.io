@@ -1,5 +1,7 @@
 #测试白名单
 
+img.alicdn.com
+
 push.ksapisrv.com
 gm.mmstat.com
 acs.m.taobao.com
