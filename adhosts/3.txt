@@ -1,5 +1,7 @@
 #测试白名单
 
+cn.bing.com
+
 img.alicdn.com
 
 push.ksapisrv.com
