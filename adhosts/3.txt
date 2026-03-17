@@ -1,4 +1,5 @@
 #测试白名单
+multi-az-ulog.gifshow.com
 xp-cdn-lb.itunes-apple.com.akadns.net
 
 analysis-acc-ssl.xunlei.com
