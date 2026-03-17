@@ -1,4 +1,10 @@
 #测试白名单
+analysis-acc-ssl.xunlei.com
+union-gateway-pan.xunlei.com
+hub5idx.v6.shub.sandai.net
+hub5pnc.sandai.net
+xfile2.a.88cdn.com
+backstage-img-ssl.a.88cdn.com
 
 image.9xsecndns.cn
 
