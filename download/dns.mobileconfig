@@ -182,20 +182,15 @@
         <true/>
         <key>CipherSuites</key>
         <array>
-          <string>TLS_ECDHE_X25519_MLKEM768_SHA384</string>
-          <string>TLS_ECDHE_SECP256R1_MLKEM768_SHA384</string>
-          <string>TLS_ECDHE_X25519_MLKEM768_SHA256</string>
-          <string>TLS_ECDHE_SECP256R1_MLKEM768_SHA256</string>
-          <string>TLS_KYBER_DILITHIUM_WITH_AES_256_GCM_SHA384</string>
-          <string>X25519MLKEM768</string>
-          <string>TLS_X25519MLKEM768_SHA384</string>
-          <string>2022-blake3-XCHACHA20_POLY1305_SHA384</string>
-          <string>2022-blake3-CHACHA20_POLY1305_SHA384</string>
-          <string>TLS_XCHACHA20_POLY1305_SHA384</string>
+          <string>TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256</string>
+          <string>TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256</string>
+          <string>TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384</string>
+          <string>2022-blake3-XCHACHA20_POLY1305_SHA256</string>
+          <string>2022-blake3-CHACHA20_POLY1305_SHA256</string>
+          <string>TLS_XCHACHA20_POLY1305_SHA256</string>
           <string>TLS_XCHACHA20_POLY1305_SHA256</string>
           <string>TLS_CHACHA20_POLY1305_SHA256</string>
           <string>TLS_AES_256_GCM_SHA384</string>
-          <string>TLS_AES_128_GCM_SHA256</string>
 					<string>X25519</string>
         </array>
       </dict>
