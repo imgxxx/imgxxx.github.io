@@ -1,4 +1,11 @@
 #测试版规则
+
+||api-production.8-lives-cat.io^
+||mzstorekit.g.aaplimg.com^
+||xlab.baidu.com^
+||nisportal.10010.com^
+
+
 ||sentry.io^$important
 ||hzjizhun.com^
 ||yinocloud.yinolink.com^
