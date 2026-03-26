@@ -1,4 +1,7 @@
 #测试白名单
+
+camp.qq.com
+
 www.quark.cn
 multi-az-ulog.gifshow.com
 xp-cdn-lb.itunes-apple.com.akadns.net
