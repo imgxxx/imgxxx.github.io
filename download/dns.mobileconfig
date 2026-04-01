@@ -122,6 +122,11 @@
     <key>SecurityResearchDevice</key>
     <false/>
   
+    <key>enable_pmtud</key>
+    <true/>
+
+    <key>enable_post_quantum</key>
+    <true/>
 
     <key>TLSConfiguration</key>
       <dict>
