@@ -1,4 +1,5 @@
 #测试白名单
+minigame.gtimg.cn
 
 camp.qq.com
 
