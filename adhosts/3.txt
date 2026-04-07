@@ -1,4 +1,8 @@
 #测试白名单
+
+n98-v-ncdnwha.douyinvod.com
+||vegslb.com^
+
 minigame.gtimg.cn
 
 camp.qq.com
