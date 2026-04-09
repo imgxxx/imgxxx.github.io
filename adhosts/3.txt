@@ -1,4 +1,5 @@
 #测试白名单
+ipassport.ele.me
 
 n98-v-ncdnwha.douyinvod.com
 ||vegslb.com^
