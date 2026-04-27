@@ -59,6 +59,14 @@
 /^adcloud?[_.-]/
 /((^)|(.))adcloud./
 
+
+/^analytics?[_.-]/
+/((^)|(.))analytics./
+
+/^analytic?[_.-]/
+/((^)|(.))analytic./
+
+
 /^logagent?[_.-]/
 /^adsdk?[_.-]/
 /^adxsdk?[_.-]/
