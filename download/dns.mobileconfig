@@ -78,12 +78,12 @@
 					<key>DNSProtocol</key>
 					<string>HTTPS</string>
 					<key>ServerURL</key>
-					<string>https://twnic.ipv4dns.com/dns-query</string>
+					<string>https://nic.ipv4dns.com/dns-query</string>
 				</dict>
 				<key>PayloadDescription</key>
 				<string>DNS官方网站：https://www.ipv4dns.com</string>
 				<key>PayloadDisplayName</key>
-				<string>清新云DNS TW - 一个有安全防护的加密DNS。</string>
+				<string>清新云DNS TEST DOH - 一个有安全防护的加密DNS。</string>
 				<key>PayloadIdentifier</key>
 				<string>com.apple.dnsSettings.managed.a876472d-8359-45d6-bdd1-fd16f7e053tw</string>
 				<key>PayloadType</key>
@@ -100,12 +100,12 @@
 					<key>DNSProtocol</key>
 					<string>TLS</string>
 					<key>ServerName</key>
-					<string>twnic.ipv4dns.com</string>
+					<string>nic.ipv4dns.com</string>
 				</dict>
 				<key>PayloadDescription</key>
 				<string>DNS官方网站：https://www.ipv4dns.com</string>
 				<key>PayloadDisplayName</key>
-				<string>清新云DNS TW DoT - 一个有安全防护的加密DNS。</string>
+				<string>清新云DNS TEST DoT - 一个有安全防护的加密DNS。</string>
 				<key>PayloadIdentifier</key>
 				<string>com.apple.dnsSettings.managed.20ba52fd-a847-422f-95b4-301335cdb3ec</string>
 				<key>PayloadType</key>
