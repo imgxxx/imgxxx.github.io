@@ -1,5 +1,8 @@
 #测试白名单
 
+img.bosszhipin.com
+mzstorekit.lb-apple.com.akadns.net
+
 ||maplocatesdksnapshot.d.meituan.net^
 ||metrics-picture.d.meituan.net^
 ||route-stats.d.meituan.net^
