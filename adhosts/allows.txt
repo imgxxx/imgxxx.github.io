@@ -3,7 +3,6 @@
 ||gdmf-ados.v.aaplimg.com^
 ||8-lives-cat.io^
 ||api-production.8-lives-cat.io^
-||mzstorekit.g.aaplimg.com^
 ||xlab.baidu.com^
 ||nisportal.10010.com^
 
