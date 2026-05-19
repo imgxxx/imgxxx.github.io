@@ -1,5 +1,8 @@
 #测试版规则
 
+cpc-service-square.iggrowth.cn
+||iggrowth.cn^
+
 ||gdmf-ados.v.aaplimg.com^
 ||8-lives-cat.io^
 ||api-production.8-lives-cat.io^
