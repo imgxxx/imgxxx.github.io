@@ -1,5 +1,5 @@
 #测试白名单
-
+update.appstore.vivo.com.cn
 img.bosszhipin.com
 mzstorekit.lb-apple.com.akadns.net
 
