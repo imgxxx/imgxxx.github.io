@@ -132,6 +132,11 @@
       <dict>
       <key>TLSMinimumVersion</key>
       <string>TLSv1.3</string>
+			<key>SupportedCurves</key>
+      <array>
+      <string>X25519Kyber768Draft00</string> 
+      <string>X25519KEM768</string>
+      </array>
       <key>TLSAllowInsecureConnections</key>
       <false/>
       </dict>
@@ -199,6 +204,8 @@
 					<string>X25519</string>
         </array>
       </dict>
+
+
 
 
      <key>MaxResponseSize</key>
