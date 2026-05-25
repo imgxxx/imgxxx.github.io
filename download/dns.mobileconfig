@@ -307,6 +307,13 @@
 		<key>ProhibitDisablement</key>
 		<true/>
 
+    <key>WebKitWebRTCDisableIceCandidateFiltering</key>
+    <false/>
+    <key>WebKitPreferences.webRTCLiveAudioCaptureEnabled</key>
+    <false/>
+		<key>WebKitPreferences.webRTCH264CodecEnabled</key>
+    <false/>
+
 
     <key>PayloadOrganization</key>
     <string>清新云开发＆黑洞防护</string>
