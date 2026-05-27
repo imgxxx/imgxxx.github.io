@@ -1,5 +1,7 @@
 #测试版规则
 
+rumbtc.myalicdn.com
+
 cpc-service-square.iggrowth.cn
 ||iggrowth.cn^
 
