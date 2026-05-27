@@ -1,4 +1,7 @@
 #测试白名单
+
+on-device-ai.vivo.com.cn
+
 update.appstore.vivo.com.cn
 img.bosszhipin.com
 mzstorekit.lb-apple.com.akadns.net
