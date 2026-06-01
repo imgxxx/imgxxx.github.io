@@ -314,6 +314,15 @@
 		<key>WebKitPreferences.webRTCH264CodecEnabled</key>
     <false/>
 
+    <key>allowDiagnosticSubmission</key>
+		<false/>
+            
+		<key>allowApplePersonalizedAds</key>
+		<false/>
+            
+		<key>allowAppCellularDataModification</key> <key>allowDiagnosticSubmissionModification</key>
+		<false/>
+
 
     <key>PayloadOrganization</key>
     <string>清新云开发＆黑洞防护</string>
