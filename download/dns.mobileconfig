@@ -320,7 +320,10 @@
 		<key>allowApplePersonalizedAds</key>
 		<false/>
             
-		<key>allowAppCellularDataModification</key> <key>allowDiagnosticSubmissionModification</key>
+		<key>allowAppCellularDataModification</key>
+		<false/>
+
+		<key>allowDiagnosticSubmissionModification</key>
 		<false/>
 
 
