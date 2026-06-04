@@ -326,6 +326,17 @@
 		<key>allowDiagnosticSubmissionModification</key>
 		<false/>
 
+		<key>SendDoNotTrackHTTPHeader</key>
+    <true/>
+
+		<key>AutoFillPasswords</key>
+    <false/>
+    <key>AutoFillCreditCardData</key>
+    <false/>
+    <key>AutoFillFromAddressBook</key>
+    <false/>
+    <key>AutoFillMiscellaneousForms</key>
+    <false/>
 
     <key>PayloadOrganization</key>
     <string>清新云开发＆黑洞防护</string>
