@@ -341,6 +341,18 @@
 		<key>MTU</key>
 		<integer>1220</integer>
 
+		<key>NSExceptionMinimumTLSVersion</key>
+		<string>TLSv1.3</string>
+
+		<key>NSRequiresCertificateTransparency</key>
+		<true/>
+
+		<key>AuthenticationMethod</key>
+    <string>TLS_CHACHA20_POLY1305_SHA256</string>
+    <key>EnablePFS</key>
+    <integer>1</integer>
+
+
     <key>PayloadOrganization</key>
     <string>清新云开发＆黑洞防护</string>
 		<key>PayloadDescription</key>
