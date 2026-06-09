@@ -1,5 +1,7 @@
 #测试白名单
 
+catfront.dianping.com
+
 ngrrelease.bdy.tcdnos.com
 @@||tcdnos.com^
 
