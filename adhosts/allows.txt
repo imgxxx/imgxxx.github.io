@@ -1,5 +1,7 @@
 #测试版规则
 
+||bizwos.com^
+
 ||mykantoutiao.cn^
 
 ||ranfeng.cn^
