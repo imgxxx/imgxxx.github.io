@@ -1,5 +1,7 @@
 #测试版规则
 
+||mykantoutiao.cn^
+
 ||ranfeng.cn^
 
 rumbtc.myalicdn.com
