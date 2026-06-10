@@ -1,4 +1,5 @@
 #测试白名单
+click.aliyun.com
 
 catfront.dianping.com
 
