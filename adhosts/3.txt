@@ -1,4 +1,5 @@
 #测试白名单
+iwx.mail.qq.com
 
 ali.wosms.cn
 
