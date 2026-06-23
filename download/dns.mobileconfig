@@ -123,7 +123,7 @@
 					<key>DNSProtocol</key>
 					<string>HTTPS</string>
 					<key>ServerURL</key>
-					<string>quic://private.ipv4dns.com</string>
+					<string>quic://private.ipv4dns.com/dns-query</string>
 				</dict>
 				<key>PayloadDescription</key>
 				<string>DNS官方网站：https://www.ipv4dns.com</string>
