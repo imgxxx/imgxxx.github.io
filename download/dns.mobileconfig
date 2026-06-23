@@ -130,11 +130,11 @@
 				<key>PayloadDisplayName</key>
 				<string>清新云DNS TEST QUIC - 一个有安全防护的加密DNS。</string>
 				<key>PayloadIdentifier</key>
-				<string>com.apple.dnsSettings.managed.20ba52fd-a847-422f-95b4-301335cdb3ec</string>
+				<string>com.apple.dnsSettings.managed.20ba52fd-a847-422f-95b4-301335cdquic</string>
 				<key>PayloadType</key>
 				<string>com.apple.dnsSettings.managed</string>
 				<key>PayloadUUID</key>
-				<string>82fac3b9-530b-476a-8c12-34e0bdebcpqc</string>
+				<string>82fac3b9-530b-476a-8c12-34e0bdebquic</string>
 				<key>PayloadVersion</key>
 				<integer>1</integer>
 			</dict>
