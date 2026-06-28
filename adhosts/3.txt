@@ -1,4 +1,7 @@
 #测试白名单
+
+catdot.dianping.com
+
 iwx.mail.qq.com
 
 ali.wosms.cn
