@@ -1,6 +1,9 @@
 #测试版规则
 
+||ad-resource-warmup.kwd.inkuai.com^
+
 ||ztjsv6-fs-scd.wangjumeng.xin^
+
 ||wangjumeng.xin^
 
 ||iosidk.com.cn^
