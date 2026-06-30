@@ -1,4 +1,5 @@
 #测试白名单
+odin-signals.apple.com
 
 catdot.dianping.com
 
