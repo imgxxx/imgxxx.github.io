@@ -1,4 +1,6 @@
 #测试白名单
+access-live.d.xxpkg.com
+
 odin-signals.apple.com
 
 catdot.dianping.com
