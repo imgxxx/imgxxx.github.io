@@ -1,5 +1,8 @@
 #测试版规则
 
+||ty-course.video.yximgs.com^
+
+
 ||ad-resource-warmup.kwd.inkuai.com^
 
 ||ztjsv6-fs-scd.wangjumeng.xin^
