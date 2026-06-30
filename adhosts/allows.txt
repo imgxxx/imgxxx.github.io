@@ -1,5 +1,8 @@
 #测试版规则
 
+||*-inapp.*.ksyuncdn.com^
+
+
 ||ty-course.video.yximgs.com^
 
 
