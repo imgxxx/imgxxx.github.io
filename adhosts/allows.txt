@@ -1,5 +1,7 @@
 #测试版规则
 
+||p66-plat.wsbkwai.com^
+
 ||ovo-oss.zbisq.com^
 ||zbisq.com^
 ||markiapp.com^
