@@ -66,6 +66,10 @@
 /^analytic?[_.-]/
 /((^)|(.))analytic./
 
+/^d66-plat?[_.-]/
+/((^)|(.))d66-plat./
+
+
 
 /^logagent?[_.-]/
 /^adsdk?[_.-]/
