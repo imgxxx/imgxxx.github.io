@@ -1,4 +1,5 @@
 #测试版规则
+sdk1xyajs.data.kuiniuca.com
 
 g-page-h1.gslb.ksyuncdn.com
 ||c.adtest.cn^
