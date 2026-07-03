@@ -1,4 +1,8 @@
 #测试版规则
+
+||pglstatp-toutiao.com^
+dms.zx.com
+
 sdk1xyajs.data.kuiniuca.com
 
 g-page-h1.gslb.ksyuncdn.com
