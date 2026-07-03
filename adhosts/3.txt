@@ -1,6 +1,6 @@
 #测试白名单
 
-||pglstatp-toutiao.com^
+
 
 access-live.d.xxpkg.com
 
