@@ -1,6 +1,6 @@
 #测试白名单
 
-
+ocsp2.g.aaplimg.com
 
 access-live.d.xxpkg.com
 
