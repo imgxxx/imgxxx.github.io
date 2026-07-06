@@ -1,5 +1,7 @@
 #测试白名单
 
+az2-upload-js.gifshow.com
+
 gdfp.gifshow.com
 
 ocsp2.g.aaplimg.com
