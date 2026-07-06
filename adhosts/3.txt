@@ -1,5 +1,7 @@
 #测试白名单
 
+gdfp.gifshow.com
+
 ocsp2.g.aaplimg.com
 
 access-live.d.xxpkg.com
