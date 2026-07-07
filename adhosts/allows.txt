@@ -15,7 +15,7 @@ g-page-h1.gslb.ksyuncdn.com
 ||zbisq.com^
 
 
-||benber-tech.com^
+#||benber-tech.com^
 
 ||*-inapp.*.ksyuncdn.com^
 
