@@ -1,5 +1,7 @@
 #测试白名单
 
+zt-sup.kwd.inkuai.com
+
 ai-ecs-alimebot.ele.me
 
 az2-upload-js.gifshow.com
