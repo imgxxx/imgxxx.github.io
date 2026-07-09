@@ -1,5 +1,7 @@
 #测试版规则
 
+pingback.5gtv.com.cn
+
 ||pglstatp-toutiao.com^
 dms.zx.com
 
