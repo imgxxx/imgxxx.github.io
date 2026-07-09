@@ -1,5 +1,7 @@
 #测试白名单
 
+jsonatm-wss.broker.tplay.qq.com
+
 zt-sup.kwd.inkuai.com
 
 ai-ecs-alimebot.ele.me
