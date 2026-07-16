@@ -5,7 +5,7 @@
 mc-privacy.kakamobi.cn
 mc-privacy.image.mucang.cn.w.alikunlun.com
 jiaxiao-awd.kakamobi.cn
-ssp.kakamobi.cn
+#ssp.kakamobi.cn
 mc-privacy.image.mucang.cn
 
 api2-qz5bhd.opinstallinit.com
