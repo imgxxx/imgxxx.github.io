@@ -1,5 +1,7 @@
 #测试白名单
 
+
+smart-789.kakamobi.cn
 smart-789.image.mucang.cn
 shortconn.im.qcloud.com
 
