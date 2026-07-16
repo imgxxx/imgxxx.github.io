@@ -1,5 +1,9 @@
 #测试版规则
 
+
+g-page-h2.gslb.ksyuncdn.com
+
+
 adsmartgetbes.guangtuikeji.com
 ||guangtuikeji.com^
 
