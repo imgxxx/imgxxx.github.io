@@ -1,5 +1,8 @@
 #测试版规则
 
+adsmartgetbes.guangtuikeji.com
+||guangtuikeji.com^
+
 pingback.5gtv.com.cn
 
 ||pglstatp-toutiao.com^
