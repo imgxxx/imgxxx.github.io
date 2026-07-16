@@ -1,5 +1,10 @@
 #测试白名单
 
+#chat-platform-open.kakamobi.cn
+
+mc-privacy.kakamobi.cn
+mc-privacy.image.mucang.cn.w.alikunlun.com
+jiaxiao-awd.kakamobi.cn
 ssp.kakamobi.cn
 mc-privacy.image.mucang.cn
 
