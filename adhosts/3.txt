@@ -1,5 +1,8 @@
 #测试白名单
 
+smart-789.image.mucang.cn
+shortconn.im.qcloud.com
+
 jsonatm-wss.broker.tplay.qq.com
 
 zt-sup.kwd.inkuai.com
