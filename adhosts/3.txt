@@ -1,5 +1,8 @@
 #测试白名单
 
+ssp.kakamobi.cn
+mc-privacy.image.mucang.cn
+
 api2-qz5bhd.opinstallinit.com
 smart-789.kakamobi.cn
 smart-789.image.mucang.cn
