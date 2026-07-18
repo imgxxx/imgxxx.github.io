@@ -1,5 +1,7 @@
 #测试版规则
 
+||dancemobi.cn^
+
 ad2jsv6-cs-scd.benber-tech.com
 ad2jsv4-cs-scd.benber-tech.com
 
