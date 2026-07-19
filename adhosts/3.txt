@@ -1,5 +1,6 @@
 #测试白名单
 
+pic1.58cdn.com.cn
 t1.58cdn.com.cn
 t2.58cdn.com.cn
 
