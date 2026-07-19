@@ -1,6 +1,6 @@
 #测试白名单
 
-
+short-video.kakamobi.cn
 
 mc-privacy.kakamobi.cn
 mc-privacy.image.mucang.cn.w.alikunlun.com
