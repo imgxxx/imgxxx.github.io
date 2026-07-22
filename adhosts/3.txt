@@ -1,5 +1,7 @@
 #测试白名单
 
+im-ecs-alimebot.ele.me
+
 pic1.58cdn.com.cn
 t1.58cdn.com.cn
 t2.58cdn.com.cn
