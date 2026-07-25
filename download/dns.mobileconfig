@@ -348,7 +348,7 @@
 		<true/>
 
 		<key>AuthenticationMethod</key>
-    <string>TLS_CHACHA20_POLY1305_SHA256</string>
+    <string>ECDHE-ECDSA-CHACHA20-POLY1305</string>
     <key>EnablePFS</key>
     <integer>1</integer>
 
