@@ -1,5 +1,8 @@
 #测试版规则
 
+tr.mtspark.com
+||mtspark.com^
+
 ||xiangshu18.com^
 
 p5-ex-gddgtc-sign.douyinpic.com
