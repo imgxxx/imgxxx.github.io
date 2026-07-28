@@ -1,5 +1,6 @@
 #测试白名单
 
+tianxuan.gtimg.cn
 apd-vodp2plogin.teg.tencent-cloud.net
 
 im-ecs-alimebot.ele.me
