@@ -1,5 +1,7 @@
 #测试白名单
 
+apd-vodp2plogin.teg.tencent-cloud.net
+
 im-ecs-alimebot.ele.me
 
 pic1.58cdn.com.cn
