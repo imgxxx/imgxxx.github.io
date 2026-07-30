@@ -1,5 +1,7 @@
 #测试白名单
 
+p1.meituan.net
+
 tianxuan.gtimg.cn
 apd-vodp2plogin.teg.tencent-cloud.net
 
