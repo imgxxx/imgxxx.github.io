@@ -1,5 +1,8 @@
 #测试白名单
 
+weather-map2.apple.com
+gspe19-cn-ssl-ls-apple-com.v.aaplimg.com
+
 p1.meituan.net
 
 tianxuan.gtimg.cn
