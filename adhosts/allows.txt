@@ -15,7 +15,7 @@ ad2jsv4-cs-scd.benber-tech.com
 callback.funmob.cn
 ||funmob.cn^
 
-sz-mt-all.volcgtm.com
+#sz-mt-all.volcgtm.com
 
 g-page-h2.gslb.ksyuncdn.com
 
