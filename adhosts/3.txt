@@ -1,5 +1,9 @@
 #测试白名单
 
+metrics-picture.dreport.meituan.net.eo.dnse1.com
+waimaihosting.img-cn.meituan.net
+
+
 weather-map2.apple.com
 gspe19-cn-ssl-ls-apple-com.v.aaplimg.com
 gspe19-2-cn-ssl-ls-apple-com.v.aaplimg.com
