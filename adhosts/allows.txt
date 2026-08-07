@@ -1,5 +1,7 @@
 #测试版规则
 
+kv2.xiamenfq.com
+||xiamenfq.com^
 
 qv2.wangjuiot.com
 ||wangjuiot.com^
