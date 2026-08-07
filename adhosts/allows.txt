@@ -1,5 +1,9 @@
 #测试版规则
 
+zz15.yirujs.com
+||yirujs.com^
+
+
 kv2.xiamenfq.com
 ||xiamenfq.com^
 
