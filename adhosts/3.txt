@@ -736,8 +736,6 @@ nbcollectretry.kugou.com
 
 @@||nstool.netease.com^
 
-apidns.kwd.inkuai.com
-hdns.ksyun.com
 
 
 #白名单正则表达式
@@ -754,20 +752,12 @@ browser.vivo.com.cn
 natdetection.onethingpcs.com
 @@||data.kuiniuca.com^
 
-alimama.cloudvideocdn.taobao.com
 odin.re.taobao.com
 c-adash.m.taobao.com
 adashbc.m.taobao.com
 
 msg.douyu.com
 
-#gift.douyucdn.cn
-#cs-op.douyucdn.cn
-#apm.douyucdn.cn
-#apmconfig.douyucdn.cn
-#dotcounter.douyucdn.cn
-#rtbapi.douyucdn.cn
-#capi.douyucdn.cn
 
 ku.m.taobao.com
 
@@ -801,8 +791,6 @@ ocloud-backup-cn.heytapmobi.com
 
 
 @@||gimg*.baidu.com^
-
-open.kuaishou.com
 
 #人脸识别
 sdk.open.talk.getui.com
@@ -920,7 +908,6 @@ msg.client.xunlei.com
 soa-vip-ssl.xunlei.com
 sentry.xunlei.com
 
-beacon.cdn.qq.com
 
 @@||yaohuo.me^
 
@@ -944,8 +931,6 @@ cdn2.biubiu001.com
 @@||wetransfer.com^
 
 
-#一号店
-||yhd.com^
 
 h5.youzan.com
 
@@ -1248,8 +1233,6 @@ tracker-api.namitiyu.com
 trackermq.namitiyu.com
 
 
-dns.weixin.qq.com.cn
-
 
 cm.bilibili.com
 splashimgbssdl.yun.kugou.com
@@ -1269,7 +1252,7 @@ webimg.bssdl.kugou.com
 wx.music.tc.qq.com
 mv6.music.tc.qq.com
 aqqmusic.tc.qq.com
-aweme.snssdk.com
+
 
 @@||baidubce.com^
 h-adashx.ut.amap.com
@@ -1457,7 +1440,6 @@ mp.weixinbridge.com
 
 api.jits.heytapmobi.com
 gitee.com
-@@||browser.miui.com^
 api.device.xiaomi.net
 @@||happyelements.cn^
 cpu-openapi.baidu.com
@@ -1538,7 +1520,6 @@ ilce.alicdn.com
 s-gm.mmstat.com
 asearch.alicdn.com
 stats.shafaguanjia.com
-dot-analytics.oss-cn-hangzhou.aliyuncs.com
 msg.mobile.kugou.com
 push.mobile.kugou.com
 update.mobile.kugou.com
@@ -1552,33 +1533,9 @@ conf.diditaxi.com.cn
 img-ys011.didistatic.com
 lbs.map.qq.com
 @@||dfcfw.com^
-@@||wps.cn^
-brpnrt.stsdk.vivo.com.cn
-prt-stsdk.vivo.com.cn
-onrt-stsdk.vivo.com.cn
-#ort-stsdk.vivo.com.cn
 
-#monitor-stsdk.vivo.com.cn
-
-#systemort-stsdk.vivo.com.cn
-#moni-onrt-stsdk.vivo.com.cn
-fastonrt-stsdk.vivo.com.cn
 stappupgrade.vivo.com.cn
-#pfpdonrt-stsdk.vivo.com.cn
-#brort.stsdk.vivo.com.cn
-bronrt.stsdk.vivo.com.cn
 vcardsdkservice.vivo.com.cn
-stsdk.vivo.com.cn
-#gcort-stsdk.vivo.com.cn
-pointsdk.vivo.com.cn
-#brprt.stsdk.vivo.com.cn
 appstoreort-stsdk.vivo.com.cn
-gconrt-stsdk.vivo.com.cn
-onrt.stsdk.vivo.com.cn
-#ort.stsdk.vivo.com.cn
-prt.stsdk.vivo.com.cn
-st-sentinel.vivo.com.cn
-pnrt-stsdk.vivo.com.cn
 svideoonrt-stsdk.vivo.com.cn
-#moni-ort-stsdk.vivo.com.cn
 svideoort-stsdk.vivo.com.cn
