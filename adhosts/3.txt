@@ -3,8 +3,6 @@
 ||adwangmai.com^
 ||yunxish.com^
 
-p0.meituan.net
-s3plus.meituan.net
 
 metrics-picture.dreport.meituan.net.eo.dnse1.com
 waimaihosting.img-cn.meituan.net
