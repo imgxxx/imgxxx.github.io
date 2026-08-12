@@ -1,5 +1,8 @@
 #测试版规则
 
+||adwangmai.com^
+||yunxish.com^
+
 zz15.yirujs.com
 ||yirujs.com^
 
