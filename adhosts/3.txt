@@ -1,6 +1,7 @@
 #测试白名单
 
-
+cp.m.kuaishou.com
+api1.kwaixiaodian.com
 
 
 metrics-picture.dreport.meituan.net.eo.dnse1.com
