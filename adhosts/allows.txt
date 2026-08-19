@@ -1953,8 +1953,8 @@ api.bugreport.huorong.cn
 ||ad-cmp.hismarttv.com^$important
 
 
-@@||tnc*.zijieapi.com
-@@||tnc3-alisc1.zijieapi.com
+#@@||tnc*.zijieapi.com
+#@@||tnc3-alisc1.zijieapi.com
 
 nbnest-admonitor.cainiao.com
 
