@@ -3665,7 +3665,7 @@ applog.rwork.crc.com.cn
 @@||vv.video.qq.com^
 @@||snowflake.qq.com^
 
-@@||is.snssdk.com^
+#@@||is.snssdk.com^
 
 
 errorlog.sobot.com
@@ -8418,7 +8418,7 @@ cms.qdwght.com
 ! 魅族天气
 @@||aider-res.meizu.com^
 ! 抖音小程序、今日头条搜索
-@@||is.snssdk.com^
+#@@||is.snssdk.com^
 ! QQ邮箱
 @@||iwx.mail.qq.com^
 ! MIUI 天气预报
