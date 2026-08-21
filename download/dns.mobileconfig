@@ -134,7 +134,8 @@
       <string>TLSv1.3</string>
 			<key>SupportedCurves</key>
       <array>
-      <string>X25519Kyber768Draft00</string> 
+      <string>X448MLKEM1024</string>
+      <string>SecP384r1MLKEM1024</string> 
       <string>X25519KEM768</string>
       </array>
       <key>TLSAllowInsecureConnections</key>
