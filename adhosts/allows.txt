@@ -60,8 +60,6 @@ g-page-h1.gslb.ksyuncdn.com
 
 #||benber-tech.com^
 
-||*-inapp.*.ksyuncdn.com^
-
 
 ||ty-course.video.yximgs.com^
 
@@ -1584,16 +1582,8 @@ v9.t13466.com
 camp.qq.com
 
 
-@@||360.cn^
 
 
-
-#@@||quark.cn^
-
-@@||alicdn.com^
-
-
-@@||ksapisrv.com^
 
 
 ||bds.snssdk.com^$important
@@ -1610,7 +1600,6 @@ camp.qq.com
 ||branch.io^
 ||newrelic.com^
 ||eum-appdynamics.com^
-@@||app-measurement.com^
 ||crashlytics.com^
 @@||usertrust.com^
 @@||signifyd.com^
@@ -1840,13 +1829,7 @@ api-bo.my.id
 
 
 
-@@||mihoyo.com^
 
-@@||dnscheck.tools^
-
-@@||tantanapp.com^
-
-@@||mp.sohu.com^
 
 xpis-mob-xcdn.youku.com
 aserver-heyi-static-mob.youku.com
@@ -2436,10 +2419,7 @@ cbd-advert-prod.oss-cn-beijing.aliyuncs.com
 wcp.taobao.com
 adpicture.17wanxiao.com
 
-#V影软件
-@@||2345.com^
-@@||image.smxjysm.com^
-@@||img.smxjysm.com^
+
 
 
 ||sheincorp.cn^
@@ -2613,8 +2593,7 @@ res.chuangke.tv
 ||qbdsp.html5.qq.com^
 ||v.gdt.qq.com^
 
-@@||myapp.com^
-@@||mmstat.com
+
 
 ||client-log.dewu.com^
 ||logv3.shanbay.com^
@@ -2857,7 +2836,6 @@ wrating.com
 
 ||badambiz.com^
 
-@@||*.mmstat.com^
 
 
 
