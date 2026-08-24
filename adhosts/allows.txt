@@ -1,5 +1,7 @@
 #测试版规则
 
+stun.xten.com
+
 biz.cyapi.cn
 
 
