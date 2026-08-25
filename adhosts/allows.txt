@@ -1569,24 +1569,8 @@ v9.t13466.com
 
 ||cnmjin.net^
 
-@@||ename.net^
-
-@@||itunes.apple.com^$important
-#@@||captive.apple.com^
-#@@||amp-api-edge.apps.apple.com^
-#@@||apps.apple.com^$important
-#@@||apple.com
-@@||apple-dns.net^
-#@@||apple.com.cn^
-
-
 
 camp.qq.com
-
-
-
-
-
 
 ||bds.snssdk.com^$important
 ||sdfp.snssdk.com^$important
@@ -2257,8 +2241,6 @@ adverting-files.4pyun.com
 gdcadv.ocsp-certum.com
 free.advertising.cdn.vip.xunlei.com
 
-#度小满
-@@||duxiaoman.com^
 
 
 
@@ -2576,7 +2558,6 @@ res.chuangke.tv
 
 
 @@||meitustat.com^
-@@||meitu.com^
 @@||meitudata.com^
 ||adui.tg.meitu.com^$important
 
@@ -3020,7 +3001,7 @@ log1.wanmei.com
 @@||jobsfe.funshion.com^
 
 
-@@||vip.qq.com^
+
 
 @@||statistic.live.126.net^
 @@||mail.163.com^
@@ -3031,7 +3012,6 @@ log1.wanmei.com
 @@||liveonrt-stsdk.vivo.com.cn^
 @@||videoplayonrt-stsdk.vivo.com.cn^
 @@||svideopnrt-stsdk.vivo.com.cn^
-@@||onewsvod.com^
 @@||irs03.com^
 @@||yfp2p.net^
 @@||img.yilanvaas.com^$important
@@ -3162,7 +3142,7 @@ log1.wanmei.com
 @@||c.pc.qq.com^$important
 
 # 放行喜马拉雅主页和搜索
-@@||www.ximalaya.com^$important
+
 @@||search.ximalaya.com^$important
 
 # 放行应用汇APP主域名，影响信息展示、下载等功能
@@ -3171,13 +3151,12 @@ log1.wanmei.com
 # 放行QQ安全中心app，解决无法启动、登陆、二次验证的问题
 @@||mazu.3g.qq.com^$important
 @@||tdid.m.qq.com^$important
-@@||monitor.uu.qq.com^$important
 @@||app-measurement.com^$important
 
 # 放行UC浏览器首页信息流-无法播放视频的问题
 @@||ulive-sc.uc.cn^$important
 @@||voice-service.uc.cn^$important
-@@||hcadv.video.ums.uc.cn^$important
+
 
 # 放行微信登录验证码获取不了的问题
 @@||shminorshort.weixin.qq.com^$important
@@ -3287,21 +3266,16 @@ log1.wanmei.com
 rtlog5-applog-lf.ixigua.com
 log5-applog-lf.ixigua.com
 
-@@||mon.isnssdk.com^
-@@||p1-feedback.byteimg.com^
+
 @@||aliapp.org^
 
-||lf*-analytics.bytescm.com^
 
-||lf*-analytics.bytescm.com.queniuuf.com^
 
 @@||p3-passport.byteacctimg.com^
 
-@@||tnc*-aliec*.snssdk.com^
+
 @@||vcl-brain.snssdk.com^
-@@||stream.snssdk.com^
-@@||tnc*-alisc*.snssdk.com^
-@@||tnc*-bjlgy.snssdk.com^
+
 @@||push.ulive.ugslb.com^
 #@@||snssdk.com^
 
@@ -3358,7 +3332,6 @@ phoniex.toutiao.com
 @@||iflow.uczzd.cn^
 @@||effirst.com^
 @@||sm.cn
-@@||log*-misc-lf.amemv.com^
 
 @@||p*-tt.byteimg.com^
 @@||p*-bk.byteimg.com^
@@ -3375,10 +3348,10 @@ phoniex.toutiao.com
 
 
 
-||log*-applog.novelfm.com^
+
 
 @@||unet.quark.cn^
-#@@||verified.biz.weibo.com^
+
 
 
 @@||*.free-lbv6.idouyinvod.com^
@@ -3451,8 +3424,7 @@ tdlog.tangdou.com
 ||iadmusicmat.music.126.net^$important
 
 @@||rp.hpplay.cn^
-@@||ib-lq.snssdk.com^
-@@||i-lq.snssdk.com^
+
 
 @@||qmessage-online.quark.cn^
 @@||na61-rmbsync-upaas.quark.cn^
@@ -3571,7 +3543,7 @@ kit-device-log-1252363965.cos.ap-beijing.myqcloud.com
 
 @@||src.leju.com^
 @@||upload.ksapisrv.com^
-@@||pcdn-proxy-config.xxpkg.com^
+
 @@||vcs.zijieapi.com^
 @@||p*.douyinpic.com^
 @@||mon.zijieapi.com^
@@ -3951,11 +3923,10 @@ sdk.jumpw.com
 
 @@||pic*.iqiyipic.com^
 
-@@||www.baidu.com^
+
 @@||udpolimenew.baidu.com^
 @@||hectorstatic.baidu.com^
 @@||mime.baidu.com^
-@@||activity.baidu.com^
 @@||b.bdstatic.com^
 @@||f*.baidu.com^
 @@||s.bdstatic.com^
@@ -3974,9 +3945,7 @@ res8.vmallres.com
 uog.baidu.com
 aliyuncoccdncmnet-hd.inter.iqiyi.com
 tg41.a.glb4.com
-@@||i.snssdk.com^
 @@||ib.snssdk.com^
-@@||tnc*.zijieapi.com^
 @@||security.snssdk.com^
 
 
@@ -4033,9 +4002,7 @@ mo.rtalink.com
 
 @@||st.music.163.com^
 @@||api.iplay.163.com^
-@@||www.163.com
 
-@@||tnc3-aliec2.zijieapi.com^
 ||union.baidu.com
 ||sanjiangdai.com^
 ||a*put.chinaz.com^
@@ -4545,7 +4512,7 @@ dsplog.vivo.com.cn
 
 
 #今日头条，抖音极速版接口
-@@||tnc*-alisc*.zijieapi.com^
+#@@||tnc*-alisc*.zijieapi.com^
 
 #抖音视频接口
 @@||pull-lls-spe-l*.douyincdn.com^
@@ -5043,8 +5010,6 @@ resolver.msg.xiaomi.net
 ||v.admaster.com.cn
 @@alipay.com^
 @@miwifi.com^
-@@||w.gamecenter.qq.com^$important
-@@||game.str.mdt.qq.com
 ||download.beibeibuyu.com^
 
 
