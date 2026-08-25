@@ -175,14 +175,11 @@ ocsp.godaddy.com
 
 lf-leads-fe-scm.bytecdn.com
 
-||*-sdkservice-yidun-online.tuyoo.com^
 
 xp.itunes-apple.com.akadns.net
 xp.itunes-apple.com
 
-sdkserver-drcn.op.dbankcloud.cn
 
-advertisin.pages.dev
 
 #京东支付
 m-acp.jd.com
@@ -205,7 +202,6 @@ etl-xlmc-ssl.sandai.net
 mpush-api.aliyun.com
 
 
-@@||etoote.com^
 @@||ali-p2p*pull*com^
 
 
@@ -236,7 +232,6 @@ h2tcbox.baidu.com
 @@||jdpay.com^
 
 baidu-cn-north-00001.bj-a.bcebos.com
-||bj-a.bcebos.com^
 
 az.appstore.vivo.com.cn
 appupgrade.vivo.com.cn
@@ -262,7 +257,6 @@ f2.eckwai.com
 #快手小店
 @@||eckwai.com^
 
-api.e.kuaishou.com
 apissl.ksapisrv.com
 
 
@@ -580,7 +574,7 @@ www.360.cn
 #测试
 ac.dun.163yun.com
 ac.dun.163.com
-clientlog.music.163.com
+
 #测试
 
 
@@ -1242,7 +1236,6 @@ stats.gcp.smartmailcloud.com
 tx-kmpaudio.pull.yximgs.com
 
 @@||9game.cn^
-@@||aligames.com^
 
 adash-emas.cn-hangzhou.aliyuncs.com
 account-lingxi.aligames.com
@@ -1259,8 +1252,8 @@ aqqmusic.tc.qq.com
 h-adashx.ut.amap.com
 @@||xunyou.mobi^
 #注释@@||51y5.net^
-conf-darwin.xycdn.com
-gsg.lingxigames.com
+
+
 galaxias-api.lingxigames.com
 game-ages-fx.lingxigames.com
 
@@ -1312,7 +1305,7 @@ sq.bls.mdt.qq.com
 tools.3g.qq.com
 tangram-config.gdt.qq.com
 
-bsrv.qq.com
+
 apd-vlive.apdcdn.tc.qq.com
 masdkv6.3g.qq.com
 up-hl.3g.qq.com
@@ -1327,8 +1320,6 @@ guid.tpns.tencent.com
 yun-hl.3g.qq.com
 ap6.ssl.msdk.qq.com
 access1.tpns.tencent.com
-#wspeed.qq.com
-#open.gtimg.cn
 #c.isdspeed.qq.com
 appsupport.qq.com
 tianshu.gtimg.cn
@@ -1339,7 +1330,7 @@ ip6.ssl.msdk.qq.com
 
 guid.tpns.sh.tencent.com
 @@||ssl.msdk.qq.com^
-other.upqzfile.com
+#other.upqzfile.com
 video.upqzfile.com
 
 rdelivery.qq.com
@@ -1528,7 +1519,7 @@ sound.bssdlbig.kugou.com
 d.kugou.com
 collect.kugou.com
 serveraddr.service.kugou.com
-#ipv4only.arpa
+
 @@||didistatic.com^
 conf.diditaxi.com.cn
 img-ys011.didistatic.com
