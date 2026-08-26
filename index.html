@@ -56,6 +56,50 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+    <!-- 自定义 Tailwind 配色和工具类 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-green': '#39ff14',
+                        'amber-400': '#fbbf24',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* 毛玻璃效果 */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 深色背景氛围 */
+        body {
+            background: #0f172a;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+
+        /* 让脉冲动画更柔和 */
+        @keyframes ping {
+            75%, 100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+    </style>
+
     
       <!--Header Toggler START-->
       <div class="kayden-menu-toggler"><a class="kayden-toggler text-reset" data-bs-toggle="offcanvas" href="#kaydenOffCanvas" role="button" aria-controls="kaydenOffCanvas">
