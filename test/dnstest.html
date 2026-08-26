@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚡ 性能优化示例 - 网络延迟监控组件</title>
+<style>
+  /* ========== 基础重置 ========== */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    min-height: 100vh;
+    background: #0a0a0f;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+
+  /* ========== 背景动效 ========== */
+  .bg-grid {
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,255,136,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,255,136,0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: 0;
+  }
+
+  .bg-glow {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.15;
+    animation: float 8s ease-in-out infinite;
+    z-index: 0;
+  }
+
+  .bg-glow-1 {
+    top: -200px;
+    left: -200px;
+    background: #00ff88;
+  }
+
+  .bg-glow-2 {
+    bottom: -200px;
+    right: -200px;
+    background: #ff6b35;
+    animation-delay: -4s;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, -30px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+  }
+
+  /* ========== 主卡片 ========== */
+  .glass-card {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 520px;
+    padding: 32px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(15, 15, 25, 0.75);
+    backdrop-filter: blur(8px) saturate(1.2);
+    -webkit-backdrop-filter: blur(8px) saturate(1.2);
+    box-shadow:
+      0 20px 60px rgba(0,0,0,0.5),
+      inset 0 1px 0 rgba(255,255,255,0.06);
+    /* ✅ 独立合成层 */
+    transform: translateZ(0);
+    will-change: transform;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .glass-card:hover {
+    transform: translateZ(0) scale(1.01);
+    box-shadow:
+      0 25px 80px rgba(0,0,0,0.6),
+      inset 0 1px 0 rgba(255,255,255,0.08);
+  }
+
+  /* ========== 头部 ========== */
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .status-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(0,255,136,0.15), rgba(0,255,136,0.05));
+    border: 1px solid rgba(0,255,136,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  .card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f0f0f0;
+    letter-spacing: -0.3px;
+  }
+
+  .card-subtitle {
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+    margin-top: 2px;
+  }
+
+  /* ========== 状态指示器（核心优化点） ========== */
+  .status-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    margin-bottom: 16px;
+  }
+
+  .dot-wrapper {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+  }
+
+  .dot-core {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #00ff88;
+    box-shadow: 0 0 10px rgba(0,255,136,0.6);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* ✅ GPU 加速脉冲动画 */
+  .ping-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(0,255,136,0.4);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    will-change: transform, opacity;
+    animation: neon-ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+    pointer-events: none;
+  }
+
+  @keyframes neon-ping {
+    75%, 100% {
+      transform: translate(-50%, -50%) scale(2.8);
+      opacity: 0;
+    }
+  }
+
+  .status-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    flex: 1;
+  }
+
+  .latency-value {
+    font-weight: 700;
+    color: #fbbf24;
+    font-variant-numeric: tabular-nums;
+    font-size: 15px;
+  }
+
+  .latency-unit {
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    margin-left: 2px;
+  }
+
+  /* ========== 控制按钮 ========== */
+  .controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #00ff88, #00cc6a);
+    color: #0a0a0f;
+    box-shadow: 0 4px 15px rgba(0,255,136,0.25);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 6px 25px rgba(0,255,136,0.35);
+    transform: translateY(-1px);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+
+  .btn-secondary {
+    background: rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.7);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .btn-secondary:hover {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+  }
+
+  .btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none !important;
+  }
+
+  /* 加载动画 */
+  .spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid transparent;
+    border-top-color: #0a0a0f;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+    display: none;
+  }
+
+  .btn.loading .spinner {
+    display: inline-block;
+  }
+
+  .btn.loading .btn-text {
+    display: none;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  /* ========== 统计面板 ========== */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .stat-box {
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    text-align: center;
+  }
+
+  .stat-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #f0f0f0;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.35);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .stat-box:nth-child(1) .stat-value { color: #00ff88; }
+  .stat-box:nth-child(2) .stat-value { color: #fbbf24; }
+  .stat-box:nth-child(3) .stat-value { color: #60a5fa; }
+
+  /* ========== 历史图表 ========== */
+  .chart-area {
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .chart-bar {
+    flex: 1;
+    min-width: 4px;
+    border-radius: 3px 3px 0 0;
+    background: linear-gradient(to top, rgba(0,255,136,0.6), rgba(0,255,136,0.15));
+    transition: height 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: height;
+  }
+
+  /* ========== 日志 ========== */
+  .log-area {
+    max-height: 120px;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.04);
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 11px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.4);
+    margin-top: 16px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.1) transparent;
+  }
+
+  .log-area::-webkit-scrollbar { width: 4px; }
+  .log-area::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.1);
+    border-radius: 2px;
+  }
+
+  .log-entry {
+    display: flex;
+    gap: 8px;
+  }
+
+  .log-time {
+    color: rgba(255,255,255,0.2);
+    flex-shrink: 0;
+  }
+
+  .log-msg-success { color: #00ff88; }
+  .log-msg-warn { color: #fbbf24; }
+  .log-msg-error { color: #f87171; }
+  .log-msg-info { color: #60a5fa; }
+
+  /* ========== 离屏提示 ========== */
+  .offscreen-banner {
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100px);
+    padding: 10px 24px;
+    border-radius: 10px;
+    background: rgba(251,191,36,0.15);
+    border: 1px solid rgba(251,191,36,0.3);
+    color: #fbbf24;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 100;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    pointer-events: none;
+  }
+
+  .offscreen-banner.visible {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  /* ========== 可见性状态指示 ========== */
+  .visibility-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+
+  .badge-visible {
+    background: rgba(0,255,136,0.1);
+    color: #00ff88;
+    border: 1px solid rgba(0,255,136,0.2);
+  }
+
+  .badge-hidden {
+    background: rgba(251,191,36,0.1);
+    color: #fbbf24;
+    border: 1px solid rgba(251,191,36,0.2);
+  }
+
+  .badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+    animation: blink-dot 1.5s ease-in-out infinite;
+  }
+
+  @keyframes blink-dot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  /* ========== 响应式 ========== */
+  @media (max-width: 480px) {
+    .glass-card { padding: 20px; }
+    .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+    .stat-box { padding: 8px; }
+    .stat-value { font-size: 14px; }
+    .controls { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- 背景 -->
+<div class="bg-grid"></div>
+<div class="bg-glow bg-glow-1"></div>
+<div class="bg-glow bg-glow-2"></div>
+
+<!-- 离屏提示 -->
+<div class="offscreen-banner" id="offscreenBanner">
+  👁️ 组件已离屏，已暂停网络请求以节省资源
+</div>
+
+<!-- 主卡片 -->
+<div class="glass-card" id="mainCard">
+
+  <!-- 头部 -->
+  <div class="card-header">
+    <div class="status-icon">📡</div>
+    <div>
+      <div class="card-title">网络延迟监控</div>
+      <div class="card-subtitle">实时监测 · 性能优化版</div>
+    </div>
+  </div>
+
+  <!-- 状态指示器 -->
+  <div class="status-row">
+    <div class="dot-wrapper">
+      <span class="dot-core"></span>
+      <span class="ping-dot"></span>
+    </div>
+    <div class="status-text">
+      服务运行中 · 延迟
+      <span class="latency-value" id="latencyValue">--</span>
+      <span class="latency-unit">ms</span>
+    </div>
+    <div class="visibility-badge badge-visible" id="visBadge">
+      <span class="badge-dot"></span>
+      <span id="visText">视口内</span>
+    </div>
+  </div>
+
+  <!-- 控制按钮 -->
+  <div class="controls">
+    <button class="btn btn-primary" id="btnMeasure" onclick="handleMeasure()">
+      <span class="btn-text">⚡ 立即测速</span>
+      <span class="spinner"></span>
+    </button>
+    <button class="btn btn-secondary" id="btnToggle" onclick="toggleAutoPoll()">
+      <span id="toggleText">▶ 自动</span>
+    </button>
+  </div>
+
+  <!-- 统计 -->
+  <div class="stats-grid">
+    <div class="stat-box">
+      <div class="stat-value" id="statMin">--</div>
+      <div class="stat-label">最低 ms</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value" id="statAvg">--</div>
+      <div class="stat-label">平均 ms</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value" id="statMax">--</div>
+      <div class="stat-label">最高 ms</div>
+    </div>
+  </div>
+
+  <!-- 历史图表 -->
+  <div class="chart-area" id="chartArea"></div>
+
+  <!-- 日志 -->
+  <div class="log-area" id="logArea">
+    <div class="log-entry">
+      <span class="log-time">[系统]</span>
+      <span class="log-msg-info">组件初始化完成 · 所有优化已启用</span>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ============================================================
+//  性能优化示例 - 完整实现
+// ============================================================
+
+(function() {
+  'use strict';
+
+  // ====== 状态管理 ======
+  const state = {
+    latency: null,
+    history: [],
+    minLatency: Infinity,
+    maxLatency: 0,
+    totalLatency: 0,
+    count: 0,
+    autoPoll: false,
+    pollTimer: null,
+    isMeasuring: false,
+    abortController: null,
+    debounceTimer: null,
+    visible: true,
+    chartBars: 20
+  };
+
+  // ====== DOM 引用 ======
+  const $ = (sel) => document.querySelector(sel);
+  const latencyValue = $('#latencyValue');
+  const statMin = $('#statMin');
+  const statAvg = $('#statAvg');
+  const statMax = $('#statMax');
+  const chartArea = $('#chartArea');
+  const logArea = $('#logArea');
+  const btnMeasure = $('#btnMeasure');
+  const btnToggle = $('#btnToggle');
+  const toggleText = $('#toggleText');
+  const visBadge = $('#visBadge');
+  const visText = $('#visText');
+  const offscreenBanner = $('#offscreenBanner');
+
+  // ====== 初始化图表 ======
+  function initChart() {
+    chartArea.innerHTML = '';
+    for (let i = 0; i < state.chartBars; i++) {
+      const bar = document.createElement('div');
+      bar.className = 'chart-bar';
+      bar.style.height = '4px';
+      chartArea.appendChild(bar);
+    }
+  }
+
+  function updateChart(value) {
+    const bars = chartArea.children;
+    // 移除最旧的
+    if (bars.length >= state.chartBars) {
+      bars[0].remove();
+    }
+    const maxH = 70;
+    const minH = 4;
+    const height = Math.max(minH, Math.min(maxH, (value / 200) * maxH));
+    const bar = document.createElement('div');
+    bar.className = 'chart-bar';
+    bar.style.height = height + 'px';
+    chartArea.appendChild(bar);
+    // 限制数量
+    while (chartArea.children.length > state.chartBars) {
+      chartArea.removeChild(chartArea.firstChild);
+    }
+  }
+
+  // ====== 日志系统 ======
+  function addLog(msg, type = 'info') {
+    const now = new Date();
+    const time = now.toLocaleTimeString('zh-CN', { hour12: false });
+    const entry = document.createElement('div');
+    entry.className = 'log-entry';
+    entry.innerHTML = `
+      <span class="log-time">[${time}]</span>
+      <span class="log-msg-${type}">${msg}</span>
+    `;
+    logArea.appendChild(entry);
+    // 自动滚动
+    logArea.scrollTop = logArea.scrollHeight;
+    // 限制日志条数
+    while (logArea.children.length > 50) {
+      logArea.removeChild(logArea.firstChild);
+    }
+  }
+
+  // ====== ✅ 优化1: 防抖 + AbortController 测速 ======
+  function handleMeasure() {
+    if (state.isMeasuring) return;
+
+    // 防抖：300ms 内重复点击只发一次
+    clearTimeout(state.debounceTimer);
+    state.debounceTimer = setTimeout(async () => {
+      // 中断旧请求
+      if (state.abortController) {
+        state.abortController.abort();
+        addLog('已取消上一次未完成的请求', 'warn');
+      }
+      state.abortController = new AbortController();
+
+      state.isMeasuring = true;
+      btnMeasure.classList.add('loading');
+      btnMeasure.disabled = true;
+
+      const start = performance.now();
+
+      try {
+        // ✅ 模拟 API 调用（实际项目替换为真实 fetch）
+        const res = await simulateLatencyRequest(
+          state.abortController.signal
+        );
+        const end = performance.now();
+        const latency = Math.round(end - start);
+
+        // ✅ 用 requestAnimationFrame 更新 DOM（避免同步重排）
+        requestAnimationFrame(() => {
+          updateLatencyDisplay(latency);
+          addLog(`测速完成: ${latency}ms`, 'success');
+        });
+
+      } catch (e) {
+        if (e.name === 'AbortError') {
+          addLog('请求已取消', 'warn');
+        } else {
+          addLog(`测速失败: ${e.message}`, 'error');
+        }
+      } finally {
+        state.isMeasuring = false;
+        btnMeasure.classList.remove('loading');
+        btnMeasure.disabled = false;
+      }
+    }, 300);
+  }
+
+  // 模拟延迟请求（带随机延迟 20-180ms）
+  function simulateLatencyRequest(signal) {
+    return new Promise((resolve, reject) => {
+      const delay = Math.random() * 160 + 20;
+      const timer = setTimeout(() => {
+        resolve({ latency: Math.round(delay), ok: true });
+      }, delay);
+
+      signal.addEventListener('abort', () => {
+        clearTimeout(timer);
+        reject(new DOMException('Aborted', 'AbortError'));
+      });
+    });
+  }
+
+  // ====== ✅ 优化2: requestIdleCallback 更新非关键状态 ======
+  function updateLatencyDisplay(ms) {
+    // 更新核心数值 - rAF
+    latencyValue.textContent = ms;
+
+    // 更新统计 - 用空闲时间
+    state.latency = ms;
+    state.history.push(ms);
+    state.count++;
+    state.totalLatency += ms;
+    state.minLatency = Math.min(state.minLatency, ms);
+    state.maxLatency = Math.max(state.maxLatency, ms);
+
+    // 更新图表
+    updateChart(ms);
+
+    // 非关键 UI 更新用 idle callback
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(() => {
+        statMin.textContent = state.minLatency === Infinity ? '--' : state.minLatency;
+        statAvg.textContent = state.count ? Math.round(state.totalLatency / state.count) : '--';
+        statMax.textContent = state.maxLatency || '--';
+      });
+    } else {
+      // 降级
+      setTimeout(() => {
+        statMin.textContent = state.minLatency === Infinity ? '--' : state.minLatency;
+        statAvg.textContent = state.count ? Math.round(state.totalLatency / state.count) : '--';
+        statMax.textContent = state.maxLatency || '--';
+      }, 0);
+    }
+  }
+
+  // ====== ✅ 优化3: IntersectionObserver 按需更新 ======
+  function initVisibilityObserver() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        state.visible = entry.isIntersecting;
+        if (state.visible) {
+          visBadge.className = 'visibility-badge badge-visible';
+          visText.textContent = '视口内';
+          offscreenBanner.classList.remove('visible');
+          addLog('组件进入视口 · 恢复网络请求', 'info');
+        } else {
+          visBadge.className = 'visibility-badge badge-hidden';
+          visText.textContent = '已离屏';
+          offscreenBanner.classList.add('visible');
+          addLog('组件离开视口 · 已暂停网络请求', 'warn');
+          // 停止自动轮询
+          if (state.autoPoll) {
+            stopAutoPoll();
+          }
+        }
+      });
+    }, { threshold: 0.1 });
+
+    observer.observe($('#mainCard'));
+    addLog('IntersectionObserver 已初始化', 'info');
+  }
+
+  // ====== 自动轮询 ======
+  function startAutoPoll() {
+    if (!state.visible) {
+      addLog('组件离屏，无法启动自动轮询', 'warn');
+      return;
+    }
+    state.autoPoll = true;
+    toggleText.textContent = '⏸ 暂停';
+    addLog('自动轮询已启动 (每5秒)', 'info');
+
+    state.pollTimer = setInterval(() => {
+      if (state.visible) {
+        handleMeasure();
+      }
+    }, 5000);
+  }
+
+  function stopAutoPoll() {
+    state.autoPoll = false;
+    clearInterval(state.pollTimer);
+    state.pollTimer = null;
+    toggleText.textContent = '▶ 自动';
+    addLog('自动轮询已停止', 'info');
+  }
+
+  function toggleAutoPoll() {
+    if (state.autoPoll) {
+      stopAutoPoll();
+    } else {
+      startAutoPoll();
+    }
+  }
+
+  // ====== ✅ 优化4: 模拟 WebSocket 推送（演示用） ======
+  // 实际项目中替换为真实 WebSocket
+  function initWebSocketDemo() {
+    addLog('WebSocket 演示模式已启用（模拟实时推送）', 'info');
+
+    // 模拟推送：每 8 秒随机推一次
+    setInterval(() => {
+      if (state.visible && !state.isMeasuring) {
+        const mockLatency = Math.round(Math.random() * 120 + 15);
+        updateLatencyDisplay(mockLatency);
+        addLog(`WebSocket 推送: ${mockLatency}ms`, 'success');
+      }
+    }, 8000);
+  }
+
+  // ====== ✅ 优化5: 页面可见性 API ======
+  function initPageVisibility() {
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        addLog('页面隐藏 · 暂停所有活动', 'warn');
+        if (state.autoPoll) stopAutoPoll();
+      } else {
+        addLog('页面可见 · 恢复活动', 'info');
+      }
+    });
+  }
+
+  // ====== 初始化 ======
+  function init() {
+    initChart();
+    initVisibilityObserver();
+    initWebSocketDemo();
+    initPageVisibility();
+    addLog('所有性能优化已加载', 'success');
+
+    // 首次自动测速
+    setTimeout(() => handleMeasure(), 500);
+  }
+
+  init();
+
+})();
+</script>
+
+</body>
+</html>
