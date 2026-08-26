@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时 TCPing 监控</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-green': '#39ff14',
+                        'neon-red': '#ff3131',
+                        'neon-yellow': '#ffd700',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            min-height: 100vh;
+            font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+        .glass {
+            background: rgba(255,255,255,0.06);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.3); }
+        }
+        .pulse { animation: pulse-dot 1.5s ease-in-out infinite; }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-8px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .slide-in { animation: slideIn 0.3s ease-out; }
+        /* 滚动条美化 */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 3px; }
+        ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 3px; }
+    </style>
+</head>
+<body class="text-white p-4 md:p-8">
+
+    <div class="max-w-2xl mx-auto">
+
+        <!-- 标题 -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold bg-gradient-to-r from-neon-green via-cyan-400 to-neon-green bg-clip-text text-transparent mb-2">
+                ⚡ 实时 TCPing 监控
+            </h1>
+            <p class="text-gray-400 text-sm">WebSocket 实时推送 · 自动探测 TCP 连通性与延迟</p>
+        </div>
+
+        <!-- 状态指示条 -->
+        <div id="statusBar" class="glass rounded-2xl p-4 mb-6 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span id="statusDot" class="relative flex w-3 h-3">
+                    <span class="absolute inline-flex h-full w-full rounded-full bg-neon-green opacity-75 animate-ping"></span>
+                    <span class="relative inline-flex w-3 h-3 rounded-full bg-neon-green pulse"></span>
+                </span>
+                <div>
+                    <div id="statusText" class="text-sm font-semibold text-gray-200">连接中...</div>
+                    <div id="targetInfo" class="text-xs text-gray-400">目标: 8.8.8.8:443</div>
+                </div>
+            </div>
+            <div class="text-right">
+                <div id="latencyDisplay" class="text-2xl font-bold text-neon-green">-- ms</div>
+                <div id="jitterDisplay" class="text-xs text-gray-500">抖动: --</div>
+            </div>
+        </div>
+
+        <!-- 配置面板 -->
+        <div class="glass rounded-2xl p-5 mb-6">
+            <h3 class="text-sm font-semibold text-gray-300 mb-3">🎯 目标配置</h3>
+            <div class="flex gap-3 flex-wrap">
+                <input id="ipInput" type="text" placeholder="IP 地址" value="8.8.8.8"
+                    class="flex-1 min-w-[140px] bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-neon-green transition" />
+                <input id="portInput" type="number" placeholder="端口" value="443" min="1" max="65535"
+                    class="w-24 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-neon-green transition" />
+                <button onclick="updateTarget()"
+                    class="px-5 py-2 bg-neon-green/20 text-neon-green border border-neon-green/40 rounded-lg text-sm font-semibold hover:bg-neon-green/30 transition active:scale-95">
+                    更新目标
+                </button>
+            </div>
+            <div class="flex gap-2 mt-3 flex-wrap">
+                <span class="text-xs text-gray-500">快速选择:</span>
+                <button onclick="quickTarget('8.8.8.8',443)"   class="px-2 py-1 bg-white/10 rounded text-xs text-gray-300 hover:bg-white/20">Google DNS</button>
+                <button onclick="quickTarget('1.1.1.1',443)"   class="px-2 py-1 bg-white/10 rounded text-xs text-gray-300 hover:bg-white/20">Cloudflare</button>
+                <button onclick="quickTarget('223.5.5.5',443)" class="px-2 py-1 bg-white/10 rounded text-xs text-gray-300 hover:bg-white/20">阿里 DNS</button>
+                <button onclick="quickTarget('114.114.114.114',53)" class="px-2 py-1 bg-white/10 rounded text-xs text-gray-300 hover:bg-white/20">114 DNS</button>
+            </div>
+        </div>
+
+        <!-- 实时图表（CSS 简易柱状图） -->
+        <div class="glass rounded-2xl p-5 mb-6">
+            <h3 class="text-sm font-semibold text-gray-300 mb-3">📈 延迟趋势（最近 30 次）</h3>
+            <div id="chart" class="flex items-end gap-1 h-32">
+                <!-- 动态生成柱状图 -->
+            </div>
+            <div class="flex justify-between text-xs text-gray-600 mt-2">
+                <span>← 较早</span>
+                <span>较新 →</span>
+            </div>
+        </div>
+
+        <!-- 历史记录 -->
+        <div class="glass rounded-2xl p-5">
+            <h3 class="text-sm font-semibold text-gray-300 mb-3">📋 探测历史</h3>
+            <div id="history" class="max-h-64 overflow-y-auto space-y-1.5 pr-2">
+                <p class="text-gray-600 text-xs text-center py-4">等待数据...</p>
+            </div>
+        </div>
+
+        <!-- 统计面板 -->
+        <div class="grid grid-cols-3 gap-4 mt-6">
+            <div class="glass rounded-xl p-4 text-center">
+                <div class="text-xs text-gray-500 mb-1">平均延迟</div>
+                <div id="avgLatency" class="text-xl font-bold text-cyan-400">--</div>
+            </div>
+            <div class="glass rounded-xl p-4 text-center">
+                <div class="text-xs text-gray-500 mb-1">成功率</div>
+                <div id="successRate" class="text-xl font-bold text-neon-green">--</div>
+            </div>
+            <div class="glass rounded-xl p-4 text-center">
+                <div class="text-xs text-gray-500 mb-1">最大延迟</div>
+                <div id="maxLatency" class="text-xl font-bold text-neon-yellow">--</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== JavaScript ========== -->
+    <script>
+        let ws;
+        let historyData = [];
+        let allLatencies = [];
+
+        // ---------- WebSocket 连接 ----------
+        function connectWS() {
+            const protocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            ws = new WebSocket(`${protocol}//${location.host}`);
+
+            ws.onopen = () => {
+                document.getElementById('statusText').textContent = '已连接';
+                document.getElementById('statusDot').querySelector('span:last-child').className =
+                    'relative inline-flex w-3 h-3 rounded-full bg-neon-green pulse';
+            };
+
+            ws.onclose = () => {
+                document.getElementById('statusText').textContent = '连接断开，重连中...';
+                document.getElementById('statusDot').querySelector('span:last-child').className =
+                    'relative inline-flex w-3 h-3 rounded-full bg-neon-red pulse';
+                setTimeout(connectWS, 3000);
+            };
+
+            ws.onerror = () => {
+                console.error('WebSocket 错误');
+            };
+
+            ws.onmessage = (event) => {
+                const msg = JSON.parse(event.data);
+                if (msg.type === 'result') {
+                    handleResult(msg.data);
+                    historyData = msg.history || [];
+                    renderHistory();
+                    renderChart();
+                    updateStats();
+                }
+            };
+        }
+
+        // ---------- 处理单次探测结果 ----------
+        function handleResult(data) {
+            const { ip, port, latency, success, time } = data;
+
+            // 更新目标显示
+            document.getElementById('targetInfo').textContent = `目标: ${ip}:${port}`;
+
+            // 更新延迟显示
+            const latEl = document.getElementById('latencyDisplay');
+            if (success) {
+                latEl.textContent = latency + ' ms';
+                latEl.className = 'text-2xl font-bold text-neon-green slide-in';
+            } else {
+                latEl.textContent = '超时';
+                latEl.className = 'text-2xl font-bold text-neon-red slide-in';
+            }
+
+            // 状态指示灯
+            const dot = document.getElementById('statusDot').querySelector('span:last-child');
+            if (success) {
+                dot.className = 'relative inline-flex w-3 h-3 rounded-full bg-neon-green pulse';
+                document.getElementById('statusText').textContent = 'TCP 连通 ✓';
+            } else {
+                dot.className = 'relative inline-flex w-3 h-3 rounded-full bg-neon-red pulse';
+                document.getElementById('statusText').textContent = 'TCP 不可达 ✗';
+            }
+
+            // 记录延迟用于统计
+            if (latency > 0) allLatencies.push(latency);
+        }
+
+        // ---------- 渲染柱状图 ----------
+        function renderChart() {
+            const chart = document.getElementById('chart');
+            const display = historyData.slice(0, 30).reverse(); // 较早的在左
+
+            if (display.length === 0) {
+                chart.innerHTML = '<p class="text-gray-600 text-xs w-full text-center">暂无数据</p>';
+                return;
+            }
+
+            const maxVal = Math.max(...display.map(d => Math.max(d.latency, 1)), 1);
+
+            chart.innerHTML = display.map((d, i) => {
+                const h = Math.max((d.latency / maxVal) * 100, 4);
+                const color = d.success
+                    ? (d.latency < 100 ? 'bg-neon-green' : d.latency < 200 ? 'bg-neon-yellow' : 'bg-neon-red')
+                    : 'bg-gray-600';
+                return `<div class="flex-1 ${color} rounded-t transition-all duration-300" 
+                            style="height:${h}%; min-width:4px" 
+                            title="${d.time} ${d.latency}ms"></div>`;
+            }).join('');
+        }
+
+        // ---------- 渲染历史记录 ----------
+        function renderHistory() {
+            const el = document.getElementById('history');
+            if (historyData.length === 0) {
+                el.innerHTML = '<p class="text-gray-600 text-xs text-center py-4">等待数据...</p>';
+                return;
+            }
+
+            el.innerHTML = historyData.map((d, i) => {
+                const color = d.success
+                    ? (d.latency < 100 ? 'text-neon-green' : d.latency < 200 ? 'text-neon-yellow' : 'text-neon-red')
+                    : 'text-neon-red';
+                return `
+                    <div class="flex justify-between items-center bg-white/5 rounded-lg px-3 py-2 ${i===0?'slide-in':''}">
+                        <span class="text-xs text-gray-500 font-mono">${d.time}</span>
+                        <span class="text-xs text-gray-400 font-mono">${d.ip}:${d.port}</span>
+                        <span class="text-sm font-bold ${color} font-mono w-16 text-right">
+                            ${d.success ? d.latency + 'ms' : '超时'}
+                        </span>
+                    </div>`;
+            }).join('');
+        }
+
+        // ---------- 更新统计 ----------
+        function updateStats() {
+            if (allLatencies.length === 0) return;
+
+            const avg = Math.round(allLatencies.reduce((a,b)=>a+b,0) / allLatencies.length);
+            const max = Math.max(...allLatencies);
+            const successCount = historyData.filter(d => d.success).length;
+            const rate = historyData.length > 0 ? Math.round(successCount / historyData.length * 100) : 0;
+
+            document.getElementById('avgLatency').textContent = avg + 'ms';
+            document.getElementById('maxLatency').textContent = max + 'ms';
+            document.getElementById('successRate').textContent = rate + '%';
+        }
+
+        // ---------- 更新目标 ----------
+        function updateTarget() {
+            const ip = document.getElementById('ipInput').value.trim();
+            const port = parseInt(document.getElementById('portInput').value);
+            if (!ip || !port) return alert('请输入有效 IP 和端口');
+
+            if (ws && ws.readyState === WebSocket.OPEN) {
+                ws.send(JSON.stringify({ ip, port }));
+            } else {
+                // 连接未建立时缓存
+                alert('WebSocket 未连接，请刷新页面后再试');
+            }
+        }
+
+        function quickTarget(ip, port) {
+            document.getElementById('ipInput').value = ip;
+            document.getElementById('portInput').value = port;
+            updateTarget();
+        }
+
+        // ---------- 启动 ----------
+        connectWS();
+    </script>
+</body>
+</html>
