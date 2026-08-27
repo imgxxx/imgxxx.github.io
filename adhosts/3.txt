@@ -1,5 +1,7 @@
 #测试白名单
 
+smartcard.apps.coloros.com
+
 az2-api.ksapisrv.com
 @@||ksapisrv.com^
 
