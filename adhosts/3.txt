@@ -1,5 +1,8 @@
 #测试白名单
 
+az2-api.ksapisrv.com
+@@||ksapisrv.com^
+
 file.daihuo.qq.com
 mmbiz.qpic.cn
 
