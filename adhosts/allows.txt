@@ -1,5 +1,7 @@
 #测试版规则
 
+connectivitycheck.platform.hicloud.com
+
 stun.xten.com
 
 biz.cyapi.cn
