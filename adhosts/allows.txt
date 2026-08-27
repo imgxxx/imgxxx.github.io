@@ -1,4 +1,8 @@
 #测试版规则
+
+ydyxg-st.ksc-test.com
+||ksc-test.com^
+
 signal-t1-v6-az2-01.rtcxyz.com
 ||rtcxyz.com^
 
