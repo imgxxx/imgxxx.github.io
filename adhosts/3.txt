@@ -1,5 +1,8 @@
 #测试白名单
 
+file.daihuo.qq.com
+mmbiz.qpic.cn
+
 cp.m.kuaishou.com
 api1.kwaixiaodian.com
 
