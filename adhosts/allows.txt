@@ -1,4 +1,6 @@
 #测试版规则
+signal-t1-v6-az2-01.rtcxyz.com
+||rtcxyz.com^
 
 connectivitycheck.platform.hicloud.com
 
