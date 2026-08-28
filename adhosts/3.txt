@@ -1,4 +1,7 @@
 #测试白名单
+
+wxaintpcos.wxqcloud.qq.com.cn
+
 auth.api.gitv.tv
 smartcard.apps.coloros.com
 
