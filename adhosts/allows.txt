@@ -1,5 +1,7 @@
 #测试版规则
 
+promotion-1.pddpic.com
+
 ydyxg-st.ksc-test.com
 ||ksc-test.com^
 
