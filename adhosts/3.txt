@@ -1,5 +1,7 @@
 #测试白名单
 
+checkapi.aliyun.com
+
 s1-hb2az2-js-api.gifshow.com
 wxaintpcos.wxqcloud.qq.com.cn
 
