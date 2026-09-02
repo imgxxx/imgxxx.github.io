@@ -1,5 +1,7 @@
 #测试白名单
 
+msmp.abchina.com.cn
+
 biz.cyapi.cn
 
 checkapi.aliyun.com
