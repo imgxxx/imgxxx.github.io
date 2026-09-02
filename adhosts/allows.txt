@@ -12,7 +12,7 @@ connectivitycheck.platform.hicloud.com
 
 stun.xten.com
 
-biz.cyapi.cn
+
 
 
 ||zhangyuyidong.com^
