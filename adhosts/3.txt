@@ -1,5 +1,13 @@
 #测试白名单
 
+lang.alicdn.com
+acjs.aliyun.com
+o.alicdn.com
+cloud-assets.alicdn.com
+oneconsole.alicdn.com
+cws.alicdn.com
+uaction.alicdn.com
+
 uphone.wo-adv.cn
 
 msmp.abchina.com.cn
