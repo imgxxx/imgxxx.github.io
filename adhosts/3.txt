@@ -1,5 +1,7 @@
 #测试白名单
 
+uphone.wo-adv.cn
+
 msmp.abchina.com.cn
 
 biz.cyapi.cn
