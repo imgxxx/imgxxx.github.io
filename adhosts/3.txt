@@ -1,5 +1,7 @@
 #测试白名单
 
+h-adashx.ut.ele.me
+
 lang.alicdn.com
 acjs.aliyun.com
 o.alicdn.com
