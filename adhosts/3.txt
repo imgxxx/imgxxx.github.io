@@ -1,5 +1,7 @@
 #测试白名单
 
+www.bing.com
+
 h-adashx.ut.ele.me
 
 lang.alicdn.com
