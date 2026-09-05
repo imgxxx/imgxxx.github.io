@@ -8,7 +8,7 @@ ydyxg-st.ksc-test.com
 signal-t1-v6-az2-01.rtcxyz.com
 ||rtcxyz.com^
 
-connectivitycheck.platform.hicloud.com
+#connectivitycheck.platform.hicloud.com
 
 stun.xten.com
 
