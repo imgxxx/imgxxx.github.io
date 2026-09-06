@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNS 总解析量监控看板</title>
+    <title>清新云DNS - 24小时解析量监控看板</title>
     <style>
         :root {
             --primary-color: #6c5ce7;
@@ -147,6 +147,38 @@
             opacity: 0.5;
             pointer-events: none;
         }
+        
+        /* 1. 添加响应式字体 */
+@media (max-width: 480px) {
+    .main-number {
+        font-size: 48px;
+    }
+}
+
+/* 2. 兼容回退 */
+@supports not (backdrop-filter: blur(20px)) {
+    .dashboard-card {
+        background: rgba(255,255,255,0.95);
+    }
+}
+
+/* 3. 无障碍 - 减少动画 */
+@media (prefers-reduced-motion: reduce) {
+    .status-dot {
+        animation: none;
+        box-shadow: 0 0 0 4px rgba(0,206,201,0.4);
+    }
+    .dashboard-card:hover {
+        transform: none;
+    }
+}
+
+/* 4. 数字防溢出 */
+.main-number {
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+        
     </style>
 </head>
 <body>
