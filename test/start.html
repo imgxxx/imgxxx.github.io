@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DNS安全 · 加密DNS服务官网 | DoH / DoT</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#2f6bff; --blue2:#4d8dff; --purple:#8b7bff; --pink:#ff9ad5;
+  --ink:#1a1a2e; --sub:#6b7280; --bg:#f4f6ff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;
+  background:#fbfcff; color:var(--ink); overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:rgba(47,107,255,.18);}
+
+/* ---------- 全局背景光斑 ---------- */
+.bg-glow{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;}
+.bg-glow span{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55;}
+.g1{width:52vw;height:52vw;left:-14vw;top:-12vw;background:radial-gradient(circle,#c7d6ff,transparent 65%);animation:drift 26s ease-in-out infinite alternate;}
+.g2{width:44vw;height:44vw;right:-12vw;top:8vh;background:radial-gradient(circle,#ffd9f0,transparent 65%);animation:drift 30s ease-in-out infinite alternate-reverse;}
+.g3{width:48vw;height:48vw;left:22vw;top:52vh;background:radial-gradient(circle,#d8ccff,transparent 65%);animation:drift 34s ease-in-out infinite alternate;}
+@keyframes drift{from{transform:translate(0,0) scale(1);}to{transform:translate(6vw,-4vh) scale(1.12);}}
+
+/* ---------- 通用 ---------- */
+.wrap{max-width:1280px;margin:0 auto;padding:0 48px;position:relative;z-index:2;}
+section{position:relative;}
+.h-title{font-size:40px;font-weight:900;letter-spacing:.02em;line-height:1.3;}
+.h-sub{color:var(--sub);font-size:16px;line-height:1.9;margin-top:18px;}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;cursor:pointer;
+  font-size:15px;font-weight:500;transition:.35s cubic-bezier(.2,.8,.2,1);text-decoration:none;border:none;}
+.btn-primary{background:linear-gradient(135deg,#2f6bff,#5b8cff);color:#fff;padding:14px 42px;
+  box-shadow:0 10px 30px rgba(47,107,255,.35), inset 0 1px 0 rgba(255,255,255,.4);}
+.btn-primary:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 18px 44px rgba(47,107,255,.45);}
+.btn-ghost{background:rgba(255,255,255,.6);color:var(--ink);padding:8px 22px;border:1px solid rgba(120,140,200,.35);
+  backdrop-filter:blur(8px);font-size:14px;}
+.btn-ghost:hover{background:#fff;box-shadow:0 8px 20px rgba(80,100,180,.15);}
+
+/* ---------- 导航 ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:100;padding:22px 0;transition:.4s;}
+header.scrolled{padding:12px 0;background:rgba(255,255,255,.72);backdrop-filter:blur(18px);
+  box-shadow:0 6px 30px rgba(90,110,200,.10);}
+.nav{display:flex;align-items:center;justify-content:space-between;}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:20px;color:var(--ink);text-decoration:none;}
+.logo-mark{width:34px;height:34px;border-radius:10px;position:relative;
+  background:linear-gradient(135deg,#2f6bff,#8b7bff);box-shadow:0 6px 16px rgba(80,100,255,.4);}
+.logo-mark::after{content:"";position:absolute;inset:8px;border-radius:5px;
+  background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(255,255,255,.4));}
+.logo-mark::before{content:"";position:absolute;left:13px;top:13px;width:8px;height:8px;border-radius:3px;background:#2f6bff;z-index:1;}
+.nav-links{display:flex;gap:38px;list-style:none;}
+.nav-links a{color:#3d4260;font-size:15px;text-decoration:none;position:relative;transition:.3s;font-weight:500;}
+.nav-links a::after{content:"";position:absolute;left:50%;bottom:-8px;width:0;height:2px;border-radius:2px;
+  background:linear-gradient(90deg,var(--blue),var(--purple));transition:.35s;transform:translateX(-50%);}
+.nav-links a:hover{color:var(--blue);}
+.nav-links a:hover::after{width:100%;}
+.nav-btns{display:flex;gap:14px;align-items:center;}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+.hamburger span{width:24px;height:2px;background:var(--ink);border-radius:2px;transition:.3s;}
+.mobile-menu{display:none;}
+
+/* ---------- Hero ---------- */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:140px 0 80px;overflow:hidden;}
+.hero-inner{position:relative;z-index:3;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--blue);
+  background:rgba(47,107,255,.08);border:1px solid rgba(47,107,255,.2);padding:6px 18px;border-radius:999px;margin-bottom:28px;
+  backdrop-filter:blur(6px);animation:fadeUp 1s .2s both;}
+.hero-badge i{width:7px;height:7px;border-radius:50%;background:var(--blue);box-shadow:0 0 10px var(--blue);animation:pulse 1.6s infinite;}
+.hero h1{font-size:clamp(52px,8vw,110px);font-weight:900;letter-spacing:.01em;
+  background:linear-gradient(135deg,#1a1a2e 30%,#3a4a8f 70%,#2f6bff);-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:fadeUp 1s .35s both;}
+.hero h1 em{font-style:normal;background:linear-gradient(135deg,#2f6bff,#8b7bff,#ff9ad5);
+  -webkit-background-clip:text;background-clip:text;color:transparent;}
+.hero p{color:var(--sub);font-size:clamp(15px,1.6vw,19px);margin-top:22px;animation:fadeUp 1s .5s both;}
+.hero p b{color:var(--ink);font-weight:700;}
+.hero .btn-primary{margin-top:44px;animation:fadeUp 1s .65s both;position:relative;}
+.hero .btn-primary::after{content:"";position:absolute;inset:-6px;border-radius:999px;border:2px solid rgba(47,107,255,.35);animation:ringPulse 2.2s infinite;}
+@keyframes ringPulse{0%{transform:scale(.95);opacity:1;}100%{transform:scale(1.35);opacity:0;}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(var(--r,0deg));}50%{transform:translateY(-22px) rotate(calc(var(--r,0deg) + 3deg));}}
+@keyframes floaty2{0%,100%{transform:translateY(0) rotate(var(--r,0deg)) scale(1);}50%{transform:translateY(-34px) rotate(calc(var(--r,0deg) - 4deg)) scale(1.04);}}
+@keyframes spinSlow{from{transform:rotate(0);}to{transform:rotate(360deg);}}
+@keyframes spinRev{from{transform:rotate(360deg);}to{transform:rotate(0);}}
+
+/* Hero 玻璃几何体 */
+.hero-shapes{position:absolute;inset:0;pointer-events:none;z-index:1;}
+.shape{position:absolute;}
+.shape .glass{
+  background:linear-gradient(135deg,rgba(255,255,255,.85),rgba(190,205,255,.35));
+  backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.9);
+  box-shadow:0 30px 60px rgba(100,120,220,.25), inset 0 2px 8px rgba(255,255,255,.9), inset 0 -8px 20px rgba(120,140,255,.18);
+}
+.pyramid{left:6%;top:30%;animation:floaty2 7s ease-in-out infinite;--r:-8deg;}
+.pyramid .glass{width:clamp(120px,16vw,230px);height:clamp(120px,16vw,230px);
+  clip-path:polygon(50% 0,100% 100%,0 100%);
+  background:linear-gradient(160deg,rgba(255,255,255,.95) 10%,rgba(160,180,255,.45) 55%,rgba(120,140,255,.35));}
+.pyramid-base{position:absolute;left:-14%;top:82%;width:128%;height:34px;border-radius:50%;
+  background:radial-gradient(ellipse,rgba(90,110,220,.28),transparent 70%);filter:blur(6px);}
+.cube{right:7%;top:26%;animation:floaty 8s ease-in-out infinite;--r:10deg;}
+.cube .glass{width:clamp(100px,13vw,190px);height:clamp(100px,13vw,190px);border-radius:22px;transform:rotate(10deg) skewY(-4deg);}
+.cube::after{content:"";position:absolute;right:-40px;bottom:-46px;width:70px;height:34px;border-radius:50%;
+  background:radial-gradient(ellipse,rgba(255,150,220,.35),transparent 70%);filter:blur(6px);}
+.sphere{right:14%;bottom:22%;animation:floaty2 9s ease-in-out infinite;--r:0deg;}
+.sphere .glass{width:clamp(64px,8vw,110px);height:clamp(64px,8vw,110px);border-radius:50%;
+  background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.98),rgba(170,190,255,.45) 60%,rgba(140,160,255,.4));}
+.sphere2{left:16%;bottom:26%;animation:floaty 6.5s ease-in-out infinite;--r:0deg;}
+.sphere2 .glass{width:clamp(40px,5vw,70px);height:clamp(40px,5vw,70px);border-radius:50%;
+  background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.98),rgba(255,180,225,.5) 60%,rgba(200,160,255,.4));}
+.bar-v{left:38%;top:16%;animation:floaty 10s ease-in-out infinite;--r:24deg;}
+.bar-v .glass{width:16px;height:clamp(80px,9vw,140px);border-radius:999px;
+  background:linear-gradient(180deg,rgba(255,255,255,.9),rgba(150,170,255,.4));}
+.bar-h{right:32%;top:60%;animation:floaty2 11s ease-in-out infinite;--r:-30deg;}
+.bar-h .glass{width:clamp(70px,8vw,120px);height:16px;border-radius:999px;
+  background:linear-gradient(90deg,rgba(255,255,255,.9),rgba(255,170,220,.45));}
+.scroll-hint{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);color:#9aa4c8;font-size:12px;
+  letter-spacing:.3em;animation:fadeUp 1s 1.2s both;display:flex;flex-direction:column;align-items:center;gap:8px;}
+.scroll-hint::after{content:"";width:1px;height:38px;background:linear-gradient(180deg,#9aa4c8,transparent);animation:hint 1.8s infinite;}
+@keyframes hint{0%{transform:scaleY(0);transform-origin:top;}50%{transform:scaleY(1);transform-origin:top;}51%{transform-origin:bottom;}100%{transform:scaleY(0);transform-origin:bottom;}}
+
+/* ---------- 模块二：一站式加密DNS ---------- */
+.sec-tool{padding:130px 0 110px;overflow:hidden;}
+.tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.tool-copy .kicker{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;color:var(--purple);letter-spacing:.15em;margin-bottom:20px;}
+.tool-copy .kicker::before{content:"";width:34px;height:2px;background:linear-gradient(90deg,var(--purple),transparent);border-radius:2px;}
+.feat-list{margin-top:38px;display:flex;flex-direction:column;gap:16px;}
+.feat-item{display:flex;align-items:center;gap:16px;padding:16px 22px;border-radius:18px;
+  background:rgba(255,255,255,.55);border:1px solid rgba(160,175,235,.25);backdrop-filter:blur(10px);
+  box-shadow:0 10px 30px rgba(100,120,220,.08);transition:.4s;cursor:pointer;}
+.feat-item:hover{transform:translateX(10px);box-shadow:0 16px 40px rgba(100,120,220,.16);background:rgba(255,255,255,.85);}
+.feat-icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;font-size:20px;flex:none;
+  background:linear-gradient(135deg,rgba(47,107,255,.12),rgba(139,123,255,.12));border:1px solid rgba(47,107,255,.2);}
+.feat-item h4{font-size:16px;font-weight:700;}
+.feat-item p{font-size:13px;color:var(--sub);margin-top:2px;}
+/* 巨大 DNS 玻璃环 */
+.dns-stage{position:relative;display:flex;align-items:center;justify-content:center;min-height:480px;}
+.dns-halo{position:absolute;width:460px;height:460px;border-radius:50%;
+  background:radial-gradient(circle,rgba(160,180,255,.35),transparent 65%);filter:blur(30px);animation:pulse 5s ease-in-out infinite;}
+.dns-ring{position:absolute;width:400px;height:400px;border-radius:50%;animation:spinSlow 30s linear infinite;}
+.dns-ring .orbit{position:absolute;inset:0;border-radius:50%;border:1.5px solid rgba(120,140,240,.4);
+  border-top-color:transparent;border-bottom-color:rgba(255,150,220,.5);}
+.dns-ring .dot{position:absolute;width:14px;height:14px;border-radius:50%;
+  background:radial-gradient(circle at 32% 30%,#fff,#8b7bff);box-shadow:0 0 16px rgba(139,123,255,.8);}
+.dns-ring .dot:nth-child(2){top:-7px;left:50%;}
+.dns-ring .dot:nth-child(3){bottom:8%;right:4%;background:radial-gradient(circle at 32% 30%,#fff,#ff9ad5);box-shadow:0 0 16px rgba(255,154,213,.8);}
+.dns-ring2{position:absolute;width:330px;height:330px;border-radius:50%;animation:spinRev 22s linear infinite;}
+.dns-ring2 .orbit{position:absolute;inset:0;border-radius:50%;border:1.5px dashed rgba(140,160,255,.5);}
+.dns-ring2 .sat{position:absolute;top:-9px;left:50%;width:18px;height:18px;border-radius:6px;transform:rotate(45deg);
+  background:linear-gradient(135deg,#fff,#c3ceff);box-shadow:0 0 14px rgba(150,170,255,.8);}
+.dns-core{position:relative;width:270px;height:270px;border-radius:50%;display:grid;place-items:center;
+  background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.95),rgba(190,200,255,.55) 55%,rgba(150,165,255,.5));
+  border:1px solid rgba(255,255,255,.95);backdrop-filter:blur(8px);
+  box-shadow:0 40px 90px rgba(90,110,220,.3), inset 0 3px 14px rgba(255,255,255,.95), inset 0 -14px 34px rgba(120,140,255,.28);
+  animation:floaty 7s ease-in-out infinite;}
+.dns-core::before{content:"";position:absolute;inset:16px;border-radius:50%;
+  background:linear-gradient(160deg,rgba(255,255,255,.6),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.7);}
+.dns-core .txt{position:relative;z-index:2;text-align:center;animation:floaty2 5.5s ease-in-out infinite;}
+.dns-core .txt b{font-size:74px;font-weight:900;letter-spacing:.04em;
+  background:linear-gradient(135deg,#1c2a6e,#2f6bff 55%,#8b7bff);-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 6px 14px rgba(60,90,220,.3));}
+.dns-core .txt small{display:block;font-size:12px;letter-spacing:.5em;color:#5a68b8;margin-top:2px;font-weight:700;}
+.dns-chip{position:absolute;padding:8px 16px;border-radius:12px;font-size:13px;font-weight:700;
+  background:rgba(255,255,255,.8);border:1px solid rgba(160,175,235,.4);backdrop-filter:blur(8px);
+  box-shadow:0 12px 30px rgba(100,120,220,.18);animation:floaty 6s ease-in-out infinite;}
+.chip1{top:12%;right:6%;color:#2f6bff;animation-delay:.8s;}
+.chip2{bottom:16%;left:2%;color:#8b7bff;animation-delay:1.6s;}
+.chip3{top:48%;right:-4%;color:#e069b0;animation-delay:2.4s;}
+
+/* ---------- 模块三：带到任何地方 ---------- */
+.sec-anywhere{padding:110px 0;overflow:hidden;
+  background:linear-gradient(180deg,rgba(235,240,255,.0),rgba(235,240,255,.6) 30%,rgba(255,240,250,.5) 70%,rgba(235,240,255,0));}
+.anywhere-grid{display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:40px;align-items:center;}
+.anywhere-copy{text-align:center;}
+.hand-scene{position:relative;display:flex;align-items:flex-end;justify-content:center;min-height:380px;}
+/* CSS 3D 手 */
+.hand{position:relative;width:190px;height:250px;animation:floaty2 6s ease-in-out infinite;transform-origin:bottom center;--r:-6deg;}
+.hand .palm{width:150px;height:150px;border-radius:46% 54% 48% 52%/56% 52% 48% 44%;
+  background:linear-gradient(160deg,#ffd9b8,#f7b183 70%,#efa06f);
+  box-shadow:inset -14px -16px 30px rgba(200,120,70,.35), inset 10px 10px 24px rgba(255,255,255,.5), 0 24px 40px rgba(220,140,90,.3);
+  position:absolute;bottom:8px;left:16px;}
+.finger{position:absolute;bottom:130px;border-radius:999px;
+  background:linear-gradient(180deg,#ffdfc4,#f7b183 75%);box-shadow:inset -6px -8px 14px rgba(200,120,70,.3), 0 8px 18px rgba(220,140,90,.22);}
+.f1{width:30px;height:96px;left:26px;transform:rotate(-14deg);}
+.f2{width:31px;height:116px;left:60px;transform:rotate(-4deg);}
+.f3{width:30px;height:104px;left:96px;transform:rotate(5deg);}
+.f4{width:28px;height:82px;left:130px;transform:rotate(14deg);}
+.thumb{width:36px;height:86px;left:118px;bottom:60px;transform:rotate(52deg);border-radius:999px;
+  background:linear-gradient(180deg,#ffdfc4,#f4ad7c);box-shadow:inset -6px -8px 14px rgba(200,120,70,.3);}
+.sleeve{position:absolute;bottom:-42px;left:-6px;width:190px;height:120px;border-radius:26px 26px 0 0;
+  background:linear-gradient(180deg,#ffe98a,#ffd23f 60%,#f5b91d);
+  box-shadow:inset 0 -16px 30px rgba(200,150,20,.35), 0 20px 40px rgba(240,190,60,.35);z-index:-1;}
+.sleeve::after{content:"";position:absolute;top:10px;left:0;right:0;height:14px;border-radius:999px;
+  background:rgba(255,255,255,.55);filter:blur(2px);}
+.sparkle{position:absolute;font-size:20px;animation:floaty 4s ease-in-out infinite;filter:drop-shadow(0 0 8px rgba(255,210,120,.8));}
+.anywhere-visual{position:relative;min-height:380px;}
+.stack-card{position:absolute;border-radius:26px;padding:26px 30px;min-width:230px;
+  background:linear-gradient(150deg,rgba(255,255,255,.85),rgba(220,228,255,.5));
+  border:1px solid rgba(255,255,255,.95);backdrop-filter:blur(10px);
+  box-shadow:0 26px 60px rgba(100,120,220,.2), inset 0 2px 10px rgba(255,255,255,.9);}
+.stack-card h5{font-size:15px;font-weight:900;margin-bottom:6px;display:flex;align-items:center;gap:8px;}
+.stack-card p{font-size:12.5px;color:var(--sub);line-height:1.7;}
+.stack-card .mini-bar{height:6px;border-radius:99px;background:rgba(120,140,240,.18);margin-top:10px;overflow:hidden;}
+.stack-card .mini-bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#2f6bff,#8b7bff);animation:load 3s ease-in-out infinite alternate;}
+@keyframes load{from{width:45%;}to{width:88%;}}
+.sc1{top:6%;right:4%;transform:rotate(6deg);animation:floaty 7s ease-in-out infinite;}
+.sc2{top:44%;right:16%;transform:rotate(-4deg);animation:floaty2 8.5s ease-in-out infinite;animation-delay:1s;}
+.sc3{top:66%;right:-2%;transform:rotate(3deg);animation:floaty 6s ease-in-out infinite;animation-delay:2s;}
+.stat-row{display:flex;gap:14px;justify-content:center;margin-top:36px;flex-wrap:wrap;}
+.stat{padding:14px 26px;border-radius:16px;text-align:center;background:rgba(255,255,255,.6);
+  border:1px solid rgba(160,175,235,.25);backdrop-filter:blur(8px);box-shadow:0 10px 26px rgba(100,120,220,.1);}
+.stat b{font-size:24px;font-weight:900;background:linear-gradient(135deg,#2f6bff,#8b7bff);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.stat span{display:block;font-size:12px;color:var(--sub);margin-top:2px;}
+
+/* ---------- 模块四：掌握使用技巧 / 配置 ---------- */
+.sec-config{padding:120px 0;overflow:hidden;}
+.config-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;}
+.door-scene{position:relative;display:flex;justify-content:center;min-height:460px;}
+.door-halo{position:absolute;width:380px;height:380px;top:8%;border-radius:50%;
+  background:radial-gradient(circle,rgba(170,185,255,.4),transparent 65%);filter:blur(24px);animation:pulse 6s ease-in-out infinite;}
+.door{position:relative;width:250px;height:400px;border-radius:130px 130px 24px 24px;
+  background:linear-gradient(165deg,rgba(255,255,255,.9),rgba(200,210,255,.55) 55%,rgba(160,175,255,.5));
+  border:1.5px solid rgba(255,255,255,.95);backdrop-filter:blur(10px);
+  box-shadow:0 40px 90px rgba(90,110,220,.28), inset 0 4px 18px rgba(255,255,255,.95), inset 0 -18px 40px rgba(120,140,255,.25);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+  animation:floaty 8s ease-in-out infinite;}
+.door::before{content:"";position:absolute;inset:18px;border-radius:112px 112px 16px 16px;
+  border:1.5px solid rgba(255,255,255,.8);background:linear-gradient(170deg,rgba(255,255,255,.55),rgba(255,255,255,.06));}
+.door .door-logo{position:relative;z-index:2;width:76px;height:76px;border-radius:22px;display:grid;place-items:center;
+  background:linear-gradient(135deg,rgba(47,107,255,.9),rgba(139,123,255,.9));box-shadow:0 14px 30px rgba(80,100,255,.4), inset 0 2px 6px rgba(255,255,255,.6);
+  font-weight:900;color:#fff;font-size:22px;letter-spacing:.05em;animation:floaty2 5s ease-in-out infinite;}
+.door .door-name{position:relative;z-index:2;font-size:14px;font-weight:700;color:#4a55a0;letter-spacing:.2em;}
+.door .door-sub{position:relative;z-index:2;font-size:11px;color:#8891c4;letter-spacing:.1em;}
+.door .knob{position:absolute;right:26px;top:52%;width:14px;height:14px;border-radius:50%;z-index:2;
+  background:radial-gradient(circle at 32% 30%,#fff,#8b7bff);box-shadow:0 0 12px rgba(139,123,255,.7);}
+.door-ball{position:absolute;bottom:6px;left:-16%;width:64px;height:64px;border-radius:50%;animation:floaty 5s ease-in-out infinite;
+  background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.98),rgba(150,165,255,.55) 60%,rgba(120,140,255,.5));
+  border:1px solid rgba(255,255,255,.9);box-shadow:0 18px 40px rgba(100,120,220,.3);}
+.config-copy .cfg-tabs{display:flex;gap:10px;margin:30px 0 22px;flex-wrap:wrap;}
+.cfg-tab{padding:10px 22px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;border:1px solid rgba(120,140,240,.3);
+  background:rgba(255,255,255,.6);color:#4a55a0;transition:.3s;}
+.cfg-tab.active,.cfg-tab:hover{background:linear-gradient(135deg,#2f6bff,#6b7dff);color:#fff;border-color:transparent;
+  box-shadow:0 10px 26px rgba(60,90,255,.35);transform:translateY(-2px);}
+.cfg-panel{border-radius:22px;padding:28px;background:rgba(255,255,255,.65);border:1px solid rgba(160,175,235,.28);
+  backdrop-filter:blur(12px);box-shadow:0 20px 50px rgba(100,120,220,.12);animation:fadeUp .5s both;}
+.cfg-panel h5{font-size:14px;color:var(--sub);font-weight:500;margin-bottom:12px;}
+.cfg-line{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 18px;border-radius:14px;
+  background:rgba(244,246,255,.9);border:1px solid rgba(160,175,235,.22);margin-bottom:10px;font-size:15px;font-weight:700;
+  font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace;transition:.3s;}
+.cfg-line:hover{border-color:rgba(47,107,255,.4);transform:translateX(4px);}
+.cfg-line button{flex:none;font-size:12px;padding:6px 14px;border-radius:999px;border:1px solid rgba(47,107,255,.35);
+  background:rgba(47,107,255,.08);color:var(--blue);cursor:pointer;font-family:inherit;font-weight:700;transition:.3s;}
+.cfg-line button:hover{background:var(--blue);color:#fff;}
+.cfg-note{font-size:12.5px;color:var(--sub);line-height:1.8;margin-top:8px;}
+.sys-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;}
+.sys-chip{font-size:12px;padding:7px 16px;border-radius:999px;background:rgba(139,123,255,.1);border:1px solid rgba(139,123,255,.3);color:#6a5bd8;font-weight:700;}
+
+/* ---------- 模块五：三大能力 ---------- */
+.sec-power{padding:110px 0 120px;}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 64px;}
+.sec-head .h-sub{margin-top:16px;}
+.power-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;}
+.power-card{position:relative;border-radius:30px;padding:48px 36px;text-align:center;
+  background:linear-gradient(165deg,rgba(255,255,255,.9),rgba(232,238,255,.55));
+  border:1px solid rgba(255,255,255,.95);backdrop-filter:blur(12px);
+  box-shadow:0 30px 70px rgba(100,120,220,.14), inset 0 2px 12px rgba(255,255,255,.9);
+  transition:.5s cubic-bezier(.2,.8,.2,1);overflow:hidden;}
+.power-card:hover{transform:translateY(-14px);box-shadow:0 44px 90px rgba(80,100,220,.24);}
+.power-card::before{content:"";position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle,var(--gc,rgba(47,107,255,.18)),transparent 70%);filter:blur(10px);transition:.5s;}
+.power-card:hover::before{transform:translateX(-50%) scale(1.3);}
+.p-icon{position:relative;width:96px;height:96px;margin:0 auto 26px;animation:floaty 5.5s ease-in-out infinite;}
+.p-icon .ic-glass{position:absolute;inset:0;border-radius:30px;transform:rotate(8deg);
+  background:linear-gradient(150deg,rgba(255,255,255,.95),rgba(190,205,255,.5));
+  border:1px solid rgba(255,255,255,.95);box-shadow:0 20px 44px rgba(100,120,220,.25), inset 0 2px 10px rgba(255,255,255,.9);}
+.p-icon .ic-glass2{position:absolute;inset:18px;border-radius:18px;transform:rotate(-8deg);
+  background:linear-gradient(150deg,var(--c1,#2f6bff),var(--c2,#8b7bff));opacity:.9;
+  box-shadow:0 12px 28px rgba(80,100,255,.35), inset 0 2px 8px rgba(255,255,255,.5);}
+.p-icon .glyph{position:absolute;inset:0;display:grid;place-items:center;font-size:30px;font-weight:900;color:#fff;z-index:2;
+  text-shadow:0 2px 8px rgba(40,60,160,.5);}
+.power-card h3{font-size:21px;font-weight:900;position:relative;}
+.power-card .tag{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;letter-spacing:.12em;
+  padding:5px 16px;border-radius:999px;color:var(--tc,#2f6bff);background:var(--tb,rgba(47,107,255,.1));
+  border:1px solid var(--tl,rgba(47,107,255,.25));}
+.power-card p{font-size:14px;color:var(--sub);line-height:1.9;margin-top:16px;position:relative;}
+.p-link{display:inline-flex;align-items:center;gap:6px;margin-top:22px;font-size:14px;font-weight:700;color:var(--tc,#2f6bff);
+  text-decoration:none;position:relative;transition:.3s;}
+.p-link:hover{gap:12px;}
+
+/* ---------- CTA ---------- */
+.sec-cta{padding:130px 0 140px;text-align:center;overflow:hidden;position:relative;}
+.cta-blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;pointer-events:none;}
+.cb1{width:420px;height:420px;left:8%;top:10%;background:radial-gradient(circle,#c3d2ff,transparent 65%);animation:drift 18s ease-in-out infinite alternate;}
+.cb2{width:380px;height:380px;right:6%;bottom:6%;background:radial-gradient(circle,#ffd3ec,transparent 65%);animation:drift 22s ease-in-out infinite alternate-reverse;}
+.cta-inner{position:relative;z-index:2;}
+.cta-shapes{position:absolute;inset:0;pointer-events:none;}
+.cta-shapes .shape .glass{border-radius:22px;}
+.cs1{left:16%;top:26%;animation:floaty 7s ease-in-out infinite;}
+.cs1 .glass{width:88px;height:88px;}
+.cs2{right:16%;top:20%;animation:floaty2 8s ease-in-out infinite;--r:14deg;}
+.cs2 .glass{width:64px;height:64px;border-radius:50%;}
+.cs3{left:26%;bottom:14%;animation:floaty2 9s ease-in-out infinite;--r:-12deg;}
+.cs3 .glass{width:54px;height:54px;border-radius:16px;}
+.cs4{right:26%;bottom:20%;animation:floaty 6s ease-in-out infinite;}
+.cs4 .glass{width:74px;height:74px;border-radius:20px;}
+.sec-cta h2{font-size:clamp(38px,5.5vw,64px);font-weight:900;
+  background:linear-gradient(135deg,#2f6bff 20%,#8b7bff 55%,#ff9ad5);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.sec-cta p{color:var(--sub);margin-top:18px;font-size:16px;}
+.sec-cta .btn-primary{margin-top:42px;}
+
+/* ---------- 页脚 ---------- */
+footer{background:#0f1330;color:#aab2d8;padding:80px 0 34px;position:relative;overflow:hidden;}
+footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:120px;
+  background:linear-gradient(180deg,#fbfcff,#0f1330);}
+.f-grid{position:relative;display:grid;grid-template-columns:1.4fr repeat(4,1fr);gap:40px;margin-top:60px;}
+.f-brand p{font-size:13.5px;line-height:1.9;margin-top:16px;max-width:280px;color:#8a93c4;}
+.f-col h6{color:#fff;font-size:14px;font-weight:700;margin-bottom:20px;letter-spacing:.08em;}
+.f-col a{display:block;font-size:13.5px;color:#8a93c4;text-decoration:none;margin-bottom:12px;transition:.3s;}
+.f-col a:hover{color:#fff;transform:translateX(4px);}
+.f-bottom{position:relative;margin-top:60px;padding-top:26px;border-top:1px solid rgba(255,255,255,.08);
+  display:flex;justify-content:space-between;font-size:12.5px;color:#6b74a8;flex-wrap:wrap;gap:10px;}
+.f-bottom a{color:#8a93c4;text-decoration:none;margin-left:22px;}
+.f-bottom a:hover{color:#fff;}
+
+/* ---------- 滚动显现 ---------- */
+.reveal{opacity:0;transform:translateY(46px);transition:1s cubic-bezier(.2,.8,.2,1);}
+.reveal.in{opacity:1;transform:none;}
+
+/* ---------- Toast ---------- */
+#toast{position:fixed;bottom:34px;left:50%;transform:translate(-50%,80px);z-index:999;
+  background:rgba(20,24,60,.92);color:#fff;font-size:13.5px;padding:12px 26px;border-radius:999px;
+  backdrop-filter:blur(8px);box-shadow:0 16px 40px rgba(20,24,60,.4);transition:.45s cubic-bezier(.2,.8,.2,1);opacity:0;}
+#toast.show{transform:translate(-50%,0);opacity:1;}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1024px){
+  .wrap{padding:0 32px;}
+  .tool-grid,.config-grid{gap:44px;}
+  .dns-ring{width:330px;height:330px;}
+  .dns-ring2{width:270px;height:270px;}
+  .dns-core{width:216px;height:216px;}
+  .dns-core .txt b{font-size:58px;}
+  .power-grid{grid-template-columns:1fr 1fr;}
+  .f-grid{grid-template-columns:1fr 1fr 1fr;}
+  .anywhere-grid{grid-template-columns:1fr 1fr;}
+  .anywhere-copy{grid-column:1/-1;text-align:center;}
+}
+@media (max-width:768px){
+  .wrap{padding:0 20px;}
+  .h-title{font-size:30px;}
+  .nav-links,.nav-btns .btn-ghost{display:none;}
+  .hamburger{display:flex;}
+  .mobile-menu{display:block;position:fixed;top:0;left:0;right:0;z-index:99;background:rgba(255,255,255,.92);
+    backdrop-filter:blur(20px);padding:100px 28px 34px;transform:translateY(-110%);transition:.5s cubic-bezier(.2,.8,.2,1);
+    box-shadow:0 30px 60px rgba(80,100,200,.2);border-radius:0 0 28px 28px;}
+  .mobile-menu.open{transform:translateY(0);}
+  .mobile-menu a{display:block;font-size:17px;font-weight:700;color:var(--ink);text-decoration:none;padding:16px 4px;
+    border-bottom:1px solid rgba(140,160,230,.15);}
+  .tool-grid,.config-grid,.anywhere-grid{grid-template-columns:1fr;}
+  .dns-stage{min-height:400px;order:-1;}
+  .dns-ring{width:280px;height:280px;}
+  .dns-ring2{width:228px;height:228px;}
+  .dns-core{width:180px;height:180px;}
+  .dns-core .txt b{font-size:46px;}
+  .hand-scene{min-height:320px;}
+  .hand{transform:scale(.82);transform-origin:bottom center;}
+  .anywhere-visual{min-height:340px;}
+  .stack-card{min-width:190px;padding:18px 20px;}
+  .sc1{right:0;}.sc2{right:10%;}.sc3{right:-2%;}
+  .door-scene{min-height:400px;}
+  .door{width:210px;height:340px;}
+  .power-grid{grid-template-columns:1fr;}
+  .f-grid{grid-template-columns:1fr 1fr;}
+  .hero p{padding:0 8px;}
+  .pyramid{left:-6%;}
+  .cube{right:-6%;}
+  .bar-v,.bar-h{display:none;}
+  .sec-tool,.sec-config{padding:90px 0;}
+}
+@media (max-width:480px){
+  .f-grid{grid-template-columns:1fr;}
+  .cfg-line{font-size:13px;padding:11px 14px;}
+  .stat{padding:12px 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="bg-glow"><span class="g1"></span><span class="g2"></span><span class="g3"></span></div>
+<div id="toast">已复制到剪贴板</div>
+
+<!-- 导航 -->
+<header id="header">
+  <div class="wrap nav">
+    <a class="logo" href="#"><span class="logo-mark"></span>DNS<span style="color:var(--blue)">安全</span></a>
+    <ul class="nav-links">
+      <li><a href="#tool">产品功能</a></li>
+      <li><a href="#config">配置指南</a></li>
+      <li><a href="#power">技术方案</a></li>
+      <li><a href="#cta">解决方案</a></li>
+      <li><a href="#">帮助中心</a></li>
+    </ul>
+    <div class="nav-btns">
+      <button class="btn btn-ghost">登录</button>
+      <button class="btn btn-primary" style="padding:9px 26px;">免费使用</button>
+      <button class="hamburger" id="hamBtn"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#tool">产品功能</a><a href="#config">配置指南</a><a href="#power">技术方案</a>
+  <a href="#cta">解决方案</a><a href="#">帮助中心</a>
+  <button class="btn btn-primary" style="width:100%;margin-top:20px;">免费使用</button>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-shapes">
+    <div class="shape pyramid"><div class="glass"></div><div class="pyramid-base"></div></div>
+    <div class="shape cube"><div class="glass"></div></div>
+    <div class="shape sphere"><div class="glass"></div></div>
+    <div class="shape sphere2"><div class="glass"></div></div>
+    <div class="shape bar-v"><div class="glass"></div></div>
+    <div class="shape bar-h"><div class="glass"></div></div>
+  </div>
+  <div class="hero-inner wrap">
+    <div class="hero-badge"><i></i>DoH · DoT 双协议全量支持</div>
+    <h1>加密<em>DNS</em></h1>
+    <p>将每一次域名解析<b>安全加密</b>，防劫持、防窃听、防篡改<br>为全场景网络访问保驾护航</p>
+    <button class="btn btn-primary">立即开始</button>
+  </div>
+  <div class="scroll-hint">SCROLL</div>
+</section>
+
+<!-- 模块二：一站式加密DNS（巨大 DNS 玻璃环） -->
+<section class="sec-tool" id="tool">
+  <div class="wrap tool-grid">
+    <div class="tool-copy reveal">
+      <div class="kicker">一站式加密解析服务</div>
+      <h2 class="h-title">前所未有的<br>一站式加密DNS服务</h2>
+      <p class="h-sub">基于 DoH / DoT 加密协议，我们将传统明文 DNS 查询全面升级为加密通道。无论是个人上网、企业办公还是移动场景，都能一键获得隐私保护与安全加速。</p>
+      <div class="feat-list">
+        <div class="feat-item"><div class="feat-icon">⚡</div><div><h4>智能解析加速</h4><p>全球 Anycast 节点，毫秒级响应，就近调度最优线路</p></div></div>
+        <div class="feat-item"><div class="feat-icon">🛡️</div><div><h4>隐私防窃听</h4><p>查询全程 TLS 加密，运营商与第三方无法窥探访问记录</p></div></div>
+        <div class="feat-item"><div class="feat-icon">🔒</div><div><h4>防劫持防篡改</h4><p>数字证书校验身份，彻底阻断 DNS 污染与中间人攻击</p></div></div>
+      </div>
+    </div>
+    <div class="dns-stage reveal">
+      <div class="dns-halo"></div>
+      <div class="dns-ring"><div class="orbit"></div><span class="dot"></span><span class="dot"></span></div>
+      <div class="dns-ring2"><div class="orbit"></div><span class="sat"></span></div>
+      <div class="dns-core"><div class="txt"><b>DNS</b><small>SECURE RESOLVE</small></div></div>
+      <div class="dns-chip chip1">DoH :443</div>
+      <div class="dns-chip chip2">DoT :853</div>
+      <div class="dns-chip chip3">TLS 1.3</div>
+    </div>
+  </div>
+</section>
+
+<!-- 模块三：带到任何地方 -->
+<section class="sec-anywhere">
+  <div class="wrap anywhere-grid">
+    <div class="hand-scene reveal">
+      <span class="sparkle" style="top:6%;left:18%;animation-delay:.4s;">✦</span>
+      <span class="sparkle" style="top:20%;right:8%;animation-delay:1.2s;">✧</span>
+      <div class="hand">
+        <div class="finger f1"></div><div class="finger f2"></div><div class="finger f3"></div><div class="finger f4"></div>
+        <div class="thumb"></div><div class="palm"></div><div class="sleeve"></div>
+      </div>
+    </div>
+    <div class="anywhere-copy reveal">
+      <h2 class="h-title">将安全的解析<br>带到任何地方</h2>
+      <p class="h-sub">一个配置，全端生效。Windows、macOS、iOS、Android、Linux 与路由器，随时随地享受加密 DNS 带来的纯净网络。</p>
+      <div class="stat-row">
+        <div class="stat"><b>50ms</b><span>平均解析延迟</span></div>
+        <div class="stat"><b>99.99%</b><span>服务可用性</span></div>
+        <div class="stat"><b>300+</b><span>全球节点</span></div>
+        <div class="stat"><b>0 泄露</b><span>查询隐私</span></div>
+      </div>
+    </div>
+    <div class="anywhere-visual reveal">
+      <div class="stack-card sc1"><h5>🖥️ Windows 11</h5><p>设置 → 网络 → DNS 服务器加密，选择 DoH 模板一键启用</p><div class="mini-bar"><i></i></div></div>
+      <div class="stack-card sc2"><h5>📱 iOS / Android</h5><p>安装描述文件或 Private DNS 输入专用域名即刻加密</p><div class="mini-bar"><i></i></div></div>
+      <div class="stack-card sc3"><h5>🌐 路由器</h5><p>全局下发加密 DNS，全家设备无感接入安全网络</p><div class="mini-bar"><i></i></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 模块四：掌握使用技巧 / 配置地址 -->
+<section class="sec-config" id="config">
+  <div class="wrap config-grid">
+    <div class="door-scene reveal">
+      <div class="door-halo"></div>
+      <div class="door">
+        <div class="door-logo">DNS</div>
+        <div class="door-name">加密解析入口</div>
+        <div class="door-sub">SECURE GATEWAY</div>
+        <div class="knob"></div>
+      </div>
+      <div class="door-ball"></div>
+    </div>
+    <div class="config-copy reveal">
+      <div class="kicker" style="display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;color:var(--purple);letter-spacing:.15em;margin-bottom:20px;">三步完成配置</div>
+      <h2 class="h-title">掌握使用技巧</h2>
+      <p class="h-sub">复制下方加密 DNS 配置地址，粘贴到系统或浏览器的安全 DNS 设置中，即可开启全程加密解析。</p>
+      <div class="cfg-tabs">
+        <button class="cfg-tab active" data-tab="doh">DoH 配置</button>
+        <button class="cfg-tab" data-tab="dot">DoT 配置</button>
+        <button class="cfg-tab" data-tab="ipv6">IPv6 地址</button>
+      </div>
+      <div class="cfg-panel" id="cfgPanel">
+        <h5 id="cfgTitle">DNS over HTTPS（DoH）— 基于 HTTPS 的加密查询，端口 443，最难被识别与阻断</h5>
+        <div class="cfg-line"><span id="cfgA">https://dns.example.com/dns-query</span><button data-copy="cfgA">复制</button></div>
+        <div class="cfg-line"><span id="cfgB">https://dns.example.com/dns-query{?dns}</span><button data-copy="cfgB">复制</button></div>
+        <p class="cfg-note" id="cfgNote">支持 RFC 8484 标准，兼容 Chrome / Edge / Firefox 及 Windows 11 原生 DoH。</p>
+        <div class="sys-chips" id="cfgChips">
+          <span class="sys-chip">Windows 11</span><span class="sys-chip">Chrome</span><span class="sys-chip">Firefox</span><span class="sys-chip">Edge</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 模块五：三大技术方案 -->
+<section class="sec-power" id="power">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 class="h-title">追求极致的用户体验</h2>
+      <p class="h-sub">三种加密方案各司其职，覆盖从浏览器到操作系统、从个人到企业的全部解析场景。</p>
+    </div>
+    <div class="power-grid">
+      <div class="power-card reveal" style="--gc:rgba(47,107,255,.2);--c1:#2f6bff;--c2:#6b9bff;--tc:#2f6bff;--tb:rgba(47,107,255,.1);--tl:rgba(47,107,255,.28);">
+        <div class="p-icon" style="animation-delay:.2s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">H</div></div>
+        <h3>DNS over HTTPS</h3>
+        <span class="tag">DoH · RFC 8484</span>
+        <p>将 DNS 查询封装在 HTTPS 请求中，与正常网页流量完全混淆，有效绕过针对 53 端口的封锁与审查，隐私性最强。</p>
+        <a class="p-link" href="#config">查看配置 →</a>
+      </div>
+      <div class="power-card reveal" style="--gc:rgba(139,123,255,.22);--c1:#8b7bff;--c2:#c09bff;--tc:#7a5ff0;--tb:rgba(139,123,255,.12);--tl:rgba(139,123,255,.3);transition-delay:.12s;">
+        <div class="p-icon" style="animation-delay:.8s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">T</div></div>
+        <h3>DNS over TLS</h3>
+        <span class="tag">DoT · RFC 7858</span>
+        <p>通过专用 853 端口建立 TLS 加密隧道，协议开销更低、连接更稳定，是操作系统与路由器全局加密的首选方案。</p>
+        <a class="p-link" href="#config" style="color:#7a5ff0;">查看配置 →</a>
+      </div>
+      <div class="power-card reveal" style="--gc:rgba(255,154,213,.25);--c1:#ff8ac8;--c2:#b48bff;--tc:#e069b0;--tb:rgba(255,138,200,.12);--tl:rgba(255,138,200,.32);transition-delay:.24s;">
+        <div class="p-icon" style="animation-delay:1.4s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">⌘</div></div>
+        <h3>智能加密解析</h3>
+        <span class="tag">AI · 全球调度</span>
+        <p>实时感知网络质量自动切换 DoH / DoT 最优通道，叠加恶意域名拦截与广告过滤，让安全与速度兼得。</p>
+        <a class="p-link" href="#config" style="color:#e069b0;">查看配置 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="sec-cta" id="cta">
+  <div class="cta-blob cb1"></div><div class="cta-blob cb2"></div>
+  <div class="cta-shapes">
+    <div class="shape cs1"><div class="glass"></div></div>
+    <div class="shape cs2"><div class="glass"></div></div>
+    <div class="shape cs3"><div class="glass"></div></div>
+    <div class="shape cs4"><div class="glass"></div></div>
+  </div>
+  <div class="cta-inner wrap reveal">
+    <h2>准备好开始了么</h2>
+    <p>DNS安全愿为您提供全行业领先的一站式加密解析服务</p>
+    <button class="btn btn-primary">立即开始</button>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a class="logo" href="#" style="color:#fff;"><span class="logo-mark"></span>DNS<span style="color:#7ea0ff">安全</span></a>
+        <p>专注加密 DNS 服务，以 DoH / DoT 技术守护每一次域名解析，让互联网访问更安全、更私密、更快速。</p>
+      </div>
+      <div class="f-col"><h6>产品</h6><a href="#">加密DNS</a><a href="#">DoH 服务</a><a href="#">DoT 服务</a><a href="#">企业版</a></div>
+      <div class="f-col"><h6>解决方案</h6><a href="#">个人用户</a><a href="#">企业办公</a><a href="#">移动场景</a><a href="#">路由器</a></div>
+      <div class="f-col"><h6>支持</h6><a href="#">配置指南</a><a href="#">帮助中心</a><a href="#">API 文档</a><a href="#">服务状态</a></div>
+      <div class="f-col"><h6>公司</h6><a href="#">关于我们</a><a href="#">隐私政策</a><a href="#">服务条款</a><a href="#">联系我们</a></div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 DNS安全科技有限公司 · 保留所有权利</span>
+      <span><a href="#">隐私政策</a><a href="#">服务条款</a><a href="#">Cookie 设置</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// 导航滚动
+const header = document.getElementById('header');
+addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 40));
+
+// 移动端菜单
+const ham = document.getElementById('hamBtn'), mm = document.getElementById('mobileMenu');
+ham.addEventListener('click', () => mm.classList.toggle('open'));
+mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mm.classList.remove('open')));
+
+// 滚动显现
+const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }), {threshold:.15});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Toast
+const toast = document.getElementById('toast'); let tt;
+function showToast(msg){ toast.textContent = msg; toast.classList.add('show'); clearTimeout(tt); tt = setTimeout(()=>toast.classList.remove('show'), 2200); }
+
+// 复制
+document.querySelectorAll('[data-copy]').forEach(btn => btn.addEventListener('click', () => {
+  const t = document.getElementById(btn.dataset.copy).textContent;
+  (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(()=>showToast('已复制：' + t)).catch(()=>showToast('复制失败，请手动选择'));
+}));
+
+// 配置选项卡
+const tabs = {
+  doh: {
+    title: 'DNS over HTTPS（DoH）— 基于 HTTPS 的加密查询，端口 443，最难被识别与阻断',
+    a: 'https://dns.example.com/dns-query', b: 'https://dns.example.com/dns-query{?dns}',
+    note: '支持 RFC 8484 标准，兼容 Chrome / Edge / Firefox 及 Windows 11 原生 DoH。',
+    chips: ['Windows 11','Chrome','Firefox','Edge']
+  },
+  dot: {
+    title: 'DNS over TLS（DoT）— 基于 TLS 加密隧道，端口 853，开销低且连接稳定',
+    a: 'tls://dns.example.com', b: 'dns.example.com',
+    note: '支持 RFC 7858 标准，推荐在 Android Private DNS、iOS 描述文件与路由器中使用。',
+    chips: ['Android','iOS','macOS','OpenWrt','路由器']
+  },
+  ipv6: {
+    title: 'IPv6 加密解析地址 — 双栈网络下自动优先走 IPv6 加密通道',
+    a: 'https://[2400:dns::1]/dns-query', b: 'tls://[2400:dns::1]',
+    note: '适用于已部署 IPv6 的网络环境，可与 IPv4 地址混合配置实现双栈容灾。',
+    chips: ['IPv6','双栈','Anycast','容灾']
+  }
+};
+document.querySelectorAll('.cfg-tab').forEach(tab => tab.addEventListener('click', () => {
+  document.querySelectorAll('.cfg-tab').forEach(t => t.classList.remove('active'));
+  tab.classList.add('active');
+  const d = tabs[tab.dataset.tab], p = document.getElementById('cfgPanel');
+  p.style.animation = 'none'; void p.offsetWidth; p.style.animation = 'fadeUp .45s both';
+  document.getElementById('cfgTitle').textContent = d.title;
+  document.getElementById('cfgA').textContent = d.a;
+  document.getElementById('cfgB').textContent = d.b;
+  document.getElementById('cfgNote').textContent = d.note;
+  document.getElementById('cfgChips').innerHTML = d.chips.map(c => `<span class="sys-chip">${c}</span>`).join('');
+}));
+
+// Hero 元素鼠标视差
+const heroShapes = document.querySelectorAll('.hero-shapes .shape');
+addEventListener('mousemove', e => {
+  const x = (e.clientX / innerWidth - .5), y = (e.clientY / innerHeight - .5);
+  heroShapes.forEach((s, i) => {
+    const d = (i + 1) * 8;
+    s.style.marginLeft = x * d + 'px'; s.style.marginTop = y * d + 'px';
+  });
+});
+</script>
+</body>
+</html>
