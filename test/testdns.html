@@ -3,292 +3,744 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>实时 TCPing 监控</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'neon-green': '#39ff14',
-                        'neon-red': '#ff3131',
-                        'neon-yellow': '#ffd700',
-                    }
-                }
+    <title>DNS实时统计大屏 - 全球解析监控</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #f8f9fc;
+            --bg-secondary: #ffffff;
+            --bg-card: #f0f2f7;
+            --text-primary: #2d3748;
+            --text-secondary: #718096;
+            --accent-purple: #8b5cf6;
+            --accent-blue: #3b82f6;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.16);
+            --border-radius: 16px;
+            --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f8f9fc 0%, #e8ecf5 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: var(--bg-secondary);
+            padding: 24px 32px;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .logo-section h1 {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+            animation: slideInDown 0.6s var(--transition-smooth);
+        }
+
+        .logo-section p {
+            color: var(--text-secondary);
+            font-size: 14px;
+            animation: fadeIn 0.8s 0.2s both;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 8px;
+            animation: slideInRight 0.6s 0.3s both;
+        }
+
+        .nav-item {
+            padding: 10px 20px;
+            background: var(--bg-card);
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: all 0.3s var(--transition-smooth);
+            border: 2px solid transparent;
+        }
+
+        .nav-item:hover {
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 32px;
+            animation: fadeInUp 0.8s 0.4s both;
+        }
+
+        /* Stats Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .stat-card {
+            background: var(--bg-secondary);
+            border-radius: var(--border-radius);
+            padding: 32px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s var(--transition-smooth);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s var(--transition-smooth);
+        }
+
+        .stat-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stat-value {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1;
+            margin-bottom: 16px;
+            font-variant-numeric: tabular-nums;
+            transition: all 0.3s var(--transition-smooth);
+        }
+
+        .stat-unit {
+            font-size: 18px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Pulse Indicator */
+        .pulse-indicator {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--bg-card);
+        }
+
+        .pulse-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            position: relative;
+            animation: pulse 2s infinite;
+        }
+
+        .pulse-dot.success {
+            background: var(--accent-green);
+            box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+        }
+
+        .pulse-dot.error {
+            background: var(--accent-red);
+            box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+        }
+
+        .pulse-dot::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: inherit;
+            animation: ripple 2s infinite;
+        }
+
+        .status-text {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .status-text.success {
+            color: var(--accent-green);
+        }
+
+        .status-text.error {
+            color: var(--accent-red);
+        }
+
+        /* Timestamp Card */
+        .timestamp-card {
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .timestamp-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        .timestamp-value {
+            font-size: 24px;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-secondary);
+            padding: 40px 32px;
+            margin-top: 48px;
+            box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .footer-btn {
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s var(--transition-smooth);
+            border: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 200px;
+            justify-content: center;
+        }
+
+        .footer-btn.primary {
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+            color: white;
+        }
+
+        .footer-btn.secondary {
+            background: var(--bg-card);
+            color: var(--text-primary);
+            border-color: var(--accent-blue);
+        }
+
+        .footer-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .footer-btn.primary:hover {
+            filter: brightness(1.1);
+        }
+
+        .footer-btn.secondary:hover {
+            background: var(--accent-blue);
+            color: white;
+        }
+
+        /* Animations */
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
             }
         }
-    </script>
-    <style>
-        body {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-            min-height: 100vh;
-            font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+
+        @keyframes ripple {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(3);
+                opacity: 0;
+            }
         }
-        .glass {
-            background: rgba(255,255,255,0.06);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255,255,255,0.1);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
         }
-        @keyframes pulse-dot {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(1.3); }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        .pulse { animation: pulse-dot 1.5s ease-in-out infinite; }
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateY(-8px); }
-            to   { opacity: 1; transform: translateY(0); }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
-        .slide-in { animation: slideIn 0.3s ease-out; }
-        /* 滚动条美化 */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 3px; }
-        ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 3px; }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Number Animation */
+        .number-animate {
+            transition: all 0.5s var(--transition-smooth);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-menu {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .nav-item {
+                flex: 1;
+                min-width: 120px;
+                text-align: center;
+            }
+
+            .container {
+                padding: 16px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .stat-card {
+                padding: 24px;
+            }
+
+            .stat-value {
+                font-size: 36px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+            }
+
+            .footer-btn {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-section h1 {
+                font-size: 24px;
+            }
+
+            .stat-value {
+                font-size: 28px;
+            }
+
+            .stat-card {
+                padding: 20px;
+            }
+        }
+
+        /* Loading State */
+        .loading {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        /* Error State */
+        .error-message {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid var(--accent-red);
+            border-radius: 8px;
+            padding: 12px;
+            color: var(--accent-red);
+            font-size: 14px;
+            margin-top: 12px;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+            animation: shake 0.5s;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Focus styles for accessibility */
+        .nav-item:focus,
+        .footer-btn:focus {
+            outline: 2px solid var(--accent-blue);
+            outline-offset: 2px;
+        }
     </style>
 </head>
-<body class="text-white p-4 md:p-8">
-
-    <div class="max-w-2xl mx-auto">
-
-        <!-- 标题 -->
-        <div class="text-center mb-8">
-            <h1 class="text-4xl font-bold bg-gradient-to-r from-neon-green via-cyan-400 to-neon-green bg-clip-text text-transparent mb-2">
-                ⚡ 实时 TCPing 监控
-            </h1>
-            <p class="text-gray-400 text-sm">WebSocket 实时推送 · 自动探测 TCP 连通性与延迟</p>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <h1>DNS 实时监控大屏</h1>
+                <p>全球DNS解析请求实时统计与监控系统</p>
+            </div>
+            <nav class="nav-menu">
+                <a href="#dashboard" class="nav-item">📊 数据看板</a>
+                <a href="#stats" class="nav-item">📈 统计分析</a>
+                <a href="#alerts" class="nav-item">🔔 告警中心</a>
+                <a href="#settings" class="nav-item">&设置</a>
+            </nav>
         </div>
+    </header>
 
-        <!-- 状态指示条 -->
-        <div id="statusBar" class="glass rounded-2xl p-4 mb-6 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <span id="statusDot" class="relative flex w-3 h-3">
-                    <span class="absolute inline-flex h-full w-full rounded-full bg-neon-green opacity-75 animate-ping"></span>
-                    <span class="relative inline-flex w-3 h-3 rounded-full bg-neon-green pulse"></span>
-                </span>
-                <div>
-                    <div id="statusText" class="text-sm font-semibold text-gray-200">连接中...</div>
-                    <div id="targetInfo" class="text-xs text-gray-400">目标: 8.8.8.8:443</div>
+    <!-- Main Container -->
+    <div class="container" id="dashboard">
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <!-- DNS Total Queries Card -->
+            <div class="stat-card">
+                <div class="stat-label">DNS 查询总量</div>
+                <div class="stat-value number-animate" id="dnsCount">0</div>
+                <div class="stat-unit">次请求</div>
+                
+                <div class="pulse-indicator">
+                    <div class="pulse-dot" id="pulseDot"></div>
+                    <span class="status-text" id="statusText">连接中...</span>
+                </div>
+
+                <div class="error-message" id="errorMessage">
+                    ⚠️ API 连接失败，请检查网络或稍后重试
                 </div>
             </div>
-            <div class="text-right">
-                <div id="latencyDisplay" class="text-2xl font-bold text-neon-green">-- ms</div>
-                <div id="jitterDisplay" class="text-xs text-gray-500">抖动: --</div>
-            </div>
-        </div>
 
-        <!-- 配置面板 -->
-        <div class="glass rounded-2xl p-5 mb-6">
-            <h3 class="text-sm font-semibold text-gray-300 mb-3">🎯 目标配置</h3>
-            <div class="flex gap-3 flex-wrap">
-                <input id="ipInput" type="text" placeholder="IP 地址" value="8.8.8.8"
-                    class="flex-1 min-w-[140px] bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-neon-green transition" />
-                <input id="portInput" type="number" placeholder="端口" value="443" min="1" max="65535"
-                    class="w-24 bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-neon-green transition" />
-                <button onclick="updateTarget()"
-                    class="px-5 py-2 bg-neon-green/20 text-neon-green border border-neon-green/40 rounded-lg text-sm font-semibold hover:bg-neon-green/30 transition active:scale-95">
-                    更新目标
-                </button>
-            </div>
-            <div class="flex gap-2 mt-3 flex-wrap">
-                <span class="text-xs text-gray-500">快速选择:</span>
-                <button onclick="quickTarget('8.8.8.8',443)"   class="px-2 py-1 bg-white/10 rounded text-xs text-gray-300 hover:bg-white/20">Google DNS</button>
-                <button onclick="quickTarget('1.1.1.1',443)"   class="px-2 py-1 bg-white/10 rounded text-xs text-gray-300 hover:bg-white/20">Cloudflare</button>
-                <button onclick="quickTarget('223.5.5.5',443)" class="px-2 py-1 bg-white/10 rounded text-xs text-gray-300 hover:bg-white/20">阿里 DNS</button>
-                <button onclick="quickTarget('114.114.114.114',53)" class="px-2 py-1 bg-white/10 rounded text-xs text-gray-300 hover:bg-white/20">114 DNS</button>
-            </div>
-        </div>
-
-        <!-- 实时图表（CSS 简易柱状图） -->
-        <div class="glass rounded-2xl p-5 mb-6">
-            <h3 class="text-sm font-semibold text-gray-300 mb-3">📈 延迟趋势（最近 30 次）</h3>
-            <div id="chart" class="flex items-end gap-1 h-32">
-                <!-- 动态生成柱状图 -->
-            </div>
-            <div class="flex justify-between text-xs text-gray-600 mt-2">
-                <span>← 较早</span>
-                <span>较新 →</span>
-            </div>
-        </div>
-
-        <!-- 历史记录 -->
-        <div class="glass rounded-2xl p-5">
-            <h3 class="text-sm font-semibold text-gray-300 mb-3">📋 探测历史</h3>
-            <div id="history" class="max-h-64 overflow-y-auto space-y-1.5 pr-2">
-                <p class="text-gray-600 text-xs text-center py-4">等待数据...</p>
-            </div>
-        </div>
-
-        <!-- 统计面板 -->
-        <div class="grid grid-cols-3 gap-4 mt-6">
-            <div class="glass rounded-xl p-4 text-center">
-                <div class="text-xs text-gray-500 mb-1">平均延迟</div>
-                <div id="avgLatency" class="text-xl font-bold text-cyan-400">--</div>
-            </div>
-            <div class="glass rounded-xl p-4 text-center">
-                <div class="text-xs text-gray-500 mb-1">成功率</div>
-                <div id="successRate" class="text-xl font-bold text-neon-green">--</div>
-            </div>
-            <div class="glass rounded-xl p-4 text-center">
-                <div class="text-xs text-gray-500 mb-1">最大延迟</div>
-                <div id="maxLatency" class="text-xl font-bold text-neon-yellow">--</div>
+            <!-- Last Update Time Card -->
+            <div class="stat-card timestamp-card">
+                <div class="stat-label">最后更新时间</div>
+                <div class="timestamp-value" id="lastUpdate">--:--:--</div>
+                <div style="margin-top: 8px; opacity: 0.9; font-size: 14px;">
+                    UTC 时间
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- ========== JavaScript ========== -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="https://www.example.com" class="footer-btn primary" target="_blank" rel="noopener">
+                <span>🌐</span>
+                <span>前往官网</span>
+            </a>
+            <a href="mailto:support@example.com" class="footer-btn secondary">
+                <span>📧</span>
+                <span>联系我们</span>
+            </a>
+        </div>
+    </footer>
+
     <script>
-        let ws;
-        let historyData = [];
-        let allLatencies = [];
+        // API 配置
+        const API_URL = 'https://api.ipv4dns.com/api';
+        let currentDnsCount = 0;
+        let retryCount = 0;
+        const maxRetries = 3;
 
-        // ---------- WebSocket 连接 ----------
-        function connectWS() {
-            const protocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            ws = new WebSocket(`${protocol}//${location.host}`);
+        // DOM 元素
+        const dnsCountElement = document.getElementById('dnsCount');
+        const lastUpdateElement = document.getElementById('lastUpdate');
+        const pulseDot = document.getElementById('pulseDot');
+        const statusText = document.getElementById('statusText');
+        const errorMessage = document.getElementById('errorMessage');
 
-            ws.onopen = () => {
-                document.getElementById('statusText').textContent = '已连接';
-                document.getElementById('statusDot').querySelector('span:last-child').className =
-                    'relative inline-flex w-3 h-3 rounded-full bg-neon-green pulse';
-            };
-
-            ws.onclose = () => {
-                document.getElementById('statusText').textContent = '连接断开，重连中...';
-                document.getElementById('statusDot').querySelector('span:last-child').className =
-                    'relative inline-flex w-3 h-3 rounded-full bg-neon-red pulse';
-                setTimeout(connectWS, 3000);
-            };
-
-            ws.onerror = () => {
-                console.error('WebSocket 错误');
-            };
-
-            ws.onmessage = (event) => {
-                const msg = JSON.parse(event.data);
-                if (msg.type === 'result') {
-                    handleResult(msg.data);
-                    historyData = msg.history || [];
-                    renderHistory();
-                    renderChart();
-                    updateStats();
+        // 数字动画函数
+        function animateNumber(element, start, end, duration) {
+            const startTime = performance.now();
+            
+            function updateNumber(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // 使用 easeOutCubic 缓动函数
+                const easeProgress = 1 - Math.pow(1 - progress, 3);
+                const current = Math.floor(start + (end - start) * easeProgress);
+                
+                element.textContent = current.toLocaleString('zh-CN');
+                
+                if (progress < 1) {
+                    requestAnimationFrame(updateNumber);
                 }
+            }
+            
+            requestAnimationFrame(updateNumber);
+        }
+
+        // 格式化时间
+        function formatTime(isoString) {
+            const date = new Date(isoString);
+            return date.toLocaleTimeString('zh-CN', {
+                hour12: false,
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+        }
+
+        // 更新状态指示器
+        function updateStatus(isSuccess) {
+            if (isSuccess) {
+                pulseDot.className = 'pulse-dot success';
+                statusText.textContent = 'API 连接正常';
+                statusText.className = 'status-text success';
+                errorMessage.classList.remove('show');
+            } else {
+                pulseDot.className = 'pulse-dot error';
+                statusText.textContent = 'API 连接失败';
+                statusText.className = 'status-text error';
+            }
+        }
+
+        // 获取 DNS 数据
+        async function fetchDnsData() {
+            try {
+                // 添加加载状态
+                document.querySelector('.stat-card').classList.add('loading');
+                
+                const response = await fetch(API_URL, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                    },
+                    // 超时设置
+                    signal: AbortSignal.timeout(10000)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                
+                // 验证数据格式
+                if (!data.num_dns_queries || !data.timestamp) {
+                    throw new Error('Invalid data format');
+                }
+
+                // 更新状态为成功
+                updateStatus(true);
+                retryCount = 0;
+
+                // 动画更新数字
+                const newCount = data.num_dns_queries;
+                animateNumber(dnsCountElement, currentDnsCount, newCount, 1000);
+                currentDnsCount = newCount;
+
+                // 更新时间
+                lastUpdateElement.textContent = formatTime(data.timestamp);
+
+                // 移除加载状态
+                document.querySelector('.stat-card').classList.remove('loading');
+
+            } catch (error) {
+                console.error('Fetch error:', error);
+                
+                // 更新状态为失败
+                updateStatus(false);
+                retryCount++;
+
+                // 移除加载状态
+                document.querySelector('.stat-card').classList.remove('loading');
+
+                // 如果重试次数超过限制，显示错误消息
+                if (retryCount >= maxRetries) {
+                    errorMessage.classList.add('show');
+                    setTimeout(() => {
+                        errorMessage.classList.remove('show');
+                    }, 5000);
+                }
+            }
+        }
+
+        // 初始化
+        function init() {
+            fetchDnsData();
+            
+            // 每30秒自动刷新
+            setInterval(fetchDnsData, 30000);
+        }
+
+        // 页面加载完成后初始化
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+
+        // 页面可见性变化时的优化
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                // 页面不可见时，减少刷新频率
+                console.log('Page hidden, reducing refresh rate');
+            } else {
+                // 页面可见时，恢复正常刷新
+                console.log('Page visible, resuming normal refresh rate');
+            }
+        });
+
+        // 错误边界处理
+        window.addEventListener('error', (event) => {
+            console.error('Global error:', event.error);
+            // 这里可以添加用户友好的错误提示
+        });
+
+        // 性能监控
+        if ('performance' in window) {
+            window.addEventListener('load', () => {
+                const loadTime = performance.now();
+                console.log(`Page load time: ${loadTime.toFixed(2)}ms`);
+            });
+        }
+
+        // 防抖函数 - 优化窗口大小变化
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
             };
         }
 
-        // ---------- 处理单次探测结果 ----------
-        function handleResult(data) {
-            const { ip, port, latency, success, time } = data;
+        // 窗口大小变化时的优化处理
+        const debouncedResize = debounce(() => {
+            // 可以在这里添加响应式布局的额外处理
+            console.log('Window resized');
+        }, 250);
 
-            // 更新目标显示
-            document.getElementById('targetInfo').textContent = `目标: ${ip}:${port}`;
+        window.addEventListener('resize', debouncedResize);
 
-            // 更新延迟显示
-            const latEl = document.getElementById('latencyDisplay');
-            if (success) {
-                latEl.textContent = latency + ' ms';
-                latEl.className = 'text-2xl font-bold text-neon-green slide-in';
-            } else {
-                latEl.textContent = '超时';
-                latEl.className = 'text-2xl font-bold text-neon-red slide-in';
-            }
-
-            // 状态指示灯
-            const dot = document.getElementById('statusDot').querySelector('span:last-child');
-            if (success) {
-                dot.className = 'relative inline-flex w-3 h-3 rounded-full bg-neon-green pulse';
-                document.getElementById('statusText').textContent = 'TCP 连通 ✓';
-            } else {
-                dot.className = 'relative inline-flex w-3 h-3 rounded-full bg-neon-red pulse';
-                document.getElementById('statusText').textContent = 'TCP 不可达 ✗';
-            }
-
-            // 记录延迟用于统计
-            if (latency > 0) allLatencies.push(latency);
-        }
-
-        // ---------- 渲染柱状图 ----------
-        function renderChart() {
-            const chart = document.getElementById('chart');
-            const display = historyData.slice(0, 30).reverse(); // 较早的在左
-
-            if (display.length === 0) {
-                chart.innerHTML = '<p class="text-gray-600 text-xs w-full text-center">暂无数据</p>';
-                return;
-            }
-
-            const maxVal = Math.max(...display.map(d => Math.max(d.latency, 1)), 1);
-
-            chart.innerHTML = display.map((d, i) => {
-                const h = Math.max((d.latency / maxVal) * 100, 4);
-                const color = d.success
-                    ? (d.latency < 100 ? 'bg-neon-green' : d.latency < 200 ? 'bg-neon-yellow' : 'bg-neon-red')
-                    : 'bg-gray-600';
-                return `<div class="flex-1 ${color} rounded-t transition-all duration-300" 
-                            style="height:${h}%; min-width:4px" 
-                            title="${d.time} ${d.latency}ms"></div>`;
-            }).join('');
-        }
-
-        // ---------- 渲染历史记录 ----------
-        function renderHistory() {
-            const el = document.getElementById('history');
-            if (historyData.length === 0) {
-                el.innerHTML = '<p class="text-gray-600 text-xs text-center py-4">等待数据...</p>';
-                return;
-            }
-
-            el.innerHTML = historyData.map((d, i) => {
-                const color = d.success
-                    ? (d.latency < 100 ? 'text-neon-green' : d.latency < 200 ? 'text-neon-yellow' : 'text-neon-red')
-                    : 'text-neon-red';
-                return `
-                    <div class="flex justify-between items-center bg-white/5 rounded-lg px-3 py-2 ${i===0?'slide-in':''}">
-                        <span class="text-xs text-gray-500 font-mono">${d.time}</span>
-                        <span class="text-xs text-gray-400 font-mono">${d.ip}:${d.port}</span>
-                        <span class="text-sm font-bold ${color} font-mono w-16 text-right">
-                            ${d.success ? d.latency + 'ms' : '超时'}
-                        </span>
-                    </div>`;
-            }).join('');
-        }
-
-        // ---------- 更新统计 ----------
-        function updateStats() {
-            if (allLatencies.length === 0) return;
-
-            const avg = Math.round(allLatencies.reduce((a,b)=>a+b,0) / allLatencies.length);
-            const max = Math.max(...allLatencies);
-            const successCount = historyData.filter(d => d.success).length;
-            const rate = historyData.length > 0 ? Math.round(successCount / historyData.length * 100) : 0;
-
-            document.getElementById('avgLatency').textContent = avg + 'ms';
-            document.getElementById('maxLatency').textContent = max + 'ms';
-            document.getElementById('successRate').textContent = rate + '%';
-        }
-
-        // ---------- 更新目标 ----------
-        function updateTarget() {
-            const ip = document.getElementById('ipInput').value.trim();
-            const port = parseInt(document.getElementById('portInput').value);
-            if (!ip || !port) return alert('请输入有效 IP 和端口');
-
-            if (ws && ws.readyState === WebSocket.OPEN) {
-                ws.send(JSON.stringify({ ip, port }));
-            } else {
-                // 连接未建立时缓存
-                alert('WebSocket 未连接，请刷新页面后再试');
-            }
-        }
-
-        function quickTarget(ip, port) {
-            document.getElementById('ipInput').value = ip;
-            document.getElementById('portInput').value = port;
-            updateTarget();
-        }
-
-        // ---------- 启动 ----------
-        connectWS();
+        // 预加载关键资源
+        const preloadLinks = document.querySelectorAll('link[rel="preload"]');
+        preloadLinks.forEach(link => {
+            link.addEventListener('load', () => {
+                console.log('Preload completed:', link.href);
+            });
+        });
     </script>
 </body>
 </html>
