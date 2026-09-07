@@ -537,7 +537,7 @@
                 const currentValue = parseInt(dnsTotalElement.textContent.replace(/,/g, '')) || 0;
                 animateValue(dnsTotalElement, currentValue, data.num_dns_queries, 1000);
                 
-                lastUpdateElement.innerHTML = `${formatDateTime(data.timestamp)} <span>时区: UTC+8</span>`;
+                lastUpdateElement.innerHTML = `${formatDateTime(data.timestamp)}`;
                 
                 // 更新连接状态
                 apiStatusDot.className = 'pulse-dot success';
