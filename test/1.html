@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清新云DNS - 24小时解析量监控看板</title>
+    <style>
+        :root {
+            --primary-color: #6c5ce7;
+            --secondary-color: #a29bfe;
+            --accent-color: #00cec9;
+            --bg-color: #f8f9fa;
+            --card-bg: rgba(255, 255, 255, 0.85);
+            --text-main: #2d3436;
+            --text-sub: #636e72;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(108, 92, 231, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 206, 201, 0.05) 0%, transparent 50%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* 主容器卡片 */
+        .dashboard-card {
+            width: 90%;
+            max-width: 600px;
+            background: var(--card-bg);
+            backdrop-filter: blur(20px); /* 毛玻璃效果 */
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 顶部装饰条 */
+        .top-bar {
+            height: 4px;
+            width: 100%;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        /* 标题部分 */
+        .header h2 {
+            color: var(--text-sub);
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* 核心数字展示区 */
+        .stats-container {
+            margin: 30px 0;
+        }
+
+        .main-number {
+            font-size: 64px;
+            font-weight: 700;
+            color: var(--text-main);
+            line-height: 1.2;
+            /* 数字渐变效果 */
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .unit {
+            font-size: 18px;
+            color: var(--text-sub);
+            margin-left: 8px;
+            font-weight: 400;
+        }
+
+        /* 底部信息栏 */
+        .footer-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .status-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-color);
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* 呼吸灯效果的小圆点 */
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        .last-updated {
+            color: var(--text-sub);
+            font-size: 13px;
+        }
+
+        .last-updated span {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* 动画定义 */
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 206, 201, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(0, 206, 201, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 206, 201, 0); }
+        }
+
+        /* 加载状态 */
+        .loading {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        
+        /* 1. 添加响应式字体 */
+@media (max-width: 480px) {
+    .main-number {
+        font-size: 48px;
+    }
+}
+
+/* 2. 兼容回退 */
+@supports not (backdrop-filter: blur(20px)) {
+    .dashboard-card {
+        background: rgba(255,255,255,0.95);
+    }
+}
+
+/* 3. 无障碍 - 减少动画 */
+@media (prefers-reduced-motion: reduce) {
+    .status-dot {
+        animation: none;
+        box-shadow: 0 0 0 4px rgba(0,206,201,0.4);
+    }
+    .dashboard-card:hover {
+        transform: none;
+    }
+}
+
+/* 4. 数字防溢出 */
+.main-number {
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+        
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-card" id="card">
+        <div class="top-bar"></div>
+        
+        <div class="header">
+            <h2>Total DNS Queries</h2>
+        </div>
+
+        <div class="stats-container">
+            <!-- 数字将通过 JS 动态填入 -->
+            <div class="main-number" id="total-queries">0</div>
+            <span class="unit">Requests</span>
+        </div>
+
+        <div class="footer-info">
+            <div class="status-badge">
+                <div class="status-dot"></div>
+                LIVE DATA
+            </div>
+            <div class="last-updated">
+                Last Updated: <span id="update-time">--:--:--</span>
+            </div>
+        </div>
+    </div>
+
+<script>
+// 兼容性处理
+const { requestAnimationFrame = function(cb) { setTimeout(cb, 16); }, parseInt, setTimeout } = window;
+
+const API_URL = "https://api.ipv4dns.com/api;
+const REFRESH_INTERVAL = 5000;
+const ANIMATION_DURATION = 1000;
+
+const elements = {
+    totalQueries: document.getElementById('total-queries'),
+    updateTime: document.getElementById('update-time'),
+    card: document.getElementById('card')
+};
+
+function animateValue(element, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        const easedProgress = 1 - Math.pow(1 - progress, 4);
+        const currentValue = Math.floor(easedProgress * (end - start) + start);
+        element.textContent = currentValue.toLocaleString();
+        if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+}
+
+function debounce(func, delay) {
+    let timeoutId;
+    return function(...args) {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => func.apply(this, args), delay);
+    };
+}
+
+function formatTime(isoString) {
+    const date = new Date(isoString);
+    if (isNaN(date.getTime())) return 'Invalid Date';
+    const pad = n => n.toString().padStart(2, '0');
+    return [
+        date.getFullYear(),
+        pad(date.getMonth() + 1),
+        pad(date.getDate())
+    ].join('-') + ' ' + [
+        pad(date.getHours()),
+        pad(date.getMinutes()),
+        pad(date.getSeconds())
+    ].join(':');
+}
+
+const fetchData = debounce(function() {
+    elements.card.classList.add('loading');
+    
+    // 简化版 fetch（无回退，实际项目中建议添加）
+    fetch(API_URL, { headers: { 'Cache-Control': 'no-cache' } })
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            return response.json();
+        })
+        .then(data => {
+            if (!data || typeof data.num_dns_queries !== 'number') {
+                throw new Error('Invalid data format');
+            }
+            const currentValue = parseInt(elements.totalQueries.textContent.replace(/,/g, '') || '0', 10);
+            if (currentValue !== data.num_dns_queries) {
+                animateValue(elements.totalQueries, currentValue, data.num_dns_queries, ANIMATION_DURATION);
+            }
+            elements.updateTime.textContent = formatTime(data.timestamp);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            elements.totalQueries.textContent = "N/A";
+            elements.updateTime.textContent = "Update Failed";
+        })
+        .finally(() => {
+            setTimeout(() => elements.card.classList.remove('loading'), ANIMATION_DURATION);
+        });
+}, 200);
+
+// 初始化
+(function init() {
+    fetchData();
+    let intervalId = setInterval(fetchData, REFRESH_INTERVAL);
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) clearInterval(intervalId);
+        else intervalId = setInterval(fetchData, REFRESH_INTERVAL);
+    });
+})();
+</script>
+</body>
+</html>
