@@ -1,4 +1,5 @@
 #测试白名单
+prod-chat-kimi.tos-cn-beijing.volces.com
 
 d.alicdn.com
 
