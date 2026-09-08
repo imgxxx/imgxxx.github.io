@@ -2244,7 +2244,7 @@
         </div>
         <div id="downloadArea" style="display:none; text-align:center; padding:12px 0 8px;">
           <button class="btn btn-primary" onclick="downloadProfile()" style="padding:14px 48px; font-size:16px;">
-            📥 立即下载描述文件
+            点击下载
           </button>
           <p class="desc">适用于 iOS / macOS 的加密 DNS 描述文件（.mobileconfig），一键安装即可全局生效。</p>
         </div>
@@ -2457,8 +2457,8 @@
       },
       ios: {
         title: 'HTTP3 加密解析地址 — 基于 HTTP/3 与 QUIC 的超高速加密通道',
-        a: 'https://dns.ipv4dns.com/dns-query?h3',
-        b: 'h3://dns.ipv4dns.com',
+        a: 'https://dns.ipv4dns.com/dns-query',
+        b: 'h3://dns.ipv4dns.com/dns-query,
         note: '利用 HTTP/3 的 0‑RTT 连接恢复与多路复用，大幅降低解析延迟，适合 5G 与高动态网络。',
         chips: ['HTTP/3', 'QUIC', 'Android', 'iOS', 'Chrome']
       },
@@ -2471,10 +2471,10 @@
       },
       dnscrypt: {
         title: 'DNS 描述文件配置 — 一键安装加密 DNS 描述文件（iOS / macOS）',
-        a: 'dnscrypt://dns.example.com',
-        b: 'https://dns.example.com/dnscrypt',
+        a: 'null',
+        b: 'null',
         note: '通过证书验证服务器身份，防止伪造与劫持，兼容多款第三方客户端。',
-        chips: ['DNSCrypt-proxy', 'Simple DNSCrypt', 'Android', 'Windows', 'macOS']
+        chips: ['IOS', 'IOS27', 'iPhone', 'IPAD', 'MACOS']
       }
     };
 
