@@ -1214,6 +1214,20 @@
       font-weight: 700;
     }
 
+    #downloadArea {
+      text-align: center;
+      padding: 12px 0 8px;
+    }
+    #downloadArea .btn-primary {
+      padding: 14px 48px;
+      font-size: 16px;
+    }
+    #downloadArea .desc {
+      font-size: 12px;
+      color: var(--sub);
+      margin-top: 10px;
+    }
+
     .config-cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1281,7 +1295,7 @@
       .cfg-panel { padding: 16px; }
     }
 
-    /* ===== 第五板块：追求极致的用户体验（4个卡片） ===== */
+    /* ===== 第五板块：追求极致的用户体验 ===== */
     .sec-power { padding: 100px 0 110px; }
     .sec-head {
       text-align: center;
@@ -1392,6 +1406,7 @@
       color: var(--tc,#2f6bff);
       text-decoration: none;
       transition: .3s;
+      cursor: pointer;
     }
     .p-link:hover { gap: 12px; }
 
@@ -1634,7 +1649,7 @@
       .stats-time { font-size: 11px; padding: 4px 14px; }
     }
 
-    /* ===== DNS 连接状态检测卡片（美化版，与解析总量模块风格一致） ===== */
+    /* ===== DNS 连接状态检测卡片 ===== */
     .sec-dns-check {
       padding: 20px 0 50px;
     }
@@ -1829,7 +1844,7 @@
       }
     }
 
-    /* ===== 页脚（含备案号） ===== */
+    /* ===== 页脚 ===== */
     footer {
       background: #0f1330;
       color: #aab2d8;
@@ -1923,7 +1938,7 @@
     }
     #toast.show { transform: translate(-50%,0); opacity: 1; }
 
-    /* ===== 新增：打字机光标样式 ===== */
+    /* ===== 打字机光标 ===== */
     .blink-cursor {
       display: inline-block;
       width: 2px;
@@ -2227,6 +2242,12 @@
         <div class="sys-chips" id="cfgChips">
           <span class="sys-chip">Windows 11</span><span class="sys-chip">Chrome</span><span class="sys-chip">Firefox</span><span class="sys-chip">Edge</span>
         </div>
+        <div id="downloadArea" style="display:none; text-align:center; padding:12px 0 8px;">
+          <button class="btn btn-primary" onclick="downloadProfile()" style="padding:14px 48px; font-size:16px;">
+            📥 立即下载描述文件
+          </button>
+          <p class="desc">适用于 iOS / macOS 的加密 DNS 描述文件（.mobileconfig），一键安装即可全局生效。</p>
+        </div>
         <div class="config-cards">
           <div class="cfg-card"><div class="c-label">系统配置 <span>85%</span></div><div class="c-bar"><i style="width:85%"></i></div><small>Windows / macOS 已适配</small></div>
           <div class="cfg-card"><div class="c-label">浏览器集成 <span>72%</span></div><div class="c-bar i2"><i style="width:72%"></i></div><small>Chrome / Edge / Firefox</small></div>
@@ -2239,7 +2260,7 @@
   </div>
 </section>
 
-<!-- ===== 第五板块：追求极致的用户体验 ===== -->
+<!-- ===== 第五板块：追求极致的用户体验（已修改） ===== -->
 <section class="sec-power" id="power" aria-labelledby="power-title">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -2247,29 +2268,33 @@
       <p class="h-sub">四种加密方案各司其职，覆盖从浏览器到操作系统、从个人到企业的全部解析场景。</p>
     </div>
     <div class="power-grid">
+      <!-- DoH -->
       <div class="power-card reveal" style="--gc:rgba(47,107,255,.2);--c1:#2f6bff;--c2:#6b9bff;--tc:#2f6bff;--tb:rgba(47,107,255,.1);--tl:rgba(47,107,255,.28);">
         <div class="p-icon" style="animation-delay:.2s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">H</div></div>
         <h3>DNS over HTTPS</h3><span class="tag">DoH · RFC 8484</span>
         <p>将 DNS 查询封装在 HTTPS 请求中，与正常网页流量完全混淆，有效绕过针对 53 端口的封锁与审查，隐私性最强。</p>
-        <a class="p-link" href="#config" aria-label="查看DoH配置">查看配置 →</a>
+        <a class="p-link" data-tab="doh" style="color:#2f6bff;">立即配置 →</a>
       </div>
+      <!-- DoT -->
       <div class="power-card reveal" style="--gc:rgba(139,123,255,.22);--c1:#8b7bff;--c2:#c09bff;--tc:#7a5ff0;--tb:rgba(139,123,255,.12);--tl:rgba(139,123,255,.3);transition-delay:.12s;">
         <div class="p-icon" style="animation-delay:.8s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">T</div></div>
         <h3>DNS over TLS</h3><span class="tag">DoT · RFC 7858</span>
         <p>通过专用 853 端口建立 TLS 加密隧道，协议开销更低、连接更稳定，是操作系统与路由器全局加密的首选方案。</p>
-        <a class="p-link" href="#config" style="color:#7a5ff0;" aria-label="查看DoT配置">查看配置 →</a>
+        <a class="p-link" data-tab="dot" style="color:#7a5ff0;">立即配置 →</a>
       </div>
-      <div class="power-card reveal" style="--gc:rgba(255,154,213,.25);--c1:#ff8ac8;--c2:#b48bff;--tc:#e069b0;--tb:rgba(255,138,200,.12);--tl:rgba(255,138,200,.32);transition-delay:.24s;">
-        <div class="p-icon" style="animation-delay:1.4s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">⌘</div></div>
-        <h3>智能加密解析</h3><span class="tag">AI · 全球调度</span>
-        <p>实时感知网络质量自动切换 DoH / DoT / DoQ 最优通道，叠加恶意域名拦截与广告过滤，让安全与速度兼得。</p>
-        <a class="p-link" href="#config" style="color:#e069b0;" aria-label="查看智能加密配置">查看配置 →</a>
-      </div>
-      <div class="power-card reveal" style="--gc:rgba(34,197,94,.2);--c1:#22c55e;--c2:#4ade80;--tc:#16a34a;--tb:rgba(34,197,94,.1);--tl:rgba(34,197,94,.25);transition-delay:.36s;">
-        <div class="p-icon" style="animation-delay:2.0s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">Q</div></div>
+      <!-- DoQ（原第三个） -->
+      <div class="power-card reveal" style="--gc:rgba(34,197,94,.2);--c1:#22c55e;--c2:#4ade80;--tc:#16a34a;--tb:rgba(34,197,94,.1);--tl:rgba(34,197,94,.25);transition-delay:.24s;">
+        <div class="p-icon" style="animation-delay:1.4s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">Q</div></div>
         <h3>DNS over QUIC</h3><span class="tag">DoQ · RFC 9250</span>
-        <p>基于 QUIC 协议的低延迟加密传输，结合 UDP 多路复用与 0-RTT 特性，尤其适合移动端与高丢包网络环境。</p>
-        <a class="p-link" href="#config" style="color:#16a34a;" aria-label="查看DoQ配置">查看配置 →</a>
+        <p>基于 QUIC 协议的低延迟加密传输，结合 UDP 多路复用与 0‑RTT 特性，尤其适合移动端与高丢包网络环境。</p>
+        <a class="p-link" data-tab="doq" style="color:#16a34a;">立即配置 →</a>
+      </div>
+      <!-- HTTP3（原第四个，已改为 HTTP3） -->
+      <div class="power-card reveal" style="--gc:rgba(255,154,213,.25);--c1:#ff8ac8;--c2:#b48bff;--tc:#e069b0;--tb:rgba(255,138,200,.12);--tl:rgba(255,138,200,.32);transition-delay:.36s;">
+        <div class="p-icon" style="animation-delay:2.0s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">3</div></div>
+        <h3>DNS over HTTP3</h3><span class="tag">HTTP3 · RFC 9114</span>
+        <p>基于 HTTP/3 与 QUIC 协议的超高速加密 DNS 查询，利用 0‑RTT 连接恢复与多路复用，大幅降低解析延迟，尤其适合 5G 与高动态网络环境。</p>
+        <a class="p-link" data-tab="ipv6" style="color:#e069b0;">立即配置 →</a>
       </div>
     </div>
   </div>
@@ -2431,11 +2456,11 @@
         chips: ['Android', 'iOS', 'macOS', 'OpenWrt', '路由器']
       },
       ipv6: {
-        title: 'IPv6 加密解析地址 — 双栈网络下自动优先走 IPv6 加密通道',
-        a: 'https://[2400:dns::1]/dns-query',
-        b: 'tls://[2400:dns::1]',
-        note: '适用于已部署 IPv6 的网络环境，可与 IPv4 地址混合配置实现双栈容灾。',
-        chips: ['IPv6', '双栈', 'Anycast', '容灾']
+        title: 'HTTP3 加密解析地址 — 基于 HTTP/3 与 QUIC 的超高速加密通道',
+        a: 'https://dns.ipv4dns.com/dns-query?h3',
+        b: 'h3://dns.ipv4dns.com',
+        note: '利用 HTTP/3 的 0‑RTT 连接恢复与多路复用，大幅降低解析延迟，适合 5G 与高动态网络。',
+        chips: ['HTTP/3', 'QUIC', 'Android', 'iOS', 'Chrome']
       },
       doq: {
         title: 'DNS over QUIC（DoQ）— 基于 QUIC 协议的高速加密传输，端口 853 或 784',
@@ -2445,7 +2470,7 @@
         chips: ['QUIC', 'HTTP/3', 'Android', 'iOS', 'Chrome']
       },
       dnscrypt: {
-        title: 'DNSCrypt — 基于非对称加密的 DNS 隐私保护协议',
+        title: 'DNS 描述文件配置 — 一键安装加密 DNS 描述文件（iOS / macOS）',
         a: 'dnscrypt://dns.example.com',
         b: 'https://dns.example.com/dnscrypt',
         note: '通过证书验证服务器身份，防止伪造与劫持，兼容多款第三方客户端。',
@@ -2469,6 +2494,36 @@
         document.getElementById('cfgB').textContent = d.b;
         document.getElementById('cfgNote').textContent = d.note;
         document.getElementById('cfgChips').innerHTML = d.chips.map(c => `<span class="sys-chip">${c}</span>`).join('');
+
+        const isDnscrypt = btn.dataset.tab === 'dnscrypt';
+        document.querySelectorAll('.cfg-line').forEach(el => {
+          el.style.display = isDnscrypt ? 'none' : 'flex';
+        });
+        document.getElementById('cfgNote').style.display = isDnscrypt ? 'none' : 'block';
+        document.getElementById('downloadArea').style.display = isDnscrypt ? 'block' : 'none';
+      });
+    });
+
+    // ===== 下载描述文件 =====
+    window.downloadProfile = function() {
+      const url = 'https://dns.example.com/dns-profile.mobileconfig';
+      window.location.href = url;
+    };
+
+    // ===== “立即配置” 跳转逻辑 =====
+    document.querySelectorAll('.p-link[data-tab]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const tab = this.dataset.tab; // 'doh', 'dot', 'ipv6', 'doq'
+        // 滚动到配置区域
+        document.getElementById('config').scrollIntoView({ behavior: 'smooth' });
+        // 延迟等待滚动完成后点击对应选项卡
+        setTimeout(() => {
+          const targetBtn = document.querySelector(`.cfg-tab[data-tab="${tab}"]`);
+          if (targetBtn) {
+            targetBtn.click();
+          }
+        }, 400);
       });
     });
 
@@ -2576,7 +2631,7 @@
       });
     })();
 
-    // ===== DNS 连接状态检测（美化版呼吸灯控制） =====
+    // ===== DNS 连接状态检测 =====
     (function() {
       const dot = document.getElementById('dnsCheckDot');
       const statusEl = document.getElementById('dnsCheckStatus');
@@ -2704,7 +2759,7 @@
       });
     }, 500);
 
-    // ===== 新增：打字机效果（第一行） =====
+    // ===== 打字机效果 =====
     (function() {
       const tw = document.getElementById('typewriter');
       if (!tw) return;
@@ -2741,7 +2796,6 @@
         }
       }
 
-      // 页面加载完成后启动（等待动画显现）
       setTimeout(type, 1200);
     })();
 
