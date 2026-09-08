@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
-  <!-- SEO 优化 -->
   <meta name="description" content="DNS安全 · 企业级加密DNS服务，支持DoH/DoT协议，防劫持、防窃听、防篡改，为全场景网络访问保驾护航。">
   <meta property="og:title" content="DNS安全 · 加密DNS服务官网">
   <meta property="og:description" content="一站式加密DNS解析服务，提供DoH/DoT配置指南与实时解析总量监控。">
-  <meta property="og:image" content="https://dns.example.com/og-image.jpg"> <!-- 请替换为实际图片URL -->
+  <meta property="og:image" content="https://dns.example.com/og-image.jpg">
   <meta property="og:url" content="https://dns.example.com">
   <meta name="twitter:card" content="summary_large_image">
   <title>DNS安全 · 加密DNS服务官网 | DoH / DoT</title>
@@ -24,7 +23,6 @@
       --ink: #0f1a2e;
       --sub: #5a6e8a;
       --bg: #f6f9fe;
-      /* 兼容性备用色 */
       --glass-bg: rgba(255,255,255,0.72);
       --glass-border: rgba(255,255,255,0.9);
     }
@@ -48,7 +46,7 @@
     @media (max-width: 768px) { .wrap { padding: 0 20px; } }
     @media (max-width: 480px) { .wrap { padding: 0 14px; } }
 
-    /* ===== 背景光晕（性能优化） ===== */
+    /* ===== 背景光晕 ===== */
     .bg-glow {
       position: fixed;
       inset: 0;
@@ -128,12 +126,10 @@
       color: var(--ink);
       padding: 8px 22px;
       border: 1px solid rgba(120,140,200,.3);
-      /* 毛玻璃回退 */
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
       font-size: 14px;
     }
-    /* 兼容不支持 backdrop-filter 的浏览器 */
     @supports not (backdrop-filter: blur(1px)) {
       .btn-ghost { background: rgba(255,255,255,0.85); }
       .glass { background: rgba(255,255,255,0.85) !important; }
@@ -391,7 +387,7 @@
       50% { transform: translateY(-26px) rotate(calc(var(--r,0deg) - 3deg)) scale(1.03); }
     }
 
-    /* Hero 几何装饰（少量） */
+    /* Hero 几何装饰 */
     .hero-shapes {
       position: absolute;
       inset: 0;
@@ -447,11 +443,11 @@
     }
     @media (max-width: 768px) {
       .pyramid, .cube, .sphere { display: none; }
-      .bg-glow span { filter: blur(40px); } /* 降低移动端模糊 */
+      .bg-glow span { filter: blur(40px); }
       .shape .glass { box-shadow: 0 10px 20px rgba(100,120,220,.1); }
     }
 
-    /* ===== 第二板块：一站式加密DNS（无轨道标签） ===== */
+    /* ===== 第二板块：一站式加密DNS ===== */
     .sec-tool { padding: 120px 0 100px; overflow: hidden; }
     .tool-grid {
       display: grid;
@@ -518,7 +514,6 @@
     .feat-item h4 { font-size: 16px; font-weight: 700; }
     .feat-item p { font-size: 13px; color: var(--sub); margin-top: 2px; }
 
-    /* DNS 核心（无旋转标签） */
     .dns-stage {
       position: relative;
       display: flex;
@@ -592,7 +587,6 @@
       margin-top: 2px;
       font-weight: 700;
     }
-
     @media (max-width: 768px) {
       .tool-grid { grid-template-columns: 1fr; gap: 40px; }
       .dns-stage { min-height: 360px; order: -1; }
@@ -607,11 +601,12 @@
       .dns-halo { width: 240px; height: 240px; filter: blur(12px); }
     }
 
-    /* ===== 第三板块：带到任何地方（精简） ===== */
+    /* ===== 第三板块：带到任何地方（6个卡片） ===== */
     .sec-anywhere {
       padding: 100px 0;
       overflow: hidden;
       background: linear-gradient(180deg,rgba(235,240,255,0),rgba(235,240,255,.4) 30%,rgba(255,240,250,.3) 70%,rgba(235,240,255,0));
+      text-align: center; /* 整体居中 */
     }
     .anywhere-grid {
       display: grid;
@@ -638,6 +633,7 @@
     }
     .stat span { font-size: 13px; color: var(--sub); font-weight: 500; }
 
+    /* 盾牌区域保持原样 */
     .shield-scene {
       position: relative;
       display: flex;
@@ -736,10 +732,13 @@
       50% { transform: translateY(-14px) rotate(3deg); }
     }
 
-    .anywhere-visual {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
+    /* ===== 卡片区域（6个卡片网格） ===== */
+    .anywhere-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+      text-align: left; /* 卡片内部文字左对齐，但整体居中对齐 */
     }
     .stack-card {
       background: rgba(255,255,255,.7);
@@ -780,6 +779,8 @@
     }
     .stack-card .sc-icon svg .p { stroke: var(--purple); }
     .stack-card .sc-icon svg .a { stroke: #e069b0; }
+    .stack-card .sc-icon svg .g { stroke: #22c55e; }
+    .stack-card .sc-icon svg .o { stroke: #f59e0b; }
     .stack-card h5 { font-size: 14px; font-weight: 700; }
     .stack-card p { font-size: 12px; color: var(--sub); margin-top: 1px; }
     .mini-bar {
@@ -799,10 +800,20 @@
     }
     .mini-bar i.w50 { width: 50%; }
     .mini-bar i.w90 { width: 90%; }
+    .mini-bar i.w75 { width: 75%; }
+    .mini-bar i.w85 { width: 85%; }
 
+    /* 响应式卡片布局 */
     @media (max-width: 1024px) {
-      .anywhere-grid { grid-template-columns: 1fr 1fr; }
+      .anywhere-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
       .anywhere-copy { grid-column: 1/-1; }
+      .anywhere-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
     }
     @media (max-width: 768px) {
       .anywhere-grid { grid-template-columns: 1fr; }
@@ -812,9 +823,13 @@
       .orbit-chip { font-size: 10px; padding: 4px 10px; }
       .oc2 { right: 0; }
       .shield-glow { filter: blur(16px); }
+      .anywhere-cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
     }
 
-    /* ===== 第四板块：配置（移除门下方的小圆球） ===== */
+    /* ===== 第四板块：配置 ===== */
     .sec-config { padding: 110px 0; overflow: hidden; }
     .config-grid {
       display: grid;
@@ -1079,7 +1094,6 @@
       display: block;
       margin-top: 3px;
     }
-
     @media (max-width: 768px) {
       .config-grid { grid-template-columns: 1fr; gap: 40px; }
       .door-scene { min-height: 320px; }
@@ -1335,9 +1349,7 @@
       cursor: pointer;
       text-decoration: underline;
     }
-    .stats-status.is-error:hover {
-      opacity: 0.7;
-    }
+    .stats-status.is-error:hover { opacity: 0.7; }
     .stats-title {
       font-size: clamp(18px, 2.2vw, 24px);
       font-weight: 900;
@@ -1588,7 +1600,7 @@
   <div class="scroll-hint" aria-hidden="true">SCROLL</div>
 </section>
 
-<!-- 第二板块：一站式加密DNS（无轨道标签） -->
+<!-- 第二板块：一站式加密DNS -->
 <section class="sec-tool" id="tool" aria-labelledby="tool-title">
   <div class="wrap tool-grid">
     <div class="tool-copy reveal">
@@ -1607,13 +1619,12 @@
         <div class="dns-core">
           <div class="txt"><b>DNS</b><small>SECURE RESOLVE</small></div>
         </div>
-        <!-- 轨道标签已移除 -->
       </div>
     </div>
   </div>
 </section>
 
-<!-- 第三板块：带到任何地方（精简） -->
+<!-- 第三板块：带到任何地方（6个卡片） -->
 <section class="sec-anywhere" id="anywhere" aria-labelledby="anywhere-title">
   <div class="wrap anywhere-grid">
     <div class="shield-scene reveal">
@@ -1654,31 +1665,56 @@
         <div class="stat"><b>300+</b><span>全球节点</span></div>
         <div class="stat"><b>0 泄露</b><span>查询隐私</span></div>
       </div>
-    </div>
-    <div class="anywhere-visual reveal">
-      <div class="stack-card">
-        <div class="sc-icon" aria-hidden="true">
-          <svg viewBox="0 0 32 32" focusable="false"><circle cx="16" cy="16" r="14" class="p"/><circle cx="16" cy="16" r="5" class="p"/><path d="M2 16h28M16 2v28M8 4c-2 4-2 12 0 24M24 4c2 4 2 12 0 24" class="a" stroke-width="1.4"/></svg>
+      <!-- 6个卡片网格 -->
+      <div class="anywhere-cards">
+        <!-- 1. 全球 Anycast -->
+        <div class="stack-card">
+          <div class="sc-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" focusable="false"><circle cx="16" cy="16" r="14" class="p"/><circle cx="16" cy="16" r="5" class="p"/><path d="M2 16h28M16 2v28M8 4c-2 4-2 12 0 24M24 4c2 4 2 12 0 24" class="a" stroke-width="1.4"/></svg>
+          </div>
+          <div><h5>🌍 全球 Anycast</h5><p>智能调度最优节点，解析直达毫秒级响应</p><div class="mini-bar" aria-hidden="true"><i class="w90"></i></div></div>
         </div>
-        <div><h5>🌍 全球 Anycast</h5><p>智能调度最优节点，解析直达毫秒级响应</p><div class="mini-bar" aria-hidden="true"><i class="w90"></i></div></div>
-      </div>
-      <div class="stack-card">
-        <div class="sc-icon" aria-hidden="true">
-          <svg viewBox="0 0 32 32" focusable="false"><rect x="4" y="6" width="24" height="16" rx="2" class="p"/><path d="M10 22v4h12v-4M8 26h16" class="a" stroke-width="1.6"/><circle cx="16" cy="28" r="1.5" class="p"/><path d="M12 2h8" class="a" stroke-width="1.6"/></svg>
+        <!-- 2. 全端兼容 -->
+        <div class="stack-card">
+          <div class="sc-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" focusable="false"><rect x="4" y="6" width="24" height="16" rx="2" class="p"/><path d="M10 22v4h12v-4M8 26h16" class="a" stroke-width="1.6"/><circle cx="16" cy="28" r="1.5" class="p"/><path d="M12 2h8" class="a" stroke-width="1.6"/></svg>
+          </div>
+          <div><h5>📱 全端兼容</h5><p>Windows / macOS / iOS / Android / Linux 一键配置</p><div class="mini-bar" aria-hidden="true"><i class="w70"></i></div></div>
         </div>
-        <div><h5>📱 全端兼容</h5><p>Windows / macOS / iOS / Android / Linux 一键配置</p><div class="mini-bar" aria-hidden="true"><i class="w70"></i></div></div>
-      </div>
-      <div class="stack-card">
-        <div class="sc-icon" aria-hidden="true">
-          <svg viewBox="0 0 32 32" focusable="false"><circle cx="16" cy="16" r="12" class="p"/><path d="M16 8v8l4 4" class="a" stroke-width="1.8"/><rect x="6" y="6" width="4" height="4" rx="1" class="p"/><rect x="22" y="22" width="4" height="4" rx="1" class="a"/></svg>
+        <!-- 3. 实时加密 -->
+        <div class="stack-card">
+          <div class="sc-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" focusable="false"><circle cx="16" cy="16" r="12" class="p"/><path d="M16 8v8l4 4" class="a" stroke-width="1.8"/><rect x="6" y="6" width="4" height="4" rx="1" class="p"/><rect x="22" y="22" width="4" height="4" rx="1" class="a"/></svg>
+          </div>
+          <div><h5>🕒 实时加密</h5><p>全程 TLS 加密，隐私永不泄露，防劫持防篡改</p><div class="mini-bar" aria-hidden="true"><i class="w85"></i></div></div>
         </div>
-        <div><h5>🕒 实时加密</h5><p>全程 TLS 加密，隐私永不泄露，防劫持防篡改</p><div class="mini-bar" aria-hidden="true"><i class="w85"></i></div></div>
+        <!-- 4. 隐私保护（新增） -->
+        <div class="stack-card">
+          <div class="sc-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" focusable="false"><path d="M16 4 L4 10 L4 16 C4 24 10 30 16 30 C22 30 28 24 28 16 L28 10 Z" class="p"/><circle cx="16" cy="16" r="4" class="a"/><path d="M12 12 L20 20 M20 12 L12 20" class="g" stroke-width="1.4"/></svg>
+          </div>
+          <div><h5>🔒 隐私保护</h5><p>查询记录永久不落盘，DNS 足迹完全消除，杜绝数据留存风险</p><div class="mini-bar" aria-hidden="true"><i class="w75"></i></div></div>
+        </div>
+        <!-- 5. 高性能解析（新增） -->
+        <div class="stack-card">
+          <div class="sc-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" focusable="false"><polyline points="4 20 12 12 18 18 28 8" class="p"/><polyline points="4 20 12 12 18 18 28 8" class="a" stroke-dasharray="2 2"/><circle cx="4" cy="20" r="2" class="o"/><circle cx="28" cy="8" r="2" class="o"/></svg>
+          </div>
+          <div><h5>⚡ 高性能解析</h5><p>零缓存污染，权威数据源直连，解析准确率 99.99% 以上</p><div class="mini-bar" aria-hidden="true"><i class="w80"></i></div></div>
+        </div>
+        <!-- 6. 多云容灾（新增） -->
+        <div class="stack-card">
+          <div class="sc-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" focusable="false"><path d="M6 22 L16 28 L26 22 L26 10 L16 4 L6 10 Z" class="p"/><path d="M16 14 L16 22 M16 18 L12 16 M16 18 L20 16" class="a" stroke-width="1.6"/></svg>
+          </div>
+          <div><h5>☁️ 多云容灾</h5><p>跨可用区多活部署，故障自动切换，服务可用性达 100%</p><div class="mini-bar" aria-hidden="true"><i class="w88"></i></div></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 第四板块：配置（门下方小圆球已移除） -->
+<!-- 第四板块：配置 -->
 <section class="sec-config" id="config" aria-labelledby="config-title">
   <div class="wrap config-grid">
     <div class="door-scene reveal">
@@ -1689,7 +1725,6 @@
         <div class="door-sub">SECURE GATEWAY</div>
         <div class="knob"></div>
       </div>
-      <!-- door-ball 已移除 -->
     </div>
     <div class="config-copy reveal">
       <div class="kicker">三步完成配置</div>
@@ -1851,7 +1886,7 @@
       });
     });
 
-    // ===== 配置选项卡（ARIA增强） =====
+    // ===== 配置选项卡 =====
     const tabs = {
       doh: {
         title: 'DNS over HTTPS（DoH）— 基于 HTTPS 的加密查询，端口 443',
@@ -1904,7 +1939,7 @@
       let shown = 0;
       let timer = null;
       let raf = null;
-      let isFirstLoad = true; // 标记首次加载
+      let isFirstLoad = true;
 
       function setState(state, errorMsg) {
         dot.classList.remove('is-ok', 'is-busy', 'is-err');
@@ -1920,7 +1955,6 @@
           statusEl.style.color = '#dc2626';
           statusEl.classList.add('is-error');
           statusEl.style.cursor = 'pointer';
-          // 点击重试
           statusEl.onclick = () => { load(); };
         } else {
           dot.classList.add('is-busy');
@@ -1966,7 +2000,6 @@
       }
 
       async function load() {
-        // 首次加载显示“加载中…”
         if (isFirstLoad) {
           numEl.textContent = '…';
           numEl.classList.add('loading-pulse');
@@ -1980,7 +2013,6 @@
           if (!res.ok) throw new Error('HTTP ' + res.status);
           const data = await res.json();
           if (typeof data.num_dns_queries !== 'number') throw new Error('bad payload');
-          // 首次加载完成
           if (isFirstLoad) isFirstLoad = false;
           countUp(data.num_dns_queries);
           timeEl.textContent = data.timestamp ? fmtTime(data.timestamp) : new Date().toLocaleString('zh-CN');
@@ -2001,7 +2033,7 @@
       });
     })();
 
-    // ===== Hero 鼠标视差（节流） =====
+    // ===== Hero 鼠标视差 =====
     const heroShapes = document.querySelectorAll('.hero-shapes .shape');
     let rafId = null;
     window.addEventListener('mousemove', (e) => {
