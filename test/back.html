@@ -2495,7 +2495,7 @@
         document.getElementById('cfgNote').textContent = d.note;
         document.getElementById('cfgChips').innerHTML = d.chips.map(c => `<span class="sys-chip">${c}</span>`).join('');
 
-        const isDnscrypt = btn.dataset.tab === 'ios';
+        const isDnscrypt = btn.dataset.tab === 'dnscrypt';
         document.querySelectorAll('.cfg-line').forEach(el => {
           el.style.display = isDnscrypt ? 'none' : 'flex';
         });
