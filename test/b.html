@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+  <title>DNS 企业官网 · 加密DNS服务</title>
+  <!-- Font Awesome (图标库) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* ===== 全局重置 & 基础 ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      background: #f6f9fc;
+      color: #1a1f2e;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== 头部 / 导航 ===== */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      flex-wrap: wrap;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-icon {
+      font-size: 28px;
+      color: #1e3b5c;
+      background: #e6eef9;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-text {
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: -0.3px;
+      color: #0b1e2e;
+    }
+    .logo-text span {
+      color: #2a6b9e;
+    }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      font-weight: 500;
+      color: #2c3e50;
+      font-size: 15px;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #2c3e50;
+      transition: 0.2s;
+    }
+    .nav-links a:hover {
+      color: #1e6f9f;
+    }
+    .nav-cta {
+      background: #1e3b5c;
+      color: white !important;
+      padding: 8px 20px;
+      border-radius: 40px;
+      font-weight: 600;
+    }
+    .nav-cta:hover {
+      background: #143049 !important;
+      color: white !important;
+    }
+
+    /* ===== Hero 区块 ===== */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 48px 0 60px;
+      gap: 30px;
+    }
+    .hero-text {
+      flex: 1 1 380px;
+    }
+    .hero-text .badge {
+      background: #dce9f5;
+      color: #1a4970;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 4px 16px;
+      border-radius: 40px;
+      display: inline-block;
+      margin-bottom: 18px;
+      letter-spacing: 0.3px;
+    }
+    .hero-text h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: #0b1e2e;
+      margin-bottom: 18px;
+    }
+    .hero-text h1 i {
+      color: #2a6b9e;
+    }
+    .hero-text p {
+      font-size: 1.1rem;
+      color: #2c3e50;
+      max-width: 480px;
+      margin-bottom: 28px;
+      opacity: 0.8;
+    }
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .btn-primary {
+      background: #1e3b5c;
+      border: none;
+      color: white;
+      padding: 12px 32px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.2s;
+      box-shadow: 0 8px 18px rgba(27, 55, 86, 0.15);
+    }
+    .btn-primary:hover {
+      background: #143049;
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid #b6cbd9;
+      color: #1a2f40;
+      padding: 12px 32px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .btn-outline:hover {
+      border-color: #1e3b5c;
+      background: rgba(30, 59, 92, 0.03);
+    }
+
+    /* ===== Hero 右侧动画 ===== */
+    .hero-visual {
+      flex: 1 1 380px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      min-height: 260px;
+    }
+    .shield-wrapper {
+      position: relative;
+      width: 220px;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* 安全盾牌 + 浮动 */
+    .floating-shield {
+      font-size: 130px;
+      color: #1e3b5c;
+      filter: drop-shadow(0 12px 24px rgba(26, 55, 94, 0.18));
+      animation: floatY 4.5s ease-in-out infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      position: relative;
+      z-index: 2;
+    }
+    .floating-shield i {
+      display: block;
+    }
+    /* 脉冲背景环 */
+    .pulse-ring {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 2px solid rgba(30, 59, 92, 0.10);
+      top: 0;
+      left: 0;
+      animation: pulseRing 3.8s ease-out infinite;
+      pointer-events: none;
+    }
+    .pulse-ring:nth-child(2) {
+      animation-delay: 1.3s;
+    }
+    .pulse-ring:nth-child(3) {
+      animation-delay: 2.6s;
+    }
+
+    @keyframes floatY {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-16px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes pulseRing {
+      0% { transform: scale(0.6); opacity: 0.6; }
+      100% { transform: scale(1.7); opacity: 0; }
+    }
+
+    /* ===== 第二模块: 加密DNS介绍 (原M字改为DNS) ===== */
+    .section-dns {
+      padding: 50px 0 40px;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0b1e2e;
+      text-align: center;
+      margin-bottom: 14px;
+    }
+    .section-sub {
+      text-align: center;
+      color: #3e566b;
+      max-width: 600px;
+      margin: 0 auto 44px;
+      font-size: 1.05rem;
+    }
+    .dns-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 30px;
+    }
+    .dns-card {
+      background: white;
+      border-radius: 28px;
+      padding: 30px 22px 28px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02), 0 2px 8px rgba(0,20,40,0.04);
+      transition: all 0.25s;
+      text-align: center;
+      border: 1px solid rgba(200, 215, 230, 0.25);
+      backdrop-filter: blur(2px);
+    }
+    .dns-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(26, 55, 94, 0.08);
+    }
+    .dns-card .icon-big {
+      font-size: 44px;
+      color: #1e3b5c;
+      background: #eaf1fa;
+      width: 76px;
+      height: 76px;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+    }
+    .dns-card h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #0b1e2e;
+    }
+    .dns-card .protocol {
+      font-size: 0.9rem;
+      background: #eef4fa;
+      color: #1a4970;
+      padding: 2px 16px;
+      border-radius: 30px;
+      display: inline-block;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .dns-card p {
+      color: #2c3e50;
+      font-size: 0.95rem;
+      opacity: 0.8;
+      margin-bottom: 8px;
+    }
+    .dns-card .port {
+      font-size: 0.85rem;
+      background: #f0f4f9;
+      padding: 4px 14px;
+      border-radius: 40px;
+      display: inline-block;
+      color: #1f4465;
+      font-weight: 500;
+    }
+    /* 配置地址模块 */
+    .config-box {
+      background: #eaf1fa;
+      border-radius: 24px;
+      padding: 18px 24px;
+      margin-top: 46px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border: 1px solid #cbdae9;
+    }
+    .config-box .label {
+      font-weight: 600;
+      color: #10344f;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .config-box .label i {
+      font-size: 18px;
+    }
+    .config-endpoints {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px 32px;
+    }
+    .config-endpoints code {
+      background: white;
+      padding: 6px 18px;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #1a3f5e;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+      border: 1px solid #d6e2ef;
+    }
+
+    /* ===== DNS 解析总量模块 (底部) ===== */
+    .stats-section {
+      margin: 50px 0 30px;
+      padding: 20px 0 10px;
+    }
+    .stats-card {
+      background: linear-gradient(145deg, #ffffff 0%, #f8fcff 100%);
+      border-radius: 40px;
+      padding: 30px 32px 32px;
+      box-shadow: 0 12px 36px rgba(0, 20, 40, 0.04), 0 2px 8px rgba(0,0,0,0.02);
+      border: 1px solid rgba(180, 205, 225, 0.25);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      transition: 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .stats-left {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .stats-icon {
+      font-size: 38px;
+      color: #1e3b5c;
+      background: #dfebf6;
+      width: 72px;
+      height: 72px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .stats-numbers {
+      display: flex;
+      flex-direction: column;
+    }
+    .stats-numbers .total-label {
+      font-weight: 500;
+      color: #2c4a68;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+    }
+    .stats-numbers .total-value {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #0b1e2e;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+      /* 防止溢出 */
+      max-width: 300px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .stats-numbers .update-time {
+      font-size: 0.8rem;
+      color: #5b748b;
+      margin-top: 4px;
+    }
+    /* 呼吸灯 + 脉冲波纹 */
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .led-wrapper {
+      position: relative;
+      width: 54px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .led-dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #94a3b8;
+      transition: background 0.3s;
+      z-index: 3;
+      box-shadow: 0 0 0 2px rgba(255,255,255,0.8);
+    }
+    .led-dot.green {
+      background: #22a65e;
+    }
+    .led-dot.red {
+      background: #d94a4a;
+    }
+    .led-dot.gray {
+      background: #94a3b8;
+    }
+    /* 脉冲波纹 (呼吸灯效果) */
+    .wave {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 2px solid rgba(148, 163, 184, 0.25);
+      top: 0;
+      left: 0;
+      animation: ripple 2.4s ease-out infinite;
+      pointer-events: none;
+      opacity: 0;
+    }
+    .wave:nth-child(2) {
+      animation-delay: 0.8s;
+    }
+    .wave:nth-child(3) {
+      animation-delay: 1.6s;
+    }
+    /* 动态颜色跟随 led 状态 */
+    .led-wrapper.green .wave {
+      border-color: rgba(34, 166, 94, 0.4);
+    }
+    .led-wrapper.red .wave {
+      border-color: rgba(217, 74, 74, 0.4);
+    }
+    .led-wrapper.gray .wave {
+      border-color: rgba(148, 163, 184, 0.25);
+    }
+
+    @keyframes ripple {
+      0% { transform: scale(0.4); opacity: 0.7; }
+      100% { transform: scale(1.8); opacity: 0; }
+    }
+
+    .status-text {
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: #1f3d59;
+    }
+
+    /* ===== 页脚 ===== */
+    .footer {
+      margin-top: 50px;
+      padding: 30px 0 18px;
+      border-top: 1px solid rgba(0,0,0,0.04);
+      text-align: center;
+      color: #4a657e;
+      font-size: 0.9rem;
+    }
+    .footer i {
+      color: #1e3b5c;
+    }
+
+    /* ===== 响应式 (自适应) ===== */
+    @media (max-width: 820px) {
+      .navbar {
+        flex-direction: column;
+        gap: 14px;
+        align-items: flex-start;
+      }
+      .nav-links {
+        gap: 18px;
+        font-size: 14px;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px 0 30px;
+      }
+      .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hero-buttons {
+        justify-content: center;
+      }
+      .shield-wrapper {
+        width: 170px;
+        height: 170px;
+      }
+      .floating-shield {
+        font-size: 100px;
+      }
+      .config-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .stats-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .stats-left {
+        width: 100%;
+      }
+      .status-indicator {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .stats-numbers .total-value {
+        font-size: 2rem;
+        max-width: 220px;
+      }
+    }
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .dns-grid { grid-template-columns: 1fr; }
+      .hero-text h1 { font-size: 1.9rem; }
+      .floating-shield { font-size: 80px; }
+      .shield-wrapper { width: 140px; height: 140px; }
+      .stats-numbers .total-value { font-size: 1.7rem; max-width: 160px; }
+      .config-endpoints code { font-size: 0.75rem; padding: 4px 12px; }
+    }
+
+    /* ===== 小工具 ===== */
+    .text-muted { opacity: 0.6; }
+    .mt-2 { margin-top: 10px; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 导航 -->
+  <nav class="navbar">
+    <div class="logo-area">
+      <div class="logo-icon"><i class="fas fa-shield-alt"></i></div>
+      <div class="logo-text">DNS<span>ecure</span></div>
+    </div>
+    <div class="nav-links">
+      <a href="#">产品</a>
+      <a href="#">加密DNS</a>
+      <a href="#">配置</a>
+      <a href="#">文档</a>
+      <a href="#" class="nav-cta">控制台</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="badge"><i class="fas fa-lock" style="margin-right:6px;"></i> 加密DNS · 企业级</div>
+      <h1>将您的 <i>DNS</i> 安全 <br>带到任何地方</h1>
+      <p>基于 DoH / DoT 加密协议，全面保护域名解析隐私，防范劫持与篡改。</p>
+      <div class="hero-buttons">
+        <button class="btn-primary"><i class="fas fa-rocket" style="margin-right:8px;"></i>立即体验</button>
+        <button class="btn-outline">掌握使用技巧</button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="shield-wrapper">
+        <div class="pulse-ring"></div>
+        <div class="pulse-ring"></div>
+        <div class="pulse-ring"></div>
+        <div class="floating-shield"><i class="fas fa-shield-halved"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 第二模块：加密DNS 介绍 (原M字改为DNS) 带卡片 -->
+  <section class="section-dns">
+    <h2 class="section-title"><i class="fas fa-circle-nodes" style="color:#1e3b5c;margin-right:10px;"></i> 加密 DNS · 安全解析</h2>
+    <p class="section-sub">DoH 与 DoT 双协议支持，为您的网络提供端到端的隐私保护</p>
+
+    <div class="dns-grid">
+      <!-- 卡片 1: DoH -->
+      <div class="dns-card">
+        <div class="icon-big"><i class="fas fa-cloud"></i></div>
+        <h3>DNS over HTTPS</h3>
+        <span class="protocol">DoH</span>
+        <p>基于 HTTPS 协议，端口 443，兼容性极强，适合浏览器、移动终端。</p>
+        <span class="port"><i class="far fa-circle" style="color:#2a6b9e;"></i> 端口 443</span>
+      </div>
+      <!-- 卡片 2: DoT -->
+      <div class="dns-card">
+        <div class="icon-big"><i class="fas fa-server"></i></div>
+        <h3>DNS over TLS</h3>
+        <span class="protocol">DoT</span>
+        <p>独立 TLS 加密通道，端口 853，安全纯粹，适合路由器、企业网关。</p>
+        <span class="port"><i class="far fa-circle" style="color:#2a6b9e;"></i> 端口 853</span>
+      </div>
+      <!-- 卡片 3: 加密DNS作用 -->
+      <div class="dns-card">
+        <div class="icon-big"><i class="fas fa-lock"></i></div>
+        <h3>全程加密</h3>
+        <span class="protocol">隐私保护</span>
+        <p>防止 DNS 劫持、缓存投毒、流量嗅探，运营商无法监控访问域名。</p>
+        <span class="port"><i class="fas fa-check-circle" style="color:#1e7b4a;"></i> 防篡改</span>
+      </div>
+    </div>
+
+    <!-- 配置地址 -->
+    <div class="config-box">
+      <div class="label"><i class="fas fa-code"></i> 加密DNS 配置地址</div>
+      <div class="config-endpoints">
+        <code>DoH: https://dns.ipv4dns.com/dns-query</code>
+        <code>DoT: tls://dns.ipv4dns.com</code>
+        <code>标准DNS: 114.114.114.114</code>
+      </div>
+    </div>
+  </section>
+
+  <!-- DNS 解析总量模块 + 呼吸灯 -->
+  <section class="stats-section">
+    <div class="stats-card" id="statsCard">
+      <div class="stats-left">
+        <div class="stats-icon"><i class="fas fa-chart-simple"></i></div>
+        <div class="stats-numbers">
+          <span class="total-label"><i class="far fa-clock" style="margin-right:6px;"></i>DNS 解析总量</span>
+          <div class="total-value" id="dnsTotal">3,410,897</div>
+          <span class="update-time" id="updateTime">更新于: 2026-09-08 08:22:04</span>
+        </div>
+      </div>
+      <div class="status-indicator">
+        <div class="led-wrapper gray" id="ledWrapper">
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="led-dot gray" id="ledDot"></div>
+        </div>
+        <span class="status-text" id="statusText">连接中</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <div class="footer">
+    <p><i class="fas fa-shield-halved" style="margin-right:6px;"></i> DNSecure · 企业级加密DNS服务  |  追求极致的用户体验</p>
+    <p style="margin-top:6px;font-size:0.8rem;opacity:0.5;">© 2026 DNSecure · 隐私优先 · 安全解析</p>
+  </div>
+</div>
+
+<script>
+  (function() {
+    "use strict";
+
+    const API_URL = 'https://api.ipv4dns.com/api';
+    const totalEl = document.getElementById('dnsTotal');
+    const timeEl = document.getElementById('updateTime');
+    const ledWrapper = document.getElementById('ledWrapper');
+    const ledDot = document.getElementById('ledDot');
+    const statusText = document.getElementById('statusText');
+
+    // 格式化数字 (千位分隔)
+    function formatNumber(num) {
+      if (num === undefined || num === null) return '0';
+      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    }
+
+    // 更新UI状态 (呼吸灯颜色+文字)
+    function setStatus(state) {
+      // 移除所有状态class
+      ledWrapper.classList.remove('green', 'red', 'gray');
+      ledDot.classList.remove('green', 'red', 'gray');
+
+      if (state === 'success') {
+        ledWrapper.classList.add('green');
+        ledDot.classList.add('green');
+        statusText.textContent = '连接成功';
+        statusText.style.color = '#1e7b4a';
+      } else if (state === 'error') {
+        ledWrapper.classList.add('red');
+        ledDot.classList.add('red');
+        statusText.textContent = '连接失败';
+        statusText.style.color = '#b33a3a';
+      } else { // connecting / gray
+        ledWrapper.classList.add('gray');
+        ledDot.classList.add('gray');
+        statusText.textContent = '连接中';
+        statusText.style.color = '#4a657e';
+      }
+    }
+
+    // 从API获取数据
+    async function fetchDNSStats() {
+      setStatus('connecting'); // 灰色 + 连接中
+
+      try {
+        const response = await fetch(API_URL, {
+          method: 'GET',
+          headers: { 'Accept': 'application/json' },
+          // 超时控制 (通过 AbortController)
+          signal: AbortSignal.timeout ? AbortSignal.timeout(8000) : undefined
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        // 校验返回字段
+        if (data && typeof data.num_dns_queries !== 'undefined' && data.timestamp) {
+          const total = Number(data.num_dns_queries);
+          if (!isNaN(total)) {
+            totalEl.textContent = formatNumber(total);
+          } else {
+            throw new Error('Invalid number format');
+          }
+
+          // 格式化时间 (将ISO转为可读)
+          const ts = new Date(data.timestamp);
+          if (!isNaN(ts.getTime())) {
+            const year = ts.getFullYear();
+            const month = String(ts.getMonth() + 1).padStart(2, '0');
+            const day = String(ts.getDate()).padStart(2, '0');
+            const hours = String(ts.getHours()).padStart(2, '0');
+            const mins = String(ts.getMinutes()).padStart(2, '0');
+            const secs = String(ts.getSeconds()).padStart(2, '0');
+            timeEl.textContent = `更新于: ${year}-${month}-${day} ${hours}:${mins}:${secs}`;
+          } else {
+            timeEl.textContent = `更新于: ${data.timestamp}`;
+          }
+
+          setStatus('success');
+        } else {
+          throw new Error('Incomplete data');
+        }
+      } catch (err) {
+        console.warn('DNS API 获取失败:', err);
+        setStatus('error');
+        // 保留上次数值不变，但时间戳显示失败
+        timeEl.textContent = '更新于: 获取失败，请稍后重试';
+        // 如果没有任何数据，显示占位
+        if (totalEl.textContent === '' || totalEl.textContent === '0') {
+          totalEl.textContent = '--';
+        }
+      }
+    }
+
+    // 初始化：先尝试获取，然后每60秒轮询
+    fetchDNSStats();
+    setInterval(fetchDNSStats, 60000); // 60s
+
+    // 额外：在窗口可见时重新获取一次 (保证切换tab后数据新鲜)
+    document.addEventListener('visibilitychange', function() {
+      if (!document.hidden) {
+        fetchDNSStats();
+      }
+    });
+
+  })();
+</script>
+
+<!-- 注意：FontAwesome 6 中 'fa-shield-halved' 是盾牌图标，若部分浏览器不支持可降级为 'fa-shield-alt' 但本处使用 'fa-shield-halved' 是 v6 标准 -->
+</body>
+</html>
