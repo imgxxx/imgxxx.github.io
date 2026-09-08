@@ -9,7 +9,7 @@
   <meta property="og:image" content="https://dns.example.com/og-image.jpg">
   <meta property="og:url" content="https://dns.example.com">
   <meta name="twitter:card" content="summary_large_image">
-  <title>DNS安全 · 加密DNS服务官网 | DoH / DoT / DoQ / DNSCrypt</title>
+  <title>清新云DNS | 一个有安全防护的加密DNS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -341,33 +341,16 @@
       background-clip: text;
       color: transparent;
     }
-
-    /* ----- 描述打字效果 ----- */
-    .desc-type-wrapper {
-      margin-top: 20px;
-      font-size: clamp(15px, 1.4vw, 19px);
+    .hero p {
       color: var(--sub);
-      font-weight: 500;
-      min-height: 1.8em;
-      line-height: 1.8;
+      font-size: clamp(15px, 1.4vw, 19px);
+      margin-top: 20px;
+      animation: fadeUp 1s .5s both;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .desc-type-wrapper .desc-text {
-      display: inline;
-    }
-    .desc-type-wrapper .desc-cursor {
-      display: inline-block;
-      width: 2px;
-      height: 1.2em;
-      background: var(--blue);
-      margin-left: 2px;
-      vertical-align: text-bottom;
-      animation: blink 0.9s step-end infinite;
-    }
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-
+    .hero p b { color: var(--ink); font-weight: 700; }
     .hero .btn-primary {
       margin-top: 40px;
       animation: fadeUp 1s .65s both;
@@ -385,8 +368,24 @@
       0% { transform: scale(.95); opacity: 1; }
       100% { transform: scale(1.35); opacity: 0; }
     }
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 1; }
+      50% { opacity: .3; }
+    }
+    @keyframes floaty {
+      0%,100% { transform: translateY(0) rotate(var(--r,0deg)); }
+      50% { transform: translateY(-18px) rotate(calc(var(--r,0deg) + 2deg)); }
+    }
+    @keyframes floaty2 {
+      0%,100% { transform: translateY(0) rotate(var(--r,0deg)) scale(1); }
+      50% { transform: translateY(-26px) rotate(calc(var(--r,0deg) - 3deg)) scale(1.03); }
+    }
 
-    /* Hero 几何装饰 */
+    /* ===== Hero 几何装饰 ===== */
     .hero-shapes {
       position: absolute;
       inset: 0;
@@ -503,6 +502,7 @@
       .ring { left: 2%; bottom: 8%; }
     }
 
+    /* ----- 滚动提示 ----- */
     .scroll-hint {
       position: absolute;
       bottom: 30px;
@@ -1056,13 +1056,13 @@
       color: var(--sub);
       margin-top: 6px;
       letter-spacing: 0.05em;
-      animation: fadeUp 2s ease-in-out infinite alternate;
+      animation: fadeUpSmall 2s ease-in-out infinite alternate;
     }
     @keyframes textGlow {
       0%,100% { filter: drop-shadow(0 0 6px rgba(47,107,255,0.3)); }
       50% { filter: drop-shadow(0 0 20px rgba(47,107,255,0.7)); }
     }
-    @keyframes fadeUp {
+    @keyframes fadeUpSmall {
       0% { opacity: 0.6; transform: translateY(4px); }
       100% { opacity: 1; transform: translateY(-4px); }
     }
@@ -1214,6 +1214,20 @@
       font-weight: 700;
     }
 
+    #downloadArea {
+      text-align: center;
+      padding: 12px 0 8px;
+    }
+    #downloadArea .btn-primary {
+      padding: 14px 48px;
+      font-size: 16px;
+    }
+    #downloadArea .desc {
+      font-size: 12px;
+      color: var(--sub);
+      margin-top: 10px;
+    }
+
     .config-cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1281,7 +1295,7 @@
       .cfg-panel { padding: 16px; }
     }
 
-    /* ===== 第五板块：追求极致的用户体验（4个卡片） ===== */
+    /* ===== 第五板块：追求极致的用户体验 ===== */
     .sec-power { padding: 100px 0 110px; }
     .sec-head {
       text-align: center;
@@ -1392,6 +1406,7 @@
       color: var(--tc,#2f6bff);
       text-decoration: none;
       transition: .3s;
+      cursor: pointer;
     }
     .p-link:hover { gap: 12px; }
 
@@ -1829,7 +1844,7 @@
       }
     }
 
-    /* ===== 页脚（含备案号） ===== */
+    /* ===== 页脚 ===== */
     footer {
       background: #0f1330;
       color: #aab2d8;
@@ -1923,6 +1938,21 @@
     }
     #toast.show { transform: translate(-50%,0); opacity: 1; }
 
+    /* ===== 打字机光标 ===== */
+    .blink-cursor {
+      display: inline-block;
+      width: 2px;
+      height: 1em;
+      background: currentColor;
+      margin-left: 2px;
+      vertical-align: text-bottom;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
     /* ===== 响应式补充 ===== */
     @media (max-width: 480px) {
       .sec-tool, .sec-anywhere, .sec-core, .sec-config, .sec-power, .sec-cta, .sec-stats, .sec-follow { padding: 50px 0 60px; }
@@ -1944,8 +1974,8 @@
 <!-- 导航 -->
 <header id="header" role="banner">
   <div class="wrap nav">
-    <a class="logo" href="#" aria-label="DNS安全 首页"><span class="logo-mark"></span>DNS<span style="color:var(--blue)">安全</span></a>
-    <ul class="nav-links" role="navigation" aria-label="主导航">
+    <a class="logo" href="#" aria-label="DNS安全 首页"><span class="logo-mark"></span>清新云<span style="color:var(--blue)">DNS</span></a>
+    <ul class="nav-links" role="navigation" aria-label="菜单">
       <li><a href="#tool">产品功能</a></li>
       <li><a href="#config">配置指南</a></li>
       <li><a href="#power">技术方案</a></li>
@@ -1953,19 +1983,19 @@
       <li><a href="#">帮助中心</a></li>
     </ul>
     <div class="nav-btns">
-      <button class="btn btn-ghost" aria-label="登录">登录</button>
-      <button class="btn btn-primary" style="padding:9px 26px;" aria-label="免费使用">免费使用</button>
-      <button class="hamburger" id="hamBtn" aria-label="切换菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button class="btn btn-ghost" type="button" aria-label="登录">登录</button>
+      <button class="btn btn-primary" type="button" data-target="#config" style="padding:9px 26px;" aria-label="立即配置">立即配置</button>
+      <button class="hamburger" id="hamBtn" type="button" aria-label="切换菜单" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="移动端菜单">
   <a href="#tool">产品功能</a><a href="#config">配置指南</a><a href="#power">技术方案</a>
   <a href="#cta">解决方案</a><a href="#">帮助中心</a>
-  <button class="btn btn-primary" style="width:100%;margin-top:20px;" aria-label="免费使用">免费使用</button>
+  <button class="btn btn-primary" type="button" data-target="#config" style="width:100%;margin-top:20px;" aria-label="立即配置">立即配置</button>
 </div>
 
-<!-- Hero -->
+<!-- ===== Hero ===== -->
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero-shapes" aria-hidden="true">
     <div class="shape pyramid"><div class="glass"></div><div class="pyramid-base"></div></div>
@@ -1976,25 +2006,21 @@
     <div class="shape ring"><div class="glass"></div></div>
   </div>
   <div class="hero-inner wrap">
-    <div class="hero-badge"><i aria-hidden="true"></i>DoH · DoT · DoQ · DNSCrypt</div>
-    <h1 id="hero-title">加密<em>DNS</em></h1>
-    <!-- 描述打字效果 -->
-    <div class="desc-type-wrapper">
-      <span class="desc-text" id="descText"></span><span class="desc-cursor"></span>
-    </div>
-    <!-- 立即开始按钮 -->
-    <button class="btn btn-primary" aria-label="立即开始使用">立即开始</button>
+    <div class="hero-badge"><i aria-hidden="true"></i>清新云&清新云开发&黑洞防护</div>
+    <h1 id="hero-title">清新云<em>DNS</em></h1>
+    <p><span id="typewriter"></span><span id="cursor" class="blink-cursor" aria-hidden="true"></span></p>
+    <button class="btn btn-primary" type="button" data-target="#config" aria-label="立即开始">立即开始</button>
   </div>
-  <div class="scroll-hint" aria-hidden="true">SCROLL</div>
+  <div class="scroll-hint" aria-hidden="true">向下滚动</div>
 </section>
 
-<!-- 第二板块：一站式加密DNS -->
+<!-- ===== 第二板块：一站式加密DNS ===== -->
 <section class="sec-tool" id="tool" aria-labelledby="tool-title">
   <div class="wrap tool-grid">
     <div class="tool-copy reveal">
       <div class="kicker">一站式加密解析服务</div>
       <h2 id="tool-title" class="h-title">前所未有的<br>一站式加密DNS服务</h2>
-      <p class="h-sub">基于 DoH / DoT / DoQ / DNSCrypt 加密协议，将传统明文 DNS 查询升级为加密通道。个人上网、企业办公、移动场景，一键获得隐私保护与安全加速。</p>
+      <p class="h-sub">基于 DoH / DoT / DoQ / HTTP3 加密协议，将传统明文 DNS 查询升级为加密通道。个人上网、企业办公、移动场景，一键获得隐私保护与安全加速。</p>
       <div class="feat-list">
         <div class="feat-item">
           <div class="feat-icon">
@@ -2068,7 +2094,7 @@
   </div>
 </section>
 
-<!-- 第三板块：带到任何地方 -->
+<!-- ===== 第三板块：带到任何地方 ===== -->
 <section class="sec-anywhere" id="anywhere" aria-labelledby="anywhere-title">
   <div class="wrap anywhere-grid">
     <div class="shield-scene reveal">
@@ -2113,7 +2139,7 @@
   </div>
 </section>
 
-<!-- 六大核心能力 -->
+<!-- ===== 六大核心能力 ===== -->
 <section class="sec-core" id="core" aria-labelledby="core-title">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -2161,7 +2187,7 @@
   </div>
 </section>
 
-<!-- 第四板块：配置 -->
+<!-- ===== 第四板块：配置 ===== -->
 <section class="sec-config" id="config" aria-labelledby="config-title">
   <div class="wrap config-grid">
     <div class="privacy-scene reveal">
@@ -2188,8 +2214,8 @@
           </svg>
         </div>
         <div class="privacy-text">
-          <div class="main">PRIVACY FIRST</div>
-          <div class="sub">轻点指尖，隐私固若金汤。</div>
+          <div class="main">PRIVACY SPACE</div>
+          <div class="sub">安全，从此刻开始。</div>
         </div>
       </div>
     </div>
@@ -2199,19 +2225,25 @@
       <h2 id="config-title" class="h-title">掌握使用技巧</h2>
       <p class="h-sub">复制下方加密 DNS 配置地址，粘贴到系统或浏览器的安全 DNS 设置中，即可开启全程加密解析。</p>
       <div class="cfg-tabs" role="tablist" aria-label="配置协议选择">
-        <button class="cfg-tab active" role="tab" aria-selected="true" data-tab="doh" aria-controls="cfgPanel">DoH 配置</button>
-        <button class="cfg-tab" role="tab" aria-selected="false" data-tab="dot" aria-controls="cfgPanel">DoT 配置</button>
-        <button class="cfg-tab" role="tab" aria-selected="false" data-tab="ipv6" aria-controls="cfgPanel">IPv6 地址</button>
-        <button class="cfg-tab" role="tab" aria-selected="false" data-tab="doq" aria-controls="cfgPanel">DoQ 配置</button>
-        <button class="cfg-tab" role="tab" aria-selected="false" data-tab="dnscrypt" aria-controls="cfgPanel">DNSCrypt 配置</button>
+        <button class="cfg-tab active" type="button" role="tab" aria-selected="true" data-tab="doh" aria-controls="cfgPanel">DoH 配置</button>
+        <button class="cfg-tab" type="button" role="tab" aria-selected="false" data-tab="dot" aria-controls="cfgPanel">DoT 配置</button>
+        <button class="cfg-tab" type="button" role="tab" aria-selected="false" data-tab="ios" aria-controls="cfgPanel">HTTP3 配置</button>
+        <button class="cfg-tab" type="button" role="tab" aria-selected="false" data-tab="doq" aria-controls="cfgPanel">DoQ 配置</button>
+        <button class="cfg-tab" type="button" role="tab" aria-selected="false" data-tab="dnscrypt" aria-controls="cfgPanel">描述文件 配置</button>
       </div>
       <div class="cfg-panel" id="cfgPanel" role="tabpanel">
         <h5 id="cfgTitle">DNS over HTTPS（DoH）— 基于 HTTPS 的加密查询，端口 443</h5>
-        <div class="cfg-line"><span id="cfgA">https://dns.example.com/dns-query</span><button data-copy="cfgA" aria-label="复制配置地址">复制</button></div>
-        <div class="cfg-line"><span id="cfgB">https://dns.example.com/dns-query{?dns}</span><button data-copy="cfgB" aria-label="复制配置地址">复制</button></div>
+        <div class="cfg-line"><span id="cfgA">https://dns.ipv4dns.com/dns-query</span><button type="button" data-copy="cfgA" aria-label="复制配置地址">复制</button></div>
+        <div class="cfg-line"><span id="cfgB">https://dns.ipv4dns.com/dns-query{?dns}</span><button type="button" data-copy="cfgB" aria-label="复制配置地址">复制</button></div>
         <p class="cfg-note" id="cfgNote">支持 RFC 8484 标准，兼容 Chrome / Edge / Firefox 及 Windows 11 原生 DoH。</p>
         <div class="sys-chips" id="cfgChips">
           <span class="sys-chip">Windows 11</span><span class="sys-chip">Chrome</span><span class="sys-chip">Firefox</span><span class="sys-chip">Edge</span>
+        </div>
+        <div id="downloadArea" style="display:none; text-align:center; padding:12px 0 8px;">
+          <button class="btn btn-primary" type="button" onclick="downloadProfile()" style="padding:14px 48px; font-size:16px;">
+            点击下载
+          </button>
+          <p class="desc">适用于 iOS / macOS 的加密 DNS 描述文件（.mobileconfig），一键安装即可全局生效。</p>
         </div>
         <div class="config-cards">
           <div class="cfg-card"><div class="c-label">系统配置 <span>85%</span></div><div class="c-bar"><i style="width:85%"></i></div><small>Windows / macOS 已适配</small></div>
@@ -2225,7 +2257,7 @@
   </div>
 </section>
 
-<!-- 第五板块：追求极致的用户体验 -->
+<!-- ===== 第五板块：追求极致的用户体验 ===== -->
 <section class="sec-power" id="power" aria-labelledby="power-title">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -2233,35 +2265,39 @@
       <p class="h-sub">四种加密方案各司其职，覆盖从浏览器到操作系统、从个人到企业的全部解析场景。</p>
     </div>
     <div class="power-grid">
+      <!-- DoH -->
       <div class="power-card reveal" style="--gc:rgba(47,107,255,.2);--c1:#2f6bff;--c2:#6b9bff;--tc:#2f6bff;--tb:rgba(47,107,255,.1);--tl:rgba(47,107,255,.28);">
         <div class="p-icon" style="animation-delay:.2s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">H</div></div>
         <h3>DNS over HTTPS</h3><span class="tag">DoH · RFC 8484</span>
         <p>将 DNS 查询封装在 HTTPS 请求中，与正常网页流量完全混淆，有效绕过针对 53 端口的封锁与审查，隐私性最强。</p>
-        <a class="p-link" href="#config" aria-label="查看DoH配置">查看配置 →</a>
+        <a class="p-link" data-tab="doh" style="color:#2f6bff;">立即配置 →</a>
       </div>
+      <!-- DoT -->
       <div class="power-card reveal" style="--gc:rgba(139,123,255,.22);--c1:#8b7bff;--c2:#c09bff;--tc:#7a5ff0;--tb:rgba(139,123,255,.12);--tl:rgba(139,123,255,.3);transition-delay:.12s;">
         <div class="p-icon" style="animation-delay:.8s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">T</div></div>
         <h3>DNS over TLS</h3><span class="tag">DoT · RFC 7858</span>
         <p>通过专用 853 端口建立 TLS 加密隧道，协议开销更低、连接更稳定，是操作系统与路由器全局加密的首选方案。</p>
-        <a class="p-link" href="#config" style="color:#7a5ff0;" aria-label="查看DoT配置">查看配置 →</a>
+        <a class="p-link" data-tab="dot" style="color:#7a5ff0;">立即配置 →</a>
       </div>
-      <div class="power-card reveal" style="--gc:rgba(255,154,213,.25);--c1:#ff8ac8;--c2:#b48bff;--tc:#e069b0;--tb:rgba(255,138,200,.12);--tl:rgba(255,138,200,.32);transition-delay:.24s;">
-        <div class="p-icon" style="animation-delay:1.4s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">⌘</div></div>
-        <h3>智能加密解析</h3><span class="tag">AI · 全球调度</span>
-        <p>实时感知网络质量自动切换 DoH / DoT / DoQ 最优通道，叠加恶意域名拦截与广告过滤，让安全与速度兼得。</p>
-        <a class="p-link" href="#config" style="color:#e069b0;" aria-label="查看智能加密配置">查看配置 →</a>
-      </div>
-      <div class="power-card reveal" style="--gc:rgba(34,197,94,.2);--c1:#22c55e;--c2:#4ade80;--tc:#16a34a;--tb:rgba(34,197,94,.1);--tl:rgba(34,197,94,.25);transition-delay:.36s;">
-        <div class="p-icon" style="animation-delay:2.0s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">Q</div></div>
+      <!-- DoQ -->
+      <div class="power-card reveal" style="--gc:rgba(34,197,94,.2);--c1:#22c55e;--c2:#4ade80;--tc:#16a34a;--tb:rgba(34,197,94,.1);--tl:rgba(34,197,94,.25);transition-delay:.24s;">
+        <div class="p-icon" style="animation-delay:1.4s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">Q</div></div>
         <h3>DNS over QUIC</h3><span class="tag">DoQ · RFC 9250</span>
-        <p>基于 QUIC 协议的低延迟加密传输，结合 UDP 多路复用与 0-RTT 特性，尤其适合移动端与高丢包网络环境。</p>
-        <a class="p-link" href="#config" style="color:#16a34a;" aria-label="查看DoQ配置">查看配置 →</a>
+        <p>基于 QUIC 协议的低延迟加密传输，结合 UDP 多路复用与 0‑RTT 特性，尤其适合移动端与高丢包网络环境。</p>
+        <a class="p-link" data-tab="doq" style="color:#16a34a;">立即配置 →</a>
+      </div>
+      <!-- HTTP3 -->
+      <div class="power-card reveal" style="--gc:rgba(255,154,213,.25);--c1:#ff8ac8;--c2:#b48bff;--tc:#e069b0;--tb:rgba(255,138,200,.12);--tl:rgba(255,138,200,.32);transition-delay:.36s;">
+        <div class="p-icon" style="animation-delay:2.0s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">3</div></div>
+        <h3>DNS over HTTP3</h3><span class="tag">HTTP3 · RFC 9114</span>
+        <p>基于 HTTP/3 与 QUIC 协议的超高速加密 DNS 查询，利用 0‑RTT 连接恢复与多路复用，大幅降低解析延迟，尤其适合 5G 与高动态网络环境。</p>
+        <a class="p-link" data-tab="ios" style="color:#e069b0;">立即配置 →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
+<!-- ===== CTA ===== -->
 <section class="sec-cta" id="cta" aria-labelledby="cta-title">
   <div class="cta-blob cb1" aria-hidden="true"></div><div class="cta-blob cb2" aria-hidden="true"></div>
   <div class="cta-shapes" aria-hidden="true">
@@ -2273,11 +2309,11 @@
   <div class="cta-inner wrap reveal">
     <h2 id="cta-title">准备好开始了么</h2>
     <p>DNS安全愿为您提供全行业领先的一站式加密解析服务</p>
-    <button class="btn btn-primary" aria-label="立即开始">立即开始</button>
+    <button class="btn btn-primary" type="button" data-target="#config" aria-label="立即开始">立即开始</button>
   </div>
 </section>
 
-<!-- DNS 解析总量 -->
+<!-- ===== DNS 解析总量 ===== -->
 <section class="sec-stats" id="stats" aria-labelledby="stats-title">
   <div class="wrap reveal">
     <div class="stats-shell">
@@ -2296,7 +2332,7 @@
   </div>
 </section>
 
-<!-- DNS 连接状态检测卡片 -->
+<!-- ===== DNS 连接状态检测卡片 ===== -->
 <section class="sec-dns-check" aria-label="DNS连接状态检测">
   <div class="wrap">
     <div class="dns-check-shell">
@@ -2309,7 +2345,7 @@
       </div>
       <h3 class="dns-check-title">DNS 连接状态</h3>
       <div class="dns-check-body" id="dnsCheckBody">
-        <object data="https://test.ipv4dns.com/yes.html" width="100%" height="30" type="text/html">
+        <object data="https://test.ipv4dns.com/yes.html" width="100%" height="30" type="text/html" sandbox="allow-scripts">
           <span class="fallback-text">你未使用 dns.ipv4dns.com</span>
         </object>
       </div>
@@ -2317,24 +2353,24 @@
   </div>
 </section>
 
-<!-- 微信公众号关注模块 -->
+<!-- ===== 微信公众号关注模块 ===== -->
 <section class="sec-follow" aria-label="关注我们">
   <div class="wrap follow-inner">
     <h2 class="follow-title">关注我们 <span>·</span> 获取更多</h2>
     <p class="follow-desc">扫码关注微信公众号，接收最新加密DNS技术资讯与使用指南</p>
     <div class="qr-wrapper">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://mp.weixin.qq.com/" alt="微信公众号二维码" loading="lazy">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://weixin.qq.com/r/mp/thyAmOjEE7Vsrazy790mk" alt="微信公众号二维码" loading="lazy">
     </div>
   </div>
 </section>
 
-<!-- 页脚 -->
+<!-- ===== 页脚 ===== -->
 <footer role="contentinfo">
   <div class="wrap">
     <div class="f-grid">
       <div class="f-brand">
-        <a class="logo" href="#" style="color:#fff;" aria-label="DNS安全 首页"><span class="logo-mark"></span>DNS<span style="color:#7ea0ff">安全</span></a>
-        <p>专注加密 DNS 服务，以 DoH / DoT / DoQ / DNSCrypt 技术守护每一次域名解析，让互联网访问更安全、更私密、更快速。</p>
+        <a class="logo" href="#" style="color:#fff;" aria-label="DNS安全 首页"><span class="logo-mark"></span>清新云<span style="color:#7ea0ff">DNS</span></a>
+        <p>专注加密 DNS 服务，以 DoH / DoT / DoQ / HTTP3 技术守护每一次域名解析，让互联网访问更安全、更私密、更快速。</p>
       </div>
       <div class="f-col"><h6>产品</h6><a href="#">加密DNS</a><a href="#">DoH 服务</a><a href="#">DoT 服务</a><a href="#">DoQ 服务</a><a href="#">DNSCrypt 服务</a></div>
       <div class="f-col"><h6>解决方案</h6><a href="#">个人用户</a><a href="#">企业办公</a><a href="#">移动场景</a><a href="#">路由器</a></div>
@@ -2347,7 +2383,7 @@
         <a href="#">隐私政策</a>
         <a href="#">服务条款</a>
         <a href="#">Cookie 设置</a>
-        <span class="icp">京ICP备2023000000号</span>
+        <span class="icp">粤ICP备2022059990号</span>
       </span>
     </div>
   </div>
@@ -2360,6 +2396,14 @@
     // ===== 导航滚动 =====
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 40), { passive: true });
+
+    // ===== 通用平滑跳转（data-target 按钮） =====
+    document.querySelectorAll('[data-target]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = document.querySelector(btn.getAttribute('data-target'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
 
     // ===== 移动端菜单 =====
     const ham = document.getElementById('hamBtn');
@@ -2404,38 +2448,38 @@
     const tabs = {
       doh: {
         title: 'DNS over HTTPS（DoH）— 基于 HTTPS 的加密查询，端口 443',
-        a: 'https://dns.example.com/dns-query',
-        b: 'https://dns.example.com/dns-query{?dns}',
+        a: 'https://dns.ipv4dns.com/dns-query',
+        b: 'https://dns.ipv4dns.com/dns-query{?dns}',
         note: '支持 RFC 8484 标准，兼容 Chrome / Edge / Firefox 及 Windows 11 原生 DoH。',
         chips: ['Windows 11', 'Chrome', 'Firefox', 'Edge']
       },
       dot: {
         title: 'DNS over TLS（DoT）— 基于 TLS 加密隧道，端口 853，开销低且连接稳定',
-        a: 'tls://dns.example.com',
-        b: 'dns.example.com',
+        a: 'tls://dns.ipv4dns.com',
+        b: 'dns.ipv4dns.com',
         note: '支持 RFC 7858 标准，推荐在 Android Private DNS、iOS 描述文件与路由器中使用。',
         chips: ['Android', 'iOS', 'macOS', 'OpenWrt', '路由器']
       },
-      ipv6: {
-        title: 'IPv6 加密解析地址 — 双栈网络下自动优先走 IPv6 加密通道',
-        a: 'https://[2400:dns::1]/dns-query',
-        b: 'tls://[2400:dns::1]',
-        note: '适用于已部署 IPv6 的网络环境，可与 IPv4 地址混合配置实现双栈容灾。',
-        chips: ['IPv6', '双栈', 'Anycast', '容灾']
+      ios: {
+        title: 'HTTP3 加密解析地址 — 基于 HTTP/3 与 QUIC 的超高速加密通道',
+        a: 'https://dns.ipv4dns.com/dns-query',
+        b: 'h3://dns.ipv4dns.com/dns-query',
+        note: '利用 HTTP/3 的 0‑RTT 连接恢复与多路复用，大幅降低解析延迟，适合 5G 与高动态网络。',
+        chips: ['HTTP/3', 'QUIC', 'Android', 'iOS', 'Chrome']
       },
       doq: {
         title: 'DNS over QUIC（DoQ）— 基于 QUIC 协议的高速加密传输，端口 853 或 784',
-        a: 'quic://dns.example.com',
-        b: 'https://dns.example.com/dns-query?doq',
+        a: 'quic://dns.ipv4dns.com',
+        b: 'https://dns.ipv4dns.com/dns-query?doq',
         note: '利用 QUIC 的低延迟与多路复用特性，适合移动端与高丢包网络环境。',
         chips: ['QUIC', 'HTTP/3', 'Android', 'iOS', 'Chrome']
       },
       dnscrypt: {
-        title: 'DNSCrypt — 基于非对称加密的 DNS 隐私保护协议',
-        a: 'dnscrypt://dns.example.com',
-        b: 'https://dns.example.com/dnscrypt',
+        title: 'DNS 描述文件配置 — 一键安装加密 DNS 描述文件（iOS / macOS）',
+        a: '',
+        b: '',
         note: '通过证书验证服务器身份，防止伪造与劫持，兼容多款第三方客户端。',
-        chips: ['DNSCrypt-proxy', 'Simple DNSCrypt', 'Android', 'Windows', 'macOS']
+        chips: ['iOS', 'iPadOS', 'iPhone', 'iPad', 'macOS']
       }
     };
 
@@ -2451,10 +2495,36 @@
         void panel.offsetWidth;
         panel.style.animation = 'fadeUp .45s both';
         document.getElementById('cfgTitle').textContent = d.title;
-        document.getElementById('cfgA').textContent = d.a;
-        document.getElementById('cfgB').textContent = d.b;
+        const isProfile = btn.dataset.tab === 'dnscrypt';
+        document.getElementById('cfgA').textContent = isProfile ? '' : d.a;
+        document.getElementById('cfgB').textContent = isProfile ? '' : d.b;
         document.getElementById('cfgNote').textContent = d.note;
+        document.getElementById('cfgNote').style.display = isProfile ? 'none' : 'block';
         document.getElementById('cfgChips').innerHTML = d.chips.map(c => `<span class="sys-chip">${c}</span>`).join('');
+
+        document.querySelectorAll('.cfg-line').forEach(el => {
+          el.style.display = isProfile ? 'none' : 'flex';
+        });
+        document.getElementById('downloadArea').style.display = isProfile ? 'block' : 'none';
+      });
+    });
+
+    // ===== 下载描述文件 =====
+    window.downloadProfile = function() {
+      const url = '/download/doh.mobileconfig';
+      window.location.href = url;
+    };
+
+    // ===== “立即配置” 跳转逻辑 =====
+    document.querySelectorAll('.p-link[data-tab]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const tab = this.dataset.tab;
+        document.getElementById('config').scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
+          const targetBtn = document.querySelector(`.cfg-tab[data-tab="${tab}"]`);
+          if (targetBtn) targetBtn.click();
+        }, 400);
       });
     });
 
@@ -2478,13 +2548,14 @@
           statusEl.textContent = '已连接 · 数据同步正常';
           statusEl.style.color = '#16a34a';
           statusEl.style.cursor = 'default';
+          statusEl.onclick = null;
         } else if (state === 'err') {
           dot.classList.add('is-err');
           statusEl.textContent = errorMsg || '连接失败 · 点击重试';
           statusEl.style.color = '#dc2626';
           statusEl.classList.add('is-error');
           statusEl.style.cursor = 'pointer';
-          statusEl.onclick = () => { load(); };
+          statusEl.onclick = () => { clearTimeout(timer); load(); };
         } else {
           dot.classList.add('is-busy');
           statusEl.textContent = '正在连接解析节点…';
@@ -2562,12 +2633,13 @@
       });
     })();
 
-    // ===== DNS 连接状态检测（呼吸灯控制） =====
+    // ===== DNS 连接状态检测 =====
     (function() {
       const dot = document.getElementById('dnsCheckDot');
       const statusEl = document.getElementById('dnsCheckStatus');
       const bodyEl = document.getElementById('dnsCheckBody');
       const objectEl = bodyEl ? bodyEl.querySelector('object') : null;
+      let checkTimer = null;
 
       function setState(state, msg) {
         dot.classList.remove('is-ok', 'is-busy', 'is-err');
@@ -2586,8 +2658,16 @@
         }
       }
 
+      function setBodyText(ok) {
+        if (objectEl) {
+          objectEl.innerHTML = ok
+            ? '<span class="ok-text">你已使用 dns.ipv4dns.com</span>'
+            : '<span class="fallback-text">你未使用 dns.ipv4dns.com</span>';
+        }
+      }
+
       function checkWithFetch() {
-        setState('busy', '正在检测 DNS 连接状态…');
+        setState('busy');
         const ctl = new AbortController();
         const to = setTimeout(() => ctl.abort(), 5000);
 
@@ -2603,104 +2683,93 @@
         })
         .then(text => {
           if (text.includes('已使用') || text.includes('已连接')) {
-            setState('ok', '已使用 · DNS 连接正常');
-            if (objectEl) {
-              objectEl.innerHTML = '<span class="ok-text">你已使用 dns.ipv4dns.com</span>';
-            }
+            setState('ok');
+            setBodyText(true);
           } else {
-            setState('err', '未使用 · DNS 连接异常');
+            setState('err');
+            setBodyText(false);
           }
         })
         .catch(() => {
           clearTimeout(to);
+          // fetch 不可用（网络/CORS 限制）时回退到 object 检测，
+          // 不直接判定为异常，避免误判。
           checkWithObject();
         });
       }
 
       function checkWithObject() {
         if (!objectEl) {
-          setState('err', '未使用 · DNS 连接异常');
+          setState('err', '无法验证 · 检测通道不可用');
           return;
         }
-        let loaded = false;
+        let settled = false;
         const timeoutId = setTimeout(() => {
-          if (!loaded) {
+          if (!settled) {
+            settled = true;
             setState('err', '未使用 · DNS 连接异常（加载超时）');
+            setBodyText(false);
           }
         }, 4000);
 
-        objectEl.addEventListener('load', function() {
-          loaded = true;
+        function onLoad() {
+          if (settled) return;
+          settled = true;
           clearTimeout(timeoutId);
+          let text = '';
           try {
-            const doc = this.contentDocument || this.contentWindow?.document;
-            if (doc) {
-              const text = doc.body ? doc.body.textContent : '';
-              if (text.includes('已使用') || text.includes('已连接')) {
-                setState('ok', '已使用 · DNS 连接正常');
-              } else {
-                setState('err', '未使用 · DNS 连接异常');
-              }
-            } else {
-              setState('ok', '已使用 · DNS 连接正常');
-            }
+            const doc = this.contentDocument || (this.contentWindow && this.contentWindow.document);
+            text = (doc && doc.body) ? doc.body.textContent : '';
           } catch (e) {
-            setState('ok', '已使用 · DNS 连接正常');
+            // 跨域无法读取内容：object 能加载说明 test 域名可达，
+            // 视为正在使用；若未使用则该域名无法解析，会触发 error。
+            setState('ok');
+            setBodyText(true);
+            return;
           }
-        });
-
-        objectEl.addEventListener('error', function() {
-          loaded = true;
-          clearTimeout(timeoutId);
-          setState('err', '未使用 · DNS 连接异常');
-        });
-
-        if (objectEl.contentDocument || objectEl.contentWindow?.document) {
-          const evt = new Event('load');
-          objectEl.dispatchEvent(evt);
+          if (text.includes('已使用') || text.includes('已连接')) {
+            setState('ok');
+            setBodyText(true);
+          } else {
+            setState('err');
+            setBodyText(false);
+          }
         }
+
+        function onError() {
+          if (settled) return;
+          settled = true;
+          clearTimeout(timeoutId);
+          setState('err');
+          setBodyText(false);
+        }
+
+        objectEl.addEventListener('load', onLoad);
+        objectEl.addEventListener('error', onError);
+
+        // 若 object 已缓存完成则手动触发一次检测
+        try {
+          const doc = objectEl.contentDocument || (objectEl.contentWindow && objectEl.contentWindow.document);
+          if (doc && doc.readyState === 'complete') {
+            objectEl.removeEventListener('load', onLoad);
+            objectEl.removeEventListener('error', onError);
+            const text = doc.body ? doc.body.textContent : '';
+            if (text.includes('已使用') || text.includes('已连接')) {
+              setState('ok');
+              setBodyText(true);
+            } else {
+              setState('err');
+              setBodyText(false);
+            }
+          }
+        } catch (e) { /* 跨域则等待 load 事件 */ }
       }
 
       checkWithFetch();
-      setInterval(checkWithFetch, 30000);
-    })();
-
-    // ===== 描述打字效果（Hero 区域） =====
-    (function() {
-      const textEl = document.getElementById('descText');
-      const fullText = '将每一次域名解析安全加密，防劫持、防窃听、防篡改，为全场景网络访问保驾护航';
-      let charIndex = 0;
-      let isDeleting = false;
-      let timer;
-
-      function type() {
-        if (!isDeleting) {
-          // 打字
-          textEl.textContent = fullText.substring(0, charIndex + 1);
-          charIndex++;
-          if (charIndex === fullText.length) {
-            // 输入完成，等待 2 秒后开始删除
-            isDeleting = true;
-            timer = setTimeout(type, 2000);
-            return;
-          }
-          timer = setTimeout(type, 50 + Math.random() * 30);
-        } else {
-          // 删除
-          textEl.textContent = fullText.substring(0, charIndex - 1);
-          charIndex--;
-          if (charIndex === 0) {
-            // 删除完毕，等待 0.5 秒后重新输入
-            isDeleting = false;
-            timer = setTimeout(type, 500);
-            return;
-          }
-          timer = setTimeout(type, 30 + Math.random() * 20);
-        }
-      }
-
-      // 启动
-      type();
+      checkTimer = setInterval(checkWithFetch, 30000);
+      document.addEventListener('visibilitychange', () => {
+        if (!document.hidden) { clearInterval(checkTimer); checkWithFetch(); checkTimer = setInterval(checkWithFetch, 30000); }
+      });
     })();
 
     // ===== Hero 鼠标视差 =====
@@ -2728,7 +2797,46 @@
       });
     }, 500);
 
+    // ===== 打字机效果 =====
+    (function() {
+      const tw = document.getElementById('typewriter');
+      if (!tw) return;
+      const fullText = '一个有安全防护的加密DNS。';
+      let index = 0;
+      let isDeleting = false;
+      const typeSpeed = 80;
+      const deleteSpeed = 50;
+      const pauseTime = 1500;
+
+      function type() {
+        if (!isDeleting) {
+          if (index < fullText.length) {
+            tw.textContent = fullText.substring(0, index + 1);
+            index++;
+            setTimeout(type, typeSpeed);
+          } else {
+            setTimeout(() => {
+              isDeleting = true;
+              setTimeout(type, 200);
+            }, pauseTime);
+          }
+        } else {
+          if (index > 0) {
+            tw.textContent = fullText.substring(0, index - 1);
+            index--;
+            setTimeout(type, deleteSpeed);
+          } else {
+            isDeleting = false;
+            setTimeout(type, pauseTime);
+          }
+        }
+      }
+
+      setTimeout(type, 1200);
+    })();
+
   })();
 </script>
+
 </body>
 </html>
