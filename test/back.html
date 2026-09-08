@@ -9,7 +9,7 @@
   <meta property="og:image" content="https://dns.example.com/og-image.jpg">
   <meta property="og:url" content="https://dns.example.com">
   <meta name="twitter:card" content="summary_large_image">
-  <title>DNS安全 · 加密DNS服务官网 | DoH / DoT / DoQ / DNSCrypt</title>
+  <title>清新云DNS | 一个有安全防护的加密DNS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -351,45 +351,41 @@
       margin-right: auto;
     }
     .hero p b { color: var(--ink); font-weight: 700; }
-
-    /* ----- 打字效果（替换原按钮） ----- */
-    .type-wrapper {
+    .hero .btn-primary {
       margin-top: 40px;
-      display: inline-block;
-      font-size: clamp(18px, 2.2vw, 28px);
-      font-weight: 700;
-      color: var(--blue);
-      background: rgba(255,255,255,0.6);
-      padding: 12px 32px;
-      border-radius: 999px;
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
-      border: 1px solid rgba(47,107,255,0.2);
-      box-shadow: 0 12px 32px rgba(47,107,255,0.15);
-      animation: fadeUp 1s .65s both, floaty 6s ease-in-out 1.5s infinite;
-      letter-spacing: 0.04em;
-      min-width: 120px;
+      animation: fadeUp 1s .65s both;
       position: relative;
     }
-    .type-wrapper .cursor {
-      display: inline-block;
-      width: 2px;
-      height: 1.2em;
-      background: var(--blue);
-      margin-left: 2px;
-      vertical-align: text-bottom;
-      animation: blink 0.9s step-end infinite;
+    .hero .btn-primary::after {
+      content: "";
+      position: absolute;
+      inset: -6px;
+      border-radius: 999px;
+      border: 2px solid rgba(47,107,255,.3);
+      animation: ringPulse 2.2s infinite;
     }
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
+    @keyframes ringPulse {
+      0% { transform: scale(.95); opacity: 1; }
+      100% { transform: scale(1.35); opacity: 0; }
     }
-    .type-wrapper .text {
-      display: inline-block;
-      white-space: nowrap;
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 1; }
+      50% { opacity: .3; }
+    }
+    @keyframes floaty {
+      0%,100% { transform: translateY(0) rotate(var(--r,0deg)); }
+      50% { transform: translateY(-18px) rotate(calc(var(--r,0deg) + 2deg)); }
+    }
+    @keyframes floaty2 {
+      0%,100% { transform: translateY(0) rotate(var(--r,0deg)) scale(1); }
+      50% { transform: translateY(-26px) rotate(calc(var(--r,0deg) - 3deg)) scale(1.03); }
     }
 
-    /* Hero 几何装饰 */
+    /* ===== Hero 几何装饰 ===== */
     .hero-shapes {
       position: absolute;
       inset: 0;
@@ -1638,7 +1634,7 @@
       .stats-time { font-size: 11px; padding: 4px 14px; }
     }
 
-    /* ===== DNS 连接状态检测卡片（美化版） ===== */
+    /* ===== DNS 连接状态检测卡片（美化版，与解析总量模块风格一致） ===== */
     .sec-dns-check {
       padding: 20px 0 50px;
     }
@@ -1927,6 +1923,21 @@
     }
     #toast.show { transform: translate(-50%,0); opacity: 1; }
 
+    /* ===== 新增：打字机光标样式 ===== */
+    .blink-cursor {
+      display: inline-block;
+      width: 2px;
+      height: 1em;
+      background: currentColor;
+      margin-left: 2px;
+      vertical-align: text-bottom;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
     /* ===== 响应式补充 ===== */
     @media (max-width: 480px) {
       .sec-tool, .sec-anywhere, .sec-core, .sec-config, .sec-power, .sec-cta, .sec-stats, .sec-follow { padding: 50px 0 60px; }
@@ -1969,7 +1980,7 @@
   <button class="btn btn-primary" style="width:100%;margin-top:20px;" aria-label="免费使用">免费使用</button>
 </div>
 
-<!-- Hero -->
+<!-- ===== Hero ===== -->
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero-shapes" aria-hidden="true">
     <div class="shape pyramid"><div class="glass"></div><div class="pyramid-base"></div></div>
@@ -1980,18 +1991,18 @@
     <div class="shape ring"><div class="glass"></div></div>
   </div>
   <div class="hero-inner wrap">
-    <div class="hero-badge"><i aria-hidden="true"></i>DoH · DoT · DoQ · DNSCrypt</div>
+    <div class="hero-badge"><i aria-hidden="true"></i>清新云&清新云开发&黑洞防护</div>
     <h1 id="hero-title">加密<em>DNS</em></h1>
-    <p>将每一次域名解析<b>安全加密</b>，防劫持、防窃听、防篡改<br>为全场景网络访问保驾护航</p>
-    <!-- 打字效果替换原“立即开始”按钮 -->
-    <div class="type-wrapper">
-      <span class="text" id="typeText"></span><span class="cursor"></span>
-    </div>
+    <p>
+      <span id="typewriter"></span><span id="cursor" class="blink-cursor"></span>
+      <br>为全场景网络访问保驾护航
+    </p>
+    <button class="btn btn-primary" aria-label="立即开始使用">立即开始</button>
   </div>
   <div class="scroll-hint" aria-hidden="true">SCROLL</div>
 </section>
 
-<!-- 第二板块：一站式加密DNS -->
+<!-- ===== 第二板块：一站式加密DNS ===== -->
 <section class="sec-tool" id="tool" aria-labelledby="tool-title">
   <div class="wrap tool-grid">
     <div class="tool-copy reveal">
@@ -2071,7 +2082,7 @@
   </div>
 </section>
 
-<!-- 第三板块：带到任何地方 -->
+<!-- ===== 第三板块：带到任何地方 ===== -->
 <section class="sec-anywhere" id="anywhere" aria-labelledby="anywhere-title">
   <div class="wrap anywhere-grid">
     <div class="shield-scene reveal">
@@ -2116,7 +2127,7 @@
   </div>
 </section>
 
-<!-- 六大核心能力 -->
+<!-- ===== 六大核心能力 ===== -->
 <section class="sec-core" id="core" aria-labelledby="core-title">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -2164,7 +2175,7 @@
   </div>
 </section>
 
-<!-- 第四板块：配置 -->
+<!-- ===== 第四板块：配置 ===== -->
 <section class="sec-config" id="config" aria-labelledby="config-title">
   <div class="wrap config-grid">
     <div class="privacy-scene reveal">
@@ -2228,7 +2239,7 @@
   </div>
 </section>
 
-<!-- 第五板块：追求极致的用户体验 -->
+<!-- ===== 第五板块：追求极致的用户体验 ===== -->
 <section class="sec-power" id="power" aria-labelledby="power-title">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -2264,7 +2275,7 @@
   </div>
 </section>
 
-<!-- CTA -->
+<!-- ===== CTA ===== -->
 <section class="sec-cta" id="cta" aria-labelledby="cta-title">
   <div class="cta-blob cb1" aria-hidden="true"></div><div class="cta-blob cb2" aria-hidden="true"></div>
   <div class="cta-shapes" aria-hidden="true">
@@ -2280,7 +2291,7 @@
   </div>
 </section>
 
-<!-- DNS 解析总量 -->
+<!-- ===== DNS 解析总量 ===== -->
 <section class="sec-stats" id="stats" aria-labelledby="stats-title">
   <div class="wrap reveal">
     <div class="stats-shell">
@@ -2299,7 +2310,7 @@
   </div>
 </section>
 
-<!-- DNS 连接状态检测卡片 -->
+<!-- ===== DNS 连接状态检测卡片 ===== -->
 <section class="sec-dns-check" aria-label="DNS连接状态检测">
   <div class="wrap">
     <div class="dns-check-shell">
@@ -2320,7 +2331,7 @@
   </div>
 </section>
 
-<!-- 微信公众号关注模块 -->
+<!-- ===== 微信公众号关注模块 ===== -->
 <section class="sec-follow" aria-label="关注我们">
   <div class="wrap follow-inner">
     <h2 class="follow-title">关注我们 <span>·</span> 获取更多</h2>
@@ -2331,7 +2342,7 @@
   </div>
 </section>
 
-<!-- 页脚 -->
+<!-- ===== 页脚 ===== -->
 <footer role="contentinfo">
   <div class="wrap">
     <div class="f-grid">
@@ -2565,7 +2576,7 @@
       });
     })();
 
-    // ===== DNS 连接状态检测（呼吸灯控制） =====
+    // ===== DNS 连接状态检测（美化版呼吸灯控制） =====
     (function() {
       const dot = document.getElementById('dnsCheckDot');
       const statusEl = document.getElementById('dnsCheckStatus');
@@ -2668,42 +2679,6 @@
       setInterval(checkWithFetch, 30000);
     })();
 
-    // ===== 打字效果（Hero 区域） =====
-    (function() {
-      const textEl = document.getElementById('typeText');
-      const strings = ['ipv4dns.com', 'DNS安全', '加密解析']; // 可自定义
-      let currentIndex = 0;
-      let charIndex = 0;
-      let isDeleting = false;
-      let timer;
-
-      function type() {
-        const currentString = strings[currentIndex];
-        if (!isDeleting) {
-          textEl.textContent = currentString.substring(0, charIndex + 1);
-          charIndex++;
-          if (charIndex === currentString.length) {
-            isDeleting = true;
-            timer = setTimeout(type, 1500);
-            return;
-          }
-          timer = setTimeout(type, 100 + Math.random() * 60);
-        } else {
-          textEl.textContent = currentString.substring(0, charIndex - 1);
-          charIndex--;
-          if (charIndex === 0) {
-            isDeleting = false;
-            currentIndex = (currentIndex + 1) % strings.length;
-            timer = setTimeout(type, 400);
-            return;
-          }
-          timer = setTimeout(type, 60 + Math.random() * 40);
-        }
-      }
-
-      type();
-    })();
-
     // ===== Hero 鼠标视差 =====
     const heroShapes = document.querySelectorAll('.hero-shapes .shape');
     let rafId = null;
@@ -2729,7 +2704,49 @@
       });
     }, 500);
 
+    // ===== 新增：打字机效果（第一行） =====
+    (function() {
+      const tw = document.getElementById('typewriter');
+      if (!tw) return;
+      const fullText = '将每一次域名解析安全加密，防劫持、防窃听、防篡改';
+      let index = 0;
+      let isDeleting = false;
+      const typeSpeed = 80;
+      const deleteSpeed = 50;
+      const pauseTime = 1500;
+
+      function type() {
+        if (!isDeleting) {
+          if (index < fullText.length) {
+            tw.textContent = fullText.substring(0, index + 1);
+            index++;
+            setTimeout(type, typeSpeed);
+          } else {
+            setTimeout(() => {
+              isDeleting = true;
+              setTimeout(type, 200);
+            }, pauseTime);
+          }
+        } else {
+          if (index > 0) {
+            tw.textContent = fullText.substring(0, index - 1);
+            index--;
+            setTimeout(type, deleteSpeed);
+          } else {
+            isDeleting = false;
+            setTimeout(() => {
+              setTimeout(type, 300);
+            }, pauseTime);
+          }
+        }
+      }
+
+      // 页面加载完成后启动（等待动画显现）
+      setTimeout(type, 1200);
+    })();
+
   })();
 </script>
+
 </body>
 </html>
