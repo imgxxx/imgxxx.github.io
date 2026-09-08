@@ -2230,7 +2230,7 @@
       <div class="cfg-tabs" role="tablist" aria-label="配置协议选择">
         <button class="cfg-tab active" role="tab" aria-selected="true" data-tab="doh" aria-controls="cfgPanel">DoH 配置</button>
         <button class="cfg-tab" role="tab" aria-selected="false" data-tab="dot" aria-controls="cfgPanel">DoT 配置</button>
-        <button class="cfg-tab" role="tab" aria-selected="false" data-tab="ipv6" aria-controls="cfgPanel">HTTP3 配置</button>
+        <button class="cfg-tab" role="tab" aria-selected="false" data-tab="ios" aria-controls="cfgPanel">HTTP3 配置</button>
         <button class="cfg-tab" role="tab" aria-selected="false" data-tab="doq" aria-controls="cfgPanel">DoQ 配置</button>
         <button class="cfg-tab" role="tab" aria-selected="false" data-tab="dnscrypt" aria-controls="cfgPanel">描述文件 配置</button>
       </div>
@@ -2294,7 +2294,7 @@
         <div class="p-icon" style="animation-delay:2.0s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">3</div></div>
         <h3>DNS over HTTP3</h3><span class="tag">HTTP3 · RFC 9114</span>
         <p>基于 HTTP/3 与 QUIC 协议的超高速加密 DNS 查询，利用 0‑RTT 连接恢复与多路复用，大幅降低解析延迟，尤其适合 5G 与高动态网络环境。</p>
-        <a class="p-link" data-tab="ipv6" style="color:#e069b0;">立即配置 →</a>
+        <a class="p-link" data-tab="ios" style="color:#e069b0;">立即配置 →</a>
       </div>
     </div>
   </div>
@@ -2455,7 +2455,7 @@
         note: '支持 RFC 7858 标准，推荐在 Android Private DNS、iOS 描述文件与路由器中使用。',
         chips: ['Android', 'iOS', 'macOS', 'OpenWrt', '路由器']
       },
-      ipv6: {
+      ios: {
         title: 'HTTP3 加密解析地址 — 基于 HTTP/3 与 QUIC 的超高速加密通道',
         a: 'https://dns.ipv4dns.com/dns-query?h3',
         b: 'h3://dns.ipv4dns.com',
@@ -2506,7 +2506,7 @@
 
     // ===== 下载描述文件 =====
     window.downloadProfile = function() {
-      const url = 'https://dns.example.com/dns-profile.mobileconfig';
+      const url = '/download/doh.mobileconfig';
       window.location.href = url;
     };
 
@@ -2514,7 +2514,7 @@
     document.querySelectorAll('.p-link[data-tab]').forEach(link => {
       link.addEventListener('click', function(e) {
         e.preventDefault();
-        const tab = this.dataset.tab; // 'doh', 'dot', 'ipv6', 'doq'
+        const tab = this.dataset.tab; // 'doh', 'dot', 'ios', 'doq'
         // 滚动到配置区域
         document.getElementById('config').scrollIntoView({ behavior: 'smooth' });
         // 延迟等待滚动完成后点击对应选项卡
