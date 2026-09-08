@@ -970,7 +970,7 @@
     @media (max-width:768px) { .config-grid{grid-template-columns:1fr;gap:40px} .privacy-scene{min-height:300px} .config-cards{grid-template-columns:1fr} .cfg-line{font-size:12px;padding:8px 12px;flex-wrap:wrap} }
     @media (max-width:480px) { .cfg-panel { padding:16px; } }
 
-    /* ===== 第五板块：追求极致的用户体验（图标已替换为SVG） ===== */
+    /* ===== 第五板块：追求极致的用户体验 ===== */
     .sec-power { padding: 100px 0 110px; }
     .sec-head { text-align:center; max-width:640px; margin:0 auto 56px; }
     .sec-head .h-sub { margin:14px auto 0; }
@@ -1010,7 +1010,6 @@
     .p-icon .glyph {
       position:absolute; inset:0; display:grid; place-items:center;
       color:#fff; z-index:2;
-      /* 移除文字样式，由SVG控制 */
     }
     .p-icon .glyph svg {
       width: 36px;
@@ -1485,7 +1484,7 @@
   </div>
 </section>
 
-<!-- ===== 第五板块：追求极致的用户体验（图标已替换） ===== -->
+<!-- ===== 第五板块：追求极致的用户体验（含六边形+网络节点图标） ===== -->
 <section class="sec-power" id="power" aria-labelledby="power-title">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -1544,15 +1543,20 @@
         <a class="p-link" data-tab="doq" style="color:#16a34a;" data-i18n="power.doq.link">立即配置 →</a>
       </div>
 
-      <!-- HTTP3：火箭 -->
+      <!-- HTTP3：六边形 + 网络节点 -->
       <div class="power-card reveal" style="--gc:rgba(255,154,213,.25);--c1:#ff8ac8;--c2:#b48bff;--tc:#e069b0;--tb:rgba(255,138,200,.12);--tl:rgba(255,138,200,.32);transition-delay:.36s;">
         <div class="p-icon" style="animation-delay:2.0s;">
           <div class="ic-glass"></div>
           <div class="ic-glass2"></div>
           <div class="glyph">
             <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2s-4 4-4 8c0 2.5 1 4 4 6 3-2 4-3.5 4-6 0-4-4-8-4-8z"/>
-              <circle cx="12" cy="10" r="2"/>
+              <polygon points="12 2 22 7 22 17 12 22 2 17 2 7 12 2" stroke="white" stroke-width="1.6" fill="none"/>
+              <circle cx="12" cy="12" r="1.8" fill="white" stroke="none"/>
+              <circle cx="9" cy="8.5" r="1.4" fill="white" stroke="none" fill-opacity="0.7"/>
+              <circle cx="15" cy="15.5" r="1.4" fill="white" stroke="none" fill-opacity="0.7"/>
+              <line x1="9" y1="8.5" x2="12" y2="12" stroke="white" stroke-width="1.2" opacity="0.7"/>
+              <line x1="15" y1="15.5" x2="12" y2="12" stroke="white" stroke-width="1.2" opacity="0.7"/>
+              <line x1="9" y1="8.5" x2="15" y2="15.5" stroke="white" stroke-width="1" opacity="0.5" stroke-dasharray="2 2"/>
             </svg>
           </div>
         </div>
