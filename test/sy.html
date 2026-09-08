@@ -17,6 +17,9 @@
       --ink: #0f1a2e;
       --sub: #5a6e8a;
       --bg: #f6f9fe;
+      /* 绿色主题 */
+      --green: #00ff41;
+      --green-glow: 0 0 12px rgba(0,255,65,0.7);
     }
     html { scroll-behavior: smooth; }
     body {
@@ -26,7 +29,7 @@
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
     }
-    ::selection { background: rgba(47,107,255,0.2); }
+    ::selection { background: rgba(0,255,65,0.3); }
 
     .wrap {
       max-width: 1280px;
@@ -38,7 +41,7 @@
     @media (max-width: 768px) { .wrap { padding: 0 20px; } }
     @media (max-width: 480px) { .wrap { padding: 0 14px; } }
 
-    /* ===== 背景光晕（性能优化） ===== */
+    /* ===== 背景光晕（保留但减弱） ===== */
     .bg-glow {
       position: fixed;
       inset: 0;
@@ -51,7 +54,7 @@
       position: absolute;
       border-radius: 50%;
       filter: blur(60px);
-      opacity: .35;
+      opacity: .2; /* 降低以突显白色背景 */
       will-change: transform;
     }
     .g1 {
@@ -85,7 +88,6 @@
       letter-spacing: -0.02em;
     }
     .h-sub {
-      color: var(--sub);
       font-size: clamp(14px, 1.1vw, 17px);
       line-height: 1.8;
       margin-top: 14px;
@@ -104,26 +106,26 @@
       text-decoration: none;
     }
     .btn-primary {
-      background: linear-gradient(135deg, #2f6bff, #5b8cff);
-      color: #fff;
+      background: linear-gradient(135deg, #00ff41, #00cc33);
+      color: #0a120a;
       padding: 14px 44px;
-      box-shadow: 0 12px 32px rgba(47,107,255,.35);
+      box-shadow: 0 0 30px rgba(0,255,65,0.4);
     }
     .btn-primary:hover {
       transform: translateY(-3px) scale(1.03);
-      box-shadow: 0 20px 48px rgba(47,107,255,.45);
+      box-shadow: 0 0 50px rgba(0,255,65,0.6);
     }
     .btn-ghost {
-      background: rgba(255,255,255,.6);
-      color: var(--ink);
+      background: rgba(0,255,65,0.1);
+      color: var(--green);
       padding: 8px 22px;
-      border: 1px solid rgba(120,140,200,.3);
-      backdrop-filter: blur(6px);
+      border: 1px solid rgba(0,255,65,0.4);
+      backdrop-filter: blur(4px);
       font-size: 14px;
     }
     .btn-ghost:hover {
-      background: #fff;
-      box-shadow: 0 8px 24px rgba(80,100,180,.15);
+      background: rgba(0,255,65,0.2);
+      box-shadow: 0 0 24px rgba(0,255,65,0.2);
     }
     .reveal {
       opacity: 0;
@@ -147,9 +149,9 @@
     }
     header.scrolled {
       padding: 10px 0;
-      background: rgba(255,255,255,.78);
+      background: rgba(255,255,255,.8);
       backdrop-filter: blur(14px);
-      box-shadow: 0 6px 30px rgba(60,80,180,.08);
+      box-shadow: 0 6px 30px rgba(0,0,0,.08);
     }
     .nav {
       display: flex;
@@ -170,8 +172,8 @@
       height: 34px;
       border-radius: 10px;
       position: relative;
-      background: linear-gradient(135deg, #2f6bff, #8b7bff);
-      box-shadow: 0 6px 16px rgba(60,80,255,.35);
+      background: linear-gradient(135deg, #00ff41, #00cc33);
+      box-shadow: 0 0 20px rgba(0,255,65,0.5);
       flex-shrink: 0;
     }
     .logo-mark::after {
@@ -189,7 +191,7 @@
       width: 8px;
       height: 8px;
       border-radius: 3px;
-      background: #2f6bff;
+      background: #00ff41;
       z-index: 1;
     }
     .nav-links {
@@ -213,11 +215,11 @@
       width: 0;
       height: 2px;
       border-radius: 2px;
-      background: linear-gradient(90deg, var(--blue), var(--purple));
+      background: #00ff41;
       transition: .35s;
       transform: translateX(-50%);
     }
-    .nav-links a:hover { color: var(--blue); }
+    .nav-links a:hover { color: #00ff41; }
     .nav-links a:hover::after { width: 100%; }
     .nav-btns {
       display: flex;
@@ -258,7 +260,7 @@
         padding: 100px 28px 34px;
         transform: translateY(-110%);
         transition: .5s cubic-bezier(.2,.8,.2,1);
-        box-shadow: 0 30px 60px rgba(60,80,180,.15);
+        box-shadow: 0 30px 60px rgba(0,0,0,.15);
         border-radius: 0 0 28px 28px;
       }
       .mobile-menu.open { transform: translateY(0); }
@@ -269,7 +271,7 @@
         color: var(--ink);
         text-decoration: none;
         padding: 16px 4px;
-        border-bottom: 1px solid rgba(140,160,230,.12);
+        border-bottom: 1px solid rgba(0,0,0,.06);
       }
     }
 
@@ -293,9 +295,9 @@
       align-items: center;
       gap: 8px;
       font-size: 13px;
-      color: var(--blue);
-      background: rgba(47,107,255,.08);
-      border: 1px solid rgba(47,107,255,.2);
+      color: var(--green);
+      background: rgba(0,255,65,0.08);
+      border: 1px solid rgba(0,255,65,0.3);
       padding: 6px 20px;
       border-radius: 999px;
       margin-bottom: 28px;
@@ -306,29 +308,30 @@
       width: 7px;
       height: 7px;
       border-radius: 50%;
-      background: var(--blue);
-      box-shadow: 0 0 12px var(--blue);
+      background: var(--green);
+      box-shadow: 0 0 12px var(--green);
       animation: pulse 1.6s infinite;
     }
     .hero h1 {
       font-size: clamp(44px, 8vw, 100px);
       font-weight: 900;
       letter-spacing: -0.02em;
-      background: linear-gradient(135deg, #0f1a2e 30%, #3a4a8f 70%, #2f6bff);
+      background: linear-gradient(135deg, #00ff41, #00cc33);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
       animation: fadeUp 1s .35s both;
+      text-shadow: 0 0 40px rgba(0,255,65,0.3);
     }
     .hero h1 em {
       font-style: normal;
-      background: linear-gradient(135deg, #2f6bff, #8b7bff, #ff9ad5);
+      background: linear-gradient(135deg, #00ff41, #8b7bff);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
     .hero p {
-      color: var(--sub);
+      color: #333;
       font-size: clamp(15px, 1.4vw, 19px);
       margin-top: 20px;
       animation: fadeUp 1s .5s both;
@@ -336,7 +339,7 @@
       margin-left: auto;
       margin-right: auto;
     }
-    .hero p b { color: var(--ink); font-weight: 700; }
+    .hero p b { color: var(--green); font-weight: 700; text-shadow: 0 0 20px rgba(0,255,65,0.3); }
     .hero .btn-primary {
       margin-top: 40px;
       animation: fadeUp 1s .65s both;
@@ -347,7 +350,7 @@
       position: absolute;
       inset: -6px;
       border-radius: 999px;
-      border: 2px solid rgba(47,107,255,.3);
+      border: 2px solid rgba(0,255,65,0.4);
       animation: ringPulse 2.2s infinite;
     }
     @keyframes ringPulse {
@@ -383,17 +386,17 @@
       will-change: transform;
     }
     .shape .glass {
-      background: linear-gradient(135deg, rgba(255,255,255,.85), rgba(190,205,255,.35));
+      background: linear-gradient(135deg, rgba(0,255,65,0.15), rgba(0,200,50,0.1));
       backdrop-filter: blur(4px);
-      border: 1px solid rgba(255,255,255,.9);
-      box-shadow: 0 20px 40px rgba(100,120,220,.15);
+      border: 1px solid rgba(0,255,65,0.2);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.05);
     }
     .pyramid { left: 4%; top: 26%; animation: floaty2 7s ease-in-out infinite; --r: -8deg; }
-    .pyramid .glass { width: clamp(80px, 12vw, 160px); height: clamp(80px, 12vw, 160px); clip-path: polygon(50% 0,100% 100%,0 100%); background: linear-gradient(160deg,rgba(255,255,255,.95) 10%,rgba(160,180,255,.45) 55%,rgba(120,140,255,.35)); }
+    .pyramid .glass { width: clamp(80px, 12vw, 160px); height: clamp(80px, 12vw, 160px); clip-path: polygon(50% 0,100% 100%,0 100%); background: linear-gradient(160deg,rgba(0,255,65,0.2) 10%,rgba(0,200,50,0.1) 55%,rgba(0,150,40,0.05)); }
     .cube { right: 4%; top: 22%; animation: floaty 8s ease-in-out infinite; --r: 10deg; }
     .cube .glass { width: clamp(60px, 9vw, 130px); height: clamp(60px, 9vw, 130px); border-radius: 18px; transform: rotate(10deg) skewY(-4deg); }
     .sphere { right: 10%; bottom: 18%; animation: floaty2 9s ease-in-out infinite; --r: 0deg; }
-    .sphere .glass { width: clamp(40px, 5vw, 80px); height: clamp(40px, 5vw, 80px); border-radius: 50%; background: radial-gradient(circle at 32% 28%,rgba(255,255,255,.98),rgba(170,190,255,.45) 60%,rgba(140,160,255,.4)); }
+    .sphere .glass { width: clamp(40px, 5vw, 80px); height: clamp(40px, 5vw, 80px); border-radius: 50%; background: radial-gradient(circle at 32% 28%,rgba(0,255,65,0.3),rgba(0,200,50,0.1) 60%,rgba(0,150,40,0.05)); }
     .scroll-hint {
       position: absolute;
       bottom: 30px;
@@ -429,8 +432,55 @@
       .scroll-hint::after { height: 28px; }
     }
 
-    /* ===== 第二板块：一站式加密DNS（带二进制流canvas） ===== */
-    .sec-tool { padding: 120px 0 100px; overflow: hidden; }
+    /* ===== 第二板块：一站式加密DNS（白色背景 + 代码雨canvas） ===== */
+    .sec-tool {
+      padding: 120px 0 100px;
+      overflow: hidden;
+      position: relative;
+      background: #ffffff; /* 白色背景 */
+      color: var(--green);
+    }
+    /* 代码雨canvas覆盖整个板块 */
+    .matrix-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+      display: block;
+    }
+    .sec-tool .wrap {
+      position: relative;
+      z-index: 2;
+    }
+    /* 所有文本颜色改为绿色，带发光 */
+    .sec-tool .h-title,
+    .sec-tool .h-sub,
+    .sec-tool .kicker,
+    .sec-tool .feat-item h4,
+    .sec-tool .feat-item p,
+    .sec-tool .feat-icon {
+      color: var(--green);
+      text-shadow: 0 0 12px rgba(0,255,65,0.5);
+    }
+    .sec-tool .kicker::before {
+      background: linear-gradient(90deg, var(--green), transparent);
+    }
+    .sec-tool .feat-item {
+      background: rgba(0,255,65,0.05);
+      border-color: rgba(0,255,65,0.2);
+      backdrop-filter: blur(4px);
+    }
+    .sec-tool .feat-item:hover {
+      background: rgba(0,255,65,0.12);
+      border-color: rgba(0,255,65,0.4);
+    }
+    .sec-tool .feat-icon {
+      background: rgba(0,255,65,0.1);
+      border-color: rgba(0,255,65,0.3);
+    }
+
     .tool-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -443,16 +493,9 @@
       gap: 10px;
       font-size: 13px;
       font-weight: 700;
-      color: var(--purple);
       letter-spacing: .15em;
       margin-bottom: 18px;
-    }
-    .tool-copy .kicker::before {
-      content: "";
-      width: 34px;
-      height: 2px;
-      background: linear-gradient(90deg,var(--purple),transparent);
-      border-radius: 2px;
+      color: var(--green);
     }
     .feat-list {
       margin-top: 34px;
@@ -460,39 +503,8 @@
       flex-direction: column;
       gap: 14px;
     }
-    .feat-item {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 16px 22px;
-      border-radius: 18px;
-      background: rgba(255,255,255,.55);
-      border: 1px solid rgba(160,175,235,.25);
-      backdrop-filter: blur(6px);
-      box-shadow: 0 8px 28px rgba(100,120,220,.06);
-      transition: .3s;
-      cursor: default;
-    }
-    .feat-item:hover {
-      transform: translateX(6px);
-      box-shadow: 0 14px 36px rgba(100,120,220,.12);
-      background: rgba(255,255,255,.85);
-    }
-    .feat-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 13px;
-      display: grid;
-      place-items: center;
-      font-size: 20px;
-      flex: none;
-      background: linear-gradient(135deg,rgba(47,107,255,.12),rgba(139,123,255,.12));
-      border: 1px solid rgba(47,107,255,.2);
-    }
-    .feat-item h4 { font-size: 16px; font-weight: 700; }
-    .feat-item p { font-size: 13px; color: var(--sub); margin-top: 2px; }
 
-    /* DNS 核心（包含canvas背景） */
+    /* DNS 核心（透明，露出背景代码雨） */
     .dns-stage {
       position: relative;
       display: flex;
@@ -501,13 +513,14 @@
       min-height: 460px;
       overflow: hidden;
       border-radius: 40px;
+      z-index: 1;
     }
     .dns-halo {
       position: absolute;
       width: 380px;
       height: 380px;
       border-radius: 50%;
-      background: radial-gradient(circle,rgba(160,180,255,.3),transparent 65%);
+      background: radial-gradient(circle, rgba(0,255,65,0.15), transparent 65%);
       filter: blur(24px);
       animation: pulse 5s ease-in-out infinite;
     }
@@ -524,52 +537,45 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative;
-      overflow: hidden;
-      /* 背景由canvas绘制，这里留空 */
-      background-color: #0a120a; /* 深暗绿底色，作为canvas未加载时的后备 */
-      border: 1px solid rgba(255,255,255,.95);
+      background: rgba(255,255,255,0.08); /* 半透明白色，让背景代码雨透出 */
       backdrop-filter: blur(2px);
-      box-shadow: 0 40px 90px rgba(90,110,220,.28), inset 0 3px 14px rgba(255,255,255,.15), inset 0 -14px 34px rgba(120,140,255,.15);
+      border: 1.5px solid rgba(0,255,65,0.3);
+      box-shadow: 0 0 60px rgba(0,255,65,0.15), inset 0 0 40px rgba(0,255,65,0.05);
+      position: relative;
       z-index: 2;
+      overflow: hidden;
     }
-    /* canvas 作为背景层 */
-    #binaryCanvas {
+    .dns-core::before {
+      content: "";
       position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
+      inset: 10px;
       border-radius: 50%;
-      z-index: 1;
-      pointer-events: none;
-      display: block;
+      border: 1px solid rgba(0,255,65,0.2);
+      background: rgba(0,255,65,0.02);
     }
     .dns-core .txt {
       position: relative;
       z-index: 3;
       text-align: center;
-      color: #fff; /* 文字颜色亮色，确保在二进制流上清晰 */
-      text-shadow: 0 0 20px rgba(0,255,65,0.5), 0 0 40px rgba(0,255,65,0.3);
+      color: var(--green);
+      text-shadow: 0 0 30px rgba(0,255,65,0.8);
       pointer-events: none;
     }
     .dns-core .txt b {
       font-size: 68px;
       font-weight: 900;
       letter-spacing: .04em;
-      background: linear-gradient(135deg, #e0ffe0, #88ff88);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      filter: drop-shadow(0 0 20px rgba(0,255,100,0.6));
+      color: var(--green);
+      text-shadow: 0 0 40px rgba(0,255,65,0.9);
     }
     .dns-core .txt small {
       display: block;
       font-size: 11px;
       letter-spacing: .4em;
-      color: #aaffaa;
+      color: var(--green);
       margin-top: 2px;
       font-weight: 700;
-      text-shadow: 0 0 12px rgba(0,255,100,0.5);
+      opacity: 0.8;
     }
 
     @media (max-width: 768px) {
@@ -590,7 +596,7 @@
     .sec-anywhere {
       padding: 100px 0;
       overflow: hidden;
-      background: linear-gradient(180deg,rgba(235,240,255,0),rgba(235,240,255,.4) 30%,rgba(255,240,250,.3) 70%,rgba(235,240,255,0));
+      background: linear-gradient(180deg,rgba(255,255,255,0),rgba(0,255,65,0.03) 30%,rgba(0,200,50,0.02) 70%,rgba(255,255,255,0));
     }
     .anywhere-grid {
       display: grid;
@@ -610,12 +616,10 @@
       display: block;
       font-size: 24px;
       font-weight: 900;
-      background: linear-gradient(135deg,#1c2a6e,#2f6bff);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+      color: var(--green);
+      text-shadow: 0 0 20px rgba(0,255,65,0.3);
     }
-    .stat span { font-size: 13px; color: var(--sub); font-weight: 500; }
+    .stat span { font-size: 13px; color: #333; font-weight: 500; }
 
     .shield-scene {
       position: relative;
@@ -637,7 +641,7 @@
       width: 220px;
       height: 220px;
       border-radius: 50%;
-      background: radial-gradient(circle,rgba(120,150,255,.3),transparent 65%);
+      background: radial-gradient(circle,rgba(0,255,65,0.15),transparent 65%);
       filter: blur(24px);
       animation: pulse 5s ease-in-out infinite;
     }
@@ -651,7 +655,7 @@
     .shield-inner {
       width: 100%;
       height: 100%;
-      filter: drop-shadow(0 20px 40px rgba(70,95,230,.3));
+      filter: drop-shadow(0 20px 40px rgba(0,255,65,0.2));
     }
     .shield-svg { width: 100%; height: 100%; overflow: visible; }
     .shield-shadow {
@@ -662,7 +666,7 @@
       height: 20px;
       border-radius: 50%;
       transform: translateX(-50%);
-      background: radial-gradient(ellipse,rgba(80,100,220,.2),transparent 70%);
+      background: radial-gradient(ellipse,rgba(0,255,65,0.15),transparent 70%);
       filter: blur(6px);
       animation: shadowPulse 6.5s ease-in-out infinite;
     }
@@ -678,7 +682,7 @@
       height: 180px;
       border-radius: 50%;
       transform: translate(-50%,-50%);
-      border: 1.5px solid rgba(110,135,255,.4);
+      border: 1.5px solid rgba(0,255,65,0.3);
       opacity: 0;
       pointer-events: none;
       animation: shieldRipple 3.8s cubic-bezier(.2,.6,.3,1) infinite;
@@ -697,15 +701,16 @@
       font-size: 12px;
       font-weight: 800;
       white-space: nowrap;
-      background: rgba(255,255,255,.85);
-      border: 1px solid rgba(160,175,235,.4);
+      background: rgba(0,255,65,0.08);
+      border: 1px solid rgba(0,255,65,0.3);
       backdrop-filter: blur(4px);
-      box-shadow: 0 8px 20px rgba(100,120,220,.12);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
       animation: orbitFloat 7s ease-in-out infinite;
+      color: var(--green);
     }
-    .oc1 { top: 4%; left: 2%; color: #2f6bff; }
-    .oc2 { top: 36%; right: -4%; color: #7a5ff0; animation-delay: 1.4s; }
-    .oc3 { bottom: 2%; left: 4%; color: #e069b0; animation-delay: 2.8s; }
+    .oc1 { top: 4%; left: 2%; }
+    .oc2 { top: 36%; right: -4%; animation-delay: 1.4s; }
+    .oc3 { bottom: 2%; left: 4%; animation-delay: 2.8s; }
     @keyframes orbitFloat {
       0%,100% { transform: translateY(0) rotate(-2deg); }
       50% { transform: translateY(-14px) rotate(3deg); }
@@ -717,12 +722,12 @@
       gap: 14px;
     }
     .stack-card {
-      background: rgba(255,255,255,.7);
+      background: rgba(255,255,255,.8);
       backdrop-filter: blur(8px);
-      border: 1px solid rgba(160,175,235,.2);
+      border: 1px solid rgba(0,255,65,0.15);
       border-radius: 16px;
       padding: 16px 20px;
-      box-shadow: 0 10px 28px rgba(100,120,220,.06);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.03);
       transition: .3s;
       display: flex;
       align-items: center;
@@ -730,8 +735,8 @@
     }
     .stack-card:hover {
       transform: translateX(4px);
-      box-shadow: 0 14px 34px rgba(100,120,220,.12);
-      background: rgba(255,255,255,.9);
+      box-shadow: 0 14px 34px rgba(0,0,0,0.06);
+      background: rgba(255,255,255,.95);
     }
     .stack-card .sc-icon {
       flex: none;
@@ -744,21 +749,21 @@
       width: 30px;
       height: 30px;
       fill: none;
-      stroke: var(--blue);
+      stroke: var(--green);
       stroke-width: 1.8;
       stroke-linecap: round;
       stroke-linejoin: round;
     }
-    .stack-card .sc-icon svg .p { stroke: var(--purple); }
-    .stack-card .sc-icon svg .a { stroke: #e069b0; }
-    .stack-card h5 { font-size: 14px; font-weight: 700; }
-    .stack-card p { font-size: 12px; color: var(--sub); margin-top: 1px; }
+    .stack-card .sc-icon svg .p { stroke: #00cc33; }
+    .stack-card .sc-icon svg .a { stroke: #00aa2a; }
+    .stack-card h5 { font-size: 14px; font-weight: 700; color: var(--green); text-shadow: 0 0 10px rgba(0,255,65,0.2); }
+    .stack-card p { font-size: 12px; color: #333; margin-top: 1px; }
     .mini-bar {
       margin-top: 4px;
       width: 100%;
       height: 3px;
       border-radius: 3px;
-      background: rgba(47,107,255,.1);
+      background: rgba(0,255,65,0.1);
       overflow: hidden;
     }
     .mini-bar i {
@@ -766,7 +771,7 @@
       height: 100%;
       width: 70%;
       border-radius: 3px;
-      background: linear-gradient(90deg,#2f6bff,#8b7bff);
+      background: linear-gradient(90deg,#00ff41,#00cc33);
     }
     .mini-bar i.w50 { width: 50%; }
     .mini-bar i.w90 { width: 90%; }
@@ -784,7 +789,7 @@
       .oc2 { right: 0; }
     }
 
-    /* ===== 第四板块：配置（门下方小圆球已移除） ===== */
+    /* ===== 第四板块：配置 ===== */
     .sec-config { padding: 110px 0; overflow: hidden; }
     .config-grid {
       display: grid;
@@ -804,7 +809,7 @@
       height: 300px;
       top: 6%;
       border-radius: 50%;
-      background: radial-gradient(circle,rgba(170,185,255,.3),transparent 65%);
+      background: radial-gradient(circle,rgba(0,255,65,0.08),transparent 65%);
       filter: blur(20px);
       animation: pulse 6s ease-in-out infinite;
     }
@@ -813,10 +818,10 @@
       width: 200px;
       height: 330px;
       border-radius: 100px 100px 16px 16px;
-      background: linear-gradient(165deg,rgba(255,255,255,.9),rgba(200,210,255,.5) 55%,rgba(160,175,255,.4));
-      border: 1.5px solid rgba(255,255,255,.95);
+      background: linear-gradient(165deg,rgba(255,255,255,.9),rgba(240,245,240,.5) 55%,rgba(200,220,200,.4));
+      border: 1.5px solid rgba(0,255,65,0.2);
       backdrop-filter: blur(8px);
-      box-shadow: 0 30px 70px rgba(90,110,220,.2), inset 0 4px 18px rgba(255,255,255,.95), inset 0 -18px 40px rgba(120,140,255,.2);
+      box-shadow: 0 30px 70px rgba(0,0,0,0.05), inset 0 4px 18px rgba(255,255,255,.8), inset 0 -18px 40px rgba(0,255,65,0.05);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -829,7 +834,7 @@
       position: absolute;
       inset: 14px;
       border-radius: 86px 86px 12px 12px;
-      border: 1.5px solid rgba(255,255,255,.8);
+      border: 1.5px solid rgba(0,255,65,0.15);
       background: linear-gradient(170deg,rgba(255,255,255,.5),rgba(255,255,255,.06));
     }
     .door .door-logo {
@@ -840,10 +845,10 @@
       border-radius: 18px;
       display: grid;
       place-items: center;
-      background: linear-gradient(135deg,rgba(47,107,255,.9),rgba(139,123,255,.9));
-      box-shadow: 0 14px 30px rgba(80,100,255,.3), inset 0 2px 6px rgba(255,255,255,.5);
+      background: linear-gradient(135deg, #00ff41, #00cc33);
+      box-shadow: 0 0 30px rgba(0,255,65,0.3);
       font-weight: 900;
-      color: #fff;
+      color: #0a120a;
       font-size: 18px;
       letter-spacing: .05em;
       animation: floaty2 5s ease-in-out infinite;
@@ -853,14 +858,14 @@
       z-index: 2;
       font-size: 13px;
       font-weight: 700;
-      color: #4a55a0;
+      color: #2a4a2a;
       letter-spacing: .2em;
     }
     .door .door-sub {
       position: relative;
       z-index: 2;
       font-size: 10px;
-      color: #8891c4;
+      color: #6a8a6a;
       letter-spacing: .1em;
     }
     .door .knob {
@@ -871,8 +876,8 @@
       height: 12px;
       border-radius: 50%;
       z-index: 2;
-      background: radial-gradient(circle at 32% 30%,#fff,#8b7bff);
-      box-shadow: 0 0 10px rgba(139,123,255,.5);
+      background: radial-gradient(circle at 32% 30%,#fff,#00ff41);
+      box-shadow: 0 0 12px rgba(0,255,65,0.4);
     }
 
     .config-copy .kicker {
@@ -881,7 +886,7 @@
       gap: 10px;
       font-size: 13px;
       font-weight: 700;
-      color: var(--purple);
+      color: var(--green);
       letter-spacing: .15em;
       margin-bottom: 18px;
     }
@@ -889,7 +894,7 @@
       content: "";
       width: 34px;
       height: 2px;
-      background: linear-gradient(90deg,var(--purple),transparent);
+      background: linear-gradient(90deg,var(--green),transparent);
       border-radius: 2px;
     }
     .cfg-tabs {
@@ -904,30 +909,30 @@
       font-size: 14px;
       font-weight: 700;
       cursor: pointer;
-      border: 1px solid rgba(120,140,240,.3);
+      border: 1px solid rgba(0,255,65,0.3);
       background: rgba(255,255,255,.6);
-      color: #4a55a0;
+      color: #2a4a2a;
       transition: .3s;
     }
     .cfg-tab.active, .cfg-tab:hover {
-      background: linear-gradient(135deg,#2f6bff,#6b7dff);
-      color: #fff;
+      background: linear-gradient(135deg,#00ff41,#00cc33);
+      color: #0a120a;
       border-color: transparent;
-      box-shadow: 0 8px 20px rgba(60,90,255,.25);
+      box-shadow: 0 0 30px rgba(0,255,65,0.3);
       transform: translateY(-2px);
     }
     .cfg-panel {
       border-radius: 22px;
       padding: 26px;
-      background: rgba(255,255,255,.65);
-      border: 1px solid rgba(160,175,235,.25);
+      background: rgba(255,255,255,.7);
+      border: 1px solid rgba(0,255,65,0.15);
       backdrop-filter: blur(10px);
-      box-shadow: 0 16px 40px rgba(100,120,220,.08);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.03);
       animation: fadeUp .5s both;
     }
     .cfg-panel h5 {
       font-size: 14px;
-      color: var(--sub);
+      color: #333;
       font-weight: 500;
       margin-bottom: 12px;
     }
@@ -938,17 +943,18 @@
       gap: 12px;
       padding: 10px 14px;
       border-radius: 14px;
-      background: rgba(244,246,255,.9);
-      border: 1px solid rgba(160,175,235,.2);
+      background: rgba(240,245,240,.9);
+      border: 1px solid rgba(0,255,65,0.15);
       margin-bottom: 10px;
       font-size: 13px;
       font-weight: 700;
       font-family: 'Inter', monospace;
       transition: .3s;
       word-break: break-all;
+      color: #1a3a1a;
     }
     .cfg-line:hover {
-      border-color: rgba(47,107,255,.4);
+      border-color: rgba(0,255,65,0.4);
       transform: translateX(4px);
     }
     .cfg-line button {
@@ -956,18 +962,18 @@
       font-size: 11px;
       padding: 4px 12px;
       border-radius: 999px;
-      border: 1px solid rgba(47,107,255,.35);
-      background: rgba(47,107,255,.08);
-      color: var(--blue);
+      border: 1px solid rgba(0,255,65,0.3);
+      background: rgba(0,255,65,0.05);
+      color: var(--green);
       cursor: pointer;
       font-family: inherit;
       font-weight: 700;
       transition: .3s;
     }
-    .cfg-line button:hover { background: var(--blue); color: #fff; }
+    .cfg-line button:hover { background: #00ff41; color: #0a120a; }
     .cfg-note {
       font-size: 12px;
-      color: var(--sub);
+      color: #555;
       line-height: 1.8;
       margin-top: 6px;
     }
@@ -981,9 +987,9 @@
       font-size: 11px;
       padding: 5px 14px;
       border-radius: 999px;
-      background: rgba(139,123,255,.08);
-      border: 1px solid rgba(139,123,255,.25);
-      color: #6a5bd8;
+      background: rgba(0,255,65,0.05);
+      border: 1px solid rgba(0,255,65,0.2);
+      color: #2a5a2a;
       font-weight: 700;
     }
     .config-cards {
@@ -993,47 +999,47 @@
       margin-top: 16px;
     }
     .cfg-card {
-      background: rgba(255,255,255,.5);
+      background: rgba(255,255,255,.6);
       border-radius: 14px;
       padding: 14px 16px;
-      border: 1px solid rgba(160,175,235,.2);
+      border: 1px solid rgba(0,255,65,0.1);
       backdrop-filter: blur(4px);
       transition: .3s;
       cursor: default;
     }
     .cfg-card:hover {
-      background: rgba(255,255,255,.8);
+      background: rgba(255,255,255,.9);
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(100,120,220,.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
     }
     .cfg-card .c-label {
       display: flex;
       justify-content: space-between;
       font-size: 12px;
       font-weight: 600;
-      color: var(--ink);
+      color: #1a3a1a;
     }
-    .cfg-card .c-label span { color: var(--sub); font-weight: 400; }
+    .cfg-card .c-label span { color: #555; font-weight: 400; }
     .cfg-card .c-bar {
       margin-top: 6px;
       width: 100%;
       height: 4px;
       border-radius: 4px;
-      background: rgba(47,107,255,.08);
+      background: rgba(0,255,65,0.08);
       overflow: hidden;
     }
     .cfg-card .c-bar i {
       display: block;
       height: 100%;
       border-radius: 4px;
-      background: linear-gradient(90deg,#2f6bff,#8b7bff);
+      background: linear-gradient(90deg,#00ff41,#00cc33);
       transition: width 1s ease;
     }
-    .cfg-card .c-bar.i2 i { background: linear-gradient(90deg,#8b7bff,#ff9ad5); }
-    .cfg-card .c-bar.i3 i { background: linear-gradient(90deg,#ff9ad5,#fbbf24); }
+    .cfg-card .c-bar.i2 i { background: linear-gradient(90deg,#00cc33,#00aa2a); }
+    .cfg-card .c-bar.i3 i { background: linear-gradient(90deg,#00aa2a,#88ff88); }
     .cfg-card small {
       font-size: 10px;
-      color: var(--sub);
+      color: #666;
       display: block;
       margin-top: 3px;
     }
@@ -1060,7 +1066,8 @@
       max-width: 640px;
       margin: 0 auto 56px;
     }
-    .sec-head .h-sub { margin: 14px auto 0; }
+    .sec-head .h-sub { margin: 14px auto 0; color: #333; }
+    .sec-head .h-title { color: var(--green); text-shadow: 0 0 30px rgba(0,255,65,0.2); }
     .power-grid {
       display: grid;
       grid-template-columns: repeat(3,1fr);
@@ -1071,14 +1078,14 @@
       border-radius: 28px;
       padding: 40px 28px;
       text-align: center;
-      background: linear-gradient(165deg,rgba(255,255,255,.9),rgba(232,238,255,.5));
-      border: 1px solid rgba(255,255,255,.95);
+      background: linear-gradient(165deg,rgba(255,255,255,.9),rgba(240,245,240,.5));
+      border: 1px solid rgba(0,255,65,0.1);
       backdrop-filter: blur(8px);
-      box-shadow: 0 24px 60px rgba(100,120,220,.1), inset 0 2px 12px rgba(255,255,255,.9);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.02), inset 0 2px 12px rgba(255,255,255,.9);
       transition: .4s cubic-bezier(.2,.8,.2,1);
       overflow: hidden;
     }
-    .power-card:hover { transform: translateY(-10px); box-shadow: 0 36px 80px rgba(80,100,220,.18); }
+    .power-card:hover { transform: translateY(-10px); box-shadow: 0 36px 80px rgba(0,0,0,0.04); }
     .power-card * { min-width: 0; max-width: 100%; overflow-wrap: break-word; }
     .power-card::before {
       content: "";
@@ -1089,7 +1096,7 @@
       width: 160px;
       height: 160px;
       border-radius: 50%;
-      background: radial-gradient(circle,var(--gc,rgba(47,107,255,.12)),transparent 70%);
+      background: radial-gradient(circle,var(--gc,rgba(0,255,65,0.05)),transparent 70%);
       filter: blur(8px);
       transition: .4s;
     }
@@ -1106,18 +1113,18 @@
       inset: 0;
       border-radius: 22px;
       transform: rotate(8deg);
-      background: linear-gradient(150deg,rgba(255,255,255,.95),rgba(190,205,255,.5));
-      border: 1px solid rgba(255,255,255,.95);
-      box-shadow: 0 16px 36px rgba(100,120,220,.15), inset 0 2px 8px rgba(255,255,255,.9);
+      background: linear-gradient(150deg,rgba(255,255,255,.95),rgba(200,220,200,.5));
+      border: 1px solid rgba(0,255,65,0.15);
+      box-shadow: 0 16px 36px rgba(0,0,0,0.02), inset 0 2px 8px rgba(255,255,255,.9);
     }
     .p-icon .ic-glass2 {
       position: absolute;
       inset: 14px;
       border-radius: 14px;
       transform: rotate(-8deg);
-      background: linear-gradient(150deg,var(--c1,#2f6bff),var(--c2,#8b7bff));
+      background: linear-gradient(150deg,var(--c1,#00ff41),var(--c2,#00cc33));
       opacity: .9;
-      box-shadow: 0 10px 24px rgba(80,100,255,.25), inset 0 2px 6px rgba(255,255,255,.5);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.05), inset 0 2px 6px rgba(255,255,255,.5);
     }
     .p-icon .glyph {
       position: absolute;
@@ -1126,11 +1133,11 @@
       place-items: center;
       font-size: 22px;
       font-weight: 900;
-      color: #fff;
+      color: #0a120a;
       z-index: 2;
-      text-shadow: 0 2px 8px rgba(40,60,160,.4);
+      text-shadow: 0 0 12px rgba(255,255,255,0.3);
     }
-    .power-card h3 { font-size: 18px; font-weight: 900; }
+    .power-card h3 { font-size: 18px; font-weight: 900; color: var(--green); text-shadow: 0 0 20px rgba(0,255,65,0.2); }
     .power-card .tag {
       display: inline-block;
       margin-top: 6px;
@@ -1139,13 +1146,13 @@
       letter-spacing: .1em;
       padding: 3px 14px;
       border-radius: 999px;
-      color: var(--tc,#2f6bff);
-      background: var(--tb,rgba(47,107,255,.1));
-      border: 1px solid var(--tl,rgba(47,107,255,.25));
+      color: var(--green);
+      background: rgba(0,255,65,0.05);
+      border: 1px solid rgba(0,255,65,0.2);
     }
     .power-card p {
       font-size: 13px;
-      color: var(--sub);
+      color: #444;
       line-height: 1.8;
       margin-top: 12px;
     }
@@ -1156,7 +1163,7 @@
       margin-top: 16px;
       font-size: 13px;
       font-weight: 700;
-      color: var(--tc,#2f6bff);
+      color: var(--green);
       text-decoration: none;
       transition: .3s;
     }
@@ -1175,7 +1182,7 @@
       position: absolute;
       border-radius: 50%;
       filter: blur(60px);
-      opacity: .3;
+      opacity: .15;
       pointer-events: none;
     }
     .cb1 {
@@ -1183,7 +1190,7 @@
       height: 320px;
       left: 6%;
       top: 8%;
-      background: radial-gradient(circle,#c3d2ff,transparent 65%);
+      background: radial-gradient(circle,#00ff41,transparent 65%);
       animation: drift 18s ease-in-out infinite alternate;
     }
     .cb2 {
@@ -1191,7 +1198,7 @@
       height: 280px;
       right: 4%;
       bottom: 4%;
-      background: radial-gradient(circle,#ffd3ec,transparent 65%);
+      background: radial-gradient(circle,#00cc33,transparent 65%);
       animation: drift 22s ease-in-out infinite alternate-reverse;
     }
     .cta-inner { position: relative; z-index: 2; }
@@ -1200,7 +1207,7 @@
       inset: 0;
       pointer-events: none;
     }
-    .cta-shapes .shape .glass { border-radius: 18px; }
+    .cta-shapes .shape .glass { border-radius: 18px; background: rgba(0,255,65,0.03); border-color: rgba(0,255,65,0.05); }
     .cs1 { left: 12%; top: 22%; animation: floaty 7s ease-in-out infinite; }
     .cs1 .glass { width: 60px; height: 60px; }
     .cs2 { right: 12%; top: 16%; animation: floaty2 8s ease-in-out infinite; --r: 14deg; }
@@ -1212,12 +1219,10 @@
     .sec-cta h2 {
       font-size: clamp(30px, 4.8vw, 50px);
       font-weight: 900;
-      background: linear-gradient(135deg,#2f6bff 20%,#8b7bff 55%,#ff9ad5);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+      color: var(--green);
+      text-shadow: 0 0 40px rgba(0,255,65,0.3);
     }
-    .sec-cta p { color: var(--sub); margin-top: 14px; font-size: 15px; }
+    .sec-cta p { color: #444; margin-top: 14px; font-size: 15px; }
     .sec-cta .btn-primary { margin-top: 34px; }
     @media (max-width: 768px) { .cs1,.cs2,.cs3,.cs4 { display: none; } }
 
@@ -1230,10 +1235,10 @@
       border-radius: 32px;
       padding: 48px 40px;
       text-align: center;
-      background: linear-gradient(165deg,rgba(255,255,255,.92),rgba(228,235,255,.6));
-      border: 1px solid rgba(255,255,255,.95);
+      background: linear-gradient(165deg,rgba(255,255,255,.92),rgba(240,245,240,.6));
+      border: 1px solid rgba(0,255,65,0.1);
       backdrop-filter: blur(10px);
-      box-shadow: 0 32px 80px rgba(90,110,220,.12), inset 0 2px 14px rgba(255,255,255,.9);
+      box-shadow: 0 32px 80px rgba(0,0,0,0.02), inset 0 2px 14px rgba(255,255,255,.9);
       animation: floaty 9s ease-in-out infinite;
     }
     .stats-head {
@@ -1274,7 +1279,7 @@
     .stats-status {
       font-size: 12px;
       font-weight: 700;
-      color: var(--sub);
+      color: #555;
       letter-spacing: .04em;
       transition: color .5s;
     }
@@ -1282,6 +1287,8 @@
       font-size: clamp(18px, 2.2vw, 24px);
       font-weight: 900;
       margin-top: 14px;
+      color: var(--green);
+      text-shadow: 0 0 20px rgba(0,255,65,0.2);
     }
     .stats-num {
       margin: 18px auto 0;
@@ -1298,7 +1305,7 @@
       font-weight: 900;
       line-height: 1.1;
       letter-spacing: -0.01em;
-      background: linear-gradient(135deg,#1c2a6e,#2f6bff 55%,#8b7bff);
+      background: linear-gradient(135deg, #00ff41, #00cc33);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -1315,14 +1322,14 @@
       margin-top: 6px;
       flex-wrap: wrap;
     }
-    .stats-label span { font-size: 13px; color: var(--sub); }
+    .stats-label span { font-size: 13px; color: #555; }
     .stats-label i {
       font-style: normal;
       font-size: 11px;
       font-weight: 700;
-      color: #7a5ff0;
-      background: rgba(139,123,255,.1);
-      border: 1px solid rgba(139,123,255,.3);
+      color: #00aa2a;
+      background: rgba(0,255,65,0.05);
+      border: 1px solid rgba(0,255,65,0.2);
       padding: 2px 12px;
       border-radius: 999px;
       white-space: nowrap;
@@ -1330,18 +1337,18 @@
     .stats-time {
       margin-top: 22px;
       font-size: 12px;
-      color: var(--sub);
+      color: #555;
       display: inline-flex;
       align-items: center;
       gap: 6px;
       padding: 6px 18px;
       border-radius: 999px;
       background: rgba(255,255,255,.6);
-      border: 1px solid rgba(160,175,235,.3);
+      border: 1px solid rgba(0,255,65,0.1);
       flex-wrap: wrap;
       justify-content: center;
     }
-    .stats-time b { color: var(--ink); font-variant-numeric: tabular-nums; }
+    .stats-time b { color: var(--green); font-variant-numeric: tabular-nums; text-shadow: 0 0 12px rgba(0,255,65,0.2); }
     .stats-wave {
       position: absolute;
       left: 50%;
@@ -1351,7 +1358,7 @@
       transform: translate(-50%,-50%);
       border-radius: 50%;
       pointer-events: none;
-      background: radial-gradient(circle,rgba(120,150,255,.12),transparent 62%);
+      background: radial-gradient(circle,rgba(0,255,65,0.05),transparent 62%);
       filter: blur(8px);
       animation: pulse 6s ease-in-out infinite;
     }
@@ -1360,9 +1367,9 @@
       pointer-events: none;
     }
     .sd1 { left: -2%; top: 10%; animation: floaty 7s ease-in-out infinite; }
-    .sd1 .glass { width: 44px; height: 44px; border-radius: 12px; }
+    .sd1 .glass { width: 44px; height: 44px; border-radius: 12px; background: rgba(0,255,65,0.03); border-color: rgba(0,255,65,0.05); }
     .sd2 { right: -2%; bottom: 12%; animation: floaty2 8s ease-in-out infinite; }
-    .sd2 .glass { width: 36px; height: 36px; border-radius: 50%; }
+    .sd2 .glass { width: 36px; height: 36px; border-radius: 50%; background: rgba(0,255,65,0.03); border-color: rgba(0,255,65,0.05); }
     @media (max-width: 768px) {
       .stats-shell { padding: 34px 20px; margin: 0 6px; }
       .stats-num b { font-size: clamp(28px, 7vw, 42px); }
@@ -1375,8 +1382,8 @@
 
     /* ===== 页脚 ===== */
     footer {
-      background: #0f1330;
-      color: #aab2d8;
+      background: #0a120a;
+      color: #88aa88;
       padding: 60px 0 30px;
       position: relative;
       overflow: hidden;
@@ -1388,7 +1395,7 @@
       left: 0;
       right: 0;
       height: 80px;
-      background: linear-gradient(180deg,#f6f9fe,#0f1330);
+      background: linear-gradient(180deg,#f6f9fe,#0a120a);
     }
     .f-grid {
       position: relative;
@@ -1402,10 +1409,10 @@
       line-height: 1.8;
       margin-top: 12px;
       max-width: 260px;
-      color: #8a93c4;
+      color: #6a8a6a;
     }
     .f-col h6 {
-      color: #fff;
+      color: #ccffcc;
       font-size: 13px;
       font-weight: 700;
       margin-bottom: 16px;
@@ -1414,26 +1421,26 @@
     .f-col a {
       display: block;
       font-size: 12.5px;
-      color: #8a93c4;
+      color: #6a8a6a;
       text-decoration: none;
       margin-bottom: 8px;
       transition: .3s;
     }
-    .f-col a:hover { color: #fff; transform: translateX(3px); }
+    .f-col a:hover { color: #00ff41; transform: translateX(3px); }
     .f-bottom {
       position: relative;
       margin-top: 40px;
       padding-top: 18px;
-      border-top: 1px solid rgba(255,255,255,.06);
+      border-top: 1px solid rgba(0,255,65,0.05);
       display: flex;
       justify-content: space-between;
       font-size: 11.5px;
-      color: #6b74a8;
+      color: #4a6a4a;
       flex-wrap: wrap;
       gap: 8px;
     }
-    .f-bottom a { color: #8a93c4; text-decoration: none; margin-left: 16px; }
-    .f-bottom a:hover { color: #fff; }
+    .f-bottom a { color: #6a8a6a; text-decoration: none; margin-left: 16px; }
+    .f-bottom a:hover { color: #00ff41; }
     @media (max-width: 1024px) { .f-grid { grid-template-columns: 1fr 1fr 1fr; } }
     @media (max-width: 768px) { .f-grid { grid-template-columns: 1fr 1fr; gap: 24px; } }
     @media (max-width: 480px) { .f-grid { grid-template-columns: 1fr; } }
@@ -1445,16 +1452,17 @@
       left: 50%;
       transform: translate(-50%,80px);
       z-index: 999;
-      background: rgba(20,24,60,.9);
-      color: #fff;
+      background: rgba(10,18,10,.92);
+      color: #00ff41;
       font-size: 12.5px;
       padding: 10px 22px;
       border-radius: 999px;
       backdrop-filter: blur(6px);
-      box-shadow: 0 12px 32px rgba(20,24,60,.35);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.4);
       transition: .4s cubic-bezier(.2,.8,.2,1);
       opacity: 0;
       pointer-events: none;
+      border: 1px solid rgba(0,255,65,0.2);
     }
     #toast.show { transform: translate(-50%,0); opacity: 1; }
 
@@ -1477,7 +1485,7 @@
 <!-- 导航 -->
 <header id="header">
   <div class="wrap nav">
-    <a class="logo" href="#"><span class="logo-mark"></span>DNS<span style="color:var(--blue)">安全</span></a>
+    <a class="logo" href="#"><span class="logo-mark"></span>DNS<span style="color:var(--green)">安全</span></a>
     <ul class="nav-links">
       <li><a href="#tool">产品功能</a></li>
       <li><a href="#config">配置指南</a></li>
@@ -1501,7 +1509,7 @@
 <!-- Hero -->
 <section class="hero">
   <div class="hero-shapes">
-    <div class="shape pyramid"><div class="glass"></div><div class="pyramid-base" style="position:absolute;left:-14%;top:82%;width:128%;height:26px;border-radius:50%;background:radial-gradient(ellipse,rgba(90,110,220,.2),transparent 70%);filter:blur(5px);"></div></div>
+    <div class="shape pyramid"><div class="glass"></div><div class="pyramid-base" style="position:absolute;left:-14%;top:82%;width:128%;height:26px;border-radius:50%;background:radial-gradient(ellipse,rgba(0,255,65,0.05),transparent 70%);filter:blur(5px);"></div></div>
     <div class="shape cube"><div class="glass"></div></div>
     <div class="shape sphere"><div class="glass"></div></div>
   </div>
@@ -1514,8 +1522,10 @@
   <div class="scroll-hint">SCROLL</div>
 </section>
 
-<!-- 第二板块：一站式加密DNS（二进制流canvas） -->
+<!-- 第二板块：一站式加密DNS（白色背景 + 代码雨） -->
 <section class="sec-tool" id="tool">
+  <!-- 代码雨canvas -->
+  <canvas id="matrixCanvas" class="matrix-canvas"></canvas>
   <div class="wrap tool-grid">
     <div class="tool-copy reveal">
       <div class="kicker">一站式加密解析服务</div>
@@ -1531,8 +1541,6 @@
       <div class="dns-halo"></div>
       <div class="dns-float-wrap">
         <div class="dns-core">
-          <!-- Canvas 二进制流背景 -->
-          <canvas id="binaryCanvas"></canvas>
           <div class="txt"><b>DNS</b><small>SECURE RESOLVE</small></div>
         </div>
         <!-- 轨道标签已移除 -->
@@ -1555,10 +1563,10 @@
             <svg viewBox="0 0 120 132" class="shield-svg" aria-hidden="true">
               <defs>
                 <linearGradient id="sg" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#3f74ff"/><stop offset=".55" stop-color="#8b7bff"/><stop offset="1" stop-color="#c09bff"/>
+                  <stop offset="0" stop-color="#00ff41"/><stop offset=".55" stop-color="#00cc33"/><stop offset="1" stop-color="#00aa2a"/>
                 </linearGradient>
                 <linearGradient id="sg2" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dfe6ff"/>
+                  <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dff0df"/>
                 </linearGradient>
               </defs>
               <path d="M60 4 L112 24 V66 C112 100 90 120 60 128 C30 120 8 100 8 66 V24 Z" fill="url(#sg)" opacity=".95"/>
@@ -1575,7 +1583,7 @@
     </div>
     <div class="anywhere-copy reveal">
       <h2 class="h-title">将安全的解析<br>带到任何地方</h2>
-      <p class="h-sub">一个配置，全端生效。Windows、macOS、iOS、Android、Linux 与路由器，随时随地享受加密 DNS 带来的纯净网络。</p>
+      <p class="h-sub" style="color:#444;">一个配置，全端生效。Windows、macOS、iOS、Android、Linux 与路由器，随时随地享受加密 DNS 带来的纯净网络。</p>
       <div class="stat-row">
         <div class="stat"><b>50ms</b><span>平均解析延迟</span></div>
         <div class="stat"><b>99.99%</b><span>服务可用性</span></div>
@@ -1606,7 +1614,7 @@
   </div>
 </section>
 
-<!-- 第四板块：配置（门下方小圆球已移除） -->
+<!-- 第四板块：配置 -->
 <section class="sec-config" id="config">
   <div class="wrap config-grid">
     <div class="door-scene reveal">
@@ -1620,8 +1628,8 @@
     </div>
     <div class="config-copy reveal">
       <div class="kicker">三步完成配置</div>
-      <h2 class="h-title">掌握使用技巧</h2>
-      <p class="h-sub">复制下方加密 DNS 配置地址，粘贴到系统或浏览器的安全 DNS 设置中，即可开启全程加密解析。</p>
+      <h2 class="h-title" style="color:var(--green);text-shadow:0 0 30px rgba(0,255,65,0.2);">掌握使用技巧</h2>
+      <p class="h-sub" style="color:#444;">复制下方加密 DNS 配置地址，粘贴到系统或浏览器的安全 DNS 设置中，即可开启全程加密解析。</p>
       <div class="cfg-tabs">
         <button class="cfg-tab active" data-tab="doh">DoH 配置</button>
         <button class="cfg-tab" data-tab="dot">DoT 配置</button>
@@ -1654,23 +1662,23 @@
       <p class="h-sub">三种加密方案各司其职，覆盖从浏览器到操作系统、从个人到企业的全部解析场景。</p>
     </div>
     <div class="power-grid">
-      <div class="power-card reveal" style="--gc:rgba(47,107,255,.2);--c1:#2f6bff;--c2:#6b9bff;--tc:#2f6bff;--tb:rgba(47,107,255,.1);--tl:rgba(47,107,255,.28);">
+      <div class="power-card reveal" style="--gc:rgba(0,255,65,0.08);--c1:#00ff41;--c2:#00cc33;--tc:#00ff41;--tb:rgba(0,255,65,0.05);--tl:rgba(0,255,65,0.2);">
         <div class="p-icon" style="animation-delay:.2s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">H</div></div>
         <h3>DNS over HTTPS</h3><span class="tag">DoH · RFC 8484</span>
         <p>将 DNS 查询封装在 HTTPS 请求中，与正常网页流量完全混淆，有效绕过针对 53 端口的封锁与审查，隐私性最强。</p>
         <a class="p-link" href="#config">查看配置 →</a>
       </div>
-      <div class="power-card reveal" style="--gc:rgba(139,123,255,.22);--c1:#8b7bff;--c2:#c09bff;--tc:#7a5ff0;--tb:rgba(139,123,255,.12);--tl:rgba(139,123,255,.3);transition-delay:.12s;">
+      <div class="power-card reveal" style="--gc:rgba(0,200,50,0.08);--c1:#00cc33;--c2:#00aa2a;--tc:#00aa2a;--tb:rgba(0,200,50,0.05);--tl:rgba(0,200,50,0.2);transition-delay:.12s;">
         <div class="p-icon" style="animation-delay:.8s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">T</div></div>
         <h3>DNS over TLS</h3><span class="tag">DoT · RFC 7858</span>
         <p>通过专用 853 端口建立 TLS 加密隧道，协议开销更低、连接更稳定，是操作系统与路由器全局加密的首选方案。</p>
-        <a class="p-link" href="#config" style="color:#7a5ff0;">查看配置 →</a>
+        <a class="p-link" href="#config" style="color:#00aa2a;">查看配置 →</a>
       </div>
-      <div class="power-card reveal" style="--gc:rgba(255,154,213,.25);--c1:#ff8ac8;--c2:#b48bff;--tc:#e069b0;--tb:rgba(255,138,200,.12);--tl:rgba(255,138,200,.32);transition-delay:.24s;">
+      <div class="power-card reveal" style="--gc:rgba(0,170,42,0.08);--c1:#00aa2a;--c2:#88ff88;--tc:#008820;--tb:rgba(0,170,42,0.05);--tl:rgba(0,170,42,0.2);transition-delay:.24s;">
         <div class="p-icon" style="animation-delay:1.4s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">⌘</div></div>
         <h3>智能加密解析</h3><span class="tag">AI · 全球调度</span>
         <p>实时感知网络质量自动切换 DoH / DoT 最优通道，叠加恶意域名拦截与广告过滤，让安全与速度兼得。</p>
-        <a class="p-link" href="#config" style="color:#e069b0;">查看配置 →</a>
+        <a class="p-link" href="#config" style="color:#008820;">查看配置 →</a>
       </div>
     </div>
   </div>
@@ -1716,7 +1724,7 @@
   <div class="wrap">
     <div class="f-grid">
       <div class="f-brand">
-        <a class="logo" href="#" style="color:#fff;"><span class="logo-mark"></span>DNS<span style="color:#7ea0ff">安全</span></a>
+        <a class="logo" href="#" style="color:#ccffcc;"><span class="logo-mark"></span>DNS<span style="color:#00ff41">安全</span></a>
         <p>专注加密 DNS 服务，以 DoH / DoT 技术守护每一次域名解析，让互联网访问更安全、更私密、更快速。</p>
       </div>
       <div class="f-col"><h6>产品</h6><a href="#">加密DNS</a><a href="#">DoH 服务</a><a href="#">DoT 服务</a><a href="#">企业版</a></div>
@@ -1895,7 +1903,7 @@
       });
     })();
 
-    // ---- Hero 鼠标视差（节流） ----
+    // ---- Hero 鼠标视差 ----
     const heroShapes = document.querySelectorAll('.hero-shapes .shape');
     let rafId = null;
     window.addEventListener('mousemove', (e) => {
@@ -1920,16 +1928,15 @@
       });
     }, 500);
 
-    // ---- 二进制流 Canvas 动效 ----
-    (function initBinaryCanvas() {
-      const canvas = document.getElementById('binaryCanvas');
+    // ---- 代码雨 Canvas (Matrix 风格) ----
+    (function initMatrix() {
+      const canvas = document.getElementById('matrixCanvas');
       if (!canvas) return;
-      const container = canvas.parentElement; // .dns-core
+      const container = canvas.parentElement; // .sec-tool
       let width, height;
-      let particles = [];
-      const charSet = ['0', '1'];
-      const fontSize = 14; // 基础字号，会根据容器大小缩放
-      let cols, rows;
+      let columns, rows;
+      let drops = [];
+      const fontSize = 14;
       let animId = null;
 
       function resize() {
@@ -1941,88 +1948,50 @@
         canvas.height = height;
         canvas.style.width = rect.width + 'px';
         canvas.style.height = rect.height + 'px';
-        // 根据容器尺寸调整粒子数量与字号
-        const baseSize = Math.min(rect.width, rect.height) / 18;
-        const fontSizePx = Math.max(10, Math.min(16, baseSize));
-        cols = Math.floor(rect.width / (fontSizePx * 0.8));
-        rows = Math.floor(rect.height / (fontSizePx * 0.8));
-        // 重新生成粒子
-        particles = [];
-        const count = Math.floor(cols * rows * 0.25); // 密度控制
-        for (let i = 0; i < count; i++) {
-          const x = Math.random() * rect.width;
-          const y = Math.random() * rect.height;
-          const char = charSet[Math.floor(Math.random() * charSet.length)];
-          // 速度方向随机：上下左右
-          const angle = Math.random() * 2 * Math.PI;
-          const speed = 0.4 + Math.random() * 0.8;
-          const vx = Math.cos(angle) * speed;
-          const vy = Math.sin(angle) * speed;
-          particles.push({
-            x, y,
-            vx, vy,
-            char,
-            size: fontSizePx * (0.8 + Math.random() * 0.4),
-            opacity: 0.3 + Math.random() * 0.7
-          });
-        }
-        // 如果没有粒子，至少生成一些
-        if (particles.length === 0) {
-          for (let i = 0; i < 60; i++) {
-            const x = Math.random() * rect.width;
-            const y = Math.random() * rect.height;
-            particles.push({
-              x, y,
-              vx: (Math.random() - 0.5) * 1.2,
-              vy: (Math.random() - 0.5) * 1.2,
-              char: charSet[Math.floor(Math.random() * 2)],
-              size: fontSizePx * (0.8 + Math.random() * 0.4),
-              opacity: 0.3 + Math.random() * 0.7
-            });
-          }
+        // 计算列数
+        const size = fontSize * dpr;
+        columns = Math.floor(width / size);
+        rows = Math.floor(height / size);
+        // 初始化雨滴
+        drops = [];
+        for (let i = 0; i < columns; i++) {
+          drops[i] = Math.floor(Math.random() * rows);
         }
       }
 
       function draw() {
         const ctx = canvas.getContext('2d');
-        const rect = container.getBoundingClientRect();
-        const w = rect.width;
-        const h = rect.height;
-        // 清空
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        // 绘制背景深绿色（暗色）
-        ctx.fillStyle = '#0a120a';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        const dpr = window.devicePixelRatio || 1;
+        const size = fontSize * dpr;
+        // 半透明黑色背景，制造拖尾效果
+        ctx.fillStyle = 'rgba(255,255,255,0.05)'; // 白色背景上叠加绿色，用半透明白色制造拖尾
+        ctx.fillRect(0, 0, width, height);
 
-        // 绘制粒子
+        ctx.fillStyle = '#00ff41';
+        ctx.shadowColor = '#00ff41';
+        ctx.shadowBlur = 12 * dpr;
+        ctx.font = size + 'px "Inter", monospace';
         ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        for (const p of particles) {
-          // 更新位置
-          p.x += p.vx;
-          p.y += p.vy;
-          // 边界反弹（保持圆内，但矩形边界即可，因canvas被圆形裁剪）
-          if (p.x < 0) { p.x = 0; p.vx *= -1; }
-          if (p.x > w) { p.x = w; p.vx *= -1; }
-          if (p.y < 0) { p.y = 0; p.vy *= -1; }
-          if (p.y > h) { p.y = h; p.vy *= -1; }
+        ctx.textBaseline = 'top';
 
-          // 随机改变字符
-          if (Math.random() < 0.005) {
-            p.char = charSet[Math.floor(Math.random() * 2)];
+        for (let i = 0; i < drops.length; i++) {
+          // 随机字符 0 或 1
+          const char = Math.random() > 0.5 ? '0' : '1';
+          const x = i * size + size / 2;
+          const y = drops[i] * size;
+          // 随机亮度变化
+          const brightness = 0.4 + Math.random() * 0.6;
+          ctx.fillStyle = `rgba(0, 255, 65, ${brightness})`;
+          ctx.shadowBlur = (6 + Math.random() * 12) * dpr;
+          ctx.fillText(char, x, y);
+
+          // 移动雨滴
+          drops[i] += 0.5 + Math.random() * 0.5;
+          if (drops[i] * size > height) {
+            drops[i] = 0;
           }
-
-          // 绘制
-          const fontSizePx = p.size * (canvas.width / w); // 缩放适配dpr
-          ctx.font = fontSizePx + 'px "Inter", monospace';
-          ctx.fillStyle = `rgba(80, 255, 80, ${p.opacity * 0.7})`;
-          ctx.shadowColor = 'rgba(0, 255, 80, 0.3)';
-          ctx.shadowBlur = 6;
-          ctx.fillText(p.char, p.x * (canvas.width / w), p.y * (canvas.height / h));
         }
-        // 重置阴影
         ctx.shadowBlur = 0;
-
         animId = requestAnimationFrame(draw);
       }
 
@@ -2032,7 +2001,6 @@
         window.addEventListener('resize', () => {
           resize();
         });
-        // 监听容器尺寸变化 (ResizeObserver)
         if (window.ResizeObserver) {
           const ro = new ResizeObserver(() => { resize(); });
           ro.observe(container);
