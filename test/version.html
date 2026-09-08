@@ -385,7 +385,7 @@
       50% { transform: translateY(-26px) rotate(calc(var(--r,0deg) - 3deg)) scale(1.03); }
     }
 
-    /* ===== Hero 几何装饰（优化后：6种形状，粉紫灰蓝渐变毛玻璃） ===== */
+    /* ===== Hero 几何装饰 ===== */
     .hero-shapes {
       position: absolute;
       inset: 0;
@@ -396,21 +396,19 @@
       position: absolute;
       will-change: transform;
     }
-    /* 所有形状的统一毛玻璃渐变（粉紫灰蓝） */
     .shape .glass {
       background: linear-gradient(
         135deg,
-        rgba(255, 182, 193, 0.45),  /* 粉 */
-        rgba(200, 180, 255, 0.45), /* 紫 */
-        rgba(180, 200, 255, 0.45), /* 蓝 */
-        rgba(200, 210, 220, 0.35)  /* 灰 */
+        rgba(255, 182, 193, 0.45),
+        rgba(200, 180, 255, 0.45),
+        rgba(180, 200, 255, 0.45),
+        rgba(200, 210, 220, 0.35)
       );
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       border: 1px solid rgba(255,255,255,0.7);
       box-shadow: 0 20px 40px rgba(100, 120, 220, 0.15);
     }
-    /* 各形状尺寸与位置 */
     .pyramid {
       left: 4%; top: 22%;
       animation: floaty2 8s ease-in-out infinite;
@@ -442,7 +440,6 @@
       height: clamp(50px, 8vw, 100px);
       border-radius: 50%;
     }
-    /* 新增：菱形 */
     .diamond {
       left: 18%; top: 12%;
       animation: floaty 11s ease-in-out infinite;
@@ -454,7 +451,6 @@
       clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
       transform: rotate(15deg);
     }
-    /* 新增：六边形 */
     .hexagon {
       right: 20%; top: 8%;
       animation: floaty2 12s ease-in-out infinite;
@@ -465,7 +461,6 @@
       height: clamp(65px, 10vw, 130px);
       clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     }
-    /* 新增：圆环 */
     .ring {
       left: 8%; bottom: 18%;
       animation: floaty 13s ease-in-out infinite;
@@ -480,7 +475,6 @@
       backdrop-filter: blur(4px);
       box-shadow: 0 0 0 2px rgba(255,255,255,0.2), 0 20px 40px rgba(100,120,220,0.1);
     }
-    /* 金字塔底部阴影 */
     .pyramid-base {
       position: absolute;
       left: -14%;
@@ -491,8 +485,6 @@
       background: radial-gradient(ellipse, rgba(200,180,255,0.25), transparent 70%);
       filter: blur(6px);
     }
-
-    /* ---- 响应式：移动端显示所有形状，并调整位置 ---- */
     @media (max-width: 768px) {
       .pyramid { left: 2%; top: 18%; }
       .cube { right: 2%; top: 16%; }
@@ -510,19 +502,22 @@
       .ring { left: 2%; bottom: 8%; }
     }
 
+    /* ----- 滚动提示（优化后） ----- */
     .scroll-hint {
       position: absolute;
       bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      color: #9aa4c8;
-      font-size: 12px;
-      letter-spacing: .3em;
-      animation: fadeUp 1s 1.2s both;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 8px;
+      color: #9aa4c8;
+      font-size: 12px;
+      letter-spacing: .3em;
+      animation: fadeUp 1s 1.2s both;
     }
     .scroll-hint::after {
       content: "";
@@ -536,6 +531,16 @@
       50% { transform: scaleY(1); transform-origin: top; }
       51% { transform-origin: bottom; }
       100% { transform: scaleY(0); transform-origin: bottom; }
+    }
+    @media (max-width: 768px) {
+      .scroll-hint {
+        bottom: 20px;
+        font-size: 10px;
+        letter-spacing: .2em;
+      }
+      .scroll-hint::after {
+        height: 28px;
+      }
     }
 
     /* ===== 第二板块：一站式加密DNS ===== */
@@ -597,11 +602,22 @@
       border-radius: 13px;
       display: grid;
       place-items: center;
-      font-size: 20px;
       flex: none;
       background: linear-gradient(135deg,rgba(47,107,255,.12),rgba(139,123,255,.12));
       border: 1px solid rgba(47,107,255,.2);
     }
+    .feat-icon svg {
+      width: 26px;
+      height: 26px;
+      fill: none;
+      stroke: var(--blue);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .feat-icon svg .p { stroke: var(--purple); }
+    .feat-icon svg .g { stroke: #22c55e; }
+    .feat-icon svg .o { stroke: #f59e0b; }
     .feat-item h4 { font-size: 16px; font-weight: 700; }
     .feat-item p { font-size: 13px; color: var(--sub); margin-top: 2px; }
 
@@ -936,7 +952,7 @@
       .core-card { padding: 16px 18px; }
     }
 
-    /* ===== 第四板块：配置（左侧：PRIVACY FIRST + 锁 + 脉冲波纹） ===== */
+    /* ===== 第四板块：配置 ===== */
     .sec-config { padding: 110px 0; overflow: hidden; }
     .config-grid {
       display: grid;
@@ -1076,7 +1092,6 @@
       }
     }
 
-    /* 配置面板（右侧） */
     .config-copy .kicker {
       display: inline-flex;
       align-items: center;
@@ -1619,7 +1634,115 @@
       .stats-time { font-size: 11px; padding: 4px 14px; }
     }
 
-    /* ===== 页脚 ===== */
+    /* ===== DNS 连接状态检测卡片（新增） ===== */
+    .sec-dns-check {
+      padding: 20px 0 40px;
+    }
+    .dns-check-card {
+      max-width: 880px;
+      margin: 0 auto;
+      border-radius: 16px;
+      padding: 18px 24px;
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(160,175,235,0.2);
+      box-shadow: 0 8px 24px rgba(100,120,220,0.06);
+    }
+    .dns-check-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--sub);
+      margin-bottom: 10px;
+    }
+    .dns-check-icon {
+      font-size: 18px;
+    }
+    .dns-check-title {
+      color: var(--ink);
+    }
+    .dns-check-body {
+      padding: 4px 0;
+    }
+    .dns-check-body object {
+      display: block;
+    }
+    .dns-check-fallback {
+      color: #dc2626;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    @media (max-width: 480px) {
+      .dns-check-card {
+        padding: 14px 16px;
+      }
+      .dns-check-header {
+        font-size: 13px;
+        flex-wrap: wrap;
+      }
+    }
+
+    /* ===== 微信公众号关注模块 ===== */
+    .sec-follow {
+      padding: 60px 0 50px;
+      background: linear-gradient(180deg, rgba(235,240,255,0.2), rgba(255,240,250,0.3));
+      text-align: center;
+    }
+    .follow-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .follow-title {
+      font-size: clamp(22px, 2.8vw, 32px);
+      font-weight: 800;
+      color: var(--ink);
+      letter-spacing: 0.02em;
+    }
+    .follow-title span {
+      color: var(--blue);
+    }
+    .follow-desc {
+      color: var(--sub);
+      font-size: clamp(14px, 1.1vw, 16px);
+      max-width: 480px;
+    }
+    .qr-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+      background: rgba(255,255,255,0.6);
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(160,175,235,0.2);
+      box-shadow: 0 12px 32px rgba(100,120,220,0.08);
+      transition: transform 0.3s ease;
+    }
+    .qr-wrapper:hover {
+      transform: scale(1.02);
+    }
+    .qr-wrapper img {
+      display: block;
+      width: 180px;
+      height: 180px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    @media (max-width: 480px) {
+      .qr-wrapper img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    /* ===== 页脚（含备案号） ===== */
     footer {
       background: #0f1330;
       color: #aab2d8;
@@ -1678,8 +1801,16 @@
       flex-wrap: wrap;
       gap: 8px;
     }
-    .f-bottom a { color: #8a93c4; text-decoration: none; margin-left: 16px; }
+    .f-bottom a {
+      color: #8a93c4;
+      text-decoration: none;
+      margin-left: 16px;
+    }
     .f-bottom a:hover { color: #fff; }
+    .f-bottom .icp {
+      color: #6b74a8;
+      margin-left: 16px;
+    }
     @media (max-width: 1024px) { .f-grid { grid-template-columns: 1fr 1fr 1fr; } }
     @media (max-width: 768px) { .f-grid { grid-template-columns: 1fr 1fr; gap: 24px; } }
     @media (max-width: 480px) { .f-grid { grid-template-columns: 1fr; } }
@@ -1707,7 +1838,7 @@
 
     /* ===== 响应式补充 ===== */
     @media (max-width: 480px) {
-      .sec-tool, .sec-anywhere, .sec-core, .sec-config, .sec-power, .sec-cta, .sec-stats { padding: 50px 0 60px; }
+      .sec-tool, .sec-anywhere, .sec-core, .sec-config, .sec-power, .sec-cta, .sec-stats, .sec-follow { padding: 50px 0 60px; }
       .hero { padding: 110px 0 30px; min-height: 80vh; }
       .hero h1 { font-size: 32px; }
       .bg-glow span { filter: blur(30px); }
@@ -1748,7 +1879,6 @@
 
 <!-- Hero -->
 <section class="hero" aria-labelledby="hero-title">
-  <!-- 几何装饰（6种形状，粉紫灰蓝渐变毛玻璃） -->
   <div class="hero-shapes" aria-hidden="true">
     <div class="shape pyramid"><div class="glass"></div><div class="pyramid-base"></div></div>
     <div class="shape cube"><div class="glass"></div></div>
@@ -1774,9 +1904,65 @@
       <h2 id="tool-title" class="h-title">前所未有的<br>一站式加密DNS服务</h2>
       <p class="h-sub">基于 DoH / DoT / DoQ / DNSCrypt 加密协议，将传统明文 DNS 查询升级为加密通道。个人上网、企业办公、移动场景，一键获得隐私保护与安全加速。</p>
       <div class="feat-list">
-        <div class="feat-item"><div class="feat-icon" aria-hidden="true">⚡</div><div><h4>智能解析加速</h4><p>全球 Anycast 节点，毫秒级响应，就近调度最优线路</p></div></div>
-        <div class="feat-item"><div class="feat-icon" aria-hidden="true">🛡️</div><div><h4>隐私防窃听</h4><p>查询全程 TLS/QUIC 加密，运营商与第三方无法窥探访问记录</p></div></div>
-        <div class="feat-item"><div class="feat-icon" aria-hidden="true">🔒</div><div><h4>防劫持防篡改</h4><p>数字证书校验身份，彻底阻断 DNS 污染与中间人攻击</p></div></div>
+        <div class="feat-item">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+              <path d="M12 2L12 8M12 2L8 6M12 2L16 6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 8C8 8 4 10 4 14C4 18 8 20 12 20C16 20 20 18 20 14C20 10 16 8 12 8Z" class="p"/>
+              <path d="M12 12V14" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div><h4>智能解析加速</h4><p>全球 Anycast 节点，毫秒级响应，就近调度最优线路</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+              <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" class="p"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <div><h4>隐私防窃听</h4><p>查询全程 TLS/QUIC 加密，运营商与第三方无法窥探访问记录</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+              <path d="M12 2L4 5V11C4 16 8 20 12 22C16 20 20 16 20 11V5L12 2Z" class="g"/>
+              <path d="M9 12L11 14L15 9" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div><h4>防劫持防篡改</h4><p>数字证书校验身份，彻底阻断 DNS 污染与中间人攻击</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+              <circle cx="12" cy="12" r="10" class="p"/>
+              <path d="M2 12H22M12 2C14 6 14 18 12 22M12 2C10 6 10 18 12 22" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M4.5 7.5C7 9 9 10 12 10C15 10 17 9 19.5 7.5M4.5 16.5C7 15 9 14 12 14C15 14 17 15 19.5 16.5" class="o" stroke-width="1.6"/>
+            </svg>
+          </div>
+          <div><h4>全球覆盖</h4><p>全球 Anycast 网络，200+ 节点，覆盖六大洲，超低延迟</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+              <circle cx="12" cy="12" r="10" class="p"/>
+              <path d="M12 6V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M18 5L20 3M6 5L4 3" class="g" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div><h4>智能缓存</h4><p>本地 DNS 缓存加速，毫秒级响应，减少重复查询延迟</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+              <path d="M12 2L4 5V11C4 16 8 20 12 22C16 20 20 16 20 11V5L12 2Z" class="p"/>
+              <rect x="9" y="12" width="6" height="8" rx="1" fill="currentColor" stroke="none" opacity="0.3"/>
+              <path d="M14 12V10C14 8.5 13 7.5 12 7.5C11 7.5 10 8.5 10 10V12" stroke="#22c55e" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div><h4>零信任架构</h4><p>端到端加密，零信任身份验证，确保每一次解析都安全可信</p></div>
+        </div>
       </div>
     </div>
     <div class="dns-stage reveal">
@@ -1886,7 +2072,6 @@
 <!-- 第四板块：配置 -->
 <section class="sec-config" id="config" aria-labelledby="config-title">
   <div class="wrap config-grid">
-    <!-- 左侧：隐私动画 -->
     <div class="privacy-scene reveal">
       <div class="privacy-wrap">
         <div class="privacy-ring" aria-hidden="true"></div>
@@ -1917,7 +2102,6 @@
       </div>
     </div>
 
-    <!-- 右侧：配置面板（5个选项卡） -->
     <div class="config-copy reveal">
       <div class="kicker">三步完成配置</div>
       <h2 id="config-title" class="h-title">掌握使用技巧</h2>
@@ -1937,7 +2121,6 @@
         <div class="sys-chips" id="cfgChips">
           <span class="sys-chip">Windows 11</span><span class="sys-chip">Chrome</span><span class="sys-chip">Firefox</span><span class="sys-chip">Edge</span>
         </div>
-        <!-- 配置卡片（5个） -->
         <div class="config-cards">
           <div class="cfg-card"><div class="c-label">系统配置 <span>85%</span></div><div class="c-bar"><i style="width:85%"></i></div><small>Windows / macOS 已适配</small></div>
           <div class="cfg-card"><div class="c-label">浏览器集成 <span>72%</span></div><div class="c-bar i2"><i style="width:72%"></i></div><small>Chrome / Edge / Firefox</small></div>
@@ -1950,7 +2133,7 @@
   </div>
 </section>
 
-<!-- 第五板块：追求极致的用户体验（4个卡片） -->
+<!-- 第五板块：追求极致的用户体验 -->
 <section class="sec-power" id="power" aria-labelledby="power-title">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -1958,28 +2141,24 @@
       <p class="h-sub">四种加密方案各司其职，覆盖从浏览器到操作系统、从个人到企业的全部解析场景。</p>
     </div>
     <div class="power-grid">
-      <!-- 卡片1：DoH -->
       <div class="power-card reveal" style="--gc:rgba(47,107,255,.2);--c1:#2f6bff;--c2:#6b9bff;--tc:#2f6bff;--tb:rgba(47,107,255,.1);--tl:rgba(47,107,255,.28);">
         <div class="p-icon" style="animation-delay:.2s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">H</div></div>
         <h3>DNS over HTTPS</h3><span class="tag">DoH · RFC 8484</span>
         <p>将 DNS 查询封装在 HTTPS 请求中，与正常网页流量完全混淆，有效绕过针对 53 端口的封锁与审查，隐私性最强。</p>
         <a class="p-link" href="#config" aria-label="查看DoH配置">查看配置 →</a>
       </div>
-      <!-- 卡片2：DoT -->
       <div class="power-card reveal" style="--gc:rgba(139,123,255,.22);--c1:#8b7bff;--c2:#c09bff;--tc:#7a5ff0;--tb:rgba(139,123,255,.12);--tl:rgba(139,123,255,.3);transition-delay:.12s;">
         <div class="p-icon" style="animation-delay:.8s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">T</div></div>
         <h3>DNS over TLS</h3><span class="tag">DoT · RFC 7858</span>
         <p>通过专用 853 端口建立 TLS 加密隧道，协议开销更低、连接更稳定，是操作系统与路由器全局加密的首选方案。</p>
         <a class="p-link" href="#config" style="color:#7a5ff0;" aria-label="查看DoT配置">查看配置 →</a>
       </div>
-      <!-- 卡片3：智能加密解析 -->
       <div class="power-card reveal" style="--gc:rgba(255,154,213,.25);--c1:#ff8ac8;--c2:#b48bff;--tc:#e069b0;--tb:rgba(255,138,200,.12);--tl:rgba(255,138,200,.32);transition-delay:.24s;">
         <div class="p-icon" style="animation-delay:1.4s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">⌘</div></div>
         <h3>智能加密解析</h3><span class="tag">AI · 全球调度</span>
         <p>实时感知网络质量自动切换 DoH / DoT / DoQ 最优通道，叠加恶意域名拦截与广告过滤，让安全与速度兼得。</p>
         <a class="p-link" href="#config" style="color:#e069b0;" aria-label="查看智能加密配置">查看配置 →</a>
       </div>
-      <!-- 卡片4：DoQ -->
       <div class="power-card reveal" style="--gc:rgba(34,197,94,.2);--c1:#22c55e;--c2:#4ade80;--tc:#16a34a;--tb:rgba(34,197,94,.1);--tl:rgba(34,197,94,.25);transition-delay:.36s;">
         <div class="p-icon" style="animation-delay:2.0s;"><div class="ic-glass"></div><div class="ic-glass2"></div><div class="glyph">Q</div></div>
         <h3>DNS over QUIC</h3><span class="tag">DoQ · RFC 9250</span>
@@ -2025,7 +2204,36 @@
   </div>
 </section>
 
-<!-- 页脚 -->
+<!-- DNS 连接状态检测卡片 -->
+<section class="sec-dns-check" aria-label="DNS连接状态检测">
+  <div class="wrap">
+    <div class="dns-check-card">
+      <div class="dns-check-header">
+        <span class="dns-check-icon">🔗</span>
+        <span class="dns-check-title">此处显示您是否已使用 dns.ipv4dns.com（受缓存影响）</span>
+      </div>
+      <div class="dns-check-body">
+        <object data="https://test.ipv4dns.com/yes.html" width="100%" height="30" type="text/html">
+          <span class="dns-check-fallback">你未使用 dns.ipv4dns.com</span>
+        </object>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 微信公众号关注模块 -->
+<section class="sec-follow" aria-label="关注我们">
+  <div class="wrap follow-inner">
+    <h2 class="follow-title">关注我们 <span>·</span> 获取更多</h2>
+    <p class="follow-desc">扫码关注微信公众号，接收最新加密DNS技术资讯与使用指南</p>
+    <div class="qr-wrapper">
+      <!-- 请将 src 替换为您实际的微信公众号二维码图片地址 -->
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://mp.weixin.qq.com/" alt="微信公众号二维码" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- 页脚（含备案号） -->
 <footer role="contentinfo">
   <div class="wrap">
     <div class="f-grid">
@@ -2040,7 +2248,12 @@
     </div>
     <div class="f-bottom">
       <span>© 2026 DNS安全科技有限公司 · 保留所有权利</span>
-      <span><a href="#">隐私政策</a><a href="#">服务条款</a><a href="#">Cookie 设置</a></span>
+      <span>
+        <a href="#">隐私政策</a>
+        <a href="#">服务条款</a>
+        <a href="#">Cookie 设置</a>
+        <span class="icp">京ICP备2023000000号</span>
+      </span>
     </div>
   </div>
 </footer>
@@ -2049,11 +2262,9 @@
   (function() {
     "use strict";
 
-    // 导航滚动
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 40), { passive: true });
 
-    // 移动端菜单
     const ham = document.getElementById('hamBtn');
     const mm = document.getElementById('mobileMenu');
     ham.addEventListener('click', () => {
@@ -2065,14 +2276,12 @@
       ham.setAttribute('aria-expanded', 'false');
     }));
 
-    // 滚动显现
     const io = new IntersectionObserver(
       entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }),
       { threshold: 0.12, rootMargin: '0px 0px -30px 0px' }
     );
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-    // Toast & 复制
     const toast = document.getElementById('toast');
     let toastTimer = null;
     function showToast(msg) {
@@ -2092,7 +2301,6 @@
       });
     });
 
-    // 配置选项卡（5个）
     const tabs = {
       doh: {
         title: 'DNS over HTTPS（DoH）— 基于 HTTPS 的加密查询，端口 443',
@@ -2150,7 +2358,6 @@
       });
     });
 
-    // DNS 解析总量（实时 API）
     (function() {
       const API = 'https://api.ipv4dns.com/api';
       const dot = document.getElementById('statsDot');
@@ -2254,7 +2461,6 @@
       });
     })();
 
-    // Hero 鼠标视差
     const heroShapes = document.querySelectorAll('.hero-shapes .shape');
     let rafId = null;
     window.addEventListener('mousemove', (e) => {
@@ -2270,7 +2476,6 @@
       });
     }, { passive: true });
 
-    // 进度条入场动画
     setTimeout(() => {
       document.querySelectorAll('.cfg-card .c-bar i').forEach(el => {
         const w = el.style.width;
