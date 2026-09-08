@@ -2217,8 +2217,8 @@
           </svg>
         </div>
         <div class="privacy-text">
-          <div class="main">PRIVACY FIRST</div>
-          <div class="sub">轻点指尖，隐私固若金汤。</div>
+          <div class="main">PRIVACY SPACE</div>
+          <div class="sub">安全，从此刻开始。</div>
         </div>
       </div>
     </div>
@@ -2495,7 +2495,7 @@
         document.getElementById('cfgNote').textContent = d.note;
         document.getElementById('cfgChips').innerHTML = d.chips.map(c => `<span class="sys-chip">${c}</span>`).join('');
 
-        const isDnscrypt = btn.dataset.tab === 'dnscrypt';
+        const isDnscrypt = btn.dataset.tab === 'ios';
         document.querySelectorAll('.cfg-line').forEach(el => {
           el.style.display = isDnscrypt ? 'none' : 'flex';
         });
