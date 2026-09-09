@@ -1484,7 +1484,7 @@
   </div>
 </section>
 
-<!-- ===== 第五板块：追求极致的用户体验（含六边形+网络节点图标） ===== -->
+<!-- ===== 第五板块：追求极致的用户体验 ===== -->
 <section class="sec-power" id="power" aria-labelledby="power-title">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -1492,7 +1492,6 @@
       <p class="h-sub" data-i18n="power.desc">四种加密方案各司其职，覆盖从浏览器到操作系统、从个人到企业的全部解析场景。</p>
     </div>
     <div class="power-grid">
-      <!-- DoH：盾牌+锁 -->
       <div class="power-card reveal" style="--gc:rgba(47,107,255,.2);--c1:#2f6bff;--c2:#6b9bff;--tc:#2f6bff;--tb:rgba(47,107,255,.1);--tl:rgba(47,107,255,.28);">
         <div class="p-icon" style="animation-delay:.2s;">
           <div class="ic-glass"></div>
@@ -1509,8 +1508,6 @@
         <p data-i18n="power.doh.desc">将 DNS 查询封装在 HTTPS 请求中，与正常网页流量完全混淆，有效绕过针对 53 端口的封锁与审查，隐私性最强。</p>
         <a class="p-link" data-tab="doh" style="color:#2f6bff;" data-i18n="power.doh.link">立即配置 →</a>
       </div>
-
-      <!-- DoT：锁 -->
       <div class="power-card reveal" style="--gc:rgba(139,123,255,.22);--c1:#8b7bff;--c2:#c09bff;--tc:#7a5ff0;--tb:rgba(139,123,255,.12);--tl:rgba(139,123,255,.3);transition-delay:.12s;">
         <div class="p-icon" style="animation-delay:.8s;">
           <div class="ic-glass"></div>
@@ -1526,8 +1523,6 @@
         <p data-i18n="power.dot.desc">通过专用 853 端口建立 TLS 加密隧道，协议开销更低、连接更稳定，是操作系统与路由器全局加密的首选方案。</p>
         <a class="p-link" data-tab="dot" style="color:#7a5ff0;" data-i18n="power.dot.link">立即配置 →</a>
       </div>
-
-      <!-- DoQ：闪电 -->
       <div class="power-card reveal" style="--gc:rgba(34,197,94,.2);--c1:#22c55e;--c2:#4ade80;--tc:#16a34a;--tb:rgba(34,197,94,.1);--tl:rgba(34,197,94,.25);transition-delay:.24s;">
         <div class="p-icon" style="animation-delay:1.4s;">
           <div class="ic-glass"></div>
@@ -1542,8 +1537,6 @@
         <p data-i18n="power.doq.desc">基于 QUIC 协议的低延迟加密传输，结合 UDP 多路复用与 0‑RTT 特性，尤其适合移动端与高丢包网络环境。</p>
         <a class="p-link" data-tab="doq" style="color:#16a34a;" data-i18n="power.doq.link">立即配置 →</a>
       </div>
-
-      <!-- HTTP3：六边形 + 网络节点 -->
       <div class="power-card reveal" style="--gc:rgba(255,154,213,.25);--c1:#ff8ac8;--c2:#b48bff;--tc:#e069b0;--tb:rgba(255,138,200,.12);--tl:rgba(255,138,200,.32);transition-delay:.36s;">
         <div class="p-icon" style="animation-delay:2.0s;">
           <div class="ic-glass"></div>
@@ -1579,7 +1572,7 @@
   </div>
 </section>
 
-<!-- ===== DNS 解析总量 ===== -->
+<!-- ===== DNS 解析实时统计 ===== -->
 <section class="sec-stats" id="stats" aria-labelledby="stats-title">
   <div class="wrap reveal">
     <div class="stats-shell">
@@ -1594,6 +1587,25 @@
       <div class="stats-num"><b id="statsNum">--</b></div>
       <div class="stats-label"><i data-i18n="stats.label">实时统计 · 每 30 秒自动刷新</i></div>
       <div class="stats-time" data-i18n="stats.time">最新更新时间：<b id="statsTime">--</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DNS 实时拦截统计 ===== -->
+<section class="sec-stats" id="stats-blocked" aria-labelledby="blocked-title">
+  <div class="wrap reveal">
+    <div class="stats-shell">
+      <div class="stats-wave" aria-hidden="true"></div>
+      <div class="stats-deco sd1"><div class="glass" aria-hidden="true"></div></div>
+      <div class="stats-deco sd2"><div class="glass" aria-hidden="true"></div></div>
+      <div class="stats-head">
+        <span class="stats-dot is-busy" id="blockedDot" aria-label="连接状态：连接中"></span>
+        <span class="stats-status" id="blockedStatus" data-i18n="blocked.status">正在连接拦截统计节点…</span>
+      </div>
+      <h2 id="blocked-title" class="stats-title" data-i18n="blocked.title">DNS实时拦截统计 • 24小时</h2>
+      <div class="stats-num"><b id="blockedNum">--</b></div>
+      <div class="stats-label"><i data-i18n="blocked.label">实时统计 · 每 30 秒自动刷新</i></div>
+      <div class="stats-time" data-i18n="blocked.time">最新更新时间：<b id="blockedTime">--</b></div>
     </div>
   </div>
 </section>
@@ -1920,7 +1932,7 @@
     });
   });
 
-  // ===== DNS 解析总量 =====
+  // ===== DNS 解析实时统计 =====
   (function() {
     const API = 'https://api.ipv4dns.com/api';
     const dot = document.getElementById('statsDot');
@@ -1996,6 +2008,106 @@
     }
     load();
     document.addEventListener('visibilitychange', () => { if (!document.hidden) { clearTimeout(timer); load(); } });
+  })();
+
+  // ===== DNS 实时拦截统计 =====
+  (function() {
+    const API = 'https://api.ipv4dns.com/api';
+    const dot = document.getElementById('blockedDot');
+    const statusEl = document.getElementById('blockedStatus');
+    const numEl = document.getElementById('blockedNum');
+    const timeEl = document.getElementById('blockedTime');
+    let shown = 0, timer = null, raf = null, isFirstLoad = true;
+
+    function setState(state, errorMsg) {
+      if (!dot || !statusEl) return;
+      dot.classList.remove('is-ok', 'is-busy', 'is-err');
+      statusEl.classList.remove('is-error');
+      if (state === 'ok') {
+        dot.classList.add('is-ok');
+        statusEl.textContent = '已连接 · 拦截数据同步正常';
+        statusEl.style.color = '#16a34a';
+        statusEl.style.cursor = 'default';
+        statusEl.onclick = null;
+      } else if (state === 'err') {
+        dot.classList.add('is-err');
+        statusEl.textContent = errorMsg || '连接失败 · 点击重试';
+        statusEl.style.color = '#dc2626';
+        statusEl.classList.add('is-error');
+        statusEl.style.cursor = 'pointer';
+        statusEl.onclick = () => { clearTimeout(timer); load(); };
+      } else {
+        dot.classList.add('is-busy');
+        statusEl.textContent = '正在连接拦截统计节点…';
+        statusEl.style.color = '';
+        statusEl.style.cursor = 'default';
+        statusEl.onclick = null;
+      }
+    }
+
+    const fmt = n => Number(n).toLocaleString('en-US');
+
+    function countUp(target) {
+      if (!numEl) return;
+      cancelAnimationFrame(raf);
+      const from = shown, dur = 800, t0 = performance.now();
+      if (from === target) {
+        numEl.textContent = fmt(target);
+        numEl.classList.remove('loading-pulse');
+        return;
+      }
+      (function step(t) {
+        const p = Math.min((t - t0) / dur, 1);
+        const ease = 1 - Math.pow(1 - p, 3);
+        const current = Math.round(from + (target - from) * ease);
+        numEl.textContent = fmt(current);
+        if (p < 1) raf = requestAnimationFrame(step);
+        else { shown = target; numEl.classList.remove('loading-pulse'); }
+      })(t0);
+    }
+
+    function fmtTime(iso) {
+      try {
+        const d = new Date(iso);
+        if (isNaN(d)) return iso;
+        const z = n => String(n).padStart(2, '0');
+        return `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())} ${z(d.getHours())}:${z(d.getMinutes())}:${z(d.getSeconds())}`;
+      } catch(e) { return iso; }
+    }
+
+    async function load() {
+      if (!numEl) return;
+      if (isFirstLoad) {
+        numEl.textContent = '…';
+        numEl.classList.add('loading-pulse');
+      }
+      setState('busy');
+      try {
+        const ctl = new AbortController();
+        const to = setTimeout(() => ctl.abort(), 6000);
+        const res = await fetch(API, { signal: ctl.signal, cache: 'no-store' });
+        clearTimeout(to);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        if (typeof data.blocked_total !== 'number') throw new Error('bad payload');
+        if (isFirstLoad) isFirstLoad = false;
+        countUp(data.blocked_total);
+        if (timeEl) timeEl.textContent = data.timestamp ? fmtTime(data.timestamp) : new Date().toLocaleString('zh-CN');
+        setState('ok');
+      } catch (e) {
+        if (isFirstLoad) { numEl.textContent = '--'; numEl.classList.remove('loading-pulse'); }
+        setState('err', '连接失败 · 点击重试');
+      }
+      timer = setTimeout(load, 30000);
+    }
+
+    load();
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) {
+        clearTimeout(timer);
+        load();
+      }
+    });
   })();
 
   // ===== DNS 连接状态检测 =====
@@ -2150,6 +2262,7 @@
         'power.http3.desc':'基于 HTTP/3 与 QUIC 协议的超高速加密 DNS 查询，利用 0‑RTT 连接恢复与多路复用，大幅降低解析延迟，尤其适合 5G 与高动态网络环境。','power.http3.link':'立即配置 →',
         'cta.title':'准备好开始了么','cta.desc':'DNS安全愿为您提供全行业领先的一站式加密解析服务','cta.btn':'立即开始',
         'stats.status':'正在连接解析节点…','stats.title':'DNS解析实时统计 • 24小时','stats.label':'实时统计 · 每 30 秒自动刷新','stats.time':'最新更新时间：',
+        'blocked.status':'正在连接拦截统计节点…','blocked.title':'DNS实时拦截统计 • 24小时','blocked.label':'实时统计 · 每 30 秒自动刷新','blocked.time':'最新更新时间：',
         'dnsCheck.status':'正在检测 DNS 连接状态…','dnsCheck.title':'DNS 连接状态','dnsCheck.fallback':'你未使用 dns.ipv4dns.com',
         'follow.title':'关注我们 · 获取更多','follow.desc':'扫码关注微信公众号，接收最新加密DNS技术资讯与使用指南',
         'footer.brand':'专注加密 DNS 服务，以 DoH / DoT / DoQ / HTTP3 技术守护每一次域名解析，让互联网访问更安全、更私密、更快速。',
@@ -2188,6 +2301,7 @@
         'power.http3.desc':'DNS over HTTP/3 with QUIC, ultra‑fast using 0‑RTT and multiplexing, perfect for 5G and dynamic networks.','power.http3.link':'Configure →',
         'cta.title':'Ready to Begin?','cta.desc':'FreshCloud DNS offers industry-leading encrypted resolution services','cta.btn':'Get Started',
         'stats.status':'Connecting to nodes…','stats.title':'DNS Resolution Stats • 24h','stats.label':'Live · Auto-refresh every 30s','stats.time':'Last updated:',
+        'blocked.status':'Connecting to block stats…','blocked.title':'DNS Block Stats • 24h','blocked.label':'Live · Auto-refresh every 30s','blocked.time':'Last updated:',
         'dnsCheck.status':'Checking DNS connection…','dnsCheck.title':'DNS Connection Status','dnsCheck.fallback':'You are not using dns.ipv4dns.com',
         'follow.title':'Follow Us · Get More','follow.desc':'Scan to follow our WeChat official account for the latest encrypted DNS tips',
         'footer.brand':'Dedicated to encrypted DNS services with DoH / DoT / DoQ / HTTP3 to protect every domain resolution, making the internet safer, more private, and faster.',
