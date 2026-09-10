@@ -338,15 +338,7 @@
     .sd2 .glass { width:36px; height:36px; border-radius:50%; }
     @media (max-width:768px) { .stats-shell { padding:34px 20px; margin:0 6px; } .stats-num b { font-size:clamp(28px,7vw,42px); } .sd1,.sd2 { display:none; } .stats-wave { filter:blur(6px); } }
     @media (max-width:480px) { .stats-shell { padding:28px 12px; } .stats-time { font-size:11px; padding:4px 14px; } }
-
-    /* ===== 拦截统计数字红色 ===== */
-    #stats-blocked .stats-num b {
-      background: none !important;
-      -webkit-background-clip: unset !important;
-      background-clip: unset !important;
-      color: #dc2626 !important;
-    }
-
+    #stats-blocked .stats-num b { background: none !important; -webkit-background-clip: unset !important; background-clip: unset !important; color: #dc2626 !important; }
     .sec-dns-check { padding:20px 0 50px; }
     .dns-check-shell { position:relative; max-width:880px; margin:0 auto; border-radius:32px; padding:48px 40px; text-align:center; background:linear-gradient(165deg,rgba(255,255,255,.92),rgba(228,235,255,.6)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); box-shadow:0 32px 80px rgba(90,110,220,.12),inset 0 2px 14px rgba(255,255,255,.9); animation:floaty 9s ease-in-out infinite; }
     @supports not (backdrop-filter:blur(1px)) { .dns-check-shell { background:rgba(255,255,255,0.95); } }
@@ -416,6 +408,80 @@
     @media (max-width:768px) { .back-to-top { bottom:70px; right:16px; width:42px; height:42px; font-size:20px; } }
     @media (max-width:480px) { .sec-tool,.sec-anywhere,.sec-core,.sec-config,.sec-power,.sec-cta,.sec-stats,.sec-follow { padding:50px 0 60px; } .sec-dns-check { padding:10px 0 30px; } .hero { padding:110px 0 30px; min-height:80vh; } .hero h1 { font-size:32px; } .bg-glow span { filter:blur(30px); } }
     @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:0.01ms!important; animation-iteration-count:1!important; transition-duration:0.1s!important; } }
+
+    /* ============ 续写板块 1：对比 ============ */
+    .sec-compare { padding:100px 0 90px; overflow:hidden; }
+    .compare-head { text-align:center; max-width:640px; margin:0 auto 48px; }
+    .compare-head .h-sub { margin:14px auto 0; }
+    .compare-grid { display:grid; grid-template-columns:1fr 1fr; gap:26px; max-width:960px; margin:0 auto; }
+    .compare-card { position:relative; border-radius:26px; padding:34px 30px 30px; overflow:hidden; transition:.4s cubic-bezier(.2,.8,.2,1); }
+    .compare-card::before { content:""; position:absolute; top:-70px; right:-70px; width:180px; height:180px; border-radius:50%; filter:blur(30px); pointer-events:none; }
+    .compare-card.bad { background:linear-gradient(165deg,rgba(255,244,244,.85),rgba(255,228,228,.5)); border:1px solid rgba(239,68,68,.18); }
+    .compare-card.bad::before { background:radial-gradient(circle,rgba(239,68,68,.22),transparent 70%); }
+    .compare-card.good { background:linear-gradient(165deg,rgba(255,255,255,.92),rgba(228,238,255,.6)); border:1px solid rgba(47,107,255,.22); box-shadow:0 30px 70px rgba(90,110,220,.14),inset 0 2px 14px rgba(255,255,255,.9); }
+    .compare-card.good::before { background:radial-gradient(circle,rgba(47,107,255,.28),transparent 70%); }
+    .compare-card:hover { transform:translateY(-8px); }
+    .compare-card.bad:hover { box-shadow:0 28px 60px rgba(239,68,68,.12); }
+    .compare-card.good:hover { box-shadow:0 40px 90px rgba(80,100,220,.2); }
+    .compare-tag { display:inline-flex; align-items:center; gap:8px; font-size:11.5px; font-weight:800; letter-spacing:.1em; padding:5px 16px; border-radius:999px; margin-bottom:16px; }
+    .compare-card.bad .compare-tag { color:#dc2626; background:rgba(239,68,68,.1); border:1px solid rgba(239,68,68,.28); }
+    .compare-card.good .compare-tag { color:#2f6bff; background:rgba(47,107,255,.1); border:1px solid rgba(47,107,255,.28); }
+    .compare-card h3 { font-size:19px; font-weight:900; color:var(--ink); margin-bottom:22px; }
+    .compare-list { list-style:none; display:flex; flex-direction:column; gap:14px; }
+    .compare-list li { display:flex; align-items:flex-start; gap:12px; font-size:13.5px; line-height:1.7; color:var(--sub); }
+    .compare-list li strong { color:var(--ink); font-weight:700; }
+    .cmp-ic { flex:none; width:22px; height:22px; border-radius:50%; display:grid; place-items:center; margin-top:1px; }
+    .compare-card.bad .cmp-ic { background:rgba(239,68,68,.12); color:#dc2626; }
+    .compare-card.good .cmp-ic { background:rgba(34,197,94,.14); color:#16a34a; }
+    .cmp-ic svg { width:13px; height:13px; stroke:currentColor; stroke-width:2.6; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+    .compare-foot { max-width:960px; margin:30px auto 0; text-align:center; font-size:12.5px; color:var(--sub); }
+    @media (max-width:768px) { .compare-grid { grid-template-columns:1fr; gap:20px; } .sec-compare { padding:70px 0 60px; } }
+
+    /* ============ 续写板块 2：用户评价 ============ */
+    .sec-voice { padding:90px 0 100px; background:linear-gradient(180deg,rgba(235,240,255,0),rgba(235,240,255,.35) 45%,rgba(255,240,250,.25)); overflow:hidden; }
+    .voice-head { text-align:center; max-width:640px; margin:0 auto 48px; }
+    .voice-head .h-sub { margin:14px auto 0; }
+    .voice-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .voice-card { position:relative; border-radius:24px; padding:28px 26px; background:linear-gradient(165deg,rgba(255,255,255,.9),rgba(240,245,255,.55)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); box-shadow:0 20px 50px rgba(100,120,220,.09),inset 0 2px 12px rgba(255,255,255,.9); transition:.4s cubic-bezier(.2,.8,.2,1); display:flex; flex-direction:column; }
+    @supports not (backdrop-filter:blur(1px)) { .voice-card { background:rgba(255,255,255,0.95); } }
+    .voice-card:hover { transform:translateY(-8px); box-shadow:0 32px 70px rgba(80,100,220,.16); }
+    .voice-quote { position:absolute; top:14px; right:22px; font-size:64px; line-height:1; font-weight:900; color:rgba(47,107,255,.08); font-family:Georgia,serif; pointer-events:none; }
+    .voice-stars { display:flex; gap:3px; margin-bottom:14px; }
+    .voice-stars svg { width:15px; height:15px; fill:#fbbf24; stroke:none; }
+    .voice-text { font-size:13.5px; line-height:1.9; color:var(--sub); flex:1; }
+    .voice-user { display:flex; align-items:center; gap:12px; margin-top:20px; padding-top:16px; border-top:1px solid rgba(140,160,230,.14); }
+    .voice-avatar { width:42px; height:42px; border-radius:50%; flex:none; display:grid; place-items:center; font-size:15px; font-weight:900; color:#fff; background:linear-gradient(135deg,#2f6bff,#8b7bff); box-shadow:0 8px 20px rgba(70,95,230,.28); }
+    .voice-avatar.v2 { background:linear-gradient(135deg,#8b7bff,#ff9ad5); }
+    .voice-avatar.v3 { background:linear-gradient(135deg,#22c55e,#4ade80); }
+    .voice-meta b { display:block; font-size:13.5px; font-weight:800; color:var(--ink); }
+    .voice-meta span { font-size:11.5px; color:var(--sub); }
+    @media (max-width:1024px) { .voice-grid { grid-template-columns:1fr 1fr; } }
+    @media (max-width:768px) { .voice-grid { grid-template-columns:1fr; gap:18px; } .sec-voice { padding:60px 0 70px; } }
+
+    /* ============ 续写板块 3：FAQ ============ */
+    .sec-faq { padding:100px 0 110px; overflow:hidden; }
+    .faq-head { text-align:center; max-width:640px; margin:0 auto 44px; }
+    .faq-head .h-sub { margin:14px auto 0; }
+    .faq-list { max-width:820px; margin:0 auto; display:flex; flex-direction:column; gap:12px; }
+    .faq-item { border-radius:18px; background:rgba(255,255,255,.72); border:1px solid rgba(160,175,235,.22); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); box-shadow:0 10px 30px rgba(100,120,220,.06); overflow:hidden; transition:.35s cubic-bezier(.2,.8,.2,1); }
+    @supports not (backdrop-filter:blur(1px)) { .faq-item { background:rgba(255,255,255,0.92); } }
+    .faq-item:hover { border-color:rgba(47,107,255,.32); }
+    .faq-item.open { background:rgba(255,255,255,.95); box-shadow:0 18px 44px rgba(80,100,220,.12); border-color:rgba(47,107,255,.35); }
+    .faq-q { display:flex; align-items:center; justify-content:space-between; gap:16px; width:100%; padding:18px 22px; background:none; border:none; cursor:pointer; text-align:left; font-family:inherit; font-size:14.5px; font-weight:700; color:var(--ink); transition:.3s; }
+    .faq-q:hover { color:var(--blue); }
+    .faq-q .q-mark { position:relative; flex:none; width:28px; height:28px; border-radius:50%; display:grid; place-items:center; background:rgba(47,107,255,.08); border:1px solid rgba(47,107,255,.2); transition:.35s cubic-bezier(.2,.8,.2,1); }
+    .faq-q .q-mark::before, .faq-q .q-mark::after { content:""; position:absolute; background:#2f6bff; border-radius:2px; }
+    .faq-q .q-mark::before { width:11px; height:2px; }
+    .faq-q .q-mark::after { width:2px; height:11px; transition:.35s cubic-bezier(.2,.8,.2,1); }
+    .faq-item.open .faq-q .q-mark { background:var(--blue); border-color:transparent; }
+    .faq-item.open .faq-q .q-mark::before, .faq-item.open .faq-q .q-mark::after { background:#fff; }
+    .faq-item.open .faq-q .q-mark::after { transform:scaleY(0); }
+    .faq-a { max-height:0; overflow:hidden; transition:max-height .45s cubic-bezier(.2,.8,.2,1); }
+    .faq-a-inner { padding:0 22px 20px 22px; font-size:13.5px; line-height:1.9; color:var(--sub); }
+    .faq-a-inner code { display:inline-block; padding:1px 8px; border-radius:6px; background:rgba(47,107,255,.08); color:var(--blue); font-size:12.5px; font-family:'Inter',monospace; font-weight:700; margin:0 2px; word-break:break-all; }
+    .faq-more { text-align:center; margin-top:34px; }
+    .faq-more .btn-ghost { padding:12px 34px; font-size:14px; }
+    @media (max-width:768px) { .sec-faq { padding:70px 0 80px; } .faq-q { font-size:13.5px; padding:16px 18px; } .faq-a-inner { padding:0 18px 18px 18px; font-size:13px; } }
   </style>
 </head>
 <body>
@@ -430,7 +496,7 @@
       <li><a href="#tool" data-i18n="nav.features">产品功能</a></li>
       <li><a href="#config" data-i18n="nav.guide">配置指南</a></li>
       <li><a href="#power" data-i18n="nav.solutions">技术方案</a></li>
-      <li><a href="#cta" data-i18n="nav.solutions2">解决方案</a></li>
+      <li><a href="#faq" data-i18n="nav.faq">常见问题</a></li>
       <li><a href="#" data-i18n="nav.help" id="helpLink">帮助中心</a></li>
     </ul>
     <div class="nav-actions">
@@ -450,7 +516,7 @@
   <a href="#tool" data-i18n="nav.features">产品功能</a>
   <a href="#config" data-i18n="nav.guide">配置指南</a>
   <a href="#power" data-i18n="nav.solutions">技术方案</a>
-  <a href="#cta" data-i18n="nav.solutions2">解决方案</a>
+  <a href="#faq" data-i18n="nav.faq">常见问题</a>
   <a href="#" data-i18n="nav.help" id="helpLinkMobile">帮助中心</a>
   <div class="lang-switch-mobile">
     <button class="lang-btn active" data-lang="zh">中文</button>
@@ -668,6 +734,163 @@
         <p data-i18n="power.http3.desc">基于 HTTP/3 与 QUIC 协议的超高速加密 DNS 查询，利用 0‑RTT 连接恢复与多路复用，大幅降低解析延迟，尤其适合 5G 与高动态网络环境。</p>
         <a class="p-link" data-tab="ios" style="color:#e069b0;" data-i18n="power.http3.link">立即配置 →</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 对比：普通DNS vs 加密DNS ===== -->
+<section class="sec-compare" id="compare" aria-labelledby="compare-title">
+  <div class="wrap">
+    <div class="compare-head reveal">
+      <h2 id="compare-title" class="h-title" data-i18n="compare.title">为什么必须升级加密 DNS</h2>
+      <p class="h-sub" data-i18n="compare.desc">传统明文 DNS 查询在链路上毫无遮掩，每一次访问都可能被记录、篡改或劫持。</p>
+    </div>
+    <div class="compare-grid">
+      <div class="compare-card bad reveal">
+        <span class="compare-tag" data-i18n="compare.bad.tag">传统明文 DNS</span>
+        <h3 data-i18n="compare.bad.title">UDP 53 · 全程裸奔</h3>
+        <ul class="compare-list">
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
+            <div><strong data-i18n="compare.bad.item1.t">查询内容明文可见</strong><br><span data-i18n="compare.bad.item1.d">运营商、公共 Wi-Fi、中间节点均可完整记录你访问了哪些域名。</span></div>
+          </li>
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
+            <div><strong data-i18n="compare.bad.item2.t">易被 DNS 劫持</strong><br><span data-i18n="compare.bad.item2.d">返回伪造 IP 植入广告页、钓鱼站，用户几乎无法察觉。</span></div>
+          </li>
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
+            <div><strong data-i18n="compare.bad.item3.t">易受投毒与中间人攻击</strong><br><span data-i18n="compare.bad.item3.d">无证书校验，攻击者可在链路上任意篡改解析结果。</span></div>
+          </li>
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
+            <div><strong data-i18n="compare.bad.item4.t">解析链路长、延迟高</strong><br><span data-i18n="compare.bad.item4.d">递归层级多，无智能调度，跨网访问体验差。</span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="compare-card good reveal">
+        <span class="compare-tag" data-i18n="compare.good.tag">清新云加密 DNS</span>
+        <h3 data-i18n="compare.good.title">DoH / DoT / DoQ · 全程加密</h3>
+        <ul class="compare-list">
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <div><strong data-i18n="compare.good.item1.t">查询全程 TLS/QUIC 加密</strong><br><span data-i18n="compare.good.item1.d">从你的设备到解析节点，中间任何环节都无法窥探查询内容。</span></div>
+          </li>
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <div><strong data-i18n="compare.good.item2.t">数字证书防劫持</strong><br><span data-i18n="compare.good.item2.d">服务端身份严格校验，杜绝 DNS 污染与伪造响应。</span></div>
+          </li>
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <div><strong data-i18n="compare.good.item3.t">查询记录不落盘</strong><br><span data-i18n="compare.good.item3.d">零日志策略，DNS 足迹彻底消除，隐私只有你知道。</span></div>
+          </li>
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <div><strong data-i18n="compare.good.item4.t">Anycast 智能加速</strong><br><span data-i18n="compare.good.item4.d">就近接入最优节点，配合本地缓存，解析延迟低至毫秒级。</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="compare-foot reveal" data-i18n="compare.foot">* 以上对比基于 RFC 8484 / 7858 / 9250 协议规范与公开安全研究结论整理。</p>
+  </div>
+</section>
+
+<!-- ===== 用户信赖与评价 ===== -->
+<section class="sec-voice" id="voice" aria-labelledby="voice-title">
+  <div class="wrap">
+    <div class="voice-head reveal">
+      <h2 id="voice-title" class="h-title" data-i18n="voice.title">被他们信赖</h2>
+      <p class="h-sub" data-i18n="voice.desc">从个人极客到企业 IT 团队，越来越多的用户把解析安全交给清新云 DNS。</p>
+    </div>
+    <div class="voice-grid">
+      <div class="voice-card reveal">
+        <span class="voice-quote" aria-hidden="true">“</span>
+        <div class="voice-stars" aria-label="5 stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="voice-text" data-i18n="voice.c1.text">在公共 Wi-Fi 上做渗透测试时，明文 DNS 简直是最佳突破口。切到 DoH 之后，整条链路的可观测性直接归零，测试数据再也没被污染过。</p>
+        <div class="voice-user">
+          <div class="voice-avatar">林</div>
+          <div class="voice-meta"><b>林工</b><span data-i18n="voice.c1.role">安全工程师 · 深圳</span></div>
+        </div>
+      </div>
+      <div class="voice-card reveal">
+        <span class="voice-quote" aria-hidden="true">“</span>
+        <div class="voice-stars" aria-label="5 stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="voice-text" data-i18n="voice.c2.text">公司 200 多台设备统一在路由器上配 DoT，一次配置全员生效。以前偶尔冒出来的广告弹窗和钓鱼页，现在几乎绝迹了。</p>
+        <div class="voice-user">
+          <div class="voice-avatar v2">周</div>
+          <div class="voice-meta"><b>周经理</b><span data-i18n="voice.c2.role">IT 运维负责人 · 杭州</span></div>
+        </div>
+      </div>
+      <div class="voice-card reveal">
+        <span class="voice-quote" aria-hidden="true">“</span>
+        <div class="voice-stars" aria-label="5 stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="voice-text" data-i18n="voice.c3.text">手机切到 DoQ 后，弱网下的解析速度肉眼可见地稳了。看直播再也不用担心开播前那几秒一直转圈。</p>
+        <div class="voice-user">
+          <div class="voice-avatar v3">陈</div>
+          <div class="voice-meta"><b>陈同学</b><span data-i18n="voice.c3.role">大学生 · 成都</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 常见问题 FAQ ===== -->
+<section class="sec-faq" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="faq-head reveal">
+      <h2 id="faq-title" class="h-title" data-i18n="faq.title">常见问题</h2>
+      <p class="h-sub" data-i18n="faq.desc">关于加密 DNS 的高频疑问，都在这里。</p>
+    </div>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item reveal">
+        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q1">加密 DNS 会不会让上网变慢？</span><span class="q-mark" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a1">不会。加密握手只在连接建立时发生一次，后续查询复用同一条连接。配合 Anycast 就近接入与本地缓存，实测解析延迟通常比运营商默认 DNS 更低。</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q2">DoH、DoT、DoQ、HTTP3 该怎么选？</span><span class="q-mark" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a2">浏览器和 Windows 11 优先选 DoH；Android、iOS、路由器全局加密推荐 DoT；移动端或高丢包网络推荐 DoQ；追求极致速度与 0-RTT 恢复可选 HTTP3。四者可同时开启，系统会自动选择。</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q3">你们会记录我的 DNS 查询吗？</span><span class="q-mark" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a3">不会。我们采用零日志策略，查询内容不写入磁盘，仅保留聚合后的匿名统计数字（如总查询量），用于容量规划与服务监控，无法回溯到任何个人或域名。</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q4">配置后如何验证是否真的生效？</span><span class="q-mark" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a4">页面下方的「DNS 连接状态」会自动检测。你也可以访问 test.ipv4dns.com 查看判定结果，或在终端执行 nslookup example.com 观察返回的解析服务器。</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q5">支持哪些操作系统和设备？</span><span class="q-mark" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a5">支持 Windows 10/11、macOS、iOS / iPadOS、Android 9+、Linux 及主流路由器（OpenWrt、梅林、爱快等）。iOS / macOS 用户可直接下载 .mobileconfig 描述文件，一键全局生效。</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q6">服务是免费的吗？有没有限速？</span><span class="q-mark" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a6">个人使用完全免费，不限制查询次数、不限制设备数量，也不做任何人为限速。企业级定制（专属节点、SLA、审计对接）可联系我们获取方案。</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q7">上游节点故障时会怎样？</span><span class="q-mark" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a7">我们采用跨可用区多活部署，任一节点故障都会在秒级内自动切换到健康节点，客户端几乎无感知。历史可用性长期保持在 99.99% 以上。</div></div>
+      </div>
+    </div>
+    <div class="faq-more reveal">
+      <button class="btn btn-ghost" type="button" id="faqMoreBtn" data-i18n="faq.more">还有疑问？查看帮助中心</button>
     </div>
   </div>
 </section>
@@ -1318,11 +1541,71 @@
   initModal('privacyModal', ['privacyLink','privacyLink2'], 'privacyModalClose');
   initModal('termsModal', ['termsLink','termsLink2'], 'termsModalClose');
 
+  // ===== FAQ 手风琴 =====
+  (function() {
+    const items = document.querySelectorAll('.faq-item');
+    if (!items.length) return;
+
+    function closeItem(item) {
+      item.classList.remove('open');
+      const btn = item.querySelector('.faq-q');
+      const p = item.querySelector('.faq-a');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+      if (p) p.style.maxHeight = '0px';
+    }
+    function openItem(item) {
+      item.classList.add('open');
+      const btn = item.querySelector('.faq-q');
+      const p = item.querySelector('.faq-a');
+      if (btn) btn.setAttribute('aria-expanded', 'true');
+      if (p) p.style.maxHeight = p.scrollHeight + 'px';
+    }
+
+    items.forEach(item => {
+      const btn = item.querySelector('.faq-q');
+      if (!btn) return;
+      btn.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        items.forEach(closeItem);
+        if (!isOpen) openItem(item);
+      });
+    });
+
+    if (items[0]) openItem(items[0]);
+
+    let resizeTimer = null;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        items.forEach(item => {
+          if (item.classList.contains('open')) {
+            const p = item.querySelector('.faq-a');
+            if (p) p.style.maxHeight = p.scrollHeight + 'px';
+          }
+        });
+      }, 160);
+    }, { passive: true });
+
+    const moreBtn = document.getElementById('faqMoreBtn');
+    if (moreBtn) {
+      moreBtn.addEventListener('click', () => {
+        const t = document.getElementById('toast');
+        if (t) {
+          t.textContent = '帮助中心即将上线，敬请期待';
+          t.classList.add('show');
+          clearTimeout(window.__faqToastTimer);
+          window.__faqToastTimer = setTimeout(() => t.classList.remove('show'), 2000);
+        }
+      });
+    }
+  })();
+
   // ===== 多语言 =====
   (function() {
     const translations = {
       zh: {
         'nav.features':'产品功能','nav.guide':'配置指南','nav.solutions':'技术方案','nav.solutions2':'解决方案','nav.help':'帮助中心','nav.login':'登录','nav.start':'立即配置',
+        'nav.faq':'常见问题',
         'hero.badge':'清新云·黑洞防护','hero.title1':'清新云','hero.title2':'DNS','hero.sub':'一个有安全防护的加密DNS。','hero.cta':'立即开始','hero.scroll':'向下滚动',
         'tool.kicker':'一站式加密解析服务','tool.title':'前所未有的<br>一站式加密DNS服务','tool.desc':'基于 DoH / DoT / DoQ / HTTP3 加密协议，将传统明文 DNS 查询升级为加密通道。个人上网、企业办公、移动场景，一键获得隐私保护与安全加速。',
         'tool.feat1.title':'智能解析加速','tool.feat1.desc':'全球 Anycast 节点，毫秒级响应，就近调度最优线路',
@@ -1353,6 +1636,35 @@
         'blocked.status':'正在连接拦截统计节点…','blocked.title':'DNS实时拦截统计 • 24小时','blocked.label':'实时统计 · 每 30 秒自动刷新','blocked.time':'最新更新时间：',
         'dnsCheck.status':'正在检测 DNS 连接状态…','dnsCheck.title':'DNS 连接状态','dnsCheck.fallback':'你未使用 dns.ipv4dns.com',
         'follow.title':'关注我们 · 获取更多','follow.desc':'扫码关注微信公众号，接收最新加密DNS技术资讯与使用指南',
+        'compare.title':'为什么必须升级加密 DNS',
+        'compare.desc':'传统明文 DNS 查询在链路上毫无遮掩，每一次访问都可能被记录、篡改或劫持。',
+        'compare.bad.tag':'传统明文 DNS','compare.bad.title':'UDP 53 · 全程裸奔',
+        'compare.bad.item1.t':'查询内容明文可见','compare.bad.item1.d':'运营商、公共 Wi-Fi、中间节点均可完整记录你访问了哪些域名。',
+        'compare.bad.item2.t':'易被 DNS 劫持','compare.bad.item2.d':'返回伪造 IP 植入广告页、钓鱼站，用户几乎无法察觉。',
+        'compare.bad.item3.t':'易受投毒与中间人攻击','compare.bad.item3.d':'无证书校验，攻击者可在链路上任意篡改解析结果。',
+        'compare.bad.item4.t':'解析链路长、延迟高','compare.bad.item4.d':'递归层级多，无智能调度，跨网访问体验差。',
+        'compare.good.tag':'清新云加密 DNS','compare.good.title':'DoH / DoT / DoQ · 全程加密',
+        'compare.good.item1.t':'查询全程 TLS/QUIC 加密','compare.good.item1.d':'从你的设备到解析节点，中间任何环节都无法窥探查询内容。',
+        'compare.good.item2.t':'数字证书防劫持','compare.good.item2.d':'服务端身份严格校验，杜绝 DNS 污染与伪造响应。',
+        'compare.good.item3.t':'查询记录不落盘','compare.good.item3.d':'零日志策略，DNS 足迹彻底消除，隐私只有你知道。',
+        'compare.good.item4.t':'Anycast 智能加速','compare.good.item4.d':'就近接入最优节点，配合本地缓存，解析延迟低至毫秒级。',
+        'compare.foot':'* 以上对比基于 RFC 8484 / 7858 / 9250 协议规范与公开安全研究结论整理。',
+        'voice.title':'被他们信赖','voice.desc':'从个人极客到企业 IT 团队，越来越多的用户把解析安全交给清新云 DNS。',
+        'voice.c1.text':'在公共 Wi-Fi 上做渗透测试时，明文 DNS 简直是最佳突破口。切到 DoH 之后，整条链路的可观测性直接归零，测试数据再也没被污染过。',
+        'voice.c1.role':'安全工程师 · 深圳',
+        'voice.c2.text':'公司 200 多台设备统一在路由器上配 DoT，一次配置全员生效。以前偶尔冒出来的广告弹窗和钓鱼页，现在几乎绝迹了。',
+        'voice.c2.role':'IT 运维负责人 · 杭州',
+        'voice.c3.text':'手机切到 DoQ 后，弱网下的解析速度肉眼可见地稳了。看直播再也不用担心开播前那几秒一直转圈。',
+        'voice.c3.role':'大学生 · 成都',
+        'faq.title':'常见问题','faq.desc':'关于加密 DNS 的高频疑问，都在这里。',
+        'faq.q1':'加密 DNS 会不会让上网变慢？','faq.a1':'不会。加密握手只在连接建立时发生一次，后续查询复用同一条连接。配合 Anycast 就近接入与本地缓存，实测解析延迟通常比运营商默认 DNS 更低。',
+        'faq.q2':'DoH、DoT、DoQ、HTTP3 该怎么选？','faq.a2':'浏览器和 Windows 11 优先选 DoH；Android、iOS、路由器全局加密推荐 DoT；移动端或高丢包网络推荐 DoQ；追求极致速度与 0-RTT 恢复可选 HTTP3。四者可同时开启，系统会自动选择。',
+        'faq.q3':'你们会记录我的 DNS 查询吗？','faq.a3':'不会。我们采用零日志策略，查询内容不写入磁盘，仅保留聚合后的匿名统计数字（如总查询量），用于容量规划与服务监控，无法回溯到任何个人或域名。',
+        'faq.q4':'配置后如何验证是否真的生效？','faq.a4':'页面下方的「DNS 连接状态」会自动检测。你也可以访问 test.ipv4dns.com 查看判定结果，或在终端执行 nslookup example.com 观察返回的解析服务器。',
+        'faq.q5':'支持哪些操作系统和设备？','faq.a5':'支持 Windows 10/11、macOS、iOS / iPadOS、Android 9+、Linux 及主流路由器（OpenWrt、梅林、爱快等）。iOS / macOS 用户可直接下载 .mobileconfig 描述文件，一键全局生效。',
+        'faq.q6':'服务是免费的吗？有没有限速？','faq.a6':'个人使用完全免费，不限制查询次数、不限制设备数量，也不做任何人为限速。企业级定制（专属节点、SLA、审计对接）可联系我们获取方案。',
+        'faq.q7':'上游节点故障时会怎样？','faq.a7':'我们采用跨可用区多活部署，任一节点故障都会在秒级内自动切换到健康节点，客户端几乎无感知。历史可用性长期保持在 99.99% 以上。',
+        'faq.more':'还有疑问？查看帮助中心',
         'footer.brand':'专注加密 DNS 服务，以 DoH / DoT / DoQ / HTTP3 技术守护每一次域名解析，让互联网访问更安全、更私密、更快速。',
         'footer.product':'产品','footer.product1':'加密DNS','footer.product2':'DoH 服务','footer.product3':'DoT 服务','footer.product4':'DoQ 服务','footer.product5':'DNSCrypt 服务',
         'footer.solutions':'解决方案','footer.sol1':'个人用户','footer.sol2':'企业办公','footer.sol3':'移动场景','footer.sol4':'路由器',
@@ -1362,6 +1674,7 @@
       },
       en: {
         'nav.features':'Features','nav.guide':'Guide','nav.solutions':'Tech Solutions','nav.solutions2':'Solutions','nav.help':'Help Center','nav.login':'Login','nav.start':'Get Started',
+        'nav.faq':'FAQ',
         'hero.badge':'FreshCloud · Blackhole Shield','hero.title1':'FreshCloud','hero.title2':'DNS','hero.sub':'A secure and private encrypted DNS.','hero.cta':'Get Started','hero.scroll':'Scroll Down',
         'tool.kicker':'All-in-One Encrypted DNS','tool.title':'Unprecedented<br>All-in-One Encrypted DNS','tool.desc':'Based on DoH / DoT / DoQ / HTTP3 encryption protocols, upgrade traditional plaintext DNS queries to encrypted channels.',
         'tool.feat1.title':'Smart Resolution','tool.feat1.desc':'Global Anycast nodes, millisecond response, optimal route selection',
@@ -1392,6 +1705,35 @@
         'blocked.status':'Connecting to block stats…','blocked.title':'DNS Block Stats • 24h','blocked.label':'Live · Auto-refresh every 30s','blocked.time':'Last updated:',
         'dnsCheck.status':'Checking DNS connection…','dnsCheck.title':'DNS Connection Status','dnsCheck.fallback':'You are not using dns.ipv4dns.com',
         'follow.title':'Follow Us · Get More','follow.desc':'Scan to follow our WeChat official account for the latest encrypted DNS tips',
+        'compare.title':'Why You Must Upgrade to Encrypted DNS',
+        'compare.desc':'Legacy plaintext DNS travels the wire in the clear — every lookup can be logged, tampered with, or hijacked.',
+        'compare.bad.tag':'Legacy Plaintext DNS','compare.bad.title':'UDP 53 · Fully Exposed',
+        'compare.bad.item1.t':'Queries are visible in plaintext','compare.bad.item1.d':'ISPs, public Wi-Fi, and middle nodes can log every domain you visit.',
+        'compare.bad.item2.t':'Easy to hijack','compare.bad.item2.d':'Fake IPs can inject ad pages or phishing sites with almost no user-visible sign.',
+        'compare.bad.item3.t':'Vulnerable to poisoning & MITM','compare.bad.item3.d':'No certificate validation — attackers can rewrite resolution results at will.',
+        'compare.bad.item4.t':'Longer path, higher latency','compare.bad.item4.d':'Deep recursion, no smart routing, poor cross-network experience.',
+        'compare.good.tag':'FreshCloud Encrypted DNS','compare.good.title':'DoH / DoT / DoQ · End-to-End Encrypted',
+        'compare.good.item1.t':'Full TLS/QUIC encryption','compare.good.item1.d':'From your device to the resolver, no intermediate hop can inspect your queries.',
+        'compare.good.item2.t':'Certificate anti-hijacking','compare.good.item2.d':'Strict server identity verification eliminates DNS poisoning and forged responses.',
+        'compare.good.item3.t':'Queries never stored','compare.good.item3.d':'Zero-log policy removes your DNS footprint entirely — privacy only you control.',
+        'compare.good.item4.t':'Anycast acceleration','compare.good.item4.d':'Nearest-node routing plus local caching brings resolution latency down to milliseconds.',
+        'compare.foot':'* Comparison based on RFC 8484 / 7858 / 9250 and public security research.',
+        'voice.title':'Trusted By Them','voice.desc':'From individual geeks to enterprise IT teams, more users hand resolution security to FreshCloud DNS.',
+        'voice.c1.text':'Plaintext DNS is the juiciest entry point during Wi-Fi pentests. After switching to DoH, link observability dropped to zero and test data has never been polluted since.',
+        'voice.c1.role':'Security Engineer · Shenzhen',
+        'voice.c2.text':'We pushed DoT to 200+ devices through the router in one shot. The occasional ad popups and phishing pages basically disappeared.',
+        'voice.c2.role':'IT Operations Lead · Hangzhou',
+        'voice.c3.text':'After switching my phone to DoQ, resolution under weak signal is visibly more stable. No more spinning wheel before livestreams.',
+        'voice.c3.role':'University Student · Chengdu',
+        'faq.title':'Frequently Asked Questions','faq.desc':'Everything you want to know about encrypted DNS.',
+        'faq.q1':'Will encrypted DNS slow down my browsing?','faq.a1':'No. The encrypted handshake only happens once at connection setup and is reused for later queries. Combined with Anycast and local caching, real-world latency is usually lower than your ISP default.',
+        'faq.q2':'Which should I choose — DoH, DoT, DoQ or HTTP3?','faq.a2':'Browsers and Windows 11 prefer DoH; Android, iOS and routers do best with DoT; mobile and high-loss networks favor DoQ; for maximum speed and 0-RTT recovery, HTTP3. All four can be enabled together.',
+        'faq.q3':'Do you log my DNS queries?','faq.a3':'No. We follow a strict zero-log policy — query contents never touch disk. Only aggregated anonymous counters (like total query volume) are kept for capacity planning and monitoring.',
+        'faq.q4':'How can I verify it actually works?','faq.a4':'The "DNS Connection Status" panel below auto-detects it. You can also visit test.ipv4dns.com, or run nslookup example.com and inspect the resolver address.',
+        'faq.q5':'Which platforms and devices are supported?','faq.a5':'Windows 10/11, macOS, iOS / iPadOS, Android 9+, Linux, and mainstream routers (OpenWrt, Merlin, iKuai, etc.). iOS / macOS users can install the .mobileconfig profile in one tap.',
+        'faq.q6':'Is it free? Any rate limits?','faq.a6':'Free for personal use with no query cap, no device limit, and no artificial throttling. Enterprise options (dedicated nodes, SLA, audit integration) are available on request.',
+        'faq.q7':'What happens if an upstream node fails?','faq.a7':'We run active-active across availability zones. Any node failure triggers automatic failover within seconds, almost imperceptible to clients. Historical availability has stayed above 99.99%.',
+        'faq.more':'Still curious? Visit the Help Center',
         'footer.brand':'Dedicated to encrypted DNS services with DoH / DoT / DoQ / HTTP3 to protect every domain resolution, making the internet safer, more private, and faster.',
         'footer.product':'Product','footer.product1':'Encrypted DNS','footer.product2':'DoH Service','footer.product3':'DoT Service','footer.product4':'DoQ Service','footer.product5':'DNSCrypt Service',
         'footer.solutions':'Solutions','footer.sol1':'Personal Users','footer.sol2':'Enterprise','footer.sol3':'Mobile','footer.sol4':'Routers',
