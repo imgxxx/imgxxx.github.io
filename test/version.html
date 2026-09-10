@@ -23,12 +23,22 @@
     .wrap { max-width:1280px; margin:0 auto; padding:0 40px; position:relative; z-index:2; }
     @media (max-width:768px) { .wrap { padding:0 16px; } }
     @media (max-width:480px) { .wrap { padding:0 12px; } }
-    .bg-glow { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden; will-change:transform; }
-    .bg-glow span { position:absolute; border-radius:50%; filter:blur(60px); opacity:.35; will-change:transform; }
-    .g1 { width:40vw; height:40vw; left:-10vw; top:-8vw; background:radial-gradient(circle,#c7d6ff,transparent 65%); animation:drift 28s ease-in-out infinite alternate; }
-    .g2 { width:34vw; height:34vw; right:-8vw; top:6vh; background:radial-gradient(circle,#ffd9f0,transparent 65%); animation:drift 32s ease-in-out infinite alternate-reverse; }
-    .g3 { width:38vw; height:38vw; left:18vw; top:50vh; background:radial-gradient(circle,#d8ccff,transparent 65%); animation:drift 36s ease-in-out infinite alternate; }
-    @keyframes drift { 0%{transform:translate(0,0) scale(1);} 100%{transform:translate(4vw,-3vh) scale(1.1);} }
+
+    /* ============ 背景光晕：渐变替代 filter:blur，走 GPU 合成 ============ */
+    .bg-glow { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden; contain:strict; }
+    .bg-glow span {
+      position:absolute; border-radius:50%; opacity:.55;
+      will-change:transform; transform:translate3d(0,0,0); backface-visibility:hidden;
+      animation:drift 34s cubic-bezier(.45,.05,.55,.95) infinite alternate;
+    }
+    .g1 { width:70vw; height:70vw; left:-20vw; top:-15vw; background:radial-gradient(circle,#c7d6ff 0%,#c7d6ff 6%,transparent 62%); animation-duration:34s; }
+    .g2 { width:60vw; height:60vw; right:-15vw; top:5vh; background:radial-gradient(circle,#ffd9f0 0%,#ffd9f0 6%,transparent 62%); animation-duration:40s; animation-direction:alternate-reverse; }
+    .g3 { width:65vw; height:65vw; left:10vw; top:45vh; background:radial-gradient(circle,#d8ccff 0%,#d8ccff 6%,transparent 62%); animation-duration:44s; }
+    @keyframes drift {
+      0%   { transform:translate3d(0,0,0) scale(1); }
+      100% { transform:translate3d(5vw,-4vh,0) scale(1.08); }
+    }
+
     .h-title { font-size:clamp(30px,4.2vw,44px); font-weight:900; line-height:1.25; letter-spacing:-0.02em; }
     .h-sub { color:var(--sub); font-size:clamp(14px,1.1vw,17px); line-height:1.8; margin-top:14px; max-width:540px; }
     .btn { display:inline-flex; align-items:center; justify-content:center; border-radius:999px; cursor:pointer; font-size:15px; font-weight:600; transition:.3s cubic-bezier(.2,.8,.2,1); border:none; text-decoration:none; white-space:nowrap; }
@@ -107,11 +117,19 @@
     @keyframes ringPulse { 0%{transform:scale(.95);opacity:1;} 100%{transform:scale(1.35);opacity:0;} }
     @keyframes fadeUp { 0%{opacity:0;transform:translateY(30px);} 100%{opacity:1;transform:translateY(0);} }
     @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:.3;} }
-    @keyframes floaty { 0%,100%{transform:translateY(0) rotate(var(--r,0deg));} 50%{transform:translateY(-18px) rotate(calc(var(--r,0deg) + 2deg));} }
-    @keyframes floaty2 { 0%,100%{transform:translateY(0) rotate(var(--r,0deg)) scale(1);} 50%{transform:translateY(-26px) rotate(calc(var(--r,0deg) - 3deg)) scale(1.03);} }
+
+    /* Hero 形状：强制 GPU 合成 + 幅度收窄 */
     .hero-shapes { position:absolute; inset:0; pointer-events:none; z-index:1; }
-    .shape { position:absolute; will-change:transform; }
+    .shape { position:absolute; will-change:transform; transform:translate3d(0,0,0); backface-visibility:hidden; }
     .shape .glass { background:linear-gradient(135deg,rgba(255,182,193,0.45),rgba(200,180,255,0.45),rgba(180,200,255,0.45),rgba(200,210,220,0.35)); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.7); box-shadow:0 20px 40px rgba(100,120,220,0.15); }
+    @keyframes floaty {
+      0%,100% { transform:translate3d(0,0,0) rotate(var(--r,0deg)); }
+      50%     { transform:translate3d(0,-14px,0) rotate(calc(var(--r,0deg) + 1.5deg)); }
+    }
+    @keyframes floaty2 {
+      0%,100% { transform:translate3d(0,0,0) rotate(var(--r,0deg)) scale(1); }
+      50%     { transform:translate3d(0,-20px,0) rotate(calc(var(--r,0deg) - 2deg)) scale(1.02); }
+    }
     .pyramid { left:4%; top:22%; animation:floaty2 8s ease-in-out infinite; --r:-6deg; }
     .pyramid .glass { width:clamp(80px,14vw,180px); height:clamp(80px,14vw,180px); clip-path:polygon(50% 0%,100% 100%,0% 100%); }
     .cube { right:5%; top:20%; animation:floaty 9s ease-in-out infinite; --r:12deg; }
@@ -147,16 +165,23 @@
     .feat-item h4 { font-size:16px; font-weight:700; }
     .feat-item p { font-size:13px; color:var(--sub); margin-top:2px; }
     .dns-stage { position:relative; display:flex; align-items:center; justify-content:center; min-height:460px; overflow:hidden; border-radius:40px; }
-    .dns-halo { position:absolute; width:380px; height:380px; border-radius:50%; background:radial-gradient(circle,rgba(160,180,255,.3),transparent 65%); filter:blur(24px); animation:pulse 5s ease-in-out infinite; }
-    .dns-float-wrap { position:relative; animation:floaty 7s ease-in-out infinite; width:260px; height:260px; }
+
+    /* 光晕：渐变替代 filter:blur，opacity 脉冲 */
+    .dns-halo {
+      position:absolute; width:500px; height:500px; border-radius:50%;
+      background:radial-gradient(circle,rgba(160,180,255,.42) 0%,rgba(160,180,255,.14) 38%,transparent 68%);
+      filter:none; will-change:opacity, transform; transform:translate3d(0,0,0);
+      animation:haloPulse 5s ease-in-out infinite;
+    }
+    .dns-float-wrap { position:relative; animation:floaty 7s ease-in-out infinite; width:260px; height:260px; will-change:transform; transform:translate3d(0,0,0); backface-visibility:hidden; }
     .dns-core { width:100%; height:100%; border-radius:50%; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.95),rgba(190,200,255,.5) 55%,rgba(150,165,255,.45)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); box-shadow:0 40px 90px rgba(90,110,220,.28),inset 0 3px 14px rgba(255,255,255,.95),inset 0 -14px 34px rgba(120,140,255,.28); position:relative; z-index:2; }
     @supports not (backdrop-filter:blur(1px)) { .dns-core { background:radial-gradient(circle at 35% 30%,#f0f4ff,#d0d8f0 55%,#b0bce0); } }
     .dns-core::before { content:""; position:absolute; inset:14px; border-radius:50%; background:linear-gradient(160deg,rgba(255,255,255,.5),rgba(255,255,255,.05)); border:1px solid rgba(255,255,255,.6); }
     .dns-core .txt { position:relative; z-index:3; text-align:center; }
     .dns-core .txt b { font-size:68px; font-weight:900; letter-spacing:.04em; background:linear-gradient(135deg,#1c2a6e,#2f6bff 55%,#8b7bff); -webkit-background-clip:text; background-clip:text; color:transparent; filter:drop-shadow(0 6px 14px rgba(60,90,220,.3)); }
     .dns-core .txt small { display:block; font-size:11px; letter-spacing:.4em; color:#5a68b8; margin-top:2px; font-weight:700; }
-    @media (max-width:768px) { .tool-grid { grid-template-columns:1fr; gap:40px; } .dns-stage { min-height:360px; order:-1; } .dns-float-wrap { width:200px; height:200px; } .dns-core .txt b { font-size:48px; } .dns-halo { width:300px; height:300px; filter:blur(16px); } }
-    @media (max-width:480px) { .dns-float-wrap { width:160px; height:160px; } .dns-core .txt b { font-size:36px; } .dns-core .txt small { font-size:9px; } .dns-halo { width:240px; height:240px; filter:blur(12px); } }
+    @media (max-width:768px) { .tool-grid { grid-template-columns:1fr; gap:40px; } .dns-stage { min-height:360px; order:-1; } .dns-float-wrap { width:200px; height:200px; } .dns-core .txt b { font-size:48px; } .dns-halo { width:300px; height:300px; } }
+    @media (max-width:480px) { .dns-float-wrap { width:160px; height:160px; } .dns-core .txt b { font-size:36px; } .dns-core .txt small { font-size:9px; } .dns-halo { width:240px; height:240px; } }
     .sec-anywhere { padding:100px 0 60px; overflow:hidden; background:linear-gradient(180deg,rgba(235,240,255,0),rgba(235,240,255,.4) 30%,rgba(255,240,250,.3) 70%,rgba(235,240,255,0)); text-align:center; }
     .anywhere-grid { display:grid; grid-template-columns:1fr 1.2fr; gap:50px; align-items:center; }
     .anywhere-copy { text-align:left; }
@@ -166,8 +191,18 @@
     .stat span { font-size:13px; color:var(--sub); font-weight:500; }
     .shield-scene { position:relative; display:flex; align-items:center; justify-content:center; min-height:400px; }
     .shield-wrap { position:relative; width:260px; height:300px; display:flex; align-items:center; justify-content:center; }
-    .shield-glow { position:absolute; width:220px; height:220px; border-radius:50%; background:radial-gradient(circle,rgba(120,150,255,.3),transparent 65%); filter:blur(24px); animation:pulse 5s ease-in-out infinite; }
-    .shield { position:relative; width:150px; height:170px; animation:floaty2 6.5s ease-in-out infinite; --r:-3deg; }
+
+    .shield-glow {
+      position:absolute; width:320px; height:320px; border-radius:50%;
+      background:radial-gradient(circle,rgba(160,180,255,.42) 0%,rgba(160,180,255,.14) 38%,transparent 68%);
+      filter:none; will-change:opacity, transform; transform:translate3d(0,0,0);
+      animation:haloPulse 5s ease-in-out infinite;
+    }
+    @keyframes haloPulse {
+      0%,100% { opacity:.75; transform:translate3d(0,0,0) scale(1); }
+      50%     { opacity:.42; transform:translate3d(0,0,0) scale(1.04); }
+    }
+    .shield { position:relative; width:150px; height:170px; animation:floaty2 6.5s ease-in-out infinite; --r:-3deg; will-change:transform; transform:translate3d(0,0,0); backface-visibility:hidden; }
     .shield-inner { width:100%; height:100%; filter:drop-shadow(0 20px 40px rgba(70,95,230,.3)); }
     .shield-svg { width:100%; height:100%; overflow:visible; }
     .shield-shadow { position:absolute; left:50%; bottom:-34px; width:110px; height:20px; border-radius:50%; transform:translateX(-50%); background:radial-gradient(ellipse,rgba(80,100,220,.2),transparent 70%); filter:blur(6px); animation:shadowPulse 6.5s ease-in-out infinite; }
@@ -176,14 +211,17 @@
     .shield-ripple.r2 { animation-delay:1.3s; }
     .shield-ripple.r3 { animation-delay:2.6s; }
     @keyframes shieldRipple { 0%{transform:translate(-50%,-50%) scale(.5);opacity:.6;} 80%{opacity:.1;} 100%{transform:translate(-50%,-50%) scale(1.5);opacity:0;} }
-    .orbit-chip { position:absolute; padding:5px 14px; border-radius:999px; font-size:12px; font-weight:800; white-space:nowrap; background:rgba(255,255,255,.85); border:1px solid rgba(160,175,235,.4); backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px); box-shadow:0 8px 20px rgba(100,120,220,.12); animation:orbitFloat 7s ease-in-out infinite; }
+    .orbit-chip { position:absolute; padding:5px 14px; border-radius:999px; font-size:12px; font-weight:800; white-space:nowrap; background:rgba(255,255,255,.85); border:1px solid rgba(160,175,235,.4); backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px); box-shadow:0 8px 20px rgba(100,120,220,.12); animation:orbitFloat 7s ease-in-out infinite; will-change:transform; transform:translate3d(0,0,0); backface-visibility:hidden; }
     @supports not (backdrop-filter:blur(1px)) { .orbit-chip { background:rgba(255,255,255,0.95); } }
     .oc1 { top:4%; left:2%; color:#2f6bff; }
     .oc2 { top:36%; right:-4%; color:#7a5ff0; animation-delay:1.4s; }
     .oc3 { bottom:2%; left:4%; color:#e069b0; animation-delay:2.8s; }
-    @keyframes orbitFloat { 0%,100%{transform:translateY(0) rotate(-2deg);} 50%{transform:translateY(-14px) rotate(3deg);} }
+    @keyframes orbitFloat {
+      0%,100% { transform:translate3d(0,0,0) rotate(-2deg); }
+      50%     { transform:translate3d(0,-14px,0) rotate(3deg); }
+    }
     @media (max-width:1024px) { .anywhere-grid{grid-template-columns:1fr;gap:30px;text-align:center} .anywhere-copy{text-align:center} .stat-row{justify-content:center} }
-    @media (max-width:768px) { .shield-scene{min-height:300px} .shield-wrap{width:200px;height:240px} .shield{width:120px;height:136px} .orbit-chip{font-size:10px;padding:4px 10px} .oc2{right:0} .shield-glow{filter:blur(16px)} }
+    @media (max-width:768px) { .shield-scene{min-height:300px} .shield-wrap{width:200px;height:240px} .shield{width:120px;height:136px} .orbit-chip{font-size:10px;padding:4px 10px} .oc2{right:0} .shield-glow{width:260px;height:260px} }
     .sec-core { padding:60px 0 110px; overflow:hidden; background:linear-gradient(180deg,rgba(255,255,255,0),rgba(235,240,255,.3) 50%,rgba(255,240,250,.2) 100%); }
     .sec-core .sec-head { text-align:center; margin-bottom:48px; }
     .sec-core .sec-head .h-sub { margin:14px auto 0; max-width:600px; }
@@ -214,22 +252,28 @@
     .sec-config { padding:110px 0; overflow:hidden; }
     .config-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
     .privacy-scene { position:relative; display:flex; justify-content:center; align-items:center; min-height:400px; }
-    .privacy-wrap { position:relative; width:260px; height:300px; display:flex; flex-direction:column; align-items:center; justify-content:center; animation:floaty 8s ease-in-out infinite; }
-    .privacy-ring { position:absolute; width:220px; height:220px; border-radius:50%; background:radial-gradient(circle,rgba(47,107,255,0.25),transparent 70%); filter:blur(20px); animation:pulse 5s ease-in-out infinite; }
+    .privacy-wrap { position:relative; width:260px; height:300px; display:flex; flex-direction:column; align-items:center; justify-content:center; animation:floaty 8s ease-in-out infinite; will-change:transform; transform:translate3d(0,0,0); backface-visibility:hidden; }
+
+    .privacy-ring {
+      position:absolute; width:320px; height:320px; border-radius:50%;
+      background:radial-gradient(circle,rgba(160,180,255,.42) 0%,rgba(160,180,255,.14) 38%,transparent 68%);
+      filter:none; will-change:opacity, transform; transform:translate3d(0,0,0);
+      animation:haloPulse 5s ease-in-out infinite;
+    }
     .ripple-container { position:absolute; width:100%; height:100%; top:0; left:0; pointer-events:none; z-index:1; }
     .ripple-ring { position:absolute; top:50%; left:50%; border-radius:50%; border:2px solid rgba(47,107,255,0.5); transform:translate(-50%,-50%) scale(0.4); opacity:0; animation:rippleExpand 3s cubic-bezier(0.2,0.6,0.4,1) infinite; width:160px; height:160px; }
     .ripple-ring:nth-child(2) { animation-delay:0.8s; border-color:rgba(139,123,255,0.4); }
     .ripple-ring:nth-child(3) { animation-delay:1.6s; border-color:rgba(255,154,213,0.3); }
     @keyframes rippleExpand { 0%{transform:translate(-50%,-50%) scale(0.4);opacity:0.8;} 100%{transform:translate(-50%,-50%) scale(2.0);opacity:0;} }
-    .privacy-icon { position:relative; z-index:2; width:90px; height:90px; margin-bottom:12px; animation:floaty2 5s ease-in-out infinite; }
+    .privacy-icon { position:relative; z-index:2; width:90px; height:90px; margin-bottom:12px; animation:floaty2 5s ease-in-out infinite; will-change:transform; transform:translate3d(0,0,0); }
     .privacy-icon svg { width:100%; height:100%; filter:drop-shadow(0 0 30px rgba(47,107,255,0.5)); }
     .privacy-text { position:relative; z-index:2; text-align:center; }
     .privacy-text .main { font-size:22px; font-weight:900; letter-spacing:0.1em; background:linear-gradient(135deg,#2f6bff,#8b7bff); -webkit-background-clip:text; background-clip:text; color:transparent; animation:textGlow 3s ease-in-out infinite; }
     .privacy-text .sub { font-size:14px; font-weight:600; color:var(--sub); margin-top:6px; letter-spacing:0.05em; animation:fadeUpSmall 2s ease-in-out infinite alternate; }
     @keyframes textGlow { 0%,100%{filter:drop-shadow(0 0 6px rgba(47,107,255,0.3));} 50%{filter:drop-shadow(0 0 20px rgba(47,107,255,0.7));} }
     @keyframes fadeUpSmall { 0%{opacity:0.6;transform:translateY(4px);} 100%{opacity:1;transform:translateY(-4px);} }
-    @media (max-width:768px) { .privacy-wrap{width:200px;height:240px} .privacy-ring{width:170px;height:170px} .privacy-icon{width:70px;height:70px} .privacy-text .main{font-size:18px} .privacy-text .sub{font-size:12px} .ripple-ring{width:130px;height:130px} @keyframes rippleExpand { 0%{transform:translate(-50%,-50%) scale(0.4);opacity:0.8;} 100%{transform:translate(-50%,-50%) scale(1.8);opacity:0;} } }
-    @media (max-width:480px) { .privacy-wrap{width:160px;height:200px} .privacy-ring{width:140px;height:140px} .privacy-icon{width:56px;height:56px} .privacy-text .main{font-size:15px} .privacy-text .sub{font-size:10px} .ripple-ring{width:100px;height:100px} @keyframes rippleExpand { 0%{transform:translate(-50%,-50%) scale(0.4);opacity:0.8;} 100%{transform:translate(-50%,-50%) scale(1.6);opacity:0;} } }
+    @media (max-width:768px) { .privacy-wrap{width:200px;height:240px} .privacy-ring{width:260px;height:260px} .privacy-icon{width:70px;height:70px} .privacy-text .main{font-size:18px} .privacy-text .sub{font-size:12px} .ripple-ring{width:130px;height:130px} @keyframes rippleExpand { 0%{transform:translate(-50%,-50%) scale(0.4);opacity:0.8;} 100%{transform:translate(-50%,-50%) scale(1.8);opacity:0;} } }
+    @media (max-width:480px) { .privacy-wrap{width:160px;height:200px} .privacy-ring{width:220px;height:220px} .privacy-icon{width:56px;height:56px} .privacy-text .main{font-size:15px} .privacy-text .sub{font-size:10px} .ripple-ring{width:100px;height:100px} @keyframes rippleExpand { 0%{transform:translate(-50%,-50%) scale(0.4);opacity:0.8;} 100%{transform:translate(-50%,-50%) scale(1.6);opacity:0;} } }
     .config-copy .kicker { display:inline-flex; align-items:center; gap:10px; font-size:13px; font-weight:700; color:var(--purple); letter-spacing:.15em; margin-bottom:18px; }
     .config-copy .kicker::before { content:""; width:34px; height:2px; background:linear-gradient(90deg,var(--purple),transparent); border-radius:2px; }
     .cfg-tabs { display:flex; gap:10px; margin:28px 0 20px; flex-wrap:wrap; }
@@ -272,9 +316,17 @@
     @supports not (backdrop-filter:blur(1px)) { .power-card { background:rgba(255,255,255,0.95); } }
     .power-card:hover { transform:translateY(-10px); box-shadow:0 36px 80px rgba(80,100,220,.18); }
     .power-card * { min-width:0; max-width:100%; overflow-wrap:break-word; }
-    .power-card::before { content:""; position:absolute; top:-40px; left:50%; transform:translateX(-50%); width:160px; height:160px; border-radius:50%; background:radial-gradient(circle,var(--gc,rgba(47,107,255,.12)),transparent 70%); filter:blur(8px); transition:.4s; }
-    .power-card:hover::before { transform:translateX(-50%) scale(1.2); }
-    .p-icon { position:relative; width:72px; height:72px; margin:0 auto 18px; animation:floaty 5.5s ease-in-out infinite; }
+
+    /* Power 卡片光晕：渐变替代 filter:blur */
+    .power-card::before {
+      content:""; position:absolute; top:-40px; left:50%; transform:translateX(-50%);
+      width:200px; height:200px; border-radius:50%;
+      background:radial-gradient(circle, var(--gc, rgba(47,107,255,.18)) 0%, transparent 68%);
+      filter:none;
+      transition:transform .35s cubic-bezier(.2,.8,.2,1);
+    }
+    .power-card:hover::before { transform:translateX(-50%) scale(1.15); }
+    .p-icon { position:relative; width:72px; height:72px; margin:0 auto 18px; animation:floaty 5.5s ease-in-out infinite; will-change:transform; transform:translate3d(0,0,0); backface-visibility:hidden; }
     .p-icon .ic-glass { position:absolute; inset:0; border-radius:22px; transform:rotate(8deg); background:linear-gradient(150deg,rgba(255,255,255,.95),rgba(190,205,255,.5)); border:1px solid rgba(255,255,255,.95); box-shadow:0 16px 36px rgba(100,120,220,.15),inset 0 2px 8px rgba(255,255,255,.9); }
     .p-icon .ic-glass2 { position:absolute; inset:14px; border-radius:14px; transform:rotate(-8deg); background:linear-gradient(150deg,var(--c1,#2f6bff),var(--c2,#8b7bff)); opacity:.9; box-shadow:0 10px 24px rgba(80,100,255,.25),inset 0 2px 6px rgba(255,255,255,.5); }
     .p-icon .glyph { position:absolute; inset:0; display:grid; place-items:center; color:#fff; z-index:2; }
@@ -287,9 +339,11 @@
     @media (max-width:768px) { .power-grid { grid-template-columns:1fr 1fr; } }
     @media (max-width:480px) { .power-grid { grid-template-columns:1fr; } }
     .sec-cta { padding:100px 0 120px; text-align:center; overflow:hidden; position:relative; }
-    .cta-blob { position:absolute; border-radius:50%; filter:blur(60px); opacity:.3; pointer-events:none; }
-    .cb1 { width:320px; height:320px; left:6%; top:8%; background:radial-gradient(circle,#c3d2ff,transparent 65%); animation:drift 18s ease-in-out infinite alternate; }
-    .cb2 { width:280px; height:280px; right:4%; bottom:4%; background:radial-gradient(circle,#ffd3ec,transparent 65%); animation:drift 22s ease-in-out infinite alternate-reverse; }
+
+    /* CTA 光斑：渐变替代 blur */
+    .cta-blob { position:absolute; border-radius:50%; opacity:.5; pointer-events:none; filter:none; will-change:transform; transform:translate3d(0,0,0); }
+    .cb1 { width:420px; height:420px; left:2%; top:2%; background:radial-gradient(circle,rgba(195,210,255,.75) 0%,transparent 65%); animation:drift 18s ease-in-out infinite alternate; }
+    .cb2 { width:360px; height:360px; right:2%; bottom:2%; background:radial-gradient(circle,rgba(255,211,236,.75) 0%,transparent 65%); animation:drift 22s ease-in-out infinite alternate-reverse; }
     .cta-inner { position:relative; z-index:2; }
     .cta-shapes { position:absolute; inset:0; pointer-events:none; }
     .cta-shapes .shape .glass { border-radius:18px; }
@@ -306,8 +360,33 @@
     .sec-cta .btn-primary { margin-top:34px; }
     @media (max-width:768px) { .cs1,.cs2,.cs3,.cs4 { display:none; } }
     .sec-stats { padding:100px 0 110px; overflow:hidden; }
-    .stats-shell { position:relative; max-width:880px; margin:0 auto; border-radius:32px; padding:48px 40px; text-align:center; background:linear-gradient(165deg,rgba(255,255,255,.92),rgba(228,235,255,.6)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); box-shadow:0 32px 80px rgba(90,110,220,.12),inset 0 2px 14px rgba(255,255,255,.9); animation:floaty 9s ease-in-out infinite; }
-    @supports not (backdrop-filter:blur(1px)) { .stats-shell { background:rgba(255,255,255,0.95); } }
+
+    /* ========== 统计卡片：保留浮动 + 移除实时模糊 ========== */
+    .stats-shell,
+    .dns-check-shell {
+      position:relative; max-width:880px; margin:0 auto;
+      border-radius:32px; padding:48px 40px; text-align:center;
+
+      background:
+        linear-gradient(165deg, rgba(255,255,255,.94) 0%, rgba(240,245,255,.86) 55%, rgba(228,235,255,.82) 100%),
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(180,200,255,.18), transparent 70%);
+      border:1px solid rgba(255,255,255,.95);
+      box-shadow:
+        0 32px 80px rgba(90,110,220,.12),
+        0 8px 24px rgba(120,140,230,.06),
+        inset 0 2px 14px rgba(255,255,255,.95),
+        inset 0 -10px 24px rgba(150,170,240,.06);
+
+      will-change:transform;
+      transform:translate3d(0,0,0);
+      backface-visibility:hidden;
+      contain:layout style paint;
+      animation:statsFloat 9s cubic-bezier(.45,.05,.55,.95) infinite;
+    }
+    @keyframes statsFloat {
+      0%,100% { transform:translate3d(0, 0, 0); }
+      50%     { transform:translate3d(0, -10px, 0); }
+    }
     .stats-head { display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; }
     .stats-dot { position:relative; width:14px; height:14px; border-radius:50%; flex:none; background:#9aa3c0; transition:background .5s; box-shadow:0 0 0 0 rgba(154,163,192,.5); }
     .stats-dot::before,.stats-dot::after { content:""; position:absolute; inset:0; border-radius:50%; border:2px solid currentColor; opacity:0; animation:statsRipple 2.4s cubic-bezier(.2,.6,.3,1) infinite; }
@@ -330,18 +409,24 @@
     .stats-label i { font-style:normal; font-size:11px; font-weight:700; color:#7a5ff0; background:rgba(139,123,255,.1); border:1px solid rgba(139,123,255,.3); padding:2px 12px; border-radius:999px; white-space:nowrap; }
     .stats-time { margin-top:22px; font-size:12px; color:var(--sub); display:inline-flex; align-items:center; gap:6px; padding:6px 18px; border-radius:999px; background:rgba(255,255,255,.6); border:1px solid rgba(160,175,235,.3); flex-wrap:wrap; justify-content:center; }
     .stats-time b { color:var(--ink); font-variant-numeric:tabular-nums; }
-    .stats-wave { position:absolute; left:50%; top:0; width:400px; height:400px; transform:translate(-50%,-50%); border-radius:50%; pointer-events:none; background:radial-gradient(circle,rgba(120,150,255,.12),transparent 62%); filter:blur(8px); animation:pulse 6s ease-in-out infinite; }
+
+    /* 统计卡片光波：渐变替代 blur */
+    .stats-wave, .dns-check-wave {
+      position:absolute; left:50%; top:0; width:600px; height:600px; transform:translate(-50%,-50%);
+      border-radius:50%; pointer-events:none;
+      background:radial-gradient(circle,rgba(160,180,255,.42) 0%,rgba(160,180,255,.14) 38%,transparent 68%);
+      filter:none; will-change:opacity, transform;
+      animation:haloPulse 6s ease-in-out infinite;
+    }
     .stats-deco { position:absolute; pointer-events:none; }
     .sd1 { left:-2%; top:10%; animation:floaty 7s ease-in-out infinite; }
     .sd1 .glass { width:44px; height:44px; border-radius:12px; }
     .sd2 { right:-2%; bottom:12%; animation:floaty2 8s ease-in-out infinite; }
     .sd2 .glass { width:36px; height:36px; border-radius:50%; }
-    @media (max-width:768px) { .stats-shell { padding:34px 20px; margin:0 6px; } .stats-num b { font-size:clamp(28px,7vw,42px); } .sd1,.sd2 { display:none; } .stats-wave { filter:blur(6px); } }
+    @media (max-width:768px) { .stats-shell { padding:34px 20px; margin:0 6px; animation-duration:11s; } .stats-num b { font-size:clamp(28px,7vw,42px); } .sd1,.sd2 { display:none; } @keyframes statsFloat { 0%,100% { transform:translate3d(0,0,0); } 50% { transform:translate3d(0,-6px,0); } } }
     @media (max-width:480px) { .stats-shell { padding:28px 12px; } .stats-time { font-size:11px; padding:4px 14px; } }
     #stats-blocked .stats-num b { background: none !important; -webkit-background-clip: unset !important; background-clip: unset !important; color: #dc2626 !important; }
     .sec-dns-check { padding:20px 0 50px; }
-    .dns-check-shell { position:relative; max-width:880px; margin:0 auto; border-radius:32px; padding:48px 40px; text-align:center; background:linear-gradient(165deg,rgba(255,255,255,.92),rgba(228,235,255,.6)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); box-shadow:0 32px 80px rgba(90,110,220,.12),inset 0 2px 14px rgba(255,255,255,.9); animation:floaty 9s ease-in-out infinite; }
-    @supports not (backdrop-filter:blur(1px)) { .dns-check-shell { background:rgba(255,255,255,0.95); } }
     .dns-check-head { display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; margin-bottom:10px; }
     .dns-check-dot { position:relative; width:14px; height:14px; border-radius:50%; flex:none; background:#9aa3c0; transition:background .5s; box-shadow:0 0 0 0 rgba(154,163,192,.5); }
     .dns-check-dot::before,.dns-check-dot::after { content:""; position:absolute; inset:0; border-radius:50%; border:2px solid currentColor; opacity:0; animation:dnsCheckRipple 2.4s cubic-bezier(.2,.6,.3,1) infinite; }
@@ -357,13 +442,12 @@
     .dns-check-body object { display:inline-block; font-size:15px; font-weight:500; color:var(--ink); }
     .dns-check-body .fallback-text { color:#dc2626; font-weight:600; }
     .dns-check-body .ok-text { color:#16a34a; font-weight:600; }
-    .dns-check-wave { position:absolute; left:50%; top:0; width:400px; height:400px; transform:translate(-50%,-50%); border-radius:50%; pointer-events:none; background:radial-gradient(circle,rgba(120,150,255,.12),transparent 62%); filter:blur(8px); animation:pulse 6s ease-in-out infinite; }
     .dns-check-deco { position:absolute; pointer-events:none; }
     .dcd1 { left:-2%; top:10%; animation:floaty 7s ease-in-out infinite; }
     .dcd1 .glass { width:44px; height:44px; border-radius:12px; background:rgba(255,255,255,0.3); border:1px solid rgba(255,255,255,0.5); }
     .dcd2 { right:-2%; bottom:12%; animation:floaty2 8s ease-in-out infinite; }
     .dcd2 .glass { width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.3); border:1px solid rgba(255,255,255,0.5); }
-    @media (max-width:768px) { .dns-check-shell { padding:34px 20px; margin:0 6px; } .dcd1,.dcd2{display:none} .dns-check-wave{filter:blur(6px)} }
+    @media (max-width:768px) { .dns-check-shell { padding:34px 20px; margin:0 6px; animation-duration:11s; } .dcd1,.dcd2{display:none} }
     @media (max-width:480px) { .dns-check-shell { padding:28px 14px; } .dns-check-body { font-size:14px; } }
     .sec-follow { padding:60px 0 50px; background:linear-gradient(180deg,rgba(235,240,255,0.2),rgba(255,240,250,0.3)); text-align:center; }
     .follow-inner { display:flex; flex-direction:column; align-items:center; gap:16px; }
@@ -406,8 +490,7 @@
     .back-to-top.visible { opacity:1; transform:translateY(0) scale(1); pointer-events:auto; }
     .back-to-top:hover { transform:translateY(-4px) scale(1.05); box-shadow:0 12px 32px rgba(47,107,255,.5); }
     @media (max-width:768px) { .back-to-top { bottom:70px; right:16px; width:42px; height:42px; font-size:20px; } }
-    @media (max-width:480px) { .sec-tool,.sec-anywhere,.sec-core,.sec-config,.sec-power,.sec-cta,.sec-stats,.sec-follow { padding:50px 0 60px; } .sec-dns-check { padding:10px 0 30px; } .hero { padding:110px 0 30px; min-height:80vh; } .hero h1 { font-size:32px; } .bg-glow span { filter:blur(30px); } }
-    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:0.01ms!important; animation-iteration-count:1!important; transition-duration:0.1s!important; } }
+    @media (max-width:480px) { .sec-tool,.sec-anywhere,.sec-core,.sec-config,.sec-power,.sec-cta,.sec-stats,.sec-follow { padding:50px 0 60px; } .sec-dns-check { padding:10px 0 30px; } .hero { padding:110px 0 30px; min-height:80vh; } .hero h1 { font-size:32px; } }
 
     /* ============ 续写板块 1：对比 ============ */
     .sec-compare { padding:100px 0 90px; overflow:hidden; }
@@ -437,26 +520,27 @@
     .compare-foot { max-width:960px; margin:30px auto 0; text-align:center; font-size:12.5px; color:var(--sub); }
     @media (max-width:768px) { .compare-grid { grid-template-columns:1fr; gap:20px; } .sec-compare { padding:70px 0 60px; } }
 
-    /* ============ 续写板块 2：用户评价 ============ */
+    /* ============ 续写板块 2：用户评价（4 张卡片） ============ */
     .sec-voice { padding:90px 0 100px; background:linear-gradient(180deg,rgba(235,240,255,0),rgba(235,240,255,.35) 45%,rgba(255,240,250,.25)); overflow:hidden; }
     .voice-head { text-align:center; max-width:640px; margin:0 auto 48px; }
     .voice-head .h-sub { margin:14px auto 0; }
-    .voice-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
-    .voice-card { position:relative; border-radius:24px; padding:28px 26px; background:linear-gradient(165deg,rgba(255,255,255,.9),rgba(240,245,255,.55)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); box-shadow:0 20px 50px rgba(100,120,220,.09),inset 0 2px 12px rgba(255,255,255,.9); transition:.4s cubic-bezier(.2,.8,.2,1); display:flex; flex-direction:column; }
+    .voice-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+    .voice-card { position:relative; border-radius:24px; padding:26px 22px; background:linear-gradient(165deg,rgba(255,255,255,.9),rgba(240,245,255,.55)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); box-shadow:0 20px 50px rgba(100,120,220,.09),inset 0 2px 12px rgba(255,255,255,.9); transition:.4s cubic-bezier(.2,.8,.2,1); display:flex; flex-direction:column; }
     @supports not (backdrop-filter:blur(1px)) { .voice-card { background:rgba(255,255,255,0.95); } }
     .voice-card:hover { transform:translateY(-8px); box-shadow:0 32px 70px rgba(80,100,220,.16); }
-    .voice-quote { position:absolute; top:14px; right:22px; font-size:64px; line-height:1; font-weight:900; color:rgba(47,107,255,.08); font-family:Georgia,serif; pointer-events:none; }
+    .voice-quote { position:absolute; top:14px; right:20px; font-size:56px; line-height:1; font-weight:900; color:rgba(47,107,255,.08); font-family:Georgia,serif; pointer-events:none; }
     .voice-stars { display:flex; gap:3px; margin-bottom:14px; }
-    .voice-stars svg { width:15px; height:15px; fill:#fbbf24; stroke:none; }
-    .voice-text { font-size:13.5px; line-height:1.9; color:var(--sub); flex:1; }
-    .voice-user { display:flex; align-items:center; gap:12px; margin-top:20px; padding-top:16px; border-top:1px solid rgba(140,160,230,.14); }
-    .voice-avatar { width:42px; height:42px; border-radius:50%; flex:none; display:grid; place-items:center; font-size:15px; font-weight:900; color:#fff; background:linear-gradient(135deg,#2f6bff,#8b7bff); box-shadow:0 8px 20px rgba(70,95,230,.28); }
+    .voice-stars svg { width:14px; height:14px; fill:#fbbf24; stroke:none; }
+    .voice-text { font-size:13px; line-height:1.85; color:var(--sub); flex:1; }
+    .voice-user { display:flex; align-items:center; gap:11px; margin-top:18px; padding-top:14px; border-top:1px solid rgba(140,160,230,.14); }
+    .voice-avatar { width:40px; height:40px; border-radius:50%; flex:none; display:grid; place-items:center; font-size:14px; font-weight:900; color:#fff; background:linear-gradient(135deg,#2f6bff,#8b7bff); box-shadow:0 8px 20px rgba(70,95,230,.28); }
     .voice-avatar.v2 { background:linear-gradient(135deg,#8b7bff,#ff9ad5); }
     .voice-avatar.v3 { background:linear-gradient(135deg,#22c55e,#4ade80); }
-    .voice-meta b { display:block; font-size:13.5px; font-weight:800; color:var(--ink); }
-    .voice-meta span { font-size:11.5px; color:var(--sub); }
-    @media (max-width:1024px) { .voice-grid { grid-template-columns:1fr 1fr; } }
-    @media (max-width:768px) { .voice-grid { grid-template-columns:1fr; gap:18px; } .sec-voice { padding:60px 0 70px; } }
+    .voice-avatar.v4 { background:linear-gradient(135deg,#0ea5e9,#22d3ee); }
+    .voice-meta b { display:block; font-size:13px; font-weight:800; color:var(--ink); }
+    .voice-meta span { font-size:11px; color:var(--sub); }
+    @media (max-width:1024px) { .voice-grid { grid-template-columns:1fr 1fr; gap:20px; } }
+    @media (max-width:768px) { .voice-grid { grid-template-columns:1fr; gap:18px; } .sec-voice { padding:60px 0 70px; } .voice-card { backdrop-filter:none; -webkit-backdrop-filter:none; } }
 
     /* ============ 续写板块 3：FAQ ============ */
     .sec-faq { padding:100px 0 110px; overflow:hidden; }
@@ -481,7 +565,29 @@
     .faq-a-inner code { display:inline-block; padding:1px 8px; border-radius:6px; background:rgba(47,107,255,.08); color:var(--blue); font-size:12.5px; font-family:'Inter',monospace; font-weight:700; margin:0 2px; word-break:break-all; }
     .faq-more { text-align:center; margin-top:34px; }
     .faq-more .btn-ghost { padding:12px 34px; font-size:14px; }
-    @media (max-width:768px) { .sec-faq { padding:70px 0 80px; } .faq-q { font-size:13.5px; padding:16px 18px; } .faq-a-inner { padding:0 18px 18px 18px; font-size:13px; } }
+    @media (max-width:768px) { .sec-faq { padding:70px 0 80px; } .faq-q { font-size:13.5px; padding:16px 18px; } .faq-a-inner { padding:0 18px 18px 18px; font-size:13px; } .faq-item { backdrop-filter:none; -webkit-backdrop-filter:none; } }
+
+    /* ============ 性能：屏幕外延迟渲染 ============ */
+    section { contain:layout style paint; }
+
+    /* ============ 全局过渡时长收紧 ============ */
+    .btn, .feat-item, .core-card, .cfg-card, .power-card, .voice-card, .compare-card,
+    .cfg-tab, .faq-item, .f-col a, .p-link, .p-icon {
+      transition-duration:.28s;
+      transition-timing-function:cubic-bezier(.2,.8,.2,1);
+    }
+
+    /* ============ 无障碍：减少动效 ============ */
+    @media (prefers-reduced-motion:reduce) {
+      *, *::before, *::after {
+        animation-duration:.001ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:.15s !important;
+      }
+      .bg-glow { display:none; }
+      .hero-shapes, .cta-shapes, .stats-deco, .dns-check-deco { display:none; }
+      .stats-shell, .dns-check-shell { animation:none !important; }
+    }
   </style>
 </head>
 <body>
@@ -738,6 +844,178 @@
   </div>
 </section>
 
+<!-- ===== 对比：普通DNS vs 加密DNS ===== -->
+<section class="sec-compare" id="compare" aria-labelledby="compare-title">
+  <div class="wrap">
+    <div class="compare-head reveal">
+      <h2 id="compare-title" class="h-title" data-i18n="compare.title">为什么必须升级加密 DNS</h2>
+      <p class="h-sub" data-i18n="compare.desc">传统明文 DNS 查询在链路上毫无遮掩，每一次访问都可能被记录、篡改或劫持。</p>
+    </div>
+    <div class="compare-grid">
+      <div class="compare-card bad reveal">
+        <span class="compare-tag" data-i18n="compare.bad.tag">传统明文 DNS</span>
+        <h3 data-i18n="compare.bad.title">UDP 53 · 全程裸奔</h3>
+        <ul class="compare-list">
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
+            <div><strong data-i18n="compare.bad.item1.t">查询内容明文可见</strong><br><span data-i18n="compare.bad.item1.d">运营商、公共 Wi-Fi、中间节点均可完整记录你访问了哪些域名。</span></div>
+          </li>
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
+            <div><strong data-i18n="compare.bad.item2.t">易被 DNS 劫持</strong><br><span data-i18n="compare.bad.item2.d">返回伪造 IP 植入广告页、钓鱼站，用户几乎无法察觉。</span></div>
+          </li>
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
+            <div><strong data-i18n="compare.bad.item3.t">易受投毒与中间人攻击</strong><br><span data-i18n="compare.bad.item3.d">无证书校验，攻击者可在链路上任意篡改解析结果。</span></div>
+          </li>
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
+            <div><strong data-i18n="compare.bad.item4.t">解析链路长、延迟高</strong><br><span data-i18n="compare.bad.item4.d">递归层级多，无智能调度，跨网访问体验差。</span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="compare-card good reveal">
+        <span class="compare-tag" data-i18n="compare.good.tag">清新云加密 DNS</span>
+        <h3 data-i18n="compare.good.title">DoH / DoT / DoQ · 全程加密</h3>
+        <ul class="compare-list">
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <div><strong data-i18n="compare.good.item1.t">查询全程 TLS/QUIC 加密</strong><br><span data-i18n="compare.good.item1.d">从你的设备到解析节点，中间任何环节都无法窥探查询内容。</span></div>
+          </li>
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <div><strong data-i18n="compare.good.item2.t">数字证书防劫持</strong><br><span data-i18n="compare.good.item2.d">服务端身份严格校验，杜绝 DNS 污染与伪造响应。</span></div>
+          </li>
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <div><strong data-i18n="compare.good.item3.t">查询记录不落盘</strong><br><span data-i18n="compare.good.item3.d">零日志策略，DNS 足迹彻底消除，隐私只有你知道。</span></div>
+          </li>
+          <li>
+            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <div><strong data-i18n="compare.good.item4.t">Anycast 智能加速</strong><br><span data-i18n="compare.good.item4.d">就近接入最优节点，配合本地缓存，解析延迟低至毫秒级。</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="compare-foot reveal" data-i18n="compare.foot">* 以上对比基于 RFC 8484 / 7858 / 9250 协议规范与公开安全研究结论整理。</p>
+  </div>
+</section>
+
+<!-- ===== 用户信赖与评价（4 条） ===== -->
+<section class="sec-voice" id="voice" aria-labelledby="voice-title">
+  <div class="wrap">
+    <div class="voice-head reveal">
+      <h2 id="voice-title" class="h-title" data-i18n="voice.title">被他们信赖</h2>
+      <p class="h-sub" data-i18n="voice.desc">从个人极客到企业 IT 团队，越来越多的用户把解析安全交给清新云 DNS。</p>
+    </div>
+    <div class="voice-grid">
+      <div class="voice-card reveal">
+        <span class="voice-quote" aria-hidden="true">“</span>
+        <div class="voice-stars" aria-label="5 stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="voice-text" data-i18n="voice.c1.text">在公共 Wi-Fi 上做渗透测试时，明文 DNS 简直是最佳突破口。切到 DoH 之后，整条链路的可观测性直接归零，测试数据再也没被污染过。</p>
+        <div class="voice-user">
+          <div class="voice-avatar">林</div>
+          <div class="voice-meta"><b>林工</b><span data-i18n="voice.c1.role">安全工程师 · 深圳</span></div>
+        </div>
+      </div>
+      <div class="voice-card reveal">
+        <span class="voice-quote" aria-hidden="true">“</span>
+        <div class="voice-stars" aria-label="5 stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="voice-text" data-i18n="voice.c2.text">公司 200 多台设备统一在路由器上配 DoT，一次配置全员生效。以前偶尔冒出来的广告弹窗和钓鱼页，现在几乎绝迹了。</p>
+        <div class="voice-user">
+          <div class="voice-avatar v2">周</div>
+          <div class="voice-meta"><b>周经理</b><span data-i18n="voice.c2.role">IT 运维负责人 · 杭州</span></div>
+        </div>
+      </div>
+      <div class="voice-card reveal">
+        <span class="voice-quote" aria-hidden="true">“</span>
+        <div class="voice-stars" aria-label="5 stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="voice-text" data-i18n="voice.c3.text">手机切到 DoQ 后，弱网下的解析速度肉眼可见地稳了。看直播再也不用担心开播前那几秒一直转圈。</p>
+        <div class="voice-user">
+          <div class="voice-avatar v3">陈</div>
+          <div class="voice-meta"><b>陈同学</b><span data-i18n="voice.c3.role">大学生 · 成都</span></div>
+        </div>
+      </div>
+      <div class="voice-card reveal">
+        <span class="voice-quote" aria-hidden="true">“</span>
+        <div class="voice-stars" aria-label="5 stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="voice-text" data-i18n="voice.c4.text">学校机房之前总被弹窗和钓鱼广告打扰，把 DNS 换到清新云之后课堂干扰几乎清零。一次配置，一百多台机器全部生效，省了太多事。</p>
+        <div class="voice-user">
+          <div class="voice-avatar v4">吴</div>
+          <div class="voice-meta"><b>吴老师</b><span data-i18n="voice.c4.role">中学信息技术教师 · 南京</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 常见问题 FAQ ===== -->
+<section class="sec-faq" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="faq-head reveal">
+      <h2 id="faq-title" class="h-title" data-i18n="faq.title">常见问题</h2>
+      <p class="h-sub" data-i18n="faq.desc">关于加密 DNS 的高频疑问，都在这里。</p>
+    </div>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item reveal">
+        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q1">加密 DNS 会不会让上网变慢？</span><span class="q-mark" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a1">不会。加密握手只在连接建立时发生一次，后续查询复用同一条连接。配合 Anycast 就近接入与本地缓存，实测解析延迟通常比运营商默认 DNS 更低。</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q2">DoH、DoT、DoQ、HTTP3 该怎么选？</span><span class="q-mark" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a2">浏览器和 Windows 11 优先选 DoH；Android、iOS、路由器全局加密推荐 DoT；移动端或高丢包网络推荐 DoQ；追求极致速度与 0-RTT 恢复可选 HTTP3。四者可同时开启，系统会自动选择。</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q3">你们会记录我的 DNS 查询吗？</span><span class="q-mark" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a3">不会。我们采用零日志策略，查询内容不写入磁盘，仅保留聚合后的匿名统计数字（如总查询量），用于容量规划与服务监控，无法回溯到任何个人或域名。</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q4">配置后如何验证是否真的生效？</span><span class="q-mark" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a4">页面下方的「DNS 连接状态」会自动检测。你也可以访问 test.ipv4dns.com 查看判定结果，或在终端执行 nslookup example.com 观察返回的解析服务器。</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q5">支持哪些操作系统和设备？</span><span class="q-mark" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a5">支持 Windows 10/11、macOS、iOS / iPadOS、Android 9+、Linux 及主流路由器（OpenWrt、梅林、爱快等）。iOS / macOS 用户可直接下载 .mobileconfig 描述文件，一键全局生效。</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q6">服务是免费的吗？有没有限速？</span><span class="q-mark" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a6">个人使用完全免费，不限制查询次数、不限制设备数量，也不做任何人为限速。企业级定制（专属节点、SLA、审计对接）可联系我们获取方案。</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q7">上游节点故障时会怎样？</span><span class="q-mark" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a7">我们采用跨可用区多活部署，任一节点故障都会在秒级内自动切换到健康节点，客户端几乎无感知。历史可用性长期保持在 99.99% 以上。</div></div>
+      </div>
+    </div>
+    <div class="faq-more reveal">
+      <button class="btn btn-ghost" type="button" id="faqMoreBtn" data-i18n="faq.more">还有疑问？查看帮助中心</button>
+    </div>
+  </div>
+</section>
+
 <!-- ===== CTA ===== -->
 <section class="sec-cta" id="cta" aria-labelledby="cta-title">
   <div class="cta-blob cb1" aria-hidden="true"></div><div class="cta-blob cb2" aria-hidden="true"></div>
@@ -815,163 +1093,6 @@
     <p class="follow-desc" data-i18n="follow.desc">扫码关注微信公众号，接收最新加密DNS技术资讯与使用指南</p>
     <div class="qr-wrapper">
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://weixin.qq.com/r/mp/thyAmOjEE7Vsrazy790mk" alt="微信公众号二维码" loading="lazy" width="180" height="180">
-    </div>
-  </div>
-</section>
-
-<!-- ===== 对比：普通DNS vs 加密DNS ===== -->
-<section class="sec-compare" id="compare" aria-labelledby="compare-title">
-  <div class="wrap">
-    <div class="compare-head reveal">
-      <h2 id="compare-title" class="h-title" data-i18n="compare.title">为什么必须升级加密 DNS</h2>
-      <p class="h-sub" data-i18n="compare.desc">传统明文 DNS 查询在链路上毫无遮掩，每一次访问都可能被记录、篡改或劫持。</p>
-    </div>
-    <div class="compare-grid">
-      <div class="compare-card bad reveal">
-        <span class="compare-tag" data-i18n="compare.bad.tag">传统明文 DNS</span>
-        <h3 data-i18n="compare.bad.title">UDP 53 · 全程裸奔</h3>
-        <ul class="compare-list">
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
-            <div><strong data-i18n="compare.bad.item1.t">查询内容明文可见</strong><br><span data-i18n="compare.bad.item1.d">运营商、公共 Wi-Fi、中间节点均可完整记录你访问了哪些域名。</span></div>
-          </li>
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
-            <div><strong data-i18n="compare.bad.item2.t">易被 DNS 劫持</strong><br><span data-i18n="compare.bad.item2.d">返回伪造 IP 植入广告页、钓鱼站，用户几乎无法察觉。</span></div>
-          </li>
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
-            <div><strong data-i18n="compare.bad.item3.t">易受投毒与中间人攻击</strong><br><span data-i18n="compare.bad.item3.d">无证书校验，攻击者可在链路上任意篡改解析结果。</span></div>
-          </li>
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
-            <div><strong data-i18n="compare.bad.item4.t">解析链路长、延迟高</strong><br><span data-i18n="compare.bad.item4.d">递归层级多，无智能调度，跨网访问体验差。</span></div>
-          </li>
-        </ul>
-      </div>
-      <div class="compare-card good reveal">
-        <span class="compare-tag" data-i18n="compare.good.tag">清新云加密 DNS</span>
-        <h3 data-i18n="compare.good.title">DoH / DoT / DoQ · 全程加密</h3>
-        <ul class="compare-list">
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <div><strong data-i18n="compare.good.item1.t">查询全程 TLS/QUIC 加密</strong><br><span data-i18n="compare.good.item1.d">从你的设备到解析节点，中间任何环节都无法窥探查询内容。</span></div>
-          </li>
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <div><strong data-i18n="compare.good.item2.t">数字证书防劫持</strong><br><span data-i18n="compare.good.item2.d">服务端身份严格校验，杜绝 DNS 污染与伪造响应。</span></div>
-          </li>
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <div><strong data-i18n="compare.good.item3.t">查询记录不落盘</strong><br><span data-i18n="compare.good.item3.d">零日志策略，DNS 足迹彻底消除，隐私只有你知道。</span></div>
-          </li>
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <div><strong data-i18n="compare.good.item4.t">Anycast 智能加速</strong><br><span data-i18n="compare.good.item4.d">就近接入最优节点，配合本地缓存，解析延迟低至毫秒级。</span></div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <p class="compare-foot reveal" data-i18n="compare.foot">* 以上对比基于 RFC 8484 / 7858 / 9250 协议规范与公开安全研究结论整理。</p>
-  </div>
-</section>
-
-<!-- ===== 用户信赖与评价 ===== -->
-<section class="sec-voice" id="voice" aria-labelledby="voice-title">
-  <div class="wrap">
-    <div class="voice-head reveal">
-      <h2 id="voice-title" class="h-title" data-i18n="voice.title">被他们信赖</h2>
-      <p class="h-sub" data-i18n="voice.desc">从个人极客到企业 IT 团队，越来越多的用户把解析安全交给清新云 DNS。</p>
-    </div>
-    <div class="voice-grid">
-      <div class="voice-card reveal">
-        <span class="voice-quote" aria-hidden="true">“</span>
-        <div class="voice-stars" aria-label="5 stars">
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="voice-text" data-i18n="voice.c1.text">在公共 Wi-Fi 上做渗透测试时，明文 DNS 简直是最佳突破口。切到 DoH 之后，整条链路的可观测性直接归零，测试数据再也没被污染过。</p>
-        <div class="voice-user">
-          <div class="voice-avatar">林</div>
-          <div class="voice-meta"><b>林工</b><span data-i18n="voice.c1.role">安全工程师 · 深圳</span></div>
-        </div>
-      </div>
-      <div class="voice-card reveal">
-        <span class="voice-quote" aria-hidden="true">“</span>
-        <div class="voice-stars" aria-label="5 stars">
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="voice-text" data-i18n="voice.c2.text">公司 200 多台设备统一在路由器上配 DoT，一次配置全员生效。以前偶尔冒出来的广告弹窗和钓鱼页，现在几乎绝迹了。</p>
-        <div class="voice-user">
-          <div class="voice-avatar v2">周</div>
-          <div class="voice-meta"><b>周经理</b><span data-i18n="voice.c2.role">IT 运维负责人 · 杭州</span></div>
-        </div>
-      </div>
-      <div class="voice-card reveal">
-        <span class="voice-quote" aria-hidden="true">“</span>
-        <div class="voice-stars" aria-label="5 stars">
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="voice-text" data-i18n="voice.c3.text">手机切到 DoQ 后，弱网下的解析速度肉眼可见地稳了。看直播再也不用担心开播前那几秒一直转圈。</p>
-        <div class="voice-user">
-          <div class="voice-avatar v3">陈</div>
-          <div class="voice-meta"><b>陈同学</b><span data-i18n="voice.c3.role">大学生 · 成都</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== 常见问题 FAQ ===== -->
-<section class="sec-faq" id="faq" aria-labelledby="faq-title">
-  <div class="wrap">
-    <div class="faq-head reveal">
-      <h2 id="faq-title" class="h-title" data-i18n="faq.title">常见问题</h2>
-      <p class="h-sub" data-i18n="faq.desc">关于加密 DNS 的高频疑问，都在这里。</p>
-    </div>
-    <div class="faq-list" id="faqList">
-      <div class="faq-item reveal">
-        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q1">加密 DNS 会不会让上网变慢？</span><span class="q-mark" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a1">不会。加密握手只在连接建立时发生一次，后续查询复用同一条连接。配合 Anycast 就近接入与本地缓存，实测解析延迟通常比运营商默认 DNS 更低。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q2">DoH、DoT、DoQ、HTTP3 该怎么选？</span><span class="q-mark" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a2">浏览器和 Windows 11 优先选 DoH；Android、iOS、路由器全局加密推荐 DoT；移动端或高丢包网络推荐 DoQ；追求极致速度与 0-RTT 恢复可选 HTTP3。四者可同时开启，系统会自动选择。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q3">你们会记录我的 DNS 查询吗？</span><span class="q-mark" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a3">不会。我们采用零日志策略，查询内容不写入磁盘，仅保留聚合后的匿名统计数字（如总查询量），用于容量规划与服务监控，无法回溯到任何个人或域名。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q4">配置后如何验证是否真的生效？</span><span class="q-mark" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a4">页面下方的「DNS 连接状态」会自动检测。你也可以访问 test.ipv4dns.com 查看判定结果，或在终端执行 nslookup example.com 观察返回的解析服务器。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q5">支持哪些操作系统和设备？</span><span class="q-mark" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a5">支持 Windows 10/11、macOS、iOS / iPadOS、Android 9+、Linux 及主流路由器（OpenWrt、梅林、爱快等）。iOS / macOS 用户可直接下载 .mobileconfig 描述文件，一键全局生效。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q6">服务是免费的吗？有没有限速？</span><span class="q-mark" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a6">个人使用完全免费，不限制查询次数、不限制设备数量，也不做任何人为限速。企业级定制（专属节点、SLA、审计对接）可联系我们获取方案。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q7">上游节点故障时会怎样？</span><span class="q-mark" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a7">我们采用跨可用区多活部署，任一节点故障都会在秒级内自动切换到健康节点，客户端几乎无感知。历史可用性长期保持在 99.99% 以上。</div></div>
-      </div>
-    </div>
-    <div class="faq-more reveal">
-      <button class="btn btn-ghost" type="button" id="faqMoreBtn" data-i18n="faq.more">还有疑问？查看帮助中心</button>
     </div>
   </div>
 </section>
@@ -1475,15 +1596,19 @@
     document.addEventListener('visibilitychange', () => { if (!document.hidden) { clearInterval(checkTimer); checkWithFetch(); checkTimer = setInterval(checkWithFetch,30000); } });
   })();
 
-  // ===== 鼠标视差 =====
+  // ===== 鼠标视差（pointermove + 节流，GPU 合成） =====
   const heroShapes = document.querySelectorAll('.hero-shapes .shape');
   let rafId = null;
-  window.addEventListener('mousemove', (e) => {
+  let px = 0, py = 0;
+  window.addEventListener('pointermove', (e) => {
+    px = (e.clientX / window.innerWidth - 0.5);
+    py = (e.clientY / window.innerHeight - 0.5);
     if (rafId) return;
     rafId = requestAnimationFrame(() => {
-      const x = (e.clientX / window.innerWidth - 0.5);
-      const y = (e.clientY / window.innerHeight - 0.5);
-      heroShapes.forEach((s, i) => { const d=(i+1)*5; s.style.transform = `translate(${x*d}px,${y*d}px)`; });
+      heroShapes.forEach((s, i) => {
+        const d = (i + 1) * 5;
+        s.style.transform = `translate3d(${px * d}px, ${py * d}px, 0)`;
+      });
       rafId = null;
     });
   }, { passive: true });
@@ -1571,10 +1696,8 @@
       });
     });
 
-    // 默认展开第一条
     if (items[0]) openItem(items[0]);
 
-    // 尺寸变化时重算展开高度
     let resizeTimer = null;
     window.addEventListener('resize', () => {
       clearTimeout(resizeTimer);
@@ -1588,7 +1711,6 @@
       }, 160);
     }, { passive: true });
 
-    // 「查看帮助中心」占位提示
     const moreBtn = document.getElementById('faqMoreBtn');
     if (moreBtn) {
       moreBtn.addEventListener('click', () => {
@@ -1602,6 +1724,16 @@
       });
     }
   })();
+
+  // ===== 页面隐藏时暂停所有动画（省电 + 释放 GPU） =====
+  document.addEventListener('visibilitychange', () => {
+    const paused = document.hidden ? 'paused' : 'running';
+    document.querySelectorAll(
+      '.bg-glow span, .hero-shapes .shape, .cta-blob, .cta-shapes .shape, ' +
+      '.stats-shell, .dns-check-shell, .dns-halo, .shield-glow, ' +
+      '.privacy-ring, .stats-wave, .dns-check-wave'
+    ).forEach(el => { el.style.animationPlayState = paused; });
+  });
 
   // ===== 多语言 =====
   (function() {
@@ -1659,6 +1791,8 @@
         'voice.c2.role':'IT 运维负责人 · 杭州',
         'voice.c3.text':'手机切到 DoQ 后，弱网下的解析速度肉眼可见地稳了。看直播再也不用担心开播前那几秒一直转圈。',
         'voice.c3.role':'大学生 · 成都',
+        'voice.c4.text':'学校机房之前总被弹窗和钓鱼广告打扰，把 DNS 换到清新云之后课堂干扰几乎清零。一次配置，一百多台机器全部生效，省了太多事。',
+        'voice.c4.role':'中学信息技术教师 · 南京',
         'faq.title':'常见问题','faq.desc':'关于加密 DNS 的高频疑问，都在这里。',
         'faq.q1':'加密 DNS 会不会让上网变慢？','faq.a1':'不会。加密握手只在连接建立时发生一次，后续查询复用同一条连接。配合 Anycast 就近接入与本地缓存，实测解析延迟通常比运营商默认 DNS 更低。',
         'faq.q2':'DoH、DoT、DoQ、HTTP3 该怎么选？','faq.a2':'浏览器和 Windows 11 优先选 DoH；Android、iOS、路由器全局加密推荐 DoT；移动端或高丢包网络推荐 DoQ；追求极致速度与 0-RTT 恢复可选 HTTP3。四者可同时开启，系统会自动选择。',
@@ -1728,6 +1862,8 @@
         'voice.c2.role':'IT Operations Lead · Hangzhou',
         'voice.c3.text':'After switching my phone to DoQ, resolution under weak signal is visibly more stable. No more spinning wheel before livestreams.',
         'voice.c3.role':'University Student · Chengdu',
+        'voice.c4.text':'Our computer lab used to be plagued by popups and phishing ads. After switching DNS to FreshCloud, classroom distractions almost vanished. One config, 100+ machines, all covered.',
+        'voice.c4.role':'High School IT Teacher · Nanjing',
         'faq.title':'Frequently Asked Questions','faq.desc':'Everything you want to know about encrypted DNS.',
         'faq.q1':'Will encrypted DNS slow down my browsing?','faq.a1':'No. The encrypted handshake only happens once at connection setup and is reused for later queries. Combined with Anycast and local caching, real-world latency is usually lower than your ISP default.',
         'faq.q2':'Which should I choose — DoH, DoT, DoQ or HTTP3?','faq.a2':'Browsers and Windows 11 prefer DoH; Android, iOS and routers do best with DoT; mobile and high-loss networks favor DoQ; for maximum speed and 0-RTT recovery, HTTP3. All four can be enabled together.',
