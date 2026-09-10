@@ -437,25 +437,26 @@
     .compare-foot { max-width:960px; margin:30px auto 0; text-align:center; font-size:12.5px; color:var(--sub); }
     @media (max-width:768px) { .compare-grid { grid-template-columns:1fr; gap:20px; } .sec-compare { padding:70px 0 60px; } }
 
-    /* ============ 续写板块 2：用户评价 ============ */
+    /* ============ 续写板块 2：用户评价（4 张卡片） ============ */
     .sec-voice { padding:90px 0 100px; background:linear-gradient(180deg,rgba(235,240,255,0),rgba(235,240,255,.35) 45%,rgba(255,240,250,.25)); overflow:hidden; }
     .voice-head { text-align:center; max-width:640px; margin:0 auto 48px; }
     .voice-head .h-sub { margin:14px auto 0; }
-    .voice-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
-    .voice-card { position:relative; border-radius:24px; padding:28px 26px; background:linear-gradient(165deg,rgba(255,255,255,.9),rgba(240,245,255,.55)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); box-shadow:0 20px 50px rgba(100,120,220,.09),inset 0 2px 12px rgba(255,255,255,.9); transition:.4s cubic-bezier(.2,.8,.2,1); display:flex; flex-direction:column; }
+    .voice-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+    .voice-card { position:relative; border-radius:24px; padding:26px 22px; background:linear-gradient(165deg,rgba(255,255,255,.9),rgba(240,245,255,.55)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); box-shadow:0 20px 50px rgba(100,120,220,.09),inset 0 2px 12px rgba(255,255,255,.9); transition:.4s cubic-bezier(.2,.8,.2,1); display:flex; flex-direction:column; }
     @supports not (backdrop-filter:blur(1px)) { .voice-card { background:rgba(255,255,255,0.95); } }
     .voice-card:hover { transform:translateY(-8px); box-shadow:0 32px 70px rgba(80,100,220,.16); }
-    .voice-quote { position:absolute; top:14px; right:22px; font-size:64px; line-height:1; font-weight:900; color:rgba(47,107,255,.08); font-family:Georgia,serif; pointer-events:none; }
+    .voice-quote { position:absolute; top:14px; right:20px; font-size:56px; line-height:1; font-weight:900; color:rgba(47,107,255,.08); font-family:Georgia,serif; pointer-events:none; }
     .voice-stars { display:flex; gap:3px; margin-bottom:14px; }
-    .voice-stars svg { width:15px; height:15px; fill:#fbbf24; stroke:none; }
-    .voice-text { font-size:13.5px; line-height:1.9; color:var(--sub); flex:1; }
-    .voice-user { display:flex; align-items:center; gap:12px; margin-top:20px; padding-top:16px; border-top:1px solid rgba(140,160,230,.14); }
-    .voice-avatar { width:42px; height:42px; border-radius:50%; flex:none; display:grid; place-items:center; font-size:15px; font-weight:900; color:#fff; background:linear-gradient(135deg,#2f6bff,#8b7bff); box-shadow:0 8px 20px rgba(70,95,230,.28); }
+    .voice-stars svg { width:14px; height:14px; fill:#fbbf24; stroke:none; }
+    .voice-text { font-size:13px; line-height:1.85; color:var(--sub); flex:1; }
+    .voice-user { display:flex; align-items:center; gap:11px; margin-top:18px; padding-top:14px; border-top:1px solid rgba(140,160,230,.14); }
+    .voice-avatar { width:40px; height:40px; border-radius:50%; flex:none; display:grid; place-items:center; font-size:14px; font-weight:900; color:#fff; background:linear-gradient(135deg,#2f6bff,#8b7bff); box-shadow:0 8px 20px rgba(70,95,230,.28); }
     .voice-avatar.v2 { background:linear-gradient(135deg,#8b7bff,#ff9ad5); }
     .voice-avatar.v3 { background:linear-gradient(135deg,#22c55e,#4ade80); }
-    .voice-meta b { display:block; font-size:13.5px; font-weight:800; color:var(--ink); }
-    .voice-meta span { font-size:11.5px; color:var(--sub); }
-    @media (max-width:1024px) { .voice-grid { grid-template-columns:1fr 1fr; } }
+    .voice-avatar.v4 { background:linear-gradient(135deg,#0ea5e9,#22d3ee); }
+    .voice-meta b { display:block; font-size:13px; font-weight:800; color:var(--ink); }
+    .voice-meta span { font-size:11px; color:var(--sub); }
+    @media (max-width:1024px) { .voice-grid { grid-template-columns:1fr 1fr; gap:20px; } }
     @media (max-width:768px) { .voice-grid { grid-template-columns:1fr; gap:18px; } .sec-voice { padding:60px 0 70px; } }
 
     /* ============ 续写板块 3：FAQ ============ */
@@ -795,7 +796,7 @@
   </div>
 </section>
 
-<!-- ===== 用户信赖与评价 ===== -->
+<!-- ===== 用户信赖与评价（4 条） ===== -->
 <section class="sec-voice" id="voice" aria-labelledby="voice-title">
   <div class="wrap">
     <div class="voice-head reveal">
@@ -846,6 +847,21 @@
         <div class="voice-user">
           <div class="voice-avatar v3">陈</div>
           <div class="voice-meta"><b>陈同学</b><span data-i18n="voice.c3.role">大学生 · 成都</span></div>
+        </div>
+      </div>
+      <div class="voice-card reveal">
+        <span class="voice-quote" aria-hidden="true">“</span>
+        <div class="voice-stars" aria-label="5 stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="voice-text" data-i18n="voice.c4.text">学校机房之前总被弹窗和钓鱼广告打扰，把 DNS 换到清新云之后课堂干扰几乎清零。一次配置，一百多台机器全部生效，省了太多事。</p>
+        <div class="voice-user">
+          <div class="voice-avatar v4">吴</div>
+          <div class="voice-meta"><b>吴老师</b><span data-i18n="voice.c4.role">大学信息技术教师 · 南京</span></div>
         </div>
       </div>
     </div>
@@ -1656,6 +1672,8 @@
         'voice.c2.role':'IT 运维负责人 · 杭州',
         'voice.c3.text':'手机切到 DoQ 后，弱网下的解析速度肉眼可见地稳了。看直播再也不用担心开播前那几秒一直转圈。',
         'voice.c3.role':'大学生 · 成都',
+        'voice.c4.text':'学校机房之前总被弹窗和钓鱼广告打扰，把 DNS 换到清新云之后课堂干扰几乎清零。一次配置，一百多台机器全部生效，省了太多事。',
+        'voice.c4.role':'中学信息技术教师 · 南京',
         'faq.title':'常见问题','faq.desc':'关于加密 DNS 的高频疑问，都在这里。',
         'faq.q1':'加密 DNS 会不会让上网变慢？','faq.a1':'不会。加密握手只在连接建立时发生一次，后续查询复用同一条连接。配合 Anycast 就近接入与本地缓存，实测解析延迟通常比运营商默认 DNS 更低。',
         'faq.q2':'DoH、DoT、DoQ、HTTP3 该怎么选？','faq.a2':'浏览器和 Windows 11 优先选 DoH；Android、iOS、路由器全局加密推荐 DoT；移动端或高丢包网络推荐 DoQ；追求极致速度与 0-RTT 恢复可选 HTTP3。四者可同时开启，系统会自动选择。',
@@ -1725,6 +1743,8 @@
         'voice.c2.role':'IT Operations Lead · Hangzhou',
         'voice.c3.text':'After switching my phone to DoQ, resolution under weak signal is visibly more stable. No more spinning wheel before livestreams.',
         'voice.c3.role':'University Student · Chengdu',
+        'voice.c4.text':'Our computer lab used to be plagued by popups and phishing ads. After switching DNS to FreshCloud, classroom distractions almost vanished. One config, 100+ machines, all covered.',
+        'voice.c4.role':'High School IT Teacher · Nanjing',
         'faq.title':'Frequently Asked Questions','faq.desc':'Everything you want to know about encrypted DNS.',
         'faq.q1':'Will encrypted DNS slow down my browsing?','faq.a1':'No. The encrypted handshake only happens once at connection setup and is reused for later queries. Combined with Anycast and local caching, real-world latency is usually lower than your ISP default.',
         'faq.q2':'Which should I choose — DoH, DoT, DoQ or HTTP3?','faq.a2':'Browsers and Windows 11 prefer DoH; Android, iOS and routers do best with DoT; mobile and high-loss networks favor DoQ; for maximum speed and 0-RTT recovery, HTTP3. All four can be enabled together.',
