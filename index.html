@@ -1402,15 +1402,62 @@
 <button id="backToTop" class="back-to-top" aria-label="返回顶部" title="返回顶部">↑</button>
 
 <!-- ===== 百度自动推送 ===== -->
+<!-- 百度自动推送 · 增强版 -->
 <script>
 (function(){
+  // ===== 配置 =====
+  var PUSH_KEY = 'hrn89GgrkH1MnaCQ';   // localStorage 键名
+  var EXPIRE_DAYS = 1;                // 同一 URL 重复推送间隔（天）
+
+  // ===== 工具函数 =====
+  function getCanonicalUrl() {
+    var link = document.querySelector('link[rel="canonical"]');
+    if (link && link.href) return link.href;
+    // 无 canonical 时，去掉常见跟踪参数
+    var url = window.location.href.split('#')[0];
+    var cleanParams = ['from','utm_source','utm_medium','utm_campaign','spm','ref'];
+    try {
+      var u = new URL(url);
+      cleanParams.forEach(function(p){ u.searchParams.delete(p); });
+      return u.toString();
+    } catch(e) { return url; }
+  }
+
+  function isPushedRecently(url) {
+    try {
+      var data = JSON.parse(localStorage.getItem(PUSH_KEY) || '{}');
+      var ts = data[url];
+      if (!ts) return false;
+      return (Date.now() - ts) < EXPIRE_DAYS * 86400000;
+    } catch(e) { return false; }
+  }
+
+  function markPushed(url) {
+    try {
+      var data = JSON.parse(localStorage.getItem(PUSH_KEY) || '{}');
+      data[url] = Date.now();
+      // 清理过期记录，避免 localStorage 无限增长
+      var now = Date.now();
+      Object.keys(data).forEach(function(k){
+        if (now - data[k] > EXPIRE_DAYS * 86400000) delete data[k];
+      });
+      localStorage.setItem(PUSH_KEY, JSON.stringify(data));
+    } catch(e) {}
+  }
+
+  // ===== 执行推送 =====
+  var pageUrl = getCanonicalUrl();
+  if (isPushedRecently(pageUrl)) return;
+
   var bp = document.createElement('script');
   var curProtocol = window.location.protocol.split(':')[0];
-  if (curProtocol === 'https') {
-    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-  } else {
-    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-  }
+  bp.src = curProtocol === 'https'
+    ? 'https://zz.bdstatic.com/linksubmit/push.js'
+    : 'http://push.zhanzhang.baidu.com/push.js';
+
+  bp.onload = function() { markPushed(pageUrl); };
+  bp.onerror = function() { /* 推送脚本加载失败，静默忽略 */ };
+
   var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(bp, s);
 })();
