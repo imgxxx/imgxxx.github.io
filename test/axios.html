@@ -759,64 +759,48 @@
     @media (max-width:1024px) { .voice-grid { grid-template-columns:1fr 1fr; gap:20px; } }
     @media (max-width:768px) { .voice-grid { grid-template-columns:1fr; gap:18px; } .sec-voice { padding:60px 0 70px; } .voice-card { backdrop-filter:none; -webkit-backdrop-filter:none; } }
 
-    /* ===== 机器学习 · 自愈式粒子立方体 ===== */
-    .sec-ml { padding:90px 0 100px; overflow:hidden; position:relative; }
-    .sec-ml .sec-head { text-align:center; max-width:660px; margin:0 auto 34px; }
+    /* ===== 机器学习 · 神经引擎粒子立方体 ===== */
+    .sec-ml {
+      padding:60px 0 80px;
+      position:relative;
+      overflow: visible;
+      contain: layout style;
+    }
+    .sec-ml .sec-head { text-align:center; max-width:660px; margin:0 auto 20px; }
 
     .ml-stage {
       position:relative;
-      width:100%;
-      max-width:780px;
+      width: clamp(300px, 64vw, 400px);
+      height: clamp(300px, 64vw, 400px);
       margin:0 auto;
-      height:clamp(300px, 50vw, 540px);
-      border-radius:32px;
-      background:
-        radial-gradient(ellipse 62% 54% at 50% 46%, #ffffff 0%, rgba(248,250,255,.75) 42%, rgba(240,244,255,0) 76%);
-      border:1px solid rgba(255,255,255,.9);
-      box-shadow:
-        0 30px 70px rgba(100,120,220,.08),
-        inset 0 2px 14px rgba(255,255,255,.9);
-      overflow:hidden;
-      contain:layout style paint;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      overflow: visible;
     }
-    .ml-stage canvas { display:block; width:100%; height:100%; }
+    .ml-stage canvas { display:block; width:100%; height:100%; overflow:visible; }
 
-    .ml-chip {
-      position:absolute;
-      padding:5px 15px;
-      border-radius:999px;
-      font-size:12px;
-      font-weight:800;
-      letter-spacing:.02em;
-      white-space:nowrap;
-      color:#3a4a8f;
-      background:rgba(255,255,255,.86);
-      border:1px solid rgba(160,175,235,.42);
-      backdrop-filter:blur(4px);
-      -webkit-backdrop-filter:blur(4px);
-      box-shadow:0 8px 20px rgba(100,120,220,.12);
-      animation:orbitFloat 7s ease-in-out infinite;
-      will-change:transform;
-      transform:translate3d(0,0,0);
-      backface-visibility:hidden;
-      pointer-events:none;
+    /* ---- 神经网络全连接动画（无卡片容器） ---- */
+    .ml-nn {
+      position: relative;
+      width: 100%;
+      max-width: 1180px;
+      height: 380px;
+      margin: 60px auto 0;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+      overflow: visible;
     }
-    @supports not (backdrop-filter:blur(1px)) { .ml-chip { background:rgba(255,255,255,.96); } }
-
-    .mc1 { top:12%; left:5%;  color:#2f6bff; }
-    .mc2 { top:24%; right:5%; color:#7a5ff0; animation-delay:1.3s; }
-    .mc3 { bottom:16%; left:8%;  color:#e069b0; animation-delay:2.6s; }
-    .mc4 { bottom:10%; right:9%; color:#16a34a; animation-delay:3.9s; }
+    .ml-nn canvas { display: block; width: 100%; height: 100%; }
 
     @media (max-width:768px) {
-      .sec-ml { padding:60px 0 70px; }
-      .ml-stage { height:clamp(280px, 78vw, 420px); border-radius:24px; }
-      .ml-chip { font-size:10.5px; padding:4px 11px; }
-      .mc1 { top:6%; left:3%; }  .mc2 { top:6%; right:3%; }
-      .mc3 { bottom:6%; left:3%; } .mc4 { bottom:6%; right:3%; }
+      .sec-ml { padding:50px 0 60px; }
+      .sec-ml .sec-head { margin-bottom:14px; }
+      .ml-stage { width: clamp(280px, 80vw, 360px); height: clamp(280px, 80vw, 360px); }
+      .ml-nn { height: 280px; margin-top: 40px; }
     }
-    @media (max-width:480px) { .ml-chip { display:none; } }
-    @media (prefers-reduced-motion:reduce) { .ml-chip { animation:none; } }
 
     .sec-faq { padding:100px 0 110px; overflow:hidden; }
     .faq-head { text-align:center; max-width:640px; margin:0 auto 44px; }
@@ -843,6 +827,7 @@
     @media (max-width:768px) { .sec-faq { padding:70px 0 80px; } .faq-q { font-size:13.5px; padding:16px 18px; } .faq-a-inner { padding:0 18px 18px 18px; font-size:13px; } .faq-item { backdrop-filter:none; -webkit-backdrop-filter:none; } }
 
     section { contain:layout style paint; }
+    .sec-ml { contain:layout style; }
 
     .btn, .feat-item, .core-card, .cfg-card, .power-card, .voice-card, .compare-card,
     .cfg-tab, .faq-item, .f-col a, .p-link, .p-icon {
@@ -1245,7 +1230,7 @@
   </div>
 </section>
 
-<!-- ===== 机器学习 · 自愈式解析网络 ===== -->
+<!-- ===== 机器学习 · 神经引擎粒子立方体 + 神经网络动画 ===== -->
 <section class="sec-ml" id="ml" aria-labelledby="ml-title">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -1254,10 +1239,11 @@
     </div>
     <div class="ml-stage reveal">
       <canvas id="mlCanvas" role="img" aria-label="由粒子组成的旋转立方体，象征机器学习的自愈式解析网络"></canvas>
-      <span class="ml-chip mc1" data-i18n="ml.chip1">机器学习调度</span>
-      <span class="ml-chip mc2" data-i18n="ml.chip2">异常自感知</span>
-      <span class="ml-chip mc3" data-i18n="ml.chip3">毫秒级自愈</span>
-      <span class="ml-chip mc4" data-i18n="ml.chip4">神经元拓扑</span>
+    </div>
+
+    <!-- ==== 神经网络全连接动画（无卡片容器） ==== -->
+    <div class="ml-nn reveal">
+      <canvas id="nnCanvas" role="img" aria-label="多层全连接神经网络动画，节点之间的连接线如丝绸般摆动"></canvas>
     </div>
   </div>
 </section>
@@ -1512,7 +1498,7 @@
 })();
 </script>
 
-<!-- ===== 机器学习 · 自愈式粒子立方体 脚本 ===== -->
+<!-- ===== 机器学习 · 粒子立方体动画脚本 ===== -->
 <script>
 (function(){
   "use strict";
@@ -1526,210 +1512,232 @@
     window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ================= 参数 ================= */
-  var SMALL  = window.matchMedia('(max-width: 768px)').matches;
-  var GRID   = SMALL ? 7 : 8;   // 7³=343 / 8³=512 粒子
-  var CUBE   = 150;             // 立方体半边长（世界坐标）
-  var PERSP  = 900;             // 透视距离
-  var SPRING = 0.030;           // 回位弹簧系数
-  var DAMP   = 0.895;           // 阻尼
-  var FLOAT  = 5.0;             // 常态浮动幅度
-  var PULSE_PERIOD = 7.5;       // 自愈脉冲周期（秒）
+  var SMALL = window.matchMedia('(max-width: 768px)').matches;
+  var GRID  = SMALL ? 6 : 7;
+  var CUBE  = 150;
+  var PERSP = 800;
+  var STEP  = (CUBE * 2) / (GRID - 1);
+  var TWO_PI = Math.PI * 2;
 
-  var parts = [], edges = [], drawOrder = [];
+  var parts = [];
   var W = 0, H = 0, DPR = 1, K = 1, cx = 0, cy = 0;
-  var rotY = 0.55;
-  var t0 = performance.now(), last = t0;
+  var t0 = performance.now();
   var raf = null, running = false, inView = true;
   var mx = 0, my = 0, tmx = 0, tmy = 0;
 
-  function rnd(a, b) { return a + Math.random() * (b - a); }
-  function byDepth(a, b) { return parts[a]._z - parts[b]._z; }
+  /* ================= 预生成颜色表 ================= */
+  var HUE_STEPS = 36;
+  var ALPHA_STEPS = 16;
+  var COLOR_TABLE = [];
 
-  /* ================= 构建粒子 ================= */
+  function hue2rgb(p, q, t) {
+    if (t < 0) t += 1;
+    if (t > 1) t -= 1;
+    if (t < 1 / 6) return p + (q - p) * 6 * t;
+    if (t < 1 / 2) return q;
+    if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+    return p;
+  }
+  function hslToRgb(h, s, l) {
+    var r, g, b;
+    if (s === 0) { r = g = b = l; }
+    else {
+      var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+      var p = 2 * l - q;
+      r = hue2rgb(p, q, h + 1 / 3);
+      g = hue2rgb(p, q, h);
+      b = hue2rgb(p, q, h - 1 / 3);
+    }
+    return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+  }
+
+  (function buildColorTable() {
+    for (var i = 0; i < HUE_STEPS; i++) {
+      var t = i / (HUE_STEPS - 1);
+      var hue, sat, lum;
+      if (t < 0.30) {
+        var u = t / 0.30;
+        hue = 214 + u * 16;
+        sat = 70 + u * 18;
+        lum = 30 + u * 22;
+      } else if (t < 0.65) {
+        var u2 = (t - 0.30) / 0.35;
+        hue = 230 + u2 * 38;
+        sat = 88;
+        lum = 52 + u2 * 8;
+      } else {
+        var u3 = (t - 0.65) / 0.35;
+        hue = 268 + u3 * 54;
+        sat = 88 - u3 * 8;
+        lum = 60 + u3 * 14;
+      }
+      var rgb = hslToRgb(hue / 360, sat / 100, lum / 100);
+      var row = [];
+      for (var a = 0; a < ALPHA_STEPS; a++) {
+        var alpha = a / (ALPHA_STEPS - 1);
+        row.push('rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + alpha.toFixed(3) + ')');
+      }
+      COLOR_TABLE.push(row);
+    }
+  })();
+
   function build() {
     parts.length = 0;
-    var step = (CUBE * 2) / (GRID - 1);
-    var edge = GRID - 1;
     for (var i = 0; i < GRID; i++) {
       for (var j = 0; j < GRID; j++) {
         for (var k = 0; k < GRID; k++) {
-          var onSurface = (i === 0 || i === edge || j === 0 ||
-                           j === edge || k === 0 || k === edge);
-          var x = -CUBE + i * step;
-          var y = -CUBE + j * step;
-          var z = -CUBE + k * step;
-          if (!onSurface) { x *= 0.94; y *= 0.94; z *= 0.94; }
+          var isFlat = (i === 0);
+          var x = -CUBE + i * STEP;
+          var y = -CUBE + j * STEP;
+          var z = -CUBE + k * STEP;
+          if (!isFlat) {
+            x += (Math.random() - 0.5) * 11;
+            y += (Math.random() - 0.5) * 11;
+            z += (Math.random() - 0.5) * 11;
+          }
           parts.push({
             hx: x, hy: y, hz: z,
-            x: x,  y: y,  z: z,
-            vx: 0, vy: 0, vz: 0,
             ph: Math.random() * 6.2832,
-            sp: rnd(0.55, 1.3),
-            r: onSurface ? 1.55 : 1.0,
-            hot: 0
+            fx: 0.10 + Math.random() * 0.10,
+            fy: 0.09 + Math.random() * 0.09,
+            fz: 0.08 + Math.random() * 0.08,
+            amp: isFlat ? 0 : (4.5 + Math.random() * 4.0),
+            size: isFlat ? 0.85 : 1.0
           });
         }
       }
     }
-    buildEdges();
   }
 
-  function buildEdges() {
-    edges.length = 0;
-    var step = (CUBE * 2) / (GRID - 1);
-    var maxD2 = Math.pow(step * 1.32, 2);
-    var n = parts.length;
-    var deg = new Uint8Array(n);
-    for (var a = 0; a < n; a++) {
-      if (deg[a] >= 2) continue;
-      var pa = parts[a];
-      for (var b = a + 1; b < n; b++) {
-        if (deg[b] >= 2) continue;
-        var pb = parts[b];
-        var dx = pa.hx - pb.hx, dy = pa.hy - pb.hy, dz = pa.hz - pb.hz;
-        if (dx * dx + dy * dy + dz * dz <= maxD2) {
-          edges.push(a, b);
-          deg[a]++; deg[b]++;
-          if (deg[a] >= 2) break;
-        }
-      }
-    }
-  }
-
-  /* ================= 尺寸 ================= */
   function resize() {
     var r = stage.getBoundingClientRect();
     DPR = Math.min(window.devicePixelRatio || 1, 2);
-    W = Math.max(240, Math.round(r.width));
-    H = Math.max(240, Math.round(r.height));
+    W = Math.max(160, Math.round(r.width));
+    H = Math.max(160, Math.round(r.height));
     canvas.width  = Math.round(W * DPR);
     canvas.height = Math.round(H * DPR);
     ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
     cx = W / 2;
     cy = H / 2;
-    K = (Math.min(W, H) * 0.375) / CUBE;
+    K = (Math.min(W, H) * 0.22) / CUBE;
   }
 
-  /* ================= 渲染 ================= */
+  var waves = [];
+  var nextWaveTime = 0.4;
+
+  function updateWaves(t) {
+    for (var i = waves.length - 1; i >= 0; i--) {
+      if (t - waves[i].t0 > waves[i].life) waves.splice(i, 1);
+    }
+    if (t > nextWaveTime) {
+      var count = 2 + ((Math.random() * 3) | 0);
+      for (var k = 0; k < count; k++) {
+        var idx = (Math.random() * parts.length) | 0;
+        waves.push({
+          i: idx,
+          t0: t,
+          life: 3.0 + Math.random() * 2.0,
+          speed: 90 + Math.random() * 60,
+          thick: 32 + Math.random() * 18,
+          strength: 0.75 + Math.random() * 0.35
+        });
+      }
+      nextWaveTime = t + 0.7 + Math.random() * 1.3;
+    }
+  }
+
   function render(now) {
     var t = (now - t0) / 1000;
-    var dtms = Math.min(now - last, 48);
-    last = now;
-    var dt = dtms / 16.667;
+    tmx += (mx - tmx) * 0.05;
+    tmy += (my - tmy) * 0.05;
 
-    tmx += (mx - tmx) * 0.06 * dt;
-    tmy += (my - tmy) * 0.06 * dt;
-
-    var ry = rotY + tmx * 0.70;
-    var rx = 0.30 + Math.sin(t * 0.20) * 0.18 + tmy * 0.45;
+    var ry = 0.55 + Math.sin(t * 0.13) * 0.22 + tmx * 0.55;
+    var rx = 0.30 + Math.sin(t * 0.10) * 0.07 + tmy * 0.35;
 
     var cosY = Math.cos(ry), sinY = Math.sin(ry);
     var cosX = Math.cos(rx), sinX = Math.sin(rx);
 
-    var pulseR = ((t % PULSE_PERIOD) / PULSE_PERIOD) * 2.0;
-
-    var dampF = Math.pow(DAMP, dt);
-    var springF = SPRING * dt;
-
     ctx.clearRect(0, 0, W, H);
+    var n = parts.length;
+    var baseR = Math.min(W, H) * 0.0050;
+    var S_MIN = 0.755;
+    var S_RANGE = 0.725;
 
-    var i, p, n = parts.length;
+    updateWaves(t);
 
-    for (i = 0; i < n; i++) {
-      p = parts[i];
+    for (var i = 0; i < n; i++) {
+      var p = parts[i];
+      var tx = 0, ty = 0, tz = 0;
+      if (p.amp > 0) {
+        tx = Math.sin(t * p.fx + p.ph) * p.amp;
+        ty = Math.cos(t * p.fy + p.ph * 1.37) * p.amp;
+        tz = Math.sin(t * p.fz + p.ph * 2.13) * p.amp * 0.7;
+      }
+      var x = p.hx + tx;
+      var y = p.hy + ty;
+      var z = p.hz + tz;
 
-      var fx = Math.sin(t * 0.90 * p.sp + p.ph) * FLOAT;
-      var fy = Math.cos(t * 0.74 * p.sp + p.ph * 1.7) * FLOAT;
-      var fz = Math.sin(t * 0.62 * p.sp + p.ph * 2.3) * FLOAT;
+      var x1 =  x * cosY - z * sinY;
+      var z1 =  x * sinY + z * cosY;
+      var y1 =  y * cosX - z1 * sinX;
+      var z2 =  y * sinX + z1 * cosX;
 
-      if (Math.random() < 0.00055 * dt) {
-        var mag = rnd(70, 170);
-        p.vx += rnd(-1, 1) * mag;
-        p.vy += rnd(-1, 1) * mag;
-        p.vz += rnd(-1, 1) * mag;
-        p.hot = 1;
+      var s  = PERSP / (PERSP + z2);
+      var sx = cx + x1 * s * K;
+      var sy = cy + y1 * s * K;
+
+      var depth = (s - S_MIN) / S_RANGE;
+      if (depth < 0) depth = 0; else if (depth > 1) depth = 1;
+
+      var energy = 0;
+      for (var w = 0; w < waves.length; w++) {
+        var src = waves[w];
+        var srcP = parts[src.i];
+        var age = t - src.t0;
+        if (age < 0) continue;
+        var dx = p.hx - srcP.hx;
+        var dy = p.hy - srcP.hy;
+        var dz = p.hz - srcP.hz;
+        var dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
+        var front = age * src.speed;
+        var d = dist - front;
+        if (d < 0) d = -d;
+        if (d < src.thick) {
+          var decay = 1 - age / src.life;
+          if (decay < 0) decay = 0;
+          energy += (1 - d / src.thick) * decay * src.strength;
+        }
+      }
+      if (energy > 1) energy = 1;
+      var e01 = energy;
+
+      var hi = (e01 * (HUE_STEPS - 1)) | 0;
+
+      var sizeFactor = (0.50 + depth * 0.85) * (0.75 + e01 * 0.95);
+      var radius = baseR * p.size * sizeFactor;
+      if (radius < 0.35) radius = 0.35;
+
+      var alphaBase = 0.14 + depth * 0.72 + e01 * 0.32;
+      if (alphaBase > 1) alphaBase = 1;
+      var ai = (alphaBase * (ALPHA_STEPS - 1)) | 0;
+
+      if (e01 > 0.12) {
+        var glowR = radius * 2.2;
+        var gai = (ai * 0.35) | 0;
+        if (gai < 0) gai = 0;
+        ctx.fillStyle = COLOR_TABLE[hi][gai];
+        ctx.beginPath();
+        ctx.arc(sx, sy, glowR, 0, TWO_PI);
+        ctx.fill();
       }
 
-      var dist = Math.sqrt(p.hx * p.hx + p.hy * p.hy + p.hz * p.hz) / (CUBE * 1.732);
-      var wave = pulseR - dist * 1.4;
-      if (wave > 0 && wave < 0.22) {
-        var power = (1 - wave / 0.22) * 26 * dt;
-        var inv = 1 / (dist * CUBE * 1.732 + 1);
-        p.vx += p.hx * inv * power;
-        p.vy += p.hy * inv * power;
-        p.vz += p.hz * inv * power;
-        if (p.hot < 0.7) p.hot = 0.7;
-      }
-
-      p.vx += (p.hx + fx - p.x) * springF;
-      p.vy += (p.hy + fy - p.y) * springF;
-      p.vz += (p.hz + fz - p.z) * springF;
-
-      p.vx *= dampF; p.vy *= dampF; p.vz *= dampF;
-      p.x += p.vx * dt; p.y += p.vy * dt; p.z += p.vz * dt;
-
-      if (p.hot > 0) p.hot = Math.max(0, p.hot - 0.012 * dt);
-
-      var x1 =  p.x * cosY - p.z * sinY;
-      var z1 =  p.x * sinY + p.z * cosY;
-      var y1 =  p.y * cosX - z1 * sinX;
-      var z2 =  p.y * sinX + z1 * cosX;
-
-      var s = PERSP / (PERSP + z2);
-      p._sx = cx + x1 * s * K;
-      p._sy = cy + y1 * s * K;
-      p._s  = s;
-      p._z  = z2;
-    }
-
-    ctx.lineWidth = 1;
-    for (var e = 0; e < edges.length; e += 2) {
-      var A = parts[edges[e]], B = parts[edges[e + 1]];
-      var ddx = A._sx - B._sx, ddy = A._sy - B._sy;
-      var d2 = ddx * ddx + ddy * ddy;
-      if (d2 > 6400) continue;
-      var near = 1 - Math.sqrt(d2) / 80;
-      var dep = ((A._s + B._s) * 0.5 - 0.76) / 0.62;
-      if (dep < 0) dep = 0; else if (dep > 1) dep = 1;
-      var alpha = (0.035 + near * 0.16) * (0.35 + dep * 0.75);
-      var hot = A.hot > B.hot ? A.hot : B.hot;
-      ctx.strokeStyle = hot > 0
-        ? 'rgba(47,107,255,' + (alpha + hot * 0.28).toFixed(3) + ')'
-        : 'rgba(90,110,190,' + alpha.toFixed(3) + ')';
+      ctx.fillStyle = COLOR_TABLE[hi][ai];
       ctx.beginPath();
-      ctx.moveTo(A._sx, A._sy);
-      ctx.lineTo(B._sx, B._sy);
-      ctx.stroke();
-    }
-
-    if (drawOrder.length !== n) {
-      drawOrder.length = 0;
-      for (i = 0; i < n; i++) drawOrder.push(i);
-    }
-    drawOrder.sort(byDepth);
-
-    for (i = 0; i < n; i++) {
-      p = parts[drawOrder[i]];
-      var d3 = (p._s - 0.76) / 0.62;
-      if (d3 < 0) d3 = 0; else if (d3 > 1) d3 = 1;
-
-      var rad = p.r * p._s * 1.05;
-      var a2 = 0.16 + d3 * 0.66;
-
-      if (p.hot > 0) {
-        a2 = Math.min(1, a2 + p.hot * 0.55);
-        rad *= 1 + p.hot * 0.5;
-        ctx.fillStyle = 'rgba(47,107,255,' + a2.toFixed(3) + ')';
-      } else {
-        ctx.fillStyle = 'rgba(28,42,110,' + a2.toFixed(3) + ')';
-      }
-      ctx.beginPath();
-      ctx.arc(p._sx, p._sy, rad, 0, 6.2832);
+      ctx.arc(sx, sy, radius, 0, TWO_PI);
       ctx.fill();
     }
   }
 
-  /* ================= 循环控制 ================= */
   function loop(now) {
     raf = requestAnimationFrame(loop);
     render(now);
@@ -1737,7 +1745,6 @@
   function start() {
     if (running || reduceMotion || !inView) return;
     running = true;
-    last = performance.now();
     raf = requestAnimationFrame(loop);
   }
   function stop() {
@@ -1745,7 +1752,6 @@
     if (raf) { cancelAnimationFrame(raf); raf = null; }
   }
 
-  /* ================= 交互 ================= */
   stage.addEventListener('pointermove', function(e) {
     var r = stage.getBoundingClientRect();
     mx = (e.clientX - r.left) / r.width  - 0.5;
@@ -1776,14 +1782,304 @@
     else if (inView) start();
   });
 
-  /* ================= 启动 ================= */
   build();
   resize();
-  if (reduceMotion) {
-    render(performance.now());
-  } else {
-    start();
+  if (reduceMotion) render(performance.now());
+  else start();
+})();
+</script>
+
+<!-- ===== 神经网络全连接动画脚本 ===== -->
+<script>
+(function(){
+  "use strict";
+  var canvas = document.getElementById('nnCanvas');
+  if (!canvas) return;
+  var stage = canvas.parentElement;
+  var ctx = canvas.getContext('2d', { alpha: true });
+  if (!ctx) return;
+
+  var reduceMotion = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var SMALL = window.matchMedia('(max-width: 768px)').matches;
+
+  /* ================= 层配置：首尾各 4 个 ================= */
+  var LAYERS = SMALL
+    ? [4, 6, 6, 6, 4]
+    : [4, 8, 8, 8, 4];
+  var LAYER_COUNT = LAYERS.length;
+
+  var nodes = [];
+  var edges = [];
+  var activeIdx = new Array(LAYER_COUNT);
+  var nextSwitchAt = new Array(LAYER_COUNT);
+  var starts = new Array(LAYER_COUNT);
+
+  var W = 0, H = 0, DPR = 1;
+  var t0 = performance.now();
+  var raf = null, running = false, inView = true;
+
+  /* ================= 丰富色相：青蓝 → 蓝紫 → 品红 → 橙红 ================= */
+  function hueForRatio(r) {
+    if (r < 0.5) return 200 + r * 2 * 75;     // 200° → 275°
+    return 275 + (r - 0.5) * 2 * 105;         // 275° → 380°(即 20°)
   }
+  function hsl(h, s, l, a) {
+    h = ((h % 360) + 360) % 360;
+    return 'hsla(' + h.toFixed(1) + ',' + s + '%,' + l + '%,' + a + ')';
+  }
+
+  /* ================= 构建拓扑 ================= */
+  function build() {
+    nodes.length = 0;
+    edges.length = 0;
+
+    var L = LAYER_COUNT;
+    var padX = 0.08;
+    var availX = 1 - padX * 2;
+
+    for (var li = 0; li < L; li++) {
+      var count = LAYERS[li];
+      var lx = padX + (availX * li) / (L - 1);
+
+      // 首尾层：节点集中在中部（占高度 50%）；中间层：舒展（占 82%）
+      var li01 = li / (L - 1);
+      var edgeFactor = Math.abs(li01 - 0.5) * 2;   // 1 在两端，0 在中间
+      var availY = 0.82 - edgeFactor * 0.32;       // 0.50 ~ 0.82
+      var padY = (1 - availY) / 2;
+
+      for (var i = 0; i < count; i++) {
+        var ly = (count === 1) ? 0.5 : (padY + (availY * i) / (count - 1));
+        nodes.push({
+          lx: lx, ly: ly,
+          layer: li, index: i,
+          x: 0, y: 0,
+          r: SMALL ? 2.6 : 3.6,
+          ph: Math.random() * 6.283,
+          hue: hueForRatio(li01)
+        });
+      }
+    }
+
+    // 层起始索引
+    var acc = 0;
+    for (var s = 0; s < L; s++) { starts[s] = acc; acc += LAYERS[s]; }
+
+    // 相邻层全连接
+    for (var a = 0; a < L - 1; a++) {
+      var aStart = starts[a];
+      var bStart = starts[a + 1];
+      var ac = LAYERS[a];
+      var bc = LAYERS[a + 1];
+      var hueA = hueForRatio(a / (L - 1));
+      var hueB = hueForRatio((a + 1) / (L - 1));
+      for (var f = 0; f < ac; f++) {
+        for (var tt = 0; tt < bc; tt++) {
+          edges.push({
+            a: aStart + f,
+            b: bStart + tt,
+            layer: a,
+            hue: (hueA + hueB) * 0.5,
+            ph: Math.random() * 6.283,
+            freq: 0.55 + Math.random() * 0.75,
+            amp: 0.75 + Math.random() * 1.35,
+            thick: 0.55 + Math.random() * 0.55
+          });
+        }
+      }
+    }
+
+    // 每层激活节点初始化
+    for (var k = 0; k < L; k++) {
+      activeIdx[k] = (Math.random() * LAYERS[k]) | 0;
+      nextSwitchAt[k] = 0.15 + Math.random() * 0.4;
+    }
+  }
+
+  /* ================= 尺寸 ================= */
+  function resize() {
+    var r = stage.getBoundingClientRect();
+    DPR = Math.min(window.devicePixelRatio || 1, 2);
+    W = Math.max(200, Math.round(r.width));
+    H = Math.max(120, Math.round(r.height));
+    canvas.width  = Math.round(W * DPR);
+    canvas.height = Math.round(H * DPR);
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+
+    for (var i = 0; i < nodes.length; i++) {
+      var n = nodes[i];
+      n.x = n.lx * W;
+      n.y = n.ly * H;
+    }
+  }
+
+  /* ============ 激活节点切换：每层随机只亮 1 个 ============ */
+  function updateActive(t) {
+    for (var li = 0; li < LAYER_COUNT; li++) {
+      if (t >= nextSwitchAt[li]) {
+        var next, guard = 0;
+        do {
+          next = (Math.random() * LAYERS[li]) | 0;
+          guard++;
+        } while (LAYERS[li] > 1 && next === activeIdx[li] && guard < 8);
+        activeIdx[li] = next;
+        nextSwitchAt[li] = t + 0.35 + Math.random() * 0.45;
+      }
+    }
+  }
+
+  /* ================= 渲染 ================= */
+  var SEG = SMALL ? 10 : 14;
+
+  function render(now) {
+    var t = (now - t0) / 1000;
+    ctx.clearRect(0, 0, W, H);
+
+    var n = nodes.length;
+    var m = edges.length;
+
+    updateActive(t);
+
+    /* ===== 连接线 ===== */
+    for (var e = 0; e < m; e++) {
+      var edge = edges[e];
+      var A = nodes[edge.a];
+      var B = nodes[edge.b];
+
+      var dx = B.x - A.x;
+      var dy = B.y - A.y;
+      var len = Math.sqrt(dx * dx + dy * dy);
+      if (len < 0.001) continue;
+
+      var nx = -dy / len;
+      var ny =  dx / len;
+
+      var baseAmp = len * 0.045 * edge.amp;
+      var ph = edge.ph + t * edge.freq;
+
+      // 是否在激活路径上
+      var aIsActive = (A.layer === edge.layer) && (A.index === activeIdx[A.layer]);
+      var bIsActive = (B.layer === edge.layer + 1) && (B.index === activeIdx[B.layer]);
+      var onActivePath = aIsActive || bIsActive;
+      var bothActive   = aIsActive && bIsActive;
+
+      // 色相：激活时向暖色偏移
+      var hue = edge.hue;
+      var sat, lum, alpha, lw;
+      if (bothActive) {
+        hue += 28; sat = 95; lum = 62; alpha = 0.95; lw = edge.thick * 1.9;
+      } else if (onActivePath) {
+        hue += 12; sat = 82; lum = 56; alpha = 0.55; lw = edge.thick * 1.15;
+      } else {
+        sat = 55; lum = 48; alpha = 0.12; lw = edge.thick * 0.7;
+      }
+
+      ctx.strokeStyle = hsl(hue, sat, lum, alpha);
+      ctx.lineWidth = lw;
+
+      ctx.beginPath();
+      for (var s = 0; s <= SEG; s++) {
+        var u = s / SEG;
+        var px = A.x + dx * u;
+        var py = A.y + dy * u;
+
+        var wave =
+          (Math.sin(ph + u * 5.0) * 0.68 +
+           Math.sin(ph * 1.7 + u * 9.4) * 0.32) *
+          baseAmp * Math.sin(u * Math.PI);
+
+        var qx = px + nx * wave;
+        var qy = py + ny * wave;
+
+        if (s === 0) ctx.moveTo(qx, qy);
+        else ctx.lineTo(qx, qy);
+      }
+      ctx.stroke();
+    }
+
+    /* ===== 节点 ===== */
+    for (var i = 0; i < n; i++) {
+      var nd = nodes[i];
+      var isActive = (nd.index === activeIdx[nd.layer]);
+
+      var pulse = 0.5 + 0.5 * Math.sin(t * 1.4 + nd.ph);
+      var r = isActive
+        ? nd.r * (1.40 + pulse * 0.35)
+        : nd.r * (0.92 + pulse * 0.12);
+
+      var hue = isActive ? (nd.hue + 25) : nd.hue;
+      var sat = isActive ? 95 : 62;
+      var lum = isActive ? 60 : 45;
+
+      // 光晕
+      var glowR = r * (isActive ? 9 : 3.0);
+      var glowA = isActive ? 0.60 : 0.16;
+      var grd = ctx.createRadialGradient(nd.x, nd.y, 0, nd.x, nd.y, glowR);
+      grd.addColorStop(0,   hsl(hue, sat, lum, glowA));
+      grd.addColorStop(0.5, hsl(hue, sat, lum, glowA * 0.38));
+      grd.addColorStop(1,   hsl(hue, sat, lum, 0));
+      ctx.fillStyle = grd;
+      ctx.beginPath();
+      ctx.arc(nd.x, nd.y, glowR, 0, Math.PI * 2);
+      ctx.fill();
+
+      // 节点本体（浅色填充 + 彩色描边 → 圈状）
+      ctx.fillStyle = isActive
+        ? hsl(hue, sat, 92, 1)
+        : hsl(hue, 55, 82, 0.92);
+      ctx.beginPath();
+      ctx.arc(nd.x, nd.y, r, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.strokeStyle = isActive
+        ? hsl(hue, 95, 52, 1)
+        : hsl(hue, 68, 44, 0.85);
+      ctx.lineWidth = isActive ? 2.4 : 1.3;
+      ctx.stroke();
+    }
+  }
+
+  function loop(now) {
+    raf = requestAnimationFrame(loop);
+    render(now);
+  }
+  function start() {
+    if (running || reduceMotion || !inView) return;
+    running = true;
+    raf = requestAnimationFrame(loop);
+  }
+  function stop() {
+    running = false;
+    if (raf) { cancelAnimationFrame(raf); raf = null; }
+  }
+
+  var rt = null;
+  window.addEventListener('resize', function() {
+    clearTimeout(rt);
+    rt = setTimeout(function() {
+      resize();
+      if (reduceMotion) render(performance.now());
+    }, 160);
+  }, { passive: true });
+
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(entries) {
+      entries.forEach(function(en) {
+        inView = en.isIntersecting;
+        if (inView) start(); else stop();
+      });
+    }, { threshold: 0.05 }).observe(stage);
+  }
+
+  document.addEventListener('visibilitychange', function() {
+    if (document.hidden) stop();
+    else if (inView) start();
+  });
+
+  build();
+  resize();
+  if (reduceMotion) render(performance.now());
+  else start();
 })();
 </script>
 
@@ -2389,8 +2685,6 @@
         'voice.c4.role':'中学信息技术教师 · 南京',
         'ml.title':'会自愈的智能解析网络',
         'ml.desc':'基于机器学习调度模型，节点异常自动感知、自动重构，像神经元一样持续自愈。',
-        'ml.chip1':'机器学习调度','ml.chip2':'异常自感知',
-        'ml.chip3':'毫秒级自愈','ml.chip4':'神经元拓扑',
         'faq.title':'常见问题','faq.desc':'关于加密 DNS 的高频疑问，都在这里。',
         'faq.q1':'加密 DNS 会不会让上网变慢？','faq.a1':'不会。加密握手只在连接建立时发生一次，后续查询复用同一条连接。配合就近接入与本地缓存，实测解析延迟通常比运营商默认 DNS 更低。',
         'faq.q2':'DoH、DoT、DoQ、HTTP3 该怎么选？','faq.a2':'浏览器和 Windows 11 优先选 DoH；Android、iOS、路由器全局加密推荐 DoT；移动端或高丢包网络推荐 DoQ；追求极致速度与 0-RTT 恢复可选 HTTP3。四者可同时开启，系统会自动选择。',
@@ -2464,8 +2758,6 @@
         'voice.c4.role':'High School IT Teacher · Nanjing',
         'ml.title':'A Self-Healing Intelligent Resolution Network',
         'ml.desc':'Powered by a machine-learning scheduling model, anomalies are sensed and rerouted automatically — the network keeps healing itself, neuron by neuron.',
-        'ml.chip1':'ML Scheduling','ml.chip2':'Anomaly Aware',
-        'ml.chip3':'ms-level Healing','ml.chip4':'Neural Topology',
         'faq.title':'Frequently Asked Questions','faq.desc':'Everything you want to know about encrypted DNS.',
         'faq.q1':'Will encrypted DNS slow down my browsing?','faq.a1':'No. The encrypted handshake only happens once at connection setup and is reused for later queries. Combined with nearest-node routing and local caching, real-world latency is usually lower than your ISP default.',
         'faq.q2':'Which should I choose — DoH, DoT, DoQ or HTTP3?','faq.a2':'Browsers and Windows 11 prefer DoH; Android, iOS and routers do best with DoT; mobile and high-loss networks favor DoQ; for maximum speed and 0-RTT recovery, HTTP3. All four can be enabled together.',
