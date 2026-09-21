@@ -47,7 +47,6 @@
   <link rel="alternate" hreflang="x-default" href="https://ipv4dns.com/">
 
   <!-- ==================== JSON-LD 结构化数据 ==================== -->
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -64,9 +63,7 @@
     },
     "description": "免费加密DNS解析服务，支持DoH、DoT、DoQ、HTTP3协议，防止DNS劫持、污染与窃听。",
     "email": "support@ipv4dns.com",
-    "sameAs": [
-      "https://ipv4dns.com"
-    ]
+    "sameAs": ["https://ipv4dns.com"]
   }
   </script>
 
@@ -79,9 +76,7 @@
     "alternateName": "FreshCloud DNS",
     "url": "https://ipv4dns.com/",
     "description": "免费加密DNS解析服务，支持DoH/DoT/DoQ/HTTP3全协议。",
-    "publisher": {
-      "@id": "https://ipv4dns.com/#organization"
-    },
+    "publisher": { "@id": "https://ipv4dns.com/#organization" },
     "inLanguage": "zh-CN",
     "potentialAction": {
       "@type": "SearchAction",
@@ -156,62 +151,13 @@
     "@type": "FAQPage",
     "@id": "https://ipv4dns.com/#faq",
     "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "加密 DNS 会不会让上网变慢？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "不会。加密握手只在连接建立时发生一次，后续查询复用同一条连接。配合就近接入与本地缓存，实测解析延迟通常比运营商默认 DNS 更低。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "DoH、DoT、DoQ、HTTP3 该怎么选？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "浏览器和 Windows 11 优先选 DoH；Android、iOS、路由器全局加密推荐 DoT；移动端或高丢包网络推荐 DoQ；追求极致速度与 0-RTT 恢复可选 HTTP3。四者可同时开启，系统会自动选择。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "你们会记录我的 DNS 查询吗？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "不会。我们采用零日志策略，查询内容不写入磁盘，仅保留聚合后的匿名统计数字（如总查询量），用于容量规划与服务监控，无法回溯到任何个人或域名。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "配置后如何验证是否真的生效？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "页面下方的「DNS 连接状态」会自动检测。你也可以访问 test.ipv4dns.com 查看判定结果，或在终端执行 nslookup example.com 观察返回的解析服务器。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "支持哪些操作系统和设备？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "支持 Windows 10/11、macOS、iOS / iPadOS、Android 9+、Linux 及主流路由器（OpenWrt、梅林、爱快等）。iOS / macOS 用户可直接下载 .mobileconfig 描述文件，一键全局生效。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "服务是免费的吗？有没有限速？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "个人使用完全免费，不限制查询次数、不限制设备数量，也不做任何人为限速。企业级定制（专属节点、SLA、审计对接）可联系我们获取方案。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "上游节点故障时会怎样？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "我们采用跨可用区多活部署，任一节点故障都会在秒级内自动切换到健康节点，客户端几乎无感知。历史可用性长期保持在 99.99% 以上。"
-        }
-      }
+      {"@type":"Question","name":"加密 DNS 会不会让上网变慢？","acceptedAnswer":{"@type":"Answer","text":"不会。加密握手只在连接建立时发生一次，后续查询复用同一条连接。配合就近接入与本地缓存，实测解析延迟通常比运营商默认 DNS 更低。"}},
+      {"@type":"Question","name":"DoH、DoT、DoQ、HTTP3 该怎么选？","acceptedAnswer":{"@type":"Answer","text":"浏览器和 Windows 11 优先选 DoH；Android、iOS、路由器全局加密推荐 DoT；移动端或高丢包网络推荐 DoQ；追求极致速度与 0-RTT 恢复可选 HTTP3。四者可同时开启，系统会自动选择。"}},
+      {"@type":"Question","name":"你们会记录我的 DNS 查询吗？","acceptedAnswer":{"@type":"Answer","text":"不会。我们采用零日志策略，查询内容不写入磁盘，仅保留聚合后的匿名统计数字（如总查询量），用于容量规划与服务监控，无法回溯到任何个人或域名。"}},
+      {"@type":"Question","name":"配置后如何验证是否真的生效？","acceptedAnswer":{"@type":"Answer","text":"页面下方的「DNS 连接状态」会自动检测。你也可以访问 test.ipv4dns.com 查看判定结果，或在终端执行 nslookup example.com 观察返回的解析服务器。"}},
+      {"@type":"Question","name":"支持哪些操作系统和设备？","acceptedAnswer":{"@type":"Answer","text":"支持 Windows 10/11、macOS、iOS / iPadOS、Android 9+、Linux 及主流路由器（OpenWrt、梅林、爱快等）。iOS / macOS 用户可直接下载 .mobileconfig 描述文件，一键全局生效。"}},
+      {"@type":"Question","name":"服务是免费的吗？有没有限速？","acceptedAnswer":{"@type":"Answer","text":"个人使用完全免费，不限制查询次数、不限制设备数量，也不做任何人为限速。企业级定制（专属节点、SLA、审计对接）可联系我们获取方案。"}},
+      {"@type":"Question","name":"上游节点故障时会怎样？","acceptedAnswer":{"@type":"Answer","text":"我们采用跨可用区多活部署，任一节点故障都会在秒级内自动切换到健康节点，客户端几乎无感知。历史可用性长期保持在 99.99% 以上。"}}
     ]
   }
   </script>
@@ -221,24 +167,9 @@
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "首页",
-        "item": "https://ipv4dns.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "配置指南",
-        "item": "https://ipv4dns.com/#config"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "常见问题",
-        "item": "https://ipv4dns.com/#faq"
-      }
+      {"@type":"ListItem","position":1,"name":"首页","item":"https://ipv4dns.com/"},
+      {"@type":"ListItem","position":2,"name":"配置指南","item":"https://ipv4dns.com/#config"},
+      {"@type":"ListItem","position":3,"name":"常见问题","item":"https://ipv4dns.com/#faq"}
     ]
   }
   </script>
@@ -246,6 +177,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
     :root { --blue:#2f6bff; --purple:#8b7bff; --pink:#ff9ad5; --ink:#0f1a2e; --sub:#5a6e8a; --bg:#f6f9fe; }
@@ -257,18 +189,11 @@
     @media (max-width:480px) { .wrap { padding:0 12px; } }
 
     .bg-glow { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden; contain:strict; }
-    .bg-glow span {
-      position:absolute; border-radius:50%; opacity:.55;
-      will-change:transform; transform:translate3d(0,0,0); backface-visibility:hidden;
-      animation:drift 34s cubic-bezier(.45,.05,.55,.95) infinite alternate;
-    }
+    .bg-glow span { position:absolute; border-radius:50%; opacity:.55; will-change:transform; transform:translate3d(0,0,0); backface-visibility:hidden; animation:drift 34s cubic-bezier(.45,.05,.55,.95) infinite alternate; }
     .g1 { width:70vw; height:70vw; left:-20vw; top:-15vw; background:radial-gradient(circle,#c7d6ff 0%,#c7d6ff 6%,transparent 62%); animation-duration:34s; }
     .g2 { width:60vw; height:60vw; right:-15vw; top:5vh; background:radial-gradient(circle,#ffd9f0 0%,#ffd9f0 6%,transparent 62%); animation-duration:40s; animation-direction:alternate-reverse; }
     .g3 { width:65vw; height:65vw; left:10vw; top:45vh; background:radial-gradient(circle,#d8ccff 0%,#d8ccff 6%,transparent 62%); animation-duration:44s; }
-    @keyframes drift {
-      0%   { transform:translate3d(0,0,0) scale(1); }
-      100% { transform:translate3d(5vw,-4vh,0) scale(1.08); }
-    }
+    @keyframes drift { 0% { transform:translate3d(0,0,0) scale(1); } 100% { transform:translate3d(5vw,-4vh,0) scale(1.08); } }
 
     .h-title { font-size:clamp(30px,4.2vw,44px); font-weight:900; line-height:1.25; letter-spacing:-0.02em; }
     .h-sub { color:var(--sub); font-size:clamp(14px,1.1vw,17px); line-height:1.8; margin-top:14px; max-width:540px; }
@@ -319,11 +244,10 @@
       .nav-btns .btn-primary { padding:6px 14px; font-size:13px; box-shadow:0 4px 16px rgba(47,107,255,.25); }
       .hamburger { display:flex; padding:2px 0 2px 4px; }
       .hamburger span { width:22px; height:2px; }
-      .mobile-menu { display:block; position:fixed; top:0; left:0; right:0; z-index:99; background:rgba(255,255,255,.96); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); padding:90px 24px 30px; transform:translateY(-110%); transition:.45s cubic-bezier(.2,.8,.2,1); box-shadow:0 30px 60px rgba(60,80,180,.15); border-radius:0 0 24px 24px; }
+      .mobile-menu { display:block; position:fixed; top:0; left:0; right:0; z-index:99; background:rgba(255,255,255,.96); backdrop-filter:blur(16px); padding:90px 24px 30px; transform:translateY(-110%); transition:.45s cubic-bezier(.2,.8,.2,1); box-shadow:0 30px 60px rgba(60,80,180,.15); border-radius:0 0 24px 24px; }
       .mobile-menu.open { transform:translateY(0); }
       .mobile-menu a { display:block; font-size:17px; font-weight:700; color:var(--ink); text-decoration:none; padding:14px 4px; border-bottom:1px solid rgba(140,160,230,.12); }
       .mobile-menu .lang-switch-mobile { display:flex; gap:12px; margin-top:20px; padding:12px 4px; border-bottom:1px solid rgba(140,160,230,.12); }
-      .mobile-menu .lang-switch-mobile .lang-btn { font-size:15px; padding:4px 12px; }
       .mobile-menu .btn-primary { width:100%; margin-top:20px; }
     }
     @media (max-width:420px) {
@@ -338,7 +262,7 @@
     }
     .hero { min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:140px 0 60px; overflow:hidden; position:relative; }
     .hero-inner { position:relative; z-index:3; }
-    .hero-badge { display:inline-flex; align-items:center; gap:8px; font-size:13px; color:var(--blue); background:rgba(47,107,255,.08); border:1px solid rgba(47,107,255,.2); padding:6px 20px; border-radius:999px; margin-bottom:28px; backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px); animation:fadeUp 1s .2s both; }
+    .hero-badge { display:inline-flex; align-items:center; gap:8px; font-size:13px; color:var(--blue); background:rgba(47,107,255,.08); border:1px solid rgba(47,107,255,.2); padding:6px 20px; border-radius:999px; margin-bottom:28px; backdrop-filter:blur(4px); animation:fadeUp 1s .2s both; }
     .hero-badge i { width:7px; height:7px; border-radius:50%; background:var(--blue); box-shadow:0 0 12px var(--blue); animation:pulse 1.6s infinite; }
     .hero h1 { font-size:clamp(44px,8vw,100px); font-weight:900; letter-spacing:-0.02em; background:linear-gradient(135deg,#0f1a2e 30%,#3a4a8f 70%,#2f6bff); -webkit-background-clip:text; background-clip:text; color:transparent; animation:fadeUp 1s .35s both; }
     .hero h1 em { font-style:normal; background:linear-gradient(135deg,#2f6bff,#8b7bff,#ff9ad5); -webkit-background-clip:text; background-clip:text; color:transparent; }
@@ -351,15 +275,9 @@
 
     .hero-shapes { position:absolute; inset:0; pointer-events:none; z-index:1; }
     .shape { position:absolute; will-change:transform; transform:translate3d(0,0,0); backface-visibility:hidden; }
-    .shape .glass { background:linear-gradient(135deg,rgba(255,182,193,0.45),rgba(200,180,255,0.45),rgba(180,200,255,0.45),rgba(200,210,220,0.35)); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.7); box-shadow:0 20px 40px rgba(100,120,220,0.15); }
-    @keyframes floaty {
-      0%,100% { transform:translate3d(0,0,0) rotate(var(--r,0deg)); }
-      50%     { transform:translate3d(0,-14px,0) rotate(calc(var(--r,0deg) + 1.5deg)); }
-    }
-    @keyframes floaty2 {
-      0%,100% { transform:translate3d(0,0,0) rotate(var(--r,0deg)) scale(1); }
-      50%     { transform:translate3d(0,-20px,0) rotate(calc(var(--r,0deg) - 2deg)) scale(1.02); }
-    }
+    .shape .glass { background:linear-gradient(135deg,rgba(255,182,193,0.45),rgba(200,180,255,0.45),rgba(180,200,255,0.45),rgba(200,210,220,0.35)); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.7); box-shadow:0 20px 40px rgba(100,120,220,0.15); }
+    @keyframes floaty { 0%,100% { transform:translate3d(0,0,0) rotate(var(--r,0deg)); } 50% { transform:translate3d(0,-14px,0) rotate(calc(var(--r,0deg) + 1.5deg)); } }
+    @keyframes floaty2 { 0%,100% { transform:translate3d(0,0,0) rotate(var(--r,0deg)) scale(1); } 50% { transform:translate3d(0,-20px,0) rotate(calc(var(--r,0deg) - 2deg)) scale(1.02); } }
     .pyramid { left:4%; top:22%; animation:floaty2 8s ease-in-out infinite; --r:-6deg; }
     .pyramid .glass { width:clamp(80px,14vw,180px); height:clamp(80px,14vw,180px); clip-path:polygon(50% 0%,100% 100%,0% 100%); }
     .cube { right:5%; top:20%; animation:floaty 9s ease-in-out infinite; --r:12deg; }
@@ -371,21 +289,21 @@
     .hexagon { right:20%; top:8%; animation:floaty2 12s ease-in-out infinite; --r:-10deg; }
     .hexagon .glass { width:clamp(65px,10vw,130px); height:clamp(65px,10vw,130px); clip-path:polygon(25% 0%,75% 0%,100% 50%,75% 100%,25% 100%,0% 50%); }
     .ring { left:8%; bottom:18%; animation:floaty 13s ease-in-out infinite; --r:5deg; }
-    .ring .glass { width:clamp(70px,11vw,140px); height:clamp(70px,11vw,140px); border-radius:50%; border:8px solid rgba(255,255,255,0.6); background:rgba(200,180,255,0.15); backdrop-filter:blur(4px); box-shadow:0 0 0 2px rgba(255,255,255,0.2),0 20px 40px rgba(100,120,220,0.1); }
+    .ring .glass { width:clamp(70px,11vw,140px); height:clamp(70px,11vw,140px); border-radius:50%; border:8px solid rgba(255,255,255,0.6); background:rgba(200,180,255,0.15); backdrop-filter:blur(4px); }
     .pyramid-base { position:absolute; left:-14%; top:82%; width:128%; height:26px; border-radius:50%; background:radial-gradient(ellipse,rgba(200,180,255,0.25),transparent 70%); filter:blur(6px); }
     @media (max-width:768px) { .pyramid{left:2%;top:18%} .cube{right:2%;top:16%} .sphere{right:6%;bottom:16%} .diamond{left:14%;top:8%} .hexagon{right:14%;top:4%} .ring{left:4%;bottom:12%} }
     @media (max-width:480px) { .pyramid{left:1%;top:14%} .cube{right:1%;top:12%} .sphere{right:4%;bottom:12%} .diamond{left:12%;top:6%} .hexagon{right:12%;top:2%} .ring{left:2%;bottom:8%} }
-    .scroll-hint { position:absolute; bottom:30px; left:0; right:0; margin:0 auto; text-align:center; display:flex; flex-direction:column; align-items:center; gap:8px; color:#9aa4c8; font-size:12px; letter-spacing:.3em; animation:fadeUp 1s 1.2s both; }
+    .scroll-hint { position:absolute; bottom:30px; left:0; right:0; text-align:center; display:flex; flex-direction:column; align-items:center; gap:8px; color:#9aa4c8; font-size:12px; letter-spacing:.3em; animation:fadeUp 1s 1.2s both; }
     .scroll-hint::after { content:""; width:1px; height:36px; background:linear-gradient(180deg,#9aa4c8,transparent); animation:hint 1.8s infinite; }
     @keyframes hint { 0%{transform:scaleY(0);transform-origin:top;} 50%{transform:scaleY(1);transform-origin:top;} 51%{transform-origin:bottom;} 100%{transform:scaleY(0);transform-origin:bottom;} }
     @media (max-width:768px) { .scroll-hint{ bottom:20px; font-size:10px; letter-spacing:.2em } .scroll-hint::after{ height:28px } }
+
     .sec-tool { padding:120px 0 100px; overflow:hidden; }
     .tool-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
     .tool-copy .kicker { display:inline-flex; align-items:center; gap:10px; font-size:13px; font-weight:700; color:var(--purple); letter-spacing:.15em; margin-bottom:18px; }
     .tool-copy .kicker::before { content:""; width:34px; height:2px; background:linear-gradient(90deg,var(--purple),transparent); border-radius:2px; }
     .feat-list { margin-top:34px; display:flex; flex-direction:column; gap:14px; }
-    .feat-item { display:flex; align-items:center; gap:16px; padding:16px 22px; border-radius:18px; background:rgba(255,255,255,.55); border:1px solid rgba(160,175,235,.25); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); box-shadow:0 8px 28px rgba(100,120,220,.06); transition:.3s; cursor:default; }
-    @supports not (backdrop-filter:blur(1px)) { .feat-item { background:rgba(255,255,255,0.85); } }
+    .feat-item { display:flex; align-items:center; gap:16px; padding:16px 22px; border-radius:18px; background:rgba(255,255,255,.55); border:1px solid rgba(160,175,235,.25); backdrop-filter:blur(6px); box-shadow:0 8px 28px rgba(100,120,220,.06); transition:.3s; }
     .feat-item:hover { transform:translateX(6px); box-shadow:0 14px 36px rgba(100,120,220,.12); background:rgba(255,255,255,.85); }
     .feat-icon { width:44px; height:44px; border-radius:13px; display:grid; place-items:center; flex:none; background:linear-gradient(135deg,rgba(47,107,255,.12),rgba(139,123,255,.12)); border:1px solid rgba(47,107,255,.2); }
     .feat-icon svg { width:26px; height:26px; fill:none; stroke:var(--blue); stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
@@ -395,21 +313,17 @@
     .feat-item h4 { font-size:16px; font-weight:700; }
     .feat-item p { font-size:13px; color:var(--sub); margin-top:2px; }
     .dns-stage { position:relative; display:flex; align-items:center; justify-content:center; min-height:460px; overflow:hidden; border-radius:40px; }
-    .dns-halo {
-      position:absolute; width:500px; height:500px; border-radius:50%;
-      background:radial-gradient(circle,rgba(160,180,255,.42) 0%,rgba(160,180,255,.14) 38%,transparent 68%);
-      filter:none; will-change:opacity, transform; transform:translate3d(0,0,0);
-      animation:haloPulse 5s ease-in-out infinite;
-    }
-    .dns-float-wrap { position:relative; animation:floaty 7s ease-in-out infinite; width:260px; height:260px; will-change:transform; transform:translate3d(0,0,0); backface-visibility:hidden; }
-    .dns-core { width:100%; height:100%; border-radius:50%; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.95),rgba(190,200,255,.5) 55%,rgba(150,165,255,.45)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); box-shadow:0 40px 90px rgba(90,110,220,.28),inset 0 3px 14px rgba(255,255,255,.95),inset 0 -14px 34px rgba(120,140,255,.28); position:relative; z-index:2; }
-    @supports not (backdrop-filter:blur(1px)) { .dns-core { background:radial-gradient(circle at 35% 30%,#f0f4ff,#d0d8f0 55%,#b0bce0); } }
+    .dns-halo { position:absolute; width:500px; height:500px; border-radius:50%; background:radial-gradient(circle,rgba(160,180,255,.42) 0%,rgba(160,180,255,.14) 38%,transparent 68%); animation:haloPulse 5s ease-in-out infinite; }
+    .dns-float-wrap { position:relative; animation:floaty 7s ease-in-out infinite; width:260px; height:260px; }
+    .dns-core { width:100%; height:100%; border-radius:50%; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.95),rgba(190,200,255,.5) 55%,rgba(150,165,255,.45)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(6px); box-shadow:0 40px 90px rgba(90,110,220,.28),inset 0 3px 14px rgba(255,255,255,.95),inset 0 -14px 34px rgba(120,140,255,.28); position:relative; z-index:2; }
     .dns-core::before { content:""; position:absolute; inset:14px; border-radius:50%; background:linear-gradient(160deg,rgba(255,255,255,.5),rgba(255,255,255,.05)); border:1px solid rgba(255,255,255,.6); }
     .dns-core .txt { position:relative; z-index:3; text-align:center; }
     .dns-core .txt b { font-size:68px; font-weight:900; letter-spacing:.04em; background:linear-gradient(135deg,#1c2a6e,#2f6bff 55%,#8b7bff); -webkit-background-clip:text; background-clip:text; color:transparent; filter:drop-shadow(0 6px 14px rgba(60,90,220,.3)); }
     .dns-core .txt small { display:block; font-size:11px; letter-spacing:.4em; color:#5a68b8; margin-top:2px; font-weight:700; }
+    @keyframes haloPulse { 0%,100% { opacity:.75; transform:scale(1); } 50% { opacity:.42; transform:scale(1.04); } }
     @media (max-width:768px) { .tool-grid { grid-template-columns:1fr; gap:40px; } .dns-stage { min-height:360px; order:-1; } .dns-float-wrap { width:200px; height:200px; } .dns-core .txt b { font-size:48px; } .dns-halo { width:300px; height:300px; } }
     @media (max-width:480px) { .dns-float-wrap { width:160px; height:160px; } .dns-core .txt b { font-size:36px; } .dns-core .txt small { font-size:9px; } .dns-halo { width:240px; height:240px; } }
+
     .sec-anywhere { padding:100px 0 60px; overflow:hidden; background:linear-gradient(180deg,rgba(235,240,255,0),rgba(235,240,255,.4) 30%,rgba(255,240,250,.3) 70%,rgba(235,240,255,0)); text-align:center; }
     .anywhere-grid { display:grid; grid-template-columns:1fr 1.2fr; gap:50px; align-items:center; }
     .anywhere-copy { text-align:left; }
@@ -419,42 +333,28 @@
     .stat span { font-size:13px; color:var(--sub); font-weight:500; }
     .shield-scene { position:relative; display:flex; align-items:center; justify-content:center; min-height:400px; }
     .shield-wrap { position:relative; width:260px; height:300px; display:flex; align-items:center; justify-content:center; }
-    .shield-glow {
-      position:absolute; width:320px; height:320px; border-radius:50%;
-      background:radial-gradient(circle,rgba(160,180,255,.42) 0%,rgba(160,180,255,.14) 38%,transparent 68%);
-      filter:none; will-change:opacity, transform; transform:translate3d(0,0,0);
-      animation:haloPulse 5s ease-in-out infinite;
-    }
-    @keyframes haloPulse {
-      0%,100% { opacity:.75; transform:translate3d(0,0,0) scale(1); }
-      50%     { opacity:.42; transform:translate3d(0,0,0) scale(1.04); }
-    }
-    .shield { position:relative; width:150px; height:170px; animation:floaty2 6.5s ease-in-out infinite; --r:-3deg; will-change:transform; transform:translate3d(0,0,0); backface-visibility:hidden; }
+    .shield-glow { position:absolute; width:320px; height:320px; border-radius:50%; background:radial-gradient(circle,rgba(160,180,255,.42) 0%,rgba(160,180,255,.14) 38%,transparent 68%); animation:haloPulse 5s ease-in-out infinite; }
+    .shield { position:relative; width:150px; height:170px; animation:floaty2 6.5s ease-in-out infinite; --r:-3deg; }
     .shield-inner { width:100%; height:100%; filter:drop-shadow(0 20px 40px rgba(70,95,230,.3)); }
-    .shield-svg { width:100%; height:100%; overflow:visible; }
     .shield-shadow { position:absolute; left:50%; bottom:-34px; width:110px; height:20px; border-radius:50%; transform:translateX(-50%); background:radial-gradient(ellipse,rgba(80,100,220,.2),transparent 70%); filter:blur(6px); animation:shadowPulse 6.5s ease-in-out infinite; }
     @keyframes shadowPulse { 0%,100%{transform:translateX(-50%) scale(1);opacity:1;} 50%{transform:translateX(-50%) scale(.8);opacity:.6;} }
     .shield-ripple { position:absolute; left:50%; top:50%; width:180px; height:180px; border-radius:50%; transform:translate(-50%,-50%); border:1.5px solid rgba(110,135,255,.4); opacity:0; pointer-events:none; animation:shieldRipple 3.8s cubic-bezier(.2,.6,.3,1) infinite; }
     .shield-ripple.r2 { animation-delay:1.3s; }
     .shield-ripple.r3 { animation-delay:2.6s; }
     @keyframes shieldRipple { 0%{transform:translate(-50%,-50%) scale(.5);opacity:.6;} 80%{opacity:.1;} 100%{transform:translate(-50%,-50%) scale(1.5);opacity:0;} }
-    .orbit-chip { position:absolute; padding:5px 14px; border-radius:999px; font-size:12px; font-weight:800; white-space:nowrap; background:rgba(255,255,255,.85); border:1px solid rgba(160,175,235,.4); backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px); box-shadow:0 8px 20px rgba(100,120,220,.12); animation:orbitFloat 7s ease-in-out infinite; will-change:transform; transform:translate3d(0,0,0); backface-visibility:hidden; }
-    @supports not (backdrop-filter:blur(1px)) { .orbit-chip { background:rgba(255,255,255,0.95); } }
+    .orbit-chip { position:absolute; padding:5px 14px; border-radius:999px; font-size:12px; font-weight:800; white-space:nowrap; background:rgba(255,255,255,.85); border:1px solid rgba(160,175,235,.4); backdrop-filter:blur(4px); box-shadow:0 8px 20px rgba(100,120,220,.12); animation:orbitFloat 7s ease-in-out infinite; }
     .oc1 { top:4%; left:2%; color:#2f6bff; }
     .oc2 { top:36%; right:-4%; color:#7a5ff0; animation-delay:1.4s; }
     .oc3 { bottom:2%; left:4%; color:#e069b0; animation-delay:2.8s; }
-    @keyframes orbitFloat {
-      0%,100% { transform:translate3d(0,0,0) rotate(-2deg); }
-      50%     { transform:translate3d(0,-14px,0) rotate(3deg); }
-    }
+    @keyframes orbitFloat { 0%,100% { transform:translate3d(0,0,0) rotate(-2deg); } 50% { transform:translate3d(0,-14px,0) rotate(3deg); } }
     @media (max-width:1024px) { .anywhere-grid{grid-template-columns:1fr;gap:30px;text-align:center} .anywhere-copy{text-align:center} .stat-row{justify-content:center} }
     @media (max-width:768px) { .shield-scene{min-height:300px} .shield-wrap{width:200px;height:240px} .shield{width:120px;height:136px} .orbit-chip{font-size:10px;padding:4px 10px} .oc2{right:0} .shield-glow{width:260px;height:260px} }
+
     .sec-core { padding:60px 0 110px; overflow:hidden; background:linear-gradient(180deg,rgba(255,255,255,0),rgba(235,240,255,.3) 50%,rgba(255,240,250,.2) 100%); }
     .sec-core .sec-head { text-align:center; margin-bottom:48px; }
     .sec-core .sec-head .h-sub { margin:14px auto 0; max-width:600px; }
     .core-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-    .core-card { background:rgba(255,255,255,.7); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border:1px solid rgba(160,175,235,.2); border-radius:16px; padding:18px 22px; box-shadow:0 10px 28px rgba(100,120,220,.06); transition:.3s; display:flex; align-items:center; gap:16px; text-align:left; }
-    @supports not (backdrop-filter:blur(1px)) { .core-card { background:rgba(255,255,255,0.9); } }
+    .core-card { background:rgba(255,255,255,.7); backdrop-filter:blur(8px); border:1px solid rgba(160,175,235,.2); border-radius:16px; padding:18px 22px; box-shadow:0 10px 28px rgba(100,120,220,.06); transition:.3s; display:flex; align-items:center; gap:16px; text-align:left; }
     .core-card:hover { transform:translateY(-4px) scale(1.01); box-shadow:0 16px 40px rgba(100,120,220,.12); background:rgba(255,255,255,.92); }
     .core-card .sc-icon { flex:none; width:44px; height:44px; display:grid; place-items:center; }
     .core-card .sc-icon svg { width:32px; height:32px; fill:none; stroke:var(--blue); stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
@@ -476,38 +376,33 @@
     .core-card .mini-bar.i3 i { background:linear-gradient(90deg,#ff9ad5,#fbbf24); }
     @media (max-width:1024px) { .core-grid { grid-template-columns:repeat(2,1fr); gap:18px; } }
     @media (max-width:768px) { .core-grid { grid-template-columns:1fr; gap:14px; } .core-card { padding:16px 18px; } }
+
     .sec-config { padding:110px 0; overflow:hidden; }
     .config-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
     .privacy-scene { position:relative; display:flex; justify-content:center; align-items:center; min-height:400px; }
-    .privacy-wrap { position:relative; width:260px; height:300px; display:flex; flex-direction:column; align-items:center; justify-content:center; animation:floaty 8s ease-in-out infinite; will-change:transform; transform:translate3d(0,0,0); backface-visibility:hidden; }
-    .privacy-ring {
-      position:absolute; width:320px; height:320px; border-radius:50%;
-      background:radial-gradient(circle,rgba(160,180,255,.42) 0%,rgba(160,180,255,.14) 38%,transparent 68%);
-      filter:none; will-change:opacity, transform; transform:translate3d(0,0,0);
-      animation:haloPulse 5s ease-in-out infinite;
-    }
+    .privacy-wrap { position:relative; width:260px; height:300px; display:flex; flex-direction:column; align-items:center; justify-content:center; animation:floaty 8s ease-in-out infinite; }
+    .privacy-ring { position:absolute; width:320px; height:320px; border-radius:50%; background:radial-gradient(circle,rgba(160,180,255,.42) 0%,rgba(160,180,255,.14) 38%,transparent 68%); animation:haloPulse 5s ease-in-out infinite; }
     .ripple-container { position:absolute; width:100%; height:100%; top:0; left:0; pointer-events:none; z-index:1; }
     .ripple-ring { position:absolute; top:50%; left:50%; border-radius:50%; border:2px solid rgba(47,107,255,0.5); transform:translate(-50%,-50%) scale(0.4); opacity:0; animation:rippleExpand 3s cubic-bezier(0.2,0.6,0.4,1) infinite; width:160px; height:160px; }
     .ripple-ring:nth-child(2) { animation-delay:0.8s; border-color:rgba(139,123,255,0.4); }
     .ripple-ring:nth-child(3) { animation-delay:1.6s; border-color:rgba(255,154,213,0.3); }
     @keyframes rippleExpand { 0%{transform:translate(-50%,-50%) scale(0.4);opacity:0.8;} 100%{transform:translate(-50%,-50%) scale(2.0);opacity:0;} }
-    .privacy-icon { position:relative; z-index:2; width:90px; height:90px; margin-bottom:12px; animation:floaty2 5s ease-in-out infinite; will-change:transform; transform:translate3d(0,0,0); }
+    .privacy-icon { position:relative; z-index:2; width:90px; height:90px; margin-bottom:12px; animation:floaty2 5s ease-in-out infinite; }
     .privacy-icon svg { width:100%; height:100%; filter:drop-shadow(0 0 30px rgba(47,107,255,0.5)); }
     .privacy-text { position:relative; z-index:2; text-align:center; }
     .privacy-text .main { font-size:22px; font-weight:900; letter-spacing:0.1em; background:linear-gradient(135deg,#2f6bff,#8b7bff); -webkit-background-clip:text; background-clip:text; color:transparent; animation:textGlow 3s ease-in-out infinite; }
     .privacy-text .sub { font-size:14px; font-weight:600; color:var(--sub); margin-top:6px; letter-spacing:0.05em; animation:fadeUpSmall 2s ease-in-out infinite alternate; }
     @keyframes textGlow { 0%,100%{filter:drop-shadow(0 0 6px rgba(47,107,255,0.3));} 50%{filter:drop-shadow(0 0 20px rgba(47,107,255,0.7));} }
     @keyframes fadeUpSmall { 0%{opacity:0.6;transform:translateY(4px);} 100%{opacity:1;transform:translateY(-4px);} }
-    @media (max-width:768px) { .privacy-wrap{width:200px;height:240px} .privacy-ring{width:260px;height:260px} .privacy-icon{width:70px;height:70px} .privacy-text .main{font-size:18px} .privacy-text .sub{font-size:12px} .ripple-ring{width:130px;height:130px} @keyframes rippleExpand { 0%{transform:translate(-50%,-50%) scale(0.4);opacity:0.8;} 100%{transform:translate(-50%,-50%) scale(1.8);opacity:0;} } }
-    @media (max-width:480px) { .privacy-wrap{width:160px;height:200px} .privacy-ring{width:220px;height:220px} .privacy-icon{width:56px;height:56px} .privacy-text .main{font-size:15px} .privacy-text .sub{font-size:10px} .ripple-ring{width:100px;height:100px} @keyframes rippleExpand { 0%{transform:translate(-50%,-50%) scale(0.4);opacity:0.8;} 100%{transform:translate(-50%,-50%) scale(1.6);opacity:0;} } }
+    @media (max-width:768px) { .privacy-wrap{width:200px;height:240px} .privacy-ring{width:260px;height:260px} .privacy-icon{width:70px;height:70px} .privacy-text .main{font-size:18px} .privacy-text .sub{font-size:12px} .ripple-ring{width:130px;height:130px} }
+    @media (max-width:480px) { .privacy-wrap{width:160px;height:200px} .privacy-ring{width:220px;height:220px} .privacy-icon{width:56px;height:56px} .privacy-text .main{font-size:15px} .privacy-text .sub{font-size:10px} .ripple-ring{width:100px;height:100px} }
     .config-copy .kicker { display:inline-flex; align-items:center; gap:10px; font-size:13px; font-weight:700; color:var(--purple); letter-spacing:.15em; margin-bottom:18px; }
     .config-copy .kicker::before { content:""; width:34px; height:2px; background:linear-gradient(90deg,var(--purple),transparent); border-radius:2px; }
     .cfg-tabs { display:flex; gap:10px; margin:28px 0 20px; flex-wrap:wrap; }
     .cfg-tab { padding:8px 18px; border-radius:999px; font-size:13px; font-weight:700; cursor:pointer; border:1px solid rgba(120,140,240,.3); background:rgba(255,255,255,.6); color:#4a55a0; transition:.3s; white-space:nowrap; }
     .cfg-tab.active,.cfg-tab:hover { background:linear-gradient(135deg,#2f6bff,#6b7dff); color:#fff; border-color:transparent; box-shadow:0 8px 20px rgba(60,90,255,.25); transform:translateY(-2px); }
     @media (max-width:480px) { .cfg-tab { font-size:12px; padding:6px 14px; } }
-    .cfg-panel { border-radius:22px; padding:26px; background:rgba(255,255,255,.65); border:1px solid rgba(160,175,235,.25); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); box-shadow:0 16px 40px rgba(100,120,220,.08); animation:fadeUp .5s both; }
-    @supports not (backdrop-filter:blur(1px)) { .cfg-panel { background:rgba(255,255,255,0.9); } }
+    .cfg-panel { border-radius:22px; padding:26px; background:rgba(255,255,255,.65); border:1px solid rgba(160,175,235,.25); backdrop-filter:blur(10px); box-shadow:0 16px 40px rgba(100,120,220,.08); animation:fadeUp .5s both; }
     .cfg-panel h5 { font-size:14px; color:var(--sub); font-weight:500; margin-bottom:12px; }
     .cfg-line { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px 14px; border-radius:14px; background:rgba(244,246,255,.9); border:1px solid rgba(160,175,235,.2); margin-bottom:10px; font-size:13px; font-weight:700; font-family:'Inter',monospace; transition:.3s; word-break:break-all; }
     .cfg-line:hover { border-color:rgba(47,107,255,.4); transform:translateX(4px); }
@@ -520,8 +415,7 @@
     #downloadArea .btn-primary { padding:14px 48px; font-size:16px; }
     #downloadArea .desc { font-size:12px; color:var(--sub); margin-top:10px; }
     .config-cards { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px; }
-    .cfg-card { background:rgba(255,255,255,.5); border-radius:14px; padding:14px 16px; border:1px solid rgba(160,175,235,.2); backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px); transition:.3s; cursor:default; }
-    @supports not (backdrop-filter:blur(1px)) { .cfg-card { background:rgba(255,255,255,0.85); } }
+    .cfg-card { background:rgba(255,255,255,.5); border-radius:14px; padding:14px 16px; border:1px solid rgba(160,175,235,.2); backdrop-filter:blur(4px); transition:.3s; cursor:default; }
     .cfg-card:hover { background:rgba(255,255,255,.8); transform:translateY(-2px); box-shadow:0 8px 20px rgba(100,120,220,.08); }
     .cfg-card .c-label { display:flex; justify-content:space-between; font-size:12px; font-weight:600; color:var(--ink); }
     .cfg-card .c-label span { color:var(--sub); font-weight:400; }
@@ -534,23 +428,17 @@
     .cfg-card small { font-size:10px; color:var(--sub); display:block; margin-top:3px; }
     @media (max-width:768px) { .config-grid{grid-template-columns:1fr;gap:40px} .privacy-scene{min-height:300px} .config-cards{grid-template-columns:1fr} .cfg-line{font-size:12px;padding:8px 12px;flex-wrap:wrap} }
     @media (max-width:480px) { .cfg-panel { padding:16px; } }
+
     .sec-power { padding:100px 0 110px; }
     .sec-head { text-align:center; max-width:640px; margin:0 auto 56px; }
     .sec-head .h-sub { margin:14px auto 0; }
     .power-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:30px; }
-    .power-card { position:relative; border-radius:28px; padding:40px 28px; text-align:center; background:linear-gradient(165deg,rgba(255,255,255,.9),rgba(232,238,255,.5)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); box-shadow:0 24px 60px rgba(100,120,220,.1),inset 0 2px 12px rgba(255,255,255,.9); transition:.4s cubic-bezier(.2,.8,.2,1); overflow:hidden; }
-    @supports not (backdrop-filter:blur(1px)) { .power-card { background:rgba(255,255,255,0.95); } }
+    .power-card { position:relative; border-radius:28px; padding:40px 28px; text-align:center; background:linear-gradient(165deg,rgba(255,255,255,.9),rgba(232,238,255,.5)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(8px); box-shadow:0 24px 60px rgba(100,120,220,.1),inset 0 2px 12px rgba(255,255,255,.9); transition:.4s cubic-bezier(.2,.8,.2,1); overflow:hidden; }
     .power-card:hover { transform:translateY(-10px); box-shadow:0 36px 80px rgba(80,100,220,.18); }
     .power-card * { min-width:0; max-width:100%; overflow-wrap:break-word; }
-    .power-card::before {
-      content:""; position:absolute; top:-40px; left:50%; transform:translateX(-50%);
-      width:200px; height:200px; border-radius:50%;
-      background:radial-gradient(circle, var(--gc, rgba(47,107,255,.18)) 0%, transparent 68%);
-      filter:none;
-      transition:transform .35s cubic-bezier(.2,.8,.2,1);
-    }
+    .power-card::before { content:""; position:absolute; top:-40px; left:50%; transform:translateX(-50%); width:200px; height:200px; border-radius:50%; background:radial-gradient(circle, var(--gc, rgba(47,107,255,.18)) 0%, transparent 68%); transition:transform .35s cubic-bezier(.2,.8,.2,1); }
     .power-card:hover::before { transform:translateX(-50%) scale(1.15); }
-    .p-icon { position:relative; width:72px; height:72px; margin:0 auto 18px; animation:floaty 5.5s ease-in-out infinite; will-change:transform; transform:translate3d(0,0,0); backface-visibility:hidden; }
+    .p-icon { position:relative; width:72px; height:72px; margin:0 auto 18px; animation:floaty 5.5s ease-in-out infinite; }
     .p-icon .ic-glass { position:absolute; inset:0; border-radius:22px; transform:rotate(8deg); background:linear-gradient(150deg,rgba(255,255,255,.95),rgba(190,205,255,.5)); border:1px solid rgba(255,255,255,.95); box-shadow:0 16px 36px rgba(100,120,220,.15),inset 0 2px 8px rgba(255,255,255,.9); }
     .p-icon .ic-glass2 { position:absolute; inset:14px; border-radius:14px; transform:rotate(-8deg); background:linear-gradient(150deg,var(--c1,#2f6bff),var(--c2,#8b7bff)); opacity:.9; box-shadow:0 10px 24px rgba(80,100,255,.25),inset 0 2px 6px rgba(255,255,255,.5); }
     .p-icon .glyph { position:absolute; inset:0; display:grid; place-items:center; color:#fff; z-index:2; }
@@ -562,8 +450,131 @@
     .p-link:hover { gap:12px; }
     @media (max-width:768px) { .power-grid { grid-template-columns:1fr 1fr; } }
     @media (max-width:480px) { .power-grid { grid-template-columns:1fr; } }
+
+    .sec-compare { padding:100px 0 90px; overflow:hidden; }
+    .compare-head { text-align:center; max-width:640px; margin:0 auto 48px; }
+    .compare-head .h-sub { margin:14px auto 0; }
+    .compare-grid { display:grid; grid-template-columns:1fr 1fr; gap:26px; max-width:960px; margin:0 auto; }
+    .compare-card { position:relative; border-radius:26px; padding:34px 30px 30px; overflow:hidden; transition:.4s cubic-bezier(.2,.8,.2,1); }
+    .compare-card::before { content:""; position:absolute; top:-70px; right:-70px; width:180px; height:180px; border-radius:50%; filter:blur(30px); pointer-events:none; }
+    .compare-card.bad { background:linear-gradient(165deg,rgba(255,244,244,.85),rgba(255,228,228,.5)); border:1px solid rgba(239,68,68,.18); }
+    .compare-card.bad::before { background:radial-gradient(circle,rgba(239,68,68,.22),transparent 70%); }
+    .compare-card.good { background:linear-gradient(165deg,rgba(255,255,255,.92),rgba(228,238,255,.6)); border:1px solid rgba(47,107,255,.22); box-shadow:0 30px 70px rgba(90,110,220,.14),inset 0 2px 14px rgba(255,255,255,.9); }
+    .compare-card.good::before { background:radial-gradient(circle,rgba(47,107,255,.28),transparent 70%); }
+    .compare-card:hover { transform:translateY(-8px); }
+    .compare-tag { display:inline-flex; align-items:center; gap:8px; font-size:11.5px; font-weight:800; letter-spacing:.1em; padding:5px 16px; border-radius:999px; margin-bottom:16px; }
+    .compare-card.bad .compare-tag { color:#dc2626; background:rgba(239,68,68,.1); border:1px solid rgba(239,68,68,.28); }
+    .compare-card.good .compare-tag { color:#2f6bff; background:rgba(47,107,255,.1); border:1px solid rgba(47,107,255,.28); }
+    .compare-card h3 { font-size:19px; font-weight:900; color:var(--ink); margin-bottom:22px; }
+    .compare-list { list-style:none; display:flex; flex-direction:column; gap:14px; }
+    .compare-list li { display:flex; align-items:flex-start; gap:12px; font-size:13.5px; line-height:1.7; color:var(--sub); }
+    .compare-list li strong { color:var(--ink); font-weight:700; }
+    .cmp-ic { flex:none; width:22px; height:22px; border-radius:50%; display:grid; place-items:center; margin-top:1px; }
+    .compare-card.bad .cmp-ic { background:rgba(239,68,68,.12); color:#dc2626; }
+    .compare-card.good .cmp-ic { background:rgba(34,197,94,.14); color:#16a34a; }
+    .cmp-ic svg { width:13px; height:13px; stroke:currentColor; stroke-width:2.6; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+    .compare-foot { max-width:960px; margin:30px auto 0; text-align:center; font-size:12.5px; color:var(--sub); }
+    @media (max-width:768px) { .compare-grid { grid-template-columns:1fr; gap:20px; } .sec-compare { padding:70px 0 60px; } }
+
+    .sec-voice { padding:90px 0 100px; background:linear-gradient(180deg,rgba(235,240,255,0),rgba(235,240,255,.35) 45%,rgba(255,240,250,.25)); overflow:hidden; }
+    .voice-head { text-align:center; max-width:640px; margin:0 auto 48px; }
+    .voice-head .h-sub { margin:14px auto 0; }
+    .voice-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+    .voice-card { position:relative; border-radius:24px; padding:26px 22px; background:linear-gradient(165deg,rgba(255,255,255,.9),rgba(240,245,255,.55)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(8px); box-shadow:0 20px 50px rgba(100,120,220,.09),inset 0 2px 12px rgba(255,255,255,.9); transition:.4s cubic-bezier(.2,.8,.2,1); display:flex; flex-direction:column; }
+    .voice-card:hover { transform:translateY(-8px); box-shadow:0 32px 70px rgba(80,100,220,.16); }
+    .voice-quote { position:absolute; top:14px; right:20px; font-size:56px; line-height:1; font-weight:900; color:rgba(47,107,255,.08); font-family:Georgia,serif; pointer-events:none; }
+    .voice-stars { display:flex; gap:3px; margin-bottom:14px; }
+    .voice-stars svg { width:14px; height:14px; fill:#fbbf24; stroke:none; }
+    .voice-text { font-size:13px; line-height:1.85; color:var(--sub); flex:1; }
+    .voice-user { display:flex; align-items:center; gap:11px; margin-top:18px; padding-top:14px; border-top:1px solid rgba(140,160,230,.14); }
+    .voice-avatar { width:40px; height:40px; border-radius:50%; flex:none; display:grid; place-items:center; font-size:14px; font-weight:900; color:#fff; background:linear-gradient(135deg,#2f6bff,#8b7bff); box-shadow:0 8px 20px rgba(70,95,230,.28); }
+    .voice-avatar.v2 { background:linear-gradient(135deg,#8b7bff,#ff9ad5); }
+    .voice-avatar.v3 { background:linear-gradient(135deg,#22c55e,#4ade80); }
+    .voice-avatar.v4 { background:linear-gradient(135deg,#0ea5e9,#22d3ee); }
+    .voice-meta b { display:block; font-size:13px; font-weight:800; color:var(--ink); }
+    .voice-meta span { font-size:11px; color:var(--sub); }
+    @media (max-width:1024px) { .voice-grid { grid-template-columns:1fr 1fr; gap:20px; } }
+    @media (max-width:768px) { .voice-grid { grid-template-columns:1fr; gap:18px; } .sec-voice { padding:60px 0 70px; } }
+
+    /* ===== 机器学习板块 ===== */
+    .sec-ml { padding:60px 0 80px; position:relative; overflow:visible; contain:layout style; }
+    .sec-ml .sec-head { text-align:center; max-width:660px; margin:0 auto 20px; }
+
+    .ml-stage { position:relative; width:clamp(300px,64vw,400px); height:clamp(300px,64vw,400px); margin:0 auto; background:transparent; overflow:visible; }
+    .ml-stage canvas { display:block; width:100%; height:100%; overflow:visible; }
+
+    .ml-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; max-width:1080px; margin:52px auto 0; }
+    .ml-card { position:relative; border-radius:20px; padding:26px 24px 24px; text-align:left; overflow:hidden; background:linear-gradient(165deg,rgba(255,255,255,.93),rgba(238,243,255,.62)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(8px); box-shadow:0 18px 44px rgba(100,120,220,.09),inset 0 2px 12px rgba(255,255,255,.9); transition:.38s cubic-bezier(.2,.8,.2,1); }
+    .ml-card::before { content:""; position:absolute; top:-46px; right:-46px; width:130px; height:130px; border-radius:50%; background:radial-gradient(circle, var(--mc, rgba(47,107,255,.22)), transparent 70%); pointer-events:none; transition:transform .4s cubic-bezier(.2,.8,.2,1); }
+    .ml-card:hover { transform:translateY(-8px); box-shadow:0 32px 70px rgba(80,100,220,.16); }
+    .ml-card:hover::before { transform:scale(1.3); }
+    .ml-card-ic { width:46px; height:46px; border-radius:14px; display:grid; place-items:center; margin-bottom:16px; background:linear-gradient(150deg, var(--c1, #2f6bff), var(--c2, #8b7bff)); box-shadow:0 10px 24px rgba(80,100,255,.28), inset 0 2px 6px rgba(255,255,255,.5); }
+    .ml-card-ic svg { width:25px; height:25px; stroke:#fff; stroke-width:1.9; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+    .ml-card h4 { font-size:16px; font-weight:900; color:var(--ink); line-height:1.4; margin-bottom:10px; }
+    .ml-card p { font-size:13px; line-height:1.85; color:var(--sub); }
+    .ml-card .ml-tag { display:inline-block; margin-top:16px; font-size:10.5px; font-weight:800; letter-spacing:.06em; padding:3px 11px; border-radius:999px; color:var(--tc,#2f6bff); background:var(--tb,rgba(47,107,255,.1)); border:1px solid var(--tl,rgba(47,107,255,.25)); white-space:nowrap; }
+
+    @media (max-width:1024px) { .ml-cards { grid-template-columns:repeat(2,1fr); max-width:720px; gap:18px; } }
+    @media (max-width:768px) {
+      .sec-ml { padding:50px 0 60px; }
+      .sec-ml .sec-head { margin-bottom:14px; }
+      .ml-stage { width:clamp(280px,80vw,360px); height:clamp(280px,80vw,360px); }
+      .ml-cards { grid-template-columns:1fr 1fr; gap:14px; margin-top:36px; }
+      .ml-card { padding:20px 16px 18px; border-radius:18px; }
+      .ml-card h4 { font-size:14px; margin-bottom:8px; }
+      .ml-card p { font-size:12px; }
+      .ml-card-ic { width:40px; height:40px; border-radius:12px; margin-bottom:12px; }
+      .ml-card-ic svg { width:22px; height:22px; }
+    }
+    @media (max-width:480px) { .ml-cards { grid-template-columns:1fr; } }
+
+    /* ---- 神经网络动画（新增） ---- */
+    .ml-nn { position:relative; width:100%; max-width:1180px; height:420px; margin:60px auto 0; background:transparent; overflow:visible; }
+    .ml-nn canvas { display:block; width:100%; height:100%; }
+    @media (max-width:768px) { .ml-nn { height:300px; margin-top:40px; } }
+
+    .sec-faq { padding:100px 0 110px; overflow:hidden; }
+    .faq-head { text-align:center; max-width:640px; margin:0 auto 44px; }
+    .faq-head .h-sub { margin:14px auto 0; }
+    .faq-list { max-width:820px; margin:0 auto; display:flex; flex-direction:column; gap:12px; }
+    .faq-item { border-radius:18px; background:rgba(255,255,255,.72); border:1px solid rgba(160,175,235,.22); backdrop-filter:blur(8px); box-shadow:0 10px 30px rgba(100,120,220,.06); overflow:hidden; transition:.35s cubic-bezier(.2,.8,.2,1); }
+    .faq-item:hover { border-color:rgba(47,107,255,.32); }
+    .faq-item.open { background:rgba(255,255,255,.95); box-shadow:0 18px 44px rgba(80,100,220,.12); border-color:rgba(47,107,255,.35); }
+    .faq-q { display:flex; align-items:center; justify-content:space-between; gap:16px; width:100%; padding:18px 22px; background:none; border:none; cursor:pointer; text-align:left; font-family:inherit; font-size:14.5px; font-weight:700; color:var(--ink); transition:.3s; }
+    .faq-q:hover { color:var(--blue); }
+    .faq-q .q-mark { position:relative; flex:none; width:28px; height:28px; border-radius:50%; display:grid; place-items:center; background:rgba(47,107,255,.08); border:1px solid rgba(47,107,255,.2); transition:.35s cubic-bezier(.2,.8,.2,1); }
+    .faq-q .q-mark::before, .faq-q .q-mark::after { content:""; position:absolute; background:#2f6bff; border-radius:2px; }
+    .faq-q .q-mark::before { width:11px; height:2px; }
+    .faq-q .q-mark::after { width:2px; height:11px; transition:.35s cubic-bezier(.2,.8,.2,1); }
+    .faq-item.open .faq-q .q-mark { background:var(--blue); border-color:transparent; }
+    .faq-item.open .faq-q .q-mark::before, .faq-item.open .faq-q .q-mark::after { background:#fff; }
+    .faq-item.open .faq-q .q-mark::after { transform:scaleY(0); }
+    .faq-a { max-height:0; overflow:hidden; transition:max-height .45s cubic-bezier(.2,.8,.2,1); }
+    .faq-a-inner { padding:0 22px 20px 22px; font-size:13.5px; line-height:1.9; color:var(--sub); }
+    .faq-a-inner code { display:inline-block; padding:1px 8px; border-radius:6px; background:rgba(47,107,255,.08); color:var(--blue); font-size:12.5px; font-family:'Inter',monospace; font-weight:700; margin:0 2px; word-break:break-all; }
+    .faq-more { text-align:center; margin-top:34px; }
+    .faq-more .btn-ghost { padding:12px 34px; font-size:14px; }
+    @media (max-width:768px) { .sec-faq { padding:70px 0 80px; } .faq-q { font-size:13.5px; padding:16px 18px; } .faq-a-inner { padding:0 18px 18px 18px; font-size:13px; } }
+
+    section { contain:layout style paint; }
+    .sec-ml { contain:layout style; }
+
+    .btn, .feat-item, .core-card, .cfg-card, .power-card, .voice-card, .compare-card,
+    .cfg-tab, .faq-item, .f-col a, .p-link, .p-icon, .ml-card {
+      transition-duration:.28s;
+      transition-timing-function:cubic-bezier(.2,.8,.2,1);
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      *, *::before, *::after { animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.15s !important; }
+      .bg-glow { display:none; }
+      .hero-shapes, .cta-shapes, .stats-deco, .dns-check-deco { display:none; }
+      .stats-shell, .dns-check-shell { animation:none !important; }
+    }
+
+    /* ===== CTA ===== */
     .sec-cta { padding:100px 0 120px; text-align:center; overflow:hidden; position:relative; }
-    .cta-blob { position:absolute; border-radius:50%; opacity:.5; pointer-events:none; filter:none; will-change:transform; transform:translate3d(0,0,0); }
+    .cta-blob { position:absolute; border-radius:50%; opacity:.5; pointer-events:none; }
     .cb1 { width:420px; height:420px; left:2%; top:2%; background:radial-gradient(circle,rgba(195,210,255,.75) 0%,transparent 65%); animation:drift 18s ease-in-out infinite alternate; }
     .cb2 { width:360px; height:360px; right:2%; bottom:2%; background:radial-gradient(circle,rgba(255,211,236,.75) 0%,transparent 65%); animation:drift 22s ease-in-out infinite alternate-reverse; }
     .cta-inner { position:relative; z-index:2; }
@@ -581,33 +592,11 @@
     .sec-cta p { color:var(--sub); margin-top:14px; font-size:15px; }
     .sec-cta .btn-primary { margin-top:34px; }
     @media (max-width:768px) { .cs1,.cs2,.cs3,.cs4 { display:none; } }
+
+    /* ===== 实时统计 ===== */
     .sec-stats { padding:100px 0 110px; overflow:hidden; }
-
-    .stats-shell,
-    .dns-check-shell {
-      position:relative; max-width:880px; margin:0 auto;
-      border-radius:32px; padding:48px 40px; text-align:center;
-
-      background:
-        linear-gradient(165deg, rgba(255,255,255,.94) 0%, rgba(240,245,255,.86) 55%, rgba(228,235,255,.82) 100%),
-        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(180,200,255,.18), transparent 70%);
-      border:1px solid rgba(255,255,255,.95);
-      box-shadow:
-        0 32px 80px rgba(90,110,220,.12),
-        0 8px 24px rgba(120,140,230,.06),
-        inset 0 2px 14px rgba(255,255,255,.95),
-        inset 0 -10px 24px rgba(150,170,240,.06);
-
-      will-change:transform;
-      transform:translate3d(0,0,0);
-      backface-visibility:hidden;
-      contain:layout style paint;
-      animation:statsFloat 9s cubic-bezier(.45,.05,.55,.95) infinite;
-    }
-    @keyframes statsFloat {
-      0%,100% { transform:translate3d(0, 0, 0); }
-      50%     { transform:translate3d(0, -10px, 0); }
-    }
+    .stats-shell, .dns-check-shell { position:relative; max-width:880px; margin:0 auto; border-radius:32px; padding:48px 40px; text-align:center; background:linear-gradient(165deg, rgba(255,255,255,.94) 0%, rgba(240,245,255,.86) 55%, rgba(228,235,255,.82) 100%), radial-gradient(ellipse 80% 60% at 50% 0%, rgba(180,200,255,.18), transparent 70%); border:1px solid rgba(255,255,255,.95); box-shadow:0 32px 80px rgba(90,110,220,.12), 0 8px 24px rgba(120,140,230,.06), inset 0 2px 14px rgba(255,255,255,.95), inset 0 -10px 24px rgba(150,170,240,.06); animation:statsFloat 9s cubic-bezier(.45,.05,.55,.95) infinite; }
+    @keyframes statsFloat { 0%,100% { transform:translate3d(0, 0, 0); } 50% { transform:translate3d(0, -10px, 0); } }
     .stats-head { display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; }
     .stats-dot { position:relative; width:14px; height:14px; border-radius:50%; flex:none; background:#9aa3c0; transition:background .5s; box-shadow:0 0 0 0 rgba(154,163,192,.5); }
     .stats-dot::before,.stats-dot::after { content:""; position:absolute; inset:0; border-radius:50%; border:2px solid currentColor; opacity:0; animation:statsRipple 2.4s cubic-bezier(.2,.6,.3,1) infinite; }
@@ -630,19 +619,13 @@
     .stats-label i { font-style:normal; font-size:11px; font-weight:700; color:#7a5ff0; background:rgba(139,123,255,.1); border:1px solid rgba(139,123,255,.3); padding:2px 12px; border-radius:999px; white-space:nowrap; }
     .stats-time { margin-top:22px; font-size:12px; color:var(--sub); display:inline-flex; align-items:center; gap:6px; padding:6px 18px; border-radius:999px; background:rgba(255,255,255,.6); border:1px solid rgba(160,175,235,.3); flex-wrap:wrap; justify-content:center; }
     .stats-time b { color:var(--ink); font-variant-numeric:tabular-nums; }
-    .stats-wave, .dns-check-wave {
-      position:absolute; left:50%; top:0; width:600px; height:600px; transform:translate(-50%,-50%);
-      border-radius:50%; pointer-events:none;
-      background:radial-gradient(circle,rgba(160,180,255,.42) 0%,rgba(160,180,255,.14) 38%,transparent 68%);
-      filter:none; will-change:opacity, transform;
-      animation:haloPulse 6s ease-in-out infinite;
-    }
+    .stats-wave, .dns-check-wave { position:absolute; left:50%; top:0; width:600px; height:600px; transform:translate(-50%,-50%); border-radius:50%; pointer-events:none; background:radial-gradient(circle,rgba(160,180,255,.42) 0%,rgba(160,180,255,.14) 38%,transparent 68%); animation:haloPulse 6s ease-in-out infinite; }
     .stats-deco { position:absolute; pointer-events:none; }
     .sd1 { left:-2%; top:10%; animation:floaty 7s ease-in-out infinite; }
     .sd1 .glass { width:44px; height:44px; border-radius:12px; }
     .sd2 { right:-2%; bottom:12%; animation:floaty2 8s ease-in-out infinite; }
     .sd2 .glass { width:36px; height:36px; border-radius:50%; }
-    @media (max-width:768px) { .stats-shell { padding:34px 20px; margin:0 6px; animation-duration:11s; } .stats-num b { font-size:clamp(28px,7vw,42px); } .sd1,.sd2 { display:none; } @keyframes statsFloat { 0%,100% { transform:translate3d(0,0,0); } 50% { transform:translate3d(0,-6px,0); } } }
+    @media (max-width:768px) { .stats-shell { padding:34px 20px; margin:0 6px; animation-duration:11s; } .stats-num b { font-size:clamp(28px,7vw,42px); } .sd1,.sd2 { display:none; } }
     @media (max-width:480px) { .stats-shell { padding:28px 12px; } .stats-time { font-size:11px; padding:4px 14px; } }
     #stats-blocked .stats-num b { background: none !important; -webkit-background-clip: unset !important; background-clip: unset !important; color: #dc2626 !important; }
     .sec-dns-check { padding:20px 0 50px; }
@@ -668,15 +651,17 @@
     .dcd2 .glass { width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.3); border:1px solid rgba(255,255,255,0.5); }
     @media (max-width:768px) { .dns-check-shell { padding:34px 20px; margin:0 6px; animation-duration:11s; } .dcd1,.dcd2{display:none} }
     @media (max-width:480px) { .dns-check-shell { padding:28px 14px; } .dns-check-body { font-size:14px; } }
+
     .sec-follow { padding:60px 0 50px; background:linear-gradient(180deg,rgba(235,240,255,0.2),rgba(255,240,250,0.3)); text-align:center; }
     .follow-inner { display:flex; flex-direction:column; align-items:center; gap:16px; }
     .follow-title { font-size:clamp(22px,2.8vw,32px); font-weight:800; color:var(--ink); letter-spacing:0.02em; }
     .follow-title span { color:var(--blue); }
     .follow-desc { color:var(--sub); font-size:clamp(14px,1.1vw,16px); max-width:480px; }
-    .qr-wrapper { display:flex; justify-content:center; align-items:center; padding:12px; background:rgba(255,255,255,0.6); border-radius:20px; backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border:1px solid rgba(160,175,235,0.2); box-shadow:0 12px 32px rgba(100,120,220,0.08); transition:transform 0.3s ease; }
+    .qr-wrapper { display:flex; justify-content:center; align-items:center; padding:12px; background:rgba(255,255,255,0.6); border-radius:20px; backdrop-filter:blur(8px); border:1px solid rgba(160,175,235,0.2); box-shadow:0 12px 32px rgba(100,120,220,0.08); transition:transform 0.3s ease; }
     .qr-wrapper:hover { transform:scale(1.02); }
     .qr-wrapper img { display:block; width:180px; height:180px; max-width:100%; height:auto; border-radius:12px; }
     @media (max-width:480px) { .qr-wrapper img { width:150px; height:150px; } }
+
     footer { background:#0f1330; color:#aab2d8; padding:60px 0 30px; position:relative; overflow:hidden; }
     footer::before { content:""; position:absolute; top:-1px; left:0; right:0; height:80px; background:linear-gradient(180deg,#f6f9fe,#0f1330); }
     .f-grid { position:relative; display:grid; grid-template-columns:1.4fr repeat(4,1fr); gap:30px; margin-top:40px; }
@@ -691,11 +676,12 @@
     @media (max-width:1024px) { .f-grid { grid-template-columns:1fr 1fr 1fr; } }
     @media (max-width:768px) { .f-grid { grid-template-columns:1fr 1fr; gap:24px; } .f-col a { padding:6px 0; } }
     @media (max-width:480px) { .f-grid { grid-template-columns:1fr; } }
-    #toast { position:fixed; bottom:24px; left:50%; transform:translate(-50%,80px); z-index:999; background:rgba(20,24,60,.9); color:#fff; font-size:12.5px; padding:10px 22px; border-radius:999px; backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); box-shadow:0 12px 32px rgba(20,24,60,.35); transition:.4s cubic-bezier(.2,.8,.2,1); opacity:0; pointer-events:none; }
+
+    #toast { position:fixed; bottom:24px; left:50%; transform:translate(-50%,80px); z-index:999; background:rgba(20,24,60,.9); color:#fff; font-size:12.5px; padding:10px 22px; border-radius:999px; backdrop-filter:blur(6px); box-shadow:0 12px 32px rgba(20,24,60,.35); transition:.4s cubic-bezier(.2,.8,.2,1); opacity:0; pointer-events:none; }
     #toast.show { transform:translate(-50%,0); opacity:1; }
     .blink-cursor { display:inline-block; width:2px; height:1em; background:currentColor; margin-left:2px; vertical-align:text-bottom; animation:blink 1s step-end infinite; }
     @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
-    .modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); z-index:200; justify-content:center; align-items:center; padding:20px; }
+    .modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); backdrop-filter:blur(6px); z-index:200; justify-content:center; align-items:center; padding:20px; }
     .modal-overlay.open { display:flex; }
     .modal-content { background:#fff; max-width:700px; max-height:80vh; border-radius:24px; padding:40px; overflow-y:auto; position:relative; box-shadow:0 40px 80px rgba(0,0,0,0.3); animation:modalIn .3s ease; }
     @keyframes modalIn { 0%{transform:scale(0.9) translateY(20px);opacity:0;} 100%{transform:scale(1) translateY(0);opacity:1;} }
@@ -705,208 +691,13 @@
     .modal-body h3 { font-size:16px; font-weight:700; margin:18px 0 6px; color:var(--ink); }
     .modal-body p { font-size:14px; line-height:1.8; color:var(--sub); margin-bottom:10px; }
     @media (max-width:600px) { .modal-content { padding:24px; max-height:90vh; } .modal-content h2 { font-size:20px; } }
+
     .back-to-top { position:fixed; bottom:80px; right:24px; width:48px; height:48px; border-radius:50%; background:var(--blue); color:#fff; border:none; font-size:24px; cursor:pointer; box-shadow:0 8px 24px rgba(47,107,255,.4); transition:.3s cubic-bezier(.2,.8,.2,1); opacity:0; transform:translateY(20px) scale(0.8); pointer-events:none; z-index:50; }
     .back-to-top.visible { opacity:1; transform:translateY(0) scale(1); pointer-events:auto; }
     .back-to-top:hover { transform:translateY(-4px) scale(1.05); box-shadow:0 12px 32px rgba(47,107,255,.5); }
     @media (max-width:768px) { .back-to-top { bottom:70px; right:16px; width:42px; height:42px; font-size:20px; } }
+
     @media (max-width:480px) { .sec-tool,.sec-anywhere,.sec-core,.sec-config,.sec-power,.sec-cta,.sec-stats,.sec-follow { padding:50px 0 60px; } .sec-dns-check { padding:10px 0 30px; } .hero { padding:110px 0 30px; min-height:80vh; } .hero h1 { font-size:32px; } }
-
-    .sec-compare { padding:100px 0 90px; overflow:hidden; }
-    .compare-head { text-align:center; max-width:640px; margin:0 auto 48px; }
-    .compare-head .h-sub { margin:14px auto 0; }
-    .compare-grid { display:grid; grid-template-columns:1fr 1fr; gap:26px; max-width:960px; margin:0 auto; }
-    .compare-card { position:relative; border-radius:26px; padding:34px 30px 30px; overflow:hidden; transition:.4s cubic-bezier(.2,.8,.2,1); }
-    .compare-card::before { content:""; position:absolute; top:-70px; right:-70px; width:180px; height:180px; border-radius:50%; filter:blur(30px); pointer-events:none; }
-    .compare-card.bad { background:linear-gradient(165deg,rgba(255,244,244,.85),rgba(255,228,228,.5)); border:1px solid rgba(239,68,68,.18); }
-    .compare-card.bad::before { background:radial-gradient(circle,rgba(239,68,68,.22),transparent 70%); }
-    .compare-card.good { background:linear-gradient(165deg,rgba(255,255,255,.92),rgba(228,238,255,.6)); border:1px solid rgba(47,107,255,.22); box-shadow:0 30px 70px rgba(90,110,220,.14),inset 0 2px 14px rgba(255,255,255,.9); }
-    .compare-card.good::before { background:radial-gradient(circle,rgba(47,107,255,.28),transparent 70%); }
-    .compare-card:hover { transform:translateY(-8px); }
-    .compare-card.bad:hover { box-shadow:0 28px 60px rgba(239,68,68,.12); }
-    .compare-card.good:hover { box-shadow:0 40px 90px rgba(80,100,220,.2); }
-    .compare-tag { display:inline-flex; align-items:center; gap:8px; font-size:11.5px; font-weight:800; letter-spacing:.1em; padding:5px 16px; border-radius:999px; margin-bottom:16px; }
-    .compare-card.bad .compare-tag { color:#dc2626; background:rgba(239,68,68,.1); border:1px solid rgba(239,68,68,.28); }
-    .compare-card.good .compare-tag { color:#2f6bff; background:rgba(47,107,255,.1); border:1px solid rgba(47,107,255,.28); }
-    .compare-card h3 { font-size:19px; font-weight:900; color:var(--ink); margin-bottom:22px; }
-    .compare-list { list-style:none; display:flex; flex-direction:column; gap:14px; }
-    .compare-list li { display:flex; align-items:flex-start; gap:12px; font-size:13.5px; line-height:1.7; color:var(--sub); }
-    .compare-list li strong { color:var(--ink); font-weight:700; }
-    .cmp-ic { flex:none; width:22px; height:22px; border-radius:50%; display:grid; place-items:center; margin-top:1px; }
-    .compare-card.bad .cmp-ic { background:rgba(239,68,68,.12); color:#dc2626; }
-    .compare-card.good .cmp-ic { background:rgba(34,197,94,.14); color:#16a34a; }
-    .cmp-ic svg { width:13px; height:13px; stroke:currentColor; stroke-width:2.6; fill:none; stroke-linecap:round; stroke-linejoin:round; }
-    .compare-foot { max-width:960px; margin:30px auto 0; text-align:center; font-size:12.5px; color:var(--sub); }
-    @media (max-width:768px) { .compare-grid { grid-template-columns:1fr; gap:20px; } .sec-compare { padding:70px 0 60px; } }
-
-    .sec-voice { padding:90px 0 100px; background:linear-gradient(180deg,rgba(235,240,255,0),rgba(235,240,255,.35) 45%,rgba(255,240,250,.25)); overflow:hidden; }
-    .voice-head { text-align:center; max-width:640px; margin:0 auto 48px; }
-    .voice-head .h-sub { margin:14px auto 0; }
-    .voice-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
-    .voice-card { position:relative; border-radius:24px; padding:26px 22px; background:linear-gradient(165deg,rgba(255,255,255,.9),rgba(240,245,255,.55)); border:1px solid rgba(255,255,255,.95); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); box-shadow:0 20px 50px rgba(100,120,220,.09),inset 0 2px 12px rgba(255,255,255,.9); transition:.4s cubic-bezier(.2,.8,.2,1); display:flex; flex-direction:column; }
-    @supports not (backdrop-filter:blur(1px)) { .voice-card { background:rgba(255,255,255,0.95); } }
-    .voice-card:hover { transform:translateY(-8px); box-shadow:0 32px 70px rgba(80,100,220,.16); }
-    .voice-quote { position:absolute; top:14px; right:20px; font-size:56px; line-height:1; font-weight:900; color:rgba(47,107,255,.08); font-family:Georgia,serif; pointer-events:none; }
-    .voice-stars { display:flex; gap:3px; margin-bottom:14px; }
-    .voice-stars svg { width:14px; height:14px; fill:#fbbf24; stroke:none; }
-    .voice-text { font-size:13px; line-height:1.85; color:var(--sub); flex:1; }
-    .voice-user { display:flex; align-items:center; gap:11px; margin-top:18px; padding-top:14px; border-top:1px solid rgba(140,160,230,.14); }
-    .voice-avatar { width:40px; height:40px; border-radius:50%; flex:none; display:grid; place-items:center; font-size:14px; font-weight:900; color:#fff; background:linear-gradient(135deg,#2f6bff,#8b7bff); box-shadow:0 8px 20px rgba(70,95,230,.28); }
-    .voice-avatar.v2 { background:linear-gradient(135deg,#8b7bff,#ff9ad5); }
-    .voice-avatar.v3 { background:linear-gradient(135deg,#22c55e,#4ade80); }
-    .voice-avatar.v4 { background:linear-gradient(135deg,#0ea5e9,#22d3ee); }
-    .voice-meta b { display:block; font-size:13px; font-weight:800; color:var(--ink); }
-    .voice-meta span { font-size:11px; color:var(--sub); }
-    @media (max-width:1024px) { .voice-grid { grid-template-columns:1fr 1fr; gap:20px; } }
-    @media (max-width:768px) { .voice-grid { grid-template-columns:1fr; gap:18px; } .sec-voice { padding:60px 0 70px; } .voice-card { backdrop-filter:none; -webkit-backdrop-filter:none; } }
-
-    /* ===== 机器学习 · 神经引擎粒子立方体 ===== */
-    .sec-ml {
-      padding:60px 0 80px;
-      position:relative;
-      overflow: visible;
-      contain: layout style;
-    }
-    .sec-ml .sec-head { text-align:center; max-width:660px; margin:0 auto 20px; }
-
-    .ml-stage {
-      position:relative;
-      width: clamp(300px, 64vw, 400px);
-      height: clamp(300px, 64vw, 400px);
-      margin:0 auto;
-      background: transparent;
-      border: none;
-      box-shadow: none;
-      overflow: visible;
-    }
-    .ml-stage canvas { display:block; width:100%; height:100%; overflow:visible; }
-
-    /* ---- 机器学习介绍卡片（6 张，3×2） ---- */
-    .ml-cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      max-width: 1080px;
-      margin: 52px auto 0;
-    }
-    .ml-card {
-      position: relative;
-      border-radius: 20px;
-      padding: 26px 24px 24px;
-      text-align: left;
-      overflow: hidden;
-      background: linear-gradient(165deg, rgba(255,255,255,.93), rgba(238,243,255,.62));
-      border: 1px solid rgba(255,255,255,.95);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      box-shadow: 0 18px 44px rgba(100,120,220,.09), inset 0 2px 12px rgba(255,255,255,.9);
-      transition: .38s cubic-bezier(.2,.8,.2,1);
-    }
-    @supports not (backdrop-filter:blur(1px)) { .ml-card { background: rgba(255,255,255,.96); } }
-    .ml-card::before {
-      content: "";
-      position: absolute; top: -46px; right: -46px;
-      width: 130px; height: 130px; border-radius: 50%;
-      background: radial-gradient(circle, var(--mc, rgba(47,107,255,.22)), transparent 70%);
-      pointer-events: none;
-      transition: transform .4s cubic-bezier(.2,.8,.2,1);
-    }
-    .ml-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 32px 70px rgba(80,100,220,.16);
-    }
-    .ml-card:hover::before { transform: scale(1.3); }
-
-    .ml-card-ic {
-      width: 46px; height: 46px; border-radius: 14px;
-      display: grid; place-items: center;
-      margin-bottom: 16px;
-      background: linear-gradient(150deg, var(--c1, #2f6bff), var(--c2, #8b7bff));
-      box-shadow: 0 10px 24px rgba(80,100,255,.28), inset 0 2px 6px rgba(255,255,255,.5);
-    }
-    .ml-card-ic svg {
-      width: 25px; height: 25px;
-      stroke: #fff; stroke-width: 1.9;
-      fill: none; stroke-linecap: round; stroke-linejoin: round;
-    }
-    .ml-card h4 {
-      font-size: 16px; font-weight: 900;
-      color: var(--ink); line-height: 1.4;
-      margin-bottom: 10px;
-    }
-    .ml-card p {
-      font-size: 13px; line-height: 1.85;
-      color: var(--sub);
-    }
-    .ml-card .ml-tag {
-      display: inline-block;
-      margin-top: 16px;
-      font-size: 10.5px; font-weight: 800; letter-spacing: .06em;
-      padding: 3px 11px; border-radius: 999px;
-      color: var(--tc, #2f6bff);
-      background: var(--tb, rgba(47,107,255,.1));
-      border: 1px solid var(--tl, rgba(47,107,255,.25));
-      white-space: nowrap;
-    }
-
-    @media (max-width:1024px) { .ml-cards { grid-template-columns: repeat(2, 1fr); max-width: 720px; gap: 18px; } }
-    @media (max-width:768px) {
-      .sec-ml { padding:50px 0 60px; }
-      .sec-ml .sec-head { margin-bottom:14px; }
-      .ml-stage { width: clamp(280px, 80vw, 360px); height: clamp(280px, 80vw, 360px); }
-      .ml-cards { grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 36px; }
-      .ml-card { padding: 20px 16px 18px; border-radius: 18px; }
-      .ml-card h4 { font-size: 14px; margin-bottom: 8px; }
-      .ml-card p { font-size: 12px; }
-      .ml-card-ic { width: 40px; height: 40px; border-radius: 12px; margin-bottom: 12px; }
-      .ml-card-ic svg { width: 22px; height: 22px; }
-    }
-    @media (max-width:480px) {
-      .ml-cards { grid-template-columns: 1fr; }
-    }
-
-    .sec-faq { padding:100px 0 110px; overflow:hidden; }
-    .faq-head { text-align:center; max-width:640px; margin:0 auto 44px; }
-    .faq-head .h-sub { margin:14px auto 0; }
-    .faq-list { max-width:820px; margin:0 auto; display:flex; flex-direction:column; gap:12px; }
-    .faq-item { border-radius:18px; background:rgba(255,255,255,.72); border:1px solid rgba(160,175,235,.22); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); box-shadow:0 10px 30px rgba(100,120,220,.06); overflow:hidden; transition:.35s cubic-bezier(.2,.8,.2,1); }
-    @supports not (backdrop-filter:blur(1px)) { .faq-item { background:rgba(255,255,255,0.92); } }
-    .faq-item:hover { border-color:rgba(47,107,255,.32); }
-    .faq-item.open { background:rgba(255,255,255,.95); box-shadow:0 18px 44px rgba(80,100,220,.12); border-color:rgba(47,107,255,.35); }
-    .faq-q { display:flex; align-items:center; justify-content:space-between; gap:16px; width:100%; padding:18px 22px; background:none; border:none; cursor:pointer; text-align:left; font-family:inherit; font-size:14.5px; font-weight:700; color:var(--ink); transition:.3s; }
-    .faq-q:hover { color:var(--blue); }
-    .faq-q .q-mark { position:relative; flex:none; width:28px; height:28px; border-radius:50%; display:grid; place-items:center; background:rgba(47,107,255,.08); border:1px solid rgba(47,107,255,.2); transition:.35s cubic-bezier(.2,.8,.2,1); }
-    .faq-q .q-mark::before, .faq-q .q-mark::after { content:""; position:absolute; background:#2f6bff; border-radius:2px; }
-    .faq-q .q-mark::before { width:11px; height:2px; }
-    .faq-q .q-mark::after { width:2px; height:11px; transition:.35s cubic-bezier(.2,.8,.2,1); }
-    .faq-item.open .faq-q .q-mark { background:var(--blue); border-color:transparent; }
-    .faq-item.open .faq-q .q-mark::before, .faq-item.open .faq-q .q-mark::after { background:#fff; }
-    .faq-item.open .faq-q .q-mark::after { transform:scaleY(0); }
-    .faq-a { max-height:0; overflow:hidden; transition:max-height .45s cubic-bezier(.2,.8,.2,1); }
-    .faq-a-inner { padding:0 22px 20px 22px; font-size:13.5px; line-height:1.9; color:var(--sub); }
-    .faq-a-inner code { display:inline-block; padding:1px 8px; border-radius:6px; background:rgba(47,107,255,.08); color:var(--blue); font-size:12.5px; font-family:'Inter',monospace; font-weight:700; margin:0 2px; word-break:break-all; }
-    .faq-more { text-align:center; margin-top:34px; }
-    .faq-more .btn-ghost { padding:12px 34px; font-size:14px; }
-    @media (max-width:768px) { .sec-faq { padding:70px 0 80px; } .faq-q { font-size:13.5px; padding:16px 18px; } .faq-a-inner { padding:0 18px 18px 18px; font-size:13px; } .faq-item { backdrop-filter:none; -webkit-backdrop-filter:none; } }
-
-    section { contain:layout style paint; }
-    .sec-ml { contain:layout style; }
-
-    .btn, .feat-item, .core-card, .cfg-card, .power-card, .voice-card, .compare-card,
-    .cfg-tab, .faq-item, .f-col a, .p-link, .p-icon, .ml-card {
-      transition-duration:.28s;
-      transition-timing-function:cubic-bezier(.2,.8,.2,1);
-    }
-
-    @media (prefers-reduced-motion:reduce) {
-      *, *::before, *::after {
-        animation-duration:.001ms !important;
-        animation-iteration-count:1 !important;
-        transition-duration:.15s !important;
-      }
-      .bg-glow { display:none; }
-      .hero-shapes, .cta-shapes, .stats-deco, .dns-check-deco { display:none; }
-      .stats-shell, .dns-check-shell { animation:none !important; }
-    }
   </style>
 </head>
 <body>
@@ -969,7 +760,7 @@
   <div class="scroll-hint" aria-hidden="true" data-i18n="hero.scroll">向下滚动</div>
 </section>
 
-<!-- ===== 第二板块：一站式加密DNS ===== -->
+<!-- ===== 一站式加密DNS ===== -->
 <section class="sec-tool" id="tool" aria-labelledby="tool-title">
   <div class="wrap tool-grid">
     <div class="tool-copy reveal">
@@ -992,7 +783,7 @@
   </div>
 </section>
 
-<!-- ===== 第三板块：带到任何地方 ===== -->
+<!-- ===== 带到任何地方 ===== -->
 <section class="sec-anywhere" id="anywhere" aria-labelledby="anywhere-title">
   <div class="wrap anywhere-grid">
     <div class="shield-scene reveal">
@@ -1041,14 +832,14 @@
   </div>
 </section>
 
-<!-- ===== 第四板块：配置 ===== -->
+<!-- ===== 配置 ===== -->
 <section class="sec-config" id="config" aria-labelledby="config-title">
   <div class="wrap config-grid">
     <div class="privacy-scene reveal">
       <div class="privacy-wrap">
         <div class="privacy-ring" aria-hidden="true"></div>
         <div class="ripple-container" aria-hidden="true"><div class="ripple-ring"></div><div class="ripple-ring"></div><div class="ripple-ring"></div></div>
-        <div class="privacy-icon"><svg viewBox="0 0 80 80" fill="none"><rect x="16" y="34" width="48" height="34" rx="6" fill="url(#lockGrad)" stroke="#2f6bff" stroke-width="2.5" /><path d="M28 34 V24 C28 16 34 10 40 10 C46 10 52 16 52 24 V34" stroke="url(#lockGrad)" stroke-width="4" fill="none" stroke-linecap="round" /><circle cx="40" cy="48" r="6" fill="#fff" opacity="0.9" /><rect x="37" y="48" width="6" height="10" rx="2" fill="#fff" opacity="0.9" /><defs><linearGradient id="lockGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2f6bff" /><stop offset="50%" stop-color="#8b7bff" /><stop offset="100%" stop-color="#5b8cff" /></linearGradient></defs></svg></div>
+        <div class="privacy-icon"><svg viewBox="0 0 80 80" fill="none"><rect x="16" y="34" width="48" height="34" rx="6" fill="url(#lockGrad)" stroke="#2f6bff" stroke-width="2.5"/><path d="M28 34 V24 C28 16 34 10 40 10 C46 10 52 16 52 24 V34" stroke="url(#lockGrad)" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="40" cy="48" r="6" fill="#fff" opacity="0.9"/><rect x="37" y="48" width="6" height="10" rx="2" fill="#fff" opacity="0.9"/><defs><linearGradient id="lockGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2f6bff"/><stop offset="50%" stop-color="#8b7bff"/><stop offset="100%" stop-color="#5b8cff"/></linearGradient></defs></svg></div>
         <div class="privacy-text"><div class="main" data-i18n="config.privacyMain">PRIVACY SPACE</div><div class="sub" data-i18n="config.privacySub">安全，从此刻开始。</div></div>
       </div>
     </div>
@@ -1086,7 +877,7 @@
   </div>
 </section>
 
-<!-- ===== 第五板块：追求极致的用户体验 ===== -->
+<!-- ===== 追求极致 ===== -->
 <section class="sec-power" id="power" aria-labelledby="power-title">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -1099,11 +890,7 @@
           <div class="ic-glass"></div>
           <div class="ic-glass2"></div>
           <div class="glyph">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              <rect x="9" y="11" width="6" height="5" rx="1"/>
-              <path d="M10 11v-2a2 2 0 0 1 4 0v2"/>
-            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><rect x="9" y="11" width="6" height="5" rx="1"/><path d="M10 11v-2a2 2 0 0 1 4 0v2"/></svg>
           </div>
         </div>
         <h3>DNS over HTTPS</h3><span class="tag">DoH · RFC 8484</span>
@@ -1115,10 +902,7 @@
           <div class="ic-glass"></div>
           <div class="ic-glass2"></div>
           <div class="glyph">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           </div>
         </div>
         <h3>DNS over TLS</h3><span class="tag">DoT · RFC 7858</span>
@@ -1130,9 +914,7 @@
           <div class="ic-glass"></div>
           <div class="ic-glass2"></div>
           <div class="glyph">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="13 2 3 14 12 14 11 22 21 10 12 10"/>
-            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg>
           </div>
         </div>
         <h3>DNS over QUIC</h3><span class="tag">DoQ · RFC 9250</span>
@@ -1144,15 +926,7 @@
           <div class="ic-glass"></div>
           <div class="ic-glass2"></div>
           <div class="glyph">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="12 2 22 7 22 17 12 22 2 17 2 7 12 2" stroke="white" stroke-width="1.6" fill="none"/>
-              <circle cx="12" cy="12" r="1.8" fill="white" stroke="none"/>
-              <circle cx="9" cy="8.5" r="1.4" fill="white" stroke="none" fill-opacity="0.7"/>
-              <circle cx="15" cy="15.5" r="1.4" fill="white" stroke="none" fill-opacity="0.7"/>
-              <line x1="9" y1="8.5" x2="12" y2="12" stroke="white" stroke-width="1.2" opacity="0.7"/>
-              <line x1="15" y1="15.5" x2="12" y2="12" stroke="white" stroke-width="1.2" opacity="0.7"/>
-              <line x1="9" y1="8.5" x2="15" y2="15.5" stroke="white" stroke-width="1" opacity="0.5" stroke-dasharray="2 2"/>
-            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 7 22 17 12 22 2 17 2 7 12 2" stroke="white" stroke-width="1.6" fill="none"/><circle cx="12" cy="12" r="1.8" fill="white" stroke="none"/><circle cx="9" cy="8.5" r="1.4" fill="white" stroke="none" fill-opacity="0.7"/><circle cx="15" cy="15.5" r="1.4" fill="white" stroke="none" fill-opacity="0.7"/><line x1="9" y1="8.5" x2="12" y2="12" stroke="white" stroke-width="1.2" opacity="0.7"/><line x1="15" y1="15.5" x2="12" y2="12" stroke="white" stroke-width="1.2" opacity="0.7"/><line x1="9" y1="8.5" x2="15" y2="15.5" stroke="white" stroke-width="1" opacity="0.5" stroke-dasharray="2 2"/></svg>
           </div>
         </div>
         <h3>DNS over HTTP3</h3><span class="tag">HTTP3 · RFC 9114</span>
@@ -1163,7 +937,7 @@
   </div>
 </section>
 
-<!-- ===== 对比：普通DNS vs 加密DNS ===== -->
+<!-- ===== 对比 ===== -->
 <section class="sec-compare" id="compare" aria-labelledby="compare-title">
   <div class="wrap">
     <div class="compare-head reveal">
@@ -1175,44 +949,20 @@
         <span class="compare-tag" data-i18n="compare.bad.tag">传统明文 DNS</span>
         <h3 data-i18n="compare.bad.title">UDP 53 · 全程裸奔</h3>
         <ul class="compare-list">
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
-            <div><strong data-i18n="compare.bad.item1.t">查询内容明文可见</strong><br><span data-i18n="compare.bad.item1.d">运营商、公共 Wi-Fi、中间节点均可完整记录你访问了哪些域名。</span></div>
-          </li>
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
-            <div><strong data-i18n="compare.bad.item2.t">易被 DNS 劫持</strong><br><span data-i18n="compare.bad.item2.d">返回伪造 IP 植入广告页、钓鱼站，用户几乎无法察觉。</span></div>
-          </li>
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
-            <div><strong data-i18n="compare.bad.item3.t">易受投毒与中间人攻击</strong><br><span data-i18n="compare.bad.item3.d">无证书校验，攻击者可在链路上任意篡改解析结果。</span></div>
-          </li>
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>
-            <div><strong data-i18n="compare.bad.item4.t">解析链路长、延迟高</strong><br><span data-i18n="compare.bad.item4.d">递归层级多，无智能调度，跨网访问体验差。</span></div>
-          </li>
+          <li><span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span><div><strong data-i18n="compare.bad.item1.t">查询内容明文可见</strong><br><span data-i18n="compare.bad.item1.d">运营商、公共 Wi-Fi、中间节点均可完整记录你访问了哪些域名。</span></div></li>
+          <li><span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span><div><strong data-i18n="compare.bad.item2.t">易被 DNS 劫持</strong><br><span data-i18n="compare.bad.item2.d">返回伪造 IP 植入广告页、钓鱼站，用户几乎无法察觉。</span></div></li>
+          <li><span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span><div><strong data-i18n="compare.bad.item3.t">易受投毒与中间人攻击</strong><br><span data-i18n="compare.bad.item3.d">无证书校验，攻击者可在链路上任意篡改解析结果。</span></div></li>
+          <li><span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span><div><strong data-i18n="compare.bad.item4.t">解析链路长、延迟高</strong><br><span data-i18n="compare.bad.item4.d">递归层级多，无智能调度，跨网访问体验差。</span></div></li>
         </ul>
       </div>
       <div class="compare-card good reveal">
         <span class="compare-tag" data-i18n="compare.good.tag">清新云加密 DNS</span>
         <h3 data-i18n="compare.good.title">DoH / DoT / DoQ · 全程加密</h3>
         <ul class="compare-list">
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <div><strong data-i18n="compare.good.item1.t">查询全程 TLS/QUIC 加密</strong><br><span data-i18n="compare.good.item1.d">从你的设备到解析节点，中间任何环节都无法窥探查询内容。</span></div>
-          </li>
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <div><strong data-i18n="compare.good.item2.t">数字证书防劫持</strong><br><span data-i18n="compare.good.item2.d">服务端身份严格校验，杜绝 DNS 污染与伪造响应。</span></div>
-          </li>
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <div><strong data-i18n="compare.good.item3.t">查询记录不落盘</strong><br><span data-i18n="compare.good.item3.d">零日志策略，DNS 足迹彻底消除，隐私只有你知道。</span></div>
-          </li>
-          <li>
-            <span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <div><strong data-i18n="compare.good.item4.t">就近节点智能加速</strong><br><span data-i18n="compare.good.item4.d">就近接入最优节点，配合本地缓存，解析延迟低至毫秒级。</span></div>
-          </li>
+          <li><span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong data-i18n="compare.good.item1.t">查询全程 TLS/QUIC 加密</strong><br><span data-i18n="compare.good.item1.d">从你的设备到解析节点，中间任何环节都无法窥探查询内容。</span></div></li>
+          <li><span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong data-i18n="compare.good.item2.t">数字证书防劫持</strong><br><span data-i18n="compare.good.item2.d">服务端身份严格校验，杜绝 DNS 污染与伪造响应。</span></div></li>
+          <li><span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong data-i18n="compare.good.item3.t">查询记录不落盘</strong><br><span data-i18n="compare.good.item3.d">零日志策略，DNS 足迹彻底消除，隐私只有你知道。</span></div></li>
+          <li><span class="cmp-ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong data-i18n="compare.good.item4.t">就近节点智能加速</strong><br><span data-i18n="compare.good.item4.d">就近接入最优节点，配合本地缓存，解析延迟低至毫秒级。</span></div></li>
         </ul>
       </div>
     </div>
@@ -1220,7 +970,7 @@
   </div>
 </section>
 
-<!-- ===== 用户信赖与评价（4 条） ===== -->
+<!-- ===== 用户评价 ===== -->
 <section class="sec-voice" id="voice" aria-labelledby="voice-title">
   <div class="wrap">
     <div class="voice-head reveal">
@@ -1238,10 +988,7 @@
           <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
         <p class="voice-text" data-i18n="voice.c1.text">在公共 Wi-Fi 上做渗透测试时，明文 DNS 简直是最佳突破口。切到 DoH 之后，整条链路的可观测性直接归零，测试数据再也没被污染过。</p>
-        <div class="voice-user">
-          <div class="voice-avatar">林</div>
-          <div class="voice-meta"><b>林工</b><span data-i18n="voice.c1.role">安全工程师 · 深圳</span></div>
-        </div>
+        <div class="voice-user"><div class="voice-avatar">林</div><div class="voice-meta"><b>林工</b><span data-i18n="voice.c1.role">安全工程师 · 深圳</span></div></div>
       </div>
       <div class="voice-card reveal">
         <span class="voice-quote" aria-hidden="true">“</span>
@@ -1253,10 +1000,7 @@
           <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
         <p class="voice-text" data-i18n="voice.c2.text">公司 200 多台设备统一在路由器上配 DoT，一次配置全员生效。以前偶尔冒出来的广告弹窗和钓鱼页，现在几乎绝迹了。</p>
-        <div class="voice-user">
-          <div class="voice-avatar v2">周</div>
-          <div class="voice-meta"><b>周经理</b><span data-i18n="voice.c2.role">IT 运维负责人 · 杭州</span></div>
-        </div>
+        <div class="voice-user"><div class="voice-avatar v2">周</div><div class="voice-meta"><b>周经理</b><span data-i18n="voice.c2.role">IT 运维负责人 · 杭州</span></div></div>
       </div>
       <div class="voice-card reveal">
         <span class="voice-quote" aria-hidden="true">“</span>
@@ -1268,10 +1012,7 @@
           <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
         <p class="voice-text" data-i18n="voice.c3.text">手机切到 DoQ 后，弱网下的解析速度肉眼可见地稳了。看直播再也不用担心开播前那几秒一直转圈。</p>
-        <div class="voice-user">
-          <div class="voice-avatar v3">陈</div>
-          <div class="voice-meta"><b>陈同学</b><span data-i18n="voice.c3.role">大学生 · 成都</span></div>
-        </div>
+        <div class="voice-user"><div class="voice-avatar v3">陈</div><div class="voice-meta"><b>陈同学</b><span data-i18n="voice.c3.role">大学生 · 成都</span></div></div>
       </div>
       <div class="voice-card reveal">
         <span class="voice-quote" aria-hidden="true">“</span>
@@ -1283,16 +1024,13 @@
           <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
         <p class="voice-text" data-i18n="voice.c4.text">学校机房之前总被弹窗和钓鱼广告打扰，把 DNS 换到清新云之后课堂干扰几乎清零。一次配置，一百多台机器全部生效，省了太多事。</p>
-        <div class="voice-user">
-          <div class="voice-avatar v4">吴</div>
-          <div class="voice-meta"><b>吴老师</b><span data-i18n="voice.c4.role">中学信息技术教师 · 南京</span></div>
-        </div>
+        <div class="voice-user"><div class="voice-avatar v4">吴</div><div class="voice-meta"><b>吴老师</b><span data-i18n="voice.c4.role">中学信息技术教师 · 南京</span></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== 机器学习 · 神经引擎粒子立方体 ===== -->
+<!-- ===== 机器学习 · 神经引擎粒子立方体 + 神经网络动画 ===== -->
 <section class="sec-ml" id="ml" aria-labelledby="ml-title">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -1303,89 +1041,54 @@
       <canvas id="mlCanvas" role="img" aria-label="由粒子组成的旋转立方体，象征机器学习的自愈式解析网络"></canvas>
     </div>
 
-    <!-- ==== 机器学习能力卡片（6 张） ==== -->
+    <!-- 6 张机器学习能力卡片 -->
     <div class="ml-cards reveal">
       <div class="ml-card" style="--mc:rgba(47,107,255,.24);--c1:#2f6bff;--c2:#6b9bff;--tc:#2f6bff;--tb:rgba(47,107,255,.1);--tl:rgba(47,107,255,.26);">
-        <div class="ml-card-ic">
-          <svg viewBox="0 0 24 24">
-            <circle cx="12" cy="5" r="2.2"/>
-            <circle cx="5" cy="12" r="2.2"/>
-            <circle cx="19" cy="12" r="2.2"/>
-            <circle cx="8" cy="19" r="2.2"/>
-            <circle cx="16" cy="19" r="2.2"/>
-            <path d="M12 7.2 6.6 10.4M12 7.2l5.4 3.2M6.4 13.6 7.6 17M17.6 13.6 16.4 17M10 18.6h4"/>
-          </svg>
-        </div>
+        <div class="ml-card-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.2"/><circle cx="5" cy="12" r="2.2"/><circle cx="19" cy="12" r="2.2"/><circle cx="8" cy="19" r="2.2"/><circle cx="16" cy="19" r="2.2"/><path d="M12 7.2 6.6 10.4M12 7.2l5.4 3.2M6.4 13.6 7.6 17M17.6 13.6 16.4 17M10 18.6h4"/></svg></div>
         <h4 data-i18n="ml.c1.t">加密 DNS 神经网络</h4>
         <p data-i18n="ml.c1.d">全链路查询特征注入神经网络，在端到端加密的同时实时学习域名与解析行为模式，完成智能研判。</p>
         <span class="ml-tag" data-i18n="ml.c1.tag">Neural Resolver</span>
       </div>
-
       <div class="ml-card" style="--mc:rgba(139,123,255,.26);--c1:#8b7bff;--c2:#c09bff;--tc:#7a5ff0;--tb:rgba(139,123,255,.12);--tl:rgba(139,123,255,.3);">
-        <div class="ml-card-ic">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 2.8 4 6v6c0 5 3.4 8.3 8 9.2 4.6-.9 8-4.2 8-9.2V6z"/>
-            <path d="M9 12.2l2.2 2.2L15.4 10"/>
-          </svg>
-        </div>
+        <div class="ml-card-ic"><svg viewBox="0 0 24 24"><path d="M12 2.8 4 6v6c0 5 3.4 8.3 8 9.2 4.6-.9 8-4.2 8-9.2V6z"/><path d="M9 12.2l2.2 2.2L15.4 10"/></svg></div>
         <h4 data-i18n="ml.c2.t">机器学习 DGA 检测</h4>
         <p data-i18n="ml.c2.d">基于千万级样本训练的 DGA 识别模型，对算法生成域名毫秒级拦截，切断僵尸网络与勒索软件回连。</p>
         <span class="ml-tag" data-i18n="ml.c2.tag">DGA Detection</span>
       </div>
-
       <div class="ml-card" style="--mc:rgba(34,197,94,.24);--c1:#22c55e;--c2:#4ade80;--tc:#16a34a;--tb:rgba(34,197,94,.1);--tl:rgba(34,197,94,.26);">
-        <div class="ml-card-ic">
-          <svg viewBox="0 0 24 24">
-            <path d="M20 12a8 8 0 1 1-2.6-5.9"/>
-            <path d="M20 4.5V9h-4.5"/>
-            <circle cx="12" cy="12" r="2.4"/>
-          </svg>
-        </div>
+        <div class="ml-card-ic"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4.5V9h-4.5"/><circle cx="12" cy="12" r="2.4"/></svg></div>
         <h4 data-i18n="ml.c3.t">自学习引擎</h4>
         <p data-i18n="ml.c3.d">每一次解析都会反哺模型，异常样本自动标注并在线增量训练，无需人工干预即可持续进化。</p>
         <span class="ml-tag" data-i18n="ml.c3.tag">Self-Learning</span>
       </div>
-
       <div class="ml-card" style="--mc:rgba(255,154,213,.28);--c1:#ff8ac8;--c2:#b48bff;--tc:#e069b0;--tb:rgba(255,138,200,.12);--tl:rgba(255,138,200,.32);">
-        <div class="ml-card-ic">
-          <svg viewBox="0 0 24 24">
-            <path d="M3 18h4l2-6 3 9 3-13 2 10h4"/>
-          </svg>
-        </div>
+        <div class="ml-card-ic"><svg viewBox="0 0 24 24"><path d="M3 18h4l2-6 3 9 3-13 2 10h4"/></svg></div>
         <h4 data-i18n="ml.c4.t">智能解析调度</h4>
         <p data-i18n="ml.c4.d">依据实时 RTT、丢包率与节点负载动态选路，为每个域名挑选最优解析节点，延迟稳定在毫秒级。</p>
         <span class="ml-tag" data-i18n="ml.c4.tag">Smart Routing</span>
       </div>
-
       <div class="ml-card" style="--mc:rgba(245,158,11,.26);--c1:#f59e0b;--c2:#fbbf24;--tc:#d97706;--tb:rgba(245,158,11,.1);--tl:rgba(245,158,11,.28);">
-        <div class="ml-card-ic">
-          <svg viewBox="0 0 24 24">
-            <circle cx="11" cy="11" r="7"/>
-            <path d="M16.2 16.2 21 21"/>
-            <path d="M11 8v3.4M11 13.8v.2"/>
-          </svg>
-        </div>
+        <div class="ml-card-ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.2 16.2 21 21"/><path d="M11 8v3.4M11 13.8v.2"/></svg></div>
         <h4 data-i18n="ml.c5.t">威胁识别</h4>
         <p data-i18n="ml.c5.d">融合信誉库、威胁情报与行为画像，识别钓鱼、挖矿、C2 外联等风险域名并在解析层实时阻断。</p>
         <span class="ml-tag" data-i18n="ml.c5.tag">Threat Intel</span>
       </div>
-
       <div class="ml-card" style="--mc:rgba(14,165,233,.26);--c1:#0ea5e9;--c2:#22d3ee;--tc:#0284c7;--tb:rgba(14,165,233,.1);--tl:rgba(14,165,233,.28);">
-        <div class="ml-card-ic">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/>
-            <circle cx="12" cy="12" r="4"/>
-          </svg>
-        </div>
+        <div class="ml-card-ic"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg></div>
         <h4 data-i18n="ml.c6.t">自适应防御</h4>
         <p data-i18n="ml.c6.d">基于实时风险评分动态调整拦截策略与解析路径，攻击手法变化时防御策略同步进化，无需人工介入。</p>
         <span class="ml-tag" data-i18n="ml.c6.tag">Adaptive Defense</span>
       </div>
     </div>
+
+    <!-- ==== 神经网络动画（新增在 6 张卡片下方） ==== -->
+    <div class="ml-nn reveal">
+      <canvas id="nnCanvas" role="img" aria-label="多层全连接神经网络动画，节点之间的连接线如丝绸般摆动"></canvas>
+    </div>
   </div>
 </section>
 
-<!-- ===== 常见问题 FAQ ===== -->
+<!-- ===== 常见问题 ===== -->
 <section class="sec-faq" id="faq" aria-labelledby="faq-title">
   <div class="wrap">
     <div class="faq-head reveal">
@@ -1393,34 +1096,13 @@
       <p class="h-sub" data-i18n="faq.desc">关于加密 DNS 的高频疑问，都在这里。</p>
     </div>
     <div class="faq-list" id="faqList">
-      <div class="faq-item reveal">
-        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q1">加密 DNS 会不会让上网变慢？</span><span class="q-mark" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a1">不会。加密握手只在连接建立时发生一次，后续查询复用同一条连接。配合就近接入与本地缓存，实测解析延迟通常比运营商默认 DNS 更低。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q2">DoH、DoT、DoQ、HTTP3 该怎么选？</span><span class="q-mark" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a2">浏览器和 Windows 11 优先选 DoH；Android、iOS、路由器全局加密推荐 DoT；移动端或高丢包网络推荐 DoQ；追求极致速度与 0-RTT 恢复可选 HTTP3。四者可同时开启，系统会自动选择。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q3">你们会记录我的 DNS 查询吗？</span><span class="q-mark" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a3">不会。我们采用零日志策略，查询内容不写入磁盘，仅保留聚合后的匿名统计数字（如总查询量），用于容量规划与服务监控，无法回溯到任何个人或域名。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q4">配置后如何验证是否真的生效？</span><span class="q-mark" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a4">页面下方的「DNS 连接状态」会自动检测。你也可以访问 test.ipv4dns.com 查看判定结果，或在终端执行 nslookup example.com 观察返回的解析服务器。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q5">支持哪些操作系统和设备？</span><span class="q-mark" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a5">支持 Windows 10/11、macOS、iOS / iPadOS、Android 9+、Linux 及主流路由器（OpenWrt、梅林、爱快等）。iOS / macOS 用户可直接下载 .mobileconfig 描述文件，一键全局生效。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q6">服务是免费的吗？有没有限速？</span><span class="q-mark" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a6">个人使用完全免费，不限制查询次数、不限制设备数量，也不做任何人为限速。企业级定制（专属节点、SLA、审计对接）可联系我们获取方案。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q7">上游节点故障时会怎样？</span><span class="q-mark" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a7">我们采用跨可用区多活部署，任一节点故障都会在秒级内自动切换到健康节点，客户端几乎无感知。历史可用性长期保持在 99.99% 以上。</div></div>
-      </div>
+      <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q1">加密 DNS 会不会让上网变慢？</span><span class="q-mark" aria-hidden="true"></span></button><div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a1">不会。加密握手只在连接建立时发生一次，后续查询复用同一条连接。配合就近接入与本地缓存，实测解析延迟通常比运营商默认 DNS 更低。</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q2">DoH、DoT、DoQ、HTTP3 该怎么选？</span><span class="q-mark" aria-hidden="true"></span></button><div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a2">浏览器和 Windows 11 优先选 DoH；Android、iOS、路由器全局加密推荐 DoT；移动端或高丢包网络推荐 DoQ；追求极致速度与 0-RTT 恢复可选 HTTP3。四者可同时开启，系统会自动选择。</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q3">你们会记录我的 DNS 查询吗？</span><span class="q-mark" aria-hidden="true"></span></button><div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a3">不会。我们采用零日志策略，查询内容不写入磁盘，仅保留聚合后的匿名统计数字（如总查询量），用于容量规划与服务监控，无法回溯到任何个人或域名。</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q4">配置后如何验证是否真的生效？</span><span class="q-mark" aria-hidden="true"></span></button><div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a4">页面下方的「DNS 连接状态」会自动检测。你也可以访问 test.ipv4dns.com 查看判定结果，或在终端执行 nslookup example.com 观察返回的解析服务器。</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q5">支持哪些操作系统和设备？</span><span class="q-mark" aria-hidden="true"></span></button><div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a5">支持 Windows 10/11、macOS、iOS / iPadOS、Android 9+、Linux 及主流路由器（OpenWrt、梅林、爱快等）。iOS / macOS 用户可直接下载 .mobileconfig 描述文件，一键全局生效。</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q6">服务是免费的吗？有没有限速？</span><span class="q-mark" aria-hidden="true"></span></button><div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a6">个人使用完全免费，不限制查询次数、不限制设备数量，也不做任何人为限速。企业级定制（专属节点、SLA、审计对接）可联系我们获取方案。</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false"><span data-i18n="faq.q7">上游节点故障时会怎样？</span><span class="q-mark" aria-hidden="true"></span></button><div class="faq-a"><div class="faq-a-inner" data-i18n="faq.a7">我们采用跨可用区多活部署，任一节点故障都会在秒级内自动切换到健康节点，客户端几乎无感知。历史可用性长期保持在 99.99% 以上。</div></div></div>
     </div>
     <div class="faq-more reveal">
       <button class="btn btn-ghost" type="button" id="faqMoreBtn" data-i18n="faq.more">还有疑问？查看帮助中心</button>
@@ -1439,7 +1121,7 @@
   </div>
 </section>
 
-<!-- ===== DNS 解析实时统计 ===== -->
+<!-- ===== DNS 实时统计 ===== -->
 <section class="sec-stats" id="stats" aria-labelledby="stats-title">
   <div class="wrap reveal">
     <div class="stats-shell">
@@ -1458,7 +1140,6 @@
   </div>
 </section>
 
-<!-- ===== DNS 实时拦截统计（数字红色） ===== -->
 <section class="sec-stats" id="stats-blocked" aria-labelledby="blocked-title">
   <div class="wrap reveal">
     <div class="stats-shell">
@@ -1477,7 +1158,7 @@
   </div>
 </section>
 
-<!-- ===== DNS 连接状态检测 ===== -->
+<!-- ===== DNS 连接状态 ===== -->
 <section class="sec-dns-check" aria-label="DNS连接状态检测">
   <div class="wrap">
     <div class="dns-check-shell">
@@ -1576,7 +1257,6 @@
   </div>
 </div>
 
-<!-- 返回顶部 -->
 <button id="backToTop" class="back-to-top" aria-label="返回顶部" title="返回顶部">↑</button>
 
 <!-- ===== 百度自动推送 ===== -->
@@ -1618,9 +1298,7 @@
   if (isPushedRecently(pageUrl)) return;
   var bp = document.createElement('script');
   var curProtocol = window.location.protocol.split(':')[0];
-  bp.src = curProtocol === 'https'
-    ? 'https://zz.bdstatic.com/linksubmit/push.js'
-    : 'http://push.zhanzhang.baidu.com/push.js';
+  bp.src = curProtocol === 'https' ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
   bp.onload = function() { markPushed(pageUrl); };
   bp.onerror = function() {};
   var s = document.getElementsByTagName("script")[0];
@@ -1635,7 +1313,7 @@
 })();
 </script>
 
-<!-- ===== 机器学习 · 神经引擎粒子立方体 脚本 ===== -->
+<!-- ===== 粒子立方体脚本 ===== -->
 <script>
 (function(){
   "use strict";
@@ -1644,35 +1322,25 @@
   var stage = canvas.parentElement;
   var ctx = canvas.getContext('2d', { alpha: true });
   if (!ctx) return;
-
-  var reduceMotion = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* ================= 参数 ================= */
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var SMALL = window.matchMedia('(max-width: 768px)').matches;
-  var GRID  = SMALL ? 6 : 7;
-  var CUBE  = 150;
+  var GRID = SMALL ? 6 : 7;
+  var CUBE = 150;
   var PERSP = 800;
-  var STEP  = (CUBE * 2) / (GRID - 1);
+  var STEP = (CUBE * 2) / (GRID - 1);
   var TWO_PI = Math.PI * 2;
-
   var parts = [];
   var W = 0, H = 0, DPR = 1, K = 1, cx = 0, cy = 0;
   var t0 = performance.now();
   var raf = null, running = false, inView = true;
   var mx = 0, my = 0, tmx = 0, tmy = 0;
-
-  /* ================= 预生成颜色表 ================= */
-  var HUE_STEPS = 36;
-  var ALPHA_STEPS = 16;
+  var HUE_STEPS = 36, ALPHA_STEPS = 16;
   var COLOR_TABLE = [];
-
   function hue2rgb(p, q, t) {
-    if (t < 0) t += 1;
-    if (t > 1) t -= 1;
-    if (t < 1 / 6) return p + (q - p) * 6 * t;
-    if (t < 1 / 2) return q;
-    if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+    if (t < 0) t += 1; if (t > 1) t -= 1;
+    if (t < 1/6) return p + (q-p)*6*t;
+    if (t < 1/2) return q;
+    if (t < 2/3) return p + (q-p)*(2/3-t)*6;
     return p;
   }
   function hslToRgb(h, s, l) {
@@ -1681,286 +1349,325 @@
     else {
       var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
       var p = 2 * l - q;
-      r = hue2rgb(p, q, h + 1 / 3);
-      g = hue2rgb(p, q, h);
-      b = hue2rgb(p, q, h - 1 / 3);
+      r = hue2rgb(p, q, h + 1/3); g = hue2rgb(p, q, h); b = hue2rgb(p, q, h - 1/3);
     }
-    return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+    return [Math.round(r*255), Math.round(g*255), Math.round(b*255)];
   }
-
-  (function buildColorTable() {
+  (function() {
     for (var i = 0; i < HUE_STEPS; i++) {
       var t = i / (HUE_STEPS - 1);
       var hue, sat, lum;
-      if (t < 0.30) {
-        var u = t / 0.30;
-        hue = 214 + u * 16;
-        sat = 70 + u * 18;
-        lum = 30 + u * 22;
-      } else if (t < 0.65) {
-        var u2 = (t - 0.30) / 0.35;
-        hue = 230 + u2 * 38;
-        sat = 88;
-        lum = 52 + u2 * 8;
-      } else {
-        var u3 = (t - 0.65) / 0.35;
-        hue = 268 + u3 * 54;
-        sat = 88 - u3 * 8;
-        lum = 60 + u3 * 14;
-      }
-      var rgb = hslToRgb(hue / 360, sat / 100, lum / 100);
+      if (t < 0.30) { var u = t/0.30; hue = 214 + u*16; sat = 70 + u*18; lum = 30 + u*22; }
+      else if (t < 0.65) { var u2 = (t-0.30)/0.35; hue = 230 + u2*38; sat = 88; lum = 52 + u2*8; }
+      else { var u3 = (t-0.65)/0.35; hue = 268 + u3*54; sat = 88 - u3*8; lum = 60 + u3*14; }
+      var rgb = hslToRgb(hue/360, sat/100, lum/100);
       var row = [];
-      for (var a = 0; a < ALPHA_STEPS; a++) {
-        var alpha = a / (ALPHA_STEPS - 1);
-        row.push('rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + alpha.toFixed(3) + ')');
-      }
+      for (var a = 0; a < ALPHA_STEPS; a++) row.push('rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + (a/(ALPHA_STEPS-1)).toFixed(3) + ')');
       COLOR_TABLE.push(row);
     }
   })();
-
-  /* ================= 构建粒子 ================= */
   function build() {
     parts.length = 0;
-    for (var i = 0; i < GRID; i++) {
-      for (var j = 0; j < GRID; j++) {
-        for (var k = 0; k < GRID; k++) {
-          var isFlat = (i === 0);
-          var x = -CUBE + i * STEP;
-          var y = -CUBE + j * STEP;
-          var z = -CUBE + k * STEP;
+    for (var i = 0; i < GRID; i++) for (var j = 0; j < GRID; j++) for (var k = 0; k < GRID; k++) {
+      var isFlat = (i === 0);
+      var x = -CUBE + i*STEP, y = -CUBE + j*STEP, z = -CUBE + k*STEP;
+      if (!isFlat) { x += (Math.random()-0.5)*11; y += (Math.random()-0.5)*11; z += (Math.random()-0.5)*11; }
+      parts.push({ hx:x, hy:y, hz:z, ph: Math.random()*6.2832, fx: 0.10 + Math.random()*0.10, fy: 0.09 + Math.random()*0.09, fz: 0.08 + Math.random()*0.08, amp: isFlat ? 0 : (4.5 + Math.random()*4.0), size: isFlat ? 0.85 : 1.0 });
+    }
+  }
+  function resize() {
+    var r = stage.getBoundingClientRect();
+    DPR = Math.min(window.devicePixelRatio || 1, 2);
+    W = Math.max(160, Math.round(r.width)); H = Math.max(160, Math.round(r.height));
+    canvas.width = Math.round(W*DPR); canvas.height = Math.round(H*DPR);
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    cx = W/2; cy = H/2; K = (Math.min(W,H) * 0.22) / CUBE;
+  }
+  var waves = [];
+  var nextWaveTime = 0.4;
+  function updateWaves(t) {
+    for (var i = waves.length - 1; i >= 0; i--) if (t - waves[i].t0 > waves[i].life) waves.splice(i,1);
+    if (t > nextWaveTime) {
+      var count = 2 + ((Math.random()*3)|0);
+      for (var k = 0; k < count; k++) waves.push({ i: (Math.random()*parts.length)|0, t0: t, life: 3 + Math.random()*2, speed: 90 + Math.random()*60, thick: 32 + Math.random()*18, strength: 0.75 + Math.random()*0.35 });
+      nextWaveTime = t + 0.7 + Math.random()*1.3;
+    }
+  }
+  function render(now) {
+    var t = (now - t0)/1000;
+    tmx += (mx - tmx)*0.05; tmy += (my - tmy)*0.05;
+    var ry = 0.55 + Math.sin(t*0.13)*0.22 + tmx*0.55;
+    var rx = 0.30 + Math.sin(t*0.10)*0.07 + tmy*0.35;
+    var cosY = Math.cos(ry), sinY = Math.sin(ry);
+    var cosX = Math.cos(rx), sinX = Math.sin(rx);
+    ctx.clearRect(0,0,W,H);
+    var n = parts.length;
+    var baseR = Math.min(W,H) * 0.0050;
+    var S_MIN = 0.755, S_RANGE = 0.725;
+    updateWaves(t);
+    for (var i = 0; i < n; i++) {
+      var p = parts[i];
+      var tx=0, ty=0, tz=0;
+      if (p.amp > 0) { tx = Math.sin(t*p.fx + p.ph) * p.amp; ty = Math.cos(t*p.fy + p.ph*1.37) * p.amp; tz = Math.sin(t*p.fz + p.ph*2.13) * p.amp * 0.7; }
+      var x = p.hx+tx, y = p.hy+ty, z = p.hz+tz;
+      var x1 = x*cosY - z*sinY; var z1 = x*sinY + z*cosY; var y1 = y*cosX - z1*sinX; var z2 = y*sinX + z1*cosX;
+      var s = PERSP / (PERSP + z2);
+      var sx = cx + x1*s*K, sy = cy + y1*s*K;
+      var depth = (s - S_MIN)/S_RANGE; if (depth < 0) depth = 0; else if (depth > 1) depth = 1;
+      var energy = 0;
+      for (var w = 0; w < waves.length; w++) {
+        var src = waves[w]; var srcP = parts[src.i]; var age = t - src.t0;
+        if (age < 0) continue;
+        var ddx = p.hx - srcP.hx, ddy = p.hy - srcP.hy, ddz = p.hz - srcP.hz;
+        var dist = Math.sqrt(ddx*ddx + ddy*ddy + ddz*ddz);
+        var d = Math.abs(dist - age*src.speed);
+        if (d < src.thick) { var decay = 1 - age/src.life; if (decay < 0) decay = 0; energy += (1 - d/src.thick) * decay * src.strength; }
+      }
+      if (energy > 1) energy = 1;
+      var hi = (energy * (HUE_STEPS-1))|0;
+      var sizeFactor = (0.50 + depth*0.85) * (0.75 + energy*0.95);
+      var radius = baseR * p.size * sizeFactor; if (radius < 0.35) radius = 0.35;
+      var alphaBase = 0.14 + depth*0.72 + energy*0.32; if (alphaBase > 1) alphaBase = 1;
+      var ai = (alphaBase * (ALPHA_STEPS-1))|0;
+      if (energy > 0.12) { var glowR = radius*2.2; var gai = (ai*0.35)|0; if (gai < 0) gai = 0; ctx.fillStyle = COLOR_TABLE[hi][gai]; ctx.beginPath(); ctx.arc(sx, sy, glowR, 0, TWO_PI); ctx.fill(); }
+      ctx.fillStyle = COLOR_TABLE[hi][ai]; ctx.beginPath(); ctx.arc(sx, sy, radius, 0, TWO_PI); ctx.fill();
+    }
+  }
+  function loop(now) { raf = requestAnimationFrame(loop); render(now); }
+  function start() { if (running || reduceMotion || !inView) return; running = true; raf = requestAnimationFrame(loop); }
+  function stop() { running = false; if (raf) { cancelAnimationFrame(raf); raf = null; } }
+  stage.addEventListener('pointermove', function(e){ var r = stage.getBoundingClientRect(); mx = (e.clientX - r.left)/r.width - 0.5; my = (e.clientY - r.top)/r.height - 0.5; }, { passive: true });
+  stage.addEventListener('pointerleave', function(){ mx = 0; my = 0; }, { passive: true });
+  var rt = null;
+  window.addEventListener('resize', function() { clearTimeout(rt); rt = setTimeout(function() { resize(); if (reduceMotion) render(performance.now()); }, 160); }, { passive: true });
+  if ('IntersectionObserver' in window) new IntersectionObserver(function(entries) { entries.forEach(function(en) { inView = en.isIntersecting; if (inView) start(); else stop(); }); }, { threshold: 0.05 }).observe(stage);
+  document.addEventListener('visibilitychange', function() { if (document.hidden) stop(); else if (inView) start(); });
+  build(); resize(); if (reduceMotion) render(performance.now()); else start();
+})();
+</script>
 
-          if (!isFlat) {
-            x += (Math.random() - 0.5) * 11;
-            y += (Math.random() - 0.5) * 11;
-            z += (Math.random() - 0.5) * 11;
-          }
+<!-- ===== 神经网络动画脚本（新增，位于 6 张卡片下方） ===== -->
+<script>
+(function(){
+  "use strict";
+  var canvas = document.getElementById('nnCanvas');
+  if (!canvas) return;
+  var stage = canvas.parentElement;
+  var ctx = canvas.getContext('2d', { alpha: true });
+  if (!ctx) return;
 
-          parts.push({
-            hx: x, hy: y, hz: z,
-            ph: Math.random() * 6.2832,
-            fx: 0.10 + Math.random() * 0.10,
-            fy: 0.09 + Math.random() * 0.09,
-            fz: 0.08 + Math.random() * 0.08,
-            amp: isFlat ? 0 : (4.5 + Math.random() * 4.0),
-            size: isFlat ? 0.85 : 1.0
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var SMALL = window.matchMedia('(max-width: 768px)').matches;
+
+  /* 层配置：首尾各 4 个节点，中间三层 8 个 */
+  var LAYERS = SMALL ? [4, 6, 6, 6, 4] : [4, 8, 8, 8, 4];
+  var LAYER_COUNT = LAYERS.length;
+
+  var nodes = [], edges = [], starts = [];
+  var activeIdx = [], nextSwitchAt = [], layerGlow = [];
+
+  var W = 0, H = 0, DPR = 1;
+  var t0 = performance.now();
+  var raf = null, running = false, inView = true;
+
+  var FLOW_CYCLE = 7.0;
+
+  function build() {
+    nodes.length = 0; edges.length = 0;
+    var L = LAYER_COUNT;
+    var padX = 0.08;
+    var availX = 1 - padX*2;
+
+    for (var li = 0; li < L; li++) {
+      var count = LAYERS[li];
+      var lx = padX + (availX*li)/(L-1);
+      var li01 = li/(L-1);
+      var edgeFactor = Math.abs(li01 - 0.5) * 2;
+      var availY = 0.82 - edgeFactor*0.32;
+      var padY = (1 - availY)/2;
+      for (var i = 0; i < count; i++) {
+        var ly = count === 1 ? 0.5 : padY + (availY*i)/(count-1);
+        nodes.push({
+          lx: lx, ly: ly,
+          layer: li, index: i,
+          x: 0, y: 0,
+          r: SMALL ? 2.8 : 3.8,
+          phase: Math.random() * 6.2832
+        });
+      }
+    }
+
+    var acc = 0;
+    for (var s = 0; s < L; s++) { starts[s] = acc; acc += LAYERS[s]; }
+
+    for (var a = 0; a < L-1; a++) {
+      var aStart = starts[a], bStart = starts[a+1];
+      var ac = LAYERS[a], bc = LAYERS[a+1];
+      for (var f = 0; f < ac; f++) {
+        for (var tt = 0; tt < bc; tt++) {
+          edges.push({
+            a: aStart + f,
+            b: bStart + tt,
+            layer: a,
+            ampJitter: 0.7 + Math.random()*0.6,
+            thick: 0.55 + Math.random()*0.45,
+            hue: 222 + Math.random()*36
           });
         }
       }
     }
+
+    for (var k = 0; k < L; k++) {
+      activeIdx[k] = (Math.random()*LAYERS[k])|0;
+      nextSwitchAt[k] = 0.6 + Math.random()*0.8;
+      layerGlow[k] = 0;
+    }
   }
 
-  /* ================= 尺寸 ================= */
   function resize() {
     var r = stage.getBoundingClientRect();
     DPR = Math.min(window.devicePixelRatio || 1, 2);
-    W = Math.max(160, Math.round(r.width));
-    H = Math.max(160, Math.round(r.height));
-    canvas.width  = Math.round(W * DPR);
-    canvas.height = Math.round(H * DPR);
+    W = Math.max(200, Math.round(r.width));
+    H = Math.max(120, Math.round(r.height));
+    canvas.width = Math.round(W*DPR);
+    canvas.height = Math.round(H*DPR);
     ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
-    cx = W / 2;
-    cy = H / 2;
-    K = (Math.min(W, H) * 0.22) / CUBE;
+    for (var i = 0; i < nodes.length; i++) {
+      var n = nodes[i];
+      n.x = n.lx * W;
+      n.y = n.ly * H;
+    }
   }
 
-  /* ================= 波源系统 ================= */
-  var waves = [];
-  var nextWaveTime = 0.4;
-
-  function updateWaves(t) {
-    for (var i = waves.length - 1; i >= 0; i--) {
-      if (t - waves[i].t0 > waves[i].life) waves.splice(i, 1);
-    }
-    if (t > nextWaveTime) {
-      var count = 2 + ((Math.random() * 3) | 0);
-      for (var k = 0; k < count; k++) {
-        var idx = (Math.random() * parts.length) | 0;
-        waves.push({
-          i: idx,
-          t0: t,
-          life: 3.0 + Math.random() * 2.0,
-          speed: 90 + Math.random() * 60,
-          thick: 32 + Math.random() * 18,
-          strength: 0.75 + Math.random() * 0.35
-        });
+  function updateActive(t) {
+    for (var li = 0; li < LAYER_COUNT; li++) {
+      if (t >= nextSwitchAt[li]) {
+        var next, guard = 0;
+        do { next = (Math.random()*LAYERS[li])|0; guard++; }
+        while (LAYERS[li] > 1 && next === activeIdx[li] && guard < 8);
+        activeIdx[li] = next;
+        nextSwitchAt[li] = t + 1.4 + Math.random()*0.7;
       }
-      nextWaveTime = t + 0.7 + Math.random() * 1.3;
     }
   }
 
-  /* ================= 渲染 ================= */
+  var SEG = SMALL ? 14 : 20;
+
   function render(now) {
-    var t = (now - t0) / 1000;
-
-    tmx += (mx - tmx) * 0.05;
-    tmy += (my - tmy) * 0.05;
-
-    var ry = 0.55 + Math.sin(t * 0.13) * 0.22 + tmx * 0.55;
-    var rx = 0.30 + Math.sin(t * 0.10) * 0.07 + tmy * 0.35;
-
-    var cosY = Math.cos(ry), sinY = Math.sin(ry);
-    var cosX = Math.cos(rx), sinX = Math.sin(rx);
-
+    var t = (now - t0)/1000;
     ctx.clearRect(0, 0, W, H);
+    var n = nodes.length, m = edges.length;
+    updateActive(t);
 
-    var n = parts.length;
-    var baseR = Math.min(W, H) * 0.0050;
+    var phase = (t / FLOW_CYCLE) % 1;
+    var pos = phase * (LAYER_COUNT - 1);
+    for (var li = 0; li < LAYER_COUNT; li++) {
+      var d = li - pos;
+      layerGlow[li] = Math.exp(-d*d * 4.5);
+    }
 
-    var S_MIN = 0.755;
-    var S_RANGE = 0.725;
+    var swingTime = t * 0.42;
+    var globalSway = Math.sin(swingTime * 0.7) * 0.4 + Math.sin(swingTime * 0.31) * 0.6;
 
-    updateWaves(t);
+    for (var e = 0; e < m; e++) {
+      var edge = edges[e];
+      var A = nodes[edge.a];
+      var B = nodes[edge.b];
+      var dx = B.x - A.x, dy = B.y - A.y;
+      var len = Math.sqrt(dx*dx + dy*dy);
+      if (len < 0.001) continue;
+      var nx = -dy/len, ny = dx/len;
+      var ph = A.phase * 0.85 + B.phase * 0.15;
+      var swing = Math.sin(ph * 0.6 + swingTime) + globalSway * 0.3;
+      var baseAmp = len * 0.085 * edge.ampJitter;
+      var arc = swing * baseAmp;
+
+      var aActive = (A.index === activeIdx[A.layer]) ? layerGlow[A.layer] : 0;
+      var bActive = (B.index === activeIdx[B.layer]) ? layerGlow[B.layer] : 0;
+      var glow = aActive > bActive ? aActive : bActive;
+
+      var hue, sat, lum, alpha, lw;
+      if (glow > 0.05) {
+        hue = 232 + (edge.hue - 222) * 0.6;
+        sat = 55; lum = 78;
+        alpha = 0.15 + glow * 0.65;
+        lw = edge.thick * (0.9 + glow * 0.7);
+      } else {
+        hue = edge.hue; sat = 22; lum = 66;
+        alpha = 0.22; lw = edge.thick * 0.65;
+      }
+
+      ctx.strokeStyle = 'hsla(' + hue.toFixed(0) + ',' + sat + '%,' + lum + '%,' + alpha.toFixed(3) + ')';
+      ctx.lineWidth = lw;
+      ctx.beginPath();
+      for (var s = 0; s <= SEG; s++) {
+        var u = s / SEG;
+        var px = A.x + dx * u;
+        var py = A.y + dy * u;
+        var wave = arc * Math.sin(u * Math.PI);
+        var qx = px + nx * wave;
+        var qy = py + ny * wave;
+        if (s === 0) ctx.moveTo(qx, qy);
+        else ctx.lineTo(qx, qy);
+      }
+      ctx.stroke();
+    }
 
     for (var i = 0; i < n; i++) {
-      var p = parts[i];
+      var nd = nodes[i];
+      var isActive = (nd.index === activeIdx[nd.layer]);
+      var glow = isActive ? layerGlow[nd.layer] : 0;
+      var pulse = 0.5 + 0.5 * Math.sin(t * 1.0 + nd.phase);
+      var r = nd.r * (0.9 + pulse * 0.08);
+      if (glow > 0.05) r *= 1 + glow * 0.30;
 
-      var tx = 0, ty = 0, tz = 0;
-      if (p.amp > 0) {
-        tx = Math.sin(t * p.fx + p.ph) * p.amp;
-        ty = Math.cos(t * p.fy + p.ph * 1.37) * p.amp;
-        tz = Math.sin(t * p.fz + p.ph * 2.13) * p.amp * 0.7;
+      if (glow > 0.05) {
+        var glowR = r * (2.2 + glow * 1.6);
+        var a1 = 0.30 * glow;
+        var grd = ctx.createRadialGradient(nd.x, nd.y, 0, nd.x, nd.y, glowR);
+        grd.addColorStop(0, 'hsla(240, 55%, 82%, ' + a1.toFixed(3) + ')');
+        grd.addColorStop(0.5, 'hsla(240, 45%, 75%, ' + (a1*0.35).toFixed(3) + ')');
+        grd.addColorStop(1, 'hsla(240, 45%, 75%, 0)');
+        ctx.fillStyle = grd;
+        ctx.beginPath(); ctx.arc(nd.x, nd.y, glowR, 0, Math.PI*2); ctx.fill();
       }
 
-      var x = p.hx + tx;
-      var y = p.hy + ty;
-      var z = p.hz + tz;
-
-      var x1 =  x * cosY - z * sinY;
-      var z1 =  x * sinY + z * cosY;
-      var y1 =  y * cosX - z1 * sinX;
-      var z2 =  y * sinX + z1 * cosX;
-
-      var s  = PERSP / (PERSP + z2);
-      var sx = cx + x1 * s * K;
-      var sy = cy + y1 * s * K;
-
-      var depth = (s - S_MIN) / S_RANGE;
-      if (depth < 0) depth = 0; else if (depth > 1) depth = 1;
-
-      var energy = 0;
-      for (var w = 0; w < waves.length; w++) {
-        var src = waves[w];
-        var srcP = parts[src.i];
-        var age = t - src.t0;
-        if (age < 0) continue;
-        var dx = p.hx - srcP.hx;
-        var dy = p.hy - srcP.hy;
-        var dz = p.hz - srcP.hz;
-        var dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
-        var front = age * src.speed;
-        var d = dist - front;
-        if (d < 0) d = -d;
-        if (d < src.thick) {
-          var decay = 1 - age / src.life;
-          if (decay < 0) decay = 0;
-          energy += (1 - d / src.thick) * decay * src.strength;
-        }
-      }
-      if (energy > 1) energy = 1;
-      var e01 = energy;
-
-      var hi = (e01 * (HUE_STEPS - 1)) | 0;
-
-      var sizeFactor = (0.50 + depth * 0.85) * (0.75 + e01 * 0.95);
-      var radius = baseR * p.size * sizeFactor;
-      if (radius < 0.35) radius = 0.35;
-
-      var alphaBase = 0.14 + depth * 0.72 + e01 * 0.32;
-      if (alphaBase > 1) alphaBase = 1;
-      var ai = (alphaBase * (ALPHA_STEPS - 1)) | 0;
-
-      if (e01 > 0.12) {
-        var glowR = radius * 2.2;
-        var gai = (ai * 0.35) | 0;
-        if (gai < 0) gai = 0;
-        ctx.fillStyle = COLOR_TABLE[hi][gai];
-        ctx.beginPath();
-        ctx.arc(sx, sy, glowR, 0, TWO_PI);
-        ctx.fill();
-      }
-
-      ctx.fillStyle = COLOR_TABLE[hi][ai];
       ctx.beginPath();
-      ctx.arc(sx, sy, radius, 0, TWO_PI);
-      ctx.fill();
+      ctx.arc(nd.x, nd.y, r, 0, Math.PI*2);
+      if (glow > 0.05) {
+        ctx.fillStyle = 'hsla(235, 45%, 90%, ' + (0.8 + glow*0.15).toFixed(3) + ')';
+        ctx.fill();
+        ctx.strokeStyle = 'hsla(240, 55%, 58%, ' + (0.65 + glow*0.3).toFixed(3) + ')';
+        ctx.lineWidth = 1.5 + glow*0.6;
+      } else {
+        ctx.fillStyle = 'hsla(225, 25%, 96%, 0.95)';
+        ctx.fill();
+        ctx.strokeStyle = 'hsla(225, 30%, 62%, 0.85)';
+        ctx.lineWidth = 1.3;
+      }
+      ctx.stroke();
     }
   }
 
-  /* ================= 循环 ================= */
-  function loop(now) {
-    raf = requestAnimationFrame(loop);
-    render(now);
-  }
-  function start() {
-    if (running || reduceMotion || !inView) return;
-    running = true;
-    raf = requestAnimationFrame(loop);
-  }
-  function stop() {
-    running = false;
-    if (raf) { cancelAnimationFrame(raf); raf = null; }
-  }
-
-  /* ================= 交互 ================= */
-  stage.addEventListener('pointermove', function(e) {
-    var r = stage.getBoundingClientRect();
-    mx = (e.clientX - r.left) / r.width  - 0.5;
-    my = (e.clientY - r.top)  / r.height - 0.5;
-  }, { passive: true });
-  stage.addEventListener('pointerleave', function() { mx = 0; my = 0; }, { passive: true });
+  function loop(now) { raf = requestAnimationFrame(loop); render(now); }
+  function start() { if (running || reduceMotion || !inView) return; running = true; raf = requestAnimationFrame(loop); }
+  function stop() { running = false; if (raf) { cancelAnimationFrame(raf); raf = null; } }
 
   var rt = null;
-  window.addEventListener('resize', function() {
-    clearTimeout(rt);
-    rt = setTimeout(function() {
-      resize();
-      if (reduceMotion) render(performance.now());
-    }, 160);
-  }, { passive: true });
-
-  if ('IntersectionObserver' in window) {
-    new IntersectionObserver(function(entries) {
-      entries.forEach(function(en) {
-        inView = en.isIntersecting;
-        if (inView) start(); else stop();
-      });
-    }, { threshold: 0.05 }).observe(stage);
-  }
-
-  document.addEventListener('visibilitychange', function() {
-    if (document.hidden) stop();
-    else if (inView) start();
-  });
-
-  /* ================= 启动 ================= */
-  build();
-  resize();
-  if (reduceMotion) {
-    render(performance.now());
-  } else {
-    start();
-  }
+  window.addEventListener('resize', function() { clearTimeout(rt); rt = setTimeout(function() { resize(); if (reduceMotion) render(performance.now()); }, 160); }, { passive: true });
+  if ('IntersectionObserver' in window) new IntersectionObserver(function(entries) { entries.forEach(function(en) { inView = en.isIntersecting; if (inView) start(); else stop(); }); }, { threshold: 0.05 }).observe(stage);
+  document.addEventListener('visibilitychange', function() { if (document.hidden) stop(); else if (inView) start(); });
+  build(); resize(); if (reduceMotion) render(performance.now()); else start();
 })();
 </script>
 
+<!-- ===== 主交互脚本 ===== -->
 <script>
 (function() {
   "use strict";
 
   (function() {
-    const manifest = {
-      name: "清新云DNS",
-      short_name: "清新云DNS",
-      description: "免费加密DNS服务，支持DoH/DoT/DoQ/HTTP3",
-      start_url: "/",
-      display: "standalone",
-      background_color: "#f6f9fe",
-      theme_color: "#2f6bff",
-      icons: [
-        { src: "/icon-192.png", sizes: "192x192", type: "image/png", purpose: "any maskable" },
-        { src: "/icon-512.png", sizes: "512x512", type: "image/png", purpose: "any maskable" }
-      ]
-    };
+    const manifest = { name: "清新云DNS", short_name: "清新云DNS", description: "免费加密DNS服务，支持DoH/DoT/DoQ/HTTP3", start_url: "/", display: "standalone", background_color: "#f6f9fe", theme_color: "#2f6bff", icons: [{ src: "/icon-192.png", sizes: "192x192", type: "image/png", purpose: "any maskable" }, { src: "/icon-512.png", sizes: "512x512", type: "image/png", purpose: "any maskable" }] };
     const manifestBlob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
     const manifestURL = URL.createObjectURL(manifestBlob);
     const link = document.createElement('link');
@@ -1973,33 +1680,18 @@
         const CACHE_NAME = 'freshcloud-dns-v1';
         const urlsToCache = ['/', '/index.html'];
         self.addEventListener('install', event => {
-          event.waitUntil(
-            caches.open(CACHE_NAME)
-              .then(cache => cache.addAll(urlsToCache))
-              .then(() => self.skipWaiting())
-          );
+          event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache)).then(() => self.skipWaiting()));
         });
         self.addEventListener('activate', event => {
-          event.waitUntil(
-            caches.keys().then(keys => {
-              return Promise.all(
-                keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key))
-              );
-            }).then(() => self.clients.claim())
-          );
+          event.waitUntil(caches.keys().then(keys => { return Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key))); }).then(() => self.clients.claim()));
         });
         self.addEventListener('fetch', event => {
-          event.respondWith(
-            caches.match(event.request)
-              .then(response => response || fetch(event.request))
-          );
+          event.respondWith(caches.match(event.request).then(response => response || fetch(event.request)));
         });
       `;
       const swBlob = new Blob([swCode], { type: 'application/javascript' });
       const swURL = URL.createObjectURL(swBlob);
-      navigator.serviceWorker.register(swURL)
-        .then(() => console.log('Service Worker 注册成功'))
-        .catch(err => console.warn('Service Worker 注册失败', err));
+      navigator.serviceWorker.register(swURL).then(() => console.log('Service Worker 注册成功')).catch(err => console.warn('Service Worker 注册失败', err));
     }
   })();
 
@@ -2007,47 +1699,25 @@
   window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 40), { passive: true });
 
   document.querySelectorAll('[data-target]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const target = document.querySelector(btn.getAttribute('data-target'));
-      if (target) target.scrollIntoView({ behavior: 'smooth' });
-    });
+    btn.addEventListener('click', () => { const target = document.querySelector(btn.getAttribute('data-target')); if (target) target.scrollIntoView({ behavior: 'smooth' }); });
   });
 
   const ham = document.getElementById('hamBtn');
   const mm = document.getElementById('mobileMenu');
-  ham.addEventListener('click', () => {
-    const isOpen = mm.classList.toggle('open');
-    ham.setAttribute('aria-expanded', isOpen);
-  });
-  mm.querySelectorAll('a, button').forEach(el => {
-    el.addEventListener('click', () => {
-      mm.classList.remove('open');
-      ham.setAttribute('aria-expanded', 'false');
-    });
-  });
+  ham.addEventListener('click', () => { const isOpen = mm.classList.toggle('open'); ham.setAttribute('aria-expanded', isOpen); });
+  mm.querySelectorAll('a, button').forEach(el => { el.addEventListener('click', () => { mm.classList.remove('open'); ham.setAttribute('aria-expanded', 'false'); }); });
 
-  const io = new IntersectionObserver(
-    entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }),
-    { threshold: 0.12, rootMargin: '0px 0px -30px 0px' }
-  );
+  const io = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
   const toast = document.getElementById('toast');
   let toastTimer = null;
-  function showToast(msg) {
-    toast.textContent = msg;
-    toast.classList.add('show');
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => toast.classList.remove('show'), 2000);
-  }
+  function showToast(msg) { toast.textContent = msg; toast.classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => toast.classList.remove('show'), 2000); }
   document.querySelectorAll('[data-copy]').forEach(btn => {
     btn.addEventListener('click', () => {
       const text = document.getElementById(btn.dataset.copy).textContent;
-      if (navigator.clipboard) {
-        navigator.clipboard.writeText(text).then(() => showToast('已复制：' + text)).catch(() => showToast('复制失败'));
-      } else {
-        showToast('请手动选择复制');
-      }
+      if (navigator.clipboard) navigator.clipboard.writeText(text).then(() => showToast('已复制：' + text)).catch(() => showToast('复制失败'));
+      else showToast('请手动选择复制');
     });
   });
 
@@ -2056,162 +1726,77 @@
     { id: 'helpLink', msg: '帮助中心即将上线' },
     { id: 'helpLinkMobile', msg: '帮助中心即将上线' }
   ];
-  placeholders.forEach(({id, msg}) => {
-    const el = document.getElementById(id);
-    if (el) el.addEventListener('click', (e) => { e.preventDefault(); showToast(msg); });
-  });
+  placeholders.forEach(({id, msg}) => { const el = document.getElementById(id); if (el) el.addEventListener('click', (e) => { e.preventDefault(); showToast(msg); }); });
 
   const tabs = {
-    doh: {
-      title: 'DNS over HTTPS（DoH）— 基于 HTTPS 的加密查询，端口 443',
-      a: 'https://dns.ipv4dns.com/dns-query',
-      b: 'https://dns.ipv4dns.com/dns-query{?dns}',
-      note: '支持 RFC 8484 标准，兼容 Chrome / Edge / Firefox 及 Windows 11 原生 DoH。',
-      chips: ['Windows 11', 'Chrome', 'Firefox', 'Edge']
-    },
-    dot: {
-      title: 'DNS over TLS（DoT）— 基于 TLS 加密隧道，端口 853，开销低且连接稳定',
-      a: 'tls://dns.ipv4dns.com',
-      b: 'dns.ipv4dns.com',
-      note: '支持 RFC 7858 标准，推荐在 Android Private DNS、iOS 描述文件与路由器中使用。',
-      chips: ['Android', 'iOS', 'macOS', 'OpenWrt', '路由器']
-    },
-    doq: {
-      title: 'DNS over QUIC（DoQ）— 基于 QUIC 协议的高速加密传输，端口 853 或 784',
-      a: 'quic://dns.ipv4dns.com',
-      b: 'https://dns.ipv4dns.com/dns-query?doq',
-      note: '利用 QUIC 的低延迟与多路复用特性，适合移动端与高丢包网络环境。',
-      chips: ['QUIC', 'HTTP/3', 'Android', 'iOS', 'Chrome']
-    },
-    ios: {
-      title: 'HTTP3 加密解析地址 — 基于 HTTP/3 与 QUIC 的超高速加密通道',
-      a: 'https://dns.ipv4dns.com/dns-query',
-      b: 'h3://dns.ipv4dns.com/dns-query',
-      note: '利用 HTTP/3 的 0‑RTT 连接恢复与多路复用，大幅降低解析延迟，适合 5G 与高动态网络。',
-      chips: ['HTTP/3', 'QUIC', 'Android', 'iOS', 'Chrome']
-    },
-    dnscrypt: {
-      title: 'DNS 描述文件配置 — 一键安装加密 DNS 描述文件（iOS / macOS）',
-      a: '',
-      b: '',
-      note: '通过证书验证服务器身份，防止伪造与劫持，兼容多款第三方客户端。',
-      chips: ['iOS', 'iPadOS', 'iPhone', 'iPad', 'macOS']
-    }
+    doh: { title: 'DNS over HTTPS（DoH）— 基于 HTTPS 的加密查询，端口 443', a: 'https://dns.ipv4dns.com/dns-query', b: 'https://dns.ipv4dns.com/dns-query{?dns}', note: '支持 RFC 8484 标准，兼容 Chrome / Edge / Firefox 及 Windows 11 原生 DoH。', chips: ['Windows 11', 'Chrome', 'Firefox', 'Edge'] },
+    dot: { title: 'DNS over TLS（DoT）— 基于 TLS 加密隧道，端口 853，开销低且连接稳定', a: 'tls://dns.ipv4dns.com', b: 'dns.ipv4dns.com', note: '支持 RFC 7858 标准，推荐在 Android Private DNS、iOS 描述文件与路由器中使用。', chips: ['Android', 'iOS', 'macOS', 'OpenWrt', '路由器'] },
+    doq: { title: 'DNS over QUIC（DoQ）— 基于 QUIC 协议的高速加密传输，端口 853 或 784', a: 'quic://dns.ipv4dns.com', b: 'https://dns.ipv4dns.com/dns-query?doq', note: '利用 QUIC 的低延迟与多路复用特性，适合移动端与高丢包网络环境。', chips: ['QUIC', 'HTTP/3', 'Android', 'iOS', 'Chrome'] },
+    ios: { title: 'HTTP3 加密解析地址 — 基于 HTTP/3 与 QUIC 的超高速加密通道', a: 'https://dns.ipv4dns.com/dns-query', b: 'h3://dns.ipv4dns.com/dns-query', note: '利用 HTTP/3 的 0‑RTT 连接恢复与多路复用，大幅降低解析延迟，适合 5G 与高动态网络。', chips: ['HTTP/3', 'QUIC', 'Android', 'iOS', 'Chrome'] },
+    dnscrypt: { title: 'DNS 描述文件配置 — 一键安装加密 DNS 描述文件（iOS / macOS）', a: '', b: '', note: '通过证书验证服务器身份，防止伪造与劫持，兼容多款第三方客户端。', chips: ['iOS', 'iPadOS', 'iPhone', 'iPad', 'macOS'] }
   };
-
   const tabButtons = document.querySelectorAll('.cfg-tab');
   const panel = document.getElementById('cfgPanel');
   if (tabButtons.length && panel) {
     tabButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         tabButtons.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
-        btn.classList.add('active');
-        btn.setAttribute('aria-selected', 'true');
-        const d = tabs[btn.dataset.tab];
-        if (!d) return;
-        panel.style.animation = 'none';
-        void panel.offsetWidth;
-        panel.style.animation = 'fadeUp .45s both';
-        const titleEl = document.getElementById('cfgTitle');
-        if (titleEl) titleEl.textContent = d.title;
+        btn.classList.add('active'); btn.setAttribute('aria-selected', 'true');
+        const d = tabs[btn.dataset.tab]; if (!d) return;
+        panel.style.animation = 'none'; void panel.offsetWidth; panel.style.animation = 'fadeUp .45s both';
+        const titleEl = document.getElementById('cfgTitle'); if (titleEl) titleEl.textContent = d.title;
         const isProfile = btn.dataset.tab === 'dnscrypt';
-        const aEl = document.getElementById('cfgA');
-        const bEl = document.getElementById('cfgB');
+        const aEl = document.getElementById('cfgA'); const bEl = document.getElementById('cfgB');
         if (aEl) aEl.textContent = isProfile ? '' : d.a;
         if (bEl) bEl.textContent = isProfile ? '' : d.b;
         const noteEl = document.getElementById('cfgNote');
         if (noteEl) { noteEl.textContent = d.note; noteEl.style.display = isProfile ? 'none' : 'block'; }
-        const chipsEl = document.getElementById('cfgChips');
-        if (chipsEl) chipsEl.innerHTML = d.chips.map(c => `<span class="sys-chip">${c}</span>`).join('');
+        const chipsEl = document.getElementById('cfgChips'); if (chipsEl) chipsEl.innerHTML = d.chips.map(c => `<span class="sys-chip">${c}</span>`).join('');
         document.querySelectorAll('.cfg-line').forEach(el => { el.style.display = isProfile ? 'none' : 'flex'; });
-        const areaEl = document.getElementById('downloadArea');
-        if (areaEl) areaEl.style.display = isProfile ? 'block' : 'none';
+        const areaEl = document.getElementById('downloadArea'); if (areaEl) areaEl.style.display = isProfile ? 'block' : 'none';
       });
     });
   }
 
   window.downloadProfile = function() {
     const url = '/download/doh.mobileconfig';
-    fetch(url, { method: 'HEAD', cache: 'no-store' })
-      .then(res => {
-        if (res.ok) window.location.href = url;
-        else showToast('文件暂不可用，请稍后重试');
-      })
-      .catch(() => showToast('下载失败，请检查网络'));
+    fetch(url, { method: 'HEAD', cache: 'no-store' }).then(res => { if (res.ok) window.location.href = url; else showToast('文件暂不可用，请稍后重试'); }).catch(() => showToast('下载失败，请检查网络'));
   };
 
   document.querySelectorAll('.p-link[data-tab]').forEach(link => {
     link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const tab = this.dataset.tab;
+      e.preventDefault(); const tab = this.dataset.tab;
       document.getElementById('config').scrollIntoView({ behavior: 'smooth' });
-      setTimeout(() => {
-        const targetBtn = document.querySelector(`.cfg-tab[data-tab="${tab}"]`);
-        if (targetBtn) targetBtn.click();
-      }, 400);
+      setTimeout(() => { const targetBtn = document.querySelector(`.cfg-tab[data-tab="${tab}"]`); if (targetBtn) targetBtn.click(); }, 400);
     });
   });
 
   (function() {
     const API = 'https://api.ipv4dns.com/api';
-    const dot = document.getElementById('statsDot');
-    const statusEl = document.getElementById('statsStatus');
-    const numEl = document.getElementById('statsNum');
-    const timeEl = document.getElementById('statsTime');
+    const dot = document.getElementById('statsDot'), statusEl = document.getElementById('statsStatus'), numEl = document.getElementById('statsNum'), timeEl = document.getElementById('statsTime');
     let shown = 0, timer = null, raf = null, isFirstLoad = true;
-
     function setState(state, errorMsg) {
       if (!dot || !statusEl) return;
-      dot.classList.remove('is-ok', 'is-busy', 'is-err');
-      statusEl.classList.remove('is-error');
-      if (state === 'ok') {
-        dot.classList.add('is-ok');
-        statusEl.textContent = '已连接 · 数据同步正常';
-        statusEl.style.color = '#16a34a';
-        statusEl.style.cursor = 'default';
-        statusEl.onclick = null;
-      } else if (state === 'err') {
-        dot.classList.add('is-err');
-        statusEl.textContent = errorMsg || '连接失败 · 点击重试';
-        statusEl.style.color = '#dc2626';
-        statusEl.classList.add('is-error');
-        statusEl.style.cursor = 'pointer';
-        statusEl.onclick = () => { clearTimeout(timer); load(); };
-      } else {
-        dot.classList.add('is-busy');
-        statusEl.textContent = '正在连接解析节点…';
-        statusEl.style.color = '';
-        statusEl.style.cursor = 'default';
-        statusEl.onclick = null;
-      }
+      dot.classList.remove('is-ok', 'is-busy', 'is-err'); statusEl.classList.remove('is-error');
+      if (state === 'ok') { dot.classList.add('is-ok'); statusEl.textContent = '已连接 · 数据同步正常'; statusEl.style.color = '#16a34a'; statusEl.style.cursor = 'default'; statusEl.onclick = null; }
+      else if (state === 'err') { dot.classList.add('is-err'); statusEl.textContent = errorMsg || '连接失败 · 点击重试'; statusEl.style.color = '#dc2626'; statusEl.classList.add('is-error'); statusEl.style.cursor = 'pointer'; statusEl.onclick = () => { clearTimeout(timer); load(); }; }
+      else { dot.classList.add('is-busy'); statusEl.textContent = '正在连接解析节点…'; statusEl.style.color = ''; statusEl.style.cursor = 'default'; statusEl.onclick = null; }
     }
     const fmt = n => Number(n).toLocaleString('en-US');
     function countUp(target) {
-      if (!numEl) return;
-      cancelAnimationFrame(raf);
+      if (!numEl) return; cancelAnimationFrame(raf);
       const from = shown, dur = 800, t0 = performance.now();
       if (from === target) { numEl.textContent = fmt(target); numEl.classList.remove('loading-pulse'); return; }
-      (function step(t) {
-        const p = Math.min((t - t0) / dur, 1);
-        const ease = 1 - Math.pow(1 - p, 3);
-        const current = Math.round(from + (target - from) * ease);
-        numEl.textContent = fmt(current);
-        if (p < 1) raf = requestAnimationFrame(step);
-        else { shown = target; numEl.classList.remove('loading-pulse'); }
-      })(t0);
+      (function step(t) { const p = Math.min((t - t0) / dur, 1); const ease = 1 - Math.pow(1 - p, 3); const current = Math.round(from + (target - from) * ease); numEl.textContent = fmt(current); if (p < 1) raf = requestAnimationFrame(step); else { shown = target; numEl.classList.remove('loading-pulse'); } })(t0);
     }
-    function fmtTime(iso) {
-      try { const d = new Date(iso); if (isNaN(d)) return iso; const z=n=>String(n).padStart(2,'0'); return `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())} ${z(d.getHours())}:${z(d.getMinutes())}:${z(d.getSeconds())}`; } catch(e){return iso;}
-    }
+    function fmtTime(iso) { try { const d = new Date(iso); if (isNaN(d)) return iso; const z=n=>String(n).padStart(2,'0'); return `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())} ${z(d.getHours())}:${z(d.getMinutes())}:${z(d.getSeconds())}`; } catch(e){return iso;} }
     async function load() {
       if (!numEl) return;
       if (isFirstLoad) { numEl.textContent = '…'; numEl.classList.add('loading-pulse'); }
       setState('busy');
       try {
-        const ctl = new AbortController();
-        const to = setTimeout(() => ctl.abort(), 6000);
-        const res = await fetch(API, { signal: ctl.signal, cache: 'no-store' });
-        clearTimeout(to);
+        const ctl = new AbortController(); const to = setTimeout(() => ctl.abort(), 6000);
+        const res = await fetch(API, { signal: ctl.signal, cache: 'no-store' }); clearTimeout(to);
         if (!res.ok) throw new Error('HTTP ' + res.status);
         const data = await res.json();
         if (typeof data.num_dns_queries !== 'number') throw new Error('bad payload');
@@ -2219,10 +1804,7 @@
         countUp(data.num_dns_queries);
         if (timeEl) timeEl.textContent = data.timestamp ? fmtTime(data.timestamp) : new Date().toLocaleString('zh-CN');
         setState('ok');
-      } catch (e) {
-        if (isFirstLoad) { numEl.textContent = '--'; numEl.classList.remove('loading-pulse'); }
-        setState('err', '连接失败 · 点击重试');
-      }
+      } catch (e) { if (isFirstLoad) { numEl.textContent = '--'; numEl.classList.remove('loading-pulse'); } setState('err', '连接失败 · 点击重试'); }
       timer = setTimeout(load, 30000);
     }
     load();
@@ -2231,64 +1813,30 @@
 
   (function() {
     const API = 'https://api.ipv4dns.com/api';
-    const dot = document.getElementById('blockedDot');
-    const statusEl = document.getElementById('blockedStatus');
-    const numEl = document.getElementById('blockedNum');
-    const timeEl = document.getElementById('blockedTime');
+    const dot = document.getElementById('blockedDot'), statusEl = document.getElementById('blockedStatus'), numEl = document.getElementById('blockedNum'), timeEl = document.getElementById('blockedTime');
     let shown = 0, timer = null, raf = null, isFirstLoad = true;
-
     function setState(state, errorMsg) {
       if (!dot || !statusEl) return;
-      dot.classList.remove('is-ok', 'is-busy', 'is-err');
-      statusEl.classList.remove('is-error');
-      if (state === 'ok') {
-        dot.classList.add('is-ok');
-        statusEl.textContent = '已连接 · 拦截数据同步正常';
-        statusEl.style.color = '#16a34a';
-        statusEl.style.cursor = 'default';
-        statusEl.onclick = null;
-      } else if (state === 'err') {
-        dot.classList.add('is-err');
-        statusEl.textContent = errorMsg || '连接失败 · 点击重试';
-        statusEl.style.color = '#dc2626';
-        statusEl.classList.add('is-error');
-        statusEl.style.cursor = 'pointer';
-        statusEl.onclick = () => { clearTimeout(timer); load(); };
-      } else {
-        dot.classList.add('is-busy');
-        statusEl.textContent = '正在连接拦截统计节点…';
-        statusEl.style.color = '';
-        statusEl.style.cursor = 'default';
-        statusEl.onclick = null;
-      }
+      dot.classList.remove('is-ok', 'is-busy', 'is-err'); statusEl.classList.remove('is-error');
+      if (state === 'ok') { dot.classList.add('is-ok'); statusEl.textContent = '已连接 · 拦截数据同步正常'; statusEl.style.color = '#16a34a'; statusEl.style.cursor = 'default'; statusEl.onclick = null; }
+      else if (state === 'err') { dot.classList.add('is-err'); statusEl.textContent = errorMsg || '连接失败 · 点击重试'; statusEl.style.color = '#dc2626'; statusEl.classList.add('is-error'); statusEl.style.cursor = 'pointer'; statusEl.onclick = () => { clearTimeout(timer); load(); }; }
+      else { dot.classList.add('is-busy'); statusEl.textContent = '正在连接拦截统计节点…'; statusEl.style.color = ''; statusEl.style.cursor = 'default'; statusEl.onclick = null; }
     }
     const fmt = n => Number(n).toLocaleString('en-US');
     function countUp(target) {
-      if (!numEl) return;
-      cancelAnimationFrame(raf);
+      if (!numEl) return; cancelAnimationFrame(raf);
       const from = shown, dur = 800, t0 = performance.now();
       if (from === target) { numEl.textContent = fmt(target); numEl.classList.remove('loading-pulse'); return; }
-      (function step(t) {
-        const p = Math.min((t - t0) / dur, 1);
-        const ease = 1 - Math.pow(1 - p, 3);
-        const current = Math.round(from + (target - from) * ease);
-        numEl.textContent = fmt(current);
-        if (p < 1) raf = requestAnimationFrame(step);
-        else { shown = target; numEl.classList.remove('loading-pulse'); }
-      })(t0);
+      (function step(t) { const p = Math.min((t - t0) / dur, 1); const ease = 1 - Math.pow(1 - p, 3); const current = Math.round(from + (target - from) * ease); numEl.textContent = fmt(current); if (p < 1) raf = requestAnimationFrame(step); else { shown = target; numEl.classList.remove('loading-pulse'); } })(t0);
     }
-    function fmtTime(iso) {
-      try { const d = new Date(iso); if (isNaN(d)) return iso; const z=n=>String(n).padStart(2,'0'); return `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())} ${z(d.getHours())}:${z(d.getMinutes())}:${z(d.getSeconds())}`; } catch(e){return iso;}
-    }
+    function fmtTime(iso) { try { const d = new Date(iso); if (isNaN(d)) return iso; const z=n=>String(n).padStart(2,'0'); return `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())} ${z(d.getHours())}:${z(d.getMinutes())}:${z(d.getSeconds())}`; } catch(e){return iso;} }
     async function load() {
       if (!numEl) return;
       if (isFirstLoad) { numEl.textContent = '…'; numEl.classList.add('loading-pulse'); }
       setState('busy');
       try {
-        const ctl = new AbortController();
-        const to = setTimeout(() => ctl.abort(), 6000);
-        const res = await fetch(API, { signal: ctl.signal, cache: 'no-store' });
-        clearTimeout(to);
+        const ctl = new AbortController(); const to = setTimeout(() => ctl.abort(), 6000);
+        const res = await fetch(API, { signal: ctl.signal, cache: 'no-store' }); clearTimeout(to);
         if (!res.ok) throw new Error('HTTP ' + res.status);
         const data = await res.json();
         if (typeof data.blocked_total !== 'number') throw new Error('bad payload');
@@ -2296,10 +1844,7 @@
         countUp(data.blocked_total);
         if (timeEl) timeEl.textContent = data.timestamp ? fmtTime(data.timestamp) : new Date().toLocaleString('zh-CN');
         setState('ok');
-      } catch (e) {
-        if (isFirstLoad) { numEl.textContent = '--'; numEl.classList.remove('loading-pulse'); }
-        setState('err', '连接失败 · 点击重试');
-      }
+      } catch (e) { if (isFirstLoad) { numEl.textContent = '--'; numEl.classList.remove('loading-pulse'); } setState('err', '连接失败 · 点击重试'); }
       timer = setTimeout(load, 30000);
     }
     load();
@@ -2307,12 +1852,9 @@
   })();
 
   (function() {
-    const dot = document.getElementById('dnsCheckDot');
-    const statusEl = document.getElementById('dnsCheckStatus');
-    const bodyEl = document.getElementById('dnsCheckBody');
+    const dot = document.getElementById('dnsCheckDot'), statusEl = document.getElementById('dnsCheckStatus'), bodyEl = document.getElementById('dnsCheckBody');
     const objectEl = bodyEl ? bodyEl.querySelector('object') : null;
     let checkTimer = null;
-
     function setState(state, msg) {
       if (!dot || !statusEl) return;
       dot.classList.remove('is-ok','is-busy','is-err');
@@ -2323,8 +1865,7 @@
     function setBodyText(ok) { if (objectEl) { objectEl.innerHTML = ok ? '<span class="ok-text">你已使用 dns.ipv4dns.com</span>' : '<span class="fallback-text">你未使用 dns.ipv4dns.com</span>'; } }
     function checkWithFetch() {
       setState('busy');
-      const ctl = new AbortController();
-      const to = setTimeout(() => ctl.abort(), 5000);
+      const ctl = new AbortController(); const to = setTimeout(() => ctl.abort(), 5000);
       fetch('https://test.ipv4dns.com/yes.html', { signal: ctl.signal, cache:'no-store', mode:'cors' })
         .then(res => { clearTimeout(to); if (!res.ok) throw new Error('HTTP '+res.status); return res.text(); })
         .then(text => { if (text.includes('已使用')||text.includes('已连接')) { setState('ok'); setBodyText(true); } else { setState('err'); setBodyText(false); } })
@@ -2335,24 +1876,13 @@
       let settled = false;
       const timeoutId = setTimeout(() => { if (!settled) { settled=true; setState('err','未使用 · DNS 连接异常（加载超时）'); setBodyText(false); } }, 4000);
       function onLoad() {
-        if (settled) return;
-        settled=true; clearTimeout(timeoutId);
-        let text='';
-        try { const doc = this.contentDocument||(this.contentWindow&&this.contentWindow.document); text = (doc&&doc.body)?doc.body.textContent:''; }
-        catch(e) { setState('ok'); setBodyText(true); return; }
+        if (settled) return; settled=true; clearTimeout(timeoutId);
+        let text=''; try { const doc = this.contentDocument||(this.contentWindow&&this.contentWindow.document); text = (doc&&doc.body)?doc.body.textContent:''; } catch(e) { setState('ok'); setBodyText(true); return; }
         if (text.includes('已使用')||text.includes('已连接')) { setState('ok'); setBodyText(true); } else { setState('err'); setBodyText(false); }
       }
       function onError() { if(!settled){settled=true;clearTimeout(timeoutId);setState('err');setBodyText(false);} }
-      objectEl.addEventListener('load', onLoad);
-      objectEl.addEventListener('error', onError);
-      try {
-        const doc = objectEl.contentDocument || (objectEl.contentWindow && objectEl.contentWindow.document);
-        if (doc && doc.readyState === 'complete') {
-          objectEl.removeEventListener('load', onLoad); objectEl.removeEventListener('error', onError);
-          const text = doc.body ? doc.body.textContent : '';
-          if (text.includes('已使用')||text.includes('已连接')) { setState('ok'); setBodyText(true); } else { setState('err'); setBodyText(false); }
-        }
-      } catch(e) {}
+      objectEl.addEventListener('load', onLoad); objectEl.addEventListener('error', onError);
+      try { const doc = objectEl.contentDocument || (objectEl.contentWindow && objectEl.contentWindow.document); if (doc && doc.readyState === 'complete') { objectEl.removeEventListener('load', onLoad); objectEl.removeEventListener('error', onError); const text = doc.body ? doc.body.textContent : ''; if (text.includes('已使用')||text.includes('已连接')) { setState('ok'); setBodyText(true); } else { setState('err'); setBodyText(false); } } } catch(e) {}
     }
     checkWithFetch();
     checkTimer = setInterval(checkWithFetch, 30000);
@@ -2360,43 +1890,22 @@
   })();
 
   const heroShapes = document.querySelectorAll('.hero-shapes .shape');
-  let rafId = null;
-  let px = 0, py = 0;
+  let rafId = null; let px = 0, py = 0;
   window.addEventListener('pointermove', (e) => {
-    px = (e.clientX / window.innerWidth - 0.5);
-    py = (e.clientY / window.innerHeight - 0.5);
+    px = (e.clientX / window.innerWidth - 0.5); py = (e.clientY / window.innerHeight - 0.5);
     if (rafId) return;
-    rafId = requestAnimationFrame(() => {
-      heroShapes.forEach((s, i) => {
-        const d = (i + 1) * 5;
-        s.style.transform = `translate3d(${px * d}px, ${py * d}px, 0)`;
-      });
-      rafId = null;
-    });
+    rafId = requestAnimationFrame(() => { heroShapes.forEach((s, i) => { const d = (i + 1) * 5; s.style.transform = `translate3d(${px * d}px, ${py * d}px, 0)`; }); rafId = null; });
   }, { passive: true });
 
-  setTimeout(() => {
-    document.querySelectorAll('.cfg-card .c-bar i').forEach(el => {
-      const w = el.style.width;
-      el.style.width = '0%';
-      setTimeout(() => { el.style.width = w; }, 120);
-    });
-  }, 500);
+  setTimeout(() => { document.querySelectorAll('.cfg-card .c-bar i').forEach(el => { const w = el.style.width; el.style.width = '0%'; setTimeout(() => { el.style.width = w; }, 120); }); }, 500);
 
   (function() {
-    const tw = document.getElementById('typewriter');
-    if (!tw) return;
-    const fullText = '一个有安全防护的加密DNS。';
-    let index = 0, isDeleting = false;
+    const tw = document.getElementById('typewriter'); if (!tw) return;
+    const fullText = '一个有安全防护的加密DNS。'; let index = 0, isDeleting = false;
     const typeSpeed = 80, deleteSpeed = 50, pauseTime = 1500;
     function type() {
-      if (!isDeleting) {
-        if (index < fullText.length) { tw.textContent = fullText.substring(0, index+1); index++; setTimeout(type, typeSpeed); }
-        else { setTimeout(() => { isDeleting = true; setTimeout(type, 200); }, pauseTime); }
-      } else {
-        if (index > 0) { tw.textContent = fullText.substring(0, index-1); index--; setTimeout(type, deleteSpeed); }
-        else { isDeleting = false; setTimeout(type, pauseTime); }
-      }
+      if (!isDeleting) { if (index < fullText.length) { tw.textContent = fullText.substring(0, index+1); index++; setTimeout(type, typeSpeed); } else { setTimeout(() => { isDeleting = true; setTimeout(type, 200); }, pauseTime); } }
+      else { if (index > 0) { tw.textContent = fullText.substring(0, index-1); index--; setTimeout(type, deleteSpeed); } else { isDeleting = false; setTimeout(type, pauseTime); } }
     }
     setTimeout(type, 1200);
   })();
@@ -2408,15 +1917,11 @@
   })();
 
   function initModal(modalId, openTriggers, closeBtnId) {
-    const modal = document.getElementById(modalId);
-    const closeBtn = document.getElementById(closeBtnId);
+    const modal = document.getElementById(modalId); const closeBtn = document.getElementById(closeBtnId);
     if (!modal || !closeBtn) return;
     function open() { modal.classList.add('open'); document.body.style.overflow = 'hidden'; }
     function close() { modal.classList.remove('open'); document.body.style.overflow = ''; }
-    openTriggers.forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.addEventListener('click', (e) => { e.preventDefault(); open(); });
-    });
+    openTriggers.forEach(id => { const el = document.getElementById(id); if (el) el.addEventListener('click', (e) => { e.preventDefault(); open(); }); });
     closeBtn.addEventListener('click', close);
     modal.addEventListener('click', (e) => { if (e.target === modal) close(); });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
@@ -2425,65 +1930,20 @@
   initModal('termsModal', ['termsLink','termsLink2'], 'termsModalClose');
 
   (function() {
-    const items = document.querySelectorAll('.faq-item');
-    if (!items.length) return;
-    function closeItem(item) {
-      item.classList.remove('open');
-      const btn = item.querySelector('.faq-q');
-      const p = item.querySelector('.faq-a');
-      if (btn) btn.setAttribute('aria-expanded', 'false');
-      if (p) p.style.maxHeight = '0px';
-    }
-    function openItem(item) {
-      item.classList.add('open');
-      const btn = item.querySelector('.faq-q');
-      const p = item.querySelector('.faq-a');
-      if (btn) btn.setAttribute('aria-expanded', 'true');
-      if (p) p.style.maxHeight = p.scrollHeight + 'px';
-    }
-    items.forEach(item => {
-      const btn = item.querySelector('.faq-q');
-      if (!btn) return;
-      btn.addEventListener('click', () => {
-        const isOpen = item.classList.contains('open');
-        items.forEach(closeItem);
-        if (!isOpen) openItem(item);
-      });
-    });
+    const items = document.querySelectorAll('.faq-item'); if (!items.length) return;
+    function closeItem(item) { item.classList.remove('open'); const btn = item.querySelector('.faq-q'); const p = item.querySelector('.faq-a'); if (btn) btn.setAttribute('aria-expanded', 'false'); if (p) p.style.maxHeight = '0px'; }
+    function openItem(item) { item.classList.add('open'); const btn = item.querySelector('.faq-q'); const p = item.querySelector('.faq-a'); if (btn) btn.setAttribute('aria-expanded', 'true'); if (p) p.style.maxHeight = p.scrollHeight + 'px'; }
+    items.forEach(item => { const btn = item.querySelector('.faq-q'); if (!btn) return; btn.addEventListener('click', () => { const isOpen = item.classList.contains('open'); items.forEach(closeItem); if (!isOpen) openItem(item); }); });
     if (items[0]) openItem(items[0]);
     let resizeTimer = null;
-    window.addEventListener('resize', () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => {
-        items.forEach(item => {
-          if (item.classList.contains('open')) {
-            const p = item.querySelector('.faq-a');
-            if (p) p.style.maxHeight = p.scrollHeight + 'px';
-          }
-        });
-      }, 160);
-    }, { passive: true });
+    window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => { items.forEach(item => { if (item.classList.contains('open')) { const p = item.querySelector('.faq-a'); if (p) p.style.maxHeight = p.scrollHeight + 'px'; } }); }, 160); }, { passive: true });
     const moreBtn = document.getElementById('faqMoreBtn');
-    if (moreBtn) {
-      moreBtn.addEventListener('click', () => {
-        const t = document.getElementById('toast');
-        if (t) {
-          t.textContent = '帮助中心即将上线，敬请期待';
-          t.classList.add('show');
-          clearTimeout(window.__faqToastTimer);
-          window.__faqToastTimer = setTimeout(() => t.classList.remove('show'), 2000);
-        }
-      });
-    }
+    if (moreBtn) { moreBtn.addEventListener('click', () => { const t = document.getElementById('toast'); if (t) { t.textContent = '帮助中心即将上线，敬请期待'; t.classList.add('show'); clearTimeout(window.__faqToastTimer); window.__faqToastTimer = setTimeout(() => t.classList.remove('show'), 2000); } }); }
   })();
 
   document.addEventListener('visibilitychange', () => {
     const paused = document.hidden ? 'paused' : 'running';
-    document.querySelectorAll(
-      '.bg-glow span, .hero-shapes .shape, .cta-blob, .cta-shapes .shape, ' +
-      '.stats-shell, .dns-check-shell, .dns-halo, .shield-glow, ' +
-      '.privacy-ring, .stats-wave, .dns-check-wave'
-    ).forEach(el => { el.style.animationPlayState = paused; });
+    document.querySelectorAll('.bg-glow span, .hero-shapes .shape, .cta-blob, .cta-shapes .shape, .stats-shell, .dns-check-shell, .dns-halo, .shield-glow, .privacy-ring, .stats-wave, .dns-check-wave').forEach(el => { el.style.animationPlayState = paused; });
   });
 
   (function() {
@@ -2535,16 +1995,11 @@
         'compare.good.item4.t':'就近节点智能加速','compare.good.item4.d':'就近接入最优节点，配合本地缓存，解析延迟低至毫秒级。',
         'compare.foot':'* 以上对比基于 RFC 8484 / 7858 / 9250 协议规范与公开安全研究结论整理。',
         'voice.title':'被他们信赖','voice.desc':'从个人极客到企业 IT 团队，越来越多的用户把解析安全交给清新云 DNS。',
-        'voice.c1.text':'在公共 Wi-Fi 上做渗透测试时，明文 DNS 简直是最佳突破口。切到 DoH 之后，整条链路的可观测性直接归零，测试数据再也没被污染过。',
-        'voice.c1.role':'安全工程师 · 深圳',
-        'voice.c2.text':'公司 200 多台设备统一在路由器上配 DoT，一次配置全员生效。以前偶尔冒出来的广告弹窗和钓鱼页，现在几乎绝迹了。',
-        'voice.c2.role':'IT 运维负责人 · 杭州',
-        'voice.c3.text':'手机切到 DoQ 后，弱网下的解析速度肉眼可见地稳了。看直播再也不用担心开播前那几秒一直转圈。',
-        'voice.c3.role':'大学生 · 成都',
-        'voice.c4.text':'学校机房之前总被弹窗和钓鱼广告打扰，把 DNS 换到清新云之后课堂干扰几乎清零。一次配置，一百多台机器全部生效，省了太多事。',
-        'voice.c4.role':'中学信息技术教师 · 南京',
-        'ml.title':'会自愈的智能解析网络',
-        'ml.desc':'基于机器学习调度模型，节点异常自动感知、自动重构，像神经元一样持续自愈。',
+        'voice.c1.text':'在公共 Wi-Fi 上做渗透测试时，明文 DNS 简直是最佳突破口。切到 DoH 之后，整条链路的可观测性直接归零，测试数据再也没被污染过。','voice.c1.role':'安全工程师 · 深圳',
+        'voice.c2.text':'公司 200 多台设备统一在路由器上配 DoT，一次配置全员生效。以前偶尔冒出来的广告弹窗和钓鱼页，现在几乎绝迹了。','voice.c2.role':'IT 运维负责人 · 杭州',
+        'voice.c3.text':'手机切到 DoQ 后，弱网下的解析速度肉眼可见地稳了。看直播再也不用担心开播前那几秒一直转圈。','voice.c3.role':'大学生 · 成都',
+        'voice.c4.text':'学校机房之前总被弹窗和钓鱼广告打扰，把 DNS 换到清新云之后课堂干扰几乎清零。一次配置，一百多台机器全部生效，省了太多事。','voice.c4.role':'中学信息技术教师 · 南京',
+        'ml.title':'会自愈的智能解析网络','ml.desc':'基于机器学习调度模型，节点异常自动感知、自动重构，像神经元一样持续自愈。',
         'ml.c1.t':'加密 DNS 神经网络','ml.c1.d':'全链路查询特征注入神经网络，在端到端加密的同时实时学习域名与解析行为模式，完成智能研判。','ml.c1.tag':'Neural Resolver',
         'ml.c2.t':'机器学习 DGA 检测','ml.c2.d':'基于千万级样本训练的 DGA 识别模型，对算法生成域名毫秒级拦截，切断僵尸网络与勒索软件回连。','ml.c2.tag':'DGA Detection',
         'ml.c3.t':'自学习引擎','ml.c3.d':'每一次解析都会反哺模型，异常样本自动标注并在线增量训练，无需人工干预即可持续进化。','ml.c3.tag':'Self-Learning',
@@ -2600,8 +2055,7 @@
         'blocked.status':'Connecting to block stats…','blocked.title':'DNS Block Stats • 24h','blocked.label':'Live · Auto-refresh every 30s','blocked.time':'Last updated:',
         'dnsCheck.status':'Checking DNS connection…','dnsCheck.title':'DNS Connection Status','dnsCheck.fallback':'You are not using dns.ipv4dns.com',
         'follow.title':'Follow Us · Get More','follow.desc':'Scan to follow our WeChat official account for the latest encrypted DNS tips',
-        'compare.title':'Why You Must Upgrade to Encrypted DNS',
-        'compare.desc':'Legacy plaintext DNS travels the wire in the clear — every lookup can be logged, tampered with, or hijacked.',
+        'compare.title':'Why You Must Upgrade to Encrypted DNS','compare.desc':'Legacy plaintext DNS travels the wire in the clear — every lookup can be logged, tampered with, or hijacked.',
         'compare.bad.tag':'Legacy Plaintext DNS','compare.bad.title':'UDP 53 · Fully Exposed',
         'compare.bad.item1.t':'Queries are visible in plaintext','compare.bad.item1.d':'ISPs, public Wi-Fi, and middle nodes can log every domain you visit.',
         'compare.bad.item2.t':'Easy to hijack','compare.bad.item2.d':'Fake IPs can inject ad pages or phishing sites with almost no user-visible sign.',
@@ -2614,16 +2068,11 @@
         'compare.good.item4.t':'Nearest-node acceleration','compare.good.item4.d':'Nearest-node routing plus local caching brings resolution latency down to milliseconds.',
         'compare.foot':'* Comparison based on RFC 8484 / 7858 / 9250 and public security research.',
         'voice.title':'Trusted By Them','voice.desc':'From individual geeks to enterprise IT teams, more users hand resolution security to FreshCloud DNS.',
-        'voice.c1.text':'Plaintext DNS is the juiciest entry point during Wi-Fi pentests. After switching to DoH, link observability dropped to zero and test data has never been polluted since.',
-        'voice.c1.role':'Security Engineer · Shenzhen',
-        'voice.c2.text':'We pushed DoT to 200+ devices through the router in one shot. The occasional ad popups and phishing pages basically disappeared.',
-        'voice.c2.role':'IT Operations Lead · Hangzhou',
-        'voice.c3.text':'After switching my phone to DoQ, resolution under weak signal is visibly more stable. No more spinning wheel before livestreams.',
-        'voice.c3.role':'University Student · Chengdu',
-        'voice.c4.text':'Our computer lab used to be plagued by popups and phishing ads. After switching DNS to FreshCloud, classroom distractions almost vanished. One config, 100+ machines, all covered.',
-        'voice.c4.role':'High School IT Teacher · Nanjing',
-        'ml.title':'A Self-Healing Intelligent Resolution Network',
-        'ml.desc':'Powered by a machine-learning scheduling model, anomalies are sensed and rerouted automatically — the network keeps healing itself, neuron by neuron.',
+        'voice.c1.text':'Plaintext DNS is the juiciest entry point during Wi-Fi pentests. After switching to DoH, link observability dropped to zero and test data has never been polluted since.','voice.c1.role':'Security Engineer · Shenzhen',
+        'voice.c2.text':'We pushed DoT to 200+ devices through the router in one shot. The occasional ad popups and phishing pages basically disappeared.','voice.c2.role':'IT Operations Lead · Hangzhou',
+        'voice.c3.text':'After switching my phone to DoQ, resolution under weak signal is visibly more stable. No more spinning wheel before livestreams.','voice.c3.role':'University Student · Chengdu',
+        'voice.c4.text':'Our computer lab used to be plagued by popups and phishing ads. After switching DNS to FreshCloud, classroom distractions almost vanished. One config, 100+ machines, all covered.','voice.c4.role':'High School IT Teacher · Nanjing',
+        'ml.title':'A Self-Healing Intelligent Resolution Network','ml.desc':'Powered by a machine-learning scheduling model, anomalies are sensed and rerouted automatically — the network keeps healing itself, neuron by neuron.',
         'ml.c1.t':'Encrypted DNS Neural Network','ml.c1.d':'Full-link query features are fed into a neural network, learning domain and resolution behavior patterns in real time while staying end-to-end encrypted.','ml.c1.tag':'Neural Resolver',
         'ml.c2.t':'Machine-Learning DGA Detection','ml.c2.d':'A DGA model trained on tens of millions of samples blocks algorithmically generated domains in milliseconds, cutting off botnet and ransomware callbacks.','ml.c2.tag':'DGA Detection',
         'ml.c3.t':'Self-Learning Engine','ml.c3.d':'Every resolution feeds back into the model. Anomalous samples are auto-labeled and incrementally trained online — no human intervention needed to keep evolving.','ml.c3.tag':'Self-Learning',
@@ -2660,9 +2109,7 @@
             el.innerHTML = translations[lang][key];
           } else if (el.children.length > 0) {
             const textNode = el.childNodes[0];
-            if (textNode && textNode.nodeType === Node.TEXT_NODE) {
-              textNode.textContent = translations[lang][key];
-            }
+            if (textNode && textNode.nodeType === Node.TEXT_NODE) textNode.textContent = translations[lang][key];
           } else {
             el.textContent = translations[lang][key];
           }
@@ -2672,10 +2119,7 @@
     }
 
     langBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const lang = btn.dataset.lang;
-        if (lang !== currentLang) setLanguage(lang);
-      });
+      btn.addEventListener('click', () => { const lang = btn.dataset.lang; if (lang !== currentLang) setLanguage(lang); });
     });
     setLanguage('zh');
   })();
