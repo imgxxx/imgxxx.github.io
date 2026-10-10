@@ -1,5 +1,8 @@
 #测试版规则
 
+down-updatekh07.hbttl.cn
+||hbttl.cn^
+
 ||tihutest.online^
 
 promotion-1.pddpic.com
